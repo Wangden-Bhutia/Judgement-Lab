@@ -177,6 +177,9 @@ importers:
       '@judgment-lab/storage':
         specifier: workspace:*
         version: link:../../packages/storage
+      '@judgment-lab/track-emotional':
+        specifier: workspace:*
+        version: link:../../packages/track-emotional
       '@judgment-lab/track-strategic':
         specifier: workspace:*
         version: link:../../packages/track-strategic

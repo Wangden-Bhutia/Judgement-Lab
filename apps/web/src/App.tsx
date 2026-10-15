@@ -1,24 +1,16 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import type { Item, Lesson } from '@judgment-lab/content-schema';
 import type { ItemAttemptRecord, LessonProgressState } from '@judgment-lab/core-engine';
-import { strategicCurriculum, strategicItems } from '@judgment-lab/track-strategic/content';
 import { storage } from './storage';
 import { loadAttempts, loadLessonProgress } from './progress';
 import { TodayScreen } from './TodayScreen';
 import { LessonPlayer } from './LessonPlayer';
+import { TrackSwitcher } from './TrackSwitcher';
+import { TRACKS } from './tracks';
 import './App.css';
 
-const itemById = new Map<string, Item>(strategicItems.map((item) => [item.id, item]));
-const track = strategicCurriculum.tracks[0]!;
-const lessonById = new Map(strategicCurriculum.lessons.map((lesson) => [lesson.id, lesson]));
-// Module order (strategicCurriculum.modules is already sequence-ordered),
-// each module's own lessonIds order -- NOT a global sort by lesson.sequence,
-// which is only unique within a module (every module's first lesson has
-// sequence 1).
-const modules = strategicCurriculum.modules.slice().sort((a, b) => a.sequence - b.sequence);
-const concepts = strategicCurriculum.concepts;
-
 export default function App() {
+  const [trackId, setTrackId] = useState(TRACKS[0]!.id);
   const [progress, setProgress] = useState<Map<string, LessonProgressState>>(new Map());
   const [attempts, setAttempts] = useState<ItemAttemptRecord[]>([]);
   const [activeLesson, setActiveLesson] = useState<Lesson | null>(null);
@@ -31,6 +23,23 @@ export default function App() {
       setLoaded(true);
     });
   }, []);
+
+  const activeTrack = TRACKS.find((t) => t.id === trackId)!;
+  // Lesson/item/concept ids are namespaced per track (e.g. "strategic-..."
+  // vs "emotional-..."), so a single shared progress/attempts store is
+  // safe to reuse across tracks without any key collisions.
+  const itemById = useMemo(
+    () => new Map<string, Item>(activeTrack.items.map((item) => [item.id, item])),
+    [activeTrack]
+  );
+  const lessonById = useMemo(
+    () => new Map(activeTrack.curriculum.lessons.map((lesson) => [lesson.id, lesson])),
+    [activeTrack]
+  );
+  const modules = useMemo(
+    () => activeTrack.curriculum.modules.slice().sort((a, b) => a.sequence - b.sequence),
+    [activeTrack]
+  );
 
   if (!loaded) {
     return <div className="loading">Loading…</div>;
@@ -52,14 +61,17 @@ export default function App() {
   }
 
   return (
-    <TodayScreen
-      trackTitle={track.title}
-      modules={modules}
-      lessonById={lessonById}
-      concepts={concepts}
-      progress={progress}
-      attempts={attempts}
-      onSelectLesson={setActiveLesson}
-    />
+    <>
+      <TrackSwitcher tracks={TRACKS} selectedId={trackId} onSelect={setTrackId} />
+      <TodayScreen
+        trackTitle={activeTrack.title}
+        modules={modules}
+        lessonById={lessonById}
+        concepts={activeTrack.curriculum.concepts}
+        progress={progress}
+        attempts={attempts}
+        onSelectLesson={setActiveLesson}
+      />
+    </>
   );
 }

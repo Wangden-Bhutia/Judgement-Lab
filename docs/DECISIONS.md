@@ -164,6 +164,31 @@ pass across the workspace; typecheck clean.
 Still outstanding, not part of this fix: `apps/web`'s `LessonPlayer` has no UI to show this content —
 it only renders items. That's the next piece of work, not this one.
 
+## Audit punch list: renderers, track wiring
+
+Three follow-ups from a full content/pedagogy/UX audit, done one at a time:
+
+1. **Renderers for `classify`/`sequence`/`match`** — `ItemRenderer` previously only handled the 3
+   types Strategic Reasoning uses; these 3 (36 real Emotional Skills items) had never been rendered in
+   a browser. `SequenceForm` uses shuffle + up/down move buttons, matching ESL's own source UI hint
+   ("Use the move buttons; the order is checked when you press Check") rather than drag-and-drop.
+2. **A real track selector** (`TrackSwitcher.tsx`, `tracks.ts`) — `apps/web` previously hardcoded
+   Strategic Reasoning only; Emotional Skills' 60 sessions were unreachable in the running app despite
+   being fully converted since Phase 8. Lesson/item/concept ids are namespaced per track
+   (`strategic-...` / `emotional-...`), so a single shared progress store works across tracks with no
+   key collisions or extra plumbing.
+3. **Surfaced `teach`/`example`/`practicePrompts`/`apply`/`reflect` in `LessonPlayer`** — added as
+   this fix explicitly without it; wiring the track in without this would have made the priority-1 fix
+   invisible again, just one layer up. A lesson with `teach` now opens on a teaching screen (paragraphs
+   + worked example + practice prompts) before any item; a lesson with `apply`/`reflect` closes on a
+   screen with those before marking complete. Strategic Reasoning's lessons have neither field, so they
+   render exactly as before — verified live, no regression.
+
+Verified end-to-end in-browser: switched tracks, played Emotional Skills' `w01d1` through teach screen
+→ own_words → match → 2 checks → closing screen → completion, confirmed `w01d2` unlocked, then
+switched back to Strategic Reasoning and confirmed its lesson 1 still opens straight to items with no
+teach screen. 389 tests pass; typecheck clean.
+
 ## Open, non-blocking
 
 - Final app name.

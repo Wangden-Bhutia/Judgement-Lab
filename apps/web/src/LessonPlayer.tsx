@@ -12,6 +12,8 @@ interface LessonPlayerProps {
   progress: ReadonlyMap<string, LessonProgressState>;
 }
 
+type Phase = 'teach' | 'items' | 'closing';
+
 export function LessonPlayer({ lesson, itemById, onExit, progress }: LessonPlayerProps) {
   const order = useMemo(() => {
     const seen = new Set<string>();
@@ -28,11 +30,84 @@ export function LessonPlayer({ lesson, itemById, onExit, progress }: LessonPlaye
   }, [lesson]);
 
   const masterySet = useMemo(() => new Set(lesson.masteryItemIds), [lesson]);
+  const hasClosing = Boolean(lesson.apply || lesson.reflect);
 
+  const [phase, setPhase] = useState<Phase>(lesson.teach?.length ? 'teach' : 'items');
   const [index, setIndex] = useState(0);
   const [evaluation, setEvaluation] = useState<AnswerEvaluation | null>(null);
   const [startedProgress] = useState(() => touchLessonProgress(progress, lesson.id));
   const [finishing, setFinishing] = useState(false);
+
+  async function finish() {
+    setFinishing(true);
+    const completed = completeLessonProgress(startedProgress, lesson.id);
+    await saveLessonProgress(storage, completed);
+    onExit(completed);
+  }
+
+  if (phase === 'teach') {
+    return (
+      <div className="lesson-player">
+        <div className="lesson-player-header">
+          <h2>{lesson.title}</h2>
+        </div>
+        <div className="teach-screen">
+          {lesson.teach!.map((paragraph, i) => (
+            <p key={i}>{paragraph}</p>
+          ))}
+          {lesson.example && (
+            <div className="teach-example">
+              <strong>Example:</strong>
+              <p>{lesson.example}</p>
+            </div>
+          )}
+          {lesson.practicePrompts && lesson.practicePrompts.length > 0 && (
+            <div className="teach-practice">
+              <strong>Before you continue, try this from memory:</strong>
+              <ol>
+                {lesson.practicePrompts.map((p, i) => (
+                  <li key={i}>{p}</li>
+                ))}
+              </ol>
+            </div>
+          )}
+        </div>
+        <button onClick={() => setPhase('items')}>
+          {order.length > 0 ? 'Start practice' : 'Continue'}
+        </button>
+        <button className="exit-link" onClick={() => onExit(startedProgress)}>
+          Exit lesson
+        </button>
+      </div>
+    );
+  }
+
+  if (phase === 'closing') {
+    return (
+      <div className="lesson-player">
+        <div className="lesson-player-header">
+          <h2>{lesson.title}</h2>
+        </div>
+        <div className="teach-screen">
+          {lesson.apply && (
+            <div className="teach-example">
+              <strong>Try this in real life:</strong>
+              <p>{lesson.apply}</p>
+            </div>
+          )}
+          {lesson.reflect && (
+            <div className="teach-practice">
+              <strong>Reflect:</strong>
+              <p>{lesson.reflect}</p>
+            </div>
+          )}
+        </div>
+        <button onClick={finish} disabled={finishing}>
+          Done
+        </button>
+      </div>
+    );
+  }
 
   const currentItemId = order[index];
   const currentItem = currentItemId ? itemById.get(currentItemId) : undefined;
@@ -64,10 +139,11 @@ export function LessonPlayer({ lesson, itemById, onExit, progress }: LessonPlaye
       setIndex((i) => i + 1);
       return;
     }
-    setFinishing(true);
-    const completed = completeLessonProgress(startedProgress, lesson.id);
-    await saveLessonProgress(storage, completed);
-    onExit(completed);
+    if (hasClosing) {
+      setPhase('closing');
+      return;
+    }
+    await finish();
   }
 
   return (
@@ -85,7 +161,7 @@ export function LessonPlayer({ lesson, itemById, onExit, progress }: LessonPlaye
           <p>{evaluation.correct ? 'Correct.' : 'Not quite.'}</p>
           <p>{evaluation.explanation}</p>
           <button onClick={handleNext} disabled={finishing}>
-            {isLast ? 'Finish lesson' : 'Next'}
+            {isLast ? (hasClosing ? 'Continue' : 'Finish lesson') : 'Next'}
           </button>
         </div>
       )}
