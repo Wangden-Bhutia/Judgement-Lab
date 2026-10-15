@@ -106,6 +106,41 @@ Reasoning → port Emotional Skills → port Behavioural Observation → design 
   limitation of the preview sandbox, not the app — worth re-verifying in a real, non-sandboxed browser
   before trusting it, rather than assuming either way.
 
+## Phase 8: Emotional Skills content port
+
+- **Scope: the 60-session day-by-day curriculum only.** ESL's second content form — a 40-scenario
+  branching practice gym with quality-graded (0/1/2, not binary) responses, trade-offs and follow-up
+  branches (`scenarios.ts`, `skillScenarios.ts`, `safetyScenarios.ts`, `branches2.ts`) — is **not**
+  ported. Its response model doesn't fit any existing content-schema item type, and forcing it into
+  one (e.g. collapsing quality 0/1/2 into binary correct/incorrect, or dropping the branching) would
+  misrepresent real content, not just simplify it. Deferred as its own piece of work, needing either a
+  content-schema extension or a deliberate decision to approximate — not silently dropped.
+- **Concept model: "a skill is one lesson or practice session"** (ESL's own `competencies.ts`
+  comment) — every session maps to exactly one concept, itself. Checkpoint/review sessions get this
+  too (their "concept" is passing that checkpoint, not a retroactive split across the skills it draws
+  questions from — the source data has no per-question skill tag that would make that split accurate).
+- **`predict`/`compare` activities convert to `reason_choice`, not content-schema's `PredictItem`/
+  `CompareItem`.** Those two types were defined speculatively (Phase 1) for "the union of ESL's 5
+  activity types and Strategos's 3" — but ESL's actual `predict`/`compare` shape (several options, each
+  flagged good/bad) is a multiple-choice question, not an outcome-prediction or an A-vs-B comparison.
+  `PredictItem`/`CompareItem` remain genuinely unused after this port; they weren't wrong to define,
+  just ahead of data that turned out not to need them.
+- **The mastery-gate finding looks structurally better here than in Strategic Reasoning.** All 12
+  checkpoint/review sessions have >=2 of their own checkpoint-tier items, so those 12 concepts can
+  reach mastery in a single sitting (no review-flow UI needed). The other 48 ordinary lesson/practice
+  sessions still can't — their only items are tagged `'lesson'`-source (not delayed evidence) — same
+  gap as Strategic Reasoning, needing the same not-yet-built review flow. Verified with
+  `packages/track-emotional/tests/content/curriculum.test.ts`.
+- **Source files are checked into `scripts/esl-source/`** (ESL's own `src/content/*.ts`, copied
+  verbatim — 18 files, ~240 KB, zero npm dependencies), and `convertEmotionalContent.ts` imports and
+  runs them via `tsx` — literally executing ESL's own `SESSIONS` export (which merges `TOPICS`,
+  distractor-rewritten options, and `enrich()`-derived `activity`/`explain`/`prerequisites`) rather
+  than hand-transcribing the raw `mk(...)` literals, which would risk silently missing one of those
+  merge steps. Same discipline as `convertStrategicContent.ts`.
+- Output: 9 modules (phases), 60 lessons (sessions), 244 items (148 `reason_choice` — 136 from checks,
+  12 from `predict`/`compare` activities —, 60 `own_words`, 18 `classify`, 9 `sequence`, 9 `match`).
+  15 new tests, all passing on first run against the real converted content.
+
 ## Open, non-blocking
 
 - Final app name.

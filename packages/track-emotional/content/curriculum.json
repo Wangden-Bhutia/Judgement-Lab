@@ -1,0 +1,2034 @@
+{
+  "contentVersion": 1,
+  "tracks": [
+    {
+      "id": "emotional",
+      "title": "Emotional Skills",
+      "description": "Twelve weeks of research-informed practice in noticing, naming and regulating emotion, and applying that under criticism, conflict and professional pressure.",
+      "moduleIds": [
+        "emotional-p1",
+        "emotional-p2",
+        "emotional-p3",
+        "emotional-p4",
+        "emotional-p5",
+        "emotional-p6",
+        "emotional-p7",
+        "emotional-p8",
+        "emotional-p9"
+      ]
+    }
+  ],
+  "modules": [
+    {
+      "id": "emotional-p1",
+      "trackId": "emotional",
+      "sequence": 1,
+      "title": "Foundations",
+      "lessonIds": [
+        "emotional-w01d1",
+        "emotional-w01d2",
+        "emotional-w01d3",
+        "emotional-w01d4",
+        "emotional-w01d5"
+      ]
+    },
+    {
+      "id": "emotional-p2",
+      "trackId": "emotional",
+      "sequence": 2,
+      "title": "Noticing and naming",
+      "lessonIds": [
+        "emotional-w02d1",
+        "emotional-w02d2",
+        "emotional-w02d3",
+        "emotional-w02d4",
+        "emotional-w02d5"
+      ]
+    },
+    {
+      "id": "emotional-p3",
+      "trackId": "emotional",
+      "sequence": 3,
+      "title": "Body and impulse",
+      "lessonIds": [
+        "emotional-w03d1",
+        "emotional-w03d2",
+        "emotional-w03d3",
+        "emotional-w03d4",
+        "emotional-w03d5"
+      ]
+    },
+    {
+      "id": "emotional-p4",
+      "trackId": "emotional",
+      "sequence": 4,
+      "title": "Interpretations",
+      "lessonIds": [
+        "emotional-w04d1",
+        "emotional-w04d2",
+        "emotional-w04d3",
+        "emotional-w04d4",
+        "emotional-w04d5",
+        "emotional-w05d1",
+        "emotional-w05d2",
+        "emotional-w05d3",
+        "emotional-w05d4",
+        "emotional-w05d5"
+      ]
+    },
+    {
+      "id": "emotional-p5",
+      "trackId": "emotional",
+      "sequence": 5,
+      "title": "Choosing a strategy",
+      "lessonIds": [
+        "emotional-w06d1",
+        "emotional-w06d2",
+        "emotional-w06d3",
+        "emotional-w06d4",
+        "emotional-w06d5"
+      ]
+    },
+    {
+      "id": "emotional-p6",
+      "trackId": "emotional",
+      "sequence": 6,
+      "title": "Rumination and uncertainty",
+      "lessonIds": [
+        "emotional-w07d1",
+        "emotional-w07d2",
+        "emotional-w07d3",
+        "emotional-w07d4",
+        "emotional-w07d5"
+      ]
+    },
+    {
+      "id": "emotional-p7",
+      "trackId": "emotional",
+      "sequence": 7,
+      "title": "Criticism and conflict",
+      "lessonIds": [
+        "emotional-w08d1",
+        "emotional-w08d2",
+        "emotional-w08d3",
+        "emotional-w08d4",
+        "emotional-w08d5",
+        "emotional-w09d1",
+        "emotional-w09d2",
+        "emotional-w09d3",
+        "emotional-w09d4",
+        "emotional-w09d5"
+      ]
+    },
+    {
+      "id": "emotional-p8",
+      "trackId": "emotional",
+      "sequence": 8,
+      "title": "Professional composure",
+      "lessonIds": [
+        "emotional-w10d1",
+        "emotional-w10d2",
+        "emotional-w10d3",
+        "emotional-w10d4",
+        "emotional-w10d5",
+        "emotional-w11d1",
+        "emotional-w11d2",
+        "emotional-w11d3",
+        "emotional-w11d4",
+        "emotional-w11d5"
+      ]
+    },
+    {
+      "id": "emotional-p9",
+      "trackId": "emotional",
+      "sequence": 9,
+      "title": "Patterns and maintenance",
+      "lessonIds": [
+        "emotional-w12d1",
+        "emotional-w12d2",
+        "emotional-w12d3",
+        "emotional-w12d4",
+        "emotional-w12d5"
+      ]
+    }
+  ],
+  "lessons": [
+    {
+      "id": "emotional-w01d1",
+      "trackId": "emotional",
+      "moduleId": "emotional-p1",
+      "sequence": 1,
+      "title": "What emotions are for",
+      "objectives": [
+        "Describe emotions as signals that prepare action, not as commands."
+      ],
+      "concepts": [
+        "w01d1"
+      ],
+      "prerequisites": [],
+      "interactiveItemIds": [
+        "i.emo.w01d1.explain",
+        "i.emo.w01d1.activity",
+        "i.emo.w01d1-q1",
+        "i.emo.w01d1-q2"
+      ],
+      "masteryItemIds": [],
+      "explanationBackItemId": "i.emo.w01d1.explain",
+      "contentVersion": 1
+    },
+    {
+      "id": "emotional-w01d2",
+      "trackId": "emotional",
+      "moduleId": "emotional-p1",
+      "sequence": 2,
+      "title": "The emotion chain",
+      "objectives": [
+        "Map an episode as situation, interpretation, body, urge, action, outcome."
+      ],
+      "concepts": [
+        "w01d2"
+      ],
+      "prerequisites": [
+        "emotional-w01d1"
+      ],
+      "interactiveItemIds": [
+        "i.emo.w01d2.explain",
+        "i.emo.w01d2.activity",
+        "i.emo.w01d2-q1",
+        "i.emo.w01d2-q2"
+      ],
+      "masteryItemIds": [],
+      "explanationBackItemId": "i.emo.w01d2.explain",
+      "contentVersion": 1
+    },
+    {
+      "id": "emotional-w01d3",
+      "trackId": "emotional",
+      "moduleId": "emotional-p1",
+      "sequence": 3,
+      "title": "Regulation is not suppression",
+      "objectives": [
+        "Contrast suppressing expression with flexible regulation."
+      ],
+      "concepts": [
+        "w01d3"
+      ],
+      "prerequisites": [
+        "emotional-w01d2"
+      ],
+      "interactiveItemIds": [
+        "i.emo.w01d3.explain",
+        "i.emo.w01d3.activity",
+        "i.emo.w01d3-q1",
+        "i.emo.w01d3-q2"
+      ],
+      "masteryItemIds": [],
+      "explanationBackItemId": "i.emo.w01d3.explain",
+      "contentVersion": 1
+    },
+    {
+      "id": "emotional-w01d4",
+      "trackId": "emotional",
+      "moduleId": "emotional-p1",
+      "sequence": 4,
+      "title": "How you will learn here",
+      "objectives": [
+        "Use retrieval and spacing to make skills stick."
+      ],
+      "concepts": [
+        "w01d4"
+      ],
+      "prerequisites": [
+        "emotional-w01d3"
+      ],
+      "interactiveItemIds": [
+        "i.emo.w01d4.explain",
+        "i.emo.w01d4.activity",
+        "i.emo.w01d4-q1",
+        "i.emo.w01d4-q2",
+        "i.emo.w01d4-q3"
+      ],
+      "masteryItemIds": [],
+      "explanationBackItemId": "i.emo.w01d4.explain",
+      "contentVersion": 1
+    },
+    {
+      "id": "emotional-w01d5",
+      "trackId": "emotional",
+      "moduleId": "emotional-p1",
+      "sequence": 5,
+      "title": "Week 1 checkpoint",
+      "objectives": [
+        "Demonstrate the foundations."
+      ],
+      "concepts": [
+        "w01d5"
+      ],
+      "prerequisites": [
+        "emotional-w01d4"
+      ],
+      "interactiveItemIds": [
+        "i.emo.w01d5.explain"
+      ],
+      "masteryItemIds": [
+        "i.emo.w01d5-q1",
+        "i.emo.w01d5-q2",
+        "i.emo.w01d5-q3"
+      ],
+      "explanationBackItemId": "i.emo.w01d5.explain",
+      "contentVersion": 1
+    },
+    {
+      "id": "emotional-w02d1",
+      "trackId": "emotional",
+      "moduleId": "emotional-p2",
+      "sequence": 1,
+      "title": "Emotion granularity",
+      "objectives": [
+        "Use precise emotion words instead of \"bad\" or \"stressed\"."
+      ],
+      "concepts": [
+        "w02d1"
+      ],
+      "prerequisites": [
+        "emotional-w01d5"
+      ],
+      "interactiveItemIds": [
+        "i.emo.w02d1.explain",
+        "i.emo.w02d1.activity",
+        "i.emo.w02d1-q1",
+        "i.emo.w02d1-q2"
+      ],
+      "masteryItemIds": [],
+      "explanationBackItemId": "i.emo.w02d1.explain",
+      "contentVersion": 1
+    },
+    {
+      "id": "emotional-w02d2",
+      "trackId": "emotional",
+      "moduleId": "emotional-p2",
+      "sequence": 2,
+      "title": "Affect labelling",
+      "objectives": [
+        "Name feelings in words to create a small pause."
+      ],
+      "concepts": [
+        "w02d2"
+      ],
+      "prerequisites": [
+        "emotional-w02d1"
+      ],
+      "interactiveItemIds": [
+        "i.emo.w02d2.explain",
+        "i.emo.w02d2.activity",
+        "i.emo.w02d2-q1",
+        "i.emo.w02d2-q2"
+      ],
+      "masteryItemIds": [],
+      "explanationBackItemId": "i.emo.w02d2.explain",
+      "contentVersion": 1
+    },
+    {
+      "id": "emotional-w02d3",
+      "trackId": "emotional",
+      "moduleId": "emotional-p2",
+      "sequence": 3,
+      "title": "Mixed and layered emotions",
+      "objectives": [
+        "Recognise that several emotions can co-occur or hide one another."
+      ],
+      "concepts": [
+        "w02d3"
+      ],
+      "prerequisites": [
+        "emotional-w02d2"
+      ],
+      "interactiveItemIds": [
+        "i.emo.w02d3.explain",
+        "i.emo.w02d3.activity",
+        "i.emo.w02d3-q1",
+        "i.emo.w02d3-q2"
+      ],
+      "masteryItemIds": [],
+      "explanationBackItemId": "i.emo.w02d3.explain",
+      "contentVersion": 1
+    },
+    {
+      "id": "emotional-w02d4",
+      "trackId": "emotional",
+      "moduleId": "emotional-p2",
+      "sequence": 4,
+      "title": "Daily check-in habit",
+      "objectives": [
+        "Build a 30-second check-in."
+      ],
+      "concepts": [
+        "w02d4"
+      ],
+      "prerequisites": [
+        "emotional-w02d3"
+      ],
+      "interactiveItemIds": [
+        "i.emo.w02d4.explain",
+        "i.emo.w02d4.activity",
+        "i.emo.w02d4-q1",
+        "i.emo.w02d4-q2"
+      ],
+      "masteryItemIds": [],
+      "explanationBackItemId": "i.emo.w02d4.explain",
+      "contentVersion": 1
+    },
+    {
+      "id": "emotional-w02d5",
+      "trackId": "emotional",
+      "moduleId": "emotional-p2",
+      "sequence": 5,
+      "title": "Week 2 checkpoint",
+      "objectives": [
+        "Demonstrate precise noticing and naming."
+      ],
+      "concepts": [
+        "w02d5"
+      ],
+      "prerequisites": [
+        "emotional-w02d4"
+      ],
+      "interactiveItemIds": [
+        "i.emo.w02d5.explain"
+      ],
+      "masteryItemIds": [
+        "i.emo.w02d5-q1",
+        "i.emo.w02d5-q2",
+        "i.emo.w02d5-q3"
+      ],
+      "explanationBackItemId": "i.emo.w02d5.explain",
+      "contentVersion": 1
+    },
+    {
+      "id": "emotional-w03d1",
+      "trackId": "emotional",
+      "moduleId": "emotional-p3",
+      "sequence": 1,
+      "title": "Body signals",
+      "objectives": [
+        "Locate emotion in the body without judging it."
+      ],
+      "concepts": [
+        "w03d1"
+      ],
+      "prerequisites": [
+        "emotional-w02d5"
+      ],
+      "interactiveItemIds": [
+        "i.emo.w03d1.explain",
+        "i.emo.w03d1.activity",
+        "i.emo.w03d1-q1",
+        "i.emo.w03d1-q2"
+      ],
+      "masteryItemIds": [],
+      "explanationBackItemId": "i.emo.w03d1.explain",
+      "contentVersion": 1
+    },
+    {
+      "id": "emotional-w03d2",
+      "trackId": "emotional",
+      "moduleId": "emotional-p3",
+      "sequence": 2,
+      "title": "Urge is not action",
+      "objectives": [
+        "Notice an urge and delay acting on it."
+      ],
+      "concepts": [
+        "w03d2"
+      ],
+      "prerequisites": [
+        "emotional-w03d1"
+      ],
+      "interactiveItemIds": [
+        "i.emo.w03d2.explain",
+        "i.emo.w03d2.activity",
+        "i.emo.w03d2-q1",
+        "i.emo.w03d2-q2"
+      ],
+      "masteryItemIds": [],
+      "explanationBackItemId": "i.emo.w03d2.explain",
+      "contentVersion": 1
+    },
+    {
+      "id": "emotional-w03d3",
+      "trackId": "emotional",
+      "moduleId": "emotional-p3",
+      "sequence": 3,
+      "title": "Why venting does not drain anger",
+      "objectives": [
+        "Replace venting with lower-arousal responses."
+      ],
+      "concepts": [
+        "w03d3"
+      ],
+      "prerequisites": [
+        "emotional-w03d2"
+      ],
+      "interactiveItemIds": [
+        "i.emo.w03d3.explain",
+        "i.emo.w03d3.activity",
+        "i.emo.w03d3-q1",
+        "i.emo.w03d3-q2"
+      ],
+      "masteryItemIds": [],
+      "explanationBackItemId": "i.emo.w03d3.explain",
+      "contentVersion": 1
+    },
+    {
+      "id": "emotional-w03d4",
+      "trackId": "emotional",
+      "moduleId": "emotional-p3",
+      "sequence": 4,
+      "title": "Slow breathing and grounding",
+      "objectives": [
+        "Use a short physiological reset."
+      ],
+      "concepts": [
+        "w03d4"
+      ],
+      "prerequisites": [
+        "emotional-w03d3"
+      ],
+      "interactiveItemIds": [
+        "i.emo.w03d4.explain",
+        "i.emo.w03d4.activity",
+        "i.emo.w03d4-q1",
+        "i.emo.w03d4-q2"
+      ],
+      "masteryItemIds": [],
+      "explanationBackItemId": "i.emo.w03d4.explain",
+      "contentVersion": 1
+    },
+    {
+      "id": "emotional-w03d5",
+      "trackId": "emotional",
+      "moduleId": "emotional-p3",
+      "sequence": 5,
+      "title": "Week 3 checkpoint",
+      "objectives": [
+        "Demonstrate body and impulse skills."
+      ],
+      "concepts": [
+        "w03d5"
+      ],
+      "prerequisites": [
+        "emotional-w03d4"
+      ],
+      "interactiveItemIds": [
+        "i.emo.w03d5.explain"
+      ],
+      "masteryItemIds": [
+        "i.emo.w03d5-q1",
+        "i.emo.w03d5-q2",
+        "i.emo.w03d5-q3"
+      ],
+      "explanationBackItemId": "i.emo.w03d5.explain",
+      "contentVersion": 1
+    },
+    {
+      "id": "emotional-w04d1",
+      "trackId": "emotional",
+      "moduleId": "emotional-p4",
+      "sequence": 1,
+      "title": "Facts versus interpretations",
+      "objectives": [
+        "Separate what happened from what you made it mean."
+      ],
+      "concepts": [
+        "w04d1"
+      ],
+      "prerequisites": [
+        "emotional-w03d5"
+      ],
+      "interactiveItemIds": [
+        "i.emo.w04d1.explain",
+        "i.emo.w04d1.activity",
+        "i.emo.w04d1-q1",
+        "i.emo.w04d1-q2"
+      ],
+      "masteryItemIds": [],
+      "explanationBackItemId": "i.emo.w04d1.explain",
+      "contentVersion": 1
+    },
+    {
+      "id": "emotional-w04d2",
+      "trackId": "emotional",
+      "moduleId": "emotional-p4",
+      "sequence": 2,
+      "title": "Generating alternatives",
+      "objectives": [
+        "Produce at least three plausible readings."
+      ],
+      "concepts": [
+        "w04d2"
+      ],
+      "prerequisites": [
+        "emotional-w04d1"
+      ],
+      "interactiveItemIds": [
+        "i.emo.w04d2.explain",
+        "i.emo.w04d2.activity",
+        "i.emo.w04d2-q1",
+        "i.emo.w04d2-q2"
+      ],
+      "masteryItemIds": [],
+      "explanationBackItemId": "i.emo.w04d2.explain",
+      "contentVersion": 1
+    },
+    {
+      "id": "emotional-w04d3",
+      "trackId": "emotional",
+      "moduleId": "emotional-p4",
+      "sequence": 3,
+      "title": "Common thinking traps",
+      "objectives": [
+        "Spot mind-reading, catastrophising and all-or-nothing thinking."
+      ],
+      "concepts": [
+        "w04d3"
+      ],
+      "prerequisites": [
+        "emotional-w04d2"
+      ],
+      "interactiveItemIds": [
+        "i.emo.w04d3.explain",
+        "i.emo.w04d3.activity",
+        "i.emo.w04d3-q1",
+        "i.emo.w04d3-q2"
+      ],
+      "masteryItemIds": [],
+      "explanationBackItemId": "i.emo.w04d3.explain",
+      "contentVersion": 1
+    },
+    {
+      "id": "emotional-w04d4",
+      "trackId": "emotional",
+      "moduleId": "emotional-p4",
+      "sequence": 4,
+      "title": "Evidence check",
+      "objectives": [
+        "Weigh evidence for and against an interpretation."
+      ],
+      "concepts": [
+        "w04d4"
+      ],
+      "prerequisites": [
+        "emotional-w04d3"
+      ],
+      "interactiveItemIds": [
+        "i.emo.w04d4.explain",
+        "i.emo.w04d4.activity",
+        "i.emo.w04d4-q1",
+        "i.emo.w04d4-q2"
+      ],
+      "masteryItemIds": [],
+      "explanationBackItemId": "i.emo.w04d4.explain",
+      "contentVersion": 1
+    },
+    {
+      "id": "emotional-w04d5",
+      "trackId": "emotional",
+      "moduleId": "emotional-p4",
+      "sequence": 5,
+      "title": "Week 4 review",
+      "objectives": [
+        "Retrieve interpretation skills."
+      ],
+      "concepts": [
+        "w04d5"
+      ],
+      "prerequisites": [
+        "emotional-w04d4"
+      ],
+      "interactiveItemIds": [
+        "i.emo.w04d5.explain"
+      ],
+      "masteryItemIds": [
+        "i.emo.w04d5-q1",
+        "i.emo.w04d5-q2"
+      ],
+      "explanationBackItemId": "i.emo.w04d5.explain",
+      "contentVersion": 1
+    },
+    {
+      "id": "emotional-w05d1",
+      "trackId": "emotional",
+      "moduleId": "emotional-p4",
+      "sequence": 6,
+      "title": "Self-distancing",
+      "objectives": [
+        "View an event from a step back."
+      ],
+      "concepts": [
+        "w05d1"
+      ],
+      "prerequisites": [
+        "emotional-w04d5"
+      ],
+      "interactiveItemIds": [
+        "i.emo.w05d1.explain",
+        "i.emo.w05d1.activity",
+        "i.emo.w05d1-q1",
+        "i.emo.w05d1-q2"
+      ],
+      "masteryItemIds": [],
+      "explanationBackItemId": "i.emo.w05d1.explain",
+      "contentVersion": 1
+    },
+    {
+      "id": "emotional-w05d2",
+      "trackId": "emotional",
+      "moduleId": "emotional-p4",
+      "sequence": 7,
+      "title": "Temporal distance",
+      "objectives": [
+        "Ask how this will matter in a week, a year."
+      ],
+      "concepts": [
+        "w05d2"
+      ],
+      "prerequisites": [
+        "emotional-w05d1"
+      ],
+      "interactiveItemIds": [
+        "i.emo.w05d2.explain",
+        "i.emo.w05d2.activity",
+        "i.emo.w05d2-q1",
+        "i.emo.w05d2-q2"
+      ],
+      "masteryItemIds": [],
+      "explanationBackItemId": "i.emo.w05d2.explain",
+      "contentVersion": 1
+    },
+    {
+      "id": "emotional-w05d3",
+      "trackId": "emotional",
+      "moduleId": "emotional-p4",
+      "sequence": 8,
+      "title": "Acceptance and willingness",
+      "objectives": [
+        "Allow a feeling while acting on what matters."
+      ],
+      "concepts": [
+        "w05d3"
+      ],
+      "prerequisites": [
+        "emotional-w05d2"
+      ],
+      "interactiveItemIds": [
+        "i.emo.w05d3.explain",
+        "i.emo.w05d3.activity",
+        "i.emo.w05d3-q1",
+        "i.emo.w05d3-q2"
+      ],
+      "masteryItemIds": [],
+      "explanationBackItemId": "i.emo.w05d3.explain",
+      "contentVersion": 1
+    },
+    {
+      "id": "emotional-w05d4",
+      "trackId": "emotional",
+      "moduleId": "emotional-p4",
+      "sequence": 9,
+      "title": "Reappraisal drills",
+      "objectives": [
+        "Practise fast, fair reappraisals."
+      ],
+      "concepts": [
+        "w05d4"
+      ],
+      "prerequisites": [
+        "emotional-w05d3"
+      ],
+      "interactiveItemIds": [
+        "i.emo.w05d4.explain",
+        "i.emo.w05d4.activity",
+        "i.emo.w05d4-q1",
+        "i.emo.w05d4-q2"
+      ],
+      "masteryItemIds": [],
+      "explanationBackItemId": "i.emo.w05d4.explain",
+      "contentVersion": 1
+    },
+    {
+      "id": "emotional-w05d5",
+      "trackId": "emotional",
+      "moduleId": "emotional-p4",
+      "sequence": 10,
+      "title": "Interpretations checkpoint",
+      "objectives": [
+        "Demonstrate interpretation skills (weeks 4-5)."
+      ],
+      "concepts": [
+        "w05d5"
+      ],
+      "prerequisites": [
+        "emotional-w05d4"
+      ],
+      "interactiveItemIds": [
+        "i.emo.w05d5.explain"
+      ],
+      "masteryItemIds": [
+        "i.emo.w05d5-q1",
+        "i.emo.w05d5-q2",
+        "i.emo.w05d5-q3"
+      ],
+      "explanationBackItemId": "i.emo.w05d5.explain",
+      "contentVersion": 1
+    },
+    {
+      "id": "emotional-w06d1",
+      "trackId": "emotional",
+      "moduleId": "emotional-p5",
+      "sequence": 1,
+      "title": "A toolkit, not a rule",
+      "objectives": [
+        "Know the main strategy families."
+      ],
+      "concepts": [
+        "w06d1"
+      ],
+      "prerequisites": [
+        "emotional-w05d5"
+      ],
+      "interactiveItemIds": [
+        "i.emo.w06d1.explain",
+        "i.emo.w06d1.activity",
+        "i.emo.w06d1-q1",
+        "i.emo.w06d1-q2",
+        "i.emo.w06d1-q3"
+      ],
+      "masteryItemIds": [],
+      "explanationBackItemId": "i.emo.w06d1.explain",
+      "contentVersion": 1
+    },
+    {
+      "id": "emotional-w06d2",
+      "trackId": "emotional",
+      "moduleId": "emotional-p5",
+      "sequence": 2,
+      "title": "Intensity matters",
+      "objectives": [
+        "Match strategy to intensity."
+      ],
+      "concepts": [
+        "w06d2"
+      ],
+      "prerequisites": [
+        "emotional-w06d1"
+      ],
+      "interactiveItemIds": [
+        "i.emo.w06d2.explain",
+        "i.emo.w06d2.activity",
+        "i.emo.w06d2-q1",
+        "i.emo.w06d2-q2"
+      ],
+      "masteryItemIds": [],
+      "explanationBackItemId": "i.emo.w06d2.explain",
+      "contentVersion": 1
+    },
+    {
+      "id": "emotional-w06d3",
+      "trackId": "emotional",
+      "moduleId": "emotional-p5",
+      "sequence": 3,
+      "title": "Problem solving",
+      "objectives": [
+        "Turn a stressor into a next step."
+      ],
+      "concepts": [
+        "w06d3"
+      ],
+      "prerequisites": [
+        "emotional-w06d2"
+      ],
+      "interactiveItemIds": [
+        "i.emo.w06d3.explain",
+        "i.emo.w06d3.activity",
+        "i.emo.w06d3-q1",
+        "i.emo.w06d3-q2"
+      ],
+      "masteryItemIds": [],
+      "explanationBackItemId": "i.emo.w06d3.explain",
+      "contentVersion": 1
+    },
+    {
+      "id": "emotional-w06d4",
+      "trackId": "emotional",
+      "moduleId": "emotional-p5",
+      "sequence": 4,
+      "title": "If-then plans",
+      "objectives": [
+        "Pre-commit to responses for predictable triggers."
+      ],
+      "concepts": [
+        "w06d4"
+      ],
+      "prerequisites": [
+        "emotional-w06d3"
+      ],
+      "interactiveItemIds": [
+        "i.emo.w06d4.explain",
+        "i.emo.w06d4.activity",
+        "i.emo.w06d4-q1",
+        "i.emo.w06d4-q2"
+      ],
+      "masteryItemIds": [],
+      "explanationBackItemId": "i.emo.w06d4.explain",
+      "contentVersion": 1
+    },
+    {
+      "id": "emotional-w06d5",
+      "trackId": "emotional",
+      "moduleId": "emotional-p5",
+      "sequence": 5,
+      "title": "Strategy choice checkpoint",
+      "objectives": [
+        "Demonstrate strategy matching."
+      ],
+      "concepts": [
+        "w06d5"
+      ],
+      "prerequisites": [
+        "emotional-w06d4"
+      ],
+      "interactiveItemIds": [
+        "i.emo.w06d5.explain"
+      ],
+      "masteryItemIds": [
+        "i.emo.w06d5-q1",
+        "i.emo.w06d5-q2",
+        "i.emo.w06d5-q3"
+      ],
+      "explanationBackItemId": "i.emo.w06d5.explain",
+      "contentVersion": 1
+    },
+    {
+      "id": "emotional-w07d1",
+      "trackId": "emotional",
+      "moduleId": "emotional-p6",
+      "sequence": 1,
+      "title": "Rumination versus reflection",
+      "objectives": [
+        "Tell unhelpful loops from useful thinking."
+      ],
+      "concepts": [
+        "w07d1"
+      ],
+      "prerequisites": [
+        "emotional-w06d5"
+      ],
+      "interactiveItemIds": [
+        "i.emo.w07d1.explain",
+        "i.emo.w07d1.activity",
+        "i.emo.w07d1-q1",
+        "i.emo.w07d1-q2"
+      ],
+      "masteryItemIds": [],
+      "explanationBackItemId": "i.emo.w07d1.explain",
+      "contentVersion": 1
+    },
+    {
+      "id": "emotional-w07d2",
+      "trackId": "emotional",
+      "moduleId": "emotional-p6",
+      "sequence": 2,
+      "title": "Worry windows",
+      "objectives": [
+        "Contain worry in time."
+      ],
+      "concepts": [
+        "w07d2"
+      ],
+      "prerequisites": [
+        "emotional-w07d1"
+      ],
+      "interactiveItemIds": [
+        "i.emo.w07d2.explain",
+        "i.emo.w07d2.activity",
+        "i.emo.w07d2-q1",
+        "i.emo.w07d2-q2"
+      ],
+      "masteryItemIds": [],
+      "explanationBackItemId": "i.emo.w07d2.explain",
+      "contentVersion": 1
+    },
+    {
+      "id": "emotional-w07d3",
+      "trackId": "emotional",
+      "moduleId": "emotional-p6",
+      "sequence": 3,
+      "title": "Tolerating uncertainty",
+      "objectives": [
+        "Act well when outcomes are unknown."
+      ],
+      "concepts": [
+        "w07d3"
+      ],
+      "prerequisites": [
+        "emotional-w07d2"
+      ],
+      "interactiveItemIds": [
+        "i.emo.w07d3.explain",
+        "i.emo.w07d3.activity",
+        "i.emo.w07d3-q1",
+        "i.emo.w07d3-q2",
+        "i.emo.w07d3-q3"
+      ],
+      "masteryItemIds": [],
+      "explanationBackItemId": "i.emo.w07d3.explain",
+      "contentVersion": 1
+    },
+    {
+      "id": "emotional-w07d4",
+      "trackId": "emotional",
+      "moduleId": "emotional-p6",
+      "sequence": 4,
+      "title": "Handling setbacks",
+      "objectives": [
+        "Recover from disappointment with a review."
+      ],
+      "concepts": [
+        "w07d4"
+      ],
+      "prerequisites": [
+        "emotional-w07d3"
+      ],
+      "interactiveItemIds": [
+        "i.emo.w07d4.explain",
+        "i.emo.w07d4.activity",
+        "i.emo.w07d4-q1",
+        "i.emo.w07d4-q2"
+      ],
+      "masteryItemIds": [],
+      "explanationBackItemId": "i.emo.w07d4.explain",
+      "contentVersion": 1
+    },
+    {
+      "id": "emotional-w07d5",
+      "trackId": "emotional",
+      "moduleId": "emotional-p6",
+      "sequence": 5,
+      "title": "Rumination and uncertainty checkpoint",
+      "objectives": [
+        "Demonstrate these skills."
+      ],
+      "concepts": [
+        "w07d5"
+      ],
+      "prerequisites": [
+        "emotional-w07d4"
+      ],
+      "interactiveItemIds": [
+        "i.emo.w07d5.explain"
+      ],
+      "masteryItemIds": [
+        "i.emo.w07d5-q1",
+        "i.emo.w07d5-q2",
+        "i.emo.w07d5-q3"
+      ],
+      "explanationBackItemId": "i.emo.w07d5.explain",
+      "contentVersion": 1
+    },
+    {
+      "id": "emotional-w08d1",
+      "trackId": "emotional",
+      "moduleId": "emotional-p7",
+      "sequence": 1,
+      "title": "Receiving criticism",
+      "objectives": [
+        "Hear feedback without defending at once."
+      ],
+      "concepts": [
+        "w08d1"
+      ],
+      "prerequisites": [
+        "emotional-w07d5"
+      ],
+      "interactiveItemIds": [
+        "i.emo.w08d1.explain",
+        "i.emo.w08d1.activity",
+        "i.emo.w08d1-q1",
+        "i.emo.w08d1-q2"
+      ],
+      "masteryItemIds": [],
+      "explanationBackItemId": "i.emo.w08d1.explain",
+      "contentVersion": 1
+    },
+    {
+      "id": "emotional-w08d2",
+      "trackId": "emotional",
+      "moduleId": "emotional-p7",
+      "sequence": 2,
+      "title": "Sorting feedback",
+      "objectives": [
+        "Separate accurate, partly accurate and inaccurate parts."
+      ],
+      "concepts": [
+        "w08d2"
+      ],
+      "prerequisites": [
+        "emotional-w08d1"
+      ],
+      "interactiveItemIds": [
+        "i.emo.w08d2.explain",
+        "i.emo.w08d2.activity",
+        "i.emo.w08d2-q1",
+        "i.emo.w08d2-q2"
+      ],
+      "masteryItemIds": [],
+      "explanationBackItemId": "i.emo.w08d2.explain",
+      "contentVersion": 1
+    },
+    {
+      "id": "emotional-w08d3",
+      "trackId": "emotional",
+      "moduleId": "emotional-p7",
+      "sequence": 3,
+      "title": "Provocation and disrespect",
+      "objectives": [
+        "Respond to provocation without escalating."
+      ],
+      "concepts": [
+        "w08d3"
+      ],
+      "prerequisites": [
+        "emotional-w08d2"
+      ],
+      "interactiveItemIds": [
+        "i.emo.w08d3.explain",
+        "i.emo.w08d3.activity",
+        "i.emo.w08d3-q1",
+        "i.emo.w08d3-q2"
+      ],
+      "masteryItemIds": [],
+      "explanationBackItemId": "i.emo.w08d3.explain",
+      "contentVersion": 1
+    },
+    {
+      "id": "emotional-w08d4",
+      "trackId": "emotional",
+      "moduleId": "emotional-p7",
+      "sequence": 4,
+      "title": "Difficult conversations",
+      "objectives": [
+        "Plan a hard conversation."
+      ],
+      "concepts": [
+        "w08d4"
+      ],
+      "prerequisites": [
+        "emotional-w08d3"
+      ],
+      "interactiveItemIds": [
+        "i.emo.w08d4.explain",
+        "i.emo.w08d4.activity",
+        "i.emo.w08d4-q1",
+        "i.emo.w08d4-q2"
+      ],
+      "masteryItemIds": [],
+      "explanationBackItemId": "i.emo.w08d4.explain",
+      "contentVersion": 1
+    },
+    {
+      "id": "emotional-w08d5",
+      "trackId": "emotional",
+      "moduleId": "emotional-p7",
+      "sequence": 5,
+      "title": "Week 8 review",
+      "objectives": [
+        "Retrieve criticism skills."
+      ],
+      "concepts": [
+        "w08d5"
+      ],
+      "prerequisites": [
+        "emotional-w08d4"
+      ],
+      "interactiveItemIds": [
+        "i.emo.w08d5.explain"
+      ],
+      "masteryItemIds": [
+        "i.emo.w08d5-q1",
+        "i.emo.w08d5-q2"
+      ],
+      "explanationBackItemId": "i.emo.w08d5.explain",
+      "contentVersion": 1
+    },
+    {
+      "id": "emotional-w09d1",
+      "trackId": "emotional",
+      "moduleId": "emotional-p7",
+      "sequence": 6,
+      "title": "Boundaries",
+      "objectives": [
+        "State limits clearly and kindly."
+      ],
+      "concepts": [
+        "w09d1"
+      ],
+      "prerequisites": [
+        "emotional-w08d5"
+      ],
+      "interactiveItemIds": [
+        "i.emo.w09d1.explain",
+        "i.emo.w09d1.activity",
+        "i.emo.w09d1-q1",
+        "i.emo.w09d1-q2",
+        "i.emo.w09d1-q3"
+      ],
+      "masteryItemIds": [],
+      "explanationBackItemId": "i.emo.w09d1.explain",
+      "contentVersion": 1
+    },
+    {
+      "id": "emotional-w09d2",
+      "trackId": "emotional",
+      "moduleId": "emotional-p7",
+      "sequence": 7,
+      "title": "Repair after conflict",
+      "objectives": [
+        "Repair relationships after a rupture."
+      ],
+      "concepts": [
+        "w09d2"
+      ],
+      "prerequisites": [
+        "emotional-w09d1"
+      ],
+      "interactiveItemIds": [
+        "i.emo.w09d2.explain",
+        "i.emo.w09d2.activity",
+        "i.emo.w09d2-q1",
+        "i.emo.w09d2-q2"
+      ],
+      "masteryItemIds": [],
+      "explanationBackItemId": "i.emo.w09d2.explain",
+      "contentVersion": 1
+    },
+    {
+      "id": "emotional-w09d3",
+      "trackId": "emotional",
+      "moduleId": "emotional-p7",
+      "sequence": 8,
+      "title": "Validation",
+      "objectives": [
+        "Acknowledge others' emotions to lower heat."
+      ],
+      "concepts": [
+        "w09d3"
+      ],
+      "prerequisites": [
+        "emotional-w09d2"
+      ],
+      "interactiveItemIds": [
+        "i.emo.w09d3.explain",
+        "i.emo.w09d3.activity",
+        "i.emo.w09d3-q1",
+        "i.emo.w09d3-q2"
+      ],
+      "masteryItemIds": [],
+      "explanationBackItemId": "i.emo.w09d3.explain",
+      "contentVersion": 1
+    },
+    {
+      "id": "emotional-w09d4",
+      "trackId": "emotional",
+      "moduleId": "emotional-p7",
+      "sequence": 9,
+      "title": "Conflict drills",
+      "objectives": [
+        "Practise conflict responses."
+      ],
+      "concepts": [
+        "w09d4"
+      ],
+      "prerequisites": [
+        "emotional-w09d3"
+      ],
+      "interactiveItemIds": [
+        "i.emo.w09d4.explain",
+        "i.emo.w09d4.activity",
+        "i.emo.w09d4-q1",
+        "i.emo.w09d4-q2"
+      ],
+      "masteryItemIds": [],
+      "explanationBackItemId": "i.emo.w09d4.explain",
+      "contentVersion": 1
+    },
+    {
+      "id": "emotional-w09d5",
+      "trackId": "emotional",
+      "moduleId": "emotional-p7",
+      "sequence": 10,
+      "title": "Criticism and conflict checkpoint",
+      "objectives": [
+        "Demonstrate weeks 8-9 skills."
+      ],
+      "concepts": [
+        "w09d5"
+      ],
+      "prerequisites": [
+        "emotional-w09d4"
+      ],
+      "interactiveItemIds": [
+        "i.emo.w09d5.explain"
+      ],
+      "masteryItemIds": [
+        "i.emo.w09d5-q1",
+        "i.emo.w09d5-q2",
+        "i.emo.w09d5-q3"
+      ],
+      "explanationBackItemId": "i.emo.w09d5.explain",
+      "contentVersion": 1
+    },
+    {
+      "id": "emotional-w10d1",
+      "trackId": "emotional",
+      "moduleId": "emotional-p8",
+      "sequence": 1,
+      "title": "Composure is not coldness",
+      "objectives": [
+        "Stay effective while feeling."
+      ],
+      "concepts": [
+        "w10d1"
+      ],
+      "prerequisites": [
+        "emotional-w09d5"
+      ],
+      "interactiveItemIds": [
+        "i.emo.w10d1.explain",
+        "i.emo.w10d1.activity",
+        "i.emo.w10d1-q1",
+        "i.emo.w10d1-q2"
+      ],
+      "masteryItemIds": [],
+      "explanationBackItemId": "i.emo.w10d1.explain",
+      "contentVersion": 1
+    },
+    {
+      "id": "emotional-w10d2",
+      "trackId": "emotional",
+      "moduleId": "emotional-p8",
+      "sequence": 2,
+      "title": "Unreasonable demands",
+      "objectives": [
+        "Respond to excessive asks."
+      ],
+      "concepts": [
+        "w10d2"
+      ],
+      "prerequisites": [
+        "emotional-w10d1"
+      ],
+      "interactiveItemIds": [
+        "i.emo.w10d2.explain",
+        "i.emo.w10d2.activity",
+        "i.emo.w10d2-q1",
+        "i.emo.w10d2-q2"
+      ],
+      "masteryItemIds": [],
+      "explanationBackItemId": "i.emo.w10d2.explain",
+      "contentVersion": 1
+    },
+    {
+      "id": "emotional-w10d3",
+      "trackId": "emotional",
+      "moduleId": "emotional-p8",
+      "sequence": 3,
+      "title": "Decisions under pressure",
+      "objectives": [
+        "Decide well when time is short."
+      ],
+      "concepts": [
+        "w10d3"
+      ],
+      "prerequisites": [
+        "emotional-w10d2"
+      ],
+      "interactiveItemIds": [
+        "i.emo.w10d3.explain",
+        "i.emo.w10d3.activity",
+        "i.emo.w10d3-q1",
+        "i.emo.w10d3-q2"
+      ],
+      "masteryItemIds": [],
+      "explanationBackItemId": "i.emo.w10d3.explain",
+      "contentVersion": 1
+    },
+    {
+      "id": "emotional-w10d4",
+      "trackId": "emotional",
+      "moduleId": "emotional-p8",
+      "sequence": 4,
+      "title": "Pressure drills",
+      "objectives": [
+        "Practise pressure scenarios."
+      ],
+      "concepts": [
+        "w10d4"
+      ],
+      "prerequisites": [
+        "emotional-w10d3"
+      ],
+      "interactiveItemIds": [
+        "i.emo.w10d4.explain",
+        "i.emo.w10d4.activity",
+        "i.emo.w10d4-q1",
+        "i.emo.w10d4-q2"
+      ],
+      "masteryItemIds": [],
+      "explanationBackItemId": "i.emo.w10d4.explain",
+      "contentVersion": 1
+    },
+    {
+      "id": "emotional-w10d5",
+      "trackId": "emotional",
+      "moduleId": "emotional-p8",
+      "sequence": 5,
+      "title": "Week 10 review",
+      "objectives": [
+        "Retrieve composure skills."
+      ],
+      "concepts": [
+        "w10d5"
+      ],
+      "prerequisites": [
+        "emotional-w10d4"
+      ],
+      "interactiveItemIds": [
+        "i.emo.w10d5.explain"
+      ],
+      "masteryItemIds": [
+        "i.emo.w10d5-q1",
+        "i.emo.w10d5-q2"
+      ],
+      "explanationBackItemId": "i.emo.w10d5.explain",
+      "contentVersion": 1
+    },
+    {
+      "id": "emotional-w11d1",
+      "trackId": "emotional",
+      "moduleId": "emotional-p8",
+      "sequence": 6,
+      "title": "Uncertain outcomes at work",
+      "objectives": [
+        "Stay effective during reorganisations and waiting."
+      ],
+      "concepts": [
+        "w11d1"
+      ],
+      "prerequisites": [
+        "emotional-w10d5"
+      ],
+      "interactiveItemIds": [
+        "i.emo.w11d1.explain",
+        "i.emo.w11d1.activity",
+        "i.emo.w11d1-q1",
+        "i.emo.w11d1-q2"
+      ],
+      "masteryItemIds": [],
+      "explanationBackItemId": "i.emo.w11d1.explain",
+      "contentVersion": 1
+    },
+    {
+      "id": "emotional-w11d2",
+      "trackId": "emotional",
+      "moduleId": "emotional-p8",
+      "sequence": 7,
+      "title": "Recovery after a hard meeting",
+      "objectives": [
+        "Reset after difficult interactions."
+      ],
+      "concepts": [
+        "w11d2"
+      ],
+      "prerequisites": [
+        "emotional-w11d1"
+      ],
+      "interactiveItemIds": [
+        "i.emo.w11d2.explain",
+        "i.emo.w11d2.activity",
+        "i.emo.w11d2-q1",
+        "i.emo.w11d2-q2"
+      ],
+      "masteryItemIds": [],
+      "explanationBackItemId": "i.emo.w11d2.explain",
+      "contentVersion": 1
+    },
+    {
+      "id": "emotional-w11d3",
+      "trackId": "emotional",
+      "moduleId": "emotional-p8",
+      "sequence": 8,
+      "title": "Disagreeing with seniors",
+      "objectives": [
+        "Disagree respectfully upward."
+      ],
+      "concepts": [
+        "w11d3"
+      ],
+      "prerequisites": [
+        "emotional-w11d2"
+      ],
+      "interactiveItemIds": [
+        "i.emo.w11d3.explain",
+        "i.emo.w11d3.activity",
+        "i.emo.w11d3-q1",
+        "i.emo.w11d3-q2",
+        "i.emo.w11d3-q3"
+      ],
+      "masteryItemIds": [],
+      "explanationBackItemId": "i.emo.w11d3.explain",
+      "contentVersion": 1
+    },
+    {
+      "id": "emotional-w11d4",
+      "trackId": "emotional",
+      "moduleId": "emotional-p8",
+      "sequence": 9,
+      "title": "Professional drills",
+      "objectives": [
+        "Mixed professional scenarios."
+      ],
+      "concepts": [
+        "w11d4"
+      ],
+      "prerequisites": [
+        "emotional-w11d3"
+      ],
+      "interactiveItemIds": [
+        "i.emo.w11d4.explain",
+        "i.emo.w11d4.activity",
+        "i.emo.w11d4-q1",
+        "i.emo.w11d4-q2"
+      ],
+      "masteryItemIds": [],
+      "explanationBackItemId": "i.emo.w11d4.explain",
+      "contentVersion": 1
+    },
+    {
+      "id": "emotional-w11d5",
+      "trackId": "emotional",
+      "moduleId": "emotional-p8",
+      "sequence": 10,
+      "title": "Professional composure checkpoint",
+      "objectives": [
+        "Demonstrate weeks 10-11."
+      ],
+      "concepts": [
+        "w11d5"
+      ],
+      "prerequisites": [
+        "emotional-w11d4"
+      ],
+      "interactiveItemIds": [
+        "i.emo.w11d5.explain"
+      ],
+      "masteryItemIds": [
+        "i.emo.w11d5-q1",
+        "i.emo.w11d5-q2",
+        "i.emo.w11d5-q3"
+      ],
+      "explanationBackItemId": "i.emo.w11d5.explain",
+      "contentVersion": 1
+    },
+    {
+      "id": "emotional-w12d1",
+      "trackId": "emotional",
+      "moduleId": "emotional-p9",
+      "sequence": 1,
+      "title": "Mapping your patterns",
+      "objectives": [
+        "Find recurring triggers and responses."
+      ],
+      "concepts": [
+        "w12d1"
+      ],
+      "prerequisites": [
+        "emotional-w11d5"
+      ],
+      "interactiveItemIds": [
+        "i.emo.w12d1.explain",
+        "i.emo.w12d1.activity",
+        "i.emo.w12d1-q1",
+        "i.emo.w12d1-q2",
+        "i.emo.w12d1-q3"
+      ],
+      "masteryItemIds": [],
+      "explanationBackItemId": "i.emo.w12d1.explain",
+      "contentVersion": 1
+    },
+    {
+      "id": "emotional-w12d2",
+      "trackId": "emotional",
+      "moduleId": "emotional-p9",
+      "sequence": 2,
+      "title": "When to seek more support",
+      "objectives": [
+        "Recognise limits of self-training."
+      ],
+      "concepts": [
+        "w12d2"
+      ],
+      "prerequisites": [
+        "emotional-w12d1"
+      ],
+      "interactiveItemIds": [
+        "i.emo.w12d2.explain",
+        "i.emo.w12d2.activity",
+        "i.emo.w12d2-q1",
+        "i.emo.w12d2-q2"
+      ],
+      "masteryItemIds": [],
+      "explanationBackItemId": "i.emo.w12d2.explain",
+      "contentVersion": 1
+    },
+    {
+      "id": "emotional-w12d3",
+      "trackId": "emotional",
+      "moduleId": "emotional-p9",
+      "sequence": 3,
+      "title": "Maintenance plan",
+      "objectives": [
+        "Build a sustainable practice."
+      ],
+      "concepts": [
+        "w12d3"
+      ],
+      "prerequisites": [
+        "emotional-w12d2"
+      ],
+      "interactiveItemIds": [
+        "i.emo.w12d3.explain",
+        "i.emo.w12d3.activity",
+        "i.emo.w12d3-q1",
+        "i.emo.w12d3-q2"
+      ],
+      "masteryItemIds": [],
+      "explanationBackItemId": "i.emo.w12d3.explain",
+      "contentVersion": 1
+    },
+    {
+      "id": "emotional-w12d4",
+      "trackId": "emotional",
+      "moduleId": "emotional-p9",
+      "sequence": 4,
+      "title": "Integration drill",
+      "objectives": [
+        "Use the full chain on a real event."
+      ],
+      "concepts": [
+        "w12d4"
+      ],
+      "prerequisites": [
+        "emotional-w12d3"
+      ],
+      "interactiveItemIds": [
+        "i.emo.w12d4.explain",
+        "i.emo.w12d4.activity",
+        "i.emo.w12d4-q1",
+        "i.emo.w12d4-q2",
+        "i.emo.w12d4-q3"
+      ],
+      "masteryItemIds": [],
+      "explanationBackItemId": "i.emo.w12d4.explain",
+      "contentVersion": 1
+    },
+    {
+      "id": "emotional-w12d5",
+      "trackId": "emotional",
+      "moduleId": "emotional-p9",
+      "sequence": 5,
+      "title": "Final checkpoint",
+      "objectives": [
+        "Demonstrate integration."
+      ],
+      "concepts": [
+        "w12d5"
+      ],
+      "prerequisites": [
+        "emotional-w12d4"
+      ],
+      "interactiveItemIds": [
+        "i.emo.w12d5.explain"
+      ],
+      "masteryItemIds": [
+        "i.emo.w12d5-q1",
+        "i.emo.w12d5-q2",
+        "i.emo.w12d5-q3"
+      ],
+      "explanationBackItemId": "i.emo.w12d5.explain",
+      "contentVersion": 1
+    }
+  ],
+  "concepts": [
+    {
+      "id": "w01d1",
+      "trackId": "emotional",
+      "moduleId": "emotional-p1",
+      "label": "Given an everyday episode, you can say what the emotion was signalling and show that feeling it did not oblige a particular action."
+    },
+    {
+      "id": "w01d2",
+      "trackId": "emotional",
+      "moduleId": "emotional-p1",
+      "label": "You can break an episode into situation, interpretation, body, urge, action and outcome, in the right order."
+    },
+    {
+      "id": "w01d3",
+      "trackId": "emotional",
+      "moduleId": "emotional-p1",
+      "label": "You can tell habitual suppression apart from a deliberate, time-limited choice to hold back, and explain the cost of the habit."
+    },
+    {
+      "id": "w01d4",
+      "trackId": "emotional",
+      "moduleId": "emotional-p1",
+      "label": "You can explain why retrieval and spacing are used here, and why self-ratings and check scores are kept separate."
+    },
+    {
+      "id": "w01d5",
+      "trackId": "emotional",
+      "moduleId": "emotional-p1",
+      "label": "Demonstrate the foundations."
+    },
+    {
+      "id": "w02d1",
+      "trackId": "emotional",
+      "moduleId": "emotional-p2",
+      "label": "You can replace a vague word such as \"stressed\" with a more precise emotion word that fits the situation."
+    },
+    {
+      "id": "w02d2",
+      "trackId": "emotional",
+      "moduleId": "emotional-p2",
+      "label": "You can name a feeling in words during an episode and describe what that naming is and is not expected to do."
+    },
+    {
+      "id": "w02d3",
+      "trackId": "emotional",
+      "moduleId": "emotional-p2",
+      "label": "You can identify two or more emotions present at once, including one that may be hidden by another."
+    },
+    {
+      "id": "w02d4",
+      "trackId": "emotional",
+      "moduleId": "emotional-p2",
+      "label": "You can run a 30-second check-in: emotion, intensity, and one body signal."
+    },
+    {
+      "id": "w02d5",
+      "trackId": "emotional",
+      "moduleId": "emotional-p2",
+      "label": "Demonstrate precise noticing and naming."
+    },
+    {
+      "id": "w03d1",
+      "trackId": "emotional",
+      "moduleId": "emotional-p3",
+      "label": "You can locate and describe bodily signals of an emotion without judging them."
+    },
+    {
+      "id": "w03d2",
+      "trackId": "emotional",
+      "moduleId": "emotional-p3",
+      "label": "You can notice an urge, name it, and choose whether and when to act on it."
+    },
+    {
+      "id": "w03d3",
+      "trackId": "emotional",
+      "moduleId": "emotional-p3",
+      "label": "You can explain why venting tends to keep anger going and pick a lower-arousal alternative."
+    },
+    {
+      "id": "w03d4",
+      "trackId": "emotional",
+      "moduleId": "emotional-p3",
+      "label": "You can carry out a short breathing or grounding reset and say when it fits and when it does not."
+    },
+    {
+      "id": "w03d5",
+      "trackId": "emotional",
+      "moduleId": "emotional-p3",
+      "label": "Demonstrate body and impulse skills."
+    },
+    {
+      "id": "w04d1",
+      "trackId": "emotional",
+      "moduleId": "emotional-p4",
+      "label": "You can sort statements about an event into camera facts and interpretations."
+    },
+    {
+      "id": "w04d2",
+      "trackId": "emotional",
+      "moduleId": "emotional-p4",
+      "label": "You can produce at least three plausible readings of an ambiguous event."
+    },
+    {
+      "id": "w04d3",
+      "trackId": "emotional",
+      "moduleId": "emotional-p4",
+      "label": "You can spot mind-reading, catastrophising and all-or-nothing thinking without treating every negative thought as a distortion."
+    },
+    {
+      "id": "w04d4",
+      "trackId": "emotional",
+      "moduleId": "emotional-p4",
+      "label": "You can weigh evidence for and against an interpretation and state what remains uncertain."
+    },
+    {
+      "id": "w04d5",
+      "trackId": "emotional",
+      "moduleId": "emotional-p4",
+      "label": "Retrieve interpretation skills."
+    },
+    {
+      "id": "w05d1",
+      "trackId": "emotional",
+      "moduleId": "emotional-p4",
+      "label": "You can describe an event from a self-distanced perspective."
+    },
+    {
+      "id": "w05d2",
+      "trackId": "emotional",
+      "moduleId": "emotional-p4",
+      "label": "You can use temporal distance to put a current upset in proportion."
+    },
+    {
+      "id": "w05d3",
+      "trackId": "emotional",
+      "moduleId": "emotional-p4",
+      "label": "You can explain acceptance as allowing a feeling while acting on what matters, not as giving up."
+    },
+    {
+      "id": "w05d4",
+      "trackId": "emotional",
+      "moduleId": "emotional-p4",
+      "label": "You can produce a fast, fair reappraisal that is not just positive thinking."
+    },
+    {
+      "id": "w05d5",
+      "trackId": "emotional",
+      "moduleId": "emotional-p4",
+      "label": "Demonstrate interpretation skills (weeks 4-5)."
+    },
+    {
+      "id": "w06d1",
+      "trackId": "emotional",
+      "moduleId": "emotional-p5",
+      "label": "You can name the main strategy families and judge when expressing an emotion fits."
+    },
+    {
+      "id": "w06d2",
+      "trackId": "emotional",
+      "moduleId": "emotional-p5",
+      "label": "You can match a strategy to emotional intensity."
+    },
+    {
+      "id": "w06d3",
+      "trackId": "emotional",
+      "moduleId": "emotional-p5",
+      "label": "You can turn a stressor into one concrete next step."
+    },
+    {
+      "id": "w06d4",
+      "trackId": "emotional",
+      "moduleId": "emotional-p5",
+      "label": "You can write a specific if-then plan for a predictable trigger."
+    },
+    {
+      "id": "w06d5",
+      "trackId": "emotional",
+      "moduleId": "emotional-p5",
+      "label": "Demonstrate strategy matching."
+    },
+    {
+      "id": "w07d1",
+      "trackId": "emotional",
+      "moduleId": "emotional-p6",
+      "label": "You can tell rumination from reflection using the \"is there a next step?\" test."
+    },
+    {
+      "id": "w07d2",
+      "trackId": "emotional",
+      "moduleId": "emotional-p6",
+      "label": "You can set up and run a worry window."
+    },
+    {
+      "id": "w07d3",
+      "trackId": "emotional",
+      "moduleId": "emotional-p6",
+      "label": "You can act while uncertain and tell protective avoidance from restrictive avoidance."
+    },
+    {
+      "id": "w07d4",
+      "trackId": "emotional",
+      "moduleId": "emotional-p6",
+      "label": "You can review a setback for controllable and uncontrollable parts and pick one lesson."
+    },
+    {
+      "id": "w07d5",
+      "trackId": "emotional",
+      "moduleId": "emotional-p6",
+      "label": "Demonstrate these skills."
+    },
+    {
+      "id": "w08d1",
+      "trackId": "emotional",
+      "moduleId": "emotional-p7",
+      "label": "You can hear criticism, ask one clarifying question, and delay your evaluation."
+    },
+    {
+      "id": "w08d2",
+      "trackId": "emotional",
+      "moduleId": "emotional-p7",
+      "label": "You can sort feedback into accurate, partly accurate and inaccurate parts."
+    },
+    {
+      "id": "w08d3",
+      "trackId": "emotional",
+      "moduleId": "emotional-p7",
+      "label": "You can respond to provocation without escalating, choosing to respond, delay, disengage or set a boundary."
+    },
+    {
+      "id": "w08d4",
+      "trackId": "emotional",
+      "moduleId": "emotional-p7",
+      "label": "You can plan a difficult conversation: goal, opening line and a fallback."
+    },
+    {
+      "id": "w08d5",
+      "trackId": "emotional",
+      "moduleId": "emotional-p7",
+      "label": "Retrieve criticism skills."
+    },
+    {
+      "id": "w09d1",
+      "trackId": "emotional",
+      "moduleId": "emotional-p7",
+      "label": "You can state a boundary assertively, and tell assertive from aggressive and passive responses."
+    },
+    {
+      "id": "w09d2",
+      "trackId": "emotional",
+      "moduleId": "emotional-p7",
+      "label": "You can make a specific repair after a conflict."
+    },
+    {
+      "id": "w09d3",
+      "trackId": "emotional",
+      "moduleId": "emotional-p7",
+      "label": "You can validate another person's feeling without having to agree."
+    },
+    {
+      "id": "w09d4",
+      "trackId": "emotional",
+      "moduleId": "emotional-p7",
+      "label": "You can choose a proportionate response in a conflict scenario and explain its trade-off."
+    },
+    {
+      "id": "w09d5",
+      "trackId": "emotional",
+      "moduleId": "emotional-p7",
+      "label": "Demonstrate weeks 8-9 skills."
+    },
+    {
+      "id": "w10d1",
+      "trackId": "emotional",
+      "moduleId": "emotional-p8",
+      "label": "You can stay effective at work while feeling strong emotion, without going cold."
+    },
+    {
+      "id": "w10d2",
+      "trackId": "emotional",
+      "moduleId": "emotional-p8",
+      "label": "You can answer an excessive demand with options instead of a flat yes or no."
+    },
+    {
+      "id": "w10d3",
+      "trackId": "emotional",
+      "moduleId": "emotional-p8",
+      "label": "You can use a pressure routine: pause, state the trade-off, decide, set a review point."
+    },
+    {
+      "id": "w10d4",
+      "trackId": "emotional",
+      "moduleId": "emotional-p8",
+      "label": "You can apply the pressure routine to unfamiliar work scenarios."
+    },
+    {
+      "id": "w10d5",
+      "trackId": "emotional",
+      "moduleId": "emotional-p8",
+      "label": "Retrieve composure skills."
+    },
+    {
+      "id": "w11d1",
+      "trackId": "emotional",
+      "moduleId": "emotional-p8",
+      "label": "You can stay effective during workplace uncertainty by separating controllables from rumours."
+    },
+    {
+      "id": "w11d2",
+      "trackId": "emotional",
+      "moduleId": "emotional-p8",
+      "label": "You can reset after a difficult meeting with a short recovery routine."
+    },
+    {
+      "id": "w11d3",
+      "trackId": "emotional",
+      "moduleId": "emotional-p8",
+      "label": "You can disagree upward, adapting tactics for unequal power and different incentives."
+    },
+    {
+      "id": "w11d4",
+      "trackId": "emotional",
+      "moduleId": "emotional-p8",
+      "label": "You can combine composure skills in mixed professional scenarios."
+    },
+    {
+      "id": "w11d5",
+      "trackId": "emotional",
+      "moduleId": "emotional-p8",
+      "label": "Demonstrate weeks 10-11."
+    },
+    {
+      "id": "w12d1",
+      "trackId": "emotional",
+      "moduleId": "emotional-p9",
+      "label": "You can describe a recurring pattern without claiming its cause, and explain the role of short-term relief."
+    },
+    {
+      "id": "w12d2",
+      "trackId": "emotional",
+      "moduleId": "emotional-p9",
+      "label": "You can recognise signs that self-training is not enough and further support is worth seeking."
+    },
+    {
+      "id": "w12d3",
+      "trackId": "emotional",
+      "moduleId": "emotional-p9",
+      "label": "You can write a realistic maintenance plan."
+    },
+    {
+      "id": "w12d4",
+      "trackId": "emotional",
+      "moduleId": "emotional-p9",
+      "label": "You can design a small behavioural experiment and revise your hypothesis from the result."
+    },
+    {
+      "id": "w12d5",
+      "trackId": "emotional",
+      "moduleId": "emotional-p9",
+      "label": "Demonstrate integration."
+    }
+  ],
+  "misconceptions": []
+}
