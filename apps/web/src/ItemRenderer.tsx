@@ -10,7 +10,19 @@ export function ItemRenderer({ item, onSubmit }: ItemRendererProps) {
   if (item.type === 'reason_choice') return <ReasonChoiceForm item={item} onSubmit={onSubmit} />;
   if (item.type === 'fill_in') return <FillInForm item={item} onSubmit={onSubmit} />;
   if (item.type === 'own_words') return <OwnWordsForm item={item} onSubmit={onSubmit} />;
+  if (item.type === 'classify') return <ClassifyForm item={item} onSubmit={onSubmit} />;
+  if (item.type === 'sequence') return <SequenceForm item={item} onSubmit={onSubmit} />;
+  if (item.type === 'match') return <MatchForm item={item} onSubmit={onSubmit} />;
   return <p>Unsupported item type: {item.type}</p>;
+}
+
+function shuffled<T>(items: T[]): T[] {
+  const copy = [...items];
+  for (let i = copy.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [copy[i], copy[j]] = [copy[j]!, copy[i]!];
+  }
+  return copy;
 }
 
 function Scenario({ text }: { text: string | undefined }) {
@@ -154,5 +166,156 @@ function OwnWordsForm({
         </>
       )}
     </div>
+  );
+}
+
+function ClassifyForm({
+  item,
+  onSubmit,
+}: {
+  item: Extract<Item, { type: 'classify' }>;
+  onSubmit: (value: AnswerValue) => void;
+}) {
+  const [placements, setPlacements] = useState<Record<string, string>>({});
+  const allPlaced = item.entries.every((entry) => placements[entry.id]);
+
+  return (
+    <form
+      className="item-form"
+      onSubmit={(e) => {
+        e.preventDefault();
+        if (!allPlaced) return;
+        onSubmit({ itemType: 'classify', placements });
+      }}
+    >
+      <Scenario text={item.scenario} />
+      <p className="item-prompt">{item.prompt}</p>
+      <div className="classify-entries">
+        {item.entries.map((entry) => (
+          <div key={entry.id} className="classify-entry">
+            <p>{entry.label}</p>
+            <div className="options">
+              {item.categories.map((category) => (
+                <label key={category.id} className="option">
+                  <input
+                    type="radio"
+                    name={entry.id}
+                    value={category.id}
+                    checked={placements[entry.id] === category.id}
+                    onChange={() => setPlacements((prev) => ({ ...prev, [entry.id]: category.id }))}
+                  />
+                  <span>{category.label}</span>
+                </label>
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
+      <button type="submit" disabled={!allPlaced}>
+        Submit
+      </button>
+    </form>
+  );
+}
+
+function SequenceForm({
+  item,
+  onSubmit,
+}: {
+  item: Extract<Item, { type: 'sequence' }>;
+  onSubmit: (value: AnswerValue) => void;
+}) {
+  const [order, setOrder] = useState<string[]>(() => shuffled(item.steps.map((s) => s.id)));
+  const labelById = new Map(item.steps.map((s) => [s.id, s.label]));
+
+  function move(index: number, direction: -1 | 1) {
+    const target = index + direction;
+    if (target < 0 || target >= order.length) return;
+    setOrder((prev) => {
+      const next = [...prev];
+      [next[index], next[target]] = [next[target]!, next[index]!];
+      return next;
+    });
+  }
+
+  return (
+    <div className="item-form">
+      <Scenario text={item.scenario} />
+      <p className="item-prompt">{item.prompt}</p>
+      <ol className="sequence-list">
+        {order.map((id, index) => (
+          <li key={id} className="sequence-step">
+            <span>{labelById.get(id)}</span>
+            <span className="sequence-controls">
+              <button type="button" disabled={index === 0} onClick={() => move(index, -1)} aria-label="Move up">
+                ↑
+              </button>
+              <button
+                type="button"
+                disabled={index === order.length - 1}
+                onClick={() => move(index, 1)}
+                aria-label="Move down"
+              >
+                ↓
+              </button>
+            </span>
+          </li>
+        ))}
+      </ol>
+      <button type="button" onClick={() => onSubmit({ itemType: 'sequence', order })}>
+        Submit
+      </button>
+    </div>
+  );
+}
+
+function MatchForm({
+  item,
+  onSubmit,
+}: {
+  item: Extract<Item, { type: 'match' }>;
+  onSubmit: (value: AnswerValue) => void;
+}) {
+  const [selections, setSelections] = useState<Record<string, string>>({});
+  const allMatched = item.left.every((l) => selections[l.id]);
+
+  return (
+    <form
+      className="item-form"
+      onSubmit={(e) => {
+        e.preventDefault();
+        if (!allMatched) return;
+        onSubmit({
+          itemType: 'match',
+          pairs: item.left.map((l) => ({ leftId: l.id, rightId: selections[l.id]! })),
+        });
+      }}
+    >
+      <Scenario text={item.scenario} />
+      <p className="item-prompt">{item.prompt}</p>
+      <div className="match-rows">
+        {item.left.map((l) => (
+          <label key={l.id} className="match-row">
+            <span>{l.label}</span>
+            <select
+              value={selections[l.id] ?? ''}
+              onChange={(e) => setSelections((prev) => ({ ...prev, [l.id]: e.target.value }))}
+            >
+              <option value="" disabled>
+                Choose a match…
+              </option>
+              {item.right.map((r) => (
+                <option key={r.id} value={r.id}>
+                  {r.label}
+                </option>
+              ))}
+            </select>
+          </label>
+        ))}
+      </div>
+      <button type="submit" disabled={!allMatched}>
+        Submit
+      </button>
+    </form>
   );
 }

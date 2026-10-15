@@ -164,6 +164,75 @@ textarea {
   background: var(--code-bg);
 }
 
+.classify-entries {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.classify-entry {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 12px 16px;
+}
+
+.classify-entry p {
+  margin: 0 0 8px;
+}
+
+.classify-entry .options {
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.sequence-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.sequence-step {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 10px 14px;
+}
+
+.sequence-controls {
+  display: flex;
+  gap: 4px;
+  flex-shrink: 0;
+}
+
+.sequence-controls button {
+  width: 32px;
+}
+
+.match-rows {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.match-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.match-row select {
+  font: inherit;
+  padding: 6px 8px;
+}
+
 .exit-link {
   margin-top: 24px;
   background: none;
