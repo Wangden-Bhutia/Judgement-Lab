@@ -1,4 +1,4 @@
-import { ConceptId, ItemId, LessonId } from '@judgment-lab/content-schema';
+import type { ConceptId, ItemId, LessonId } from '@judgment-lab/content-schema';
 
 export type AttemptSource = 'lesson' | 'review' | 'checkpoint';
 

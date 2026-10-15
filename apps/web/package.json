@@ -12,6 +12,10 @@
     "test": "vitest run --passWithNoTests"
   },
   "dependencies": {
+    "@judgment-lab/content-schema": "workspace:*",
+    "@judgment-lab/core-engine": "workspace:*",
+    "@judgment-lab/storage": "workspace:*",
+    "@judgment-lab/track-strategic": "workspace:*",
     "react": "^19.2.8",
     "react-dom": "^19.2.8"
   },

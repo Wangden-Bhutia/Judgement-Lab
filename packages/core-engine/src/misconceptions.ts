@@ -1,5 +1,5 @@
-import { MisconceptionId } from '@judgment-lab/content-schema';
-import { AnswerEvaluation } from './assessment';
+import type { MisconceptionId } from '@judgment-lab/content-schema';
+import type { AnswerEvaluation } from './assessment';
 
 /** A misconception counts as "recurring" once it has shown up this many times. */
 export const RECURRING_MISCONCEPTION_THRESHOLD = 2;

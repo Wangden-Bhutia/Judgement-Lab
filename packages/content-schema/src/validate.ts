@@ -1,4 +1,4 @@
-import { Curriculum, Item } from './types';
+import type { Curriculum, Item } from './types';
 import { curriculumSchema, itemSchema } from './schemas';
 
 export interface ValidationError {

@@ -1,4 +1,4 @@
-import { Lesson, LessonId } from '@judgment-lab/content-schema';
+import type { Lesson, LessonId } from '@judgment-lab/content-schema';
 
 export type LessonStatus = 'locked' | 'available' | 'in_progress' | 'completed';
 
