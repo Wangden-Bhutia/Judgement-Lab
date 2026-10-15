@@ -48,6 +48,18 @@
  * - altChecks (retake variants) are not ported -- same "only the first
  *   variant" V1 simplification already applied to Strategos content.
  *
+ * LESSON-LEVEL CONTENT: session.teach/example/practice/apply/reflect are
+ * NOT items -- they're the instructional prose, worked example, retrieval-
+ * practice prompts, real-world task and reflection prompt a learner sees
+ * around the items, not graded answers. An earlier version of this script
+ * dropped all five, porting only the assessment layer (checks/activity/
+ * explain) -- which silently broke ESL's own pedagogy: its distractors are
+ * explicitly written on the assumption the learner read `teach` first (see
+ * esl-source/distractors.ts's file comment). content-schema's Lesson type
+ * now carries these as optional fields (teach, example, practicePrompts,
+ * apply, reflect) precisely so this track can keep them; Strategic
+ * Reasoning's discovery-first lessons simply leave them undefined.
+ *
  * Run with: pnpm convert:content (tsx scripts/convertEmotionalContent.ts)
  */
 import { writeFileSync, mkdirSync } from 'node:fs';
@@ -239,6 +251,11 @@ for (const session of SESSIONS) {
     interactiveItemIds,
     masteryItemIds,
     explanationBackItemId: explainItem.id,
+    teach: session.teach,
+    example: session.example,
+    practicePrompts: session.practice,
+    apply: session.apply,
+    reflect: session.reflect,
     contentVersion: 1,
   };
 

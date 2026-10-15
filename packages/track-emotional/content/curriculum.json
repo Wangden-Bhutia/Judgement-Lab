@@ -174,6 +174,20 @@
       ],
       "masteryItemIds": [],
       "explanationBackItemId": "i.emo.w01d1.explain",
+      "teach": [
+        "An emotion is a whole-body response to something that matters to you. It usually includes a situation, an interpretation of that situation, bodily changes, an urge to act, and a feeling you can name.",
+        "Emotions carry information. Anger often signals a perceived obstacle or unfairness. Anxiety signals a possible threat. Sadness signals loss. The signal can be accurate or mistaken, and it is still worth reading.",
+        "Feeling an emotion and acting on it are two different events. This whole programme trains the space between them.",
+        "A useful habit is to ask two questions whenever a strong feeling arrives: \"What is this emotion telling me matters right now?\" and \"What is it urging me to do?\" The first question treats the emotion as information. The second makes the urge visible as a proposal you can accept, change or decline. Neither question requires you to agree that the emotion is correct."
+      ],
+      "example": "Ravi's train is cancelled. He feels a jolt of anger (signal: an obstacle to getting to work) and an urge to argue with the station staff. He notices the urge, names the anger, and instead checks for the next bus. The emotion was real and informative; the action was chosen.",
+      "practicePrompts": [
+        "Recall one moment from the last 24 hours when you felt something clearly.",
+        "Name the situation in one sentence of plain fact.",
+        "Name the emotion and the urge it came with."
+      ],
+      "apply": "Today, when you notice one clear emotion, silently ask: \"What does this say matters?\" and \"What is it urging me to do?\" Note the answer in a quick check-in.",
+      "reflect": "What emotion do you notice most often in your week, and what does it usually try to get you to do?",
       "contentVersion": 1
     },
     {
@@ -199,6 +213,20 @@
       ],
       "masteryItemIds": [],
       "explanationBackItemId": "i.emo.w01d2.explain",
+      "teach": [
+        "An emotional episode unfolds as a chain: a situation happens, you interpret it, your body reacts, an urge appears, you act (or not), and there is an outcome.",
+        "The process model of emotion regulation shows that you can step in at several points: choosing or changing the situation, shifting attention, changing the interpretation, or changing the response.",
+        "Earlier steps are often easier to influence than later ones. Once the urge is strong, you have fewer options, so the training builds skills at each link.",
+        "Mapping a chain after the event is easier than during it, and that is fine. Repeated mapping teaches you where your own chains usually speed up. Many people find that the interpretation link happens so fast it feels like part of the situation itself. Writing the situation in plain, camera-like language is the first step to seeing that the interpretation was a separate event."
+      ],
+      "example": "Situation: the client did not attend the call. Interpretation: \"They are losing interest.\" Body: tight chest. Urge: send a pushy email. Action: sent a short, friendly reschedule note. Outcome: they replied that their internet had failed. A different interpretation was available at link two.",
+      "practicePrompts": [
+        "Take yesterday's moment from Session 1.",
+        "Write the six links: situation, interpretation, body, urge, action, outcome.",
+        "Mark one link where a different choice was possible."
+      ],
+      "apply": "Map one emotion chain from today, link by link, in a full reflection entry.",
+      "reflect": "Where in the chain do you usually notice yourself, early or late?",
       "contentVersion": 1
     },
     {
@@ -224,6 +252,20 @@
       ],
       "masteryItemIds": [],
       "explanationBackItemId": "i.emo.w01d3.explain",
+      "teach": [
+        "Suppression means hiding the outward signs of an emotion while still feeling it. Correlational research links habitual suppression with worse wellbeing and relationships than habitual reappraisal.",
+        "This does not mean you should express everything. A surgeon or a negotiator may need to hold a neutral face for a while. The skill is choosing on purpose and not relying on one strategy everywhere.",
+        "The goal of this lab is flexible regulation: notice the emotion, allow it, and pick a response that fits the context and your goals.",
+        "Two separate questions are hiding in \"should I hide this?\". One is about expression: is showing this feeling useful here, with these people, now? The other is about experience: am I letting myself know what I feel? Choosing not to show anger to a client can be wise; refusing to admit to yourself that you are angry tends to remove information you need later."
+      ],
+      "example": "Meera stays calm-faced during a tense negotiation (a deliberate, short-term choice). Afterwards she names her frustration to a colleague and plans her next move. She did not rely on hiding the feeling as her only tool, and did not let it leak in the meeting.",
+      "practicePrompts": [
+        "Think of a recent time you hid a feeling.",
+        "Was hiding it useful in that moment? What did it cost later?",
+        "Write one alternative you could have used alongside or instead."
+      ],
+      "apply": "Notice one moment this week when you hide a feeling. Afterwards, decide whether it was a choice that fit the context, and whether the feeling needs another outlet.",
+      "reflect": "When is hiding a feeling genuinely useful for you, and when does it backfire?",
       "contentVersion": 1
     },
     {
@@ -250,6 +292,22 @@
       ],
       "masteryItemIds": [],
       "explanationBackItemId": "i.emo.w01d4.explain",
+      "teach": [
+        "Reading about a skill is not the same as being able to use it under pressure. This lab uses retrieval practice (answering from memory) and spaced reviews (returning after days) because both improve long-term retention in learning research.",
+        "Each lesson has quick checks. Each phase ends with a checkpoint. Items you master come back later as reviews. Completion, mastery and retention are tracked separately, so finishing a lesson is never counted as knowing it.",
+        "Getting a question wrong is useful: it tells the system what to bring back.",
+        "Limits of self-report. Ratings of your own skills are useful but imperfect. People tend to rate themselves differently depending on their mood that day, what they compare themselves with, and what they hope is true. After learning about a skill, many people become stricter judges of themselves, so a self-rating can drop even while their skill grows. That is why this app keeps self-ratings separate from what you show in checks and scenarios, and never merges them into one score.",
+        "Why reassess. The baseline, post-programme check and follow-ups exist so you can compare like with like over time. They use different items from the lessons so practice does not inflate them. Even so, a change between two checks can come from many things: a calmer month, a new job, familiarity with the format. Read changes as a prompt to reflect, not as proof that the programme worked. Example: your confidence rating drops from 7 to 5 after week 4, while your checkpoint scores rise. A reasonable reading is that you now notice more, not that you have become worse.",
+        "Retrieval feels harder than rereading, and that difficulty is part of why it works. When an answer comes slowly, the effort of finding it strengthens later recall. Spacing works for a related reason: coming back after some forgetting makes the next retrieval more effortful and more durable. This app schedules reviews for you so you do not have to judge when."
+      ],
+      "example": "Instead of rereading the emotion chain notes, Arjun writes the six links from memory, gets four, checks, and the next day gets six. The gap he found is exactly what the app will bring back in a later review.",
+      "practicePrompts": [
+        "Without looking back, write the six links of the emotion chain.",
+        "Check against Session 2.",
+        "Note which link you forgot."
+      ],
+      "apply": "Tomorrow, before opening the app, write the six links of the emotion chain from memory, then check.",
+      "reflect": "What makes it hard for you to practise something regularly, and what small change would help?",
       "contentVersion": 1
     },
     {
@@ -276,6 +334,16 @@
         "i.emo.w01d5-q3"
       ],
       "explanationBackItemId": "i.emo.w01d5.explain",
+      "teach": [
+        "This checkpoint mixes questions from the week. Answer from memory. A score of 80% or more marks the phase as mastered. The 80% threshold is a design choice for this app, not a research-derived cut-off. This checkpoint covers phase 1, foundations: understand what emotions do and how this training works.",
+        "Questions are drawn from a pool of the phase's items, with alternatives, so a retake shows different questions where possible. Up to two questions come from earlier phases to keep older skills active. If you miss questions, the results screen lists the lessons to revisit."
+      ],
+      "practicePrompts": [
+        "Answer the checkpoint questions.",
+        "Read each explanation, even for correct answers."
+      ],
+      "apply": "Pick the skill from this phase you found hardest and use it once in a real situation this week, then record it in the Journal.",
+      "reflect": "What is one idea from this week you want to remember?",
       "contentVersion": 1
     },
     {
@@ -301,6 +369,20 @@
       ],
       "masteryItemIds": [],
       "explanationBackItemId": "i.emo.w02d1.explain",
+      "teach": [
+        "People differ in how finely they distinguish their emotions. Saying \"irritated, embarrassed and worried\" carries more information than \"bad\".",
+        "Studies link finer emotion differentiation with using more regulation strategies under strong emotion and with better coping, though the causal direction is not settled.",
+        "Precision helps you choose: embarrassment calls for a different response than irritation.",
+        "Granularity is a skill you can practise. A simple method is to pick the general word first (\"bad\"), then ask: is it more like anger, fear, sadness or shame? Then go one level finer: annoyed, resentful, betrayed? Each step adds information about what happened and what might help. Studies linking granularity with better coping are mostly correlational, so treat it as a promising skill, not a proven cure-all."
+      ],
+      "example": "Before: \"Work was bad today.\" After: \"I felt dismissed when my idea was skipped (6/10), anxious about tomorrow's review (5/10) and a bit relieved the day was over (3/10).\" The second version points to two different things to do: speak up next meeting, and prepare for the review.",
+      "practicePrompts": [
+        "Pick a recent \"stressed\" moment.",
+        "Replace \"stressed\" with two or three more specific words.",
+        "Rate each word 0 to 10 for intensity."
+      ],
+      "apply": "In each check-in this week, replace one general word with a more precise one.",
+      "reflect": "Which emotion words do you rarely use but might actually be feeling?",
       "contentVersion": 1
     },
     {
@@ -326,6 +408,20 @@
       ],
       "masteryItemIds": [],
       "explanationBackItemId": "i.emo.w02d2.explain",
+      "teach": [
+        "Putting a feeling into words, such as \"this is frustration\", is called affect labelling. A neuroimaging study found labelling was associated with lower amygdala response to emotional images.",
+        "In daily life the practical value is a brief pause and a shift from being inside the feeling to observing it. It is not a cure; it is a first step.",
+        "Use a neutral form: \"I notice frustration\" rather than \"I am a frustrated person\".",
+        "Labelling works best as a calm description, not as an argument with the feeling. \"I notice anger\" or \"There is worry here\" is enough. Long explanations of why you feel it can drift into rumination. Keep it short, specific and present-tense, then return to the task. The neuroimaging finding behind this is from laboratory tasks with images, so the effect in daily life may be smaller."
+      ],
+      "example": "In a queue that is not moving, Asha notices her jaw tighten and says silently, \"I notice irritation, about a 6.\" It does not vanish, but she finds herself watching it rather than tapping her foot and sighing loudly. The queue still moves slowly; she is less hooked.",
+      "practicePrompts": [
+        "Next time a feeling rises today, say silently: \"I notice ___\".",
+        "Add intensity: \"about a 6\".",
+        "Note what happened in the next 10 seconds."
+      ],
+      "apply": "Use a silent label (\"this is irritation\") in the next three moments of noticeable emotion.",
+      "reflect": "What happened when you named a feeling today?",
       "contentVersion": 1
     },
     {
@@ -351,6 +447,20 @@
       ],
       "masteryItemIds": [],
       "explanationBackItemId": "i.emo.w02d3.explain",
+      "teach": [
+        "Emotions often come in layers. Anger can sit on top of hurt. Irritation can cover anxiety about failing.",
+        "The first emotion you notice is not always the most important one. Asking \"what else is here?\" often reveals the feeling that best explains your urge.",
+        "This is an exploratory question, not a diagnosis. Treat the answer as a working hypothesis.",
+        "Some emotions act as a cover for others. Anger can be easier to feel than hurt or fear, because anger has energy and a target. If anger keeps returning in one relationship, it can be worth asking: \"Is there something softer underneath?\" This is a question to explore, not an assumption to impose."
+      ],
+      "example": "Sana snaps at her brother for being late. Asking \"what else is here?\" she finds worry: he had been driving at night in the rain. The anger was real, but the worry explained the intensity. She tells him, \"I was worried,\" which lands far better than criticism.",
+      "practicePrompts": [
+        "Recall a time you were angry.",
+        "Ask: what else was here? Hurt, fear, shame, disappointment?",
+        "Write which layer best explains what you wanted at the time."
+      ],
+      "apply": "In your next full reflection, name at least two emotions and rate each one.",
+      "reflect": "Which emotion tends to show up as a cover for another in your life?",
       "contentVersion": 1
     },
     {
@@ -376,6 +486,19 @@
       ],
       "masteryItemIds": [],
       "explanationBackItemId": "i.emo.w02d4.explain",
+      "teach": [
+        "A short daily check-in builds the noticing habit. It should take under a minute so you keep doing it.",
+        "Use the Journal's quick check-in: pick up to three emotions, rate intensity, add one optional line. You do not need to write essays.",
+        "Patterns become visible after a couple of weeks, not after a day.",
+        "Habits form faster when they are attached to something you already do. \"After I put the kettle on, I will do a 30-second check-in\" uses an existing cue. Keep it tiny on purpose. If a full reflection is too much on a busy day, one word is still a check-in. The goal is consistency, not detail."
+      ],
+      "example": "Every day after lunch, Kiran opens the Journal, taps \"Frustration 4\" and \"Calm 6\", writes \"slow morning, better afternoon,\" and closes it. 40 seconds. After three weeks she notices frustration spikes almost every Monday morning: something concrete to plan for.",
+      "practicePrompts": [
+        "Open the Journal and add a quick check-in now.",
+        "Choose one fixed moment in your day (after lunch, end of work) for tomorrow's check-in."
+      ],
+      "apply": "Write your own if-then plan for a daily check-in in the Journal, using a cue you already have.",
+      "reflect": "What cue in your day could anchor the check-in?",
       "contentVersion": 1
     },
     {
@@ -402,6 +525,16 @@
         "i.emo.w02d5-q3"
       ],
       "explanationBackItemId": "i.emo.w02d5.explain",
+      "teach": [
+        "Mixed questions from the week. 80% or more marks this phase mastered (design choice). This checkpoint covers phase 2, noticing and naming: distinguish and label emotional states precisely.",
+        "Questions are drawn from a pool of the phase's items, with alternatives, so a retake shows different questions where possible. Up to two questions come from earlier phases to keep older skills active. If you miss questions, the results screen lists the lessons to revisit."
+      ],
+      "practicePrompts": [
+        "Answer from memory.",
+        "Review explanations."
+      ],
+      "apply": "Pick the skill from this phase you found hardest and use it once in a real situation this week, then record it in the Journal.",
+      "reflect": "Which naming habit will you keep?",
       "contentVersion": 1
     },
     {
@@ -427,6 +560,20 @@
       ],
       "masteryItemIds": [],
       "explanationBackItemId": "i.emo.w03d1.explain",
+      "teach": [
+        "Emotions show up in the body: tight jaw, warm face, fast heartbeat, heavy chest, restless legs. These sensations are often the earliest signal available.",
+        "Body signals are not reliable labels on their own. A fast heartbeat can be anxiety, excitement or coffee. Use them as an early alert, then name the emotion.",
+        "A body scan of 30 seconds, top to bottom, is enough.",
+        "Body signals are often the earliest part of an emotional episode you can detect, sometimes before you can name the feeling. Common ones include jaw or shoulder tension, heat in the face, a fast heartbeat, a sinking stomach or restless hands. Different people have different early signs. The skill is to notice yours without deciding they mean danger."
+      ],
+      "example": "During a call, Vikram notices heat in his face and tight shoulders before any thought appears. He labels it \"maybe embarrassment\" because the client just pointed out an error. Body first, label second, then choose.",
+      "practicePrompts": [
+        "Do a 30-second scan now: head, jaw, shoulders, chest, stomach, hands.",
+        "Note any tension or heat.",
+        "Name one possible emotion that fits, if any."
+      ],
+      "apply": "Find your personal early warning sign: next time you notice irritation, scan jaw, shoulders, chest and stomach.",
+      "reflect": "Where does your body first show stress?",
       "contentVersion": 1
     },
     {
@@ -452,6 +599,19 @@
       ],
       "masteryItemIds": [],
       "explanationBackItemId": "i.emo.w03d2.explain",
+      "teach": [
+        "Every emotion carries an action tendency: anger pushes to attack or defend, anxiety to avoid, shame to hide.",
+        "Noticing \"I have the urge to send a sharp reply\" creates a gap. You do not have to fight the urge; you only need to not act yet.",
+        "A simple rule: for any message written in strong emotion, wait and reread before sending.",
+        "Urges rise, peak and fall, often within minutes, if you do not feed them. Delaying is not the same as refusing: \"I will decide in ten minutes\" is enough. Physical distance helps: put the phone down, step outside, sit on your hands for a moment. A useful phrase is \"Notice, name, wait, choose.\""
+      ],
+      "example": "Draft written at 11pm in anger: \"Frankly this is unacceptable.\" Rule: do not send. At 9am she rereads, keeps the main point, and sends: \"I am concerned about the change in scope. Can we discuss today?\" Same message, without the cost of the first version.",
+      "practicePrompts": [
+        "Name your three most common urges under stress.",
+        "For each, write a delay action: wait 10 minutes, draft but do not send, take a walk."
+      ],
+      "apply": "Pick one recurring urge (checking email, sending a sharp reply) and practise a ten-minute delay once this week.",
+      "reflect": "Which urge costs you the most when you act on it?",
       "contentVersion": 1
     },
     {
@@ -477,6 +637,19 @@
       ],
       "masteryItemIds": [],
       "explanationBackItemId": "i.emo.w03d3.explain",
+      "teach": [
+        "A popular idea says anger builds like steam and must be let out. An experiment found that hitting a punching bag while thinking about the person who angered you did not reduce anger and was followed by more aggression than doing nothing.",
+        "Lower-arousal options such as slow breathing, a walk with a neutral focus, or a distraction task give the urge time to fall.",
+        "Talking to someone can still help when it aims at understanding or problem solving rather than replaying the grievance.",
+        "Talking about anger is not the same as venting. Describing what happened to someone calm, once intensity has dropped, and asking what you might do next tends to move toward problem solving. Repeating the story with rising heat, or rehearsing what you wish you had said, tends to keep the episode going. A useful check is to ask yourself afterwards: am I calmer and clearer, or more wound up?"
+      ],
+      "example": "After a heated argument, Nikhil wants to go to the gym and \"punch it out\" while replaying the fight. Instead he walks home with a podcast, then later talks with a friend about what he actually wants from the other person. Anger fades faster than usual.",
+      "practicePrompts": [
+        "Plan one lower-arousal action for your next angry moment.",
+        "Write it as: \"If I feel angry at work, then I will step out and walk for five minutes.\""
+      ],
+      "apply": "Next time you feel angry, try a lower-arousal option first and compare how you feel 20 minutes later.",
+      "reflect": "What do you usually do with anger, and does it lower it?",
       "contentVersion": 1
     },
     {
@@ -502,6 +675,19 @@
       ],
       "masteryItemIds": [],
       "explanationBackItemId": "i.emo.w03d4.explain",
+      "teach": [
+        "Slow breathing with a longer out-breath is a simple way to lower arousal for many people. Try about four seconds in and six seconds out for one minute.",
+        "Grounding redirects attention to the present: name five things you see, four you can touch, three you hear.",
+        "These are response-modulation and attention tools. They do not solve the situation; they make you ready to choose.",
+        "Resets are short on purpose. Their job is to bring intensity down enough that the rest of your skills become available, not to make the feeling vanish. If one minute is not enough, repeat it, or combine two resets, such as stepping outside and breathing slowly. Avoid using resets as a way to never return to the issue; after the reset, decide what, if anything, needs to happen next."
+      ],
+      "example": "Before a difficult meeting, Fatima rates her tension at 7, does one minute of 4-in, 6-out breathing in the corridor, and rates it at 5. Still tense, but ready to listen. The breathing did not fix the meeting; it helped her enter it well.",
+      "practicePrompts": [
+        "Do one minute of 4-in, 6-out breathing now (timer in the practice panel).",
+        "Rate your tension before and after, 0 to 10."
+      ],
+      "apply": "Practise the one-minute breathing timer once a day for three days while calm, so it is familiar when you need it.",
+      "reflect": "Which reset will you actually use in public?",
       "contentVersion": 1
     },
     {
@@ -528,6 +714,15 @@
         "i.emo.w03d5-q3"
       ],
       "explanationBackItemId": "i.emo.w03d5.explain",
+      "teach": [
+        "Mixed questions. 80% or more marks mastery (design choice). This checkpoint covers phase 3, body and impulse: separate sensations, urges and actions.",
+        "Questions are drawn from a pool of the phase's items, with alternatives, so a retake shows different questions where possible. Up to two questions come from earlier phases to keep older skills active. If you miss questions, the results screen lists the lessons to revisit."
+      ],
+      "practicePrompts": [
+        "Answer from memory."
+      ],
+      "apply": "Pick the skill from this phase you found hardest and use it once in a real situation this week, then record it in the Journal.",
+      "reflect": "What did you learn about your own body signals?",
       "contentVersion": 1
     },
     {
@@ -553,6 +748,20 @@
       ],
       "masteryItemIds": [],
       "explanationBackItemId": "i.emo.w04d1.explain",
+      "teach": [
+        "A fact is what a camera would record: words said, actions taken, times. An interpretation is the meaning you add: motives, judgements, predictions.",
+        "Interpretations are not wrong by default, but they are guesses. Emotions often respond to the interpretation more than the fact.",
+        "Writing the two side by side is one of the most useful skills in this lab.",
+        "A practical test is the \"camera check\": could a video camera record it? A camera can record that someone did not say hello. It cannot record that they \"ignored\" you, because that includes a guess about intention. Some interpretations turn out to be accurate. The point is to know which statements are guesses so you can check them before acting as if they were facts."
+      ],
+      "example": "Camera facts: \"The manager replied in one line. It said: Fix this.\" Interpretation: \"She is annoyed with me and doubts my ability.\" Seen side by side, the evidence for the interpretation is thin; it might be true, but it is not yet a fact.",
+      "practicePrompts": [
+        "Take a recent irritation.",
+        "Write two columns: \"camera facts\" and \"my interpretation\".",
+        "Count how many items in the fact column contain a motive. Move them."
+      ],
+      "apply": "Take one annoying moment today and write it as camera facts only, then add your interpretation on a separate line.",
+      "reflect": "Which interpretation do you make most automatically?",
       "contentVersion": 1
     },
     {
@@ -578,6 +787,20 @@
       ],
       "masteryItemIds": [],
       "explanationBackItemId": "i.emo.w04d2.explain",
+      "teach": [
+        "When one interpretation feels obviously true, generate at least two alternatives. Not to talk yourself out of the feeling, but to test how certain you really are.",
+        "Example: a colleague did not reply. Possible readings: busy, did not see it, annoyed with me, waiting for information. Which has the most evidence?",
+        "This is the core move of reappraisal: changing the meaning when the first meaning is not well supported.",
+        "Generating alternatives is not about forcing yourself to believe a positive story. It is about loosening the grip of the first story so that you can look for information. A useful set of three: one reading that blames the other person, one that is about circumstances, and one that involves you. Then ask what you would need to know to tell them apart."
+      ],
+      "example": "A colleague did not reply to a request for two days. Readings: on leave (30%), overloaded (40%), annoyed with me (15%), missed it (15%). The anger at \"being ignored\" drops once it is clear that the evidence for the worst reading is weak. Next step: a friendly follow-up.",
+      "practicePrompts": [
+        "Write three alternative explanations for a recent event.",
+        "Rate each 0 to 100% for likelihood.",
+        "Notice whether your emotion shifts."
+      ],
+      "apply": "Next time you feel a jolt from someone's behaviour, write three readings: about them, about circumstances, and about you.",
+      "reflect": "When was your first interpretation wrong recently?",
       "contentVersion": 1
     },
     {
@@ -603,6 +826,20 @@
       ],
       "masteryItemIds": [],
       "explanationBackItemId": "i.emo.w04d3.explain",
+      "teach": [
+        "Some interpretation habits are common under stress: mind-reading (assuming you know what others think), catastrophising (jumping to the worst outcome), all-or-nothing (one mistake equals total failure), and personalising (assuming it is about you).",
+        "Spotting a trap does not make the thought false. It flags that the thought deserves a check.",
+        "Label it lightly: \"that might be mind-reading\".",
+        "Thinking traps are not signs of a faulty mind; everyone uses these shortcuts, especially when tired or stressed. Naming the trap (\"that is mind-reading\") gives you a moment to ask a better question. For mind-reading: \"What do I actually know about what they think?\" For catastrophising: \"What is most likely, and how would I cope?\" For all-or-nothing: \"What is in between?\""
+      ],
+      "example": "Thought: \"I stumbled in the presentation, everyone thinks I am useless.\" Traps: mind-reading and all-or-nothing. Balanced version: \"I stumbled on one slide. Some people may have noticed. Most of the content landed, and I can practise the opening.\"",
+      "practicePrompts": [
+        "Read your last three worries.",
+        "Tag any that fit a trap.",
+        "Write one balanced version for each tagged worry."
+      ],
+      "apply": "For the next two days, notice and name one thinking trap per day.",
+      "reflect": "Which trap is your most frequent visitor?",
       "contentVersion": 1
     },
     {
@@ -628,6 +865,20 @@
       ],
       "masteryItemIds": [],
       "explanationBackItemId": "i.emo.w04d4.explain",
+      "teach": [
+        "Take one interpretation and ask: what supports it, what does not, what would I tell a friend, and what is the most useful way to see this that still fits the facts?",
+        "Useful does not mean positive. \"This is a real problem and I can take one step on it\" is often better than false reassurance.",
+        "Reappraisal research shows benefits on average, but effects vary by tactic and context.",
+        "An evidence check is fair when it looks at both sides. List what supports the worrying interpretation, list what does not, and then write a balanced statement that includes both. Balanced statements often sound like \"Part of this may be true, and...\" They do not dismiss the concern; they size it."
+      ],
+      "example": "Interpretation: \"My friend is angry with me.\" For: shorter replies. Against: she invited me to her birthday last week. Friend's view: \"She has exams.\" Useful and accurate: \"Something may be up; I will ask how she is doing.\"",
+      "practicePrompts": [
+        "Pick a current concern.",
+        "Answer the four questions in the Journal reflection.",
+        "Write one balanced statement."
+      ],
+      "apply": "Run an evidence check on one recurring worry this week and save the balanced statement in your journal.",
+      "reflect": "What is one balanced statement you can keep for this week?",
       "contentVersion": 1
     },
     {
@@ -653,6 +904,16 @@
         "i.emo.w04d5-q2"
       ],
       "explanationBackItemId": "i.emo.w04d5.explain",
+      "teach": [
+        "Review week. Answer from memory; items you miss will return. This review covers phase 4, interpretations: separate facts from interpretations and test them.",
+        "Questions are drawn from a pool of the phase's items, with alternatives, so a retake shows different questions where possible. Up to two questions come from earlier phases to keep older skills active. If you miss questions, the results screen lists the lessons to revisit."
+      ],
+      "practicePrompts": [
+        "Answer the questions.",
+        "Revisit any lesson you found shaky."
+      ],
+      "apply": "Pick the skill from this phase you found hardest and use it once in a real situation this week, then record it in the Journal.",
+      "reflect": "Which skill from this week was hardest?",
       "contentVersion": 1
     },
     {
@@ -678,6 +939,20 @@
       ],
       "masteryItemIds": [],
       "explanationBackItemId": "i.emo.w05d1.explain",
+      "teach": [
+        "Reflecting on a difficult event as if watching from a distance, or using your own name (\"Why is Wangden upset?\"), is linked with less reactivity and less rumination than replaying it from inside.",
+        "Distance helps you ask \"why\" questions without sinking back into the feeling.",
+        "Try a fly-on-the-wall view: what would an observer see?",
+        "Self-distancing can be done with language. Asking \"Why is Meera feeling this?\" using your own name, or imagining you are a fly on the wall, changes the viewpoint. In experiments this kind of distancing reduced emotional reactivity when people reflected on upsetting experiences. It works best for making sense of something, not for avoiding it."
+      ],
+      "example": "Self-immersed: \"Why did I freeze when he shouted at me? I am pathetic.\" Self-distanced: \"Why did Neha freeze? She was surprised by the volume, and freezing is a common response. Next time she could pause and say she will reply in writing.\"",
+      "practicePrompts": [
+        "Recall a difficult moment.",
+        "Describe it in third person in three sentences.",
+        "Note one thing you see now that you missed."
+      ],
+      "apply": "When you reflect on a difficult moment this week, write about it using your own name instead of \"I\".",
+      "reflect": "How did the third-person view change the story?",
       "contentVersion": 1
     },
     {
@@ -703,6 +978,18 @@
       ],
       "masteryItemIds": [],
       "explanationBackItemId": "i.emo.w05d2.explain",
+      "teach": [
+        "Distance in time changes proportion: most everyday setbacks shrink when you picture them from next week or next year, while the things that still matter stand out more clearly.",
+        "Distance has limits. It works less well for ongoing problems, such as a manager who belittles you every week, because the pattern itself will still matter in a year. There, use the future view to decide what to change rather than to make the feeling smaller.",
+        "Temporal distance means imagining how you will see the event later. A quick version: \"Will this matter in a week? In a year?\" If it will, the question changes to \"What would future me want me to do now?\" This is not a way to say things do not matter; some things matter a great deal. It is a way to keep proportion and to act in line with longer-term goals."
+      ],
+      "example": "A friend's harsh remark at dinner. In a week: \"I will probably still feel the sting a little.\" In a year: \"I will hardly remember it, unless it is part of a pattern.\" Future-me wants me to mention it calmly once, then move on.",
+      "practicePrompts": [
+        "Write: In one week I will think...; In one year I will think...",
+        "Write one action future-you would thank you for."
+      ],
+      "apply": "Use the \"week, year\" question once this week and note what changed.",
+      "reflect": "What does future-you want you to do about a current concern?",
       "contentVersion": 1
     },
     {
@@ -728,6 +1015,20 @@
       ],
       "masteryItemIds": [],
       "explanationBackItemId": "i.emo.w05d3.explain",
+      "teach": [
+        "Sometimes the facts are clear and painful and no reinterpretation fits. Acceptance means making room for the feeling instead of fighting it, while still choosing actions that fit your values.",
+        "Approaches such as Acceptance and Commitment Therapy target acceptance and values-based action; evidence is supportive but varied.",
+        "A phrase: \"This is hard, and I can still do the next useful thing.\"",
+        "Willingness is a choice to make room for a feeling because something you value requires it. Speaking up in a meeting may bring anxiety; if contributing matters to you, you can be willing to feel anxious and speak anyway. Acceptance-based approaches have research support across many outcomes, but much of it comes from therapy trials and broad reviews, so this app treats it as one tool among several."
+      ],
+      "example": "Ayesha's grandmother is seriously ill. No reappraisal fits; it is sad. She lets the sadness be there (\"this is hard\"), and still chooses what matters to her: calling her grandmother daily and getting enough sleep to stay present.",
+      "practicePrompts": [
+        "Name a feeling you have been fighting.",
+        "Say: \"I can let this be here for a moment.\"",
+        "Name one small action you value that you can do anyway."
+      ],
+      "apply": "Pick one small valued action you have been putting off because of discomfort, and do it while noticing the feeling.",
+      "reflect": "What value do you want to act on even when uncomfortable?",
       "contentVersion": 1
     },
     {
@@ -753,6 +1054,21 @@
       ],
       "masteryItemIds": [],
       "explanationBackItemId": "i.emo.w05d4.explain",
+      "teach": [
+        "Speed comes from repetition. In this drill you read short situations and write a fair alternative reading in under a minute.",
+        "Watch for \"positive spin\" that does not fit the facts; that tends not to stick.",
+        "The Scenario Gym has longer versions of this drill.",
+        "Fast reappraisal works like a reflex you train. Start with low-stakes events: a slow queue, a late bus. Generate one fair alternative in under ten seconds. The aim is not to talk yourself out of every feeling. It is to have a quick, accurate second reading ready when the first reading is unhelpful.",
+        "If you notice that a reappraisal makes you feel worse, for example because it blames you, drop it and try another. A fair reappraisal usually sounds like something a thoughtful friend who knows the facts might say."
+      ],
+      "example": "Situation: your proposal was turned down in two lines. Fair reappraisal: \"The short reply tells me the decision, not the reasons. Budget may have changed. I will ask what would make a future proposal fit.\" Believability: 70%. Positive spin (\"they loved it really\") scored only 10%.",
+      "practicePrompts": [
+        "Situation: your proposal was turned down in two lines. Write an alternative reading.",
+        "Situation: a friend cancelled late. Write an alternative reading.",
+        "Rate how believable each is."
+      ],
+      "apply": "Do five low-stakes reappraisals over the next two days, each in under ten seconds.",
+      "reflect": "Which drill felt most natural?",
       "contentVersion": 1
     },
     {
@@ -779,6 +1095,15 @@
         "i.emo.w05d5-q3"
       ],
       "explanationBackItemId": "i.emo.w05d5.explain",
+      "teach": [
+        "Phase checkpoint for weeks 4 and 5. 80% or more marks mastery (design choice). This checkpoint covers phase 4, interpretations: separate facts from interpretations and test them.",
+        "Questions are drawn from a pool of the phase's items, with alternatives, so a retake shows different questions where possible. Up to two questions come from earlier phases to keep older skills active. If you miss questions, the results screen lists the lessons to revisit."
+      ],
+      "practicePrompts": [
+        "Answer from memory."
+      ],
+      "apply": "Pick the skill from this phase you found hardest and use it once in a real situation this week, then record it in the Journal.",
+      "reflect": "Which interpretation skill will you use first next time?",
       "contentVersion": 1
     },
     {
@@ -805,6 +1130,21 @@
       ],
       "masteryItemIds": [],
       "explanationBackItemId": "i.emo.w06d1.explain",
+      "teach": [
+        "Main families: change the situation (choose or modify it), shift attention (distraction, focus), change the meaning (reappraisal, distancing), accept (allow the feeling), and change the response (breathing, delaying action).",
+        "Regulatory flexibility research suggests that adaptiveness comes from reading the context, having several options and adjusting based on feedback.",
+        "Ranking strategies as good or bad in all cases is not supported.",
+        "When expressing an emotion fits. Regulation does not mean keeping every feeling hidden. Expressing an emotion often helps when the other person needs the information to act, when the relationship can hold it, and when the intensity is low enough that you can choose your words. Saying \"I felt embarrassed when the figures were questioned in front of the client\" to your manager the next day gives them something to work with. Shouting it in the client meeting does not.",
+        "Questions to decide. Before expressing a strong feeling, ask: Who needs to know this, and why? Is this the right setting and time? Can I say it at an intensity of about 5 or below? What do I want to happen next? If the answers are unclear, a short delay is often better than either suppressing or venting. Example: you are hurt that a friend forgot an important date. Telling them plainly, a day later and in private, protects the friendship and your honesty. Pretending it is fine protects neither for long.",
+        "The main families are: choosing or changing situations, shifting attention, changing interpretation, accepting the feeling, solving the problem, and changing the response (for example breathing). Research increasingly asks which strategy fits which context rather than which strategy is best. Your toolkit is stronger when you can use several and can tell when one is not working."
+      ],
+      "example": "One stressful Monday, Suresh uses four families: he moves a meeting (situation), takes a walk (attention), reminds himself the deadline is shared (meaning), and does slow breathing before presenting (response). No single tool did all the work.",
+      "practicePrompts": [
+        "List one strategy you already use from each family.",
+        "Mark the family you rarely use."
+      ],
+      "apply": "This week, note which strategy family you used in three emotional moments.",
+      "reflect": "Which family is missing from your toolkit?",
       "contentVersion": 1
     },
     {
@@ -830,6 +1170,17 @@
       ],
       "masteryItemIds": [],
       "explanationBackItemId": "i.emo.w06d2.explain",
+      "teach": [
+        "Distraction is useful short-term and becomes a problem if it turns into avoiding things that need attention.",
+        "Rate intensity with a quick 0 to 10 check. You do not need precision: \"about a 4\" and \"about an 8\" are enough to choose between a thinking strategy and a calming one. If you notice you are rating everything 9 or 10, that is useful information too: it may be time for rest, support or fewer commitments, not more technique.",
+        "At high intensity, complex thinking is hard; that is not a personal failing. Research on strategy choice found people tend to prefer distraction for high-intensity material and reappraisal for low-intensity material. A practical rule: above about 7 out of 10, lower the intensity first (pause, breathe, distract, step away). Below that, thinking strategies become more available."
+      ],
+      "example": "At intensity 3 (mild irritation with a vague email), Dev reappraises: \"they were probably rushed\" and asks a question. At intensity 9 (shouting match), he first says \"I need five minutes\", walks, breathes, and only then thinks about meaning.",
+      "practicePrompts": [
+        "Write your personal intensity ladder: what you do at 3, 6 and 9."
+      ],
+      "apply": "Rate intensity before choosing a strategy in your next two check-ins.",
+      "reflect": "What is on your intensity ladder at 9?",
       "contentVersion": 1
     },
     {
@@ -855,6 +1206,20 @@
       ],
       "masteryItemIds": [],
       "explanationBackItemId": "i.emo.w06d3.explain",
+      "teach": [
+        "When a problem is controllable, problem solving is often the most direct regulation strategy. Across studies it was associated with fewer symptoms than rumination or avoidance (correlational).",
+        "Ask first: how much of this is in my control?",
+        "Problem solving often stalls on the first step because the problem is too big (\"my career\"). Shrink it to something you could act on this week (\"I have not had a one-to-one with my lead in two months\"). A plan that names who, what and when is far more likely to happen than one that names only a goal.",
+        "Problem solving is useful when part of the situation can be changed. Steps: define the problem in one sentence, list options without judging, pick one, plan the first small step, and set a review time. When nothing can be changed right now, acceptance or attention strategies fit better. Telling these apart is itself a skill."
+      ],
+      "example": "Stressor: \"My workload is impossible.\" In my control: how I prioritise, what I ask for, when I start. Not in my control: the number of requests that arrive. First step: list this week's tasks and ask my lead to rank the top three, by 11am tomorrow.",
+      "practicePrompts": [
+        "Pick a current stressor.",
+        "Split it: in my control / not in my control.",
+        "Write one first step for the controllable part."
+      ],
+      "apply": "Apply the five steps to one small, changeable stressor this week.",
+      "reflect": "What is in your control this week?",
       "contentVersion": 1
     },
     {
@@ -880,6 +1245,18 @@
       ],
       "masteryItemIds": [],
       "explanationBackItemId": "i.emo.w06d4.explain",
+      "teach": [
+        "Implementation intentions are plans in the form \"If situation X, then I will do Y.\" A meta-analysis found them associated with better goal attainment across many domains.",
+        "Emotion example: \"If I feel my face heat up in a meeting, then I will take one slow breath and write down the point instead of interrupting.\"",
+        "Good if-then plans are specific about the cue (\"If my manager emails after 9 pm...\") and the response (\"...then I reply the next morning at 9.\"). Write plans for situations that recur, because the plan has to be retrieved fast. Review plans after a week: if one never fires, the cue may be too vague."
+      ],
+      "example": "Plans saved: \"If my manager criticises my work in public, then I will say: Thanks, can we look at it after the meeting?\" and \"If I notice I have been scrolling news for 10 minutes, then I will stand up and fill my water bottle.\"",
+      "practicePrompts": [
+        "Write two if-then plans for your most common triggers.",
+        "Save them in the Journal under Plans."
+      ],
+      "apply": "Write two if-then plans in the Journal for your two most common triggers.",
+      "reflect": "Which trigger most needs a plan?",
       "contentVersion": 1
     },
     {
@@ -906,6 +1283,15 @@
         "i.emo.w06d5-q3"
       ],
       "explanationBackItemId": "i.emo.w06d5.explain",
+      "teach": [
+        "Phase checkpoint. 80% or more marks mastery (design choice). This checkpoint covers phase 5, choosing a strategy: match regulation strategies to context and intensity.",
+        "Questions are drawn from a pool of the phase's items, with alternatives, so a retake shows different questions where possible. Up to two questions come from earlier phases to keep older skills active. If you miss questions, the results screen lists the lessons to revisit."
+      ],
+      "practicePrompts": [
+        "Answer from memory."
+      ],
+      "apply": "Pick the skill from this phase you found hardest and use it once in a real situation this week, then record it in the Journal.",
+      "reflect": "What is your go-to strategy, and when does it not fit?",
       "contentVersion": 1
     },
     {
@@ -931,6 +1317,18 @@
       ],
       "masteryItemIds": [],
       "explanationBackItemId": "i.emo.w07d1.explain",
+      "teach": [
+        "Repetitive thought can be constructive or not. Abstract, evaluative loops (\"why am I like this?\") tend to keep distress going. Concrete, process-focused thinking (\"what happened step by step, and what can I do?\") tends to be more useful.",
+        "Rumination is associated with distress across many studies.",
+        "A simple test separates rumination from reflection: after ten minutes of thinking, do you have a next step or a new understanding? If yes, it was probably reflection. If you are going round the same questions (\"Why me? Why did this happen?\") and feel worse, it is likely rumination. Research distinguishes abstract, evaluative \"why\" thinking, which tends to be unhelpful, from concrete \"how\" thinking, which tends to help."
+      ],
+      "example": "Loop: \"Why did I say that stupid thing at dinner? What is wrong with me?\" after 40 minutes, no new insight. Concrete shift: \"What exactly did I say? Did anyone react? If it matters, what will I say next time I see them?\" Two minutes, one plan.",
+      "practicePrompts": [
+        "Catch one loop today.",
+        "Rewrite its main \"why\" question as a \"how\" or \"what next\" question."
+      ],
+      "apply": "The next time you catch a \"why\" loop, change one question to \"how\" or \"what next\".",
+      "reflect": "What question keeps looping for you?",
       "contentVersion": 1
     },
     {
@@ -956,6 +1354,19 @@
       ],
       "masteryItemIds": [],
       "explanationBackItemId": "i.emo.w07d2.explain",
+      "teach": [
+        "Some people find it useful to postpone worries to a set 15-minute window, writing them down when they appear during the day.",
+        "This is a practical containment technique. The evidence cited here concerns rumination in general rather than this specific technique, so treat it as an experiment.",
+        "During the window, sort each worry: action possible, or practise letting it be.",
+        "A worry window is a planned 15-minute slot to think about worries on purpose. Outside the window, when a worry appears, you note it in a few words and postpone it. Inside the window, you go through the list and, for each, either plan a step or accept that nothing can be done now. Many people find the list shorter by the time the window arrives."
+      ],
+      "example": "At 3pm a worry arrives: \"What if the audit finds problems?\" Written down and postponed. At 6pm, in the 15-minute window: one action (check last quarter's files tomorrow) and one to let be (the auditors' decisions). The evening is noticeably quieter.",
+      "practicePrompts": [
+        "Choose a 15-minute window for tomorrow.",
+        "When a worry appears, write it in the Journal and postpone it."
+      ],
+      "apply": "Try a worry window for three days and note how many worries were still relevant when the window came.",
+      "reflect": "What did you notice when you postponed a worry?",
       "contentVersion": 1
     },
     {
@@ -982,6 +1393,21 @@
       ],
       "masteryItemIds": [],
       "explanationBackItemId": "i.emo.w07d3.explain",
+      "teach": [
+        "Much anxiety comes from wanting certainty that is not available. Repeated checking or reassurance-seeking may calm you briefly and keep the need for certainty strong.",
+        "Alternative: name the uncertainty (\"I don't know how this will go\"), decide what is good enough, and take the next step.",
+        "Values help: what kind of person do you want to be while you wait?",
+        "Not all avoidance is a problem. Leaving a dangerous situation, declining a party when you are exhausted, or not reading comments from strangers can protect your safety, energy or focus. Avoidance becomes restrictive when it shrinks your life around a fear: turning down every presentation, never opening certain emails, or skipping events you value because you might feel awkward. The short-term relief is real, which is why the habit grows.",
+        "A quick test. Ask three questions. Is there a real risk to safety or wellbeing, or mainly discomfort? Would I avoid this even if I felt calm? Is avoiding it costing something I care about? If the risk is mainly discomfort and the cost is a valued goal, try a small step towards it. If there is real risk, avoidance may be the skilful choice. Example: you skip a weekly team call because you fear being asked a question. The risk is discomfort, and the cost is visibility at work. A small step is to join with one prepared comment.",
+        "Uncertainty invites two unhelpful moves: seeking reassurance again and again, and checking repeatedly. Both bring short relief and keep the worry going. A more useful move is to ask: \"What can I prepare for either way?\" Then act on that and return to valued activities. Psychological flexibility, which includes staying open while pursuing what matters, is a concept with growing research support."
+      ],
+      "example": "Waiting to hear about a visa, Rohit checks the portal twelve times a day. New plan: \"I don't know when the visa will arrive. What I can do today is finish my packing list and call my sister.\" Checks drop to twice a day; anxiety is still there, but smaller.",
+      "practicePrompts": [
+        "Pick one thing you are uncertain about.",
+        "Write: \"I don't know X. What I can do today is Y.\""
+      ],
+      "apply": "Pick one uncertainty you are living with and write \"Either way, I will...\" with one action.",
+      "reflect": "Where do you seek certainty that is not available?",
       "contentVersion": 1
     },
     {
@@ -1007,6 +1433,20 @@
       ],
       "masteryItemIds": [],
       "explanationBackItemId": "i.emo.w07d4.explain",
+      "teach": [
+        "After a setback: acknowledge the feeling, describe what happened in facts, find what was in your control, extract one lesson, and plan one step.",
+        "Self-criticism that sounds like a verdict (\"I'm useless\") rarely improves performance. A coach-like voice (\"that did not work; next time try...\") is more useful.",
+        "Disappointment means something mattered.",
+        "An after-action review asks four questions: What did I intend? What happened? Why might there be a difference? What will I keep or change? Write it in the third person if the setback still stings. Reviews work best once intensity has dropped, often a day later.",
+        "Separate the outcome from the decision. A good decision can produce a poor outcome because of luck or factors you could not see, and a poor decision can turn out well. Reviewing the decision process helps you learn without punishing yourself for the dice."
+      ],
+      "example": "Setback: a pitch failed. Feeling: disappointed (7). Facts: the client chose a cheaper option. In my control: price options, earlier check-in on budget. Lesson: ask about budget in the first meeting. Coach voice: \"Price lost this one; next time I will test budget earlier.\"",
+      "practicePrompts": [
+        "Run the five-step review on a recent setback.",
+        "Rewrite one harsh self-statement in a coach voice."
+      ],
+      "apply": "Do a written after-action review on one recent disappointment.",
+      "reflect": "What setback taught you something useful?",
       "contentVersion": 1
     },
     {
@@ -1033,6 +1473,15 @@
         "i.emo.w07d5-q3"
       ],
       "explanationBackItemId": "i.emo.w07d5.explain",
+      "teach": [
+        "Phase checkpoint. 80% or more marks mastery (design choice). This checkpoint covers phase 6, rumination and uncertainty: shift from unhelpful repetitive thought to useful action.",
+        "Questions are drawn from a pool of the phase's items, with alternatives, so a retake shows different questions where possible. Up to two questions come from earlier phases to keep older skills active. If you miss questions, the results screen lists the lessons to revisit."
+      ],
+      "practicePrompts": [
+        "Answer from memory."
+      ],
+      "apply": "Pick the skill from this phase you found hardest and use it once in a real situation this week, then record it in the Journal.",
+      "reflect": "Which loop will you watch for this week?",
       "contentVersion": 1
     },
     {
@@ -1058,6 +1507,19 @@
       ],
       "masteryItemIds": [],
       "explanationBackItemId": "i.emo.w08d1.explain",
+      "teach": [
+        "Criticism tends to trigger a threat response: defending, attacking back or shutting down. The first goal is to understand the feedback before evaluating it.",
+        "Sequence: breathe, listen to the end, ask one clarifying question, summarise what you heard, then decide later what to accept.",
+        "Understanding feedback is not the same as agreeing with it.",
+        "The first seconds after criticism are usually the hardest. A defensive reply often feels like protecting yourself but can close down the information you need. A simple holding phrase gives you time: \"Thanks for telling me. Can you say more about what you noticed?\" You are not agreeing; you are collecting facts before you evaluate them."
+      ],
+      "example": "Feedback: \"Your updates are confusing.\" Instead of \"They are perfectly clear!\", Tara breathes, listens, and asks: \"Can you show me one that was confusing?\" Summary: \"So the updates need the decision at the top, not at the end.\" She will decide later what to change.",
+      "practicePrompts": [
+        "Write the sequence on a card.",
+        "Practise the clarifying question: \"Can you give me a specific example?\""
+      ],
+      "apply": "Prepare your own holding phrase and use it the next time you receive feedback.",
+      "reflect": "How do you usually react to criticism in the first 10 seconds?",
       "contentVersion": 1
     },
     {
@@ -1083,6 +1545,20 @@
       ],
       "masteryItemIds": [],
       "explanationBackItemId": "i.emo.w08d2.explain",
+      "teach": [
+        "Most feedback mixes useful and less useful parts. Sort it: what is accurate, what is partly true, what is not true or not mine to fix.",
+        "Even unfair feedback can contain information about how your work is seen.",
+        "Decide what to act on after your intensity falls, not during it.",
+        "Feedback is often a mix. Sorting it into three piles (accurate, partly accurate, inaccurate) lets you act on what is useful without swallowing everything. Ask: what evidence is there? Have others said similar things? Is this about the work or about me as a person? You can thank someone for feedback and still decide part of it does not fit."
+      ],
+      "example": "Feedback from a review: (1) \"Reports are late\" (accurate: three were late). (2) \"You do not care about quality\" (not accurate; it is an interpretation). (3) \"Stakeholders are unsure of priorities\" (partly true). Act on 1 and 3; note 2 as how some people see the delays.",
+      "practicePrompts": [
+        "Take a recent piece of feedback.",
+        "Sort it into three columns.",
+        "Pick one item to act on."
+      ],
+      "apply": "Sort the last piece of feedback you received into the three piles.",
+      "reflect": "What feedback have you dismissed that had a useful part?",
       "contentVersion": 1
     },
     {
@@ -1108,6 +1584,20 @@
       ],
       "masteryItemIds": [],
       "explanationBackItemId": "i.emo.w08d3.explain",
+      "teach": [
+        "When someone is rude or provocative, your options include: ignore, name the behaviour calmly, set a boundary, or address it later privately.",
+        "The aim is to protect your goals and dignity without matching the other person's tone.",
+        "A calm script: \"I want to keep this productive. Can we focus on X?\"",
+        "When someone provokes you, they often invite you into a contest. You can decline the invitation without giving up your position. Options include a calm redirect to the topic, naming the behaviour briefly (\"Let us keep this respectful\"), or choosing a later private conversation. Responding at peak anger usually serves the provoker more than you.",
+        "Afterwards, check what is left. If the remark was a one-off, letting it go may be the best use of your energy. If it is a pattern, plan a private conversation using the skills from the next sessions."
+      ],
+      "example": "In a meeting a colleague says \"Here comes the expert again\" with a smirk. Response: \"I want to keep this productive. Let's look at the numbers together.\" Later, privately: \"That comment in the meeting felt undermining. Can we keep it about the work?\"",
+      "practicePrompts": [
+        "Write one calm script for a provocation you have faced.",
+        "Practise saying it at normal volume."
+      ],
+      "apply": "Write a calm redirect sentence you could use when someone needles you.",
+      "reflect": "Which provocation gets to you most quickly?",
       "contentVersion": 1
     },
     {
@@ -1133,6 +1623,19 @@
       ],
       "masteryItemIds": [],
       "explanationBackItemId": "i.emo.w08d4.explain",
+      "teach": [
+        "Plan: your goal for the talk, the facts, your interpretation stated as yours, the request, and how you will handle your own intensity.",
+        "Use \"I\" statements for interpretations: \"When the deadline moved without notice, I felt anxious about the client.\"",
+        "Expect discomfort; plan for it rather than waiting until it disappears.",
+        "A difficult conversation goes better with a short plan: your goal (what you want to be true afterwards), one or two key facts, your feeling stated briefly, and a specific request. Also plan for the likely reaction, for example defensiveness, and write a calm phrase to use if it happens. Plans do not script the whole conversation; they give you anchors."
+      ],
+      "example": "Goal: agree a fair rota. Facts: \"I have covered four of the last five weekends.\" Interpretation as mine: \"I have been feeling that my time is taken for granted.\" Request: \"Can we alternate from next month?\" Plan for intensity: one slow breath before starting.",
+      "practicePrompts": [
+        "Plan one upcoming conversation using the five parts.",
+        "Write your opening line."
+      ],
+      "apply": "Plan one real conversation you have been avoiding using the five parts.",
+      "reflect": "What conversation have you been postponing?",
       "contentVersion": 1
     },
     {
@@ -1158,6 +1661,15 @@
         "i.emo.w08d5-q2"
       ],
       "explanationBackItemId": "i.emo.w08d5.explain",
+      "teach": [
+        "Review. Items you miss return later. This review covers phase 7, criticism and conflict: respond to criticism, provocation and conflict constructively.",
+        "Questions are drawn from a pool of the phase's items, with alternatives, so a retake shows different questions where possible. Up to two questions come from earlier phases to keep older skills active. If you miss questions, the results screen lists the lessons to revisit."
+      ],
+      "practicePrompts": [
+        "Answer from memory."
+      ],
+      "apply": "Pick the skill from this phase you found hardest and use it once in a real situation this week, then record it in the Journal.",
+      "reflect": "Which criticism skill will you use this week?",
       "contentVersion": 1
     },
     {
@@ -1184,6 +1696,21 @@
       ],
       "masteryItemIds": [],
       "explanationBackItemId": "i.emo.w09d1.explain",
+      "teach": [
+        "A boundary describes what you will do, not what the other person must feel. \"I can't take that on this week; I can look at it Monday.\"",
+        "Boundaries often bring discomfort, such as guilt or fear of disapproval.",
+        "Keep it short, specific and repeatable.",
+        "Three styles. A passive response puts the other person's wishes first and leaves your own unstated (\"It's fine, whatever you want\"). An aggressive response states your wishes in a way that attacks or overrides the other person (\"You always dump work on me\"). An assertive response states your view or limit clearly and respectfully, and leaves room for theirs (\"I can't take this on this week. I can help next Tuesday\").",
+        "Choosing a style. Assertiveness is often the most useful default, but context matters. A passive response can be sensible when the issue is minor and the relationship matters more, or when speaking up would be unsafe. A firm tone is not aggression; aggression is about blame, threats or contempt. Example: a neighbour parks across your driveway again. Passive: say nothing and park on the street. Aggressive: leave an angry note calling them selfish. Assertive: knock and say, \"Your car is blocking my drive. Could you keep it clear? I leave at 8.\"",
+        "A boundary has three parts: the limit, what you will do, and often an alternative. \"I cannot take calls after 9 pm. I will reply by 10 am. If it is urgent, text me.\" Boundaries are about your own actions, not controlling others. Guilt often follows a new boundary; that is a common feeling and not proof you did something wrong."
+      ],
+      "example": "Boundary in 16 words: \"I am not available after 8pm. I will reply to anything urgent first thing.\" Guilt shows up afterwards; Raj notes it as a feeling, not a verdict, and keeps the boundary. Two weeks later late messages have dropped.",
+      "practicePrompts": [
+        "Write one boundary you need.",
+        "Make it under 20 words."
+      ],
+      "apply": "Write one boundary you need in the three-part form.",
+      "reflect": "Where do you need a boundary most?",
       "contentVersion": 1
     },
     {
@@ -1209,6 +1736,20 @@
       ],
       "masteryItemIds": [],
       "explanationBackItemId": "i.emo.w09d2.explain",
+      "teach": [
+        "Conflicts happen. Repair matters: acknowledge your part specifically, avoid \"but\", and state what you will do differently.",
+        "A repair is not admitting total fault; it is taking responsibility for your share.",
+        "Timing: when both people are calmer.",
+        "Repair is easier when you have lowered your own intensity first. If you still feel strongly, it often helps to wait a few hours, write the repair down, and remove any sentence that explains why the other person was also wrong. That conversation can happen separately, later, if it is still needed.",
+        "Repair also includes listening to how the other person experienced the rupture, even if their account differs from yours. You do not need to agree with every detail to acknowledge that it was hard for them. Arguing about whose version is accurate usually restarts the conflict, while acknowledging their experience usually lowers the temperature enough to talk about what happens next."
+      ],
+      "example": "After snapping in a meeting: \"Yesterday I interrupted you twice and my tone was sharp. That was not fair to you. In future I will let you finish and raise disagreement afterwards.\" No \"but you also...\". Responsibility for one's own share only.",
+      "practicePrompts": [
+        "Think of an unrepaired conflict.",
+        "Write a two-sentence repair."
+      ],
+      "apply": "Think of one small unrepaired rupture and write the repair sentence you could use.",
+      "reflect": "What repair is overdue?",
       "contentVersion": 1
     },
     {
@@ -1234,6 +1775,19 @@
       ],
       "masteryItemIds": [],
       "explanationBackItemId": "i.emo.w09d3.explain",
+      "teach": [
+        "Validation means showing you understand why someone feels as they do, without necessarily agreeing with their view or demands.",
+        "\"I can see this deadline change put you in a tough spot\" can lower intensity on both sides.",
+        "Validation and problem solving are separate steps; validate first.",
+        "Validation also works on yourself. \"It makes sense that I feel anxious; this deadline is tight\" is not giving in to the feeling. It is an accurate description, and accurate descriptions tend to make the next step easier to see than arguing with the feeling.",
+        "Validation has levels. The simplest is attentive listening. Next is reflecting back what you heard (\"So the deadline moved again\"). Then naming the likely feeling (\"That sounds frustrating\"). Finally, saying why it makes sense given the situation. You can stop at whichever level fits; even the first two lower the sense of not being heard, which drives many escalations."
+      ],
+      "example": "A teammate, upset about weekend work: \"This is ridiculous!\" Validation: \"It makes sense to be fed up; this is the third weekend in a row.\" Only then problem solving: \"Shall we take it to the lead together and propose a rota?\"",
+      "practicePrompts": [
+        "Write a validating sentence for a recent tense exchange."
+      ],
+      "apply": "Use one validating sentence before giving advice in your next conversation.",
+      "reflect": "Who would benefit from validation from you?",
       "contentVersion": 1
     },
     {
@@ -1259,6 +1813,19 @@
       ],
       "masteryItemIds": [],
       "explanationBackItemId": "i.emo.w09d4.explain",
+      "teach": [
+        "Run three Scenario Gym items in the Boundaries and Provocation categories.",
+        "Focus on the emotion step before choosing a response.",
+        "Conflict scenarios are designed so that more than one response may be reasonable. The feedback explains likely trade-offs: what each choice protects and what it costs. Use it to widen your options rather than to find a single correct answer for every situation in real life.",
+        "In real conflicts the skills often come in a sequence: lower your own intensity, validate, state the facts and your limit, then propose a next step. Practising each one separately first, in the gym, makes the sequence easier to reach for when it matters. Notice which step you skip most often, because that is usually the one to rehearse."
+      ],
+      "example": "Gym run: \"Messages at midnight\" (chose the 1:1 conversation, rated skilful), \"Borrowing without asking\" (chose hiding things, partly effective; would now choose the clear request), \"Interrupted again\" (chose the calm redirect).",
+      "practicePrompts": [
+        "Complete three gym scenarios.",
+        "Note one response you would now choose differently."
+      ],
+      "apply": "Run two conflict scenarios in the gym and note which skill each needed.",
+      "reflect": "Which scenario was hardest?",
       "contentVersion": 1
     },
     {
@@ -1285,6 +1852,15 @@
         "i.emo.w09d5-q3"
       ],
       "explanationBackItemId": "i.emo.w09d5.explain",
+      "teach": [
+        "Phase checkpoint. 80% or more marks mastery (design choice). This checkpoint covers phase 7, criticism and conflict: respond to criticism, provocation and conflict constructively.",
+        "Questions are drawn from a pool of the phase's items, with alternatives, so a retake shows different questions where possible. Up to two questions come from earlier phases to keep older skills active. If you miss questions, the results screen lists the lessons to revisit."
+      ],
+      "practicePrompts": [
+        "Answer from memory."
+      ],
+      "apply": "Pick the skill from this phase you found hardest and use it once in a real situation this week, then record it in the Journal.",
+      "reflect": "What did you learn about yourself in conflict?",
       "contentVersion": 1
     },
     {
@@ -1310,6 +1886,18 @@
       ],
       "masteryItemIds": [],
       "explanationBackItemId": "i.emo.w10d1.explain",
+      "teach": [
+        "Professional composure means staying able to think, listen and decide while emotions are present. It does not mean showing nothing.",
+        "Brief, deliberate expression (\"I'm concerned about this timeline\") is often more effective than hidden tension that leaks later.",
+        "Suppression as a habit carries costs; choose when to hold back and when to name.",
+        "Composure means your emotions inform your choices without running them. A composed professional can say \"I am concerned about this timeline\" in a steady voice. That is different from a blank face that hides everything, which can come across as cold and, if habitual, carries the costs discussed in week 1. Steadiness in tone and clarity in content are the visible signs."
+      ],
+      "example": "Instead of silently fuming through a planning meeting and sending a sharp email later, Leena says in the meeting: \"I am concerned this timeline does not include testing. Can we add a week, or reduce scope?\" Brief, calm, and actionable.",
+      "practicePrompts": [
+        "Write one way you can name concern professionally."
+      ],
+      "apply": "In one work conversation this week, name a feeling briefly in a steady voice and move to a proposal.",
+      "reflect": "Where do you leak hidden tension at work?",
       "contentVersion": 1
     },
     {
@@ -1335,6 +1923,20 @@
       ],
       "masteryItemIds": [],
       "explanationBackItemId": "i.emo.w10d2.explain",
+      "teach": [
+        "When a demand seems unreasonable, separate: what exactly is asked, the deadline, what is possible, and what trade-offs exist.",
+        "Respond with options: \"I can do A by Friday or B by Wednesday; which matters more?\"",
+        "This shifts from emotional reaction to shared problem solving.",
+        "Some demands are unreasonable in content, others only in timing. Separating the two helps. A demand that is fine next week but impossible by tomorrow needs a timing negotiation, not a refusal. A demand that conflicts with ethics or safety needs a clearer line and possibly support from others.",
+        "It also helps to know your own capacity before the request arrives. A rough weekly picture of your commitments makes it easier to answer quickly and honestly, instead of agreeing in the moment and discovering the conflict later."
+      ],
+      "example": "Ask: \"Can you also redo the whole deck by tomorrow?\" Clarify: \"Which parts matter most for the client?\" Options: \"I can update the five key slides by tomorrow, or the whole deck by Thursday. Which works better for you?\"",
+      "practicePrompts": [
+        "Take a recent demand.",
+        "Write an options response."
+      ],
+      "apply": "Prepare one options-response sentence for the next time you are overloaded.",
+      "reflect": "Which demand did you accept that you should have negotiated?",
       "contentVersion": 1
     },
     {
@@ -1360,6 +1962,19 @@
       ],
       "masteryItemIds": [],
       "explanationBackItemId": "i.emo.w10d3.explain",
+      "teach": [
+        "Under pressure, slow down the first 30 seconds: breathe, state the decision, state the deadline, list two options.",
+        "Good enough decisions with a review point often beat perfect decisions made too late.",
+        "Name what you will check afterwards.",
+        "Pressure narrows attention, which is helpful for fast action but makes it easy to miss options. Saying the decision and the two options out loud, even briefly, widens attention again. Writing the review point down means the decision does not have to be perfect now.",
+        "Under pressure, people often confuse urgency with importance. Asking \"What happens if this waits an hour?\" separates the two. Many demands are urgent only because someone else is anxious, and a short clarifying question can reveal that a slower, better decision is possible."
+      ],
+      "example": "The client wants an answer in ten minutes. Thirty-second routine: one breath, \"The decision is: accept the change or not. Deadline: ten minutes. Options: accept with a cost note, or decline and offer a call.\" Decide, and set a review for Friday.",
+      "practicePrompts": [
+        "Write a 30-second pressure routine."
+      ],
+      "apply": "Write an if-then plan for your most common pressure decision at work.",
+      "reflect": "What is your pressure routine?",
       "contentVersion": 1
     },
     {
@@ -1385,6 +2000,19 @@
       ],
       "masteryItemIds": [],
       "explanationBackItemId": "i.emo.w10d4.explain",
+      "teach": [
+        "Complete three Pressure scenarios in the gym.",
+        "Use your 30-second routine before each choice.",
+        "Compare with feedback.",
+        "Use the gym results as data. If you often choose \"partly effective\" responses under pressure, look at which step you skip. Often it is the pause or the clarifying question. Practising that single step in low-stakes situations prepares it for the real ones.",
+        "Pressure drills are deliberately repetitive. Repeating the same few steps across different scenarios builds a routine you can call on without much thought. If a scenario feels unrealistic for your work, change one detail in your head to match your setting before choosing, and notice whether your choice changes. That is the transfer the drills are designed to build."
+      ],
+      "example": "Gym run with the routine: two urgent deadlines (asked managers to set priority), laptop fails (breathed, presented verbally), extra project at 5pm Friday (offered options). One choice changed after using the routine.",
+      "practicePrompts": [
+        "Complete three pressure scenarios."
+      ],
+      "apply": "Run three pressure scenarios in the gym and identify the step you skipped most.",
+      "reflect": "Which pressure scenario felt real?",
       "contentVersion": 1
     },
     {
@@ -1410,6 +2038,15 @@
         "i.emo.w10d5-q2"
       ],
       "explanationBackItemId": "i.emo.w10d5.explain",
+      "teach": [
+        "Review. Missed items return. This review covers phase 8, professional composure: stay effective under pressure, demands and uncertainty at work.",
+        "Questions are drawn from a pool of the phase's items, with alternatives, so a retake shows different questions where possible. Up to two questions come from earlier phases to keep older skills active. If you miss questions, the results screen lists the lessons to revisit."
+      ],
+      "practicePrompts": [
+        "Answer from memory."
+      ],
+      "apply": "Pick the skill from this phase you found hardest and use it once in a real situation this week, then record it in the Journal.",
+      "reflect": "What did you practise this week?",
       "contentVersion": 1
     },
     {
@@ -1435,6 +2072,19 @@
       ],
       "masteryItemIds": [],
       "explanationBackItemId": "i.emo.w11d1.explain",
+      "teach": [
+        "When outcomes are unknown, focus on what you control: quality of work, relationships, information gathering, and preparation for options.",
+        "Limit information-checking to set times to avoid rumination.",
+        "Name the uncertainty with colleagues without spreading catastrophes.",
+        "Uncertainty at work is often shared. Talking with colleagues can help, as long as conversations stay on facts and options rather than amplifying worst cases. A useful question for a group is: \"What do we actually know, and what can we prepare for either way?\"",
+        "Waiting periods can also be used. Some people use them to strengthen skills or relationships that would help in any outcome. This turns a passive, anxious wait into a period of preparation, without pretending to know what will happen."
+      ],
+      "example": "During a merger, Imran lists controllables: deliver the current project well, keep good working relationships, update his CV, and ask HR one clear question. He checks news at 9am and 5pm only. He still feels anxious, but less stuck.",
+      "practicePrompts": [
+        "List three controllables in a current uncertainty."
+      ],
+      "apply": "Write \"What we know / What we can prepare\" for one uncertainty at work.",
+      "reflect": "What can you control this month?",
       "contentVersion": 1
     },
     {
@@ -1460,6 +2110,19 @@
       ],
       "masteryItemIds": [],
       "explanationBackItemId": "i.emo.w11d2.explain",
+      "teach": [
+        "After a difficult meeting: reset the body (walk, breathe), note facts and actions while fresh, then switch attention deliberately to the next task.",
+        "Avoid replaying the meeting abstractly; if you review, do it concretely with a next step.",
+        "Self-distanced reflection can help process it.",
+        "Recovery is not the same as forgetting. The aim is to take what is useful from the meeting (actions, lessons) and then return attention to the rest of your day. If the meeting keeps returning, schedule a short, concrete review rather than fighting the thought.",
+        "Notice what you say about the meeting to others. A brief, factual account to a trusted colleague can help you process it. Retelling the most painful moments many times to different people tends to keep it alive. If you need to talk it through, choose one person and one conversation."
+      ],
+      "example": "After a hard call, Priya walks for five minutes, writes three lines (what was agreed, what she will do, by when), and then says to herself, \"Next task: the budget sheet.\" In the evening she reflects once, in third person, for five minutes.",
+      "practicePrompts": [
+        "Write a three-step recovery routine."
+      ],
+      "apply": "After your next tense meeting, use the four-step routine and note how long it took.",
+      "reflect": "What is your recovery routine?",
       "contentVersion": 1
     },
     {
@@ -1486,6 +2149,21 @@
       ],
       "masteryItemIds": [],
       "explanationBackItemId": "i.emo.w11d3.explain",
+      "teach": [
+        "Disagreeing with someone senior can trigger fear. Prepare: shared goal, specific concern, evidence, proposal.",
+        "\"I share the goal of X. I'm concerned Y because Z. Could we try W?\"",
+        "Accept that they may still decide differently.",
+        "When power is unequal. Disagreeing with someone who controls your pay, workload or reputation carries more risk than disagreeing with a peer. That risk is real, not a sign of weakness. It changes the tactics, not the right to raise concerns: put the issue in terms of shared goals, bring evidence, offer options, and choose a private setting. Keep a short written record of important agreements. If the issue involves mistreatment, use formal routes such as HR rather than handling it alone.",
+        "When incentives differ. People may disagree because they are measured on different things: sales wants speed, compliance wants caution. Naming the different incentives (\"I think we are both right about what we are each responsible for\") can move the conversation from blame to trade-offs. Example: your director wants a launch date you think is unsafe. Instead of \"That is impossible\", you say: \"I want us to hit the date too. Here are two risks, and two options: drop feature B, or move a week. Which would you prefer?\"",
+        "Fear of disagreeing upward is common and understandable: the other person has more power. Preparing your script in advance lowers the load in the moment. It also helps to choose the setting: a private conversation or a written note is often easier than a large meeting.",
+        "Accept that you may not change the decision. Disagreeing well means your concern is on record and has been considered. If the decision stands and it is not an ethical or safety issue, committing to it while keeping your reservation noted is a professional choice, not a defeat."
+      ],
+      "example": "\"I share the goal of launching this quarter. I am concerned that skipping user testing risks a costly fix later, because the last two launches needed patches. Could we test with five users this week?\" The director still decides to skip; she documents her concern and supports the launch.",
+      "practicePrompts": [
+        "Write a disagreement script for a current issue."
+      ],
+      "apply": "Draft a three-sentence upward disagreement for a real or past situation.",
+      "reflect": "What disagreement are you holding back?",
       "contentVersion": 1
     },
     {
@@ -1511,6 +2189,18 @@
       ],
       "masteryItemIds": [],
       "explanationBackItemId": "i.emo.w11d4.explain",
+      "teach": [
+        "Complete three professional-context gym scenarios across categories.",
+        "Apply fact versus interpretation first.",
+        "Professional situations add role obligations: confidentiality, clients, team commitments, and the reputation of your organisation. These shape which responses are available, but they rarely require you to pretend you feel nothing. The question is not only \"what do I feel and want?\" but also \"what does my role require here, and how can I meet it while being honest about my concerns?\"",
+        "These drills mix all the professional skills. Expect some scenarios to have no perfect answer. The aim is to choose a response you could defend later: one that respects your role, the other person, and your own limits. Use the feedback to understand trade-offs rather than to memorise answers, since real situations will differ in details."
+      ],
+      "example": "Gym run: credit taken (private conversation plus written follow-up), new role with unclear expectations (drafted role summary), reorganisation rumours (controllables, limited checking). Each started with separating facts from interpretations.",
+      "practicePrompts": [
+        "Complete three professional scenarios."
+      ],
+      "apply": "Complete the professional scenarios in the gym that you have not tried yet.",
+      "reflect": "Which professional skill is strongest now?",
       "contentVersion": 1
     },
     {
@@ -1537,6 +2227,15 @@
         "i.emo.w11d5-q3"
       ],
       "explanationBackItemId": "i.emo.w11d5.explain",
+      "teach": [
+        "Phase checkpoint. 80% or more marks mastery (design choice). This checkpoint covers phase 8, professional composure: stay effective under pressure, demands and uncertainty at work.",
+        "Questions are drawn from a pool of the phase's items, with alternatives, so a retake shows different questions where possible. Up to two questions come from earlier phases to keep older skills active. If you miss questions, the results screen lists the lessons to revisit."
+      ],
+      "practicePrompts": [
+        "Answer from memory."
+      ],
+      "apply": "Pick the skill from this phase you found hardest and use it once in a real situation this week, then record it in the Journal.",
+      "reflect": "What does composure look like for you now?",
       "contentVersion": 1
     },
     {
@@ -1563,6 +2262,21 @@
       ],
       "masteryItemIds": [],
       "explanationBackItemId": "i.emo.w12d1.explain",
+      "teach": [
+        "Look at your journal: which situations recur, which interpretations, which urges, which outcomes? The Progress page shows your most frequent emotions and triggers.",
+        "Describe patterns, not causes. \"I tend to get defensive when feedback is public\" is a pattern. \"Because of my childhood\" is a causal claim this data cannot support.",
+        "Patterns point to where if-then plans help most.",
+        "Why habits persist. Many unhelpful responses persist because they bring quick relief. Avoiding an email lowers anxiety for a moment. Snapping at someone releases tension. Checking your phone ends boredom. The relief rewards the response, so it becomes more likely next time, even when the long-term cost is high. Looking at the short-term pay-off is not blame. It explains why willpower alone often does not change the pattern.",
+        "Patterns are not causes. A journal can show that you often feel irritated on Monday evenings after meetings with one colleague. That is an observed pattern. \"My colleague makes me angry because of my childhood\" is a causal hypothesis, and your notes cannot confirm it. Keep patterns descriptive, and treat explanations as hypotheses to test. Example: you notice that you postpone difficult calls until late afternoon. The pattern is clear. A hypothesis you can test is \"I put calls off because the first minute feels worst\", and a small change will show whether it holds.",
+        "Patterns appear when you look across several entries rather than one. Look for repeats in triggers (time of day, people, tasks), emotions, urges and outcomes. Be careful about causes: a pattern shows what tends to happen together, not why. \"I often feel irritable after long meetings\" is a pattern; \"because I am an introvert\" is an explanation you have not tested."
+      ],
+      "example": "Journal review: frustration appears in 9 of 14 entries; 7 of those follow meetings where decisions changed late. Pattern: \"I get frustrated when plans change without notice.\" Not: \"I am an angry person because of my upbringing.\" The plan: ask for decision deadlines.",
+      "practicePrompts": [
+        "Open Progress and review your top triggers.",
+        "Write one pattern statement."
+      ],
+      "apply": "Look at your Progress page and journal, and write one pattern and one small experiment to test it.",
+      "reflect": "What pattern stands out?",
       "contentVersion": 1
     },
     {
@@ -1588,6 +2302,17 @@
       ],
       "masteryItemIds": [],
       "explanationBackItemId": "i.emo.w12d2.explain",
+      "teach": [
+        "This app is training, not therapy or crisis support. If emotions are persistently overwhelming, if you feel unsafe, or if daily functioning is affected, talking to a qualified professional is a sensible step.",
+        "In India: in an emergency, dial 112. For free mental-health support, Tele-MANAS answers on 14416 or 1-800-891-4416. Both are government services.",
+        "Self-guided training has limits. Consider professional support if emotions often feel unmanageable, if they interfere with work, sleep or relationships for weeks, if you are using alcohol or other substances to cope, or if you have thoughts of harming yourself or others. Seeking help is a skill, not a failure: you can start with a GP, a counsellor, or a helpline, and you do not need to be in crisis to call."
+      ],
+      "example": "Over two months, Anil notices he cannot sleep, has stopped seeing friends, and the techniques feel out of reach. He books an appointment with a counsellor. Using the lab did not fail; it helped him notice the need for more support.",
+      "practicePrompts": [
+        "Note one person and one professional option you could contact."
+      ],
+      "apply": "Write down one person or service you would contact if things became too much.",
+      "reflect": "Who is in your support network?",
       "contentVersion": 1
     },
     {
@@ -1613,6 +2338,19 @@
       ],
       "masteryItemIds": [],
       "explanationBackItemId": "i.emo.w12d3.explain",
+      "teach": [
+        "Skills fade without use. Spaced reviews in this app bring back items at 2, 7 and 21 days after mastery.",
+        "Keep if-then plans for your top three triggers.",
+        "Notice which skills you actually use. After a few weeks, most people rely on two or three. That is fine. Use the gym to keep one less familiar skill in reach, so you are not left with only one tool when a new kind of situation arrives.",
+        "Expect gaps. Most people miss practice weeks during holidays, illness or busy periods. A maintenance plan should make restarting easy: one check-in, one review session. Starting again is part of the plan, not a failure of it.",
+        "A sustainable plan is small: for example, two check-ins a week, one gym scenario a week, and whatever reviews the app shows as due. Put it on a cue you already have. Decide now what restarting looks like after a gap, so that missing a week does not become stopping altogether."
+      ],
+      "example": "Maintenance plan: check-in on Monday and Thursday after lunch; one gym scenario on Saturday morning; reviews when the badge shows any due; keep three if-then plans for meetings, late messages and criticism.",
+      "practicePrompts": [
+        "Write your maintenance plan in the Journal."
+      ],
+      "apply": "Write your maintenance plan as two or three if-then plans in the Journal.",
+      "reflect": "What maintenance will you keep?",
       "contentVersion": 1
     },
     {
@@ -1639,6 +2377,20 @@
       ],
       "masteryItemIds": [],
       "explanationBackItemId": "i.emo.w12d4.explain",
+      "teach": [
+        "Take a real recent event and run the full chain: facts, interpretations, emotions with intensity, urge, strategy chosen, outcome, lesson.",
+        "Then write one if-then plan for next time.",
+        "Small experiments. Once you have a hypothesis about a pattern, test it with a small, safe, time-limited change. Write the prediction first (\"If I make the hard call at 10 am, I predict it will feel at least as bad as at 4 pm\"). Do it for a week. Then compare what happened with what you predicted. Keep the change small enough that you can actually run it, and observable enough that you can tell what happened.",
+        "Revising. If the result does not support your hypothesis, that is useful information, not a failure. Revise the hypothesis or try a different change. If it is supported, keep the change and look for the next small step. Example: you suspect that you ruminate less on evenings when you walk after work. You walk on three evenings and not on three others, and note your rumination each night from 0 to 10. If the numbers are similar, the walk may not be the key factor, and you can test something else, such as stopping work email at 7 pm.",
+        "The integration drill combines every skill from the programme in one pass. It will feel slower than real life at first. With repetition, many steps become quick and partly automatic, which is the point of practising them deliberately now.",
+        "When you apply the full chain to a real event, write it down afterwards. Notice which links came naturally and which you had to reach for. The ones you had to reach for are your next focus for practice. Over time, the chain often becomes shorter and quicker, because several steps happen together."
+      ],
+      "example": "Event: a client complaint. Facts: email at 4pm listing two issues. Interpretation: \"I will lose this client.\" Emotions: anxiety 7, embarrassment 4. Urge: defend. Strategy: breathe, separate facts, call the client. Outcome: issues fixed. Lesson: call earlier. Plan: \"If a complaint arrives, then I call within the hour.\"",
+      "practicePrompts": [
+        "Complete a full Journal reflection with all fields."
+      ],
+      "apply": "Apply the full chain to one real event this week and record it as a full reflection.",
+      "reflect": "What did the full chain reveal?",
       "contentVersion": 1
     },
     {
@@ -1665,6 +2417,15 @@
         "i.emo.w12d5-q3"
       ],
       "explanationBackItemId": "i.emo.w12d5.explain",
+      "teach": [
+        "Final checkpoint. Then take the post-programme assessment from Progress. 80% threshold is a design choice. This checkpoint covers phase 9, patterns and maintenance: map recurring patterns and build a sustainable practice.",
+        "Questions are drawn from a pool of the phase's items, with alternatives, so a retake shows different questions where possible. Up to two questions come from earlier phases to keep older skills active. If you miss questions, the results screen lists the lessons to revisit."
+      ],
+      "practicePrompts": [
+        "Answer from memory."
+      ],
+      "apply": "Pick the skill from this phase you found hardest and use it once in a real situation this week, then record it in the Journal.",
+      "reflect": "What will you carry forward?",
       "contentVersion": 1
     }
   ],

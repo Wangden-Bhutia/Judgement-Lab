@@ -125,6 +125,31 @@ describe('converted Emotional Skills content (60-session curriculum)', () => {
     expect(typedCurriculum.misconceptions).toEqual([]);
   });
 
+  it('every session carries its teaching prose, apply task and reflect prompt -- not just its items', () => {
+    // Regression test for a real gap: an earlier version of this script
+    // ported only the assessment layer (checks/activity/explain), silently
+    // dropping session.teach/apply/reflect. ESL's own distractors.ts says
+    // its wrong-answer choices are written "so that an item can only be
+    // answered reliably by someone who understood the lesson" -- which
+    // only holds if the lesson's teaching prose actually reaches the
+    // learner. Every one of ESL's 60 sessions has these fields (checked
+    // directly against esl-source/sessions.ts and enrich.ts), so every
+    // converted lesson must too.
+    for (const lesson of typedCurriculum.lessons) {
+      expect(lesson.teach?.length, `${lesson.id} has no teach`).toBeGreaterThan(0);
+      expect(lesson.practicePrompts?.length, `${lesson.id} has no practicePrompts`).toBeGreaterThan(0);
+      expect(lesson.apply, `${lesson.id} has no apply`).toBeTruthy();
+      expect(lesson.reflect, `${lesson.id} has no reflect`).toBeTruthy();
+    }
+  });
+
+  it('i.emo.w01d1\'s lesson teaches the exact idea its own activity and checks assume the learner already knows', () => {
+    const lesson = typedCurriculum.lessons.find((l) => l.id === 'emotional-w01d1')!;
+    expect(lesson.teach!.join(' ')).toMatch(/signal/i);
+    expect(lesson.example).toBeTruthy();
+    expect(lesson.apply).toMatch(/notice|ask/i);
+  });
+
   it('no concept has a masteryItemIds-derived checkpoint item covering more than one concept -- every concept is self-contained (unlike Strategic Reasoning)', () => {
     // A direct consequence of the "a skill is one session, concept = session
     // id" model: a checkpoint/review session's own masteryItemIds items are

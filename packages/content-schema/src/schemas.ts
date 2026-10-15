@@ -185,6 +185,11 @@ export const lessonSchema = z.object({
   // content shape, not a gap.
   masteryItemIds: z.array(nonEmpty()),
   explanationBackItemId: nonEmpty().optional(),
+  teach: z.array(nonEmpty()).min(1).optional(),
+  example: nonEmpty().optional(),
+  practicePrompts: z.array(nonEmpty()).min(1).optional(),
+  apply: nonEmpty().optional(),
+  reflect: nonEmpty().optional(),
   contentVersion: z.number().int().min(1),
 });
 

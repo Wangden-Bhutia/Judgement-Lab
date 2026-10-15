@@ -158,6 +158,24 @@ export interface Lesson {
   masteryItemIds: ItemId[];
   /** Item id used for layer 2 (explanation-back), if this lesson has one. */
   explanationBackItemId?: ItemId;
+  /**
+   * Instructional prose shown before any item, one paragraph per entry.
+   * Optional: Strategic Reasoning's lessons are discovery-first (the items
+   * themselves, with a post-answer explanation, ARE the instruction) and
+   * have no separate teaching text. Emotional Skills' lessons are
+   * teach-then-practice and always have this -- its own distractor design
+   * explicitly assumes the learner read it first (see
+   * track-emotional/scripts/convertEmotionalContent.ts).
+   */
+  teach?: string[];
+  /** A single worked example illustrating the lesson's idea, if the source provides one. */
+  example?: string;
+  /** Short retrieval-practice prompts done from memory before any item, not graded. */
+  practicePrompts?: string[];
+  /** A real-world task to try after the lesson, if the source provides one. */
+  apply?: string;
+  /** A reflection prompt to close the lesson, if the source provides one. */
+  reflect?: string;
   contentVersion: number;
 }
 

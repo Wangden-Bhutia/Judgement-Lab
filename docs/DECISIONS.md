@@ -141,6 +141,29 @@ Reasoning → port Emotional Skills → port Behavioural Observation → design 
   12 from `predict`/`compare` activities —, 60 `own_words`, 18 `classify`, 9 `sequence`, 9 `match`).
   15 new tests, all passing on first run against the real converted content.
 
+### Fixed after a full content/pedagogy audit: the teaching content itself was never ported
+
+The first pass above ported only ESL's assessment layer (checks, activity, explain-back) and silently
+dropped `session.teach` (the actual instructional paragraphs), `session.example` (worked example),
+`session.practice` (retrieval-practice prompts), `session.apply` (real-world transfer task) and
+`session.reflect` (closing reflection prompt) — because `content-schema`'s `Lesson` type had no field
+for any of them, having been shaped around Strategos's discovery-first pedagogy (the items themselves,
+with a post-answer explanation, ARE the instruction there). ESL is teach-then-practice, not
+discovery-first: its own `distractors.ts` says its wrong-answer choices are written "so that an item
+can only be answered reliably by someone who understood the lesson" — a design that only holds if the
+lesson's teaching prose actually reaches the learner. As shipped, a learner would have been quizzed on
+material they were never shown, on all 60 sessions.
+
+Fixed by adding `teach?`, `example?`, `practicePrompts?`, `apply?`, `reflect?` to `Lesson` in
+content-schema (all optional — Strategic Reasoning's lessons correctly leave them undefined) and
+re-running `convertEmotionalContent.ts`, which now carries all five straight from `Session` into the
+converted `Lesson`. Added a regression test asserting every one of the 60 converted lessons has
+non-empty `teach`/`practicePrompts`/`apply`/`reflect`, so this can't silently regress again. 389 tests
+pass across the workspace; typecheck clean.
+
+Still outstanding, not part of this fix: `apps/web`'s `LessonPlayer` has no UI to show this content —
+it only renders items. That's the next piece of work, not this one.
+
 ## Open, non-blocking
 
 - Final app name.
