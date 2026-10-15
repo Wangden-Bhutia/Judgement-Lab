@@ -31,6 +31,14 @@ export interface ChoiceOption {
 interface ItemBase {
   id: ItemId;
   concept: ConceptId;
+  /**
+   * The situation the prompt is asked about, shown to the learner before the
+   * prompt. Optional because some item types (e.g. predict, compare) carry
+   * their own self-contained framing fields instead — but any item whose
+   * prompt refers to "this situation" or specific people/choices needs one,
+   * or the prompt is unanswerable out of context.
+   */
+  scenario?: string;
   prompt: string;
 }
 

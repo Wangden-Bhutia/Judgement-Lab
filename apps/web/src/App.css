@@ -73,6 +73,16 @@
   color: var(--text);
 }
 
+.item-scenario {
+  font-size: 15px;
+  font-style: italic;
+  color: var(--text);
+  background: var(--code-bg);
+  border-radius: 8px;
+  padding: 10px 14px;
+  margin-bottom: 16px;
+}
+
 .item-prompt {
   font-size: 18px;
   margin-bottom: 16px;

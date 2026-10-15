@@ -12,6 +12,7 @@ export const choiceOptionSchema = z.object({
 const itemBase = {
   id: nonEmpty(),
   concept: nonEmpty(),
+  scenario: nonEmpty().optional(),
   prompt: nonEmpty(),
 };
 

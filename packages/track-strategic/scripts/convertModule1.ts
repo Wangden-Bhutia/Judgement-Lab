@@ -149,6 +149,13 @@ function convertItem(srcItem: SourceItem): Item {
   const instance = buildInstance(srcItem as never, skinId, variationId, lookup);
   const facts = srcItem.facts as Record<string, never>;
   const prompt = render(srcItem.prompt, instance, { facts });
+  // The skin's situation is the scene-setting text the prompt presupposes
+  // ("this situation", "what each wants", named people) -- without it the
+  // prompt is unanswerable out of context. Run it through render() too
+  // (harmless no-op here since skin text has no {slot} tokens) rather than
+  // using it raw, so it stays consistent if a future skin's situation ever
+  // does reference an engine-derived value.
+  const scenario = render(instance.skin.situation, instance, { facts });
   const conceptDef = conceptById.get(srcItem.concept)?.definition ?? '';
 
   if (srcItem.type === 'reason_choice') {
@@ -171,6 +178,7 @@ function convertItem(srcItem: SourceItem): Item {
     const item: ReasonChoiceItem = {
       id: srcItem.id,
       concept: srcItem.concept,
+      scenario,
       type: 'reason_choice',
       prompt,
       options,
@@ -185,6 +193,7 @@ function convertItem(srcItem: SourceItem): Item {
     const item: FillInItem = {
       id: srcItem.id,
       concept: srcItem.concept,
+      scenario,
       type: 'fill_in',
       prompt,
       slots: srcItem.slots.map((slot) => ({
@@ -208,6 +217,7 @@ function convertItem(srcItem: SourceItem): Item {
   const item: OwnWordsItem = {
     id: srcItem.id,
     concept: srcItem.concept,
+    scenario,
     type: 'own_words',
     prompt,
     modelAnswer: rubric.criteria.map((c) => c.meets.replace(/[“”]/g, '"')).join(' '),

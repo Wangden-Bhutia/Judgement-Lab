@@ -99,6 +99,13 @@ describe('converted Module 1 content (Strategic Reasoning)', () => {
     }
   });
 
+  it('every item carries the scenario its prompt presupposes, not just the bare question', () => {
+    for (const item of typedItems) {
+      expect(item.scenario, `${item.id} has no scenario`).toBeTruthy();
+      expect(item.scenario!.length).toBeGreaterThan(20);
+    }
+  });
+
   it('every misconception referenced by an item option is registered with a real definition, not a placeholder', () => {
     for (const misconception of typedCurriculum.misconceptions) {
       expect(misconception.description).not.toMatch(/see Strategos's error-codes\.json/);

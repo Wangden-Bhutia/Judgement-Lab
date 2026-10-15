@@ -13,6 +13,11 @@ export function ItemRenderer({ item, onSubmit }: ItemRendererProps) {
   return <p>Unsupported item type: {item.type}</p>;
 }
 
+function Scenario({ text }: { text: string | undefined }) {
+  if (!text) return null;
+  return <p className="item-scenario">{text}</p>;
+}
+
 function ReasonChoiceForm({
   item,
   onSubmit,
@@ -30,6 +35,7 @@ function ReasonChoiceForm({
         onSubmit({ itemType: 'reason_choice', selectedOptionIds: [selected] });
       }}
     >
+      <Scenario text={item.scenario} />
       <p className="item-prompt">{item.prompt}</p>
       <div className="options">
         {item.options.map((option) => (
@@ -70,6 +76,7 @@ function FillInForm({
         onSubmit({ itemType: 'fill_in', values });
       }}
     >
+      <Scenario text={item.scenario} />
       <p className="item-prompt">{item.prompt}</p>
       <div className="slots">
         {item.slots.map((slot, index) => (
@@ -103,6 +110,7 @@ function OwnWordsForm({
 
   return (
     <div className="item-form">
+      <Scenario text={item.scenario} />
       <p className="item-prompt">{item.prompt}</p>
       <textarea
         rows={4}

@@ -2,6 +2,7 @@
   {
     "id": "i.m1.players",
     "concept": "players",
+    "scenario": "You and Maria take lunch at the same time. Each of you heads either to the café or to the diner across the road. Your phones are out of charge. The café owner serves whoever comes.",
     "type": "reason_choice",
     "prompt": "Whose choices decide how this turns out?",
     "options": [
@@ -29,6 +30,7 @@
   {
     "id": "i.m1.actions",
     "concept": "actions",
+    "scenario": "You and Noah are planning Sunday. At the same moment, you post the place, the museum or the lake, and Noah posts the start time: morning, noon or evening. His sister Claire will drive you both, wherever and whenever.",
     "type": "reason_choice",
     "prompt": "What can Noah choose from?",
     "options": [
@@ -56,6 +58,7 @@
   {
     "id": "i.m1.players.three",
     "concept": "players",
+    "scenario": "Your reading circle meets this week. You choose whether it meets in person or online. At the same time Zoe chooses what to read: a short story, a novel or a play. Mr Reed, who owns the café, hosts whatever is chosen.",
     "type": "reason_choice",
     "prompt": "Whose choices decide how this turns out?",
     "options": [
@@ -83,6 +86,7 @@
   {
     "id": "i.m1.ranking",
     "concept": "preferences",
+    "scenario": "You and Maria take lunch at the same time. Each of you heads either to the café or to the diner across the road. Your phones are out of charge. The café owner serves whoever comes.",
     "type": "reason_choice",
     "prompt": "Which outcome does Maria like most?",
     "options": [
@@ -110,6 +114,7 @@
   {
     "id": "i.m1.ranking.tie",
     "concept": "preferences",
+    "scenario": "You and Ryan plan to walk together on Sunday. You set off first, by the north gate or the lake path. Ryan leaves an hour later and must pick a route too. There is no phone signal on the hill.",
     "type": "reason_choice",
     "prompt": "How does Ryan compare meeting you at North gate with meeting you at Lake path?",
     "options": [
@@ -137,6 +142,7 @@
   {
     "id": "i.m1.payoff",
     "concept": "payoff",
+    "scenario": "You and Maria take lunch at the same time. Each of you heads either to the café or to the diner across the road. Your phones are out of charge. The café owner serves whoever comes.",
     "type": "fill_in",
     "prompt": "In the table, when you choose Canteen and Maria chooses Canteen, your payoff is ___ and Maria’s payoff is ___.",
     "slots": [
@@ -158,6 +164,7 @@
   {
     "id": "i.m1.info.meet",
     "concept": "information",
+    "scenario": "You and Maria take lunch at the same time. Each of you heads either to the café or to the diner across the road. Your phones are out of charge. The café owner serves whoever comes.",
     "type": "reason_choice",
     "prompt": "When Maria decides, what does Maria know about your choice?",
     "options": [
@@ -185,6 +192,7 @@
   {
     "id": "i.m1.info.turns",
     "concept": "information",
+    "scenario": "Your housing society is planning a park clean-up. You fix the date first: a weekday or the weekend. Grace, who leads a volunteer group, reads your notice and then decides whether her group joins yours or holds its own event later.",
     "type": "reason_choice",
     "prompt": "When Grace decides, what does Grace know about your choice?",
     "options": [
@@ -212,6 +220,7 @@
   {
     "id": "i.m1.first",
     "concept": "timing",
+    "scenario": "Your housing society is planning a park clean-up. You fix the date first: a weekday or the weekend. Grace, who leads a volunteer group, reads your notice and then decides whether her group joins yours or holds its own event later.",
     "type": "reason_choice",
     "prompt": "Who chooses first?",
     "options": [
@@ -239,6 +248,7 @@
   {
     "id": "i.m1.info.three",
     "concept": "information",
+    "scenario": "You and Noah are planning Sunday. At the same moment, you post the place, the museum or the lake, and Noah posts the start time: morning, noon or evening. His sister Claire will drive you both, wherever and whenever.",
     "type": "reason_choice",
     "prompt": "When Noah decides, what does Noah know about your choice?",
     "options": [
@@ -266,6 +276,7 @@
   {
     "id": "i.m1.unseen",
     "concept": "information",
+    "scenario": "You and Ryan plan to walk together on Sunday. You set off first, by the north gate or the lake path. Ryan leaves an hour later and must pick a route too. There is no phone signal on the hill.",
     "type": "reason_choice",
     "prompt": "Ryan decides after you. What does Ryan know about your choice at that point?",
     "options": [
@@ -293,6 +304,7 @@
   {
     "id": "i.m1.first.unseen",
     "concept": "timing",
+    "scenario": "You and Ryan plan to walk together on Sunday. You set off first, by the north gate or the lake path. Ryan leaves an hour later and must pick a route too. There is no phone signal on the hill.",
     "type": "reason_choice",
     "prompt": "Who chooses first?",
     "options": [
@@ -320,6 +332,7 @@
   {
     "id": "i.m1.unseen.why",
     "concept": "information",
+    "scenario": "You and Ryan plan to walk together on Sunday. You set off first, by the north gate or the lake path. Ryan leaves an hour later and must pick a route too. There is no phone signal on the hill.",
     "type": "reason_choice",
     "prompt": "Does going later give Ryan an advantage here?",
     "options": [
@@ -347,6 +360,7 @@
   {
     "id": "i.m1.depends.three",
     "concept": "strategic_dependence",
+    "scenario": "You and Noah are planning Sunday. At the same moment, you post the place, the museum or the lake, and Noah posts the start time: morning, noon or evening. His sister Claire will drive you both, wherever and whenever.",
     "type": "reason_choice",
     "prompt": "Does how things go for you depend on what Noah chooses?",
     "options": [
@@ -374,6 +388,7 @@
   {
     "id": "i.m1.depends.turns",
     "concept": "strategic_dependence",
+    "scenario": "Your housing society is planning a park clean-up. You fix the date first: a weekday or the weekend. Grace, who leads a volunteer group, reads your notice and then decides whether her group joins yours or holds its own event later.",
     "type": "reason_choice",
     "prompt": "Does how things go for you depend on what Grace chooses?",
     "options": [
@@ -401,6 +416,7 @@
   {
     "id": "i.m1.depends.unseen",
     "concept": "strategic_dependence",
+    "scenario": "You and Ryan plan to walk together on Sunday. You set off first, by the north gate or the lake path. Ryan leaves an hour later and must pick a route too. There is no phone signal on the hill.",
     "type": "reason_choice",
     "prompt": "Does how things go for you depend on what Ryan chooses?",
     "options": [
@@ -428,6 +444,7 @@
   {
     "id": "i.m1.words",
     "concept": "strategic_dependence",
+    "scenario": "You and Maria take lunch at the same time. Each of you heads either to the café or to the diner across the road. Your phones are out of charge. The café owner serves whoever comes.",
     "type": "own_words",
     "prompt": "Describe this situation in your own words: who decides, what each can choose, who knows what, and what each wants.",
     "modelAnswer": "\"Maria and I each pick where to eat.\" \"Each of us can go to the café or the diner.\" \"We choose at the same time without seeing each other.\" \"I like the café more, but we both want to eat together.\"",
@@ -441,6 +458,7 @@
   {
     "id": "i.m1.t.players",
     "concept": "players",
+    "scenario": "You and Kai volunteer at the community library. This Saturday each of you signs up for one shift, opening or closing. Mrs Baker, the librarian, keeps the doors open all day regardless.",
     "type": "reason_choice",
     "prompt": "Whose choices decide how this turns out?",
     "options": [
@@ -468,6 +486,7 @@
   {
     "id": "i.m1.t.timing",
     "concept": "timing",
+    "scenario": "At your second-hand book stall you name your asking price first, high or low. Adam, a regular buyer, hears your price and then decides to buy now or wait until next week.",
     "type": "reason_choice",
     "prompt": "Who chooses first?",
     "options": [
@@ -495,6 +514,7 @@
   {
     "id": "i.m1.t.unseen",
     "concept": "information",
+    "scenario": "You and your friend Sofia want to meet after your evening class. Your class ends first, so you walk to the corner café or the book café. Sofia’s class ends later; then she picks one. Your phone battery is dead.",
     "type": "reason_choice",
     "prompt": "When Sofia decides, what does Sofia know about your choice?",
     "options": [
@@ -522,6 +542,7 @@
   {
     "id": "i.m1.t.depends",
     "concept": "strategic_dependence",
+    "scenario": "A test rig has your switch and the other side’s dial. You flip the switch up or down. At the same moment, the other side sets its dial to low, mid or high, without seeing your switch.",
     "type": "reason_choice",
     "prompt": "Does how things go for you depend on what the other side chooses?",
     "options": [
