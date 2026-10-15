@@ -6,7 +6,7 @@
  *  - no policing / law-enforcement vocabulary in engine code, tests or fixtures (neutral everyday stories only).
  */
 import { readdirSync, readFileSync, statSync } from 'node:fs';
-import { join, relative } from 'node:path';
+import { join, relative, sep } from 'node:path';
 import { describe, expect, it } from 'vitest';
 
 const root = join(import.meta.dirname, '..', '..');
@@ -19,6 +19,14 @@ function walk(dir: string): string[] {
 }
 
 const srcFiles = walk(join(root, 'src')).filter((f) => f.endsWith('.ts'));
+// The floating-point-arithmetic check below is specifically about solver
+// purity (ported from @strategos/engine, which lived in its own package
+// with nothing else in its src/ tree). contentPort/ is the separately-
+// ported content-rendering layer (render.ts etc.), which legitimately
+// converts exact rationals to display numbers -- exactly what rational.ts
+// itself is already allowed to do, just in a different file now that both
+// layers share one package. Excluded from that one check only.
+const solverFiles = srcFiles.filter((f) => !relative(root, f).split(sep).includes('contentPort'));
 const testFiles = walk(join(root, 'tests')).filter((f) => /\.(ts|json|md)$/.test(f));
 const repo = join(root, '..', '..');
 const docFiles = [
@@ -34,7 +42,7 @@ describe('engine source hygiene', () => {
   });
 
   it('has no floating-point arithmetic in solver code', () => {
-    for (const f of srcFiles) {
+    for (const f of solverFiles) {
       const rel = relative(root, f);
       const code = stripComments(readFileSync(f, 'utf8'));
       expect(code, rel).not.toMatch(/parseFloat|toFixed|toPrecision|Number\.EPSILON/);

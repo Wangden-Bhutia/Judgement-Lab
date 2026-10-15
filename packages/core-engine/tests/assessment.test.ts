@@ -25,17 +25,51 @@ describe('evaluateAnswer', () => {
     expect(wrong.misconceptions).toEqual(['m1']);
   });
 
-  it('scores a fill_in item case-insensitively and trimmed', () => {
+  it('scores a single-blank fill_in item case-insensitively and trimmed', () => {
     const item: Item = {
       id: 'fi1',
       concept: 'c1',
       type: 'fill_in',
       prompt: 'p',
-      acceptedValues: ['Commitment Device'],
+      slots: [{ id: 's1', acceptedValues: ['Commitment Device'] }],
       explanation: 'exp',
     };
-    const result = evaluateAnswer(item, { itemId: 'fi1', value: { itemType: 'fill_in', value: '  commitment device  ' } });
+    const result = evaluateAnswer(item, {
+      itemId: 'fi1',
+      value: { itemType: 'fill_in', values: { s1: '  commitment device  ' } },
+    });
     expect(result.correct).toBe(true);
+  });
+
+  it('a multi-blank fill_in item requires every blank correct', () => {
+    const item: Item = {
+      id: 'fi2',
+      concept: 'c1',
+      type: 'fill_in',
+      prompt: 'p',
+      slots: [
+        { id: 's1', acceptedValues: ['3'] },
+        { id: 's2', acceptedValues: ['2'] },
+      ],
+      explanation: 'exp',
+    };
+    const allCorrect = evaluateAnswer(item, {
+      itemId: 'fi2',
+      value: { itemType: 'fill_in', values: { s1: '3', s2: '2' } },
+    });
+    expect(allCorrect.correct).toBe(true);
+
+    const oneWrong = evaluateAnswer(item, {
+      itemId: 'fi2',
+      value: { itemType: 'fill_in', values: { s1: '3', s2: '9' } },
+    });
+    expect(oneWrong.correct).toBe(false);
+
+    const missing = evaluateAnswer(item, {
+      itemId: 'fi2',
+      value: { itemType: 'fill_in', values: { s1: '3' } },
+    });
+    expect(missing.correct).toBe(false);
   });
 
   it('scores an own_words item from self-assessed criteria, never auto-grading prose', () => {
@@ -183,11 +217,11 @@ describe('evaluateAnswer', () => {
       concept: 'c1',
       type: 'fill_in',
       prompt: 'p',
-      acceptedValues: ['x'],
+      slots: [{ id: 's1', acceptedValues: ['x'] }],
       explanation: 'exp',
     };
     expect(() =>
-      evaluateAnswer(item, { itemId: 'wrong-id', value: { itemType: 'fill_in', value: 'x' } })
+      evaluateAnswer(item, { itemId: 'wrong-id', value: { itemType: 'fill_in', values: { s1: 'x' } } })
     ).toThrow();
   });
 
@@ -197,7 +231,7 @@ describe('evaluateAnswer', () => {
       concept: 'c1',
       type: 'fill_in',
       prompt: 'p',
-      acceptedValues: ['x'],
+      slots: [{ id: 's1', acceptedValues: ['x'] }],
       explanation: 'exp',
     };
     expect(() =>

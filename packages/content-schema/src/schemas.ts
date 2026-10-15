@@ -38,12 +38,24 @@ export const reasonChoiceItemSchema = z
     }
   });
 
-export const fillInItemSchema = z.object({
-  ...itemBase,
-  type: z.literal('fill_in'),
+export const fillInSlotSchema = z.object({
+  id: nonEmpty(),
   acceptedValues: z.array(nonEmpty()).min(1),
-  explanation: nonEmpty(),
 });
+
+export const fillInItemSchema = z
+  .object({
+    ...itemBase,
+    type: z.literal('fill_in'),
+    slots: z.array(fillInSlotSchema).min(1),
+    explanation: nonEmpty(),
+  })
+  .superRefine((item, ctx) => {
+    const slotIds = new Set(item.slots.map((s) => s.id));
+    if (slotIds.size !== item.slots.length) {
+      ctx.addIssue({ code: 'custom', message: `Item ${item.id} has duplicate slot ids` });
+    }
+  });
 
 export const ownWordsItemSchema = z.object({
   ...itemBase,

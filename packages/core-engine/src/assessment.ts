@@ -43,7 +43,10 @@ export function evaluateAnswer(item: Item, submission: AnswerSubmission): Answer
     case 'fill_in': {
       const value = submission.value as Extract<AnswerSubmission['value'], { itemType: 'fill_in' }>;
       const normalise = (s: string) => s.trim().toLowerCase();
-      const correct = item.acceptedValues.some((accepted) => normalise(accepted) === normalise(value.value));
+      const correct = item.slots.every((slot) => {
+        const submitted = value.values[slot.id];
+        return submitted !== undefined && slot.acceptedValues.some((accepted) => normalise(accepted) === normalise(submitted));
+      });
       return {
         itemId: item.id,
         correct,

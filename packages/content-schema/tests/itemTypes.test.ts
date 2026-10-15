@@ -2,16 +2,46 @@ import { describe, expect, it } from 'vitest';
 import { itemSchema } from '../src/schemas';
 
 describe('itemSchema: every item type', () => {
-  it('accepts a well-formed fill_in item', () => {
+  it('accepts a well-formed fill_in item with a single blank', () => {
     const result = itemSchema.safeParse({
       id: 'fi-1',
       concept: 'c1',
       type: 'fill_in',
-      prompt: 'What is the term for a decision that locks in future options?',
-      acceptedValues: ['commitment', 'commitment device'],
+      prompt: 'What is the term for a decision that locks in future options? {slot:s1}',
+      slots: [{ id: 's1', acceptedValues: ['commitment', 'commitment device'] }],
       explanation: 'A commitment device removes future flexibility on purpose.',
     });
     expect(result.success).toBe(true);
+  });
+
+  it('accepts a well-formed fill_in item with multiple blanks', () => {
+    const result = itemSchema.safeParse({
+      id: 'fi-2',
+      concept: 'c1',
+      type: 'fill_in',
+      prompt: 'Your payoff is {slot:s1} and theirs is {slot:s2}.',
+      slots: [
+        { id: 's1', acceptedValues: ['3'] },
+        { id: 's2', acceptedValues: ['2'] },
+      ],
+      explanation: 'x',
+    });
+    expect(result.success).toBe(true);
+  });
+
+  it('rejects a fill_in item with duplicate slot ids', () => {
+    const result = itemSchema.safeParse({
+      id: 'fi-3',
+      concept: 'c1',
+      type: 'fill_in',
+      prompt: '{slot:s1} and {slot:s1}.',
+      slots: [
+        { id: 's1', acceptedValues: ['3'] },
+        { id: 's1', acceptedValues: ['2'] },
+      ],
+      explanation: 'x',
+    });
+    expect(result.success).toBe(false);
   });
 
   it('accepts a well-formed own_words item', () => {

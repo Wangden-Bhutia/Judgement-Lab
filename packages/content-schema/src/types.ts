@@ -43,9 +43,21 @@ export interface ReasonChoiceItem extends ItemBase {
 }
 
 /** A short structured answer matched (case-insensitively) against a set of accepted values. */
+export interface FillInSlot {
+  id: string;
+  /** Accepted values for this blank, matched case-insensitively. */
+  acceptedValues: string[];
+}
+
+/**
+ * One or more blanks in a single prompt. A prompt with more than one blank
+ * references each by id (e.g. "...your payoff is {slot:s1} and theirs is
+ * {slot:s2}"); the reference convention is presentational and up to
+ * whatever renders the prompt, not enforced here.
+ */
 export interface FillInItem extends ItemBase {
   type: 'fill_in';
-  acceptedValues: string[];
+  slots: FillInSlot[];
   explanation: string;
 }
 
@@ -179,7 +191,7 @@ export interface Curriculum {
 
 export type AnswerValue =
   | { itemType: 'reason_choice'; selectedOptionIds: string[] }
-  | { itemType: 'fill_in'; value: string }
+  | { itemType: 'fill_in'; values: Record<string, string> }
   | { itemType: 'own_words'; draft: string; selfAssessedCriteriaMet: boolean[] }
   | { itemType: 'classify'; placements: Record<string, string> }
   | { itemType: 'sequence'; order: string[] }
