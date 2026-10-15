@@ -67,6 +67,22 @@ describe('computeSkillMastery', () => {
     expect(result.mastered).toBe(true);
   });
 
+  it('on a timestamp tie, trusts recording order over string comparison (later-recorded wins)', () => {
+    // Two attempts on the same item can share a millisecond timestamp (a
+    // fast double-submit, or automated replay). `attempts` is recording
+    // order, so the correct retry -- which comes second in the array --
+    // must win even though its timestamp is not strictly greater.
+    const attempts = [
+      attempt({ itemId: 'i1', source: 'review', correct: false, attemptedAt: '2026-01-01T00:00:00.000Z' }),
+      attempt({ itemId: 'i1', source: 'review', correct: true, attemptedAt: '2026-01-01T00:00:00.000Z' }),
+      attempt({ itemId: 'i2', source: 'checkpoint', correct: true }),
+    ];
+    const result = computeSkillMastery('concept-1', attempts);
+    expect(result.itemsSeen).toBe(2);
+    expect(result.accuracy).toBe(1);
+    expect(result.mastered).toBe(true);
+  });
+
   it('only considers attempts for the requested concept', () => {
     const attempts = [
       attempt({ itemId: 'i1', conceptId: 'concept-1', source: 'review', correct: true }),

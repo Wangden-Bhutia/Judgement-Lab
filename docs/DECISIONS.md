@@ -70,6 +70,40 @@ port Strategic Reasoning content → one working lesson end-to-end → validate 
 Reasoning → port Emotional Skills → port Behavioural Observation → design the unified cross-track
 "Today" experience → Capacitor Android wrap + release audit.
 
+## Phase 6 validation findings
+
+- **Mastery is currently unreachable for every concept through the lesson flow alone.** Skill mastery
+  needs >=2 delayed-evidence (non-`'lesson'`-source) attempts per concept. Right now the only way an
+  attempt gets recorded with a different source is a lesson's `masteryItemIds` item, answered once,
+  tagged `'checkpoint'` — at most 1 delayed-evidence attempt per concept, ever, until a spaced-review
+  UI exists that re-presents items later and records those as `'review'`. That UI is not built yet
+  (see Build order above — it's part of the "Today" experience work, not yet reached). This was
+  verified with an integration test (`apps/web/src/masteryGate.test.ts`) exercising real Module 1
+  content through `progress.ts` + `core-engine` together, not just engine unit tests in isolation.
+- **3 of Module 1's 7 concepts (`actions`, `preferences`, `payoff`) have no checkpoint item at all.**
+  Strategos's own source data never wrote a transfer/recognition-role item for them in this module —
+  a genuine content gap, not a conversion-script bug. It doesn't block mastery permanently (any item
+  of the concept answered with a non-lesson source counts, not just `masteryItemIds` ones), but it
+  does mean these 3 concepts depend entirely on a future review flow re-presenting an ordinary
+  practice item, with no fallback. Documented as an executable test so it can't silently regress or
+  silently get "fixed" by someone fabricating a checkpoint item without engine-verified correctness.
+- **Found and fixed a real bug in `computeSkillMastery`** while writing the above: it picked the
+  "latest" attempt per item by strict string comparison (`attemptedAt >`), so two attempts on the same
+  item sharing a millisecond timestamp (a fast double-submit, or any batch/replay scenario) kept
+  whichever was encountered *first* in the array, not the actually-later one. Changed to `>=`, which
+  is correct because `attempts` is append-order = chronological order.
+- **Offline support was entirely missing** — `apps/web` had no service worker or manifest despite the
+  whole platform choice (§Decisions #2) being built around an installable, offline-first PWA. Added
+  `vite-plugin-pwa` (generateSW strategy, precaching all built assets + content JSON, `autoUpdate`
+  registration). Build output confirms precaching works (8 entries, ~264 KiB). **Could not verify live
+  service-worker registration inside this project's own preview tooling** — `navigator.serviceWorker
+  .register()` fails there with "unknown error fetching script" even though the exact same file
+  `curl`s with a 200 and the correct `content-type`; service-worker script fetches are a browser-level
+  privileged fetch that bypasses normal page networking, and this environment's preview tunnel most
+  likely doesn't proxy that path the same way it proxies ordinary requests. This looks like a
+  limitation of the preview sandbox, not the app — worth re-verifying in a real, non-sandboxed browser
+  before trusting it, rather than assuming either way.
+
 ## Open, non-blocking
 
 - Final app name.

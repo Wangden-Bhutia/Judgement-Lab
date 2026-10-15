@@ -37,7 +37,11 @@ export function computeSkillMastery(conceptId: ConceptId, attempts: ItemAttemptR
   const latestByItem = new Map<ItemId, ItemAttemptRecord>();
   for (const attempt of delayedAttempts) {
     const existing = latestByItem.get(attempt.itemId);
-    if (!existing || attempt.attemptedAt > existing.attemptedAt) {
+    // >= , not >: two attempts on the same item can share a millisecond
+    // timestamp (e.g. automated replay, or a fast double-submit), and
+    // `delayedAttempts` preserves recording order, so on a tie the one
+    // encountered later in the loop is the actually-later attempt.
+    if (!existing || attempt.attemptedAt >= existing.attemptedAt) {
       latestByItem.set(attempt.itemId, attempt);
     }
   }
