@@ -14,7 +14,9 @@ interface TodayScreenProps {
   concepts: Concept[];
   progress: ReadonlyMap<string, LessonProgressState>;
   attempts: ItemAttemptRecord[];
+  dueReviewCount: number;
   onSelectLesson: (lesson: Lesson) => void;
+  onStartReview: () => void;
 }
 
 const STATUS_LABEL: Record<LessonStatus, string> = {
@@ -58,7 +60,9 @@ export function TodayScreen({
   concepts,
   progress,
   attempts,
+  dueReviewCount,
   onSelectLesson,
+  onStartReview,
 }: TodayScreenProps) {
   const masteredConcepts = concepts.filter((c) => computeSkillMastery(c.id, attempts).mastered);
   const totalLessons = modules.reduce((sum, m) => sum + m.lessonIds.length, 0);
@@ -72,6 +76,17 @@ export function TodayScreen({
         {completedLessons} of {totalLessons} lessons completed · {masteredConcepts.length} of {concepts.length}{' '}
         concepts mastered
       </p>
+
+      {dueReviewCount > 0 && (
+        <section className="today-card review-card">
+          <p className="today-card-module">Spaced review</p>
+          <h2>
+            {dueReviewCount} {dueReviewCount === 1 ? 'concept is' : 'concepts are'} due for review
+          </h2>
+          <p>Quick retrieval checks on things you've already learned, to keep them from fading.</p>
+          <button onClick={onStartReview}>Start review</button>
+        </section>
+      )}
 
       {next ? (
         <section className="today-card">

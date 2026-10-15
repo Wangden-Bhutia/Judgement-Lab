@@ -1,5 +1,10 @@
 import { describe, expect, it } from 'vitest';
-import { buildRetentionQueue, nextRetentionIntervalDays, scheduleNextReview } from '../src/revision';
+import {
+  buildRetentionQueue,
+  nextRetentionIntervalDays,
+  scheduleNextReview,
+  updateReviewState,
+} from '../src/revision';
 
 describe('nextRetentionIntervalDays', () => {
   it('follows the 2/7/21-day schedule', () => {
@@ -43,5 +48,38 @@ describe('buildRetentionQueue', () => {
     ];
     const queue = buildRetentionQueue(items, now);
     expect(queue.map((q) => q.conceptId)).toEqual(['c-due-earlier', 'c-due-later']);
+  });
+});
+
+describe('updateReviewState', () => {
+  const now = new Date('2026-01-01T00:00:00.000Z');
+
+  it('a fresh concept entering the schedule for the first time (first checkpoint attempt) lands on the 2-day interval, even on success', () => {
+    const state = updateReviewState(undefined, 'c1', true, now);
+    expect(state.consecutiveSuccesses).toBe(1);
+    expect(new Date(state.nextReviewAt).getTime() - now.getTime()).toBe(2 * 24 * 60 * 60 * 1000);
+  });
+
+  it('a second consecutive success lengthens the interval to 7 days', () => {
+    const first = updateReviewState(undefined, 'c1', true, now);
+    const second = updateReviewState(first, 'c1', true, now);
+    expect(second.consecutiveSuccesses).toBe(2);
+    expect(new Date(second.nextReviewAt).getTime() - now.getTime()).toBe(7 * 24 * 60 * 60 * 1000);
+  });
+
+  it('a third consecutive success lengthens the interval to 21 days', () => {
+    let state = updateReviewState(undefined, 'c1', true, now);
+    state = updateReviewState(state, 'c1', true, now);
+    state = updateReviewState(state, 'c1', true, now);
+    expect(state.consecutiveSuccesses).toBe(3);
+    expect(new Date(state.nextReviewAt).getTime() - now.getTime()).toBe(21 * 24 * 60 * 60 * 1000);
+  });
+
+  it('a miss resets the streak and the interval to 2 days, however long the prior streak was', () => {
+    let state = updateReviewState(undefined, 'c1', true, now);
+    state = updateReviewState(state, 'c1', true, now);
+    state = updateReviewState(state, 'c1', false, now);
+    expect(state.consecutiveSuccesses).toBe(0);
+    expect(new Date(state.nextReviewAt).getTime() - now.getTime()).toBe(2 * 24 * 60 * 60 * 1000);
   });
 });

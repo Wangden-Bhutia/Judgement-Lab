@@ -209,6 +209,42 @@ gate / review-flow gap (most concepts in both tracks still can't reach mastery w
 UI, which doesn't exist yet) — that's Phase 10 ("design the unified cross-track Today experience")
 territory, not a quick follow-up.
 
+## Spaced-review UI (closes the Phases 6-8 mastery-gate finding)
+
+Added the missing piece: `core-engine`'s `scheduleNextReview`/`buildRetentionQueue` have existed since
+Phase 2 but nothing ever called them with real state. Added:
+
+- `ConceptReviewState` + `updateReviewState` to `core-engine/src/revision.ts` — persisted per-concept
+  schedule state (storage/app concern, not content: nothing in content-schema or a track's own data
+  knows about a learner's personal review schedule). Takes the PRE-update streak so a fresh first
+  success correctly lands on the 2-day interval rather than skipping ahead — `scheduleNextReview`
+  already encodes "a miss resets to 2 days"; this is what makes that apply to first successes too.
+- `progress.ts`'s `recordAttempt` now also advances a concept's review schedule whenever the attempt's
+  source isn't `'lesson'` — the same `source !== 'lesson'` rule `computeSkillMastery` already uses, so
+  the review queue and mastery gate move in lockstep by construction, not by convention two files have
+  to independently agree on.
+- `ReviewSession.tsx` (new) — a review re-presents ONE item per due concept, preferring an auto-graded
+  item over `own_words` (self-assessed correctness is weaker evidence). Answering records the attempt
+  with `source: 'review'`.
+- `TodayScreen` gets a `review-card` (dashed border, shown above the next-lesson card) whenever any
+  concept is due, with a count and a "Start review" button.
+
+**A known, deliberate limitation, not fixed here**: a concept only enters the review schedule via a
+checkpoint/review-source attempt. A concept with NO checkpoint item anywhere (the `actions`/
+`preferences`/`payoff`/`dominated_action`-type gap documented in Phases 6-8) still never gets a first
+one, so it can never enter the schedule at all — this UI closes the gap for concepts that DO get a
+checkpoint attempt, not every concept in the curriculum. Seeding review state from lesson completion
+instead (using `lesson.concepts`, which exists for exactly this) would close the rest; deliberately not
+done here, flagged in `apps/web/src/masteryGate.test.ts`'s updated comment instead of silently assumed.
+
+Verified both with new integration tests (`core-engine/tests/revision.test.ts`'s `updateReviewState`
+suite, `apps/web/src/reviewFlow.test.ts`) and live end-to-end in-browser: played Strategic Reasoning's
+lesson 4 for real (generating a genuine `'checkpoint'` attempt), confirmed the `players` concept
+entered the review schedule at the 2-day interval, backdated `nextReviewAt` via IndexedDB to simulate
+the wait, confirmed the Today screen surfaced a review card with the correct count, played the review,
+and confirmed both the schedule advanced to the 7-day interval AND the concept became the first one in
+the entire project to show as mastered through the real UI. 397 tests pass; typecheck clean.
+
 ## Open, non-blocking
 
 - Final app name.

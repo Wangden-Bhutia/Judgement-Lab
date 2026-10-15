@@ -69,6 +69,10 @@
   padding: 10px 20px;
 }
 
+.review-card {
+  border-style: dashed;
+}
+
 .today-card-done {
   background: var(--code-bg);
   border-color: var(--border);
