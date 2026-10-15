@@ -189,6 +189,26 @@ Verified end-to-end in-browser: switched tracks, played Emotional Skills' `w01d1
 switched back to Strategic Reasoning and confirmed its lesson 1 still opens straight to items with no
 teach screen. 389 tests pass; typecheck clean.
 
+### 4. "Today" redesigned to actually be daily
+
+`TodayScreen` rendered the entire syllabus as one flat scroll, grouped by module — tolerable at 12
+lessons, a genuine problem at 60+. Redesigned around a single primary card: the earliest lesson, in
+curriculum order, that isn't locked or already completed (`findNextLesson`) — i.e. what "today's
+practice" actually is for a linear, prerequisite-gated curriculum. The full module-grouped list is
+still there, just moved into a native `<details>`/`<summary>` disclosure (collapsed by default, no
+extra state needed) so a user can still jump ahead or revisit a completed lesson. Added a lesson-
+completion count (`X of N lessons completed`) alongside the existing concept-mastery count, and a
+distinct "you've completed every lesson in this track" state when `findNextLesson` returns nothing.
+
+Verified live for both tracks (12-lesson and 60-lesson) and the completed-track state (by marking all
+12 Strategic Reasoning lessons done via IndexedDB directly, faster than replaying them). 389 tests
+pass; typecheck clean.
+
+This closes the full content/pedagogy/UX audit's punch list. Still open from Phases 6-8: the mastery-
+gate / review-flow gap (most concepts in both tracks still can't reach mastery without a spaced-review
+UI, which doesn't exist yet) — that's Phase 10 ("design the unified cross-track Today experience")
+territory, not a quick follow-up.
+
 ## Open, non-blocking
 
 - Final app name.

@@ -39,6 +39,51 @@
   margin-bottom: 24px;
 }
 
+.today-card {
+  border: 1px solid var(--accent-border);
+  background: var(--accent-bg);
+  border-radius: 12px;
+  padding: 20px 24px;
+  margin-bottom: 32px;
+}
+
+.today-card-module {
+  margin: 0 0 4px;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text);
+}
+
+.today-card h2 {
+  margin: 0 0 8px;
+}
+
+.today-card p {
+  margin: 0 0 16px;
+  color: var(--text);
+}
+
+.today-card button {
+  font-size: 16px;
+  padding: 10px 20px;
+}
+
+.today-card-done {
+  background: var(--code-bg);
+  border-color: var(--border);
+}
+
+.syllabus summary {
+  cursor: pointer;
+  color: var(--text);
+  margin-bottom: 16px;
+}
+
+.syllabus[open] summary {
+  margin-bottom: 24px;
+}
+
 .module-section {
   margin-bottom: 32px;
 }
