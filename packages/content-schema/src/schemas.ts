@@ -176,7 +176,13 @@ export const lessonSchema = z.object({
   concepts: z.array(nonEmpty()).min(1),
   prerequisites: z.array(nonEmpty()),
   interactiveItemIds: z.array(nonEmpty()),
-  masteryItemIds: z.array(nonEmpty()).min(1),
+  // Not every lesson has its own mastery-tier items: a module may concentrate
+  // transfer/checkpoint items in its closing lesson instead (testing every
+  // concept introduced across the module), with earlier lessons' concepts
+  // only reaching skill mastery once that happens. core-engine's mastery
+  // model is per-concept and lesson-agnostic, so this is a legitimate
+  // content shape, not a gap.
+  masteryItemIds: z.array(nonEmpty()),
   explanationBackItemId: nonEmpty().optional(),
   contentVersion: z.number().int().min(1),
 });

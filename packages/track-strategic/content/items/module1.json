@@ -1,0 +1,549 @@
+[
+  {
+    "id": "i.m1.players",
+    "concept": "players",
+    "type": "reason_choice",
+    "prompt": "Whose choices decide how this turns out?",
+    "options": [
+      {
+        "id": "A",
+        "text": "You, Maria and the café owner, as all of you are in the story.",
+        "misconception": "strategic-model_extra_player"
+      },
+      {
+        "id": "B",
+        "text": "You and Maria: each of your choices changes the result.",
+        "conceptTag": "players"
+      },
+      {
+        "id": "C",
+        "text": "Only you: Maria has no real say in the result.",
+        "misconception": "strategic-model_missing_player"
+      }
+    ],
+    "acceptableAnswers": [
+      "B"
+    ],
+    "explanation": "A player is anyone whose choice affects the outcome. People who make no choice are not players."
+  },
+  {
+    "id": "i.m1.actions",
+    "concept": "actions",
+    "type": "reason_choice",
+    "prompt": "What can Noah choose from?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Morning, Noon or Evening, any of them.",
+        "conceptTag": "actions"
+      },
+      {
+        "id": "B",
+        "text": "Only Morning or Noon, nothing else.",
+        "misconception": "strategic-model_missing_action"
+      },
+      {
+        "id": "C",
+        "text": "Only Noon or Evening, nothing else.",
+        "misconception": "strategic-model_missing_action"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "An action is one of the choices a player can make."
+  },
+  {
+    "id": "i.m1.players.three",
+    "concept": "players",
+    "type": "reason_choice",
+    "prompt": "Whose choices decide how this turns out?",
+    "options": [
+      {
+        "id": "A",
+        "text": "You, Zoe and Mr Reed, as all of you are in the story.",
+        "misconception": "strategic-model_extra_player"
+      },
+      {
+        "id": "B",
+        "text": "Only you: Zoe has no real say in the result.",
+        "misconception": "strategic-model_missing_player"
+      },
+      {
+        "id": "C",
+        "text": "You and Zoe: each of your choices changes the result.",
+        "conceptTag": "players"
+      }
+    ],
+    "acceptableAnswers": [
+      "C"
+    ],
+    "explanation": "A player is anyone whose choice affects the outcome. People who make no choice are not players."
+  },
+  {
+    "id": "i.m1.ranking",
+    "concept": "preferences",
+    "type": "reason_choice",
+    "prompt": "Which outcome does Maria like most?",
+    "options": [
+      {
+        "id": "A",
+        "text": "You choose Dhaba and Maria chooses Dhaba.",
+        "conceptTag": "preferences"
+      },
+      {
+        "id": "B",
+        "text": "You choose Canteen and Maria chooses Canteen.",
+        "misconception": "strategic-misread_payoff_owner"
+      },
+      {
+        "id": "C",
+        "text": "You choose Dhaba and Maria chooses Canteen.",
+        "misconception": "strategic-model_wrong_ranking"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Preferences rank the outcomes for one player, from the one they like most to the one they like least."
+  },
+  {
+    "id": "i.m1.ranking.tie",
+    "concept": "preferences",
+    "type": "reason_choice",
+    "prompt": "How does Ryan compare meeting you at North gate with meeting you at Lake path?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ryan likes the two equally: being together is what counts.",
+        "conceptTag": "preferences"
+      },
+      {
+        "id": "B",
+        "text": "Ryan prefers North gate, the place you like best.",
+        "misconception": "strategic-misread_payoff_owner"
+      },
+      {
+        "id": "C",
+        "text": "Ryan prefers Lake path, the place you like less.",
+        "misconception": "strategic-model_wrong_ranking"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Preferences rank the outcomes for one player, from the one they like most to the one they like least."
+  },
+  {
+    "id": "i.m1.payoff",
+    "concept": "payoff",
+    "type": "fill_in",
+    "prompt": "In the table, when you choose Canteen and Maria chooses Canteen, your payoff is ___ and Maria’s payoff is ___.",
+    "slots": [
+      {
+        "id": "s1",
+        "acceptedValues": [
+          "3"
+        ]
+      },
+      {
+        "id": "s2",
+        "acceptedValues": [
+          "2"
+        ]
+      }
+    ],
+    "explanation": "A payoff is a number for how much a player likes an outcome. Higher means better for that player."
+  },
+  {
+    "id": "i.m1.info.meet",
+    "concept": "information",
+    "type": "reason_choice",
+    "prompt": "When Maria decides, what does Maria know about your choice?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Maria has already seen what you chose.",
+        "misconception": "strategic-model_wrong_info"
+      },
+      {
+        "id": "B",
+        "text": "Maria has not seen what you chose.",
+        "conceptTag": "information"
+      },
+      {
+        "id": "C",
+        "text": "Maria decided first, before you did.",
+        "misconception": "strategic-model_wrong_timing"
+      }
+    ],
+    "acceptableAnswers": [
+      "B"
+    ],
+    "explanation": "Information says what each player knows when choosing, including whether they have seen the other’s choice."
+  },
+  {
+    "id": "i.m1.info.turns",
+    "concept": "information",
+    "type": "reason_choice",
+    "prompt": "When Grace decides, what does Grace know about your choice?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Grace has already seen what you chose.",
+        "conceptTag": "information"
+      },
+      {
+        "id": "B",
+        "text": "Grace has not seen what you chose.",
+        "misconception": "strategic-model_wrong_info"
+      },
+      {
+        "id": "C",
+        "text": "Grace decided first, before you did.",
+        "misconception": "strategic-model_wrong_timing"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Information says what each player knows when choosing, including whether they have seen the other’s choice."
+  },
+  {
+    "id": "i.m1.first",
+    "concept": "timing",
+    "type": "reason_choice",
+    "prompt": "Who chooses first?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Grace does, and you see that choice.",
+        "misconception": "strategic-model_wrong_timing"
+      },
+      {
+        "id": "B",
+        "text": "Nobody: you both choose at once.",
+        "misconception": "strategic-model_wrong_timing"
+      },
+      {
+        "id": "C",
+        "text": "You do, and Grace sees your choice.",
+        "conceptTag": "timing"
+      }
+    ],
+    "acceptableAnswers": [
+      "C"
+    ],
+    "explanation": "Timing says who chooses when: at the same time, or one after another."
+  },
+  {
+    "id": "i.m1.info.three",
+    "concept": "information",
+    "type": "reason_choice",
+    "prompt": "When Noah decides, what does Noah know about your choice?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Noah has already seen what you chose.",
+        "misconception": "strategic-model_wrong_info"
+      },
+      {
+        "id": "B",
+        "text": "Noah has not seen what you chose.",
+        "conceptTag": "information"
+      },
+      {
+        "id": "C",
+        "text": "Noah decided first, before you did.",
+        "misconception": "strategic-model_wrong_timing"
+      }
+    ],
+    "acceptableAnswers": [
+      "B"
+    ],
+    "explanation": "Information says what each player knows when choosing, including whether they have seen the other’s choice."
+  },
+  {
+    "id": "i.m1.unseen",
+    "concept": "information",
+    "type": "reason_choice",
+    "prompt": "Ryan decides after you. What does Ryan know about your choice at that point?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ryan decides later, but without having seen your choice.",
+        "conceptTag": "information"
+      },
+      {
+        "id": "B",
+        "text": "Ryan decides later, after seeing what you chose.",
+        "misconception": "strategic-model_wrong_info"
+      },
+      {
+        "id": "C",
+        "text": "Ryan decides first, before you have made your choice.",
+        "misconception": "strategic-model_wrong_timing"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Information says what each player knows when choosing, including whether they have seen the other’s choice."
+  },
+  {
+    "id": "i.m1.first.unseen",
+    "concept": "timing",
+    "type": "reason_choice",
+    "prompt": "Who chooses first?",
+    "options": [
+      {
+        "id": "A",
+        "text": "You do; Ryan chooses later without seeing it.",
+        "conceptTag": "timing"
+      },
+      {
+        "id": "B",
+        "text": "Ryan does; you choose later, after seeing it.",
+        "misconception": "strategic-model_wrong_timing"
+      },
+      {
+        "id": "C",
+        "text": "Nobody: you both choose at the same moment.",
+        "misconception": "strategic-model_wrong_timing"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Timing says who chooses when: at the same time, or one after another."
+  },
+  {
+    "id": "i.m1.unseen.why",
+    "concept": "information",
+    "type": "reason_choice",
+    "prompt": "Does going later give Ryan an advantage here?",
+    "options": [
+      {
+        "id": "A",
+        "text": "No: without seeing your choice, going later gives Ryan nothing.",
+        "conceptTag": "information"
+      },
+      {
+        "id": "B",
+        "text": "Yes: going later lets Ryan simply follow what you did.",
+        "misconception": "strategic-model_wrong_info"
+      },
+      {
+        "id": "C",
+        "text": "Yes: Ryan chooses first, so you can follow Ryan.",
+        "misconception": "strategic-model_wrong_timing"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Information says what each player knows when choosing, including whether they have seen the other’s choice."
+  },
+  {
+    "id": "i.m1.depends.three",
+    "concept": "strategic_dependence",
+    "type": "reason_choice",
+    "prompt": "Does how things go for you depend on what Noah chooses?",
+    "options": [
+      {
+        "id": "A",
+        "text": "No: your own choice alone settles how it goes for you.",
+        "misconception": "strategic-ignored_dependence"
+      },
+      {
+        "id": "B",
+        "text": "Yes: your same choice can go better or worse, depending on Noah.",
+        "conceptTag": "strategic_dependence"
+      },
+      {
+        "id": "C",
+        "text": "Only if Noah gets to see your choice before deciding.",
+        "misconception": "strategic-model_wrong_info"
+      }
+    ],
+    "acceptableAnswers": [
+      "B"
+    ],
+    "explanation": "There is strategic dependence when your result depends on someone else’s choice as well as your own."
+  },
+  {
+    "id": "i.m1.depends.turns",
+    "concept": "strategic_dependence",
+    "type": "reason_choice",
+    "prompt": "Does how things go for you depend on what Grace chooses?",
+    "options": [
+      {
+        "id": "A",
+        "text": "No: your own choice alone settles how it goes for you.",
+        "misconception": "strategic-ignored_dependence"
+      },
+      {
+        "id": "B",
+        "text": "Only if Grace gets to see your choice before deciding.",
+        "misconception": "strategic-model_wrong_info"
+      },
+      {
+        "id": "C",
+        "text": "Yes: your same choice can go better or worse, depending on Grace.",
+        "conceptTag": "strategic_dependence"
+      }
+    ],
+    "acceptableAnswers": [
+      "C"
+    ],
+    "explanation": "There is strategic dependence when your result depends on someone else’s choice as well as your own."
+  },
+  {
+    "id": "i.m1.depends.unseen",
+    "concept": "strategic_dependence",
+    "type": "reason_choice",
+    "prompt": "Does how things go for you depend on what Ryan chooses?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Yes: your same choice can go better or worse, depending on Ryan.",
+        "conceptTag": "strategic_dependence"
+      },
+      {
+        "id": "B",
+        "text": "No: your own choice alone settles how it goes for you.",
+        "misconception": "strategic-ignored_dependence"
+      },
+      {
+        "id": "C",
+        "text": "Only if Ryan gets to see your choice before deciding.",
+        "misconception": "strategic-model_wrong_info"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "There is strategic dependence when your result depends on someone else’s choice as well as your own."
+  },
+  {
+    "id": "i.m1.words",
+    "concept": "strategic_dependence",
+    "type": "own_words",
+    "prompt": "Describe this situation in your own words: who decides, what each can choose, who knows what, and what each wants.",
+    "modelAnswer": "\"Maria and I each pick where to eat.\" \"Each of us can go to the café or the diner.\" \"We choose at the same time without seeing each other.\" \"I like the café more, but we both want to eat together.\"",
+    "rubric": [
+      "Names everyone whose choice changes the result, and nobody else.",
+      "Lists the options open to each person.",
+      "Says who knows what, and whether anyone sees the other’s choice first.",
+      "States what each person wants, including how the other’s choice matters to them."
+    ]
+  },
+  {
+    "id": "i.m1.t.players",
+    "concept": "players",
+    "type": "reason_choice",
+    "prompt": "Whose choices decide how this turns out?",
+    "options": [
+      {
+        "id": "A",
+        "text": "You, Kai and Mrs Baker, as all of you are in the story.",
+        "misconception": "strategic-model_extra_player"
+      },
+      {
+        "id": "B",
+        "text": "You and Kai: each of your choices changes the result.",
+        "conceptTag": "players"
+      },
+      {
+        "id": "C",
+        "text": "Only you: Kai has no real say in the result.",
+        "misconception": "strategic-model_missing_player"
+      }
+    ],
+    "acceptableAnswers": [
+      "B"
+    ],
+    "explanation": "A player is anyone whose choice affects the outcome. People who make no choice are not players."
+  },
+  {
+    "id": "i.m1.t.timing",
+    "concept": "timing",
+    "type": "reason_choice",
+    "prompt": "Who chooses first?",
+    "options": [
+      {
+        "id": "A",
+        "text": "You do, and Adam sees your choice.",
+        "conceptTag": "timing"
+      },
+      {
+        "id": "B",
+        "text": "Adam does, and you see that choice.",
+        "misconception": "strategic-model_wrong_timing"
+      },
+      {
+        "id": "C",
+        "text": "Nobody: you both choose at once.",
+        "misconception": "strategic-model_wrong_timing"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Timing says who chooses when: at the same time, or one after another."
+  },
+  {
+    "id": "i.m1.t.unseen",
+    "concept": "information",
+    "type": "reason_choice",
+    "prompt": "When Sofia decides, what does Sofia know about your choice?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Sofia decides later, but without having seen your choice.",
+        "conceptTag": "information"
+      },
+      {
+        "id": "B",
+        "text": "Sofia decides later, after seeing what you chose.",
+        "misconception": "strategic-model_wrong_info"
+      },
+      {
+        "id": "C",
+        "text": "Sofia decides first, before you have made your choice.",
+        "misconception": "strategic-model_wrong_timing"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Information says what each player knows when choosing, including whether they have seen the other’s choice."
+  },
+  {
+    "id": "i.m1.t.depends",
+    "concept": "strategic_dependence",
+    "type": "reason_choice",
+    "prompt": "Does how things go for you depend on what the other side chooses?",
+    "options": [
+      {
+        "id": "A",
+        "text": "No: your own choice alone settles how it goes for you.",
+        "misconception": "strategic-ignored_dependence"
+      },
+      {
+        "id": "B",
+        "text": "Yes: your same choice can go better or worse, depending on the other side.",
+        "conceptTag": "strategic_dependence"
+      },
+      {
+        "id": "C",
+        "text": "Only if the other side gets to see your choice before deciding.",
+        "misconception": "strategic-model_wrong_info"
+      }
+    ],
+    "acceptableAnswers": [
+      "B"
+    ],
+    "explanation": "There is strategic dependence when your result depends on someone else’s choice as well as your own."
+  }
+]

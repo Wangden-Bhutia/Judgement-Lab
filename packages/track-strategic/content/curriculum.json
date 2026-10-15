@@ -1,0 +1,228 @@
+{
+  "contentVersion": 1,
+  "tracks": [
+    {
+      "id": "strategic",
+      "title": "Strategic Reasoning",
+      "description": "Short exercises in reading a situation before reacting to it: who is actually deciding, what their real options are, and what each side knows.",
+      "moduleIds": [
+        "strategic-m1"
+      ]
+    }
+  ],
+  "modules": [
+    {
+      "id": "strategic-m1",
+      "trackId": "strategic",
+      "sequence": 1,
+      "title": "Who decides what",
+      "lessonIds": [
+        "strategic-m1.l1",
+        "strategic-m1.l2",
+        "strategic-m1.l3",
+        "strategic-m1.l4"
+      ]
+    }
+  ],
+  "lessons": [
+    {
+      "id": "strategic-m1.l1",
+      "trackId": "strategic",
+      "moduleId": "strategic-m1",
+      "sequence": 1,
+      "title": "Who is deciding?",
+      "objectives": [
+        "Identify the people whose choices affect the outcome, and the options each has."
+      ],
+      "concepts": [
+        "players",
+        "actions"
+      ],
+      "prerequisites": [],
+      "interactiveItemIds": [
+        "i.m1.players",
+        "i.m1.actions",
+        "i.m1.players.three"
+      ],
+      "masteryItemIds": [],
+      "contentVersion": 1
+    },
+    {
+      "id": "strategic-m1.l2",
+      "trackId": "strategic",
+      "moduleId": "strategic-m1",
+      "sequence": 2,
+      "title": "What each person wants",
+      "objectives": [
+        "Rank outcomes for each person and read the numbers that stand for those rankings."
+      ],
+      "concepts": [
+        "preferences",
+        "payoff"
+      ],
+      "prerequisites": [
+        "strategic-m1.l1"
+      ],
+      "interactiveItemIds": [
+        "i.m1.ranking",
+        "i.m1.ranking.tie",
+        "i.m1.payoff"
+      ],
+      "masteryItemIds": [],
+      "contentVersion": 1
+    },
+    {
+      "id": "strategic-m1.l3",
+      "trackId": "strategic",
+      "moduleId": "strategic-m1",
+      "sequence": 3,
+      "title": "Who chooses when",
+      "objectives": [
+        "Tell whether choices are made at the same time or in turn, and what each person has seen when choosing."
+      ],
+      "concepts": [
+        "timing",
+        "information"
+      ],
+      "prerequisites": [
+        "strategic-m1.l1"
+      ],
+      "interactiveItemIds": [
+        "i.m1.info.meet",
+        "i.m1.info.turns",
+        "i.m1.first",
+        "i.m1.info.three",
+        "i.m1.unseen",
+        "i.m1.first.unseen",
+        "i.m1.unseen.why"
+      ],
+      "masteryItemIds": [],
+      "contentVersion": 1
+    },
+    {
+      "id": "strategic-m1.l4",
+      "trackId": "strategic",
+      "moduleId": "strategic-m1",
+      "sequence": 4,
+      "title": "When your result is not yours alone",
+      "objectives": [
+        "Recognise when your result depends on another person’s choice, and describe a situation completely."
+      ],
+      "concepts": [
+        "strategic_dependence"
+      ],
+      "prerequisites": [
+        "strategic-m1.l1",
+        "strategic-m1.l2"
+      ],
+      "interactiveItemIds": [
+        "i.m1.depends.three",
+        "i.m1.depends.turns",
+        "i.m1.depends.unseen",
+        "i.m1.words"
+      ],
+      "masteryItemIds": [
+        "i.m1.t.players",
+        "i.m1.t.timing",
+        "i.m1.t.unseen",
+        "i.m1.t.depends"
+      ],
+      "explanationBackItemId": "i.m1.words",
+      "contentVersion": 1
+    }
+  ],
+  "concepts": [
+    {
+      "id": "players",
+      "trackId": "strategic",
+      "moduleId": "strategic-m1",
+      "label": "A player is anyone whose choice affects the outcome"
+    },
+    {
+      "id": "actions",
+      "trackId": "strategic",
+      "moduleId": "strategic-m1",
+      "label": "An action is one of the choices a player can make"
+    },
+    {
+      "id": "preferences",
+      "trackId": "strategic",
+      "moduleId": "strategic-m1",
+      "label": "Preferences rank the outcomes for one player, from the one they like most to the one they like least"
+    },
+    {
+      "id": "payoff",
+      "trackId": "strategic",
+      "moduleId": "strategic-m1",
+      "label": "A payoff is a number for how much a player likes an outcome"
+    },
+    {
+      "id": "timing",
+      "trackId": "strategic",
+      "moduleId": "strategic-m1",
+      "label": "Timing says who chooses when: at the same time, or one after another"
+    },
+    {
+      "id": "information",
+      "trackId": "strategic",
+      "moduleId": "strategic-m1",
+      "label": "Information says what each player knows when choosing, including whether they have seen the other’s choice"
+    },
+    {
+      "id": "strategic_dependence",
+      "trackId": "strategic",
+      "moduleId": "strategic-m1",
+      "label": "There is strategic dependence when your result depends on someone else’s choice as well as your own"
+    }
+  ],
+  "misconceptions": [
+    {
+      "id": "strategic-model_extra_player",
+      "trackId": "strategic",
+      "label": "MODEL_EXTRA_PLAYER",
+      "description": "Included someone who makes no choice that affects the outcome."
+    },
+    {
+      "id": "strategic-model_missing_player",
+      "trackId": "strategic",
+      "label": "MODEL_MISSING_PLAYER",
+      "description": "Left out someone whose choice affects the outcome."
+    },
+    {
+      "id": "strategic-model_missing_action",
+      "trackId": "strategic",
+      "label": "MODEL_MISSING_ACTION",
+      "description": "Left out an action a player can take."
+    },
+    {
+      "id": "strategic-misread_payoff_owner",
+      "trackId": "strategic",
+      "label": "MISREAD_PAYOFF_OWNER",
+      "description": "Used the other player’s payoff as one’s own."
+    },
+    {
+      "id": "strategic-model_wrong_ranking",
+      "trackId": "strategic",
+      "label": "MODEL_WRONG_RANKING",
+      "description": "Misordered a player’s preferences over outcomes."
+    },
+    {
+      "id": "strategic-model_wrong_info",
+      "trackId": "strategic",
+      "label": "MODEL_WRONG_INFO",
+      "description": "Wrong account of who knows or sees what when choosing."
+    },
+    {
+      "id": "strategic-model_wrong_timing",
+      "trackId": "strategic",
+      "label": "MODEL_WRONG_TIMING",
+      "description": "Wrong order of choices."
+    },
+    {
+      "id": "strategic-ignored_dependence",
+      "trackId": "strategic",
+      "label": "IGNORED_DEPENDENCE",
+      "description": "Treated one’s result as depending only on one’s own choice."
+    }
+  ]
+}

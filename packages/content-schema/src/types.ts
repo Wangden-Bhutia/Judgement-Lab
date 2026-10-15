@@ -141,7 +141,12 @@ export interface Lesson {
   prerequisites: LessonId[];
   /** Item ids used for layer 1 (interactive practice, not scored toward mastery). */
   interactiveItemIds: ItemId[];
-  /** Item ids used for layer 3 (mastery assessment; scored with delayed evidence — see core-engine). */
+  /**
+   * Item ids used for layer 3 (mastery assessment; scored with delayed
+   * evidence — see core-engine). May be empty: a module can concentrate
+   * transfer/checkpoint items in its closing lesson instead of giving every
+   * lesson its own.
+   */
   masteryItemIds: ItemId[];
   /** Item id used for layer 2 (explanation-back), if this lesson has one. */
   explanationBackItemId?: ItemId;
