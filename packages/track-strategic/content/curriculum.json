@@ -6,7 +6,9 @@
       "title": "Strategic Reasoning",
       "description": "Short exercises in reading a situation before reacting to it: who is actually deciding, what their real options are, and what each side knows.",
       "moduleIds": [
-        "strategic-m1"
+        "strategic-m1",
+        "strategic-m2",
+        "strategic-m3"
       ]
     }
   ],
@@ -21,6 +23,30 @@
         "strategic-m1.l2",
         "strategic-m1.l3",
         "strategic-m1.l4"
+      ]
+    },
+    {
+      "id": "strategic-m2",
+      "trackId": "strategic",
+      "sequence": 2,
+      "title": "Responding to a choice",
+      "lessonIds": [
+        "strategic-m2.l1",
+        "strategic-m2.l2",
+        "strategic-m2.l3"
+      ]
+    },
+    {
+      "id": "strategic-m3",
+      "trackId": "strategic",
+      "sequence": 3,
+      "title": "Choices and counter-choices",
+      "lessonIds": [
+        "strategic-m3.l1",
+        "strategic-m3.l2",
+        "strategic-m3.l3",
+        "strategic-m3.l4",
+        "strategic-m3.l5"
       ]
     }
   ],
@@ -129,6 +155,213 @@
       ],
       "explanationBackItemId": "i.m1.words",
       "contentVersion": 1
+    },
+    {
+      "id": "strategic-m2.l1",
+      "trackId": "strategic",
+      "moduleId": "strategic-m2",
+      "sequence": 1,
+      "title": "If you knew their choice",
+      "objectives": [
+        "Find the action that gives you the most against a known choice of the other person, comparing within that choice."
+      ],
+      "concepts": [
+        "best_response"
+      ],
+      "prerequisites": [
+        "strategic-m1.l2",
+        "strategic-m1.l4"
+      ],
+      "interactiveItemIds": [
+        "i.m2.br.match",
+        "i.m2.br.apart",
+        "i.m2.br.three",
+        "i.m2.br.fill",
+        "i.m2.br.known",
+        "i.m2.br.tie"
+      ],
+      "masteryItemIds": [],
+      "contentVersion": 1
+    },
+    {
+      "id": "strategic-m2.l2",
+      "trackId": "strategic",
+      "moduleId": "strategic-m2",
+      "sequence": 2,
+      "title": "When the better choice flips",
+      "objectives": [
+        "See that your better choice can change with the other person’s choice, as when matching or differing is what pays."
+      ],
+      "concepts": [
+        "coordination"
+      ],
+      "prerequisites": [
+        "strategic-m2.l1"
+      ],
+      "interactiveItemIds": [
+        "i.m2.flip.match",
+        "i.m2.flip.apart",
+        "i.m2.flip.three",
+        "i.m2.pattern.match",
+        "i.m2.pattern.apart"
+      ],
+      "masteryItemIds": [],
+      "contentVersion": 1
+    },
+    {
+      "id": "strategic-m2.l3",
+      "trackId": "strategic",
+      "moduleId": "strategic-m2",
+      "sequence": 3,
+      "title": "Acting on what you believe",
+      "objectives": [
+        "Choose the action that does best on average under your stated belief about the other person’s choice."
+      ],
+      "concepts": [
+        "belief_response"
+      ],
+      "prerequisites": [
+        "strategic-m2.l1"
+      ],
+      "interactiveItemIds": [
+        "i.m2.belief",
+        "i.m2.belief.near",
+        "i.m2.belief.three",
+        "i.m2.words"
+      ],
+      "masteryItemIds": [
+        "i.m2.t.br",
+        "i.m2.t.belief",
+        "i.m2.t.flip",
+        "i.m2.t.three"
+      ],
+      "explanationBackItemId": "i.m2.words",
+      "contentVersion": 1
+    },
+    {
+      "id": "strategic-m3.l1",
+      "trackId": "strategic",
+      "moduleId": "strategic-m3",
+      "sequence": 1,
+      "title": "Checking each case",
+      "objectives": [
+        "Recognise a choice that gives you more against every choice of the other person, checking each case."
+      ],
+      "concepts": [
+        "dominant_strategy"
+      ],
+      "prerequisites": [
+        "strategic-m2.l1"
+      ],
+      "interactiveItemIds": [
+        "i.m3.dom.reason",
+        "i.m3.dom.fill",
+        "i.m3.three.dom"
+      ],
+      "masteryItemIds": [],
+      "contentVersion": 1
+    },
+    {
+      "id": "strategic-m3.l2",
+      "trackId": "strategic",
+      "moduleId": "strategic-m3",
+      "sequence": 2,
+      "title": "When only one side has a sure choice",
+      "objectives": [
+        "Use the other person’s sure choice to predict them, then respond to that prediction."
+      ],
+      "concepts": [
+        "dominant_strategy",
+        "best_response"
+      ],
+      "prerequisites": [
+        "strategic-m3.l1",
+        "strategic-m2.l1"
+      ],
+      "interactiveItemIds": [
+        "i.m3.one.you",
+        "i.m3.one.them",
+        "i.m3.one.reply",
+        "i.m3.dilemma"
+      ],
+      "masteryItemIds": [],
+      "contentVersion": 1
+    },
+    {
+      "id": "strategic-m3.l3",
+      "trackId": "strategic",
+      "moduleId": "strategic-m3",
+      "sequence": 3,
+      "title": "Choices that never pay",
+      "objectives": [
+        "Tell apart situations with and without a choice that is better in every case, and spot a choice that is never better."
+      ],
+      "concepts": [
+        "dominated_action"
+      ],
+      "prerequisites": [
+        "strategic-m3.l1"
+      ],
+      "interactiveItemIds": [
+        "i.m3.dominated"
+      ],
+      "masteryItemIds": [
+        "i.m3.contrast.match",
+        "i.m3.contrast.both"
+      ],
+      "contentVersion": 1
+    },
+    {
+      "id": "strategic-m3.l4",
+      "trackId": "strategic",
+      "moduleId": "strategic-m3",
+      "sequence": 4,
+      "title": "Set aside, then look again",
+      "objectives": [
+        "Remove never-better choices one round at a time and check again what is left."
+      ],
+      "concepts": [
+        "iesds"
+      ],
+      "prerequisites": [
+        "strategic-m3.l3"
+      ],
+      "interactiveItemIds": [
+        "i.m3.iesds.step",
+        "i.m3.iesds",
+        "i.m3.iesds.stuck",
+        "i.m3.words"
+      ],
+      "masteryItemIds": [],
+      "explanationBackItemId": "i.m3.words",
+      "contentVersion": 1
+    },
+    {
+      "id": "strategic-m3.l5",
+      "trackId": "strategic",
+      "moduleId": "strategic-m3",
+      "sequence": 5,
+      "title": "A tie in one case",
+      "objectives": [
+        "Distinguish never worse and sometimes better from better in every case."
+      ],
+      "concepts": [
+        "weak_dominance"
+      ],
+      "prerequisites": [
+        "strategic-m3.l1"
+      ],
+      "interactiveItemIds": [
+        "i.m3.weak",
+        "i.m3.weak.b"
+      ],
+      "masteryItemIds": [
+        "i.m3.t.dom",
+        "i.m3.t.one",
+        "i.m3.t.weak",
+        "i.m3.t.stuck"
+      ],
+      "contentVersion": 1
     }
   ],
   "concepts": [
@@ -173,6 +406,48 @@
       "trackId": "strategic",
       "moduleId": "strategic-m1",
       "label": "There is strategic dependence when your result depends on someone else’s choice as well as your own"
+    },
+    {
+      "id": "best_response",
+      "trackId": "strategic",
+      "moduleId": "strategic-m2",
+      "label": "A best response is the action that gives you the highest payoff given the other player’s choice"
+    },
+    {
+      "id": "coordination",
+      "trackId": "strategic",
+      "moduleId": "strategic-m2",
+      "label": "In a coordination situation, your best response is to match the other’s choice; in an anti-coordination situation, to differ from it"
+    },
+    {
+      "id": "belief_response",
+      "trackId": "strategic",
+      "moduleId": "strategic-m2",
+      "label": "When you are unsure what the other will do, a best response to your belief is the action with the highest average payoff, weighting each of their choices by how likely you think it is"
+    },
+    {
+      "id": "dominant_strategy",
+      "trackId": "strategic",
+      "moduleId": "strategic-m3",
+      "label": "A dominant strategy gives you a higher payoff than any other action, whatever the other player does"
+    },
+    {
+      "id": "dominated_action",
+      "trackId": "strategic",
+      "moduleId": "strategic-m3",
+      "label": "An action is dominated when another action gives you a higher payoff whatever the other player does"
+    },
+    {
+      "id": "iesds",
+      "trackId": "strategic",
+      "moduleId": "strategic-m3",
+      "label": "Iterated elimination removes dominated actions one round at a time, then checks again in what is left"
+    },
+    {
+      "id": "weak_dominance",
+      "trackId": "strategic",
+      "moduleId": "strategic-m3",
+      "label": "An action weakly dominates another when it is never worse and sometimes better"
     }
   ],
   "misconceptions": [
@@ -223,6 +498,60 @@
       "trackId": "strategic",
       "label": "IGNORED_DEPENDENCE",
       "description": "Treated one’s result as depending only on one’s own choice."
+    },
+    {
+      "id": "strategic-across_not_within",
+      "trackId": "strategic",
+      "label": "ACROSS_NOT_WITHIN",
+      "description": "Compared cells across the other player’s actions instead of within one."
+    },
+    {
+      "id": "strategic-incomplete_comparison",
+      "trackId": "strategic",
+      "label": "INCOMPLETE_COMPARISON",
+      "description": "Compared payoffs for only one of the other player’s actions."
+    },
+    {
+      "id": "strategic-treating_tie_as_strict",
+      "trackId": "strategic",
+      "label": "TREATING_TIE_AS_STRICT",
+      "description": "Treated equal payoffs as though one action were strictly better."
+    },
+    {
+      "id": "strategic-not_br_to_own_prediction",
+      "trackId": "strategic",
+      "label": "NOT_BR_TO_OWN_PREDICTION",
+      "description": "Chose an action that is not a best response to one’s own stated prediction or belief."
+    },
+    {
+      "id": "strategic-dominance_from_outcome",
+      "trackId": "strategic",
+      "label": "DOMINANCE_FROM_OUTCOME",
+      "description": "Called an action better whatever happens because it led to a good outcome once."
+    },
+    {
+      "id": "strategic-ignored_opponent_incentive",
+      "trackId": "strategic",
+      "label": "IGNORED_OPPONENT_INCENTIVE",
+      "description": "Expected the other player to pick an action that is worse for them whatever happens."
+    },
+    {
+      "id": "strategic-individual_as_joint",
+      "trackId": "strategic",
+      "label": "INDIVIDUAL_AS_JOINT",
+      "description": "Assumed that choices each better for their owner give an outcome no other outcome improves on for both."
+    },
+    {
+      "id": "strategic-eliminated_undominated",
+      "trackId": "strategic",
+      "label": "ELIMINATED_UNDOMINATED",
+      "description": "Set aside an action that is not worse in every case."
+    },
+    {
+      "id": "strategic-weak_as_strict",
+      "trackId": "strategic",
+      "label": "WEAK_AS_STRICT",
+      "description": "Called a weakly dominant action strictly dominant: treated a tie as a win when comparing across all of the other’s choices."
     }
   ]
 }

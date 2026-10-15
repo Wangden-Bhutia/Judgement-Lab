@@ -1,9 +1,12 @@
 /**
  * One-off conversion script (not shipped runtime code): converts Strategos's
- * Module 1 content (./strategos-source/*.json) into @judgment-lab/content-
+ * Modules 1-3 (./strategos-source/*.json) into @judgment-lab/content-
  * schema's format, using the ported contentPort rendering/claims pipeline
  * to resolve template text and determine correctness from engine-computed
  * facts, exactly as Strategos's own app does. Writes to ../content/.
+ * Supersedes convertModule1.ts (Phase 4c), generalized to every module
+ * Strategos has actually shipped content for (Phase 7) -- module 1's
+ * output is unchanged byte-for-byte by this generalization.
  *
  * V1 simplifications (see docs/DECISIONS.md and commit messages for why):
  * - Only the first skin and first variation listed for each item is used
@@ -16,7 +19,7 @@
  *   are not ported; items get one generic explanation from the concept
  *   definition instead.
  *
- * Run with: node --experimental-strip-types scripts/convertModule1.ts
+ * Run with: pnpm convert:content (tsx scripts/convertStrategicContent.ts)
  */
 import { readFileSync, writeFileSync, mkdirSync } from 'node:fs';
 import { join } from 'node:path';
@@ -39,11 +42,12 @@ import type { Skin, Structure, Variation } from '../src/contentPort/index.ts';
 
 const SOURCE_DIR = join(import.meta.dirname, 'strategos-source');
 const OUT_DIR = join(import.meta.dirname, '..', 'content');
+const TRACK_ID = 'strategic';
 
 interface SourceCurriculum {
   contentVersion: string;
   modules: {
-    id: string;
+    id: string; // "m1", "m2", "m3"
     number: number;
     workingTitle: string;
     lessons: {
@@ -61,6 +65,8 @@ interface SourceCurriculum {
 interface SourceConcept {
   id: string;
   definition: string;
+  /** Which module first introduces this concept (1, 2, 3, ...). */
+  module: number;
 }
 
 interface SourceItem {
@@ -93,30 +99,48 @@ interface SourceModuleFile {
   rubrics: SourceRubric[];
 }
 
-const curriculumSrc: SourceCurriculum = JSON.parse(readFileSync(join(SOURCE_DIR, 'curriculum.json'), 'utf8'));
-const conceptsSrc: SourceConcept[] = JSON.parse(readFileSync(join(SOURCE_DIR, 'concepts.json'), 'utf8'));
-const structuresSrc: Structure[] = JSON.parse(readFileSync(join(SOURCE_DIR, 'structures.json'), 'utf8'));
-const m1: SourceModuleFile = JSON.parse(readFileSync(join(SOURCE_DIR, 'm1.json'), 'utf8'));
-const errorCodesSrc: { code: string; definition: string }[] = JSON.parse(
-  readFileSync(join(SOURCE_DIR, 'error-codes.json'), 'utf8')
+function readJson<T>(name: string): T {
+  return JSON.parse(readFileSync(join(SOURCE_DIR, name), 'utf8')) as T;
+}
+
+const curriculumSrc = readJson<SourceCurriculum>('curriculum.json');
+const conceptsSrc = readJson<SourceConcept[]>('concepts.json');
+const structuresSrc = readJson<Structure[]>('structures.json');
+const errorCodesSrc = readJson<{ code: string; definition: string }[]>('error-codes.json');
+
+// Every module Strategos has shipped actual content for -- m4/m5 concepts
+// exist in concepts.json as forward-looking placeholders (introducedIn:
+// null) but have no curriculum entry or module data file, so they're
+// naturally excluded by driving this loop off curriculumSrc.modules.
+const moduleFiles = new Map(
+  curriculumSrc.modules.map((m) => [m.id, readJson<SourceModuleFile>(`${m.id}.json`)])
 );
 
 const conceptById = new Map(conceptsSrc.map((c) => [c.id, c]));
 const errorCodeDefinitionByCode = new Map(errorCodesSrc.map((e) => [e.code, e.definition]));
-const itemById = new Map(m1.items.map((i) => [i.id, i]));
-const rubricById = new Map(m1.rubrics.map((r) => [r.id, r]));
-const lookup = makeLookup({ structures: structuresSrc, skins: m1.skins, variations: m1.variations });
+const rubricById = new Map(
+  [...moduleFiles.values()].flatMap((m) => m.rubrics).map((r) => [r.id, r])
+);
+// One combined lookup: skin/variation ids are namespaced per module
+// (m1.s.*, m2.s.*, ...) so there's no collision risk combining them, and
+// items can (and in m3 do) reference concepts/structures introduced in an
+// earlier module.
+const lookup = makeLookup({
+  structures: structuresSrc,
+  skins: [...moduleFiles.values()].flatMap((m) => m.skins),
+  variations: [...moduleFiles.values()].flatMap((m) => m.variations),
+});
 
-const TRACK_ID = 'strategic';
-const sourceModule = curriculumSrc.modules.find((m) => m.id === 'm1')!;
-const MODULE_ID = `${TRACK_ID}-${sourceModule.id}`;
-
-// Which lesson first introduces each concept, so lesson.requires (concept
-// ids) can become lesson.prerequisites (lesson ids).
+// Which lesson first introduces each concept, so a lesson's `requires`
+// (concept ids) can become lesson.prerequisites (lesson ids) -- built
+// across ALL modules up front, since m2/m3 lessons require concepts
+// introduced back in m1.
 const introducingLesson = new Map<string, string>();
-for (const lesson of sourceModule.lessons) {
-  for (const conceptId of lesson.introduces) {
-    introducingLesson.set(conceptId, `${TRACK_ID}-${lesson.id}`);
+for (const srcModule of curriculumSrc.modules) {
+  for (const lesson of srcModule.lessons) {
+    for (const conceptId of lesson.introduces) {
+      introducingLesson.set(conceptId, `${TRACK_ID}-${lesson.id}`);
+    }
   }
 }
 
@@ -207,11 +231,11 @@ function convertItem(srcItem: SourceItem): Item {
 
   // own_words. Strategos's own Rubric type has no authored model-answer
   // string, only per-criterion "meets" exemplar phrases -- join those into
-  // a coherent model answer instead of (as an earlier version of this
-  // script did) wrongly reusing the rubric's prompt, which just restates
-  // the question. Note: the exemplars are written against one specific
-  // skin (here, the same one skins[0] already resolves to for this item),
-  // not skin-agnostic -- a V1 simplification if skins[0] ever diverges.
+  // a coherent model answer instead of wrongly reusing the rubric's
+  // prompt, which just restates the question. Note: the exemplars are
+  // written against one specific skin (here, the same one skins[0]
+  // already resolves to for this item), not skin-agnostic -- a V1
+  // simplification if skins[0] ever diverges.
   const rubric = srcItem.rubric ? rubricById.get(srcItem.rubric) : undefined;
   if (!rubric) throw new Error(`${srcItem.id}: no rubric`);
   const item: OwnWordsItem = {
@@ -226,91 +250,105 @@ function convertItem(srcItem: SourceItem): Item {
   return item;
 }
 
-const convertedItems: Item[] = [];
+const convertedModules: Module[] = [];
 const convertedLessons: Lesson[] = [];
 const convertedConcepts: Concept[] = [];
+const itemsByModuleId = new Map<string, Item[]>();
 const seenConcepts = new Set<string>();
 
-for (const srcLesson of sourceModule.lessons) {
-  const lessonId = `${TRACK_ID}-${srcLesson.id}`;
-  const srcItemsForLesson = srcLesson.items.map((id) => {
-    const found = itemById.get(id);
-    if (!found) throw new Error(`lesson ${srcLesson.id}: unknown item id "${id}"`);
-    return found;
-  });
+for (const srcModule of curriculumSrc.modules) {
+  const moduleFile = moduleFiles.get(srcModule.id)!;
+  const itemByIdForModule = new Map(moduleFile.items.map((i) => [i.id, i]));
+  const MODULE_ID = `${TRACK_ID}-${srcModule.id}`;
+  const moduleItems: Item[] = [];
 
-  const interactiveItemIds: string[] = [];
-  const masteryItemIds: string[] = [];
-  let explanationBackItemId: string | undefined;
+  for (const srcLesson of srcModule.lessons) {
+    const lessonId = `${TRACK_ID}-${srcLesson.id}`;
+    const srcItemsForLesson = srcLesson.items.map((id) => {
+      const found = itemByIdForModule.get(id);
+      if (!found) throw new Error(`lesson ${srcLesson.id}: unknown item id "${id}"`);
+      return found;
+    });
 
-  for (const srcItem of srcItemsForLesson) {
-    const converted = convertItem(srcItem);
-    convertedItems.push(converted);
-    if (srcItem.role === 'discovery' || srcItem.role === 'practice') interactiveItemIds.push(srcItem.id);
-    if (srcItem.role === 'transfer' || srcItem.role === 'recognition') masteryItemIds.push(srcItem.id);
-    if (srcItem.type === 'own_words') explanationBackItemId = srcItem.id;
-  }
+    const interactiveItemIds: string[] = [];
+    const masteryItemIds: string[] = [];
+    let explanationBackItemId: string | undefined;
 
-  const prerequisiteLessonIds = new Set<string>();
-  for (const conceptId of srcLesson.requires) {
-    const introducer = introducingLesson.get(conceptId);
-    if (introducer && introducer !== lessonId) prerequisiteLessonIds.add(introducer);
-  }
+    for (const srcItem of srcItemsForLesson) {
+      const converted = convertItem(srcItem);
+      moduleItems.push(converted);
+      if (srcItem.role === 'discovery' || srcItem.role === 'practice') interactiveItemIds.push(srcItem.id);
+      if (srcItem.role === 'transfer' || srcItem.role === 'recognition') masteryItemIds.push(srcItem.id);
+      if (srcItem.type === 'own_words') explanationBackItemId = srcItem.id;
+    }
 
-  convertedLessons.push({
-    id: lessonId,
-    trackId: TRACK_ID,
-    moduleId: MODULE_ID,
-    sequence: sourceModule.lessons.indexOf(srcLesson) + 1,
-    title: srcLesson.workingTitle,
-    objectives: [srcLesson.objective],
-    concepts: srcLesson.introduces,
-    prerequisites: [...prerequisiteLessonIds],
-    interactiveItemIds,
-    masteryItemIds,
-    explanationBackItemId,
-    contentVersion: 1,
-  });
+    const prerequisiteLessonIds = new Set<string>();
+    for (const conceptId of srcLesson.requires) {
+      const introducer = introducingLesson.get(conceptId);
+      if (introducer && introducer !== lessonId) prerequisiteLessonIds.add(introducer);
+    }
 
-  for (const conceptId of srcLesson.introduces) {
-    if (seenConcepts.has(conceptId)) continue;
-    seenConcepts.add(conceptId);
-    const def = conceptById.get(conceptId);
-    if (!def) throw new Error(`unknown concept "${conceptId}"`);
-    convertedConcepts.push({
-      id: conceptId,
+    convertedLessons.push({
+      id: lessonId,
       trackId: TRACK_ID,
       moduleId: MODULE_ID,
-      label: def.definition.split('.')[0] ?? conceptId,
+      sequence: srcModule.lessons.indexOf(srcLesson) + 1,
+      title: srcLesson.workingTitle,
+      objectives: [srcLesson.objective],
+      // A lesson that introduces no new concept (e.g. m3.l2, a pure
+      // consolidation lesson) is still about the concepts it requires and
+      // practises -- content-schema requires at least one.
+      concepts: srcLesson.introduces.length > 0 ? srcLesson.introduces : srcLesson.requires,
+      prerequisites: [...prerequisiteLessonIds],
+      interactiveItemIds,
+      masteryItemIds,
+      explanationBackItemId,
+      contentVersion: 1,
     });
-  }
-}
 
-const convertedModule: Module = {
-  id: MODULE_ID,
-  trackId: TRACK_ID,
-  sequence: sourceModule.number,
-  title: sourceModule.workingTitle,
-  lessonIds: convertedLessons.map((l) => l.id),
-};
+    for (const conceptId of srcLesson.introduces) {
+      if (seenConcepts.has(conceptId)) continue;
+      seenConcepts.add(conceptId);
+      const def = conceptById.get(conceptId);
+      if (!def) throw new Error(`unknown concept "${conceptId}"`);
+      convertedConcepts.push({
+        id: conceptId,
+        trackId: TRACK_ID,
+        moduleId: `${TRACK_ID}-m${def.module}`,
+        label: def.definition.split('.')[0] ?? conceptId,
+      });
+    }
+  }
+
+  itemsByModuleId.set(MODULE_ID, moduleItems);
+  convertedModules.push({
+    id: MODULE_ID,
+    trackId: TRACK_ID,
+    sequence: srcModule.number,
+    title: srcModule.workingTitle,
+    lessonIds: convertedLessons.filter((l) => l.moduleId === MODULE_ID).map((l) => l.id),
+  });
+}
 
 const convertedTrack: Track = {
   id: TRACK_ID,
   title: 'Strategic Reasoning',
   description: 'Short exercises in reading a situation before reacting to it: who is actually deciding, what their real options are, and what each side knows.',
-  moduleIds: [MODULE_ID],
+  moduleIds: convertedModules.map((m) => m.id),
 };
 
 const curriculum: Curriculum = {
   contentVersion: 1,
   tracks: [convertedTrack],
-  modules: [convertedModule],
+  modules: convertedModules,
   lessons: convertedLessons,
   concepts: convertedConcepts,
   misconceptions: [...misconceptionsById.values()],
 };
 
-const result = validateContent(curriculum, convertedItems);
+const allItems: Item[] = [...itemsByModuleId.values()].flat();
+
+const result = validateContent(curriculum, allItems);
 if (!result.valid) {
   console.error('Validation failed:');
   for (const e of result.errors) console.error(' -', e.message);
@@ -320,8 +358,11 @@ if (!result.valid) {
 mkdirSync(OUT_DIR, { recursive: true });
 mkdirSync(join(OUT_DIR, 'items'), { recursive: true });
 writeFileSync(join(OUT_DIR, 'curriculum.json'), JSON.stringify(curriculum, null, 2) + '\n');
-writeFileSync(join(OUT_DIR, 'items', 'module1.json'), JSON.stringify(convertedItems, null, 2) + '\n');
+for (const [moduleId, items] of itemsByModuleId) {
+  const fileName = moduleId.replace(`${TRACK_ID}-m`, 'module') + '.json';
+  writeFileSync(join(OUT_DIR, 'items', fileName), JSON.stringify(items, null, 2) + '\n');
+}
 
-console.log(`Converted ${convertedLessons.length} lessons, ${convertedItems.length} items.`);
+console.log(`Converted ${convertedModules.length} modules, ${convertedLessons.length} lessons, ${allItems.length} items.`);
 console.log(`Concepts: ${convertedConcepts.map((c) => c.id).join(', ')}`);
 console.log(`Misconceptions: ${[...misconceptionsById.keys()].join(', ')}`);

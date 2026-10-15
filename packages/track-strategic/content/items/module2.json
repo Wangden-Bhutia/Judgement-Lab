@@ -1,0 +1,520 @@
+[
+  {
+    "id": "i.m2.br.match",
+    "concept": "best_response",
+    "scenario": "You and James are sharing a cab home from the station. Your phones are out of charge, so each of you walks to a pick-up point: the main gate or the side gate.",
+    "type": "reason_choice",
+    "prompt": "If James chooses Side gate, which choice is better for you?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Side gate: against Side gate it gives you 1 rather than 0.",
+        "conceptTag": "best_response"
+      },
+      {
+        "id": "B",
+        "text": "Main gate: matching on it would give you 4.",
+        "misconception": "strategic-across_not_within"
+      },
+      {
+        "id": "C",
+        "text": "Main gate: it is better for you whatever James does.",
+        "misconception": "strategic-incomplete_comparison"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "A best response is the action that gives you the highest payoff given the other player’s choice."
+  },
+  {
+    "id": "i.m2.br.apart",
+    "concept": "best_response",
+    "scenario": "You and Daniel each run a juice cart. Every morning each of you picks a spot: the station gate or the bus stand.",
+    "type": "reason_choice",
+    "prompt": "If Daniel chooses Station gate, which choice is better for you?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Bus stand: against Station gate it gives you 2 rather than 0.",
+        "conceptTag": "best_response"
+      },
+      {
+        "id": "B",
+        "text": "Station gate: your best outcome, 3, comes from it.",
+        "misconception": "strategic-across_not_within"
+      },
+      {
+        "id": "C",
+        "text": "Station gate: it is better for you whatever Daniel does.",
+        "misconception": "strategic-incomplete_comparison"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "A best response is the action that gives you the highest payoff given the other player’s choice."
+  },
+  {
+    "id": "i.m2.br.three",
+    "concept": "best_response",
+    "scenario": "You take a penalty against Jack, the keeper. You aim left, right or down the middle; at the same moment Jack dives right or left.",
+    "type": "reason_choice",
+    "prompt": "If Jack chooses Dive right, which of your three choices is best for you?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Aim left, which gives you 4 against Dive right.",
+        "conceptTag": "best_response"
+      },
+      {
+        "id": "B",
+        "text": "Aim middle, which gives you 2 either way.",
+        "misconception": "strategic-incomplete_comparison"
+      },
+      {
+        "id": "C",
+        "text": "Aim right, which can give you 4 against Dive left.",
+        "misconception": "strategic-across_not_within"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "A best response is the action that gives you the highest payoff given the other player’s choice."
+  },
+  {
+    "id": "i.m2.br.fill",
+    "concept": "best_response",
+    "scenario": "You take a penalty against Jack, the keeper. You aim left, right or down the middle; at the same moment Jack dives right or left.",
+    "type": "fill_in",
+    "prompt": "If Jack chooses Dive left: Aim left gives you ___, Aim right gives you ___ and Aim middle gives you ___.",
+    "slots": [
+      {
+        "id": "s1",
+        "acceptedValues": [
+          "1"
+        ]
+      },
+      {
+        "id": "s2",
+        "acceptedValues": [
+          "4"
+        ]
+      },
+      {
+        "id": "s3",
+        "acceptedValues": [
+          "2"
+        ]
+      }
+    ],
+    "explanation": "A best response is the action that gives you the highest payoff given the other player’s choice."
+  },
+  {
+    "id": "i.m2.br.known",
+    "concept": "best_response",
+    "scenario": "You are cooking for yourself and your flatmate Ethan. You decide on a big dinner or a simple one, while Ethan, at work, decides whether to come home early or stay late.",
+    "type": "reason_choice",
+    "prompt": "Suppose you learn that Ethan will choose Stay late. Which choice is better for you?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Simple dinner: against Stay late it gives you 2 rather than 0.",
+        "conceptTag": "best_response"
+      },
+      {
+        "id": "B",
+        "text": "Big dinner: with Come early it would give you 4.",
+        "misconception": "strategic-across_not_within"
+      },
+      {
+        "id": "C",
+        "text": "Big dinner: it is better for you whatever Ethan does.",
+        "misconception": "strategic-incomplete_comparison"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "A best response is the action that gives you the highest payoff given the other player’s choice."
+  },
+  {
+    "id": "i.m2.br.tie",
+    "concept": "best_response",
+    "scenario": "You are in goal and Laura is taking a penalty. She aims left, right or down the middle; at the same moment you dive right or left.",
+    "type": "reason_choice",
+    "prompt": "If Laura chooses Aim middle, which is better for you?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Neither: against Aim middle, Dive right and Dive left both give you 1.",
+        "conceptTag": "best_response"
+      },
+      {
+        "id": "B",
+        "text": "Dive right: against Aim right it would give you 2.",
+        "misconception": "strategic-across_not_within"
+      },
+      {
+        "id": "C",
+        "text": "Dive left: it must edge ahead of Dive right against Aim middle.",
+        "misconception": "strategic-treating_tie_as_strict"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "A best response is the action that gives you the highest payoff given the other player’s choice."
+  },
+  {
+    "id": "i.m2.flip.match",
+    "concept": "coordination",
+    "scenario": "You and James are sharing a cab home from the station. Your phones are out of charge, so each of you walks to a pick-up point: the main gate or the side gate.",
+    "type": "reason_choice",
+    "prompt": "Does your better choice depend on what James does?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Yes: your better choice changes with James’s choice.",
+        "conceptTag": "coordination"
+      },
+      {
+        "id": "B",
+        "text": "No: one of your choices is better either way.",
+        "misconception": "strategic-incomplete_comparison"
+      },
+      {
+        "id": "C",
+        "text": "Yes, but only because James sees your choice.",
+        "misconception": "strategic-model_wrong_info"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "In a coordination situation, your best response is to match the other’s choice; in an anti-coordination situation, to differ from it."
+  },
+  {
+    "id": "i.m2.flip.apart",
+    "concept": "coordination",
+    "scenario": "You and Daniel each run a juice cart. Every morning each of you picks a spot: the station gate or the bus stand.",
+    "type": "reason_choice",
+    "prompt": "Does your better choice depend on what Daniel does?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Yes: your better choice changes with Daniel’s choice.",
+        "conceptTag": "coordination"
+      },
+      {
+        "id": "B",
+        "text": "No: one of your choices is better either way.",
+        "misconception": "strategic-incomplete_comparison"
+      },
+      {
+        "id": "C",
+        "text": "Yes, but only because Daniel sees your choice.",
+        "misconception": "strategic-model_wrong_info"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "In a coordination situation, your best response is to match the other’s choice; in an anti-coordination situation, to differ from it."
+  },
+  {
+    "id": "i.m2.flip.three",
+    "concept": "coordination",
+    "scenario": "You take a penalty against Jack, the keeper. You aim left, right or down the middle; at the same moment Jack dives right or left.",
+    "type": "reason_choice",
+    "prompt": "Does your better choice depend on what Jack does?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Yes: your better choice changes with Jack’s choice.",
+        "conceptTag": "coordination"
+      },
+      {
+        "id": "B",
+        "text": "No: one of your choices is better either way.",
+        "misconception": "strategic-incomplete_comparison"
+      },
+      {
+        "id": "C",
+        "text": "Yes, but only because Jack sees your choice.",
+        "misconception": "strategic-model_wrong_info"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "In a coordination situation, your best response is to match the other’s choice; in an anti-coordination situation, to differ from it."
+  },
+  {
+    "id": "i.m2.pattern.match",
+    "concept": "coordination",
+    "scenario": "You and James are sharing a cab home from the station. Your phones are out of charge, so each of you walks to a pick-up point: the main gate or the side gate.",
+    "type": "reason_choice",
+    "prompt": "Against each of James’s choices, what is better for you?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Match: Main gate against Main gate, Side gate against Side gate.",
+        "conceptTag": "coordination"
+      },
+      {
+        "id": "B",
+        "text": "Differ: Side gate against Main gate, Main gate against Side gate.",
+        "misconception": "strategic-incomplete_comparison"
+      },
+      {
+        "id": "C",
+        "text": "The same choice, Main gate, against either of James’s.",
+        "misconception": "strategic-incomplete_comparison"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "In a coordination situation, your best response is to match the other’s choice; in an anti-coordination situation, to differ from it."
+  },
+  {
+    "id": "i.m2.pattern.apart",
+    "concept": "coordination",
+    "scenario": "You and Daniel each run a juice cart. Every morning each of you picks a spot: the station gate or the bus stand.",
+    "type": "reason_choice",
+    "prompt": "Against each of Daniel’s choices, what is better for you?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Match: Station gate against Station gate, Bus stand against Bus stand.",
+        "misconception": "strategic-incomplete_comparison"
+      },
+      {
+        "id": "B",
+        "text": "Differ: Bus stand against Station gate, Station gate against Bus stand.",
+        "conceptTag": "coordination"
+      },
+      {
+        "id": "C",
+        "text": "The same choice, Station gate, against either of Daniel’s.",
+        "misconception": "strategic-incomplete_comparison"
+      }
+    ],
+    "acceptableAnswers": [
+      "B"
+    ],
+    "explanation": "In a coordination situation, your best response is to match the other’s choice; in an anti-coordination situation, to differ from it."
+  },
+  {
+    "id": "i.m2.belief",
+    "concept": "belief_response",
+    "scenario": "You are cooking for yourself and your flatmate Ethan. You decide on a big dinner or a simple one, while Ethan, at work, decides whether to come home early or stay late.",
+    "type": "reason_choice",
+    "prompt": "You think Ethan will choose Come early with a chance of 70%, and Stay late otherwise. Which choice gives you more on average?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Big dinner, given how likely each of Ethan’s choices is.",
+        "conceptTag": "belief_response"
+      },
+      {
+        "id": "B",
+        "text": "Simple dinner, given how likely each of Ethan’s choices is.",
+        "misconception": "strategic-not_br_to_own_prediction"
+      },
+      {
+        "id": "C",
+        "text": "Neither: with that belief the two come out level.",
+        "misconception": "strategic-incomplete_comparison"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "When you are unsure what the other will do, a best response to your belief is the action with the highest average payoff, weighting each of their choices by how likely you think it is."
+  },
+  {
+    "id": "i.m2.belief.near",
+    "concept": "belief_response",
+    "scenario": "You are cooking for yourself and your flatmate Ethan. You decide on a big dinner or a simple one, while Ethan, at work, decides whether to come home early or stay late.",
+    "type": "reason_choice",
+    "prompt": "This time you give Come early a chance of 35%, and Stay late the rest. Work out both averages: which choice gives you more?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Big dinner, given how likely each of Ethan’s choices is.",
+        "misconception": "strategic-not_br_to_own_prediction"
+      },
+      {
+        "id": "B",
+        "text": "Simple dinner, given how likely each of Ethan’s choices is.",
+        "conceptTag": "belief_response"
+      },
+      {
+        "id": "C",
+        "text": "Neither: with that belief the two come out level.",
+        "misconception": "strategic-incomplete_comparison"
+      }
+    ],
+    "acceptableAnswers": [
+      "B"
+    ],
+    "explanation": "When you are unsure what the other will do, a best response to your belief is the action with the highest average payoff, weighting each of their choices by how likely you think it is."
+  },
+  {
+    "id": "i.m2.belief.three",
+    "concept": "belief_response",
+    "scenario": "You take a penalty against Jack, the keeper. You aim left, right or down the middle; at the same moment Jack dives right or left.",
+    "type": "reason_choice",
+    "prompt": "You think Jack will choose Dive right with a chance of 40%, and Dive left otherwise. Which of your three choices gives you most on average?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Aim left, given how likely each of Jack’s choices is.",
+        "misconception": "strategic-not_br_to_own_prediction"
+      },
+      {
+        "id": "B",
+        "text": "Aim right, given how likely each of Jack’s choices is.",
+        "conceptTag": "belief_response"
+      },
+      {
+        "id": "C",
+        "text": "Aim middle, since it gives you 2 whatever happens.",
+        "misconception": "strategic-not_br_to_own_prediction"
+      }
+    ],
+    "acceptableAnswers": [
+      "B"
+    ],
+    "explanation": "When you are unsure what the other will do, a best response to your belief is the action with the highest average payoff, weighting each of their choices by how likely you think it is."
+  },
+  {
+    "id": "i.m2.words",
+    "concept": "belief_response",
+    "scenario": "You are cooking for yourself and your flatmate Ethan. You decide on a big dinner or a simple one, while Ethan, at work, decides whether to come home early or stay late.",
+    "type": "own_words",
+    "prompt": "In your own words: how would you decide here if you knew what Ethan will choose, and what changes when you only have a belief?",
+    "modelAnswer": "\"If Ethan comes early, I compare my two dinners for that case.\" \"Against early: big dinner beats simple.\" \"If he stays late, the simple dinner is better instead.\" \"He is fairly likely to come early, so the early case counts for more.\"",
+    "rubric": [
+      "Fixes the other person’s choice before comparing your own options.",
+      "Compares your own options against the same choice of theirs.",
+      "Notices whether the better option changes with their choice.",
+      "Uses the stated chances to weigh the two cases."
+    ]
+  },
+  {
+    "id": "i.m2.t.br",
+    "concept": "best_response",
+    "scenario": "You and your friend Isabella are going to a concert but forgot to fix a meeting spot. Each of you heads either to the front entrance or to the food court.",
+    "type": "reason_choice",
+    "prompt": "If Isabella chooses Food court, which choice is better for you?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Food court: against Food court it gives you 1 rather than 0.",
+        "conceptTag": "best_response"
+      },
+      {
+        "id": "B",
+        "text": "Front entrance: matching on it would give you 4.",
+        "misconception": "strategic-across_not_within"
+      },
+      {
+        "id": "C",
+        "text": "Front entrance: it is better for you whatever Isabella does.",
+        "misconception": "strategic-incomplete_comparison"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "A best response is the action that gives you the highest payoff given the other player’s choice."
+  },
+  {
+    "id": "i.m2.t.belief",
+    "concept": "belief_response",
+    "scenario": "You help run a community garden. You decide whether to order many seedlings or a few, while Mr Turner, who leads the neighbourhood group, decides whether to send many helpers or few.",
+    "type": "reason_choice",
+    "prompt": "You think Mr Turner will choose Many helpers with a chance of 70%, and Few helpers otherwise. Which choice gives you more on average?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Many seedlings, given how likely each of Mr Turner’s choices is.",
+        "conceptTag": "belief_response"
+      },
+      {
+        "id": "B",
+        "text": "Few seedlings, given how likely each of Mr Turner’s choices is.",
+        "misconception": "strategic-not_br_to_own_prediction"
+      },
+      {
+        "id": "C",
+        "text": "Neither: with that belief the two come out level.",
+        "misconception": "strategic-incomplete_comparison"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "When you are unsure what the other will do, a best response to your belief is the action with the highest average payoff, weighting each of their choices by how likely you think it is."
+  },
+  {
+    "id": "i.m2.t.flip",
+    "concept": "coordination",
+    "scenario": "You and your friend Rachel both have birthdays this week and share most of your friends. Each of you picks a night for your party: Friday or Saturday.",
+    "type": "reason_choice",
+    "prompt": "Does your better choice depend on what Rachel does?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Yes: your better choice changes with Rachel’s choice.",
+        "conceptTag": "coordination"
+      },
+      {
+        "id": "B",
+        "text": "No: one of your choices is better either way.",
+        "misconception": "strategic-incomplete_comparison"
+      },
+      {
+        "id": "C",
+        "text": "Yes, but only because Rachel sees your choice.",
+        "misconception": "strategic-model_wrong_info"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "In a coordination situation, your best response is to match the other’s choice; in an anti-coordination situation, to differ from it."
+  },
+  {
+    "id": "i.m2.t.three",
+    "concept": "best_response",
+    "scenario": "You sell ice cream from a cart on the seafront. Each afternoon you park at the beach end, at the market end, or keep moving between them. Peter, who sells from another cart, parks at the market end or the beach end.",
+    "type": "reason_choice",
+    "prompt": "If Peter chooses Beach end, which of your three choices is best for you?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Market end, which gives you 4 against Beach end.",
+        "conceptTag": "best_response"
+      },
+      {
+        "id": "B",
+        "text": "Move between, which gives you 2 either way.",
+        "misconception": "strategic-incomplete_comparison"
+      },
+      {
+        "id": "C",
+        "text": "Beach end, which can give you 4 against Market end.",
+        "misconception": "strategic-across_not_within"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "A best response is the action that gives you the highest payoff given the other player’s choice."
+  }
+]

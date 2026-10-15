@@ -13,6 +13,18 @@
   margin-bottom: 24px;
 }
 
+.module-section {
+  margin-bottom: 32px;
+}
+
+.module-title {
+  font-size: 18px;
+  color: var(--text);
+  margin: 0 0 12px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid var(--border);
+}
+
 .lesson-list {
   list-style: none;
   margin: 0;

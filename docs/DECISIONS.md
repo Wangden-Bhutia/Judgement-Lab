@@ -80,12 +80,14 @@ Reasoning → port Emotional Skills → port Behavioural Observation → design 
   (see Build order above — it's part of the "Today" experience work, not yet reached). This was
   verified with an integration test (`apps/web/src/masteryGate.test.ts`) exercising real Module 1
   content through `progress.ts` + `core-engine` together, not just engine unit tests in isolation.
-- **3 of Module 1's 7 concepts (`actions`, `preferences`, `payoff`) have no checkpoint item at all.**
-  Strategos's own source data never wrote a transfer/recognition-role item for them in this module —
-  a genuine content gap, not a conversion-script bug. It doesn't block mastery permanently (any item
-  of the concept answered with a non-lesson source counts, not just `masteryItemIds` ones), but it
-  does mean these 3 concepts depend entirely on a future review flow re-presenting an ordinary
-  practice item, with no fallback. Documented as an executable test so it can't silently regress or
+- **4 of the 14 concepts across Modules 1-3 (`actions`, `preferences`, `payoff`, `dominated_action`)
+  have no checkpoint item at all.** (Originally found as 3 of Module 1's 7 in Phase 6; Phase 7's
+  Module 2-3 port added `dominated_action` to the list — Strategos's source data simply never wrote a
+  transfer/recognition-role item for these concepts, in any module.) It doesn't block mastery
+  permanently (any item of the concept answered with a non-lesson source counts, not just
+  `masteryItemIds` ones), but it does mean these concepts depend entirely on a future review flow
+  re-presenting an ordinary practice item, with no fallback. Documented as an executable test
+  (`packages/track-strategic/tests/content/curriculum.test.ts`) so it can't silently regress or
   silently get "fixed" by someone fabricating a checkpoint item without engine-verified correctness.
 - **Found and fixed a real bug in `computeSkillMastery`** while writing the above: it picked the
   "latest" attempt per item by strict string comparison (`attemptedAt >`), so two attempts on the same

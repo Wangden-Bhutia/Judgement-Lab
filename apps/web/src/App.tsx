@@ -10,7 +10,12 @@ import './App.css';
 
 const itemById = new Map<string, Item>(strategicItems.map((item) => [item.id, item]));
 const track = strategicCurriculum.tracks[0]!;
-const lessons = strategicCurriculum.lessons.slice().sort((a, b) => a.sequence - b.sequence);
+const lessonById = new Map(strategicCurriculum.lessons.map((lesson) => [lesson.id, lesson]));
+// Module order (strategicCurriculum.modules is already sequence-ordered),
+// each module's own lessonIds order -- NOT a global sort by lesson.sequence,
+// which is only unique within a module (every module's first lesson has
+// sequence 1).
+const modules = strategicCurriculum.modules.slice().sort((a, b) => a.sequence - b.sequence);
 const concepts = strategicCurriculum.concepts;
 
 export default function App() {
@@ -49,7 +54,8 @@ export default function App() {
   return (
     <TodayScreen
       trackTitle={track.title}
-      lessons={lessons}
+      modules={modules}
+      lessonById={lessonById}
       concepts={concepts}
       progress={progress}
       attempts={attempts}

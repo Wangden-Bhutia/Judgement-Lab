@@ -12,7 +12,7 @@
   "scripts": {
     "test": "vitest run",
     "typecheck": "tsc --noEmit",
-    "convert:module1": "tsx scripts/convertModule1.ts"
+    "convert:content": "tsx scripts/convertStrategicContent.ts"
   },
   "dependencies": {
     "@judgment-lab/content-schema": "workspace:*"

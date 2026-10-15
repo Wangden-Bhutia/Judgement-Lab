@@ -1,0 +1,569 @@
+[
+  {
+    "id": "i.m3.dom.reason",
+    "concept": "dominant_strategy",
+    "scenario": "At the end of each day, you and Hannah each decide whether to save your work to the team’s shared drive or keep it only on your laptop.",
+    "type": "reason_choice",
+    "prompt": "Is one of your choices better for you whatever Hannah does? Pick the best reason.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Yes, Shared drive: if Hannah picks Shared drive it gives you 3, not 1; if Laptop only, 2, not 0.",
+        "conceptTag": "dominant_strategy"
+      },
+      {
+        "id": "B",
+        "text": "No: which of your choices is better depends on whether Hannah picks Shared drive or Laptop only this time.",
+        "misconception": "strategic-incomplete_comparison"
+      },
+      {
+        "id": "C",
+        "text": "Yes, Shared drive: if Hannah picks Shared drive it gives you 3, not 1, and that settles it.",
+        "misconception": "strategic-incomplete_comparison"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "A dominant strategy gives you a higher payoff than any other action, whatever the other player does."
+  },
+  {
+    "id": "i.m3.dom.fill",
+    "concept": "dominant_strategy",
+    "scenario": "At the end of each day, you and Hannah each decide whether to save your work to the team’s shared drive or keep it only on your laptop.",
+    "type": "fill_in",
+    "prompt": "Against Shared drive, Shared drive gives you ___ and Laptop only gives you ___. Against Laptop only, Shared drive gives you ___ and Laptop only gives you ___.",
+    "slots": [
+      {
+        "id": "s1",
+        "acceptedValues": [
+          "3"
+        ]
+      },
+      {
+        "id": "s2",
+        "acceptedValues": [
+          "1"
+        ]
+      },
+      {
+        "id": "s3",
+        "acceptedValues": [
+          "2"
+        ]
+      },
+      {
+        "id": "s4",
+        "acceptedValues": [
+          "0"
+        ]
+      }
+    ],
+    "explanation": "A dominant strategy gives you a higher payoff than any other action, whatever the other player does."
+  },
+  {
+    "id": "i.m3.three.dom",
+    "concept": "dominant_strategy",
+    "scenario": "You and Mr Lawson farm side by side. The canal stretch next to your field feeds his crops, and the stretch next to his feeds yours. This week each of you decides how long to spend clearing your stretch.",
+    "type": "reason_choice",
+    "prompt": "Is one of your three choices better for you than each of the others, whatever Mr Lawson does?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Yes, No clearing: against each of Mr Lawson’s choices it beats both Full day and Half day.",
+        "conceptTag": "dominant_strategy"
+      },
+      {
+        "id": "B",
+        "text": "Yes, Half day: against each of Mr Lawson’s choices it beats Full day.",
+        "misconception": "strategic-incomplete_comparison"
+      },
+      {
+        "id": "C",
+        "text": "No: which of your choices is better depends on what Mr Lawson does.",
+        "misconception": "strategic-incomplete_comparison"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "A dominant strategy gives you a higher payoff than any other action, whatever the other player does."
+  },
+  {
+    "id": "i.m3.one.you",
+    "concept": "dominant_strategy",
+    "scenario": "You run a bakery, and Mr Paul runs the café across the road and buys your bread. Tonight you decide whether to bake early or late, and Mr Paul decides whether to collect in the morning or the afternoon.",
+    "type": "reason_choice",
+    "prompt": "Is one of your choices better for you whatever Mr Paul does?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Yes: one of your choices gives you more against each of Mr Paul’s choices.",
+        "conceptTag": "dominant_strategy"
+      },
+      {
+        "id": "B",
+        "text": "No: which of your choices is better depends on Mr Paul’s choice.",
+        "misconception": "strategic-incomplete_comparison"
+      },
+      {
+        "id": "C",
+        "text": "Yes: the choice that led to the higher payoff the last time.",
+        "misconception": "strategic-dominance_from_outcome"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "A dominant strategy gives you a higher payoff than any other action, whatever the other player does."
+  },
+  {
+    "id": "i.m3.one.them",
+    "concept": "dominant_strategy",
+    "scenario": "Carlos sells vegetables from a cart, either at the market square or by the park, and decides this evening where to stand. You buy from him and decide where to walk for your vegetables.",
+    "type": "reason_choice",
+    "prompt": "What should you expect Carlos to choose?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Market square: it gives Carlos more whatever you do.",
+        "conceptTag": "dominant_strategy"
+      },
+      {
+        "id": "B",
+        "text": "By the park: it would give you your best outcome.",
+        "misconception": "strategic-ignored_opponent_incentive"
+      },
+      {
+        "id": "C",
+        "text": "Either: Carlos’s better choice depends on yours.",
+        "misconception": "strategic-incomplete_comparison"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "A dominant strategy gives you a higher payoff than any other action, whatever the other player does."
+  },
+  {
+    "id": "i.m3.one.reply",
+    "concept": "best_response",
+    "scenario": "Carlos sells vegetables from a cart, either at the market square or by the park, and decides this evening where to stand. You buy from him and decide where to walk for your vegetables.",
+    "type": "reason_choice",
+    "prompt": "If you expect Carlos to choose Market square, what is better for you?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The square: against Market square it gives you 2 rather than 0.",
+        "conceptTag": "best_response"
+      },
+      {
+        "id": "B",
+        "text": "The park: against By the park it would give you 1.",
+        "misconception": "strategic-across_not_within"
+      },
+      {
+        "id": "C",
+        "text": "The park: it is better for you whatever Carlos does.",
+        "misconception": "strategic-incomplete_comparison"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "A best response is the action that gives you the highest payoff given the other player’s choice."
+  },
+  {
+    "id": "i.m3.dilemma",
+    "concept": "dominant_strategy",
+    "scenario": "You and Mr Bennett each run a boat on the same small lake. Before the season each of you picks the nets you will use.",
+    "type": "reason_choice",
+    "prompt": "Suppose you each pick the choice that is better for you whatever the other does. How does that compare with One small net and Small net?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Both of you get less: 1 and 4, instead of 5 and 5 with One small net.",
+        "conceptTag": "dominant_strategy"
+      },
+      {
+        "id": "B",
+        "text": "Nothing beats it for both: each of you made the better choice.",
+        "misconception": "strategic-individual_as_joint"
+      },
+      {
+        "id": "C",
+        "text": "Mr Bennett will pick Small net, so with One large net you end up with 6.",
+        "misconception": "strategic-ignored_opponent_incentive"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "A dominant strategy gives you a higher payoff than any other action, whatever the other player does."
+  },
+  {
+    "id": "i.m3.contrast.match",
+    "concept": "dominant_strategy",
+    "scenario": "You and James are sharing a cab home from the station. Your phones are out of charge, so each of you walks to a pick-up point: the main gate or the side gate.",
+    "type": "reason_choice",
+    "prompt": "Is one of your choices better for you whatever James does?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Yes: one of your choices gives you more against each of James’s choices.",
+        "misconception": "strategic-incomplete_comparison"
+      },
+      {
+        "id": "B",
+        "text": "No: which of your choices is better depends on James’s choice.",
+        "conceptTag": "dominant_strategy"
+      },
+      {
+        "id": "C",
+        "text": "Yes: the choice that led to the higher payoff the last time.",
+        "misconception": "strategic-dominance_from_outcome"
+      }
+    ],
+    "acceptableAnswers": [
+      "B"
+    ],
+    "explanation": "A dominant strategy gives you a higher payoff than any other action, whatever the other player does."
+  },
+  {
+    "id": "i.m3.contrast.both",
+    "concept": "dominant_strategy",
+    "scenario": "At the end of each day, you and Hannah each decide whether to save your work to the team’s shared drive or keep it only on your laptop.",
+    "type": "reason_choice",
+    "prompt": "Is one of your choices better for you whatever Hannah does?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Yes: one of your choices gives you more against each of Hannah’s choices.",
+        "conceptTag": "dominant_strategy"
+      },
+      {
+        "id": "B",
+        "text": "No: which of your choices is better depends on Hannah’s choice.",
+        "misconception": "strategic-incomplete_comparison"
+      },
+      {
+        "id": "C",
+        "text": "Yes: the choice that led to the higher payoff the last time.",
+        "misconception": "strategic-dominance_from_outcome"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "A dominant strategy gives you a higher payoff than any other action, whatever the other player does."
+  },
+  {
+    "id": "i.m3.dominated",
+    "concept": "dominated_action",
+    "scenario": "At the same moment, you pick a row, top, middle or bottom, and the other side picks a column, left, centre or right.",
+    "type": "reason_choice",
+    "prompt": "Which of the other side’s choices is never the better one for the other side, whatever you pick?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Right: Centre gives the other side more against each of your choices.",
+        "conceptTag": "dominated_action"
+      },
+      {
+        "id": "B",
+        "text": "Left: it gives the other side little when you choose Top.",
+        "misconception": "strategic-incomplete_comparison"
+      },
+      {
+        "id": "C",
+        "text": "Centre: it gives you a lot, so the other side will stay away from it.",
+        "misconception": "strategic-misread_payoff_owner"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "An action is dominated when another action gives you a higher payoff whatever the other player does."
+  },
+  {
+    "id": "i.m3.iesds.step",
+    "concept": "iesds",
+    "scenario": "At the same moment, you pick a row, top, middle or bottom, and the other side picks a column, left, centre or right.",
+    "type": "reason_choice",
+    "prompt": "Which choice can be set aside first, because it is never better for the person who has it?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The other side’s Right: Centre beats it for the other side whatever you pick.",
+        "conceptTag": "iesds"
+      },
+      {
+        "id": "B",
+        "text": "Your Bottom: it is worse for you than Top in most of the cases.",
+        "misconception": "strategic-eliminated_undominated"
+      },
+      {
+        "id": "C",
+        "text": "Your Middle: it never gives you the highest number in the table.",
+        "misconception": "strategic-eliminated_undominated"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Iterated elimination removes dominated actions one round at a time, then checks again in what is left."
+  },
+  {
+    "id": "i.m3.iesds",
+    "concept": "iesds",
+    "scenario": "At the same moment, you pick a row, top, middle or bottom, and the other side picks a column, left, centre or right.",
+    "type": "reason_choice",
+    "prompt": "Keep setting aside choices that are never better, looking again each time. Which pair is left at the end?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Top for you and Centre for the other side.",
+        "conceptTag": "iesds"
+      },
+      {
+        "id": "B",
+        "text": "Bottom for you and Right for the other side.",
+        "misconception": "strategic-across_not_within"
+      },
+      {
+        "id": "C",
+        "text": "Middle for you and Centre for the other side.",
+        "misconception": "strategic-incomplete_comparison"
+      },
+      {
+        "id": "D",
+        "text": "None: nothing can be set aside here.",
+        "misconception": "strategic-incomplete_comparison"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Iterated elimination removes dominated actions one round at a time, then checks again in what is left."
+  },
+  {
+    "id": "i.m3.iesds.stuck",
+    "concept": "iesds",
+    "scenario": "You and Nora are revising for the same exam this weekend. Each of you picks where to study: the library, the café, or a video call from home. You decide on Friday night, separately.",
+    "type": "reason_choice",
+    "prompt": "Keep setting aside choices that are never better, looking again each time. What is left at the end?",
+    "options": [
+      {
+        "id": "A",
+        "text": "More than one pair: once Video call and then Video call go, nothing else can.",
+        "conceptTag": "iesds"
+      },
+      {
+        "id": "B",
+        "text": "Video call for you and Video call for Nora, your highest number.",
+        "misconception": "strategic-across_not_within"
+      },
+      {
+        "id": "C",
+        "text": "Library for you and Library for Nora, the first good match.",
+        "misconception": "strategic-incomplete_comparison"
+      },
+      {
+        "id": "D",
+        "text": "Everything: no choice here is worse than another in every case.",
+        "misconception": "strategic-incomplete_comparison"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Iterated elimination removes dominated actions one round at a time, then checks again in what is left."
+  },
+  {
+    "id": "i.m3.words",
+    "concept": "iesds",
+    "scenario": "At the same moment, you pick a row, top, middle or bottom, and the other side picks a column, left, centre or right.",
+    "type": "own_words",
+    "prompt": "In your own words, explain how you narrowed down the choices, and why each one you set aside could be set aside.",
+    "modelAnswer": "\"Emily’s tea gives her less than smoothie in every row.\" \"Smoothie beats tea against rolls, sandwiches and snacks.\" \"Without tea, snacks no longer win anywhere, so they go.\" \"Rolls with smoothie is all that is left.\"",
+    "rubric": [
+      "Judges each person’s choices by that person’s own numbers.",
+      "Sets a choice aside only when another beats it in every case that is still open.",
+      "Looks again after each removal and explains what changed.",
+      "States which pair is left and that it came from the removals, not from the highest number."
+    ]
+  },
+  {
+    "id": "i.m3.weak",
+    "concept": "weak_dominance",
+    "scenario": "You run a stationery shop in a mall, opposite Mr Foster’s. This week the mall offers a free price-match scheme: members may match any rival sale price. You decide whether to join, and Mr Foster decides whether to run a sale.",
+    "type": "reason_choice",
+    "prompt": "Compare Join the scheme with Stay out for you, across Mr Foster’s choices. What is true?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Join the scheme is never worse, and better if Mr Foster picks Run a sale.",
+        "conceptTag": "weak_dominance"
+      },
+      {
+        "id": "B",
+        "text": "Join the scheme is better against both of Mr Foster’s choices.",
+        "misconception": "strategic-weak_as_strict"
+      },
+      {
+        "id": "C",
+        "text": "Stay out is never worse, and better if Mr Foster picks No sale.",
+        "misconception": "strategic-incomplete_comparison"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "An action weakly dominates another when it is never worse and sometimes better. Weak dominance is a weaker claim than strict dominance."
+  },
+  {
+    "id": "i.m3.weak.b",
+    "concept": "weak_dominance",
+    "scenario": "You run a catering service. Mr Bennett, who owns an event hall, decides whether to book a day event or a night event. At the same time you decide whether to bring your spare generator.",
+    "type": "reason_choice",
+    "prompt": "Compare Bring generator with No generator for you, across Mr Bennett’s choices. What is true?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Bring generator is never worse, and better if Mr Bennett picks Night event.",
+        "conceptTag": "weak_dominance"
+      },
+      {
+        "id": "B",
+        "text": "Bring generator is better against both of Mr Bennett’s choices.",
+        "misconception": "strategic-weak_as_strict"
+      },
+      {
+        "id": "C",
+        "text": "No generator is never worse, and better if Mr Bennett picks Day event.",
+        "misconception": "strategic-incomplete_comparison"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "An action weakly dominates another when it is never worse and sometimes better. Weak dominance is a weaker claim than strict dominance."
+  },
+  {
+    "id": "i.m3.t.dom",
+    "concept": "dominant_strategy",
+    "scenario": "Your building has a new compost bin. You and your neighbour Victor each decide whether to sort your kitchen waste for it.",
+    "type": "reason_choice",
+    "prompt": "Is one of your choices better for you whatever Victor does?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Yes: one of your choices gives you more against each of Victor’s choices.",
+        "conceptTag": "dominant_strategy"
+      },
+      {
+        "id": "B",
+        "text": "No: which of your choices is better depends on Victor’s choice.",
+        "misconception": "strategic-incomplete_comparison"
+      },
+      {
+        "id": "C",
+        "text": "Yes: the choice that led to the higher payoff the last time.",
+        "misconception": "strategic-dominance_from_outcome"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "A dominant strategy gives you a higher payoff than any other action, whatever the other player does."
+  },
+  {
+    "id": "i.m3.t.one",
+    "concept": "dominant_strategy",
+    "scenario": "Your tutor, Mrs Clarke, decides whether to hold today’s class online or at her home. At the same time you decide whether to log in from home or travel to her house.",
+    "type": "reason_choice",
+    "prompt": "What should you expect Mrs Clarke to choose?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Online: it gives Mrs Clarke more whatever you do.",
+        "conceptTag": "dominant_strategy"
+      },
+      {
+        "id": "B",
+        "text": "At her home: it would give you your best outcome.",
+        "misconception": "strategic-ignored_opponent_incentive"
+      },
+      {
+        "id": "C",
+        "text": "Either: Mrs Clarke’s better choice depends on yours.",
+        "misconception": "strategic-incomplete_comparison"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "A dominant strategy gives you a higher payoff than any other action, whatever the other player does."
+  },
+  {
+    "id": "i.m3.t.weak",
+    "concept": "weak_dominance",
+    "scenario": "Clara is planning Friday for your team: lunch in the office, or an outing to the lake. At the same time you decide whether to book the company van, which staff may book at no charge.",
+    "type": "reason_choice",
+    "prompt": "Compare Book the van with No van for you, across Clara’s choices. What is true?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Book the van is never worse, and better if Clara picks Team outing.",
+        "conceptTag": "weak_dominance"
+      },
+      {
+        "id": "B",
+        "text": "Book the van is better against both of Clara’s choices.",
+        "misconception": "strategic-weak_as_strict"
+      },
+      {
+        "id": "C",
+        "text": "No van is never worse, and better if Clara picks Office lunch.",
+        "misconception": "strategic-incomplete_comparison"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "An action weakly dominates another when it is never worse and sometimes better. Weak dominance is a weaker claim than strict dominance."
+  },
+  {
+    "id": "i.m3.t.stuck",
+    "concept": "iesds",
+    "scenario": "You and George run food trucks and share one generator, so you must park together to open. Each of you picks a spot for Saturday: the stadium, the college, or the night market.",
+    "type": "reason_choice",
+    "prompt": "Keep setting aside choices that are never better, looking again each time. What is left at the end?",
+    "options": [
+      {
+        "id": "A",
+        "text": "More than one pair: once Night market and then Night market go, nothing else can.",
+        "conceptTag": "iesds"
+      },
+      {
+        "id": "B",
+        "text": "Night market for you and Night market for George, your highest number.",
+        "misconception": "strategic-across_not_within"
+      },
+      {
+        "id": "C",
+        "text": "Stadium for you and Stadium for George, the first good match.",
+        "misconception": "strategic-incomplete_comparison"
+      },
+      {
+        "id": "D",
+        "text": "Everything: no choice here is worse than another in every case.",
+        "misconception": "strategic-incomplete_comparison"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Iterated elimination removes dominated actions one round at a time, then checks again in what is left."
+  }
+]
