@@ -1,0 +1,17 @@
+{
+  "name": "judgment-lab",
+  "private": true,
+  "version": "0.0.1",
+  "description": "A merged practice lab for strategic reasoning, emotional skills, and behavioural observation.",
+  "engines": {
+    "node": ">=20"
+  },
+  "packageManager": "pnpm@12.11.2",
+  "scripts": {
+    "dev": "pnpm --filter @judgment-lab/web dev",
+    "build": "pnpm -r --filter=!@judgment-lab/web build && pnpm --filter @judgment-lab/web build",
+    "test": "pnpm -r test",
+    "typecheck": "pnpm -r typecheck",
+    "lint": "pnpm -r lint"
+  }
+}

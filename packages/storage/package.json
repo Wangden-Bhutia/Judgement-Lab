@@ -1,0 +1,17 @@
+{
+  "name": "@judgment-lab/storage",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "scripts": {
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "fake-indexeddb": "^6.2.5",
+    "typescript": "~6.0.2",
+    "vitest": "^5.0.4"
+  }
+}
