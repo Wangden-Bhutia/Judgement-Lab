@@ -3,10 +3,12 @@ import type { Item, Lesson } from '@judgment-lab/content-schema';
 import { buildRetentionQueue, type ConceptReviewState, type ItemAttemptRecord, type LessonProgressState } from '@judgment-lab/core-engine';
 import { storage } from './storage';
 import { loadAttempts, loadLessonProgress, loadReviewState } from './progress';
-import { TodayScreen, type TrackSection } from './TodayScreen';
+import { TodayScreen } from './TodayScreen';
+import { LibraryScreen } from './LibraryScreen';
+import { SettingsScreen } from './SettingsScreen';
 import { LessonPlayer } from './LessonPlayer';
 import { ReviewSession } from './ReviewSession';
-import { TrackSwitcher } from './TrackSwitcher';
+import { BottomNav, type View } from './BottomNav';
 import { TRACKS } from './tracks';
 import { TRACK_ICONS } from './trackIcons';
 import './App.css';
@@ -18,6 +20,7 @@ interface DueConcept {
 }
 
 export default function App() {
+  const [view, setView] = useState<View>('today');
   const [progress, setProgress] = useState<Map<string, LessonProgressState>>(new Map());
   const [attempts, setAttempts] = useState<ItemAttemptRecord[]>([]);
   const [reviewState, setReviewState] = useState<Map<string, ConceptReviewState>>(new Map());
@@ -36,9 +39,8 @@ export default function App() {
     );
   }, []);
 
-  // Today is a single blended feed across all 3 tracks, not a per-track
-  // screen behind a switcher -- so everything below is built GLOBALLY
-  // (across all tracks) rather than scoped to one "active" track.
+  // Built GLOBALLY (across all 3 tracks), not scoped to one "active" track
+  // -- Today and Library both need every track's data at once now.
   //
   // Lesson/item ids are namespaced per track (e.g. "strategic-..." vs
   // "emotional-..."), so merging them into single global maps is safe.
@@ -70,7 +72,7 @@ export default function App() {
     }
     return outer;
   }, []);
-  const trackSections: TrackSection[] = useMemo(
+  const trackData = useMemo(
     () =>
       TRACKS.map((track) => ({
         id: track.id,
@@ -136,16 +138,27 @@ export default function App() {
 
   return (
     <>
-      <TodayScreen
-        tracks={trackSections}
-        lessonById={lessonById}
-        progress={progress}
-        attempts={attempts}
-        dueReviewCount={dueConcepts.length}
-        onSelectLesson={setActiveLesson}
-        onStartReview={() => setActiveReview(dueConcepts)}
-      />
-      <TrackSwitcher tracks={TRACKS} />
+      {view === 'today' && (
+        <TodayScreen
+          tracks={trackData}
+          lessonById={lessonById}
+          progress={progress}
+          dueReviewCount={dueConcepts.length}
+          onSelectLesson={setActiveLesson}
+          onStartReview={() => setActiveReview(dueConcepts)}
+        />
+      )}
+      {view === 'library' && (
+        <LibraryScreen
+          tracks={trackData}
+          lessonById={lessonById}
+          progress={progress}
+          attempts={attempts}
+          onSelectLesson={setActiveLesson}
+        />
+      )}
+      {view === 'settings' && <SettingsScreen trackTitles={trackData.map((t) => t.title)} />}
+      <BottomNav view={view} onChange={setView} />
     </>
   );
 }

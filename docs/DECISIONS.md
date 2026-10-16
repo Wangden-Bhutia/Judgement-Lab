@@ -316,6 +316,44 @@ review in two different tracks (Strategic Reasoning's `players`, Behavioural Obs
 card cleared once both were answered. 408 tests pass; typecheck clean (no test suite changes needed --
 this was a UI/wiring restructuring, not a change to `core-engine` or any content package).
 
+### Revised again: Today/Library/Settings, not Today-with-jump-links
+
+The jump-to-section nav above was itself short-lived — once Today showed every track's full content on
+one page, the nav's per-track buttons did nothing a scroll didn't already do. Pointed out directly and
+pressure-tested before building (is a 3-tab split actually correct UX, or just rearranging the same
+problem?) against two alternatives: (a) drop the per-track nav entirely and keep one page — rejected,
+because a *completed* track stops appearing on Today at all, and without a stable Library entry point
+that track becomes permanently unreachable; (b) a Duolingo-style single path per track (next lesson
+highlighted within one continuous map, no separate card) — a legitimate alternative that avoids showing
+the same lesson twice, but a bigger redesign for a similar outcome, not pursued here.
+
+Landed on the split both because of (a) and because it matches a validated pattern (Headspace/Calm:
+daily actionable item vs. content library vs. account, not arbitrary tab sprawl):
+
+- **Today**: the due-review card, plus one lean card per track that still has something to do (icon +
+  track name + next lesson). A fully-completed track gets a one-line chip instead of a card. No syllabus
+  browsing here at all.
+- **Library** (new `LibraryScreen.tsx`): every track's full module/lesson list, always expanded, with
+  the per-track stats header — the content that used to live in Today's `<details>`. The stable,
+  always-reachable way to revisit or preview anything regardless of completion state.
+- **Settings** (new `SettingsScreen.tsx`): an About block and a "reset all progress" action
+  (`storage.clear()` + reload), gated behind an inline confirm/cancel step since it's destructive and
+  irreversible. Minimal by design — a real place to grow into, not filled out speculatively.
+- `BottomNav.tsx` replaces the jump-link nav from the previous pass: real view-switching
+  (`today | library | settings`) driven by `App.tsx` state, not `scrollIntoView`. Added `LIBRARY_ICON`
+  (open book) and `SETTINGS_ICON` (sliders, not a gear — simpler to draw cleanly at nav-icon size) to
+  `trackIcons.tsx` alongside the existing `TODAY_ICON` and per-track icons.
+
+One explicit, known tradeoff, not a free win: Today can show up to 3 parallel "next lesson" cards at
+once, which cuts against the usual single-focal-action habit-app pattern. Kept anyway because the 3
+tracks are genuinely parallel, independent habits here, not 3 competing options for one action — but
+worth revisiting if that assumption turns out wrong in practice.
+
+Verified live: Today renders lean (no repeated content), Library shows the full always-expanded
+syllabus, Settings' confirm/cancel flow works correctly (cancelled without actually clearing storage),
+and the completed-track chip renders with the right text once a track's lessons were marked done via
+IndexedDB. 408 tests pass; typecheck clean.
+
 ## Open, non-blocking
 
 - Final app name.

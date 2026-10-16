@@ -1,11 +1,28 @@
 import type { ReactNode } from 'react';
 
-/** Today: a simple sun -- the one nav item that isn't a track, it's "take
- * me back to the top of the page". */
+/** Today: a simple sun -- what to practise right now. */
 export const TODAY_ICON: ReactNode = (
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round">
     <circle cx="12" cy="12" r="4.5" />
     <path d="M12 2.5 V5 M12 19 V21.5 M4.2 4.2 L6 6 M18 18 L19.8 19.8 M2.5 12 H5 M19 12 H21.5 M4.2 19.8 L6 18 M18 6 L19.8 4.2" />
+  </svg>
+);
+
+/** Library: an open book -- every track's full content, always browsable. */
+export const LIBRARY_ICON: ReactNode = (
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M12 6 C10 4.5 7 4 4 4.5 V18 C7 17.5 10 18 12 19.5 C14 18 17 17.5 20 18 V4.5 C17 4 14 4.5 12 6 Z" />
+    <path d="M12 6 V19.5" />
+  </svg>
+);
+
+/** Settings: sliders, not a gear -- simpler to draw cleanly at this size. */
+export const SETTINGS_ICON: ReactNode = (
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round">
+    <path d="M4 7 H20 M4 14 H20 M4 21 H20" />
+    <circle cx="14" cy="7" r="2.1" fill="currentColor" stroke="none" />
+    <circle cx="9" cy="14" r="2.1" fill="currentColor" stroke="none" />
+    <circle cx="16" cy="21" r="2.1" fill="currentColor" stroke="none" />
   </svg>
 );
 

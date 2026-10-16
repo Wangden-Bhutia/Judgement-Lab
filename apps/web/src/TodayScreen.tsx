@@ -1,26 +1,18 @@
 import type { ReactNode } from 'react';
-import type { Concept, Lesson, Module } from '@judgment-lab/content-schema';
-import {
-  computeSkillMastery,
-  deriveLessonStatus,
-  type ItemAttemptRecord,
-  type LessonProgressState,
-  type LessonStatus,
-} from '@judgment-lab/core-engine';
+import type { Lesson, Module } from '@judgment-lab/content-schema';
+import { deriveLessonStatus, type LessonProgressState, type LessonStatus } from '@judgment-lab/core-engine';
 
 export interface TrackSection {
   id: string;
   title: string;
   icon: ReactNode;
   modules: Module[];
-  concepts: Concept[];
 }
 
 interface TodayScreenProps {
   tracks: TrackSection[];
   lessonById: ReadonlyMap<string, Lesson>;
   progress: ReadonlyMap<string, LessonProgressState>;
-  attempts: ItemAttemptRecord[];
   dueReviewCount: number;
   onSelectLesson: (lesson: Lesson) => void;
   onStartReview: () => void;
@@ -60,15 +52,13 @@ function findNextLesson(
   return null;
 }
 
-export function TodayScreen({
-  tracks,
-  lessonById,
-  progress,
-  attempts,
-  dueReviewCount,
-  onSelectLesson,
-  onStartReview,
-}: TodayScreenProps) {
+/**
+ * Deliberately lean: just what's due for review and one card per track
+ * that still has something to practise -- not the full syllabus (that's
+ * Library's job now). Showing both here was the original bug: the bottom
+ * nav's track links did nothing but scroll to content already on screen.
+ */
+export function TodayScreen({ tracks, lessonById, progress, dueReviewCount, onSelectLesson, onStartReview }: TodayScreenProps) {
   return (
     <div className="today-screen">
       <h1>Today</h1>
@@ -85,67 +75,27 @@ export function TodayScreen({
       )}
 
       {tracks.map((track) => {
-        const masteredConcepts = track.concepts.filter((c) => computeSkillMastery(c.id, attempts).mastered);
-        const totalLessons = track.modules.reduce((sum, m) => sum + m.lessonIds.length, 0);
-        const completedLessons = track.modules
-          .flatMap((m) => m.lessonIds)
-          .filter((id) => progress.get(id)?.completedAt != null).length;
         const next = findNextLesson(track.modules, lessonById, progress);
 
-        return (
-          <section key={track.id} id={`track-${track.id}`} className="track-section">
-            <div className="track-section-header">
-              <span className="track-section-icon">{track.icon}</span>
-              <div>
-                <h2>{track.title}</h2>
-                <p className="subtitle">
-                  {completedLessons} of {totalLessons} lessons completed · {masteredConcepts.length} of{' '}
-                  {track.concepts.length} concepts mastered
-                </p>
-              </div>
+        if (!next) {
+          return (
+            <div key={track.id} className="track-complete-chip">
+              <span className="track-complete-icon">{track.icon}</span>
+              <span>{track.title} — every lesson complete. Revisit it from Library.</span>
             </div>
+          );
+        }
 
-            {next ? (
-              <section className="today-card">
-                <p className="today-card-module">{next.module.title}</p>
-                <h2>{next.lesson.title}</h2>
-                <p>{next.lesson.objectives[0]}</p>
-                <button onClick={() => onSelectLesson(next.lesson)}>{STATUS_LABEL[next.status]}</button>
-              </section>
-            ) : (
-              <section className="today-card today-card-done">
-                <h2>You've completed every lesson in {track.title}.</h2>
-                <p>Browse the full syllabus below to revisit anything.</p>
-              </section>
-            )}
-
-            <details className="syllabus">
-              <summary>Browse all {totalLessons} lessons</summary>
-              {track.modules.map((module) => (
-                <section key={module.id} className="module-section">
-                  <h3 className="module-title">{module.title}</h3>
-                  <ul className="lesson-list">
-                    {module.lessonIds.map((lessonId) => {
-                      const lesson = lessonById.get(lessonId);
-                      if (!lesson) return null;
-                      const status = deriveLessonStatus(lesson, progress);
-                      const locked = status === 'locked';
-                      return (
-                        <li key={lesson.id} className={`lesson-card status-${status}`}>
-                          <div className="lesson-card-main">
-                            <h3>{lesson.title}</h3>
-                            <p>{lesson.objectives[0]}</p>
-                          </div>
-                          <button disabled={locked} onClick={() => onSelectLesson(lesson)}>
-                            {STATUS_LABEL[status]}
-                          </button>
-                        </li>
-                      );
-                    })}
-                  </ul>
-                </section>
-              ))}
-            </details>
+        return (
+          <section key={track.id} className="today-card">
+            <div className="today-card-track">
+              <span className="today-card-track-icon">{track.icon}</span>
+              <span>{track.title}</span>
+            </div>
+            <p className="today-card-module">{next.module.title}</p>
+            <h2>{next.lesson.title}</h2>
+            <p>{next.lesson.objectives[0]}</p>
+            <button onClick={() => onSelectLesson(next.lesson)}>{STATUS_LABEL[next.status]}</button>
           </section>
         );
       })}
