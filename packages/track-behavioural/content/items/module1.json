@@ -1,0 +1,453 @@
+[
+  {
+    "id": "i.beh.les-1.explain",
+    "concept": "observation_vs_interpretation",
+    "type": "own_words",
+    "prompt": "In your own words, explain the difference between an observation and an interpretation, and why the difference matters when you're trying to understand someone's behaviour.",
+    "modelAnswer": "I named a specific observation (something that could be seen or heard), separate from an interpretation of it. I explained why treating an interpretation as if it were an observation is a problem. I gave at least one example where two different interpretations could fit the same observation.",
+    "rubric": [
+      "I named a specific observation (something that could be seen or heard), separate from an interpretation of it.",
+      "I explained why treating an interpretation as if it were an observation is a problem.",
+      "I gave at least one example where two different interpretations could fit the same observation."
+    ]
+  },
+  {
+    "id": "i.beh.obs-001",
+    "concept": "observation_vs_interpretation",
+    "type": "reason_choice",
+    "prompt": "A normally talkative colleague becomes quiet after another colleague receives praise from a supervisor in a team meeting. The person looks at their phone and contributes very little for the rest of the meeting.",
+    "options": [
+      {
+        "id": "A",
+        "text": "The person is jealous — seeking praise and being overlooked would naturally provoke that.",
+        "misconception": "behavioural-premature_motive_attribution"
+      },
+      {
+        "id": "B",
+        "text": "The person feels threatened by the supervisor playing favourites.",
+        "misconception": "behavioural-premature_motive_attribution"
+      },
+      {
+        "id": "C",
+        "text": "The person's behaviour changed right after the praise, but what caused it isn't established.",
+        "conceptTag": "evidence_based_inference"
+      },
+      {
+        "id": "D",
+        "text": "The person is insecure and craves recognition from others.",
+        "misconception": "behavioural-confusing_observation_with_interpretation"
+      }
+    ],
+    "acceptableAnswers": [
+      "C"
+    ],
+    "explanation": "Only the behaviour change — becoming quieter and using the phone more after the praise — is directly observable. 'Jealous', 'threatened' and 'insecure' are all possible explanations, but none of them is established by this one observation alone. Several different motives could produce the same visible change."
+  },
+  {
+    "id": "i.beh.obs-002",
+    "concept": "observation_vs_interpretation",
+    "type": "reason_choice",
+    "prompt": "Continuing from the meeting above: afterwards, you learn the same colleague had received a difficult personal phone call just before the meeting began.",
+    "options": [
+      {
+        "id": "A",
+        "text": "This new information proves the colleague was not reacting to the praise at all.",
+        "misconception": "behavioural-confusing_observation_with_interpretation"
+      },
+      {
+        "id": "B",
+        "text": "This new information adds a plausible alternative explanation, without ruling out the original one.",
+        "conceptTag": "evidence_based_inference"
+      },
+      {
+        "id": "C",
+        "text": "This new information is irrelevant, since the praise clearly caused the reaction.",
+        "misconception": "behavioural-premature_motive_attribution"
+      }
+    ],
+    "acceptableAnswers": [
+      "B"
+    ],
+    "explanation": "The phone call gives a second plausible explanation for the same behaviour. It does not prove the first explanation wrong — both could be true, partly true, or the praise could have had no effect at all. Good reasoning holds multiple explanations open until there's evidence to narrow them down."
+  },
+  {
+    "id": "i.beh.obs-003",
+    "concept": "observation_vs_interpretation",
+    "type": "reason_choice",
+    "prompt": "A friend cancels plans with you for the second time this month, citing being \"busy with work\" both times.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Your friend is avoiding you — two cancellations in a row is a clear pattern.",
+        "misconception": "behavioural-overgeneralising_from_one_incident"
+      },
+      {
+        "id": "B",
+        "text": "Your friend cited work both times; whether that's the real reason or something else isn't established yet.",
+        "conceptTag": "evidence_based_inference"
+      },
+      {
+        "id": "C",
+        "text": "Your friend no longer values the friendship, given how easily plans keep falling through.",
+        "misconception": "behavioural-premature_motive_attribution"
+      }
+    ],
+    "acceptableAnswers": [
+      "B"
+    ],
+    "explanation": "Two cancellations with a stated reason is the observable pattern. 'Avoiding you' and 'no longer values the friendship' both assume a specific motive the pattern alone doesn't establish — a busy period at work is at least as consistent with the same facts."
+  },
+  {
+    "id": "i.beh.obs-010",
+    "concept": "observation_vs_interpretation",
+    "type": "reason_choice",
+    "prompt": "During a group project, one member repeatedly redirects the conversation back to their own ideas and briefly checks their phone whenever someone else is speaking.",
+    "options": [
+      {
+        "id": "A",
+        "text": "The member is self-centred and doesn't respect their teammates, based on how they've been acting.",
+        "misconception": "behavioural-overgeneralising_from_one_incident"
+      },
+      {
+        "id": "B",
+        "text": "The member's redirecting and phone-checking are observable; what's driving it isn't established — anxiety, habit, or disengagement could all fit.",
+        "conceptTag": "evidence_based_inference"
+      },
+      {
+        "id": "C",
+        "text": "The member is deliberately undermining the group's work with their behaviour.",
+        "misconception": "behavioural-premature_motive_attribution"
+      }
+    ],
+    "acceptableAnswers": [
+      "B"
+    ],
+    "explanation": "The redirecting and phone-checking are observable. Labelling the person 'self-centred' treats a pattern across one meeting as a fixed trait, and 'deliberately undermining' assigns an intent that isn't the only one consistent with the behaviour. Anxiety, habit, distraction, and disengagement are all at least as plausible without further evidence."
+  },
+  {
+    "id": "i.beh.obs-011",
+    "concept": "evidence_based_inference",
+    "type": "reason_choice",
+    "prompt": "A new employee declines two consecutive invitations to join the team for lunch, each time saying they have errands to run.",
+    "options": [
+      {
+        "id": "A",
+        "text": "The employee isn't interested in building relationships with the team, based on these declines.",
+        "misconception": "behavioural-premature_motive_attribution"
+      },
+      {
+        "id": "B",
+        "text": "The employee gave a reason each time; that alone doesn't establish disinterest — several explanations fit equally well.",
+        "conceptTag": "evidence_based_inference"
+      },
+      {
+        "id": "C",
+        "text": "The employee is antisocial, choosing to keep to themselves rather than join in.",
+        "misconception": "behavioural-overgeneralising_from_one_incident"
+      }
+    ],
+    "acceptableAnswers": [
+      "B"
+    ],
+    "explanation": "Two declines with stated reasons are what's observed. 'Not interested' and 'antisocial' both go beyond that evidence by picking one motive among several that fit equally well. A pattern over more instances, or a direct conversation, would be needed before narrowing the explanation."
+  },
+  {
+    "id": "i.beh.les-2.explain",
+    "concept": "attribution",
+    "type": "own_words",
+    "prompt": "In your own words, explain the difference between a dispositional and a situational explanation for someone's behaviour, and why people tend to reach for the dispositional one too quickly.",
+    "modelAnswer": "I distinguished a dispositional explanation from a situational one, using my own example. I explained why the dispositional explanation can feel more obvious even when it isn't better supported. I named at least one situational factor that could explain the scenario I considered.",
+    "rubric": [
+      "I distinguished a dispositional explanation from a situational one, using my own example.",
+      "I explained why the dispositional explanation can feel more obvious even when it isn't better supported.",
+      "I named at least one situational factor that could explain the scenario I considered."
+    ]
+  },
+  {
+    "id": "i.beh.attr-001",
+    "concept": "attribution",
+    "type": "reason_choice",
+    "prompt": "A coworker snaps irritably at you after you ask a routine scheduling question.",
+    "options": [
+      {
+        "id": "A",
+        "text": "The coworker is rude and has no patience for colleagues.",
+        "misconception": "behavioural-ignoring_situational_factors"
+      },
+      {
+        "id": "B",
+        "text": "The coworker snapped once; the cause could be something about them or their circumstances, and isn't established yet.",
+        "conceptTag": "attribution"
+      },
+      {
+        "id": "C",
+        "text": "The coworker is having a stressful day, and that fully explains it.",
+        "misconception": "behavioural-premature_motive_attribution"
+      },
+      {
+        "id": "D",
+        "text": "The coworker is one of those people who can't handle pressure well.",
+        "misconception": "behavioural-overgeneralising_from_one_incident"
+      }
+    ],
+    "acceptableAnswers": [
+      "B"
+    ],
+    "explanation": "Only the snapping is observable. 'Rude' and 'can't handle pressure' both credit the coworker's character without checking for situational causes, while 'stressful day' credits a specific situational cause just as confidently. Both directions — too quick to blame the person, too quick to settle on one circumstance — go beyond what a single incident supports."
+  },
+  {
+    "id": "i.beh.attr-002",
+    "concept": "attribution",
+    "type": "reason_choice",
+    "prompt": "You later learn the coworker had just come from a difficult performance review with their manager.",
+    "options": [
+      {
+        "id": "A",
+        "text": "This proves the coworker isn't rude — it was entirely the review.",
+        "misconception": "behavioural-confusing_observation_with_interpretation"
+      },
+      {
+        "id": "B",
+        "text": "This adds a plausible situational explanation, without ruling out other factors.",
+        "conceptTag": "attribution"
+      },
+      {
+        "id": "C",
+        "text": "This is irrelevant — people's true character shows under any pressure.",
+        "misconception": "behavioural-ignoring_situational_factors"
+      }
+    ],
+    "acceptableAnswers": [
+      "B"
+    ],
+    "explanation": "The review gives a plausible situational explanation, but it doesn't prove the dispositional one wrong — both could play a role, or the review could be unrelated. Treating one new fact as settling the question skips over everything still unknown."
+  },
+  {
+    "id": "i.beh.attr-003",
+    "concept": "attribution",
+    "type": "reason_choice",
+    "prompt": "A student who normally finishes exams early turns in their test significantly late for the first time.",
+    "options": [
+      {
+        "id": "A",
+        "text": "The student didn't study and panicked under time pressure.",
+        "misconception": "behavioural-premature_motive_attribution"
+      },
+      {
+        "id": "B",
+        "text": "The student finished later than usual; whether that's about them or the exam itself isn't established from this alone.",
+        "conceptTag": "attribution"
+      },
+      {
+        "id": "C",
+        "text": "The student has become lazy about preparing for exams.",
+        "misconception": "behavioural-overgeneralising_from_one_incident"
+      }
+    ],
+    "acceptableAnswers": [
+      "B"
+    ],
+    "explanation": "A change from the student's usual pattern is observable. 'Panicked' and 'become lazy' both assume a specific cause — a harder question set, an unfamiliar format, or something unrelated to preparation could equally explain one slow exam."
+  },
+  {
+    "id": "i.beh.attr-010",
+    "concept": "attribution",
+    "type": "reason_choice",
+    "prompt": "A manager publicly criticises an employee's work in a team meeting — unusual behaviour for that manager.",
+    "options": [
+      {
+        "id": "A",
+        "text": "The manager is a harsh, unpleasant boss.",
+        "misconception": "behavioural-ignoring_situational_factors"
+      },
+      {
+        "id": "B",
+        "text": "This was unusual for the manager; without more context, whether it reflects their character or their circumstances isn't established.",
+        "conceptTag": "attribution"
+      },
+      {
+        "id": "C",
+        "text": "The manager must be under pressure from above and is taking it out on the team.",
+        "misconception": "behavioural-premature_motive_attribution"
+      }
+    ],
+    "acceptableAnswers": [
+      "B"
+    ],
+    "explanation": "The public criticism, and that it's unusual for this manager, are both observable. 'Harsh boss' ignores that it's a break from their normal behaviour, while 'pressure from above' names a specific situational cause with no more support than the dispositional one. Noting the behaviour is unusual is itself a clue worth weighing, not explaining away."
+  },
+  {
+    "id": "i.beh.attr-011",
+    "concept": "evidence_based_inference",
+    "type": "reason_choice",
+    "prompt": "A usually reliable supplier misses a delivery deadline for the first time in two years.",
+    "options": [
+      {
+        "id": "A",
+        "text": "The supplier has become unreliable and shouldn't be trusted going forward.",
+        "misconception": "behavioural-overgeneralising_from_one_incident"
+      },
+      {
+        "id": "B",
+        "text": "One missed deadline after two reliable years doesn't establish a change in reliability, though it may be worth watching.",
+        "conceptTag": "evidence_based_inference"
+      },
+      {
+        "id": "C",
+        "text": "The supplier is deliberately deprioritising this account.",
+        "misconception": "behavioural-premature_motive_attribution"
+      }
+    ],
+    "acceptableAnswers": [
+      "B"
+    ],
+    "explanation": "Two years of reliability followed by one miss is the observable pattern. 'Unreliable going forward' overweights a single instance against a long track record, and 'deliberately deprioritising' assumes an intent with no support — a shipping delay, a supply issue, or a one-off error fit equally well."
+  },
+  {
+    "id": "i.beh.les-3.explain",
+    "concept": "generating_alternative_explanations",
+    "type": "own_words",
+    "prompt": "In your own words, explain what confirmation bias is, and why deliberately generating alternative explanations helps guard against it.",
+    "modelAnswer": "I explained what confirmation bias is in my own words. I explained why having an early hunch makes confirmation bias more likely, not less. I gave an example of generating at least one alternative explanation for an ambiguous situation.",
+    "rubric": [
+      "I explained what confirmation bias is in my own words.",
+      "I explained why having an early hunch makes confirmation bias more likely, not less.",
+      "I gave an example of generating at least one alternative explanation for an ambiguous situation."
+    ]
+  },
+  {
+    "id": "i.beh.alt-001",
+    "concept": "generating_alternative_explanations",
+    "type": "reason_choice",
+    "prompt": "You start to suspect a new roommate is secretly messy, after finding one dirty dish left in the sink.",
+    "options": [
+      {
+        "id": "A",
+        "text": "This confirms the roommate is messy — it's just the first clear sign.",
+        "misconception": "behavioural-confirmation_bias"
+      },
+      {
+        "id": "B",
+        "text": "One dish is a single data point; it doesn't establish a pattern either way yet.",
+        "conceptTag": "generating_alternative_explanations"
+      },
+      {
+        "id": "C",
+        "text": "Roommates are generally messy, so this was expected anyway.",
+        "misconception": "behavioural-overgeneralising_from_one_incident"
+      }
+    ],
+    "acceptableAnswers": [
+      "B"
+    ],
+    "explanation": "One dish is the observable fact. Treating it as 'confirming' messiness skips past the much more likely explanation that it's an isolated occurrence, and assuming roommates in general are messy imports a stereotype rather than looking at this person's actual behaviour."
+  },
+  {
+    "id": "i.beh.alt-002",
+    "concept": "generating_alternative_explanations",
+    "type": "reason_choice",
+    "prompt": "A week later, you notice the roommate has left dishes unwashed three more times. You conclude they're messy and stop considering other explanations.",
+    "options": [
+      {
+        "id": "A",
+        "text": "This is sound reasoning — the pattern now clearly confirms the original suspicion.",
+        "misconception": "behavioural-confirmation_bias"
+      },
+      {
+        "id": "B",
+        "text": "Four instances is a stronger pattern, but other explanations are still worth considering before concluding.",
+        "conceptTag": "generating_alternative_explanations"
+      },
+      {
+        "id": "C",
+        "text": "The pattern doesn't really matter — first impressions already settled the question.",
+        "misconception": "behavioural-ignoring_alternative_explanations"
+      }
+    ],
+    "acceptableAnswers": [
+      "B"
+    ],
+    "explanation": "Four instances is stronger evidence than one, and it's reasonable to lean toward a pattern — but 'stop considering other explanations' is the confirmation-bias move: a busy week, a different sense of what counts as 'done', or a temporary situation could all still fit the same four instances."
+  },
+  {
+    "id": "i.beh.alt-003",
+    "concept": "generating_alternative_explanations",
+    "type": "reason_choice",
+    "prompt": "A manager decides an employee is \"not a team player\" after the employee disagreed with the group's plan in one meeting.",
+    "options": [
+      {
+        "id": "A",
+        "text": "The manager's read is probably accurate — people usually show their true colours in meetings.",
+        "misconception": "behavioural-confirmation_bias"
+      },
+      {
+        "id": "B",
+        "text": "The manager should look for other instances, before or after, that would support or complicate this view.",
+        "conceptTag": "generating_alternative_explanations"
+      },
+      {
+        "id": "C",
+        "text": "Disagreeing once is already enough to establish someone isn't a team player.",
+        "misconception": "behavioural-overgeneralising_from_one_incident"
+      }
+    ],
+    "acceptableAnswers": [
+      "B"
+    ],
+    "explanation": "Disagreeing in one meeting is what's observable. Treating it as revealing someone's 'true colours', or as sufficient on its own, both skip the step of checking whether this is a pattern or a single instance — and disagreement can just as easily reflect engagement with the plan as opposition to the team."
+  },
+  {
+    "id": "i.beh.alt-010",
+    "concept": "generating_alternative_explanations",
+    "type": "reason_choice",
+    "prompt": "After losing a client, a salesperson becomes convinced their newest team member's unfamiliarity with the product was the cause, and stops investigating further.",
+    "options": [
+      {
+        "id": "A",
+        "text": "This is reasonable once a clear cause is found — further investigation would be unnecessary.",
+        "misconception": "behavioural-confirmation_bias"
+      },
+      {
+        "id": "B",
+        "text": "Other factors — timing, pricing, competing offers — could also explain the loss; settling on one cause without checking is premature.",
+        "conceptTag": "generating_alternative_explanations"
+      },
+      {
+        "id": "C",
+        "text": "The newest team member is definitely to blame, since they're the least experienced.",
+        "misconception": "behavioural-premature_motive_attribution"
+      }
+    ],
+    "acceptableAnswers": [
+      "B"
+    ],
+    "explanation": "The lost client is the observable fact. Fixing on the first plausible cause and stopping there is exactly the confirmation-bias pattern this lesson covers — several other explanations fit the same outcome, and none has been checked."
+  },
+  {
+    "id": "i.beh.alt-011",
+    "concept": "attribution",
+    "type": "reason_choice",
+    "prompt": "A colleague who is usually punctual arrives late to three meetings in one week.",
+    "options": [
+      {
+        "id": "A",
+        "text": "The colleague has become unreliable and careless about time.",
+        "misconception": "behavioural-overgeneralising_from_one_incident"
+      },
+      {
+        "id": "B",
+        "text": "Punctuality changed this week; whether that's about the colleague or their circumstances isn't established from this alone.",
+        "conceptTag": "attribution"
+      },
+      {
+        "id": "C",
+        "text": "The colleague must be dealing with a personal crisis.",
+        "misconception": "behavioural-premature_motive_attribution"
+      }
+    ],
+    "acceptableAnswers": [
+      "B"
+    ],
+    "explanation": "Three late arrivals in one week, against a normal pattern of punctuality, is observable. 'Become unreliable' overweights one week against an established pattern, and 'personal crisis' names a specific situational cause with no more support than any other — a scheduling conflict or commute disruption would fit equally well."
+  }
+]

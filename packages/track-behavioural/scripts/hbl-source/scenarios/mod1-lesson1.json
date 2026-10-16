@@ -1,0 +1,94 @@
+[
+  {
+    "id": "OBS-001",
+    "concept": "observation_vs_interpretation",
+    "module": "MOD-1",
+    "lesson": "LES-1",
+    "difficulty": 1,
+    "scenario": "A normally talkative colleague becomes quiet after another colleague receives praise from a supervisor in a team meeting. The person looks at their phone and contributes very little for the rest of the meeting.",
+    "questionType": "evidence_vs_inference",
+    "options": [
+      { "id": "A", "text": "The person is jealous — seeking praise and being overlooked would naturally provoke that.", "misconception": "premature_motive_attribution" },
+      { "id": "B", "text": "The person feels threatened by the supervisor playing favourites.", "misconception": "premature_motive_attribution" },
+      { "id": "C", "text": "The person's behaviour changed right after the praise, but what caused it isn't established.", "conceptTag": "evidence_based_inference" },
+      { "id": "D", "text": "The person is insecure and craves recognition from others.", "misconception": "confusing_observation_with_interpretation" }
+    ],
+    "acceptableAnswers": ["C"],
+    "explanation": "Only the behaviour change — becoming quieter and using the phone more after the praise — is directly observable. 'Jealous', 'threatened' and 'insecure' are all possible explanations, but none of them is established by this one observation alone. Several different motives could produce the same visible change.",
+    "skills": ["observation_vs_interpretation", "evidence_based_inference"],
+    "followUpScenarioId": "OBS-002",
+    "contentVersion": 1
+  },
+  {
+    "id": "OBS-002",
+    "concept": "observation_vs_interpretation",
+    "module": "MOD-1",
+    "lesson": "LES-1",
+    "difficulty": 1,
+    "scenario": "Continuing from the meeting above: afterwards, you learn the same colleague had received a difficult personal phone call just before the meeting began.",
+    "questionType": "scenario_choice",
+    "options": [
+      { "id": "A", "text": "This new information proves the colleague was not reacting to the praise at all.", "misconception": "confusing_observation_with_interpretation" },
+      { "id": "B", "text": "This new information adds a plausible alternative explanation, without ruling out the original one.", "conceptTag": "evidence_based_inference" },
+      { "id": "C", "text": "This new information is irrelevant, since the praise clearly caused the reaction.", "misconception": "premature_motive_attribution" }
+    ],
+    "acceptableAnswers": ["B"],
+    "explanation": "The phone call gives a second plausible explanation for the same behaviour. It does not prove the first explanation wrong — both could be true, partly true, or the praise could have had no effect at all. Good reasoning holds multiple explanations open until there's evidence to narrow them down.",
+    "skills": ["evidence_based_inference"],
+    "contentVersion": 1
+  },
+  {
+    "id": "OBS-003",
+    "concept": "observation_vs_interpretation",
+    "module": "MOD-1",
+    "lesson": "LES-1",
+    "difficulty": 2,
+    "scenario": "A friend cancels plans with you for the second time this month, citing being \"busy with work\" both times.",
+    "questionType": "assumption_identification",
+    "options": [
+      { "id": "A", "text": "Your friend is avoiding you — two cancellations in a row is a clear pattern.", "misconception": "overgeneralising_from_one_incident" },
+      { "id": "B", "text": "Your friend cited work both times; whether that's the real reason or something else isn't established yet.", "conceptTag": "evidence_based_inference" },
+      { "id": "C", "text": "Your friend no longer values the friendship, given how easily plans keep falling through.", "misconception": "premature_motive_attribution" }
+    ],
+    "acceptableAnswers": ["B"],
+    "explanation": "Two cancellations with a stated reason is the observable pattern. 'Avoiding you' and 'no longer values the friendship' both assume a specific motive the pattern alone doesn't establish — a busy period at work is at least as consistent with the same facts.",
+    "skills": ["observation_vs_interpretation", "evidence_based_inference"],
+    "contentVersion": 1
+  },
+  {
+    "id": "OBS-010",
+    "concept": "observation_vs_interpretation",
+    "module": "MOD-1",
+    "lesson": "LES-1",
+    "difficulty": 4,
+    "scenario": "During a group project, one member repeatedly redirects the conversation back to their own ideas and briefly checks their phone whenever someone else is speaking.",
+    "questionType": "scenario_choice",
+    "options": [
+      { "id": "A", "text": "The member is self-centred and doesn't respect their teammates, based on how they've been acting.", "misconception": "overgeneralising_from_one_incident" },
+      { "id": "B", "text": "The member's redirecting and phone-checking are observable; what's driving it isn't established — anxiety, habit, or disengagement could all fit.", "conceptTag": "evidence_based_inference" },
+      { "id": "C", "text": "The member is deliberately undermining the group's work with their behaviour.", "misconception": "premature_motive_attribution" }
+    ],
+    "acceptableAnswers": ["B"],
+    "explanation": "The redirecting and phone-checking are observable. Labelling the person 'self-centred' treats a pattern across one meeting as a fixed trait, and 'deliberately undermining' assigns an intent that isn't the only one consistent with the behaviour. Anxiety, habit, distraction, and disengagement are all at least as plausible without further evidence.",
+    "skills": ["observation_vs_interpretation", "evidence_based_inference"],
+    "contentVersion": 1
+  },
+  {
+    "id": "OBS-011",
+    "concept": "evidence_based_inference",
+    "module": "MOD-1",
+    "lesson": "LES-1",
+    "difficulty": 4,
+    "scenario": "A new employee declines two consecutive invitations to join the team for lunch, each time saying they have errands to run.",
+    "questionType": "evidence_vs_inference",
+    "options": [
+      { "id": "A", "text": "The employee isn't interested in building relationships with the team, based on these declines.", "misconception": "premature_motive_attribution" },
+      { "id": "B", "text": "The employee gave a reason each time; that alone doesn't establish disinterest — several explanations fit equally well.", "conceptTag": "evidence_based_inference" },
+      { "id": "C", "text": "The employee is antisocial, choosing to keep to themselves rather than join in.", "misconception": "overgeneralising_from_one_incident" }
+    ],
+    "acceptableAnswers": ["B"],
+    "explanation": "Two declines with stated reasons are what's observed. 'Not interested' and 'antisocial' both go beyond that evidence by picking one motive among several that fit equally well. A pattern over more instances, or a direct conversation, would be needed before narrowing the explanation.",
+    "skills": ["observation_vs_interpretation", "evidence_based_inference"],
+    "contentVersion": 1
+  }
+]

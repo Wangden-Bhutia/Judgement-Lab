@@ -63,7 +63,17 @@ describe('converted Emotional Skills content (60-session curriculum)', () => {
   it('a regular lesson puts its checks and activity in interactiveItemIds, not masteryItemIds', () => {
     const lesson = typedCurriculum.lessons.find((l) => l.id === 'emotional-w01d1')!;
     expect(lesson.masteryItemIds).toEqual([]);
-    expect(lesson.interactiveItemIds.length).toBeGreaterThanOrEqual(3); // explain + activity + >=1 check
+    expect(lesson.interactiveItemIds.length).toBeGreaterThanOrEqual(3); // activity + >=1 check + explain
+  });
+
+  it('the explain-back item is LAST in interactiveItemIds, matching ESL\'s own layer order (activity/checks, then explanation-back)', () => {
+    // Regression test: an earlier version of this script listed it FIRST,
+    // which made LessonPlayer present it before the learner had done any
+    // of the lesson's own activity or checks -- inverting ESL's own
+    // types.ts comment ("Layer 1 activity... Layer 2 explanation-back").
+    for (const lesson of typedCurriculum.lessons) {
+      expect(lesson.interactiveItemIds.at(-1)).toBe(lesson.explanationBackItemId);
+    }
   });
 
   it('every session maps to exactly one concept (itself), per ESL\'s own "a skill is one session" design', () => {

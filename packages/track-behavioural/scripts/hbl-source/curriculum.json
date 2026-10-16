@@ -1,0 +1,115 @@
+{
+  "contentVersion": 1,
+  "modules": [
+    {
+      "id": "MOD-1",
+      "sequence": 1,
+      "title": "Learning to Observe",
+      "lessonIds": ["LES-1", "LES-2", "LES-3"]
+    }
+  ],
+  "lessons": [
+    {
+      "id": "LES-1",
+      "module": "MOD-1",
+      "sequence": 1,
+      "title": "Observation vs. Interpretation",
+      "objectives": [
+        "Distinguish an observable fact from an interpretation of that fact.",
+        "Recognise when a conclusion about someone's motive outruns the evidence.",
+        "Generate at least one alternative explanation for an ambiguous behaviour."
+      ],
+      "concepts": ["observation_vs_interpretation", "evidence_based_inference"],
+      "prerequisites": [],
+      "interactiveScenarioIds": ["OBS-001", "OBS-002", "OBS-003"],
+      "masteryScenarioIds": ["OBS-010", "OBS-011"],
+      "contentVersion": 1
+    },
+    {
+      "id": "LES-2",
+      "module": "MOD-1",
+      "sequence": 2,
+      "title": "Attribution: Disposition vs. Situation",
+      "objectives": [
+        "Distinguish a dispositional explanation for behaviour from a situational one.",
+        "Recognise the common pull toward crediting disposition over situation, even when situational causes are plausible.",
+        "Apply evidence-based inference when weighing competing attributions."
+      ],
+      "concepts": ["attribution", "evidence_based_inference"],
+      "prerequisites": ["LES-1"],
+      "interactiveScenarioIds": ["ATTR-001", "ATTR-002", "ATTR-003"],
+      "masteryScenarioIds": ["ATTR-010", "ATTR-011"],
+      "contentVersion": 1
+    },
+    {
+      "id": "LES-3",
+      "module": "MOD-1",
+      "sequence": 3,
+      "title": "Confirmation Bias and Alternative Explanations",
+      "objectives": [
+        "Explain what confirmation bias is and how it distorts evidence-gathering.",
+        "Practise deliberately generating at least one alternative explanation before settling on a conclusion.",
+        "Recognise when a pattern is strong enough to narrow explanations versus when it still calls for more than one."
+      ],
+      "concepts": ["generating_alternative_explanations", "attribution"],
+      "prerequisites": ["LES-2"],
+      "interactiveScenarioIds": ["ALT-001", "ALT-002", "ALT-003"],
+      "masteryScenarioIds": ["ALT-010", "ALT-011"],
+      "contentVersion": 1
+    }
+  ],
+  "concepts": [
+    {
+      "id": "observation_vs_interpretation",
+      "label": "Observation vs. Interpretation",
+      "module": "MOD-1"
+    },
+    {
+      "id": "evidence_based_inference",
+      "label": "Evidence-Based Inference",
+      "module": "MOD-1"
+    },
+    {
+      "id": "attribution",
+      "label": "Attribution: Disposition vs. Situation",
+      "module": "MOD-1"
+    },
+    {
+      "id": "generating_alternative_explanations",
+      "label": "Generating Alternative Explanations",
+      "module": "MOD-1"
+    }
+  ],
+  "misconceptions": [
+    {
+      "id": "premature_motive_attribution",
+      "label": "Premature motive attribution",
+      "description": "Assigning a specific motive to a behaviour before there is evidence that distinguishes it from other plausible motives."
+    },
+    {
+      "id": "confusing_observation_with_interpretation",
+      "label": "Confusing observation with interpretation",
+      "description": "Treating an inferred mental state or trait as if it were itself something directly observed."
+    },
+    {
+      "id": "overgeneralising_from_one_incident",
+      "label": "Overgeneralising from one incident",
+      "description": "Drawing a general conclusion about a person's character from a single observed instance of behaviour."
+    },
+    {
+      "id": "ignoring_situational_factors",
+      "label": "Ignoring situational factors",
+      "description": "Explaining behaviour entirely in terms of a person's character while overlooking plausible circumstances that could equally explain it."
+    },
+    {
+      "id": "confirmation_bias",
+      "label": "Confirmation bias",
+      "description": "Treating evidence as confirming an existing suspicion while not seeking or weighing evidence that could point elsewhere."
+    },
+    {
+      "id": "ignoring_alternative_explanations",
+      "label": "Ignoring alternative explanations",
+      "description": "Settling on one explanation for behaviour without having generated or considered any plausible alternative."
+    }
+  ]
+}

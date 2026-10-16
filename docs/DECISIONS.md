@@ -245,6 +245,46 @@ the wait, confirmed the Today screen surfaced a review card with the correct cou
 and confirmed both the schedule advanced to the 7-day interval AND the concept became the first one in
 the entire project to show as mastered through the real UI. 397 tests pass; typecheck clean.
 
+## Phase 9: Human Behaviour Lab content port
+
+- **The simplest of the three ports.** HBL's content is plain JSON with no computed/generated pipeline
+  (unlike Strategos's engine-derived facts or Emotional Skills' `enrich()`-merged sessions), and its
+  shape already closely mirrors content-schema's `reason_choice` item — unsurprising, since
+  content-schema's `ItemBase`/`ChoiceOption`/`Lesson` were originally generalized FROM this app's
+  `src/domain/types.ts` (see "Decisions made" above). `Scenario.scenario` is already the full
+  self-contained prompt (verified against the original app's lesson screen: it renders
+  `{scenario.scenario}` directly with no separate instruction text), so it maps straight onto
+  `item.prompt` with no separate `scenario` context field needed — unlike Strategic Reasoning, where
+  that field fixed a real missing-context bug.
+- **`lessonCopy.ts`** (teaching prose per concept, a worked example, and an explain-it-back
+  prompt+criteria) **maps directly onto the `teach`/`example`/`explanationBackItemId` fields** added to
+  `content-schema` during the mastery-gate-finding fix — HBL had this content all along; it just had
+  nowhere to go in the schema until that fix existed.
+- Output: 1 module, 3 lessons, 18 items (15 `reason_choice` scenarios + 3 `own_words` explain-back
+  items), each lesson keeping its 2 concepts with exactly 2 checkpoint items each (1:1) — the only
+  track where **every concept can reach mastery in a single sitting**, no review flow needed at all
+  (Strategic Reasoning and Emotional Skills both have concepts that can't). 10 new tests.
+- **Found and fixed a real ordering bug while verifying this live — in two tracks, not just the new
+  one.** `LessonPlayer`'s item order is `[...interactiveItemIds, ...masteryItemIds]`, with
+  `explanationBackItemId` appended at the very end ONLY if it isn't already in one of those arrays. The
+  Behavioural port originally left the explain item out of `interactiveItemIds` entirely, so it landed
+  after the mastery/checkpoint items — backwards from the original app's actual stage order
+  (`interactive_learning` → `explanation_back` → `mastery_assessment`, per that repo's `LessonStage`
+  enum). Fixed by listing it explicitly last in `interactiveItemIds`. Checking the other two scripts for
+  the same class of bug found it already shipped in Emotional Skills too, since Phase 8: its explain
+  item was listed FIRST, before any activity or check — inverting ESL's own documented layer order
+  ("Layer 1 activity... Layer 2 explanation-back", `types.ts`). Fixed the same way. Strategic Reasoning
+  was fine — its own authored item order already puts `own_words` last. Both fixes verified live
+  in-browser (played through to confirm the explain item's actual position), plus regression tests in
+  both packages' content test suites.
+- All 3 tracks are now wired into `apps/web` (`tracks.ts`), confirmed with `pnpm -r typecheck`/`test`
+  across all 8 packages and a live playthrough of a Behavioural Observation lesson (teach screen →
+  3 scenarios → explain-back → 2 checkpoint items). 408 tests pass workspace-wide; typecheck clean.
+
+This completes all three tracks' content ports (Phases 4-9). Phase 10 ("design the unified cross-track
+Today experience") is next per the original build order, now that the precondition — all three tracks
+working independently — is actually met.
+
 ## Open, non-blocking
 
 - Final app name.

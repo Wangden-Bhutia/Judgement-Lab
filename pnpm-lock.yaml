@@ -177,6 +177,9 @@ importers:
       '@judgment-lab/storage':
         specifier: workspace:*
         version: link:../../packages/storage
+      '@judgment-lab/track-behavioural':
+        specifier: workspace:*
+        version: link:../../packages/track-behavioural
       '@judgment-lab/track-emotional':
         specifier: workspace:*
         version: link:../../packages/track-emotional
@@ -249,6 +252,25 @@ importers:
       fake-indexeddb:
         specifier: ^6.2.5
         version: 6.2.5
+      typescript:
+        specifier: ~6.0.2
+        version: 6.0.3
+      vitest:
+        specifier: ^5.0.4
+        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4(@types/node@24.19.2)(esbuild@0.28.2)(terser@5.51.2)(tsx@4.23.15))
+
+  packages/track-behavioural:
+    dependencies:
+      '@judgment-lab/content-schema':
+        specifier: workspace:*
+        version: link:../content-schema
+    devDependencies:
+      '@types/node':
+        specifier: ^24.13.3
+        version: 24.19.2
+      tsx:
+        specifier: ^4.23.15
+        version: 4.23.15
       typescript:
         specifier: ~6.0.2
         version: 6.0.3

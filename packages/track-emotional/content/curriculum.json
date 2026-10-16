@@ -167,10 +167,10 @@
       ],
       "prerequisites": [],
       "interactiveItemIds": [
-        "i.emo.w01d1.explain",
         "i.emo.w01d1.activity",
         "i.emo.w01d1-q1",
-        "i.emo.w01d1-q2"
+        "i.emo.w01d1-q2",
+        "i.emo.w01d1.explain"
       ],
       "masteryItemIds": [],
       "explanationBackItemId": "i.emo.w01d1.explain",
@@ -206,10 +206,10 @@
         "emotional-w01d1"
       ],
       "interactiveItemIds": [
-        "i.emo.w01d2.explain",
         "i.emo.w01d2.activity",
         "i.emo.w01d2-q1",
-        "i.emo.w01d2-q2"
+        "i.emo.w01d2-q2",
+        "i.emo.w01d2.explain"
       ],
       "masteryItemIds": [],
       "explanationBackItemId": "i.emo.w01d2.explain",
@@ -245,10 +245,10 @@
         "emotional-w01d2"
       ],
       "interactiveItemIds": [
-        "i.emo.w01d3.explain",
         "i.emo.w01d3.activity",
         "i.emo.w01d3-q1",
-        "i.emo.w01d3-q2"
+        "i.emo.w01d3-q2",
+        "i.emo.w01d3.explain"
       ],
       "masteryItemIds": [],
       "explanationBackItemId": "i.emo.w01d3.explain",
@@ -284,11 +284,11 @@
         "emotional-w01d3"
       ],
       "interactiveItemIds": [
-        "i.emo.w01d4.explain",
         "i.emo.w01d4.activity",
         "i.emo.w01d4-q1",
         "i.emo.w01d4-q2",
-        "i.emo.w01d4-q3"
+        "i.emo.w01d4-q3",
+        "i.emo.w01d4.explain"
       ],
       "masteryItemIds": [],
       "explanationBackItemId": "i.emo.w01d4.explain",
@@ -362,10 +362,10 @@
         "emotional-w01d5"
       ],
       "interactiveItemIds": [
-        "i.emo.w02d1.explain",
         "i.emo.w02d1.activity",
         "i.emo.w02d1-q1",
-        "i.emo.w02d1-q2"
+        "i.emo.w02d1-q2",
+        "i.emo.w02d1.explain"
       ],
       "masteryItemIds": [],
       "explanationBackItemId": "i.emo.w02d1.explain",
@@ -401,10 +401,10 @@
         "emotional-w02d1"
       ],
       "interactiveItemIds": [
-        "i.emo.w02d2.explain",
         "i.emo.w02d2.activity",
         "i.emo.w02d2-q1",
-        "i.emo.w02d2-q2"
+        "i.emo.w02d2-q2",
+        "i.emo.w02d2.explain"
       ],
       "masteryItemIds": [],
       "explanationBackItemId": "i.emo.w02d2.explain",
@@ -440,10 +440,10 @@
         "emotional-w02d2"
       ],
       "interactiveItemIds": [
-        "i.emo.w02d3.explain",
         "i.emo.w02d3.activity",
         "i.emo.w02d3-q1",
-        "i.emo.w02d3-q2"
+        "i.emo.w02d3-q2",
+        "i.emo.w02d3.explain"
       ],
       "masteryItemIds": [],
       "explanationBackItemId": "i.emo.w02d3.explain",
@@ -479,10 +479,10 @@
         "emotional-w02d3"
       ],
       "interactiveItemIds": [
-        "i.emo.w02d4.explain",
         "i.emo.w02d4.activity",
         "i.emo.w02d4-q1",
-        "i.emo.w02d4-q2"
+        "i.emo.w02d4-q2",
+        "i.emo.w02d4.explain"
       ],
       "masteryItemIds": [],
       "explanationBackItemId": "i.emo.w02d4.explain",
@@ -553,10 +553,10 @@
         "emotional-w02d5"
       ],
       "interactiveItemIds": [
-        "i.emo.w03d1.explain",
         "i.emo.w03d1.activity",
         "i.emo.w03d1-q1",
-        "i.emo.w03d1-q2"
+        "i.emo.w03d1-q2",
+        "i.emo.w03d1.explain"
       ],
       "masteryItemIds": [],
       "explanationBackItemId": "i.emo.w03d1.explain",
@@ -592,10 +592,10 @@
         "emotional-w03d1"
       ],
       "interactiveItemIds": [
-        "i.emo.w03d2.explain",
         "i.emo.w03d2.activity",
         "i.emo.w03d2-q1",
-        "i.emo.w03d2-q2"
+        "i.emo.w03d2-q2",
+        "i.emo.w03d2.explain"
       ],
       "masteryItemIds": [],
       "explanationBackItemId": "i.emo.w03d2.explain",
@@ -630,10 +630,10 @@
         "emotional-w03d2"
       ],
       "interactiveItemIds": [
-        "i.emo.w03d3.explain",
         "i.emo.w03d3.activity",
         "i.emo.w03d3-q1",
-        "i.emo.w03d3-q2"
+        "i.emo.w03d3-q2",
+        "i.emo.w03d3.explain"
       ],
       "masteryItemIds": [],
       "explanationBackItemId": "i.emo.w03d3.explain",
@@ -668,10 +668,10 @@
         "emotional-w03d3"
       ],
       "interactiveItemIds": [
-        "i.emo.w03d4.explain",
         "i.emo.w03d4.activity",
         "i.emo.w03d4-q1",
-        "i.emo.w03d4-q2"
+        "i.emo.w03d4-q2",
+        "i.emo.w03d4.explain"
       ],
       "masteryItemIds": [],
       "explanationBackItemId": "i.emo.w03d4.explain",
@@ -741,10 +741,10 @@
         "emotional-w03d5"
       ],
       "interactiveItemIds": [
-        "i.emo.w04d1.explain",
         "i.emo.w04d1.activity",
         "i.emo.w04d1-q1",
-        "i.emo.w04d1-q2"
+        "i.emo.w04d1-q2",
+        "i.emo.w04d1.explain"
       ],
       "masteryItemIds": [],
       "explanationBackItemId": "i.emo.w04d1.explain",
@@ -780,10 +780,10 @@
         "emotional-w04d1"
       ],
       "interactiveItemIds": [
-        "i.emo.w04d2.explain",
         "i.emo.w04d2.activity",
         "i.emo.w04d2-q1",
-        "i.emo.w04d2-q2"
+        "i.emo.w04d2-q2",
+        "i.emo.w04d2.explain"
       ],
       "masteryItemIds": [],
       "explanationBackItemId": "i.emo.w04d2.explain",
@@ -819,10 +819,10 @@
         "emotional-w04d2"
       ],
       "interactiveItemIds": [
-        "i.emo.w04d3.explain",
         "i.emo.w04d3.activity",
         "i.emo.w04d3-q1",
-        "i.emo.w04d3-q2"
+        "i.emo.w04d3-q2",
+        "i.emo.w04d3.explain"
       ],
       "masteryItemIds": [],
       "explanationBackItemId": "i.emo.w04d3.explain",
@@ -858,10 +858,10 @@
         "emotional-w04d3"
       ],
       "interactiveItemIds": [
-        "i.emo.w04d4.explain",
         "i.emo.w04d4.activity",
         "i.emo.w04d4-q1",
-        "i.emo.w04d4-q2"
+        "i.emo.w04d4-q2",
+        "i.emo.w04d4.explain"
       ],
       "masteryItemIds": [],
       "explanationBackItemId": "i.emo.w04d4.explain",
@@ -932,10 +932,10 @@
         "emotional-w04d5"
       ],
       "interactiveItemIds": [
-        "i.emo.w05d1.explain",
         "i.emo.w05d1.activity",
         "i.emo.w05d1-q1",
-        "i.emo.w05d1-q2"
+        "i.emo.w05d1-q2",
+        "i.emo.w05d1.explain"
       ],
       "masteryItemIds": [],
       "explanationBackItemId": "i.emo.w05d1.explain",
@@ -971,10 +971,10 @@
         "emotional-w05d1"
       ],
       "interactiveItemIds": [
-        "i.emo.w05d2.explain",
         "i.emo.w05d2.activity",
         "i.emo.w05d2-q1",
-        "i.emo.w05d2-q2"
+        "i.emo.w05d2-q2",
+        "i.emo.w05d2.explain"
       ],
       "masteryItemIds": [],
       "explanationBackItemId": "i.emo.w05d2.explain",
@@ -1008,10 +1008,10 @@
         "emotional-w05d2"
       ],
       "interactiveItemIds": [
-        "i.emo.w05d3.explain",
         "i.emo.w05d3.activity",
         "i.emo.w05d3-q1",
-        "i.emo.w05d3-q2"
+        "i.emo.w05d3-q2",
+        "i.emo.w05d3.explain"
       ],
       "masteryItemIds": [],
       "explanationBackItemId": "i.emo.w05d3.explain",
@@ -1047,10 +1047,10 @@
         "emotional-w05d3"
       ],
       "interactiveItemIds": [
-        "i.emo.w05d4.explain",
         "i.emo.w05d4.activity",
         "i.emo.w05d4-q1",
-        "i.emo.w05d4-q2"
+        "i.emo.w05d4-q2",
+        "i.emo.w05d4.explain"
       ],
       "masteryItemIds": [],
       "explanationBackItemId": "i.emo.w05d4.explain",
@@ -1122,11 +1122,11 @@
         "emotional-w05d5"
       ],
       "interactiveItemIds": [
-        "i.emo.w06d1.explain",
         "i.emo.w06d1.activity",
         "i.emo.w06d1-q1",
         "i.emo.w06d1-q2",
-        "i.emo.w06d1-q3"
+        "i.emo.w06d1-q3",
+        "i.emo.w06d1.explain"
       ],
       "masteryItemIds": [],
       "explanationBackItemId": "i.emo.w06d1.explain",
@@ -1163,10 +1163,10 @@
         "emotional-w06d1"
       ],
       "interactiveItemIds": [
-        "i.emo.w06d2.explain",
         "i.emo.w06d2.activity",
         "i.emo.w06d2-q1",
-        "i.emo.w06d2-q2"
+        "i.emo.w06d2-q2",
+        "i.emo.w06d2.explain"
       ],
       "masteryItemIds": [],
       "explanationBackItemId": "i.emo.w06d2.explain",
@@ -1199,10 +1199,10 @@
         "emotional-w06d2"
       ],
       "interactiveItemIds": [
-        "i.emo.w06d3.explain",
         "i.emo.w06d3.activity",
         "i.emo.w06d3-q1",
-        "i.emo.w06d3-q2"
+        "i.emo.w06d3-q2",
+        "i.emo.w06d3.explain"
       ],
       "masteryItemIds": [],
       "explanationBackItemId": "i.emo.w06d3.explain",
@@ -1238,10 +1238,10 @@
         "emotional-w06d3"
       ],
       "interactiveItemIds": [
-        "i.emo.w06d4.explain",
         "i.emo.w06d4.activity",
         "i.emo.w06d4-q1",
-        "i.emo.w06d4-q2"
+        "i.emo.w06d4-q2",
+        "i.emo.w06d4.explain"
       ],
       "masteryItemIds": [],
       "explanationBackItemId": "i.emo.w06d4.explain",
@@ -1310,10 +1310,10 @@
         "emotional-w06d5"
       ],
       "interactiveItemIds": [
-        "i.emo.w07d1.explain",
         "i.emo.w07d1.activity",
         "i.emo.w07d1-q1",
-        "i.emo.w07d1-q2"
+        "i.emo.w07d1-q2",
+        "i.emo.w07d1.explain"
       ],
       "masteryItemIds": [],
       "explanationBackItemId": "i.emo.w07d1.explain",
@@ -1347,10 +1347,10 @@
         "emotional-w07d1"
       ],
       "interactiveItemIds": [
-        "i.emo.w07d2.explain",
         "i.emo.w07d2.activity",
         "i.emo.w07d2-q1",
-        "i.emo.w07d2-q2"
+        "i.emo.w07d2-q2",
+        "i.emo.w07d2.explain"
       ],
       "masteryItemIds": [],
       "explanationBackItemId": "i.emo.w07d2.explain",
@@ -1385,11 +1385,11 @@
         "emotional-w07d2"
       ],
       "interactiveItemIds": [
-        "i.emo.w07d3.explain",
         "i.emo.w07d3.activity",
         "i.emo.w07d3-q1",
         "i.emo.w07d3-q2",
-        "i.emo.w07d3-q3"
+        "i.emo.w07d3-q3",
+        "i.emo.w07d3.explain"
       ],
       "masteryItemIds": [],
       "explanationBackItemId": "i.emo.w07d3.explain",
@@ -1426,10 +1426,10 @@
         "emotional-w07d3"
       ],
       "interactiveItemIds": [
-        "i.emo.w07d4.explain",
         "i.emo.w07d4.activity",
         "i.emo.w07d4-q1",
-        "i.emo.w07d4-q2"
+        "i.emo.w07d4-q2",
+        "i.emo.w07d4.explain"
       ],
       "masteryItemIds": [],
       "explanationBackItemId": "i.emo.w07d4.explain",
@@ -1500,10 +1500,10 @@
         "emotional-w07d5"
       ],
       "interactiveItemIds": [
-        "i.emo.w08d1.explain",
         "i.emo.w08d1.activity",
         "i.emo.w08d1-q1",
-        "i.emo.w08d1-q2"
+        "i.emo.w08d1-q2",
+        "i.emo.w08d1.explain"
       ],
       "masteryItemIds": [],
       "explanationBackItemId": "i.emo.w08d1.explain",
@@ -1538,10 +1538,10 @@
         "emotional-w08d1"
       ],
       "interactiveItemIds": [
-        "i.emo.w08d2.explain",
         "i.emo.w08d2.activity",
         "i.emo.w08d2-q1",
-        "i.emo.w08d2-q2"
+        "i.emo.w08d2-q2",
+        "i.emo.w08d2.explain"
       ],
       "masteryItemIds": [],
       "explanationBackItemId": "i.emo.w08d2.explain",
@@ -1577,10 +1577,10 @@
         "emotional-w08d2"
       ],
       "interactiveItemIds": [
-        "i.emo.w08d3.explain",
         "i.emo.w08d3.activity",
         "i.emo.w08d3-q1",
-        "i.emo.w08d3-q2"
+        "i.emo.w08d3-q2",
+        "i.emo.w08d3.explain"
       ],
       "masteryItemIds": [],
       "explanationBackItemId": "i.emo.w08d3.explain",
@@ -1616,10 +1616,10 @@
         "emotional-w08d3"
       ],
       "interactiveItemIds": [
-        "i.emo.w08d4.explain",
         "i.emo.w08d4.activity",
         "i.emo.w08d4-q1",
-        "i.emo.w08d4-q2"
+        "i.emo.w08d4-q2",
+        "i.emo.w08d4.explain"
       ],
       "masteryItemIds": [],
       "explanationBackItemId": "i.emo.w08d4.explain",
@@ -1688,11 +1688,11 @@
         "emotional-w08d5"
       ],
       "interactiveItemIds": [
-        "i.emo.w09d1.explain",
         "i.emo.w09d1.activity",
         "i.emo.w09d1-q1",
         "i.emo.w09d1-q2",
-        "i.emo.w09d1-q3"
+        "i.emo.w09d1-q3",
+        "i.emo.w09d1.explain"
       ],
       "masteryItemIds": [],
       "explanationBackItemId": "i.emo.w09d1.explain",
@@ -1729,10 +1729,10 @@
         "emotional-w09d1"
       ],
       "interactiveItemIds": [
-        "i.emo.w09d2.explain",
         "i.emo.w09d2.activity",
         "i.emo.w09d2-q1",
-        "i.emo.w09d2-q2"
+        "i.emo.w09d2-q2",
+        "i.emo.w09d2.explain"
       ],
       "masteryItemIds": [],
       "explanationBackItemId": "i.emo.w09d2.explain",
@@ -1768,10 +1768,10 @@
         "emotional-w09d2"
       ],
       "interactiveItemIds": [
-        "i.emo.w09d3.explain",
         "i.emo.w09d3.activity",
         "i.emo.w09d3-q1",
-        "i.emo.w09d3-q2"
+        "i.emo.w09d3-q2",
+        "i.emo.w09d3.explain"
       ],
       "masteryItemIds": [],
       "explanationBackItemId": "i.emo.w09d3.explain",
@@ -1806,10 +1806,10 @@
         "emotional-w09d3"
       ],
       "interactiveItemIds": [
-        "i.emo.w09d4.explain",
         "i.emo.w09d4.activity",
         "i.emo.w09d4-q1",
-        "i.emo.w09d4-q2"
+        "i.emo.w09d4-q2",
+        "i.emo.w09d4.explain"
       ],
       "masteryItemIds": [],
       "explanationBackItemId": "i.emo.w09d4.explain",
@@ -1879,10 +1879,10 @@
         "emotional-w09d5"
       ],
       "interactiveItemIds": [
-        "i.emo.w10d1.explain",
         "i.emo.w10d1.activity",
         "i.emo.w10d1-q1",
-        "i.emo.w10d1-q2"
+        "i.emo.w10d1-q2",
+        "i.emo.w10d1.explain"
       ],
       "masteryItemIds": [],
       "explanationBackItemId": "i.emo.w10d1.explain",
@@ -1916,10 +1916,10 @@
         "emotional-w10d1"
       ],
       "interactiveItemIds": [
-        "i.emo.w10d2.explain",
         "i.emo.w10d2.activity",
         "i.emo.w10d2-q1",
-        "i.emo.w10d2-q2"
+        "i.emo.w10d2-q2",
+        "i.emo.w10d2.explain"
       ],
       "masteryItemIds": [],
       "explanationBackItemId": "i.emo.w10d2.explain",
@@ -1955,10 +1955,10 @@
         "emotional-w10d2"
       ],
       "interactiveItemIds": [
-        "i.emo.w10d3.explain",
         "i.emo.w10d3.activity",
         "i.emo.w10d3-q1",
-        "i.emo.w10d3-q2"
+        "i.emo.w10d3-q2",
+        "i.emo.w10d3.explain"
       ],
       "masteryItemIds": [],
       "explanationBackItemId": "i.emo.w10d3.explain",
@@ -1993,10 +1993,10 @@
         "emotional-w10d3"
       ],
       "interactiveItemIds": [
-        "i.emo.w10d4.explain",
         "i.emo.w10d4.activity",
         "i.emo.w10d4-q1",
-        "i.emo.w10d4-q2"
+        "i.emo.w10d4-q2",
+        "i.emo.w10d4.explain"
       ],
       "masteryItemIds": [],
       "explanationBackItemId": "i.emo.w10d4.explain",
@@ -2065,10 +2065,10 @@
         "emotional-w10d5"
       ],
       "interactiveItemIds": [
-        "i.emo.w11d1.explain",
         "i.emo.w11d1.activity",
         "i.emo.w11d1-q1",
-        "i.emo.w11d1-q2"
+        "i.emo.w11d1-q2",
+        "i.emo.w11d1.explain"
       ],
       "masteryItemIds": [],
       "explanationBackItemId": "i.emo.w11d1.explain",
@@ -2103,10 +2103,10 @@
         "emotional-w11d1"
       ],
       "interactiveItemIds": [
-        "i.emo.w11d2.explain",
         "i.emo.w11d2.activity",
         "i.emo.w11d2-q1",
-        "i.emo.w11d2-q2"
+        "i.emo.w11d2-q2",
+        "i.emo.w11d2.explain"
       ],
       "masteryItemIds": [],
       "explanationBackItemId": "i.emo.w11d2.explain",
@@ -2141,11 +2141,11 @@
         "emotional-w11d2"
       ],
       "interactiveItemIds": [
-        "i.emo.w11d3.explain",
         "i.emo.w11d3.activity",
         "i.emo.w11d3-q1",
         "i.emo.w11d3-q2",
-        "i.emo.w11d3-q3"
+        "i.emo.w11d3-q3",
+        "i.emo.w11d3.explain"
       ],
       "masteryItemIds": [],
       "explanationBackItemId": "i.emo.w11d3.explain",
@@ -2182,10 +2182,10 @@
         "emotional-w11d3"
       ],
       "interactiveItemIds": [
-        "i.emo.w11d4.explain",
         "i.emo.w11d4.activity",
         "i.emo.w11d4-q1",
-        "i.emo.w11d4-q2"
+        "i.emo.w11d4-q2",
+        "i.emo.w11d4.explain"
       ],
       "masteryItemIds": [],
       "explanationBackItemId": "i.emo.w11d4.explain",
@@ -2254,11 +2254,11 @@
         "emotional-w11d5"
       ],
       "interactiveItemIds": [
-        "i.emo.w12d1.explain",
         "i.emo.w12d1.activity",
         "i.emo.w12d1-q1",
         "i.emo.w12d1-q2",
-        "i.emo.w12d1-q3"
+        "i.emo.w12d1-q3",
+        "i.emo.w12d1.explain"
       ],
       "masteryItemIds": [],
       "explanationBackItemId": "i.emo.w12d1.explain",
@@ -2295,10 +2295,10 @@
         "emotional-w12d1"
       ],
       "interactiveItemIds": [
-        "i.emo.w12d2.explain",
         "i.emo.w12d2.activity",
         "i.emo.w12d2-q1",
-        "i.emo.w12d2-q2"
+        "i.emo.w12d2-q2",
+        "i.emo.w12d2.explain"
       ],
       "masteryItemIds": [],
       "explanationBackItemId": "i.emo.w12d2.explain",
@@ -2331,10 +2331,10 @@
         "emotional-w12d2"
       ],
       "interactiveItemIds": [
-        "i.emo.w12d3.explain",
         "i.emo.w12d3.activity",
         "i.emo.w12d3-q1",
-        "i.emo.w12d3-q2"
+        "i.emo.w12d3-q2",
+        "i.emo.w12d3.explain"
       ],
       "masteryItemIds": [],
       "explanationBackItemId": "i.emo.w12d3.explain",
@@ -2369,11 +2369,11 @@
         "emotional-w12d3"
       ],
       "interactiveItemIds": [
-        "i.emo.w12d4.explain",
         "i.emo.w12d4.activity",
         "i.emo.w12d4-q1",
         "i.emo.w12d4-q2",
-        "i.emo.w12d4-q3"
+        "i.emo.w12d4-q3",
+        "i.emo.w12d4.explain"
       ],
       "masteryItemIds": [],
       "explanationBackItemId": "i.emo.w12d4.explain",

@@ -1,0 +1,200 @@
+{
+  "contentVersion": 1,
+  "tracks": [
+    {
+      "id": "behavioural",
+      "title": "Behavioural Observation",
+      "description": "Learning to read behaviour carefully: telling an observation apart from an interpretation, weighing disposition against situation, and generating alternative explanations before settling on one.",
+      "moduleIds": [
+        "behavioural-mod-1"
+      ]
+    }
+  ],
+  "modules": [
+    {
+      "id": "behavioural-mod-1",
+      "trackId": "behavioural",
+      "sequence": 1,
+      "title": "Learning to Observe",
+      "lessonIds": [
+        "behavioural-les-1",
+        "behavioural-les-2",
+        "behavioural-les-3"
+      ]
+    }
+  ],
+  "lessons": [
+    {
+      "id": "behavioural-les-1",
+      "trackId": "behavioural",
+      "moduleId": "behavioural-mod-1",
+      "sequence": 1,
+      "title": "Observation vs. Interpretation",
+      "objectives": [
+        "Distinguish an observable fact from an interpretation of that fact.",
+        "Recognise when a conclusion about someone's motive outruns the evidence.",
+        "Generate at least one alternative explanation for an ambiguous behaviour."
+      ],
+      "concepts": [
+        "observation_vs_interpretation",
+        "evidence_based_inference"
+      ],
+      "prerequisites": [],
+      "interactiveItemIds": [
+        "i.beh.obs-001",
+        "i.beh.obs-002",
+        "i.beh.obs-003",
+        "i.beh.les-1.explain"
+      ],
+      "masteryItemIds": [
+        "i.beh.obs-010",
+        "i.beh.obs-011"
+      ],
+      "explanationBackItemId": "i.beh.les-1.explain",
+      "teach": [
+        "An observation is something you directly perceived: a word said, an action taken, a change over time. An interpretation is a guess about what that observation means — a motive, an emotion, or a trait. People routinely skip straight from an observation to an interpretation without noticing the jump, especially when the interpretation feels obvious in the moment. Confusing the two makes you confident in conclusions you haven't actually earned, and makes it harder to notice when you're wrong.",
+        "Thinking that if an interpretation feels obvious, it must be an observation. Obviousness is not evidence. Separating the two doesn't tell you which interpretation is correct — it only stops you from mistaking a guess for a fact.",
+        "An evidence-based inference is a conclusion that stays as close as the evidence allows, naming what remains uncertain and what else could explain the same facts. Good inference doesn't mean refusing to draw any conclusion — it means matching your confidence to how much the evidence actually narrows things down. It keeps you open to being wrong, which is what lets you actually update when new information arrives.",
+        "Treating \"I can't be sure yet\" as an unsatisfying non-answer rather than the most accurate one available. Holding multiple explanations open takes more effort than picking one, and some situations genuinely call for a decision before all the evidence is in."
+      ],
+      "example": "A normally talkative colleague becomes quiet after another colleague is praised in a meeting, and looks at their phone for the rest of it. Observable: The colleague spoke less and looked at their phone more, starting right after the praise. Reasonable inferences: Something changed in the colleague's behaviour around the time of the praise. What's uncertain: Why the behaviour changed — the praise is one plausible trigger, but not the only one. Alternatives: The colleague felt overlooked by the praise. The colleague received unrelated difficult news just before the meeting. The colleague was simply distracted by something on their phone, unrelated to the meeting. Further evidence that would help: Whether the pattern repeats around similar praise in the future, or a direct, low-pressure conversation with the colleague.",
+      "contentVersion": 1
+    },
+    {
+      "id": "behavioural-les-2",
+      "trackId": "behavioural",
+      "moduleId": "behavioural-mod-1",
+      "sequence": 2,
+      "title": "Attribution: Disposition vs. Situation",
+      "objectives": [
+        "Distinguish a dispositional explanation for behaviour from a situational one.",
+        "Recognise the common pull toward crediting disposition over situation, even when situational causes are plausible.",
+        "Apply evidence-based inference when weighing competing attributions."
+      ],
+      "concepts": [
+        "attribution",
+        "evidence_based_inference"
+      ],
+      "prerequisites": [
+        "behavioural-les-1"
+      ],
+      "interactiveItemIds": [
+        "i.beh.attr-001",
+        "i.beh.attr-002",
+        "i.beh.attr-003",
+        "i.beh.les-2.explain"
+      ],
+      "masteryItemIds": [
+        "i.beh.attr-010",
+        "i.beh.attr-011"
+      ],
+      "explanationBackItemId": "i.beh.les-2.explain",
+      "teach": [
+        "Attribution is the explanation you give for why someone behaved as they did. Explanations tend to fall somewhere between two poles: dispositional (something about who they are — their character, personality, ability) and situational (something about their circumstances — pressure, context, bad luck). People are routinely quicker to reach for a dispositional explanation of someone else's behaviour than a situational one, especially for behaviour that irritates or confuses them — even when a situational cause is just as plausible, or sitting in plain view. Over-crediting disposition makes you too quick to form a fixed judgment of someone from a single instance, and under-credits circumstances that almost anyone might respond to the same way.",
+        "Assuming the dispositional explanation must be right because it fits how the person generally seems. Fitting a prior impression isn't the same as being supported by the evidence in front of you right now. Weighing disposition against situation doesn't tell you which one is correct here — it only stops you from defaulting to disposition without considering the alternative."
+      ],
+      "example": "A new team member misses an important deadline on their very first project. Observable: The team member did not submit the deliverable by the deadline. Reasonable inferences: Something prevented the deliverable from being completed on time. What's uncertain: Whether the cause was something about the person (poor planning, disorganisation) or something about the situation (unclear instructions, competing urgent requests, a personal emergency). Alternatives: The team member underestimated the scope of the work. The team member received conflicting priorities from two different people. The deadline itself was unrealistic given the information they were given. Further evidence that would help: Whether the pattern repeats on a second deadline where instructions are clear and competing demands are lower.",
+      "contentVersion": 1
+    },
+    {
+      "id": "behavioural-les-3",
+      "trackId": "behavioural",
+      "moduleId": "behavioural-mod-1",
+      "sequence": 3,
+      "title": "Confirmation Bias and Alternative Explanations",
+      "objectives": [
+        "Explain what confirmation bias is and how it distorts evidence-gathering.",
+        "Practise deliberately generating at least one alternative explanation before settling on a conclusion.",
+        "Recognise when a pattern is strong enough to narrow explanations versus when it still calls for more than one."
+      ],
+      "concepts": [
+        "generating_alternative_explanations",
+        "attribution"
+      ],
+      "prerequisites": [
+        "behavioural-les-2"
+      ],
+      "interactiveItemIds": [
+        "i.beh.alt-001",
+        "i.beh.alt-002",
+        "i.beh.alt-003",
+        "i.beh.les-3.explain"
+      ],
+      "masteryItemIds": [
+        "i.beh.alt-010",
+        "i.beh.alt-011"
+      ],
+      "explanationBackItemId": "i.beh.les-3.explain",
+      "teach": [
+        "Once an explanation for someone's behaviour comes to mind, it's easy to start looking only for evidence that supports it. Generating alternative explanations means deliberately coming up with at least one other account that fits the same facts before settling on one. People form an initial hypothesis quickly, often from limited information, and then unconsciously favour evidence that confirms it while discounting evidence that doesn't — a pattern known as confirmation bias. Without deliberately generating alternatives, you're unlikely to notice evidence against your first guess, because you were never looking for it.",
+        "Believing that a strong hunch is more likely to be correct because it came quickly. A hunch that formed before much evidence was in isn't more reliable for having arrived first. Generating alternatives doesn't tell you which explanation is actually correct — it protects you from narrowing in on one explanation prematurely, which is a different, earlier problem."
+      ],
+      "example": "After you give a friend honest feedback on a plan of theirs, they stop initiating conversations with you for a week. Observable: The friend hasn't initiated conversation for a week, starting after the feedback. Reasonable inferences: Something changed around the time of the feedback. What's uncertain: Whether the feedback is the cause, and if so, whether it was the content, the delivery, or the timing. Alternatives: The friend is upset about the feedback specifically. The friend is busy with something unrelated this week. The friend tends to go quiet for a while after any feedback, regardless of its content. Further evidence that would help: Whether the pattern continues past this week, or whether asking directly, without sounding accusatory, gets a clear answer.",
+      "contentVersion": 1
+    }
+  ],
+  "concepts": [
+    {
+      "id": "observation_vs_interpretation",
+      "trackId": "behavioural",
+      "moduleId": "behavioural-mod-1",
+      "label": "Observation vs. Interpretation"
+    },
+    {
+      "id": "evidence_based_inference",
+      "trackId": "behavioural",
+      "moduleId": "behavioural-mod-1",
+      "label": "Evidence-Based Inference"
+    },
+    {
+      "id": "attribution",
+      "trackId": "behavioural",
+      "moduleId": "behavioural-mod-1",
+      "label": "Attribution: Disposition vs. Situation"
+    },
+    {
+      "id": "generating_alternative_explanations",
+      "trackId": "behavioural",
+      "moduleId": "behavioural-mod-1",
+      "label": "Generating Alternative Explanations"
+    }
+  ],
+  "misconceptions": [
+    {
+      "id": "behavioural-premature_motive_attribution",
+      "trackId": "behavioural",
+      "label": "Premature motive attribution",
+      "description": "Assigning a specific motive to a behaviour before there is evidence that distinguishes it from other plausible motives."
+    },
+    {
+      "id": "behavioural-confusing_observation_with_interpretation",
+      "trackId": "behavioural",
+      "label": "Confusing observation with interpretation",
+      "description": "Treating an inferred mental state or trait as if it were itself something directly observed."
+    },
+    {
+      "id": "behavioural-overgeneralising_from_one_incident",
+      "trackId": "behavioural",
+      "label": "Overgeneralising from one incident",
+      "description": "Drawing a general conclusion about a person's character from a single observed instance of behaviour."
+    },
+    {
+      "id": "behavioural-ignoring_situational_factors",
+      "trackId": "behavioural",
+      "label": "Ignoring situational factors",
+      "description": "Explaining behaviour entirely in terms of a person's character while overlooking plausible circumstances that could equally explain it."
+    },
+    {
+      "id": "behavioural-confirmation_bias",
+      "trackId": "behavioural",
+      "label": "Confirmation bias",
+      "description": "Treating evidence as confirming an existing suspicion while not seeking or weighing evidence that could point elsewhere."
+    },
+    {
+      "id": "behavioural-ignoring_alternative_explanations",
+      "trackId": "behavioural",
+      "label": "Ignoring alternative explanations",
+      "description": "Settling on one explanation for behaviour without having generated or considered any plausible alternative."
+    }
+  ]
+}

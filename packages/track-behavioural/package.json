@@ -1,0 +1,26 @@
+{
+  "name": "@judgment-lab/track-behavioural",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts",
+    "./content": "./src/content.ts"
+  },
+  "scripts": {
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "convert:content": "tsx scripts/convertBehaviouralContent.ts"
+  },
+  "dependencies": {
+    "@judgment-lab/content-schema": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "^24.13.3",
+    "tsx": "^4.23.15",
+    "typescript": "~6.0.2",
+    "vitest": "^5.0.4"
+  }
+}

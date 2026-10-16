@@ -1,0 +1,93 @@
+[
+  {
+    "id": "ALT-001",
+    "concept": "generating_alternative_explanations",
+    "module": "MOD-1",
+    "lesson": "LES-3",
+    "difficulty": 1,
+    "scenario": "You start to suspect a new roommate is secretly messy, after finding one dirty dish left in the sink.",
+    "questionType": "evidence_vs_inference",
+    "options": [
+      { "id": "A", "text": "This confirms the roommate is messy — it's just the first clear sign.", "misconception": "confirmation_bias" },
+      { "id": "B", "text": "One dish is a single data point; it doesn't establish a pattern either way yet.", "conceptTag": "generating_alternative_explanations" },
+      { "id": "C", "text": "Roommates are generally messy, so this was expected anyway.", "misconception": "overgeneralising_from_one_incident" }
+    ],
+    "acceptableAnswers": ["B"],
+    "explanation": "One dish is the observable fact. Treating it as 'confirming' messiness skips past the much more likely explanation that it's an isolated occurrence, and assuming roommates in general are messy imports a stereotype rather than looking at this person's actual behaviour.",
+    "skills": ["generating_alternative_explanations", "evidence_based_inference"],
+    "followUpScenarioId": "ALT-002",
+    "contentVersion": 1
+  },
+  {
+    "id": "ALT-002",
+    "concept": "generating_alternative_explanations",
+    "module": "MOD-1",
+    "lesson": "LES-3",
+    "difficulty": 1,
+    "scenario": "A week later, you notice the roommate has left dishes unwashed three more times. You conclude they're messy and stop considering other explanations.",
+    "questionType": "scenario_choice",
+    "options": [
+      { "id": "A", "text": "This is sound reasoning — the pattern now clearly confirms the original suspicion.", "misconception": "confirmation_bias" },
+      { "id": "B", "text": "Four instances is a stronger pattern, but other explanations are still worth considering before concluding.", "conceptTag": "generating_alternative_explanations" },
+      { "id": "C", "text": "The pattern doesn't really matter — first impressions already settled the question.", "misconception": "ignoring_alternative_explanations" }
+    ],
+    "acceptableAnswers": ["B"],
+    "explanation": "Four instances is stronger evidence than one, and it's reasonable to lean toward a pattern — but 'stop considering other explanations' is the confirmation-bias move: a busy week, a different sense of what counts as 'done', or a temporary situation could all still fit the same four instances.",
+    "skills": ["generating_alternative_explanations"],
+    "contentVersion": 1
+  },
+  {
+    "id": "ALT-003",
+    "concept": "generating_alternative_explanations",
+    "module": "MOD-1",
+    "lesson": "LES-3",
+    "difficulty": 2,
+    "scenario": "A manager decides an employee is \"not a team player\" after the employee disagreed with the group's plan in one meeting.",
+    "questionType": "assumption_identification",
+    "options": [
+      { "id": "A", "text": "The manager's read is probably accurate — people usually show their true colours in meetings.", "misconception": "confirmation_bias" },
+      { "id": "B", "text": "The manager should look for other instances, before or after, that would support or complicate this view.", "conceptTag": "generating_alternative_explanations" },
+      { "id": "C", "text": "Disagreeing once is already enough to establish someone isn't a team player.", "misconception": "overgeneralising_from_one_incident" }
+    ],
+    "acceptableAnswers": ["B"],
+    "explanation": "Disagreeing in one meeting is what's observable. Treating it as revealing someone's 'true colours', or as sufficient on its own, both skip the step of checking whether this is a pattern or a single instance — and disagreement can just as easily reflect engagement with the plan as opposition to the team.",
+    "skills": ["generating_alternative_explanations"],
+    "contentVersion": 1
+  },
+  {
+    "id": "ALT-010",
+    "concept": "generating_alternative_explanations",
+    "module": "MOD-1",
+    "lesson": "LES-3",
+    "difficulty": 4,
+    "scenario": "After losing a client, a salesperson becomes convinced their newest team member's unfamiliarity with the product was the cause, and stops investigating further.",
+    "questionType": "scenario_choice",
+    "options": [
+      { "id": "A", "text": "This is reasonable once a clear cause is found — further investigation would be unnecessary.", "misconception": "confirmation_bias" },
+      { "id": "B", "text": "Other factors — timing, pricing, competing offers — could also explain the loss; settling on one cause without checking is premature.", "conceptTag": "generating_alternative_explanations" },
+      { "id": "C", "text": "The newest team member is definitely to blame, since they're the least experienced.", "misconception": "premature_motive_attribution" }
+    ],
+    "acceptableAnswers": ["B"],
+    "explanation": "The lost client is the observable fact. Fixing on the first plausible cause and stopping there is exactly the confirmation-bias pattern this lesson covers — several other explanations fit the same outcome, and none has been checked.",
+    "skills": ["generating_alternative_explanations"],
+    "contentVersion": 1
+  },
+  {
+    "id": "ALT-011",
+    "concept": "attribution",
+    "module": "MOD-1",
+    "lesson": "LES-3",
+    "difficulty": 4,
+    "scenario": "A colleague who is usually punctual arrives late to three meetings in one week.",
+    "questionType": "evidence_vs_inference",
+    "options": [
+      { "id": "A", "text": "The colleague has become unreliable and careless about time.", "misconception": "overgeneralising_from_one_incident" },
+      { "id": "B", "text": "Punctuality changed this week; whether that's about the colleague or their circumstances isn't established from this alone.", "conceptTag": "attribution" },
+      { "id": "C", "text": "The colleague must be dealing with a personal crisis.", "misconception": "premature_motive_attribution" }
+    ],
+    "acceptableAnswers": ["B"],
+    "explanation": "Three late arrivals in one week, against a normal pattern of punctuality, is observable. 'Become unreliable' overweights one week against an established pattern, and 'personal crisis' names a specific situational cause with no more support than any other — a scheduling conflict or commute disruption would fit equally well.",
+    "skills": ["attribution", "evidence_based_inference"],
+    "contentVersion": 1
+  }
+]

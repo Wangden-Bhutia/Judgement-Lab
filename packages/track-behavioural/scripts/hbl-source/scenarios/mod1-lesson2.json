@@ -1,0 +1,94 @@
+[
+  {
+    "id": "ATTR-001",
+    "concept": "attribution",
+    "module": "MOD-1",
+    "lesson": "LES-2",
+    "difficulty": 1,
+    "scenario": "A coworker snaps irritably at you after you ask a routine scheduling question.",
+    "questionType": "evidence_vs_inference",
+    "options": [
+      { "id": "A", "text": "The coworker is rude and has no patience for colleagues.", "misconception": "ignoring_situational_factors" },
+      { "id": "B", "text": "The coworker snapped once; the cause could be something about them or their circumstances, and isn't established yet.", "conceptTag": "attribution" },
+      { "id": "C", "text": "The coworker is having a stressful day, and that fully explains it.", "misconception": "premature_motive_attribution" },
+      { "id": "D", "text": "The coworker is one of those people who can't handle pressure well.", "misconception": "overgeneralising_from_one_incident" }
+    ],
+    "acceptableAnswers": ["B"],
+    "explanation": "Only the snapping is observable. 'Rude' and 'can't handle pressure' both credit the coworker's character without checking for situational causes, while 'stressful day' credits a specific situational cause just as confidently. Both directions — too quick to blame the person, too quick to settle on one circumstance — go beyond what a single incident supports.",
+    "skills": ["attribution", "evidence_based_inference"],
+    "followUpScenarioId": "ATTR-002",
+    "contentVersion": 1
+  },
+  {
+    "id": "ATTR-002",
+    "concept": "attribution",
+    "module": "MOD-1",
+    "lesson": "LES-2",
+    "difficulty": 1,
+    "scenario": "You later learn the coworker had just come from a difficult performance review with their manager.",
+    "questionType": "scenario_choice",
+    "options": [
+      { "id": "A", "text": "This proves the coworker isn't rude — it was entirely the review.", "misconception": "confusing_observation_with_interpretation" },
+      { "id": "B", "text": "This adds a plausible situational explanation, without ruling out other factors.", "conceptTag": "attribution" },
+      { "id": "C", "text": "This is irrelevant — people's true character shows under any pressure.", "misconception": "ignoring_situational_factors" }
+    ],
+    "acceptableAnswers": ["B"],
+    "explanation": "The review gives a plausible situational explanation, but it doesn't prove the dispositional one wrong — both could play a role, or the review could be unrelated. Treating one new fact as settling the question skips over everything still unknown.",
+    "skills": ["attribution"],
+    "contentVersion": 1
+  },
+  {
+    "id": "ATTR-003",
+    "concept": "attribution",
+    "module": "MOD-1",
+    "lesson": "LES-2",
+    "difficulty": 2,
+    "scenario": "A student who normally finishes exams early turns in their test significantly late for the first time.",
+    "questionType": "assumption_identification",
+    "options": [
+      { "id": "A", "text": "The student didn't study and panicked under time pressure.", "misconception": "premature_motive_attribution" },
+      { "id": "B", "text": "The student finished later than usual; whether that's about them or the exam itself isn't established from this alone.", "conceptTag": "attribution" },
+      { "id": "C", "text": "The student has become lazy about preparing for exams.", "misconception": "overgeneralising_from_one_incident" }
+    ],
+    "acceptableAnswers": ["B"],
+    "explanation": "A change from the student's usual pattern is observable. 'Panicked' and 'become lazy' both assume a specific cause — a harder question set, an unfamiliar format, or something unrelated to preparation could equally explain one slow exam.",
+    "skills": ["attribution", "evidence_based_inference"],
+    "contentVersion": 1
+  },
+  {
+    "id": "ATTR-010",
+    "concept": "attribution",
+    "module": "MOD-1",
+    "lesson": "LES-2",
+    "difficulty": 4,
+    "scenario": "A manager publicly criticises an employee's work in a team meeting — unusual behaviour for that manager.",
+    "questionType": "scenario_choice",
+    "options": [
+      { "id": "A", "text": "The manager is a harsh, unpleasant boss.", "misconception": "ignoring_situational_factors" },
+      { "id": "B", "text": "This was unusual for the manager; without more context, whether it reflects their character or their circumstances isn't established.", "conceptTag": "attribution" },
+      { "id": "C", "text": "The manager must be under pressure from above and is taking it out on the team.", "misconception": "premature_motive_attribution" }
+    ],
+    "acceptableAnswers": ["B"],
+    "explanation": "The public criticism, and that it's unusual for this manager, are both observable. 'Harsh boss' ignores that it's a break from their normal behaviour, while 'pressure from above' names a specific situational cause with no more support than the dispositional one. Noting the behaviour is unusual is itself a clue worth weighing, not explaining away.",
+    "skills": ["attribution"],
+    "contentVersion": 1
+  },
+  {
+    "id": "ATTR-011",
+    "concept": "evidence_based_inference",
+    "module": "MOD-1",
+    "lesson": "LES-2",
+    "difficulty": 4,
+    "scenario": "A usually reliable supplier misses a delivery deadline for the first time in two years.",
+    "questionType": "evidence_vs_inference",
+    "options": [
+      { "id": "A", "text": "The supplier has become unreliable and shouldn't be trusted going forward.", "misconception": "overgeneralising_from_one_incident" },
+      { "id": "B", "text": "One missed deadline after two reliable years doesn't establish a change in reliability, though it may be worth watching.", "conceptTag": "evidence_based_inference" },
+      { "id": "C", "text": "The supplier is deliberately deprioritising this account.", "misconception": "premature_motive_attribution" }
+    ],
+    "acceptableAnswers": ["B"],
+    "explanation": "Two years of reliability followed by one miss is the observable pattern. 'Unreliable going forward' overweights a single instance against a long track record, and 'deliberately deprioritising' assumes an intent with no support — a shipping delay, a supply issue, or a one-off error fit equally well.",
+    "skills": ["evidence_based_inference", "attribution"],
+    "contentVersion": 1
+  }
+]

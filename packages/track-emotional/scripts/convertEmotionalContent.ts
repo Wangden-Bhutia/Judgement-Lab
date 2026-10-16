@@ -221,7 +221,7 @@ for (const session of SESSIONS) {
 
   const explainItem = convertExplain(session);
   allItems.push(explainItem);
-  const interactiveItemIds: string[] = [explainItem.id];
+  const interactiveItemIds: string[] = [];
   const masteryItemIds: string[] = [];
 
   if (session.activity) {
@@ -238,6 +238,11 @@ for (const session of SESSIONS) {
   } else {
     interactiveItemIds.push(...checkItems.map((c) => c.id));
   }
+  // explainItem goes LAST, not first: ESL's own types.ts documents layer 1
+  // (activity/checks) before layer 2 (explanation-back). Putting it first
+  // inverted that order -- the same bug independently found and fixed in
+  // track-behavioural's conversion script.
+  interactiveItemIds.push(explainItem.id);
 
   const lesson: Lesson = {
     id: lessonId,
