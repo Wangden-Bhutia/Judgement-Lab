@@ -1,5 +1,14 @@
 import type { ReactNode } from 'react';
 
+/** Today: a simple sun -- the one nav item that isn't a track, it's "take
+ * me back to the top of the page". */
+export const TODAY_ICON: ReactNode = (
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round">
+    <circle cx="12" cy="12" r="4.5" />
+    <path d="M12 2.5 V5 M12 19 V21.5 M4.2 4.2 L6 6 M18 18 L19.8 19.8 M2.5 12 H5 M19 12 H21.5 M4.2 19.8 L6 18 M18 6 L19.8 4.2" />
+  </svg>
+);
+
 export const TRACK_ICONS: Record<string, ReactNode> = {
   // Strategic Reasoning: two intersecting paths, standing for weighing one
   // choice against another.

@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import type { TrackDefinition } from './tracks';
-import { TRACK_ICONS } from './trackIcons';
+import { TODAY_ICON, TRACK_ICONS } from './trackIcons';
 
 interface TrackSwitcherProps {
   tracks: TrackDefinition[];
@@ -10,23 +10,33 @@ interface TrackSwitcherProps {
  * With Today now a single blended feed showing every track at once, there
  * is no "selected track" to switch between -- this is a jump-to-section
  * nav, not a mode switch. `active` here just means "most recently jumped
- * to", for a bit of visual feedback, not a real scroll-spy.
+ * to", for a bit of visual feedback, not a real scroll-spy. Starts on
+ * 'today' (the page loads at the top, so that's where you already are).
  */
 export function TrackSwitcher({ tracks }: TrackSwitcherProps) {
-  const [lastJumpedTo, setLastJumpedTo] = useState<string | null>(null);
+  const [lastJumpedTo, setLastJumpedTo] = useState('today');
 
-  function jumpTo(id: string) {
+  function jumpToTop() {
+    setLastJumpedTo('today');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  function jumpToTrack(id: string) {
     setLastJumpedTo(id);
     document.getElementById(`track-${id}`)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
 
   return (
     <nav className="bottom-nav">
+      <button className={`bottom-nav-item ${lastJumpedTo === 'today' ? 'active' : ''}`} onClick={jumpToTop}>
+        <span className="bottom-nav-icon">{TODAY_ICON}</span>
+        <span className="bottom-nav-label">Today</span>
+      </button>
       {tracks.map((track) => (
         <button
           key={track.id}
           className={`bottom-nav-item ${track.id === lastJumpedTo ? 'active' : ''}`}
-          onClick={() => jumpTo(track.id)}
+          onClick={() => jumpToTrack(track.id)}
         >
           <span className="bottom-nav-icon">{TRACK_ICONS[track.id]}</span>
           <span className="bottom-nav-label">{track.shortTitle}</span>
