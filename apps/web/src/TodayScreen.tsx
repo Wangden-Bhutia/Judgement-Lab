@@ -1,3 +1,4 @@
+import type { ReactNode } from 'react';
 import type { Concept, Lesson, Module } from '@judgment-lab/content-schema';
 import {
   computeSkillMastery,
@@ -7,11 +8,17 @@ import {
   type LessonStatus,
 } from '@judgment-lab/core-engine';
 
-interface TodayScreenProps {
-  trackTitle: string;
+export interface TrackSection {
+  id: string;
+  title: string;
+  icon: ReactNode;
   modules: Module[];
-  lessonById: ReadonlyMap<string, Lesson>;
   concepts: Concept[];
+}
+
+interface TodayScreenProps {
+  tracks: TrackSection[];
+  lessonById: ReadonlyMap<string, Lesson>;
   progress: ReadonlyMap<string, LessonProgressState>;
   attempts: ItemAttemptRecord[];
   dueReviewCount: number;
@@ -54,28 +61,17 @@ function findNextLesson(
 }
 
 export function TodayScreen({
-  trackTitle,
-  modules,
+  tracks,
   lessonById,
-  concepts,
   progress,
   attempts,
   dueReviewCount,
   onSelectLesson,
   onStartReview,
 }: TodayScreenProps) {
-  const masteredConcepts = concepts.filter((c) => computeSkillMastery(c.id, attempts).mastered);
-  const totalLessons = modules.reduce((sum, m) => sum + m.lessonIds.length, 0);
-  const completedLessons = [...progress.values()].filter((p) => p.completedAt != null).length;
-  const next = findNextLesson(modules, lessonById, progress);
-
   return (
     <div className="today-screen">
-      <h1>{trackTitle}</h1>
-      <p className="subtitle">
-        {completedLessons} of {totalLessons} lessons completed · {masteredConcepts.length} of {concepts.length}{' '}
-        concepts mastered
-      </p>
+      <h1>Today</h1>
 
       {dueReviewCount > 0 && (
         <section className="today-card review-card">
@@ -83,52 +79,76 @@ export function TodayScreen({
           <h2>
             {dueReviewCount} {dueReviewCount === 1 ? 'concept is' : 'concepts are'} due for review
           </h2>
-          <p>Quick retrieval checks on things you've already learned, to keep them from fading.</p>
+          <p>Quick retrieval checks across everything you've learned so far, to keep it from fading.</p>
           <button onClick={onStartReview}>Start review</button>
         </section>
       )}
 
-      {next ? (
-        <section className="today-card">
-          <p className="today-card-module">{next.module.title}</p>
-          <h2>{next.lesson.title}</h2>
-          <p>{next.lesson.objectives[0]}</p>
-          <button onClick={() => onSelectLesson(next.lesson)}>{STATUS_LABEL[next.status]}</button>
-        </section>
-      ) : (
-        <section className="today-card today-card-done">
-          <h2>You've completed every lesson in {trackTitle}.</h2>
-          <p>Browse the full syllabus below to revisit anything.</p>
-        </section>
-      )}
+      {tracks.map((track) => {
+        const masteredConcepts = track.concepts.filter((c) => computeSkillMastery(c.id, attempts).mastered);
+        const totalLessons = track.modules.reduce((sum, m) => sum + m.lessonIds.length, 0);
+        const completedLessons = track.modules
+          .flatMap((m) => m.lessonIds)
+          .filter((id) => progress.get(id)?.completedAt != null).length;
+        const next = findNextLesson(track.modules, lessonById, progress);
 
-      <details className="syllabus">
-        <summary>Browse all {totalLessons} lessons</summary>
-        {modules.map((module) => (
-          <section key={module.id} className="module-section">
-            <h2 className="module-title">{module.title}</h2>
-            <ul className="lesson-list">
-              {module.lessonIds.map((lessonId) => {
-                const lesson = lessonById.get(lessonId);
-                if (!lesson) return null;
-                const status = deriveLessonStatus(lesson, progress);
-                const locked = status === 'locked';
-                return (
-                  <li key={lesson.id} className={`lesson-card status-${status}`}>
-                    <div className="lesson-card-main">
-                      <h3>{lesson.title}</h3>
-                      <p>{lesson.objectives[0]}</p>
-                    </div>
-                    <button disabled={locked} onClick={() => onSelectLesson(lesson)}>
-                      {STATUS_LABEL[status]}
-                    </button>
-                  </li>
-                );
-              })}
-            </ul>
+        return (
+          <section key={track.id} id={`track-${track.id}`} className="track-section">
+            <div className="track-section-header">
+              <span className="track-section-icon">{track.icon}</span>
+              <div>
+                <h2>{track.title}</h2>
+                <p className="subtitle">
+                  {completedLessons} of {totalLessons} lessons completed · {masteredConcepts.length} of{' '}
+                  {track.concepts.length} concepts mastered
+                </p>
+              </div>
+            </div>
+
+            {next ? (
+              <section className="today-card">
+                <p className="today-card-module">{next.module.title}</p>
+                <h2>{next.lesson.title}</h2>
+                <p>{next.lesson.objectives[0]}</p>
+                <button onClick={() => onSelectLesson(next.lesson)}>{STATUS_LABEL[next.status]}</button>
+              </section>
+            ) : (
+              <section className="today-card today-card-done">
+                <h2>You've completed every lesson in {track.title}.</h2>
+                <p>Browse the full syllabus below to revisit anything.</p>
+              </section>
+            )}
+
+            <details className="syllabus">
+              <summary>Browse all {totalLessons} lessons</summary>
+              {track.modules.map((module) => (
+                <section key={module.id} className="module-section">
+                  <h3 className="module-title">{module.title}</h3>
+                  <ul className="lesson-list">
+                    {module.lessonIds.map((lessonId) => {
+                      const lesson = lessonById.get(lessonId);
+                      if (!lesson) return null;
+                      const status = deriveLessonStatus(lesson, progress);
+                      const locked = status === 'locked';
+                      return (
+                        <li key={lesson.id} className={`lesson-card status-${status}`}>
+                          <div className="lesson-card-main">
+                            <h3>{lesson.title}</h3>
+                            <p>{lesson.objectives[0]}</p>
+                          </div>
+                          <button disabled={locked} onClick={() => onSelectLesson(lesson)}>
+                            {STATUS_LABEL[status]}
+                          </button>
+                        </li>
+                      );
+                    })}
+                  </ul>
+                </section>
+              ))}
+            </details>
           </section>
-        ))}
-      </details>
+        );
+      })}
     </div>
   );
 }

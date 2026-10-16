@@ -285,6 +285,37 @@ This completes all three tracks' content ports (Phases 4-9). Phase 10 ("design t
 Today experience") is next per the original build order, now that the precondition — all three tracks
 working independently — is actually met.
 
+## Phase 10: unified cross-track Today
+
+The bottom nav built right after the visual-identity pass was a per-track switcher -- three separate
+Today screens, pick one via the nav. That's not what the original plan meant by "a single daily surface
+picking across tracks"; it's three independent apps sharing a shell. Rebuilt properly:
+
+- **`TodayScreen` is now one page showing all 3 tracks at once**, each as its own section (icon, title,
+  per-track lesson/mastery stats, next-lesson card, collapsible full syllabus) — not gated behind
+  picking a track first.
+- **The review queue is pooled across all 3 tracks**, not per-track. One "`N` concepts are due for
+  review" card at the top of the page, and `ReviewSession` can serve items from different tracks within
+  the same session (verified live: a session mixing a Strategic Reasoning item and a Behavioural
+  Observation item back to back).
+- **`App.tsx` now builds global data instead of scoping to one "active" track**: a single `itemById`
+  and `lessonById` merged across all tracks (safe -- item/lesson ids are namespaced per track, e.g.
+  `strategic-...` vs `behavioural-...`). Concept ids are a different story: nothing currently collides
+  across tracks (checked directly), but nothing enforces it either, so anything that pools data by
+  concept across tracks (the due-review queue, `ReviewSession`'s item lookup) keeps `trackId` alongside
+  `conceptId` rather than assuming global uniqueness — a `Map<trackId, Map<conceptId, Item[]>>`, not a
+  flat `Map<conceptId, Item[]>`.
+- **The bottom nav is no longer a mode switch** — there's no "selected track" anymore, since all three
+  are always visible. It's now a jump-to-section nav (`scrollIntoView` to `#track-${id}`), with
+  "active" meaning "most recently jumped to" rather than real scroll-spy.
+
+Verified live end-to-end: the blended page renders all 3 tracks correctly ordered with the right
+per-track stats; the bottom nav's jump-to-section lands at the right scroll position; seeded a due
+review in two different tracks (Strategic Reasoning's `players`, Behavioural Observation's
+`observation_vs_interpretation`) and confirmed one review session served both, back to back, then the
+card cleared once both were answered. 408 tests pass; typecheck clean (no test suite changes needed --
+this was a UI/wiring restructuring, not a change to `core-engine` or any content package).
+
 ## Open, non-blocking
 
 - Final app name.

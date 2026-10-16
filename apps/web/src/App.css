@@ -68,6 +68,46 @@
   margin-bottom: 24px;
 }
 
+.track-section {
+  padding-top: 32px;
+  margin-top: 8px;
+  border-top: 1px solid var(--border);
+}
+
+.track-section:first-of-type {
+  padding-top: 0;
+  margin-top: 0;
+  border-top: none;
+}
+
+.track-section-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 16px;
+}
+
+.track-section-icon {
+  flex-shrink: 0;
+  width: 30px;
+  height: 30px;
+  color: var(--accent);
+}
+
+.track-section-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.track-section-header h2 {
+  margin: 0;
+}
+
+.track-section-header .subtitle {
+  margin: 4px 0 0;
+  font-size: 15px;
+}
+
 .today-card {
   border: 1px solid var(--accent-border);
   background: var(--accent-bg);

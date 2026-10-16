@@ -3,20 +3,26 @@ import type { Item, Lesson } from '@judgment-lab/content-schema';
 import { buildRetentionQueue, type ConceptReviewState, type ItemAttemptRecord, type LessonProgressState } from '@judgment-lab/core-engine';
 import { storage } from './storage';
 import { loadAttempts, loadLessonProgress, loadReviewState } from './progress';
-import { TodayScreen } from './TodayScreen';
+import { TodayScreen, type TrackSection } from './TodayScreen';
 import { LessonPlayer } from './LessonPlayer';
 import { ReviewSession } from './ReviewSession';
 import { TrackSwitcher } from './TrackSwitcher';
 import { TRACKS } from './tracks';
+import { TRACK_ICONS } from './trackIcons';
 import './App.css';
 
+interface DueConcept {
+  trackId: string;
+  conceptId: string;
+  dueAt: string;
+}
+
 export default function App() {
-  const [trackId, setTrackId] = useState(TRACKS[0]!.id);
   const [progress, setProgress] = useState<Map<string, LessonProgressState>>(new Map());
   const [attempts, setAttempts] = useState<ItemAttemptRecord[]>([]);
   const [reviewState, setReviewState] = useState<Map<string, ConceptReviewState>>(new Map());
   const [activeLesson, setActiveLesson] = useState<Lesson | null>(null);
-  const [activeReview, setActiveReview] = useState<string[] | null>(null);
+  const [activeReview, setActiveReview] = useState<DueConcept[] | null>(null);
   const [loaded, setLoaded] = useState(false);
 
   useEffect(() => {
@@ -30,38 +36,64 @@ export default function App() {
     );
   }, []);
 
-  const activeTrack = TRACKS.find((t) => t.id === trackId)!;
-  // Lesson/item/concept ids are namespaced per track (e.g. "strategic-..."
-  // vs "emotional-..."), so a single shared progress/attempts/review store
-  // is safe to reuse across tracks without any key collisions.
-  const itemById = useMemo(
-    () => new Map<string, Item>(activeTrack.items.map((item) => [item.id, item])),
-    [activeTrack]
-  );
-  const itemsByConcept = useMemo(() => {
-    const map = new Map<string, Item[]>();
-    for (const item of activeTrack.items) {
-      const list = map.get(item.concept) ?? [];
-      list.push(item);
-      map.set(item.concept, list);
-    }
+  // Today is a single blended feed across all 3 tracks, not a per-track
+  // screen behind a switcher -- so everything below is built GLOBALLY
+  // (across all tracks) rather than scoped to one "active" track.
+  //
+  // Lesson/item ids are namespaced per track (e.g. "strategic-..." vs
+  // "emotional-..."), so merging them into single global maps is safe.
+  // Concept ids are NOT namespaced the same way -- nothing currently
+  // collides across tracks (verified), but nothing enforces it either, so
+  // anything that pools data across tracks by concept (review scheduling,
+  // the cross-track review session) keeps trackId alongside conceptId
+  // rather than assuming global uniqueness.
+  const itemById = useMemo(() => {
+    const map = new Map<string, Item>();
+    for (const track of TRACKS) for (const item of track.items) map.set(item.id, item);
     return map;
-  }, [activeTrack]);
-  const lessonById = useMemo(
-    () => new Map(activeTrack.curriculum.lessons.map((lesson) => [lesson.id, lesson])),
-    [activeTrack]
+  }, []);
+  const lessonById = useMemo(() => {
+    const map = new Map<string, Lesson>();
+    for (const track of TRACKS) for (const lesson of track.curriculum.lessons) map.set(lesson.id, lesson);
+    return map;
+  }, []);
+  const itemsByConceptPerTrack = useMemo(() => {
+    const outer = new Map<string, Map<string, Item[]>>();
+    for (const track of TRACKS) {
+      const inner = new Map<string, Item[]>();
+      for (const item of track.items) {
+        const list = inner.get(item.concept) ?? [];
+        list.push(item);
+        inner.set(item.concept, list);
+      }
+      outer.set(track.id, inner);
+    }
+    return outer;
+  }, []);
+  const trackSections: TrackSection[] = useMemo(
+    () =>
+      TRACKS.map((track) => ({
+        id: track.id,
+        title: track.title,
+        icon: TRACK_ICONS[track.id],
+        modules: track.curriculum.modules.slice().sort((a, b) => a.sequence - b.sequence),
+        concepts: track.curriculum.concepts,
+      })),
+    []
   );
-  const modules = useMemo(
-    () => activeTrack.curriculum.modules.slice().sort((a, b) => a.sequence - b.sequence),
-    [activeTrack]
-  );
-  const dueReviews = useMemo(() => {
-    const trackConceptIds = new Set(activeTrack.curriculum.concepts.map((c) => c.id));
-    const scheduled = [...reviewState.values()]
-      .filter((s) => trackConceptIds.has(s.conceptId))
-      .map((s) => ({ conceptId: s.conceptId, nextReviewAt: s.nextReviewAt }));
-    return buildRetentionQueue(scheduled, new Date());
-  }, [activeTrack, reviewState]);
+  const dueConcepts = useMemo(() => {
+    const all: DueConcept[] = [];
+    for (const track of TRACKS) {
+      const scheduled = track.curriculum.concepts
+        .map((c) => reviewState.get(c.id))
+        .filter((s): s is ConceptReviewState => s != null)
+        .map((s) => ({ conceptId: s.conceptId, nextReviewAt: s.nextReviewAt }));
+      for (const due of buildRetentionQueue(scheduled, new Date())) {
+        all.push({ trackId: track.id, conceptId: due.conceptId, dueAt: due.dueAt });
+      }
+    }
+    return all.sort((a, b) => new Date(a.dueAt).getTime() - new Date(b.dueAt).getTime());
+  }, [reviewState]);
 
   function reloadAfterSession() {
     void Promise.all([loadAttempts(storage), loadReviewState(storage)]).then(([a, r]) => {
@@ -92,8 +124,8 @@ export default function App() {
   if (activeReview) {
     return (
       <ReviewSession
-        dueConceptIds={activeReview}
-        itemsByConcept={itemsByConcept}
+        dueConcepts={activeReview}
+        itemsByConcept={itemsByConceptPerTrack}
         onExit={() => {
           setActiveReview(null);
           reloadAfterSession();
@@ -104,18 +136,16 @@ export default function App() {
 
   return (
     <>
-      <TrackSwitcher tracks={TRACKS} selectedId={trackId} onSelect={setTrackId} />
       <TodayScreen
-        trackTitle={activeTrack.title}
-        modules={modules}
+        tracks={trackSections}
         lessonById={lessonById}
-        concepts={activeTrack.curriculum.concepts}
         progress={progress}
         attempts={attempts}
-        dueReviewCount={dueReviews.length}
+        dueReviewCount={dueConcepts.length}
         onSelectLesson={setActiveLesson}
-        onStartReview={() => setActiveReview(dueReviews.map((q) => q.conceptId))}
+        onStartReview={() => setActiveReview(dueConcepts)}
       />
+      <TrackSwitcher tracks={TRACKS} />
     </>
   );
 }
