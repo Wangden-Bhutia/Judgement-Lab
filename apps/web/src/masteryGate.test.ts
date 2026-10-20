@@ -70,23 +70,18 @@ describe('mastery gate (integration: progress.ts + core-engine + real content)',
     expect(result.mastered).toBe(true);
   });
 
-  it('some concepts have no checkpoint item anywhere, so mastery for them is still out of reach even with the review flow built', () => {
-    // Strategos's own source data doesn't write a transfer/recognition item
-    // for every concept -- a real content gap, not a conversion bug. The
-    // review flow (reviewFlow.test.ts, ReviewSession.tsx) now closes the
-    // gap for concepts that get at least one checkpoint attempt: that
-    // attempt enters them into core-engine's spaced schedule, and a later
-    // review attempt (source 'review') supplies the second delayed-
-    // evidence item mastery needs. But entry into that schedule currently
-    // only happens via a checkpoint/review-source attempt (see
-    // progress.ts's recordAttempt) -- a concept with NO checkpoint item at
-    // all never gets a first one, so it can never enter the schedule in
-    // the first place. Closing that remaining gap (e.g. seeding review
-    // state from lesson completion instead) is a deliberate follow-up, not
-    // done here. The exact, currently-affected concept list is asserted
+  it('every concept has a checkpoint item, so none are permanently out of reach of mastery', () => {
+    // Used to fail: 4 of 14 concepts (actions, preferences, payoff,
+    // dominated_action) had no checkpoint item anywhere, so they could
+    // never get a first checkpoint attempt, never enter core-engine's
+    // spaced-review schedule, and so could never reach the >=2
+    // delayed-evidence attempts mastery requires -- regardless of how the
+    // review flow (reviewFlow.test.ts, ReviewSession.tsx) re-presents
+    // items once a concept IS in the schedule. Fixed at the content level
+    // (track-strategic's curriculum.json); the exact fix is asserted
     // precisely in track-strategic's own content tests
-    // (tests/content/curriculum.test.ts); this test only checks the
-    // general property holds for the content apps/web ships.
+    // (tests/content/curriculum.test.ts). This test only checks the
+    // general property holds for the content apps/web actually ships.
     const itemById = new Map(strategicItems.map((item) => [item.id, item]));
     const conceptsWithCheckpointItem = new Set(
       strategicCurriculum.lessons.flatMap((lesson) =>
@@ -96,6 +91,6 @@ describe('mastery gate (integration: progress.ts + core-engine + real content)',
     const allConceptIds = strategicCurriculum.concepts.map((c) => c.id);
     const conceptsWithoutCheckpointItem = allConceptIds.filter((c) => !conceptsWithCheckpointItem.has(c));
 
-    expect(conceptsWithoutCheckpointItem.length).toBeGreaterThan(0);
+    expect(conceptsWithoutCheckpointItem).toEqual([]);
   });
 });

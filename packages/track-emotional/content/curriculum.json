@@ -172,7 +172,9 @@
         "i.emo.w01d1-q2",
         "i.emo.w01d1.explain"
       ],
-      "masteryItemIds": [],
+      "masteryItemIds": [
+        "i.emo.w01d1-q2"
+      ],
       "explanationBackItemId": "i.emo.w01d1.explain",
       "teach": [
         "An emotion is a whole-body response to something that matters to you. It usually includes a situation, an interpretation of that situation, bodily changes, an urge to act, and a feeling you can name.",
@@ -211,7 +213,9 @@
         "i.emo.w01d2-q2",
         "i.emo.w01d2.explain"
       ],
-      "masteryItemIds": [],
+      "masteryItemIds": [
+        "i.emo.w01d2-q2"
+      ],
       "explanationBackItemId": "i.emo.w01d2.explain",
       "teach": [
         "An emotional episode unfolds as a chain: a situation happens, you interpret it, your body reacts, an urge appears, you act (or not), and there is an outcome.",
@@ -250,7 +254,9 @@
         "i.emo.w01d3-q2",
         "i.emo.w01d3.explain"
       ],
-      "masteryItemIds": [],
+      "masteryItemIds": [
+        "i.emo.w01d3-q2"
+      ],
       "explanationBackItemId": "i.emo.w01d3.explain",
       "teach": [
         "Suppression means hiding the outward signs of an emotion while still feeling it. Correlational research links habitual suppression with worse wellbeing and relationships than habitual reappraisal.",
@@ -290,7 +296,9 @@
         "i.emo.w01d4-q3",
         "i.emo.w01d4.explain"
       ],
-      "masteryItemIds": [],
+      "masteryItemIds": [
+        "i.emo.w01d4-q3"
+      ],
       "explanationBackItemId": "i.emo.w01d4.explain",
       "teach": [
         "Reading about a skill is not the same as being able to use it under pressure. This lab uses retrieval practice (answering from memory) and spaced reviews (returning after days) because both improve long-term retention in learning research.",
@@ -367,7 +375,9 @@
         "i.emo.w02d1-q2",
         "i.emo.w02d1.explain"
       ],
-      "masteryItemIds": [],
+      "masteryItemIds": [
+        "i.emo.w02d1-q2"
+      ],
       "explanationBackItemId": "i.emo.w02d1.explain",
       "teach": [
         "People differ in how finely they distinguish their emotions. Saying \"irritated, embarrassed and worried\" carries more information than \"bad\".",
@@ -406,7 +416,9 @@
         "i.emo.w02d2-q2",
         "i.emo.w02d2.explain"
       ],
-      "masteryItemIds": [],
+      "masteryItemIds": [
+        "i.emo.w02d2-q2"
+      ],
       "explanationBackItemId": "i.emo.w02d2.explain",
       "teach": [
         "Putting a feeling into words, such as \"this is frustration\", is called affect labelling. A neuroimaging study found labelling was associated with lower amygdala response to emotional images.",
@@ -445,7 +457,9 @@
         "i.emo.w02d3-q2",
         "i.emo.w02d3.explain"
       ],
-      "masteryItemIds": [],
+      "masteryItemIds": [
+        "i.emo.w02d3-q2"
+      ],
       "explanationBackItemId": "i.emo.w02d3.explain",
       "teach": [
         "Emotions often come in layers. Anger can sit on top of hurt. Irritation can cover anxiety about failing.",
@@ -484,7 +498,9 @@
         "i.emo.w02d4-q2",
         "i.emo.w02d4.explain"
       ],
-      "masteryItemIds": [],
+      "masteryItemIds": [
+        "i.emo.w02d4-q2"
+      ],
       "explanationBackItemId": "i.emo.w02d4.explain",
       "teach": [
         "A short daily check-in builds the noticing habit. It should take under a minute so you keep doing it.",
@@ -558,7 +574,9 @@
         "i.emo.w03d1-q2",
         "i.emo.w03d1.explain"
       ],
-      "masteryItemIds": [],
+      "masteryItemIds": [
+        "i.emo.w03d1-q2"
+      ],
       "explanationBackItemId": "i.emo.w03d1.explain",
       "teach": [
         "Emotions show up in the body: tight jaw, warm face, fast heartbeat, heavy chest, restless legs. These sensations are often the earliest signal available.",
@@ -597,7 +615,9 @@
         "i.emo.w03d2-q2",
         "i.emo.w03d2.explain"
       ],
-      "masteryItemIds": [],
+      "masteryItemIds": [
+        "i.emo.w03d2-q2"
+      ],
       "explanationBackItemId": "i.emo.w03d2.explain",
       "teach": [
         "Every emotion carries an action tendency: anger pushes to attack or defend, anxiety to avoid, shame to hide.",
@@ -635,7 +655,9 @@
         "i.emo.w03d3-q2",
         "i.emo.w03d3.explain"
       ],
-      "masteryItemIds": [],
+      "masteryItemIds": [
+        "i.emo.w03d3-q2"
+      ],
       "explanationBackItemId": "i.emo.w03d3.explain",
       "teach": [
         "A popular idea says anger builds like steam and must be let out. An experiment found that hitting a punching bag while thinking about the person who angered you did not reduce anger and was followed by more aggression than doing nothing.",
@@ -673,7 +695,9 @@
         "i.emo.w03d4-q2",
         "i.emo.w03d4.explain"
       ],
-      "masteryItemIds": [],
+      "masteryItemIds": [
+        "i.emo.w03d4-q2"
+      ],
       "explanationBackItemId": "i.emo.w03d4.explain",
       "teach": [
         "Slow breathing with a longer out-breath is a simple way to lower arousal for many people. Try about four seconds in and six seconds out for one minute.",
@@ -746,7 +770,9 @@
         "i.emo.w04d1-q2",
         "i.emo.w04d1.explain"
       ],
-      "masteryItemIds": [],
+      "masteryItemIds": [
+        "i.emo.w04d1-q2"
+      ],
       "explanationBackItemId": "i.emo.w04d1.explain",
       "teach": [
         "A fact is what a camera would record: words said, actions taken, times. An interpretation is the meaning you add: motives, judgements, predictions.",
@@ -785,7 +811,9 @@
         "i.emo.w04d2-q2",
         "i.emo.w04d2.explain"
       ],
-      "masteryItemIds": [],
+      "masteryItemIds": [
+        "i.emo.w04d2-q2"
+      ],
       "explanationBackItemId": "i.emo.w04d2.explain",
       "teach": [
         "When one interpretation feels obviously true, generate at least two alternatives. Not to talk yourself out of the feeling, but to test how certain you really are.",
@@ -824,7 +852,9 @@
         "i.emo.w04d3-q2",
         "i.emo.w04d3.explain"
       ],
-      "masteryItemIds": [],
+      "masteryItemIds": [
+        "i.emo.w04d3-q2"
+      ],
       "explanationBackItemId": "i.emo.w04d3.explain",
       "teach": [
         "Some interpretation habits are common under stress: mind-reading (assuming you know what others think), catastrophising (jumping to the worst outcome), all-or-nothing (one mistake equals total failure), and personalising (assuming it is about you).",
@@ -863,7 +893,9 @@
         "i.emo.w04d4-q2",
         "i.emo.w04d4.explain"
       ],
-      "masteryItemIds": [],
+      "masteryItemIds": [
+        "i.emo.w04d4-q2"
+      ],
       "explanationBackItemId": "i.emo.w04d4.explain",
       "teach": [
         "Take one interpretation and ask: what supports it, what does not, what would I tell a friend, and what is the most useful way to see this that still fits the facts?",
@@ -937,7 +969,9 @@
         "i.emo.w05d1-q2",
         "i.emo.w05d1.explain"
       ],
-      "masteryItemIds": [],
+      "masteryItemIds": [
+        "i.emo.w05d1-q2"
+      ],
       "explanationBackItemId": "i.emo.w05d1.explain",
       "teach": [
         "Reflecting on a difficult event as if watching from a distance, or using your own name (\"Why is Wangden upset?\"), is linked with less reactivity and less rumination than replaying it from inside.",
@@ -976,7 +1010,9 @@
         "i.emo.w05d2-q2",
         "i.emo.w05d2.explain"
       ],
-      "masteryItemIds": [],
+      "masteryItemIds": [
+        "i.emo.w05d2-q2"
+      ],
       "explanationBackItemId": "i.emo.w05d2.explain",
       "teach": [
         "Distance in time changes proportion: most everyday setbacks shrink when you picture them from next week or next year, while the things that still matter stand out more clearly.",
@@ -1013,7 +1049,9 @@
         "i.emo.w05d3-q2",
         "i.emo.w05d3.explain"
       ],
-      "masteryItemIds": [],
+      "masteryItemIds": [
+        "i.emo.w05d3-q2"
+      ],
       "explanationBackItemId": "i.emo.w05d3.explain",
       "teach": [
         "Sometimes the facts are clear and painful and no reinterpretation fits. Acceptance means making room for the feeling instead of fighting it, while still choosing actions that fit your values.",
@@ -1052,7 +1090,9 @@
         "i.emo.w05d4-q2",
         "i.emo.w05d4.explain"
       ],
-      "masteryItemIds": [],
+      "masteryItemIds": [
+        "i.emo.w05d4-q2"
+      ],
       "explanationBackItemId": "i.emo.w05d4.explain",
       "teach": [
         "Speed comes from repetition. In this drill you read short situations and write a fair alternative reading in under a minute.",
@@ -1128,7 +1168,9 @@
         "i.emo.w06d1-q3",
         "i.emo.w06d1.explain"
       ],
-      "masteryItemIds": [],
+      "masteryItemIds": [
+        "i.emo.w06d1-q3"
+      ],
       "explanationBackItemId": "i.emo.w06d1.explain",
       "teach": [
         "Main families: change the situation (choose or modify it), shift attention (distraction, focus), change the meaning (reappraisal, distancing), accept (allow the feeling), and change the response (breathing, delaying action).",
@@ -1168,7 +1210,9 @@
         "i.emo.w06d2-q2",
         "i.emo.w06d2.explain"
       ],
-      "masteryItemIds": [],
+      "masteryItemIds": [
+        "i.emo.w06d2-q2"
+      ],
       "explanationBackItemId": "i.emo.w06d2.explain",
       "teach": [
         "Distraction is useful short-term and becomes a problem if it turns into avoiding things that need attention.",
@@ -1204,7 +1248,9 @@
         "i.emo.w06d3-q2",
         "i.emo.w06d3.explain"
       ],
-      "masteryItemIds": [],
+      "masteryItemIds": [
+        "i.emo.w06d3-q2"
+      ],
       "explanationBackItemId": "i.emo.w06d3.explain",
       "teach": [
         "When a problem is controllable, problem solving is often the most direct regulation strategy. Across studies it was associated with fewer symptoms than rumination or avoidance (correlational).",
@@ -1243,7 +1289,9 @@
         "i.emo.w06d4-q2",
         "i.emo.w06d4.explain"
       ],
-      "masteryItemIds": [],
+      "masteryItemIds": [
+        "i.emo.w06d4-q2"
+      ],
       "explanationBackItemId": "i.emo.w06d4.explain",
       "teach": [
         "Implementation intentions are plans in the form \"If situation X, then I will do Y.\" A meta-analysis found them associated with better goal attainment across many domains.",
@@ -1315,7 +1363,9 @@
         "i.emo.w07d1-q2",
         "i.emo.w07d1.explain"
       ],
-      "masteryItemIds": [],
+      "masteryItemIds": [
+        "i.emo.w07d1-q2"
+      ],
       "explanationBackItemId": "i.emo.w07d1.explain",
       "teach": [
         "Repetitive thought can be constructive or not. Abstract, evaluative loops (\"why am I like this?\") tend to keep distress going. Concrete, process-focused thinking (\"what happened step by step, and what can I do?\") tends to be more useful.",
@@ -1352,7 +1402,9 @@
         "i.emo.w07d2-q2",
         "i.emo.w07d2.explain"
       ],
-      "masteryItemIds": [],
+      "masteryItemIds": [
+        "i.emo.w07d2-q2"
+      ],
       "explanationBackItemId": "i.emo.w07d2.explain",
       "teach": [
         "Some people find it useful to postpone worries to a set 15-minute window, writing them down when they appear during the day.",
@@ -1391,7 +1443,9 @@
         "i.emo.w07d3-q3",
         "i.emo.w07d3.explain"
       ],
-      "masteryItemIds": [],
+      "masteryItemIds": [
+        "i.emo.w07d3-q3"
+      ],
       "explanationBackItemId": "i.emo.w07d3.explain",
       "teach": [
         "Much anxiety comes from wanting certainty that is not available. Repeated checking or reassurance-seeking may calm you briefly and keep the need for certainty strong.",
@@ -1431,7 +1485,9 @@
         "i.emo.w07d4-q2",
         "i.emo.w07d4.explain"
       ],
-      "masteryItemIds": [],
+      "masteryItemIds": [
+        "i.emo.w07d4-q2"
+      ],
       "explanationBackItemId": "i.emo.w07d4.explain",
       "teach": [
         "After a setback: acknowledge the feeling, describe what happened in facts, find what was in your control, extract one lesson, and plan one step.",
@@ -1505,7 +1561,9 @@
         "i.emo.w08d1-q2",
         "i.emo.w08d1.explain"
       ],
-      "masteryItemIds": [],
+      "masteryItemIds": [
+        "i.emo.w08d1-q2"
+      ],
       "explanationBackItemId": "i.emo.w08d1.explain",
       "teach": [
         "Criticism tends to trigger a threat response: defending, attacking back or shutting down. The first goal is to understand the feedback before evaluating it.",
@@ -1543,7 +1601,9 @@
         "i.emo.w08d2-q2",
         "i.emo.w08d2.explain"
       ],
-      "masteryItemIds": [],
+      "masteryItemIds": [
+        "i.emo.w08d2-q2"
+      ],
       "explanationBackItemId": "i.emo.w08d2.explain",
       "teach": [
         "Most feedback mixes useful and less useful parts. Sort it: what is accurate, what is partly true, what is not true or not mine to fix.",
@@ -1582,7 +1642,9 @@
         "i.emo.w08d3-q2",
         "i.emo.w08d3.explain"
       ],
-      "masteryItemIds": [],
+      "masteryItemIds": [
+        "i.emo.w08d3-q2"
+      ],
       "explanationBackItemId": "i.emo.w08d3.explain",
       "teach": [
         "When someone is rude or provocative, your options include: ignore, name the behaviour calmly, set a boundary, or address it later privately.",
@@ -1621,7 +1683,9 @@
         "i.emo.w08d4-q2",
         "i.emo.w08d4.explain"
       ],
-      "masteryItemIds": [],
+      "masteryItemIds": [
+        "i.emo.w08d4-q2"
+      ],
       "explanationBackItemId": "i.emo.w08d4.explain",
       "teach": [
         "Plan: your goal for the talk, the facts, your interpretation stated as yours, the request, and how you will handle your own intensity.",
@@ -1694,7 +1758,9 @@
         "i.emo.w09d1-q3",
         "i.emo.w09d1.explain"
       ],
-      "masteryItemIds": [],
+      "masteryItemIds": [
+        "i.emo.w09d1-q3"
+      ],
       "explanationBackItemId": "i.emo.w09d1.explain",
       "teach": [
         "A boundary describes what you will do, not what the other person must feel. \"I can't take that on this week; I can look at it Monday.\"",
@@ -1734,7 +1800,9 @@
         "i.emo.w09d2-q2",
         "i.emo.w09d2.explain"
       ],
-      "masteryItemIds": [],
+      "masteryItemIds": [
+        "i.emo.w09d2-q2"
+      ],
       "explanationBackItemId": "i.emo.w09d2.explain",
       "teach": [
         "Conflicts happen. Repair matters: acknowledge your part specifically, avoid \"but\", and state what you will do differently.",
@@ -1773,7 +1841,9 @@
         "i.emo.w09d3-q2",
         "i.emo.w09d3.explain"
       ],
-      "masteryItemIds": [],
+      "masteryItemIds": [
+        "i.emo.w09d3-q2"
+      ],
       "explanationBackItemId": "i.emo.w09d3.explain",
       "teach": [
         "Validation means showing you understand why someone feels as they do, without necessarily agreeing with their view or demands.",
@@ -1811,7 +1881,9 @@
         "i.emo.w09d4-q2",
         "i.emo.w09d4.explain"
       ],
-      "masteryItemIds": [],
+      "masteryItemIds": [
+        "i.emo.w09d4-q2"
+      ],
       "explanationBackItemId": "i.emo.w09d4.explain",
       "teach": [
         "Run three Scenario Gym items in the Boundaries and Provocation categories.",
@@ -1884,7 +1956,9 @@
         "i.emo.w10d1-q2",
         "i.emo.w10d1.explain"
       ],
-      "masteryItemIds": [],
+      "masteryItemIds": [
+        "i.emo.w10d1-q2"
+      ],
       "explanationBackItemId": "i.emo.w10d1.explain",
       "teach": [
         "Professional composure means staying able to think, listen and decide while emotions are present. It does not mean showing nothing.",
@@ -1921,7 +1995,9 @@
         "i.emo.w10d2-q2",
         "i.emo.w10d2.explain"
       ],
-      "masteryItemIds": [],
+      "masteryItemIds": [
+        "i.emo.w10d2-q2"
+      ],
       "explanationBackItemId": "i.emo.w10d2.explain",
       "teach": [
         "When a demand seems unreasonable, separate: what exactly is asked, the deadline, what is possible, and what trade-offs exist.",
@@ -1960,7 +2036,9 @@
         "i.emo.w10d3-q2",
         "i.emo.w10d3.explain"
       ],
-      "masteryItemIds": [],
+      "masteryItemIds": [
+        "i.emo.w10d3-q2"
+      ],
       "explanationBackItemId": "i.emo.w10d3.explain",
       "teach": [
         "Under pressure, slow down the first 30 seconds: breathe, state the decision, state the deadline, list two options.",
@@ -1998,7 +2076,9 @@
         "i.emo.w10d4-q2",
         "i.emo.w10d4.explain"
       ],
-      "masteryItemIds": [],
+      "masteryItemIds": [
+        "i.emo.w10d4-q2"
+      ],
       "explanationBackItemId": "i.emo.w10d4.explain",
       "teach": [
         "Complete three Pressure scenarios in the gym.",
@@ -2070,7 +2150,9 @@
         "i.emo.w11d1-q2",
         "i.emo.w11d1.explain"
       ],
-      "masteryItemIds": [],
+      "masteryItemIds": [
+        "i.emo.w11d1-q2"
+      ],
       "explanationBackItemId": "i.emo.w11d1.explain",
       "teach": [
         "When outcomes are unknown, focus on what you control: quality of work, relationships, information gathering, and preparation for options.",
@@ -2108,7 +2190,9 @@
         "i.emo.w11d2-q2",
         "i.emo.w11d2.explain"
       ],
-      "masteryItemIds": [],
+      "masteryItemIds": [
+        "i.emo.w11d2-q2"
+      ],
       "explanationBackItemId": "i.emo.w11d2.explain",
       "teach": [
         "After a difficult meeting: reset the body (walk, breathe), note facts and actions while fresh, then switch attention deliberately to the next task.",
@@ -2147,7 +2231,9 @@
         "i.emo.w11d3-q3",
         "i.emo.w11d3.explain"
       ],
-      "masteryItemIds": [],
+      "masteryItemIds": [
+        "i.emo.w11d3-q3"
+      ],
       "explanationBackItemId": "i.emo.w11d3.explain",
       "teach": [
         "Disagreeing with someone senior can trigger fear. Prepare: shared goal, specific concern, evidence, proposal.",
@@ -2187,7 +2273,9 @@
         "i.emo.w11d4-q2",
         "i.emo.w11d4.explain"
       ],
-      "masteryItemIds": [],
+      "masteryItemIds": [
+        "i.emo.w11d4-q2"
+      ],
       "explanationBackItemId": "i.emo.w11d4.explain",
       "teach": [
         "Complete three professional-context gym scenarios across categories.",
@@ -2260,7 +2348,9 @@
         "i.emo.w12d1-q3",
         "i.emo.w12d1.explain"
       ],
-      "masteryItemIds": [],
+      "masteryItemIds": [
+        "i.emo.w12d1-q3"
+      ],
       "explanationBackItemId": "i.emo.w12d1.explain",
       "teach": [
         "Look at your journal: which situations recur, which interpretations, which urges, which outcomes? The Progress page shows your most frequent emotions and triggers.",
@@ -2300,7 +2390,9 @@
         "i.emo.w12d2-q2",
         "i.emo.w12d2.explain"
       ],
-      "masteryItemIds": [],
+      "masteryItemIds": [
+        "i.emo.w12d2-q2"
+      ],
       "explanationBackItemId": "i.emo.w12d2.explain",
       "teach": [
         "This app is training, not therapy or crisis support. If emotions are persistently overwhelming, if you feel unsafe, or if daily functioning is affected, talking to a qualified professional is a sensible step.",
@@ -2336,7 +2428,9 @@
         "i.emo.w12d3-q2",
         "i.emo.w12d3.explain"
       ],
-      "masteryItemIds": [],
+      "masteryItemIds": [
+        "i.emo.w12d3-q2"
+      ],
       "explanationBackItemId": "i.emo.w12d3.explain",
       "teach": [
         "Skills fade without use. Spaced reviews in this app bring back items at 2, 7 and 21 days after mastery.",
@@ -2375,7 +2469,9 @@
         "i.emo.w12d4-q3",
         "i.emo.w12d4.explain"
       ],
-      "masteryItemIds": [],
+      "masteryItemIds": [
+        "i.emo.w12d4-q3"
+      ],
       "explanationBackItemId": "i.emo.w12d4.explain",
       "teach": [
         "Take a real recent event and run the full chain: facts, interpretations, emotions with intensity, urge, strategy chosen, outcome, lesson.",

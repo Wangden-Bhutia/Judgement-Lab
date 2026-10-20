@@ -60,10 +60,28 @@ describe('converted Emotional Skills content (60-session curriculum)', () => {
     expect(review.masteryItemIds.length).toBeGreaterThan(0);
   });
 
-  it('a regular lesson puts its checks and activity in interactiveItemIds, not masteryItemIds', () => {
+  it('a regular lesson still gives its own concept exactly one checkpoint item, drawn from its own checks', () => {
+    // Originally a regular (non-d5) lesson left masteryItemIds empty
+    // entirely, on the theory that the weekly checkpoint/review session
+    // (d5) was where delayed evidence came from. But d5's own items are
+    // tagged with d5's own concept, never with the week's d1-d4 concepts
+    // -- so d1-d4 concepts had no path to a checkpoint attempt at all,
+    // and so could never enter the spaced-review schedule or reach
+    // mastery, ever (core-engine/mastery.ts needs >=2 delayed-evidence
+    // attempts). Fixed by pointing each regular lesson's masteryItemIds
+    // at one of its own already-authored checks -- same content, just
+    // flagged as checkpoint-tier instead of first-pass-only.
     const lesson = typedCurriculum.lessons.find((l) => l.id === 'emotional-w01d1')!;
-    expect(lesson.masteryItemIds).toEqual([]);
+    expect(lesson.masteryItemIds).toHaveLength(1);
+    expect(lesson.interactiveItemIds).toContain(lesson.masteryItemIds[0]);
+    expect(itemById.get(lesson.masteryItemIds[0]!)?.concept).toBe(lesson.concepts[0]);
     expect(lesson.interactiveItemIds.length).toBeGreaterThanOrEqual(3); // activity + >=1 check + explain
+  });
+
+  it('every lesson gives its own concept at least one checkpoint item -- no concept is permanently unmasterable', () => {
+    for (const lesson of typedCurriculum.lessons) {
+      expect(lesson.masteryItemIds.length).toBeGreaterThan(0);
+    }
   });
 
   it('the explain-back item is LAST in interactiveItemIds, matching ESL\'s own layer order (activity/checks, then explanation-back)', () => {
@@ -160,15 +178,11 @@ describe('converted Emotional Skills content (60-session curriculum)', () => {
     expect(lesson.apply).toMatch(/notice|ask/i);
   });
 
-  it('no concept has a masteryItemIds-derived checkpoint item covering more than one concept -- every concept is self-contained (unlike Strategic Reasoning)', () => {
+  it('no concept has a masteryItemIds-derived checkpoint item covering more than one concept -- every concept is self-contained', () => {
     // A direct consequence of the "a skill is one session, concept = session
-    // id" model: a checkpoint/review session's own masteryItemIds items are
-    // ALWAYS tagged with that same session's own concept, since this script
-    // never attributes a checkpoint question to a different, earlier
-    // session's skill. So (unlike Strategic Reasoning) every concept that
-    // has ANY checkpoint-tier item has at least as many as that one
-    // session provides, and no concept is structurally starved the way
-    // Strategic Reasoning's actions/preferences/payoff/dominated_action are.
+    // id" model: a checkpoint-tier item is always tagged with its own
+    // lesson's own concept, never attributed to a different, earlier
+    // session's skill.
     for (const lesson of typedCurriculum.lessons) {
       for (const itemId of lesson.masteryItemIds) {
         expect(itemById.get(itemId)!.concept).toBe(lesson.concepts[0]);

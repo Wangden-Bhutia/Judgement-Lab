@@ -127,17 +127,22 @@ describe('converted Strategic Reasoning content (Modules 1-3)', () => {
     }
   });
 
-  it('4 of the 14 concepts (actions, preferences, payoff, dominated_action) have no checkpoint item anywhere, across all 3 modules', () => {
-    // Extends the Phase 6 finding (apps/web/src/masteryGate.test.ts) now
-    // that Modules 2-3 are converted: mastery for these 4 concepts depends
-    // entirely on a future review flow re-presenting an ordinary practice
-    // item, since no masteryItemIds entry in any lesson covers them. See
-    // docs/DECISIONS.md.
+  it('every concept has a checkpoint item somewhere, across all 3 modules', () => {
+    // Was 4 of 14 (actions, preferences, payoff, dominated_action) with no
+    // checkpoint item anywhere, meaning mastery was permanently
+    // unreachable for them -- core-engine's mastery model needs >=2
+    // delayed-evidence attempts, and a concept with zero checkpoint items
+    // can never get its first. Fixed by pointing m1.l1/m1.l2's
+    // masteryItemIds at their own already-authored items for actions and
+    // preferences/payoff, and adding dominated_action's own item
+    // (i.m3.dominated) to m3.l3's masteryItemIds, which previously only
+    // listed items tagged with the different, similarly-named
+    // dominant_strategy concept.
     const conceptsWithCheckpointItem = new Set(
       typedCurriculum.lessons.flatMap((lesson) => lesson.masteryItemIds.map((id) => itemById.get(id)!.concept))
     );
     const allConceptIds = typedCurriculum.concepts.map((c) => c.id);
     const without = allConceptIds.filter((c) => !conceptsWithCheckpointItem.has(c));
-    expect(new Set(without)).toEqual(new Set(['actions', 'preferences', 'payoff', 'dominated_action']));
+    expect(without).toEqual([]);
   });
 });

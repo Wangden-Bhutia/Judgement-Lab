@@ -70,7 +70,9 @@
         "i.m1.actions",
         "i.m1.players.three"
       ],
-      "masteryItemIds": [],
+      "masteryItemIds": [
+        "i.m1.actions"
+      ],
       "contentVersion": 1
     },
     {
@@ -94,7 +96,10 @@
         "i.m1.ranking.tie",
         "i.m1.payoff"
       ],
-      "masteryItemIds": [],
+      "masteryItemIds": [
+        "i.m1.ranking.tie",
+        "i.m1.payoff"
+      ],
       "contentVersion": 1
     },
     {
@@ -307,7 +312,8 @@
       ],
       "masteryItemIds": [
         "i.m3.contrast.match",
-        "i.m3.contrast.both"
+        "i.m3.contrast.both",
+        "i.m3.dominated"
       ],
       "contentVersion": 1
     },
