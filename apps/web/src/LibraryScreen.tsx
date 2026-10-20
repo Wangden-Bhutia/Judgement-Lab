@@ -31,9 +31,10 @@ const STATUS_LABEL: Record<LessonStatus, string> = {
   completed: 'Completed',
 };
 
-/** Every track's full content, always expanded -- the stable place to
+/** Every track's full content, collapsed by default -- the stable place to
  * browse or revisit anything, regardless of whether it's still showing up
- * on Today (a completed track has nothing left to show there at all). */
+ * on Today (a completed track has nothing left to show there at all).
+ * Nothing is pre-opened; the user decides which track to look at. */
 export function LibraryScreen({ tracks, lessonById, progress, attempts, onSelectLesson }: LibraryScreenProps) {
   return (
     <div className="today-screen">
@@ -47,7 +48,7 @@ export function LibraryScreen({ tracks, lessonById, progress, attempts, onSelect
           .filter((id) => progress.get(id)?.completedAt != null).length;
 
         return (
-          <details key={track.id} className="track-section" open>
+          <details key={track.id} className="track-section">
             <summary className="track-section-header">
               <span className="track-section-icon">{track.icon}</span>
               <div>
