@@ -145,4 +145,19 @@ describe('converted Strategic Reasoning content (Modules 1-3)', () => {
     const without = allConceptIds.filter((c) => !conceptsWithCheckpointItem.has(c));
     expect(without).toEqual([]);
   });
+
+  it('every lesson now has teach, example, apply and reflect content, not just items and a post-answer explanation', () => {
+    // Originally shipped discovery-first (items + explanation only, no
+    // separate teaching text) -- every lesson opened cold on a graded
+    // item with no explanation of the concept first, unlike Emotional
+    // Skills' teach-then-practice lessons. Closed by giving all 12
+    // lessons matching content.
+    for (const lesson of typedCurriculum.lessons) {
+      expect(lesson.teach?.length ?? 0).toBeGreaterThanOrEqual(3);
+      expect(lesson.example).toBeTruthy();
+      expect(lesson.practicePrompts?.length ?? 0).toBeGreaterThanOrEqual(1);
+      expect(lesson.apply).toBeTruthy();
+      expect(lesson.reflect).toBeTruthy();
+    }
+  });
 });

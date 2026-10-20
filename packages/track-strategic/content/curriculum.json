@@ -73,7 +73,21 @@
       "masteryItemIds": [
         "i.m1.actions"
       ],
-      "contentVersion": 1
+      "contentVersion": 1,
+      "teach": [
+        "A player is anyone whose own choice changes how a situation turns out for someone. People who appear in the story but make no choice, or whose choice makes no difference to the outcome, are not players.",
+        "An action is one option a player can actually choose from. Listing a player's actions means being precise about what's really on the table for them — not what you assume, not what would be convenient, but their real menu of choices.",
+        "The first step in reading any situation strategically is building this short list: who are the players, and what can each of them actually choose? Skipping this step is the single most common way to misread a situation — crediting someone with influence they don't have, or missing someone whose choice quietly shapes the result.",
+        "This sounds mechanical, but it's exactly what's missing when a decision \"feels complicated\": usually it's because the real list of players and actions was never made explicit."
+      ],
+      "example": "You and a co-worker, Priya, are each deciding where to get lunch today: the cafe near the office or the sandwich place two blocks over. The building's landlord has no say in where either of you eats. Players: you and Priya — your choices change what happens. Not a player: the landlord. Your actions: cafe or sandwich place. Priya's actions: cafe or sandwich place.",
+      "practicePrompts": [
+        "Think of a situation from this week where you weren't sure who really had a say.",
+        "Name every person in that situation whose choice would have changed the outcome.",
+        "For one of them, list what they could actually choose between."
+      ],
+      "apply": "Next time you're in a situation involving more than one person, pause and name the players and their actions before deciding anything — even if it feels obvious.",
+      "reflect": "Think of a recent plan that went sideways. Was there someone you treated as a player who wasn't really one — or someone you left out who was?"
     },
     {
       "id": "strategic-m1.l2",
@@ -100,7 +114,21 @@
         "i.m1.ranking.tie",
         "i.m1.payoff"
       ],
-      "contentVersion": 1
+      "contentVersion": 1,
+      "teach": [
+        "Once you know who the players are and what each can choose, the next question is what each of them wants. A preference is how a player ranks the possible outcomes, from the one they like most to the one they like least.",
+        "A payoff is a number standing in for that ranking: higher means a player likes that outcome more, lower means they like it less. The exact number rarely matters — what matters is the order it represents.",
+        "A common mistake is assuming everyone wants the same thing, or quietly using your own preferences as a stand-in for someone else's. Two people in the exact same situation can rank the same outcomes completely differently.",
+        "It's also easy to muddle whose payoff you're looking at. A payoff always belongs to one specific player — \"your payoff\" and \"their payoff\" for the same outcome are two separate numbers, and mixing them up is one of the most common strategic reading mistakes."
+      ],
+      "example": "You and a friend, Noor, are choosing a film: a comedy or a drama. You'd rather watch the comedy together than the drama together, but Noor finds comedies tedious and would rather watch the drama, even alone. Same situation, same two options — different rankings for each of you.",
+      "practicePrompts": [
+        "Pick a shared decision you're part of right now.",
+        "Rank the realistic outcomes the way you'd prefer them.",
+        "Now rank them the way you think the other person involved would."
+      ],
+      "apply": "In your next shared decision, write down your own ranking of the outcomes before you say anything — then guess the other person's ranking before they tell you.",
+      "reflect": "Where have you assumed someone's preference matched yours, and been wrong?"
     },
     {
       "id": "strategic-m1.l3",
@@ -128,7 +156,21 @@
         "i.m1.unseen.why"
       ],
       "masteryItemIds": [],
-      "contentVersion": 1
+      "contentVersion": 1,
+      "teach": [
+        "Timing is about the order choices happen in: does everyone choose at the same moment, or does one player choose first and another respond?",
+        "Information is about what each player actually knows when they choose — specifically, whether they've seen anyone else's choice yet. Timing and information are related but not the same thing: choosing \"second\" only gives you an advantage if you actually get to see the earlier choice before making your own.",
+        "It's easy to assume a later-choosing player has more information, but that's not automatic. Someone can choose after another player without ever learning what that player picked — for example, if there's no way to communicate in between.",
+        "Reading timing and information correctly matters because it changes what a smart choice looks like. Choosing blind, at the same moment as someone else, calls for different reasoning than choosing with their move already visible to you."
+      ],
+      "example": "You post your event's start time on a noticeboard, then leave before anyone replies. Grace reads the noticeboard the next morning and sets her own event's time after seeing yours. Timing: you chose first, Grace chose second. Information: Grace saw your choice before making hers — so going second really did give her more to work with.",
+      "practicePrompts": [
+        "Think of a recent situation where two people made related choices.",
+        "Was there a real order to who chose first — or did it happen at the same time?",
+        "Did the second chooser actually see the first choice before deciding?"
+      ],
+      "apply": "Before your next joint decision, ask explicitly: who's choosing first, and will the other person actually see that choice before they decide?",
+      "reflect": "Have you ever assumed someone had seen your choice when they hadn't — or the reverse?"
     },
     {
       "id": "strategic-m1.l4",
@@ -159,7 +201,21 @@
         "i.m1.t.depends"
       ],
       "explanationBackItemId": "i.m1.words",
-      "contentVersion": 1
+      "contentVersion": 1,
+      "teach": [
+        "Strategic dependence is what makes a situation genuinely strategic rather than just an ordinary decision: your result depends not only on your own choice, but on someone else's choice too.",
+        "Without strategic dependence, there's nothing to \"read\" about the other person — you could just pick whatever's best for you and ignore them entirely. With it, the same choice of yours can turn out well or badly depending on what they do, so sizing up the other player's likely choice stops being optional.",
+        "By this point you have every piece needed to describe a strategic situation completely: the players, each one's actions, each one's preferences, what each knows and when, and whether their choices depend on each other.",
+        "Putting all of this into words, deliberately, before reacting is the actual skill this track is building. It feels slow at first. With practice it becomes close to automatic."
+      ],
+      "example": "You and a neighbour, Tom, each decide whether to put bins out early or on collection day. If you both choose early, the street looks tidy. If you choose early and Tom doesn't, your bin sits out alone looking untidy. Your best result depends on what Tom does — that's strategic dependence.",
+      "practicePrompts": [
+        "Pick a situation involving someone else's choice alongside yours.",
+        "Check: does how well things go for you actually change depending on what they choose?",
+        "If yes, describe the full situation in one or two sentences: players, actions, who wants what."
+      ],
+      "apply": "Pick one real situation this week with another person and write out the full description: players, actions, preferences, timing, information, and whether your outcomes depend on each other.",
+      "reflect": "What's one situation where you reacted on instinct, without really asking what the other person was likely to do?"
     },
     {
       "id": "strategic-m2.l1",
@@ -186,7 +242,21 @@
         "i.m2.br.tie"
       ],
       "masteryItemIds": [],
-      "contentVersion": 1
+      "contentVersion": 1,
+      "teach": [
+        "A best response is the action that gives you the highest payoff, given one specific choice by the other player. It's always a response to something — asking \"what's my best response?\" only makes sense once you've fixed what the other person is doing.",
+        "Finding a best response means comparing your own options against each other, for that one fixed choice of theirs — not comparing across their different choices, and not mixing in what would happen if they'd chosen differently.",
+        "A common error is comparing the wrong things: picking the action that would be great if the other player did something else, rather than the action that's actually best against what they're doing. Another is stopping halfway — checking that one of your options looks decent, without checking whether a different one of yours would do even better against that same choice.",
+        "Best response is the building block nearly everything else in this track is built from: dominance, coordination, and reasoning under uncertainty are all, underneath, repeated applications of \"what's my best response to this?\""
+      ],
+      "example": "You and a friend are walking to meet up, through the main gate or the side gate. You find out your friend has already left for the side gate. Given that, your best response is whichever gate gives you the better result against side gate specifically — not whichever gate would be better if your friend had gone to the main gate instead.",
+      "practicePrompts": [
+        "Pick a decision where someone else's choice is already fixed or known.",
+        "List your own options for responding to that specific choice.",
+        "Pick the one that does best against that one choice, not any other."
+      ],
+      "apply": "Next time you know, or can reasonably guess, what someone else has already decided, explicitly work out your best response to that specific choice before acting.",
+      "reflect": "When have you reacted to what you expected someone to do, rather than what they'd actually done?"
     },
     {
       "id": "strategic-m2.l2",
@@ -211,7 +281,21 @@
         "i.m2.pattern.apart"
       ],
       "masteryItemIds": [],
-      "contentVersion": 1
+      "contentVersion": 1,
+      "teach": [
+        "Sometimes your best response doesn't depend on the other player's choice at all — one of your options is simply better, whichever they pick. Other times it flips entirely: what's best for you changes depending on what they do.",
+        "When your best response flips to match theirs, that's called coordination — you both do best when you end up making the same choice. When it flips to differ from theirs, that's anti-coordination — you do best when you end up choosing differently.",
+        "Telling these apart matters because they call for opposite instincts. In coordination, the goal is converging on the same choice. In anti-coordination, deliberately matching the other player is the mistake.",
+        "The only reliable way to tell which situation you're in is to check your best response against each of the other player's choices in turn, rather than guessing from a gut feel about whether you \"want the same thing.\""
+      ],
+      "example": "You and a colleague are each picking a video call platform for a meeting you're both joining. If you pick the same one, the call works; if you pick different ones, it doesn't. Whichever platform your colleague picks, your best response is to pick that same one — a pure coordination situation.",
+      "practicePrompts": [
+        "Pick two related choices you and someone else are each making.",
+        "Work out your best response if they pick option A, then if they pick option B.",
+        "Does your best response match theirs each time, or differ from it each time?"
+      ],
+      "apply": "In your next shared choice with someone, work out whether you're in a coordination or anti-coordination situation before you decide — don't assume.",
+      "reflect": "Think of a time you and someone else ended up mismatched, on purpose or by accident. Which kind of situation was it?"
     },
     {
       "id": "strategic-m2.l3",
@@ -241,7 +325,21 @@
         "i.m2.t.three"
       ],
       "explanationBackItemId": "i.m2.words",
-      "contentVersion": 1
+      "contentVersion": 1,
+      "teach": [
+        "Often you don't actually know what the other player will choose — you only have a belief about how likely each of their options is. A belief response is the action that does best on average, given that belief.",
+        "Working it out means weighting each possible payoff by how likely you think that choice is, adding those weighted amounts up for each of your own options, and picking whichever option has the highest total. This total is often called an expected payoff.",
+        "A belief response isn't the same as a best response to a single fixed choice — it's a best response to a whole distribution of possible choices, each with its own weight. Changing the weights can change which of your actions comes out ahead, even when nothing else about the situation changes.",
+        "This matters because real situations are rarely fully certain. Most of the time you're acting on a belief, whether you say so explicitly or not — making that belief, and the comparison it leads to, explicit is what keeps the reasoning honest."
+      ],
+      "example": "You think a friend will show up early with 70% likelihood, and late with 30%. Cooking a big meal pays off well if they're early and poorly if they're late; a simple meal pays off acceptably either way. Weighting each payoff by its likelihood and adding them up for each option tells you which choice actually does better on average, given that belief.",
+      "practicePrompts": [
+        "Think of a choice you're facing where you don't know for certain what someone else will do.",
+        "Estimate roughly how likely each of their options feels to you.",
+        "Work out which of your own choices does better on average, given those estimates."
+      ],
+      "apply": "Before your next uncertain decision involving someone else, write down your rough belief about what they'll do as a percentage, then work out which of your options does best against that belief.",
+      "reflect": "Where have you acted on a hunch about someone else's likely choice without ever making the belief, or the comparison, explicit?"
     },
     {
       "id": "strategic-m3.l1",
@@ -264,7 +362,21 @@
         "i.m3.three.dom"
       ],
       "masteryItemIds": [],
-      "contentVersion": 1
+      "contentVersion": 1,
+      "teach": [
+        "A dominant strategy is an action that's your best response to every single choice the other player could make — not just one of them, all of them. If you have one, there's nothing more to work out: that action is simply your best move, regardless of what they do.",
+        "Finding a dominant strategy means checking every one of the other player's possible choices in turn, and confirming the same one of your actions comes out ahead against each of them. Confirming it against just one of their choices is not enough — it has to win against every one of them.",
+        "Not every situation has a dominant strategy. When one exists, though, it's the strongest, simplest kind of answer this track deals with: you don't need to guess what the other player will do, model their incentives, or work out a belief about their choice. It's just better, full stop.",
+        "The habit to build here is discipline: resist settling for \"this looks better\" after checking only one of the other player's choices. A real dominant strategy survives being checked against every one of them."
+      ],
+      "example": "You and a colleague each decide whether to back up a shared document to the office server or keep it local only. Backing up to the server gives you a better outcome whether your colleague backs up too or not — it beats keeping it local either way. Server is your dominant strategy.",
+      "practicePrompts": [
+        "Pick a choice you're facing with more than one option.",
+        "List the other player's possible choices.",
+        "Check whether one of your options beats all your others against every one of theirs."
+      ],
+      "apply": "In your next decision involving someone else, deliberately check whether you have a dominant strategy before considering what they're likely to do.",
+      "reflect": "Have you ever settled on a choice after checking it against only one scenario, when you should have checked it against all of them?"
     },
     {
       "id": "strategic-m3.l2",
@@ -290,7 +402,21 @@
         "i.m3.dilemma"
       ],
       "masteryItemIds": [],
-      "contentVersion": 1
+      "contentVersion": 1,
+      "teach": [
+        "A dominant strategy doesn't have to exist for both players at once. Often only one side has one — and when that's true, it tells you something useful about the other side, even without knowing their preferences in detail.",
+        "If the other player has a dominant strategy, you can expect them to use it: it's their best move whatever you do, so a rational player in their position plays it. That prediction is reliable in a way a guess usually isn't.",
+        "Once you can predict their choice this confidently, your own problem collapses into something simpler: find your best response to that one specific, predictable choice — exactly the skill from \"If you knew their choice.\"",
+        "This combination — spot their dominant strategy, predict their move, then best-respond to it — is one of the most reliable patterns in reading a strategic situation, because it doesn't require guessing at all once their dominant strategy is confirmed."
+      ],
+      "example": "A street vendor, Carlos, always does better selling by the market square than by the park, whichever route you take to buy from him. You can expect Carlos at the market square — not because you're guessing, but because it's dominant for him. Knowing that, you can plan your own route as a best response to a choice you can actually predict.",
+      "practicePrompts": [
+        "Pick a situation where someone else's incentives are clear to you.",
+        "Check whether they have a dominant strategy.",
+        "If they do, work out your best response to that predictable choice."
+      ],
+      "apply": "Next time you're unsure what to do because you're unsure what someone else will do, check first whether they actually have a dominant strategy — if they do, you don't need to guess.",
+      "reflect": "Think of someone whose choice in a given situation you can predict with real confidence. What makes that choice dominant for them?"
     },
     {
       "id": "strategic-m3.l3",
@@ -315,7 +441,21 @@
         "i.m3.contrast.both",
         "i.m3.dominated"
       ],
-      "contentVersion": 1
+      "contentVersion": 1,
+      "teach": [
+        "An action is dominated when a different action gives you a higher payoff whatever the other player does — the mirror image of a dominant strategy, but describing an option to rule out rather than one to pick.",
+        "A dominated action is never your best response to anything. There's no possible choice by the other player that makes it the right move, so keeping it on the table only adds noise to your thinking.",
+        "Spotting a dominated action doesn't require knowing what the other player will actually do — exactly like a dominant strategy, it has to hold against every one of their possible choices, which is what makes it useful before you've worked out anything else about the situation.",
+        "Ruling dominated actions out early is a genuine shortcut: once you've set one aside, you never need to reconsider it, no matter what you learn later about what the other player is likely to do."
+      ],
+      "example": "In a simple grid where you pick a row and the other side picks a column, suppose the other side's \"Right\" column always gives them less than their \"Centre\" column, no matter which row you pick. \"Right\" is dominated for them — ruled out, regardless of anything you do.",
+      "practicePrompts": [
+        "Pick a decision with more than two options.",
+        "For each option, check whether some other option beats it against every possibility.",
+        "Cross out any option that's dominated this way."
+      ],
+      "apply": "Before your next multi-option decision, scan for any option that's beaten by another one of your options no matter what — and rule it out immediately.",
+      "reflect": "Have you ever kept an option \"on the table\" that, on reflection, was never actually going to be your best choice?"
     },
     {
       "id": "strategic-m3.l4",
@@ -340,7 +480,21 @@
       ],
       "masteryItemIds": [],
       "explanationBackItemId": "i.m3.words",
-      "contentVersion": 1
+      "contentVersion": 1,
+      "teach": [
+        "Iterated elimination of dominated strategies (IESDS) is what happens when you don't stop at removing one dominated action — you remove it, then check what's left, because removing one option can turn a previously-fine action into a newly dominated one.",
+        "The process is: find a dominated action, set it aside, then re-examine the remaining choices as if the eliminated one never existed. Repeat. Each round can only be checked honestly against what's actually still on the table, not against options already ruled out.",
+        "This matters because dominance can be hidden by an option that will clearly never be chosen anyway. Once that option is gone, a comparison that used to look close can resolve cleanly.",
+        "The habit this builds is patience: resist declaring you're \"stuck\" after one round. A choice that doesn't look dominated yet might become dominated the moment something else is removed."
+      ],
+      "example": "In the grid from the last lesson, once the other side's \"Right\" column is set aside as dominated, re-compare \"Left\" and \"Centre\" using only the rows and columns still in play. A comparison that was unclear with all three columns present can become obvious with only two left.",
+      "practicePrompts": [
+        "Take a decision with several options for each side.",
+        "Remove one dominated option, for either side.",
+        "Re-check the remaining options as if the removed one never existed."
+      ],
+      "apply": "Next time a multi-option situation looks tangled, remove the clearly-dominated option first and re-look at what's left before trying to solve the whole thing at once.",
+      "reflect": "Where has removing one obviously-bad option from consideration made the rest of a decision easier to see clearly?"
     },
     {
       "id": "strategic-m3.l5",
@@ -367,7 +521,21 @@
         "i.m3.t.weak",
         "i.m3.t.stuck"
       ],
-      "contentVersion": 1
+      "contentVersion": 1,
+      "teach": [
+        "Strict dominance requires an action to be strictly better against every one of the other player's choices — no ties allowed. Weak dominance relaxes that: an action weakly dominates another when it's never worse, and strictly better in at least one case.",
+        "The difference matters because a weakly dominant action isn't quite as safe a bet as a strictly dominant one. There's at least one scenario where it only ties rather than wins, so the case for choosing it, while still solid, is a notch less airtight.",
+        "A common mistake is treating \"never worse, sometimes better\" as if it were the same guarantee as \"always strictly better.\" It isn't — confusing the two overstates how much a weakly dominant action actually has going for it.",
+        "Weak dominance still gives you a real, useful comparison: all else equal, an action that's never worse and sometimes better is a reasonable one to prefer, even without the ironclad certainty strict dominance provides."
+      ],
+      "example": "A shop can join a price-match scheme or stay out of it. Joining is never worse than staying out, whatever a rival does — and strictly better if the rival runs a sale. Joining weakly dominates staying out: safe to prefer, even though there's one case, no rival sale, where it only ties rather than wins outright.",
+      "practicePrompts": [
+        "Compare two of your own options across every possible choice by the other side.",
+        "Check: is one of them never worse than the other?",
+        "Check further: is it strictly better in at least one case?"
+      ],
+      "apply": "Next time you're comparing two close options, check specifically whether one weakly dominates the other — never worse, and better in at least one real scenario — rather than just going with a gut preference.",
+      "reflect": "Where have you mistaken \"never worse, sometimes better\" for an ironclad guarantee, when it was really just a reasonable edge?"
     }
   ],
   "concepts": [

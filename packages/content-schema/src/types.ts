@@ -160,12 +160,18 @@ export interface Lesson {
   explanationBackItemId?: ItemId;
   /**
    * Instructional prose shown before any item, one paragraph per entry.
-   * Optional: Strategic Reasoning's lessons are discovery-first (the items
-   * themselves, with a post-answer explanation, ARE the instruction) and
-   * have no separate teaching text. Emotional Skills' lessons are
-   * teach-then-practice and always have this -- its own distractor design
-   * explicitly assumes the learner read it first (see
-   * track-emotional/scripts/convertEmotionalContent.ts).
+   * Optional on the schema, but every lesson across all three tracks
+   * currently has one -- Strategic Reasoning originally shipped
+   * discovery-first (items plus a post-answer explanation only, no
+   * teaching text), on the theory that reasoning to the rule yourself
+   * from scenario feedback was the instruction. In practice that meant
+   * every lesson opened cold on a graded item with zero explanation of
+   * the concept first, unlike Emotional Skills' teach-then-practice
+   * shape (whose own distractor design explicitly assumes the learner
+   * read teach text first -- see
+   * track-emotional/scripts/convertEmotionalContent.ts). Strategic
+   * Reasoning's 12 lessons were given matching teach/example/apply/
+   * reflect content to close that gap.
    */
   teach?: string[];
   /** A single worked example illustrating the lesson's idea, if the source provides one. */
