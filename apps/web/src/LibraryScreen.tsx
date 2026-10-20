@@ -47,8 +47,8 @@ export function LibraryScreen({ tracks, lessonById, progress, attempts, onSelect
           .filter((id) => progress.get(id)?.completedAt != null).length;
 
         return (
-          <section key={track.id} className="track-section">
-            <div className="track-section-header">
+          <details key={track.id} className="track-section" open>
+            <summary className="track-section-header">
               <span className="track-section-icon">{track.icon}</span>
               <div>
                 <h2>{track.title}</h2>
@@ -57,7 +57,12 @@ export function LibraryScreen({ tracks, lessonById, progress, attempts, onSelect
                   {track.concepts.length} concepts mastered
                 </p>
               </div>
-            </div>
+              <span className="track-section-chevron" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M6 9 L12 15 L18 9" />
+                </svg>
+              </span>
+            </summary>
 
             {track.modules.map((module) => (
               <section key={module.id} className="module-section">
@@ -83,7 +88,7 @@ export function LibraryScreen({ tracks, lessonById, progress, attempts, onSelect
                 </ul>
               </section>
             ))}
-          </section>
+          </details>
         );
       })}
     </div>
