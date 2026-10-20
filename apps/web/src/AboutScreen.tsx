@@ -23,8 +23,8 @@ export function AboutScreen({ trackTitles, onDone }: AboutScreenProps) {
         <h2>Strategic Reasoning</h2>
         <p>
           Reading a situation before reacting to it — who actually has a say, what their real options are, what
-          each side knows. The kind of judgment a negotiation or a conflicted project call calls for. A short
-          primer: 12 lessons, usually a couple of weeks of daily practice.
+          each side knows. The kind of judgment a negotiation or a conflicted project call calls for. 4 modules so
+          far: 16 lessons, still shorter than Emotional Skills but growing.
         </p>
       </section>
 
