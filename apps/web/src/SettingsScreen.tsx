@@ -27,6 +27,21 @@ export function SettingsScreen({ trackTitles, onShowHelp }: SettingsScreenProps)
           engine and one storage layer. There is no account and no backend: everything you see here lives only in
           this browser.
         </p>
+        <p>
+          Each track trains a specific, transferable skill, not trivia to recall in a quiz. Strategic Reasoning is
+          reading a situation before reacting to it — who actually has a say, what their real options are, what
+          each side knows — the kind of judgment a negotiation or a conflicted project call calls for. Emotional
+          Skills is noticing, naming, and regulating emotion under real pressure — criticism, conflict, a looming
+          deadline — instead of just reacting to it. Behavioural Observation is telling what someone did apart from
+          the story you've added about why, and holding more than one explanation before settling on one, which is
+          most of what reading people fairly and giving less-biased feedback comes down to.
+        </p>
+        <p>
+          Any of that can be answered correctly in a quiet lesson and still not hold up under pressure. That gap is
+          exactly what mastery and spaced review are built to close: done occasionally, this is trivia; done
+          dedicatedly, it's the difference between knowing the right answer and reaching for it automatically when
+          it actually matters.
+        </p>
       </section>
 
       <section className="settings-block">
