@@ -3,9 +3,10 @@ import { storage } from './storage';
 
 interface SettingsScreenProps {
   trackTitles: string[];
+  onShowHelp: () => void;
 }
 
-export function SettingsScreen({ trackTitles }: SettingsScreenProps) {
+export function SettingsScreen({ trackTitles, onShowHelp }: SettingsScreenProps) {
   const [confirming, setConfirming] = useState(false);
   const [resetting, setResetting] = useState(false);
 
@@ -26,6 +27,12 @@ export function SettingsScreen({ trackTitles }: SettingsScreenProps) {
           engine and one storage layer. There is no account and no backend: everything you see here lives only in
           this browser.
         </p>
+      </section>
+
+      <section className="settings-block">
+        <h2>How it works</h2>
+        <p>What completion, mastery, and spaced review mean, and why they're kept separate.</p>
+        <button onClick={onShowHelp}>How Judgment Lab works</button>
       </section>
 
       <section className="settings-block">

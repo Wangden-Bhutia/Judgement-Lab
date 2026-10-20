@@ -3,6 +3,8 @@ import type { Item, Lesson } from '@judgment-lab/content-schema';
 import { buildRetentionQueue, type ConceptReviewState, type ItemAttemptRecord, type LessonProgressState } from '@judgment-lab/core-engine';
 import { storage } from './storage';
 import { loadAttempts, loadLessonProgress, loadReviewState } from './progress';
+import { loadOnboarded, markOnboarded } from './onboarding';
+import { OnboardingScreen } from './OnboardingScreen';
 import { TodayScreen } from './TodayScreen';
 import { LibraryScreen } from './LibraryScreen';
 import { SettingsScreen } from './SettingsScreen';
@@ -26,17 +28,23 @@ export default function App() {
   const [reviewState, setReviewState] = useState<Map<string, ConceptReviewState>>(new Map());
   const [activeLesson, setActiveLesson] = useState<Lesson | null>(null);
   const [activeReview, setActiveReview] = useState<DueConcept[] | null>(null);
+  const [onboarded, setOnboarded] = useState(false);
+  const [showHelp, setShowHelp] = useState(false);
   const [loaded, setLoaded] = useState(false);
 
   useEffect(() => {
-    void Promise.all([loadLessonProgress(storage), loadAttempts(storage), loadReviewState(storage)]).then(
-      ([p, a, r]) => {
-        setProgress(p);
-        setAttempts(a);
-        setReviewState(r);
-        setLoaded(true);
-      }
-    );
+    void Promise.all([
+      loadLessonProgress(storage),
+      loadAttempts(storage),
+      loadReviewState(storage),
+      loadOnboarded(storage),
+    ]).then(([p, a, r, didOnboard]) => {
+      setProgress(p);
+      setAttempts(a);
+      setReviewState(r);
+      setOnboarded(didOnboard);
+      setLoaded(true);
+    });
   }, []);
 
   // Built GLOBALLY (across all 3 tracks), not scoped to one "active" track
@@ -108,6 +116,22 @@ export default function App() {
     return <div className="loading">Loading…</div>;
   }
 
+  if (!onboarded) {
+    return (
+      <OnboardingScreen
+        mode="first-run"
+        onDone={() => {
+          void markOnboarded(storage);
+          setOnboarded(true);
+        }}
+      />
+    );
+  }
+
+  if (showHelp) {
+    return <OnboardingScreen mode="reference" onDone={() => setShowHelp(false)} />;
+  }
+
   if (activeLesson) {
     return (
       <LessonPlayer
@@ -157,7 +181,9 @@ export default function App() {
           onSelectLesson={setActiveLesson}
         />
       )}
-      {view === 'settings' && <SettingsScreen trackTitles={trackData.map((t) => t.title)} />}
+      {view === 'settings' && (
+        <SettingsScreen trackTitles={trackData.map((t) => t.title)} onShowHelp={() => setShowHelp(true)} />
+      )}
       <BottomNav view={view} onChange={setView} />
     </>
   );
