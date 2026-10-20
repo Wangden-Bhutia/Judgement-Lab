@@ -369,6 +369,10 @@ textarea {
   background: var(--code-bg);
 }
 
+.feedback-misconception {
+  font-style: italic;
+}
+
 .classify-entries {
   display: flex;
   flex-direction: column;

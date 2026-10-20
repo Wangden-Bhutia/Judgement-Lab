@@ -1,9 +1,11 @@
 import { useMemo, useState } from 'react';
-import type { AnswerValue, Item } from '@judgment-lab/content-schema';
-import { evaluateAnswer, type AnswerEvaluation } from '@judgment-lab/core-engine';
+import type { AnswerValue, Item, Misconception } from '@judgment-lab/content-schema';
+import { evaluateAnswer, type AnswerEvaluation, type ItemAttemptRecord } from '@judgment-lab/core-engine';
 import { storage } from './storage';
 import { recordAttempt } from './progress';
 import { ItemRenderer } from './ItemRenderer';
+import { FeedbackBody } from './FeedbackBody';
+import { pickReviewItem } from './reviewSelection';
 
 interface DueConcept {
   trackId: string;
@@ -18,25 +20,19 @@ interface ReviewSessionProps {
    * currently collides across tracks, but nothing enforces that either,
    * so a blended cross-track review shouldn't rely on it. */
   itemsByConcept: ReadonlyMap<string, ReadonlyMap<string, Item[]>>;
+  attempts: ItemAttemptRecord[];
+  misconceptionById: ReadonlyMap<string, Misconception>;
   onExit: () => void;
 }
 
-/** Prefers an auto-graded item over own_words for a quick review -- self-
- * assessed correctness is weaker evidence, so only fall back to it when
- * nothing else exists for the concept. */
-function pickReviewItem(items: Item[] | undefined): Item | undefined {
-  if (!items || items.length === 0) return undefined;
-  return items.find((item) => item.type !== 'own_words') ?? items[0];
-}
-
-export function ReviewSession({ dueConcepts, itemsByConcept, onExit }: ReviewSessionProps) {
+export function ReviewSession({ dueConcepts, itemsByConcept, attempts, misconceptionById, onExit }: ReviewSessionProps) {
   const [index, setIndex] = useState(0);
   const [evaluation, setEvaluation] = useState<AnswerEvaluation | null>(null);
 
   const due = dueConcepts[index];
   const currentItem = useMemo(
-    () => pickReviewItem(due ? itemsByConcept.get(due.trackId)?.get(due.conceptId) : undefined),
-    [due, itemsByConcept]
+    () => pickReviewItem(due ? itemsByConcept.get(due.trackId)?.get(due.conceptId) : undefined, attempts),
+    [due, itemsByConcept, attempts]
   );
   const isLast = index === dueConcepts.length - 1;
 
@@ -81,8 +77,7 @@ export function ReviewSession({ dueConcepts, itemsByConcept, onExit }: ReviewSes
         <ItemRenderer item={currentItem} onSubmit={handleSubmit} />
       ) : (
         <div className={`feedback ${evaluation.correct ? 'correct' : 'incorrect'}`}>
-          <p>{evaluation.correct ? 'Correct.' : 'Not quite.'}</p>
-          <p>{evaluation.explanation}</p>
+          <FeedbackBody evaluation={evaluation} misconceptionById={misconceptionById} />
           <button onClick={handleNext}>{isLast ? 'Done' : 'Next'}</button>
         </div>
       )}

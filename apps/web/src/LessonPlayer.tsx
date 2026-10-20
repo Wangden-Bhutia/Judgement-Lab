@@ -1,20 +1,22 @@
 import { useMemo, useState } from 'react';
-import type { AnswerValue, Item, Lesson } from '@judgment-lab/content-schema';
+import type { AnswerValue, Item, Lesson, Misconception } from '@judgment-lab/content-schema';
 import { evaluateAnswer, type AnswerEvaluation, type LessonProgressState } from '@judgment-lab/core-engine';
 import { storage } from './storage';
 import { completeLessonProgress, recordAttempt, saveLessonProgress, touchLessonProgress } from './progress';
 import { ItemRenderer } from './ItemRenderer';
+import { FeedbackBody } from './FeedbackBody';
 
 interface LessonPlayerProps {
   lesson: Lesson;
   itemById: Map<string, Item>;
   onExit: (updatedProgress: Map<string, LessonProgressState>) => void;
   progress: ReadonlyMap<string, LessonProgressState>;
+  misconceptionById: ReadonlyMap<string, Misconception>;
 }
 
 type Phase = 'teach' | 'items' | 'closing';
 
-export function LessonPlayer({ lesson, itemById, onExit, progress }: LessonPlayerProps) {
+export function LessonPlayer({ lesson, itemById, onExit, progress, misconceptionById }: LessonPlayerProps) {
   const order = useMemo(() => {
     const seen = new Set<string>();
     const ids: string[] = [];
@@ -158,8 +160,7 @@ export function LessonPlayer({ lesson, itemById, onExit, progress }: LessonPlaye
         <ItemRenderer item={currentItem} onSubmit={handleSubmit} />
       ) : (
         <div className={`feedback ${evaluation.correct ? 'correct' : 'incorrect'}`}>
-          <p>{evaluation.correct ? 'Correct.' : 'Not quite.'}</p>
-          <p>{evaluation.explanation}</p>
+          <FeedbackBody evaluation={evaluation} misconceptionById={misconceptionById} />
           <button onClick={handleNext} disabled={finishing}>
             {isLast ? (hasClosing ? 'Continue' : 'Finish lesson') : 'Next'}
           </button>

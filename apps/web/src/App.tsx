@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from 'react';
-import type { Item, Lesson } from '@judgment-lab/content-schema';
+import type { Item, Lesson, Misconception } from '@judgment-lab/content-schema';
 import { buildRetentionQueue, type ConceptReviewState, type ItemAttemptRecord, type LessonProgressState } from '@judgment-lab/core-engine';
 import { storage } from './storage';
 import { loadAttempts, loadLessonProgress, loadReviewState } from './progress';
@@ -67,6 +67,11 @@ export default function App() {
   const lessonById = useMemo(() => {
     const map = new Map<string, Lesson>();
     for (const track of TRACKS) for (const lesson of track.curriculum.lessons) map.set(lesson.id, lesson);
+    return map;
+  }, []);
+  const misconceptionById = useMemo(() => {
+    const map = new Map<string, Misconception>();
+    for (const track of TRACKS) for (const m of track.curriculum.misconceptions) map.set(m.id, m);
     return map;
   }, []);
   const itemsByConceptPerTrack = useMemo(() => {
@@ -144,6 +149,7 @@ export default function App() {
         lesson={activeLesson}
         itemById={itemById}
         progress={progress}
+        misconceptionById={misconceptionById}
         onExit={(updated) => {
           setProgress(updated);
           setActiveLesson(null);
@@ -158,6 +164,8 @@ export default function App() {
       <ReviewSession
         dueConcepts={activeReview}
         itemsByConcept={itemsByConceptPerTrack}
+        attempts={attempts}
+        misconceptionById={misconceptionById}
         onExit={() => {
           setActiveReview(null);
           reloadAfterSession();
