@@ -5,6 +5,7 @@ import { storage } from './storage';
 import { loadAttempts, loadLessonProgress, loadReviewState } from './progress';
 import { loadOnboarded, markOnboarded } from './onboarding';
 import { OnboardingScreen } from './OnboardingScreen';
+import { AboutScreen } from './AboutScreen';
 import { TodayScreen } from './TodayScreen';
 import { LibraryScreen } from './LibraryScreen';
 import { SettingsScreen } from './SettingsScreen';
@@ -29,6 +30,7 @@ export default function App() {
   const [activeLesson, setActiveLesson] = useState<Lesson | null>(null);
   const [activeReview, setActiveReview] = useState<DueConcept[] | null>(null);
   const [onboarded, setOnboarded] = useState(false);
+  const [showAbout, setShowAbout] = useState(false);
   const [showHelp, setShowHelp] = useState(false);
   const [loaded, setLoaded] = useState(false);
 
@@ -128,6 +130,10 @@ export default function App() {
     );
   }
 
+  if (showAbout) {
+    return <AboutScreen trackTitles={trackData.map((t) => t.title)} onDone={() => setShowAbout(false)} />;
+  }
+
   if (showHelp) {
     return <OnboardingScreen mode="reference" onDone={() => setShowHelp(false)} />;
   }
@@ -182,7 +188,11 @@ export default function App() {
         />
       )}
       {view === 'settings' && (
-        <SettingsScreen trackTitles={trackData.map((t) => t.title)} onShowHelp={() => setShowHelp(true)} />
+        <SettingsScreen
+          trackTitles={trackData.map((t) => t.title)}
+          onShowAbout={() => setShowAbout(true)}
+          onShowHelp={() => setShowHelp(true)}
+        />
       )}
       <BottomNav view={view} onChange={setView} />
     </>
