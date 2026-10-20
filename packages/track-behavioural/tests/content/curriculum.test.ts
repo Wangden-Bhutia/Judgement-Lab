@@ -1,34 +1,43 @@
 import { describe, expect, it } from 'vitest';
 import { validateContent, type Curriculum, type Item, type ReasonChoiceItem } from '@judgment-lab/content-schema';
 import curriculum from '../../content/curriculum.json' with { type: 'json' };
-import items from '../../content/items/module1.json' with { type: 'json' };
+import module1Items from '../../content/items/module1.json' with { type: 'json' };
+import module2Items from '../../content/items/module2.json' with { type: 'json' };
 
 const typedCurriculum = curriculum as Curriculum;
-const typedItems: Item[] = items as Item[];
+const typedItems: Item[] = [...(module1Items as Item[]), ...(module2Items as Item[])];
 const itemById = new Map(typedItems.map((i) => [i.id, i]));
 
-describe('converted Behavioural Observation content (Module 1)', () => {
+describe('converted Behavioural Observation content (Modules 1-2)', () => {
   it('validates against the shared content schema', () => {
     const result = validateContent(typedCurriculum, typedItems);
     expect(result.errors).toEqual([]);
     expect(result.valid).toBe(true);
   });
 
-  it('has 1 module and 3 lessons, in order, under one track', () => {
+  it('has 2 modules and 7 lessons, in order, under one track', () => {
     expect(typedCurriculum.tracks.map((t) => t.id)).toEqual(['behavioural']);
-    expect(typedCurriculum.modules.map((m) => m.id)).toEqual(['behavioural-mod-1']);
+    expect(typedCurriculum.modules.map((m) => m.id)).toEqual(['behavioural-mod-1', 'behavioural-mod-2']);
     expect(typedCurriculum.lessons.map((l) => l.id)).toEqual([
       'behavioural-les-1',
       'behavioural-les-2',
       'behavioural-les-3',
+      'behavioural-les-4',
+      'behavioural-les-5',
+      'behavioural-les-6',
+      'behavioural-les-7',
     ]);
   });
 
-  it('gates lessons on completion of the previous lesson, a straight linear chain', () => {
+  it('gates lessons on completion of the previous lesson, a straight linear chain across the module boundary', () => {
     const byId = new Map(typedCurriculum.lessons.map((l) => [l.id, l]));
     expect(byId.get('behavioural-les-1')!.prerequisites).toEqual([]);
     expect(byId.get('behavioural-les-2')!.prerequisites).toEqual(['behavioural-les-1']);
     expect(byId.get('behavioural-les-3')!.prerequisites).toEqual(['behavioural-les-2']);
+    expect(byId.get('behavioural-les-4')!.prerequisites).toEqual(['behavioural-les-3']);
+    expect(byId.get('behavioural-les-5')!.prerequisites).toEqual(['behavioural-les-4']);
+    expect(byId.get('behavioural-les-6')!.prerequisites).toEqual(['behavioural-les-5']);
+    expect(byId.get('behavioural-les-7')!.prerequisites).toEqual(['behavioural-les-6']);
   });
 
   it('every lesson has 3 scenario items then the explain-back item, in that order, then 2 mastery items', () => {

@@ -2,6 +2,7 @@
 import type { Curriculum, Item } from '@judgment-lab/content-schema';
 import curriculumJson from '../content/curriculum.json' with { type: 'json' };
 import module1ItemsJson from '../content/items/module1.json' with { type: 'json' };
+import module2ItemsJson from '../content/items/module2.json' with { type: 'json' };
 
 export const behaviouralCurriculum = curriculumJson as Curriculum;
-export const behaviouralItems: Item[] = module1ItemsJson as Item[];
+export const behaviouralItems: Item[] = [...(module1ItemsJson as Item[]), ...(module2ItemsJson as Item[])];

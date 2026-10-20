@@ -6,7 +6,8 @@
       "title": "Behavioural Observation",
       "description": "Learning to read behaviour carefully: telling an observation apart from an interpretation, weighing disposition against situation, and generating alternative explanations before settling on one.",
       "moduleIds": [
-        "behavioural-mod-1"
+        "behavioural-mod-1",
+        "behavioural-mod-2"
       ]
     }
   ],
@@ -20,6 +21,18 @@
         "behavioural-les-1",
         "behavioural-les-2",
         "behavioural-les-3"
+      ]
+    },
+    {
+      "id": "behavioural-mod-2",
+      "trackId": "behavioural",
+      "sequence": 2,
+      "title": "Reading Patterns Over Time",
+      "lessonIds": [
+        "behavioural-les-4",
+        "behavioural-les-5",
+        "behavioural-les-6",
+        "behavioural-les-7"
       ]
     }
   ],
@@ -131,6 +144,186 @@
       ],
       "example": "After you give a friend honest feedback on a plan of theirs, they stop initiating conversations with you for a week. Observable: The friend hasn't initiated conversation for a week, starting after the feedback. Reasonable inferences: Something changed around the time of the feedback. What's uncertain: Whether the feedback is the cause, and if so, whether it was the content, the delivery, or the timing. Alternatives: The friend is upset about the feedback specifically. The friend is busy with something unrelated this week. The friend tends to go quiet for a while after any feedback, regardless of its content. Further evidence that would help: Whether the pattern continues past this week, or whether asking directly, without sounding accusatory, gets a clear answer.",
       "contentVersion": 1
+    },
+    {
+      "id": "behavioural-les-4",
+      "trackId": "behavioural",
+      "moduleId": "behavioural-mod-2",
+      "sequence": 4,
+      "title": "Does This Pattern Hold?",
+      "objectives": [
+        "Use consistency, distinctiveness and consensus to weigh a dispositional explanation against a situational one.",
+        "Recognise when only one of the three checks has been run, and why that's not enough on its own.",
+        "Name what remains uncertain even after running all three checks."
+      ],
+      "concepts": [
+        "consistency_consensus_distinctiveness",
+        "evidence_based_inference"
+      ],
+      "prerequisites": [
+        "behavioural-les-3"
+      ],
+      "interactiveItemIds": [
+        "i.beh.pattern-001",
+        "i.beh.pattern-002",
+        "i.beh.pattern-003",
+        "i.beh.les-4.explain"
+      ],
+      "masteryItemIds": [
+        "i.beh.pattern-010",
+        "i.beh.pattern-011"
+      ],
+      "explanationBackItemId": "i.beh.les-4.explain",
+      "teach": [
+        "Before explaining someone's behaviour, three questions sharpen the picture. Consistency: does this person behave this way in this situation most of the time, or was this a one-off? Distinctiveness: do they behave this way only in this kind of situation, or everywhere? Consensus: would most people behave this way in this situation, or is this person unusual? Together these are often called the covariation approach to reading behaviour.",
+        "Jumping straight to \"that's just how they are\" without checking any of the three. A trait explanation can feel obvious in the moment, but consistency, distinctiveness and consensus are what actually tell you whether disposition or situation is doing the work — skipping them means guessing with confidence you haven't earned.",
+        "Low consistency (a one-off), high distinctiveness (only in this specific situation), and high consensus (most people would react this way) together point toward the situation, not the person. High consistency, low distinctiveness (happens everywhere), and low consensus (most people wouldn't) together point toward the person.",
+        "Treating one of the three questions as enough on its own. A single \"yes\" to consistency doesn't settle it — distinctiveness and consensus can still point the other way, and all three need to be weighed together, not picked from selectively."
+      ],
+      "example": "A team member snaps at a colleague in a meeting. Consistency: this is the third time this month the same colleague has triggered a sharp response from them (high). Distinctiveness: they're calm and easygoing with everyone else on the team (high — only this one colleague). Consensus: no one else on the team reacts sharply to that colleague (low). High consistency plus high distinctiveness plus low consensus points toward something specific between these two people, not a general short temper.",
+      "practicePrompts": [
+        "Think of a behaviour you've recently explained with a trait (\"they're just like that\").",
+        "Ask: does this person act this way in this situation most of the time (consistency)?",
+        "Ask: do they act this way only in this kind of situation, or everywhere (distinctiveness)?"
+      ],
+      "apply": "Next time you catch yourself explaining someone's behaviour with a trait, run the three checks — consistency, distinctiveness, consensus — before deciding whether it's really about them or about the situation.",
+      "reflect": "Think of a time you explained someone's behaviour with \"that's just who they are.\" Would consistency, distinctiveness and consensus have pointed the same way, or somewhere else?",
+      "contentVersion": 1
+    },
+    {
+      "id": "behavioural-les-5",
+      "trackId": "behavioural",
+      "moduleId": "behavioural-mod-2",
+      "sequence": 5,
+      "title": "How Common Is This, Really?",
+      "objectives": [
+        "Explain what a base rate is and why it matters when judging a single instance of behaviour.",
+        "Recognise when a vivid specific case is being allowed to override a known or estimable base rate.",
+        "Use a rough base-rate estimate to judge how much one instance should update a conclusion."
+      ],
+      "concepts": [
+        "base_rate_neglect",
+        "generating_alternative_explanations"
+      ],
+      "prerequisites": [
+        "behavioural-les-4"
+      ],
+      "interactiveItemIds": [
+        "i.beh.base-001",
+        "i.beh.base-002",
+        "i.beh.base-003",
+        "i.beh.les-5.explain"
+      ],
+      "masteryItemIds": [
+        "i.beh.base-010",
+        "i.beh.base-011"
+      ],
+      "explanationBackItemId": "i.beh.les-5.explain",
+      "teach": [
+        "A base rate is how common something is in general, before you look at any specific case. When you're trying to explain one instance of behaviour, the base rate tells you how surprising that instance actually is — a behaviour that's common in general needs less special explanation than one that's rare.",
+        "Ignoring the base rate because a specific, vivid detail feels more persuasive. A striking individual case can feel like it overrides the general pattern, but the base rate doesn't stop applying just because one example feels compelling — if anything, vivid cases are often what make people forget to check it.",
+        "Ignoring the base rate in favour of specific details is sometimes called base-rate neglect. It tends to produce more confident conclusions than the evidence actually supports, because a single vivid case is treated as if it were representative, when it might be the rare exception the base rate warns you about.",
+        "Assuming that because you don't know the exact base rate, it doesn't matter. Even a rough estimate of how common something generally is — rather than ignoring the question entirely — narrows down which explanations are more or less likely."
+      ],
+      "example": "A new hire makes a mistake in their first week and a colleague says, \"they're clearly not cut out for this.\" If most new hires make at least one mistake in their first week — a high base rate for \"new hire makes an early mistake\" — this one instance is weak evidence of anything specific about this person. Only if early mistakes were rare in general would this particular case stand out as needing a special explanation.",
+      "practicePrompts": [
+        "Think of a recent case where you judged someone from one instance of behaviour.",
+        "Ask: roughly how common is that behaviour among people in that situation generally?",
+        "If it's common, does this one instance really say much about this specific person?"
+      ],
+      "apply": "Before concluding something from a single case, ask how common that kind of case generally is — and let that shape how much weight you put on this one instance.",
+      "reflect": "Where have you let one striking case overshadow how common that kind of thing actually is in general?",
+      "contentVersion": 1
+    },
+    {
+      "id": "behavioural-les-6",
+      "trackId": "behavioural",
+      "moduleId": "behavioural-mod-2",
+      "sequence": 6,
+      "title": "Don't Mistake Drift for an Effect",
+      "objectives": [
+        "Explain regression to the mean and why it follows unusually extreme performances.",
+        "Recognise when a change is being credited to an intervention that regression to the mean would predict anyway.",
+        "Distinguish a genuine effect from ordinary drift back toward a typical level."
+      ],
+      "concepts": [
+        "regression_to_the_mean",
+        "evidence_based_inference"
+      ],
+      "prerequisites": [
+        "behavioural-les-5"
+      ],
+      "interactiveItemIds": [
+        "i.beh.regr-001",
+        "i.beh.regr-002",
+        "i.beh.regr-003",
+        "i.beh.les-6.explain"
+      ],
+      "masteryItemIds": [
+        "i.beh.regr-010",
+        "i.beh.regr-011"
+      ],
+      "explanationBackItemId": "i.beh.les-6.explain",
+      "teach": [
+        "An unusually good or unusually bad performance tends to be followed by one closer to average, just from the ordinary ups and downs of performance — not because anything changed. This natural drift back toward the typical level is called regression to the mean.",
+        "Crediting whatever happened right after an extreme performance — praise, criticism, a new routine — as the cause of the improvement or decline that followed. If the change would likely have happened anyway, from drift alone, attributing it to your intervention overstates what that intervention actually did.",
+        "Regression to the mean is strongest right after the most extreme performances, since those are the ones with the most room to drift back toward average. A performance that was only mildly above or below typical has much less regression to show.",
+        "Concluding that because regression to the mean is possible, no intervention ever has a real effect. The point isn't that nothing works — it's that an improvement following an extreme result needs more than \"it followed an extreme result\" as evidence before you credit whatever you did in between."
+      ],
+      "example": "A manager praises a salesperson after an unusually strong month, and the next month's numbers are more typical. The manager concludes the praise \"went to their head\" and backfired. An equally likely explanation: an unusually strong month was always likely to be followed by a more ordinary one, with or without the praise — regression to the mean, not an effect of the praise at all.",
+      "practicePrompts": [
+        "Think of a time an extreme result was followed by a more typical one.",
+        "Was there something — praise, a change, an intervention — that happened in between?",
+        "Could the more typical result have happened anyway, just from ordinary drift?"
+      ],
+      "apply": "Next time an extreme result is followed by a more typical one, check whether regression to the mean alone could explain the change before crediting whatever happened in between.",
+      "reflect": "Where have you, or someone else, credited an intervention for a change that might have just been regression to the mean?",
+      "contentVersion": 1
+    },
+    {
+      "id": "behavioural-les-7",
+      "trackId": "behavioural",
+      "moduleId": "behavioural-mod-2",
+      "sequence": 7,
+      "title": "One Instance Isn't a Pattern Yet",
+      "objectives": [
+        "Explain why a pattern seen in only a few instances is less reliable than it feels.",
+        "Recognise when a small-sample pattern is being treated with the confidence of a large one.",
+        "Match confidence in a generalisation to how many instances it's actually based on."
+      ],
+      "concepts": [
+        "small_sample_generalisation",
+        "attribution"
+      ],
+      "prerequisites": [
+        "behavioural-les-6"
+      ],
+      "interactiveItemIds": [
+        "i.beh.small-001",
+        "i.beh.small-002",
+        "i.beh.small-003",
+        "i.beh.les-7.explain"
+      ],
+      "masteryItemIds": [
+        "i.beh.small-010",
+        "i.beh.small-011"
+      ],
+      "explanationBackItemId": "i.beh.les-7.explain",
+      "teach": [
+        "A pattern seen across only a few instances is much less reliable than it feels. Small samples are more likely to show an extreme or lopsided result purely by chance, even when the underlying tendency is actually close to average.",
+        "Treating a pattern from two or three instances with the same confidence you'd give a pattern seen across many. The feeling of \"I've seen this happen before\" doesn't track how many times is actually enough to rule out chance.",
+        "More observations, across more varied situations, make a pattern more trustworthy. This doesn't mean waiting indefinitely before drawing any conclusion — it means matching your confidence to how many instances you've actually seen, and staying open to revising as more come in.",
+        "Assuming that because a small sample isn't fully reliable, gathering more evidence is pointless. More instances genuinely do narrow things down — the error is treating too few of them as if they'd already settled the question."
+      ],
+      "example": "A friend is late twice in a row and gets labelled \"always late.\" Two instances is a small sample — not nearly enough to rule out two unrelated, one-off causes. A pattern across ten occasions, in different circumstances, would be far harder to explain any other way.",
+      "practicePrompts": [
+        "Think of a general conclusion you've drawn about someone (\"they're always...\", \"they never...\").",
+        "Count how many actual instances that conclusion is based on.",
+        "If it's two or three, what's one other explanation that would still fit that small a sample?"
+      ],
+      "apply": "Before generalising from a pattern, count how many instances it's actually based on — and treat two or three as a reason for caution, not confidence.",
+      "reflect": "Where have you generalised about someone from fewer instances than you'd want to admit?",
+      "contentVersion": 1
     }
   ],
   "concepts": [
@@ -157,6 +350,30 @@
       "trackId": "behavioural",
       "moduleId": "behavioural-mod-1",
       "label": "Generating Alternative Explanations"
+    },
+    {
+      "id": "consistency_consensus_distinctiveness",
+      "trackId": "behavioural",
+      "moduleId": "behavioural-mod-2",
+      "label": "Consistency, Distinctiveness, and Consensus"
+    },
+    {
+      "id": "base_rate_neglect",
+      "trackId": "behavioural",
+      "moduleId": "behavioural-mod-2",
+      "label": "Base Rates"
+    },
+    {
+      "id": "regression_to_the_mean",
+      "trackId": "behavioural",
+      "moduleId": "behavioural-mod-2",
+      "label": "Regression to the Mean"
+    },
+    {
+      "id": "small_sample_generalisation",
+      "trackId": "behavioural",
+      "moduleId": "behavioural-mod-2",
+      "label": "Small-Sample Generalisation"
     }
   ],
   "misconceptions": [
@@ -195,6 +412,30 @@
       "trackId": "behavioural",
       "label": "Ignoring alternative explanations",
       "description": "Settling on one explanation for behaviour without having generated or considered any plausible alternative."
+    },
+    {
+      "id": "behavioural-skipping_covariation_check",
+      "trackId": "behavioural",
+      "label": "Skipping the covariation check",
+      "description": "Explaining behaviour with a trait without checking consistency, distinctiveness or consensus first."
+    },
+    {
+      "id": "behavioural-ignoring_base_rate",
+      "trackId": "behavioural",
+      "label": "Ignoring the base rate",
+      "description": "Letting a vivid specific case override how common that kind of case generally is."
+    },
+    {
+      "id": "behavioural-regression_misattributed_as_effect",
+      "trackId": "behavioural",
+      "label": "Regression misattributed as an effect",
+      "description": "Crediting an intervention for a change that ordinary regression to the mean would predict anyway."
+    },
+    {
+      "id": "behavioural-small_sample_overconfidence",
+      "trackId": "behavioural",
+      "label": "Small-sample overconfidence",
+      "description": "Treating a pattern seen in only a few instances as if it were as reliable as one seen across many."
     }
   ]
 }

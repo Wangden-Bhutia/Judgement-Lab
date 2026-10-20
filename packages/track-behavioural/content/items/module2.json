@@ -1,0 +1,590 @@
+[
+  {
+    "id": "i.beh.pattern-001",
+    "concept": "consistency_consensus_distinctiveness",
+    "type": "reason_choice",
+    "prompt": "A delivery driver is short-tempered with a particular receptionist at one building on their route. With every other receptionist on the route, and with that same receptionist's colleagues, the driver is relaxed and friendly.",
+    "options": [
+      {
+        "id": "A",
+        "text": "The driver has a short temper — that's just their personality.",
+        "misconception": "behavioural-skipping_covariation_check"
+      },
+      {
+        "id": "B",
+        "text": "The pattern is specific to this one receptionist (high distinctiveness), not general across people or places — something about that particular relationship likely explains it, not a trait.",
+        "conceptTag": "consistency_consensus_distinctiveness"
+      },
+      {
+        "id": "C",
+        "text": "The driver is having a stressful week, which explains the short temper.",
+        "misconception": "behavioural-premature_motive_attribution"
+      }
+    ],
+    "acceptableAnswers": [
+      "B"
+    ],
+    "explanation": "High distinctiveness (short-tempered with this one person, not others) points away from a general trait and toward something specific to that relationship or situation."
+  },
+  {
+    "id": "i.beh.pattern-002",
+    "concept": "consistency_consensus_distinctiveness",
+    "type": "reason_choice",
+    "prompt": "A student falls silent and stops participating the moment a particular topic comes up in class. Several other students in the class go quiet during that same topic too. The student is talkative on every other topic.",
+    "options": [
+      {
+        "id": "A",
+        "text": "High consensus (other students react the same way) and high distinctiveness (only this topic) both point toward something about the topic or situation, not the student's general personality.",
+        "conceptTag": "consistency_consensus_distinctiveness"
+      },
+      {
+        "id": "B",
+        "text": "The student is shy — that explains the silence.",
+        "misconception": "behavioural-skipping_covariation_check"
+      },
+      {
+        "id": "C",
+        "text": "Since the silence keeps happening with this topic, it must be a fixed personality trait.",
+        "misconception": "behavioural-overgeneralising_from_one_incident"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "High consensus and high distinctiveness together point toward the situation (the topic) rather than a trait of this one student — several people, including this student, react the same way only to this one trigger."
+  },
+  {
+    "id": "i.beh.pattern-003",
+    "concept": "consistency_consensus_distinctiveness",
+    "type": "reason_choice",
+    "prompt": "A colleague arrives late to a 9am meeting. You check and find this is the first time they've been late in six months of regular meetings. You haven't checked whether they're late in other contexts, or whether anyone else was late today.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Low consistency alone (a one-off) is enough to conclude it's purely situational — no need to check anything else.",
+        "misconception": "behavioural-skipping_covariation_check"
+      },
+      {
+        "id": "B",
+        "text": "Low consistency rules out a general lateness trait for this meeting, but distinctiveness and consensus haven't been checked yet, so it's still unclear whether this was about today's specific circumstances or something else.",
+        "conceptTag": "evidence_based_inference"
+      },
+      {
+        "id": "C",
+        "text": "One late arrival in six months still means they're unreliable.",
+        "misconception": "behavioural-overgeneralising_from_one_incident"
+      }
+    ],
+    "acceptableAnswers": [
+      "B"
+    ],
+    "explanation": "Low consistency is informative on its own, but consistency, distinctiveness and consensus work together — checking only one of the three leaves real uncertainty about what's actually going on."
+  },
+  {
+    "id": "i.beh.les-4.explain",
+    "concept": "consistency_consensus_distinctiveness",
+    "type": "own_words",
+    "prompt": "In your own words, explain consistency, distinctiveness and consensus, and why checking only one of them isn't enough to explain someone's behaviour.",
+    "modelAnswer": "I defined consistency, distinctiveness and consensus in my own words. I explained what it means when all three point the same way versus different ways. I explained why relying on just one of the three can be misleading.",
+    "rubric": [
+      "I defined consistency, distinctiveness and consensus in my own words.",
+      "I explained what it means when all three point the same way versus different ways.",
+      "I explained why relying on just one of the three can be misleading."
+    ]
+  },
+  {
+    "id": "i.beh.pattern-010",
+    "concept": "consistency_consensus_distinctiveness",
+    "type": "reason_choice",
+    "prompt": "A manager is unusually harsh in feedback to one employee. The manager is measured and calm with every other employee, including on this same employee's team. Other managers in the company are not harsh with this employee.",
+    "options": [
+      {
+        "id": "A",
+        "text": "High distinctiveness (only this one employee) and low consensus (other managers aren't harsh with them either) together point toward something specific to this manager-employee pair, not a trait of either person alone.",
+        "conceptTag": "consistency_consensus_distinctiveness"
+      },
+      {
+        "id": "B",
+        "text": "The manager is a harsh person in general.",
+        "misconception": "behavioural-skipping_covariation_check"
+      },
+      {
+        "id": "C",
+        "text": "The employee must be doing something wrong, since other managers would react the same way eventually.",
+        "misconception": "behavioural-premature_motive_attribution"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "High distinctiveness and low consensus together point toward something specific to this particular pair, not a general trait of the manager or the employee."
+  },
+  {
+    "id": "i.beh.pattern-011",
+    "concept": "evidence_based_inference",
+    "type": "reason_choice",
+    "prompt": "You've established high consistency, high distinctiveness and low consensus for a colleague's sharp tone toward one specific teammate.",
+    "options": [
+      {
+        "id": "A",
+        "text": "The three checks point toward something specific between these two people, but what that something actually is — a past conflict, a personality clash, a misunderstanding — still isn't established by the covariation pattern alone.",
+        "conceptTag": "evidence_based_inference"
+      },
+      {
+        "id": "B",
+        "text": "Since consistency is high, the colleague is simply a harsh person.",
+        "misconception": "behavioural-skipping_covariation_check"
+      },
+      {
+        "id": "C",
+        "text": "The pattern is now fully explained — nothing more needs to be worked out.",
+        "misconception": "behavioural-ignoring_alternative_explanations"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "The covariation pattern narrows down where to look — toward this specific relationship — but it doesn't by itself reveal the actual cause. Several different specific explanations could still fit the same pattern."
+  },
+  {
+    "id": "i.beh.base-001",
+    "concept": "base_rate_neglect",
+    "type": "reason_choice",
+    "prompt": "A customer leaves a scathing online review of a restaurant after one bad visit. A friend says, \"that settles it, the place must be terrible.\" The restaurant has thousands of reviews, and the vast majority are positive.",
+    "options": [
+      {
+        "id": "A",
+        "text": "One vivid negative review is dramatic, but it needs to be weighed against the base rate — how the restaurant does across its many other reviews — not treated as if it settles anything alone.",
+        "conceptTag": "base_rate_neglect"
+      },
+      {
+        "id": "B",
+        "text": "A review that detailed and emotional must be accurate.",
+        "misconception": "behavioural-ignoring_base_rate"
+      },
+      {
+        "id": "C",
+        "text": "The restaurant should be avoided based on this review.",
+        "misconception": "behavioural-ignoring_base_rate"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "A single vivid case, however persuasive it feels, needs to be weighed against the general base rate — how things typically go — not treated as if it overrides that base rate on its own."
+  },
+  {
+    "id": "i.beh.base-002",
+    "concept": "base_rate_neglect",
+    "type": "reason_choice",
+    "prompt": "A hiring manager hears a dramatic story about a candidate's one mistake at a previous job and leans toward rejecting them. They haven't asked how common that kind of mistake is for people at that stage of their career.",
+    "options": [
+      {
+        "id": "A",
+        "text": "The dramatic story is reason enough on its own to reject the candidate.",
+        "misconception": "behavioural-ignoring_base_rate"
+      },
+      {
+        "id": "B",
+        "text": "If that kind of mistake is common at that career stage — a high base rate — this one instance says less about the candidate specifically than the story makes it feel.",
+        "conceptTag": "base_rate_neglect"
+      },
+      {
+        "id": "C",
+        "text": "One mistake, however common, always reveals something fixed about a person's ability.",
+        "misconception": "behavioural-overgeneralising_from_one_incident"
+      }
+    ],
+    "acceptableAnswers": [
+      "B"
+    ],
+    "explanation": "Checking how common that kind of mistake generally is — the base rate — shows how much weight this one vivid story actually deserves."
+  },
+  {
+    "id": "i.beh.base-003",
+    "concept": "base_rate_neglect",
+    "type": "reason_choice",
+    "prompt": "You don't know the exact statistics, but you're trying to judge whether a colleague's missed deadline says something specific about them.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Without an exact number, the base rate can't be used at all, so it's fine to ignore it.",
+        "misconception": "behavioural-ignoring_base_rate"
+      },
+      {
+        "id": "B",
+        "text": "Even a rough sense of how often people in that role miss that kind of deadline narrows down how surprising this instance really is — an exact figure isn't required to make use of the idea.",
+        "conceptTag": "base_rate_neglect"
+      },
+      {
+        "id": "C",
+        "text": "Since deadlines are sometimes missed by everyone, this particular miss never means anything.",
+        "misconception": "behavioural-ignoring_alternative_explanations"
+      }
+    ],
+    "acceptableAnswers": [
+      "B"
+    ],
+    "explanation": "A rough estimate of the base rate is still useful — it doesn't have to be precise to meaningfully narrow down how much one instance should update your view."
+  },
+  {
+    "id": "i.beh.les-5.explain",
+    "concept": "base_rate_neglect",
+    "type": "own_words",
+    "prompt": "In your own words, explain what a base rate is and how ignoring it can make a single vivid case seem more meaningful than it is.",
+    "modelAnswer": "I defined a base rate in my own words. I explained how a vivid specific case can make people forget to check the base rate. I gave an example where checking the base rate changes how much weight a single instance deserves.",
+    "rubric": [
+      "I defined a base rate in my own words.",
+      "I explained how a vivid specific case can make people forget to check the base rate.",
+      "I gave an example where checking the base rate changes how much weight a single instance deserves."
+    ]
+  },
+  {
+    "id": "i.beh.base-010",
+    "concept": "base_rate_neglect",
+    "type": "reason_choice",
+    "prompt": "News coverage of a rare but dramatic event makes a colleague worried it's common. You happen to know this type of event is, in fact, very rare in general.",
+    "options": [
+      {
+        "id": "A",
+        "text": "If the news covered it, it must be happening often.",
+        "misconception": "behavioural-ignoring_base_rate"
+      },
+      {
+        "id": "B",
+        "text": "Dramatic coverage doesn't change the actual base rate — a vivid, widely-reported event can still be rare in general, and the coverage itself doesn't tell you how common it really is.",
+        "conceptTag": "base_rate_neglect"
+      },
+      {
+        "id": "C",
+        "text": "Since it happened once, it will probably happen again soon.",
+        "misconception": "behavioural-overgeneralising_from_one_incident"
+      }
+    ],
+    "acceptableAnswers": [
+      "B"
+    ],
+    "explanation": "How much coverage or attention an event gets doesn't change its actual base rate — a rare event can still get vivid, memorable coverage without becoming common."
+  },
+  {
+    "id": "i.beh.base-011",
+    "concept": "generating_alternative_explanations",
+    "type": "reason_choice",
+    "prompt": "You've established that a certain kind of mistake is common among people at a given career stage — a high base rate. A specific colleague at that stage makes exactly that kind of mistake.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Since the base rate is high, there's nothing left to explain about this specific instance.",
+        "misconception": "behavioural-ignoring_alternative_explanations"
+      },
+      {
+        "id": "B",
+        "text": "The high base rate means this instance alone isn't strong evidence of something specific to this colleague — but it doesn't rule out that something specific could still be going on, worth considering alongside the base rate.",
+        "conceptTag": "generating_alternative_explanations"
+      },
+      {
+        "id": "C",
+        "text": "A high base rate means this colleague definitely isn't struggling with anything in particular.",
+        "misconception": "behavioural-ignoring_base_rate"
+      }
+    ],
+    "acceptableAnswers": [
+      "B"
+    ],
+    "explanation": "A high base rate lowers how much one instance should surprise you, but it doesn't close off other explanations entirely — it just means you need more than this one instance before concluding something specific."
+  },
+  {
+    "id": "i.beh.regr-001",
+    "concept": "regression_to_the_mean",
+    "type": "reason_choice",
+    "prompt": "A student scores unusually low on a test, after which a tutor starts extra sessions with them. Their next test score is closer to their usual average. The tutor concludes the extra sessions worked.",
+    "options": [
+      {
+        "id": "A",
+        "text": "The improvement is clearly caused by the extra sessions.",
+        "misconception": "behavioural-regression_misattributed_as_effect"
+      },
+      {
+        "id": "B",
+        "text": "An unusually low score was likely to be followed by a more typical one anyway, from ordinary regression to the mean — the sessions might have helped, but this pattern alone doesn't establish that.",
+        "conceptTag": "regression_to_the_mean"
+      },
+      {
+        "id": "C",
+        "text": "Since the student improved, the original low score must have been a fluke with no real cause.",
+        "misconception": "behavioural-ignoring_alternative_explanations"
+      }
+    ],
+    "acceptableAnswers": [
+      "B"
+    ],
+    "explanation": "An unusually low score sits far from the student's typical level, so regression to the mean predicts the next score would likely be closer to average regardless of the extra sessions."
+  },
+  {
+    "id": "i.beh.regr-002",
+    "concept": "regression_to_the_mean",
+    "type": "reason_choice",
+    "prompt": "A sales team's worst-performing member is given a stern warning after an unusually bad month. The next month, their numbers improve. Their manager credits the warning.",
+    "options": [
+      {
+        "id": "A",
+        "text": "The warning clearly worked — the improvement proves it.",
+        "misconception": "behavioural-regression_misattributed_as_effect"
+      },
+      {
+        "id": "B",
+        "text": "The warning definitely had no effect at all.",
+        "misconception": "behavioural-regression_misattributed_as_effect"
+      },
+      {
+        "id": "C",
+        "text": "An unusually bad month was already likely to be followed by a more typical one — the improvement is consistent with regression to the mean alone, so the warning's effect, if any, isn't established by this pattern.",
+        "conceptTag": "regression_to_the_mean"
+      }
+    ],
+    "acceptableAnswers": [
+      "C"
+    ],
+    "explanation": "Both crediting the warning and declaring it definitely useless go beyond what this one pattern shows — an unusually bad month drifting back toward typical is exactly what regression to the mean predicts on its own."
+  },
+  {
+    "id": "i.beh.regr-003",
+    "concept": "regression_to_the_mean",
+    "type": "reason_choice",
+    "prompt": "A performer has a mildly below-average show, not a dramatically bad one. Their next show is close to their usual level, same as this one was.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Since the second show wasn't a big jump back to average, regression to the mean is less relevant here than in a case of a dramatically extreme first show.",
+        "conceptTag": "regression_to_the_mean"
+      },
+      {
+        "id": "B",
+        "text": "Regression to the mean applies exactly the same amount no matter how extreme the first performance was.",
+        "misconception": "behavioural-regression_misattributed_as_effect"
+      },
+      {
+        "id": "C",
+        "text": "A mildly below-average show always means the performer is declining.",
+        "misconception": "behavioural-overgeneralising_from_one_incident"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Regression to the mean is strongest after the most extreme results, which have the most room to drift back toward average — a mildly below-average result has much less of that drift to show."
+  },
+  {
+    "id": "i.beh.les-6.explain",
+    "concept": "regression_to_the_mean",
+    "type": "own_words",
+    "prompt": "In your own words, explain regression to the mean and why it can be mistaken for the effect of something that happened in between two extreme results.",
+    "modelAnswer": "I defined regression to the mean in my own words. I explained why it's strongest after the most extreme results. I gave an example where crediting an intervention for a change could really just be regression to the mean.",
+    "rubric": [
+      "I defined regression to the mean in my own words.",
+      "I explained why it's strongest after the most extreme results.",
+      "I gave an example where crediting an intervention for a change could really just be regression to the mean."
+    ]
+  },
+  {
+    "id": "i.beh.regr-010",
+    "concept": "regression_to_the_mean",
+    "type": "reason_choice",
+    "prompt": "A player on a sports team has their worst game of the season. Their coach benches them for one practice as punishment. In the next game, they play close to their usual level. The coach says the punishment worked.",
+    "options": [
+      {
+        "id": "A",
+        "text": "The punishment clearly fixed the problem.",
+        "misconception": "behavioural-regression_misattributed_as_effect"
+      },
+      {
+        "id": "B",
+        "text": "An unusually bad game sitting far from their typical performance was likely to be followed by something closer to typical anyway — the punishment's actual effect, if any, isn't shown by this pattern alone.",
+        "conceptTag": "regression_to_the_mean"
+      },
+      {
+        "id": "C",
+        "text": "The player was never actually having a bad game — the coach misjudged it.",
+        "misconception": "behavioural-ignoring_alternative_explanations"
+      }
+    ],
+    "acceptableAnswers": [
+      "B"
+    ],
+    "explanation": "The player returning to their typical level after an unusually bad game is exactly what regression to the mean predicts, independent of whatever happened in between."
+  },
+  {
+    "id": "i.beh.regr-011",
+    "concept": "evidence_based_inference",
+    "type": "reason_choice",
+    "prompt": "You suspect a change in someone's performance might be regression to the mean rather than a real effect of something that happened in between.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Checking whether the same drift-back-to-average pattern shows up even without the intervention present — for others, or at other times — would help tell regression apart from a genuine effect.",
+        "conceptTag": "evidence_based_inference"
+      },
+      {
+        "id": "B",
+        "text": "There's no way to ever tell the two apart, so the question isn't worth asking.",
+        "misconception": "behavioural-ignoring_alternative_explanations"
+      },
+      {
+        "id": "C",
+        "text": "If the performance improved at all, that alone proves the intervention worked.",
+        "misconception": "behavioural-regression_misattributed_as_effect"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Comparing cases with and without the intervention — or checking whether the same drift happens generally after extreme results — is the kind of evidence that can actually distinguish regression to the mean from a real effect."
+  },
+  {
+    "id": "i.beh.small-001",
+    "concept": "small_sample_generalisation",
+    "type": "reason_choice",
+    "prompt": "A manager concludes a new process \"doesn't work\" after trying it with two team members, both of whom had a rough week.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Two instances is a small sample — more than enough unrelated, one-off explanations could fit two rough weeks, so the process can't be confidently judged from this alone.",
+        "conceptTag": "small_sample_generalisation"
+      },
+      {
+        "id": "B",
+        "text": "Two team members having trouble is a clear, reliable signal the process is flawed.",
+        "misconception": "behavioural-small_sample_overconfidence"
+      },
+      {
+        "id": "C",
+        "text": "The process should be scrapped immediately based on this result.",
+        "misconception": "behavioural-small_sample_overconfidence"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "A sample of two is small enough that an unrelated, one-off cause for each rough week is at least as plausible as a real problem with the process itself."
+  },
+  {
+    "id": "i.beh.small-002",
+    "concept": "small_sample_generalisation",
+    "type": "reason_choice",
+    "prompt": "A reviewer tries a product once and it fails, and concludes the product is \"unreliable.\" A friend points out that across hundreds of other reviews, failures are rare.",
+    "options": [
+      {
+        "id": "A",
+        "text": "One failure is already a reliable sample size to judge the product by.",
+        "misconception": "behavioural-small_sample_overconfidence"
+      },
+      {
+        "id": "B",
+        "text": "A single instance is a very small sample, and small samples are more likely to produce an extreme result by chance — the larger set of reviews is more informative about how reliable the product generally is.",
+        "conceptTag": "small_sample_generalisation"
+      },
+      {
+        "id": "C",
+        "text": "The hundreds of other reviews must be fake, since they contradict this one experience.",
+        "misconception": "behavioural-ignoring_base_rate"
+      }
+    ],
+    "acceptableAnswers": [
+      "B"
+    ],
+    "explanation": "A sample of one is especially prone to showing an extreme, unrepresentative result purely by chance — the much larger set of other reviews gives a far more reliable picture."
+  },
+  {
+    "id": "i.beh.small-003",
+    "concept": "small_sample_generalisation",
+    "type": "reason_choice",
+    "prompt": "You've only seen a colleague handle two difficult client calls, and both went smoothly. You're deciding how confident to be that they're generally good at handling difficult calls.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Two smooth calls is already enough to be fully confident they're generally skilled at this.",
+        "misconception": "behavioural-small_sample_overconfidence"
+      },
+      {
+        "id": "B",
+        "text": "Two instances is a reasonable start, but confidence should stay modest until more calls, across more varied situations, have been observed.",
+        "conceptTag": "small_sample_generalisation"
+      },
+      {
+        "id": "C",
+        "text": "Since it's only two calls, nothing at all can be concluded, and it's not worth watching for more.",
+        "misconception": "behavioural-ignoring_alternative_explanations"
+      }
+    ],
+    "acceptableAnswers": [
+      "B"
+    ],
+    "explanation": "Two instances are worth noting, but matching confidence to sample size means staying modest until more, and more varied, instances have been seen — not treating two as settled, and not dismissing them as worthless either."
+  },
+  {
+    "id": "i.beh.les-7.explain",
+    "concept": "small_sample_generalisation",
+    "type": "own_words",
+    "prompt": "In your own words, explain why a pattern seen in only a few instances is less reliable than it feels, and what would make it more trustworthy.",
+    "modelAnswer": "I explained why small samples are more likely to show an extreme result by chance. I explained what matching confidence to sample size means in practice. I said what would make the pattern more trustworthy (more instances, more varied situations).",
+    "rubric": [
+      "I explained why small samples are more likely to show an extreme result by chance.",
+      "I explained what matching confidence to sample size means in practice.",
+      "I said what would make the pattern more trustworthy (more instances, more varied situations)."
+    ]
+  },
+  {
+    "id": "i.beh.small-010",
+    "concept": "small_sample_generalisation",
+    "type": "reason_choice",
+    "prompt": "A friend is late to two out of the last two get-togethers and gets labelled \"always late\" by the group.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Two instances is a small sample — at least one other explanation (two unrelated one-off causes) fits just as easily as a general lateness pattern.",
+        "conceptTag": "small_sample_generalisation"
+      },
+      {
+        "id": "B",
+        "text": "Two out of two is a perfect record, so the label is clearly justified.",
+        "misconception": "behavioural-small_sample_overconfidence"
+      },
+      {
+        "id": "C",
+        "text": "The friend is inconsiderate — that's why they're late.",
+        "misconception": "behavioural-premature_motive_attribution"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Two instances, however consistent they look, remain a small sample — a general lateness pattern and two coincidental one-off delays are both still plausible explanations."
+  },
+  {
+    "id": "i.beh.small-011",
+    "concept": "attribution",
+    "type": "reason_choice",
+    "prompt": "You're now looking at ten occasions, across clearly different circumstances, where the same friend was late.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ten occasions across varied circumstances is still just as small a sample as two, so no more confident a conclusion is warranted.",
+        "misconception": "behavioural-small_sample_overconfidence"
+      },
+      {
+        "id": "B",
+        "text": "A pattern this size, across this much variety in circumstance, is harder to explain with situational one-offs alone, and starts to support a dispositional explanation — in contrast to the two-instance case.",
+        "conceptTag": "attribution"
+      },
+      {
+        "id": "C",
+        "text": "Ten occasions still isn't enough — nothing short of tracking every single instance forever would justify any conclusion.",
+        "misconception": "behavioural-ignoring_alternative_explanations"
+      }
+    ],
+    "acceptableAnswers": [
+      "B"
+    ],
+    "explanation": "A larger, more varied sample is harder to explain away with one-off situational causes, which is what makes a dispositional explanation more supportable here than with the earlier two-instance case."
+  }
+]
