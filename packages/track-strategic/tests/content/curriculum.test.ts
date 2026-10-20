@@ -4,26 +4,52 @@ import curriculum from '../../content/curriculum.json' with { type: 'json' };
 import module1Items from '../../content/items/module1.json' with { type: 'json' };
 import module2Items from '../../content/items/module2.json' with { type: 'json' };
 import module3Items from '../../content/items/module3.json' with { type: 'json' };
+import module4Items from '../../content/items/module4.json' with { type: 'json' };
 
 const typedCurriculum = curriculum as Curriculum;
-const typedItems: Item[] = [...(module1Items as Item[]), ...(module2Items as Item[]), ...(module3Items as Item[])];
+const typedItems: Item[] = [
+  ...(module1Items as Item[]),
+  ...(module2Items as Item[]),
+  ...(module3Items as Item[]),
+  ...(module4Items as Item[]),
+];
 const itemById = new Map(typedItems.map((i) => [i.id, i]));
 
-describe('converted Strategic Reasoning content (Modules 1-3)', () => {
+describe('converted Strategic Reasoning content (Modules 1-4)', () => {
   it('validates against the shared content schema', () => {
     const result = validateContent(typedCurriculum, typedItems);
     expect(result.errors).toEqual([]);
     expect(result.valid).toBe(true);
   });
 
-  it('has 3 modules and 12 lessons, in order, under one track', () => {
+  it('has 4 modules and 16 lessons, in order, under one track', () => {
     expect(typedCurriculum.tracks.map((t) => t.id)).toEqual(['strategic']);
-    expect(typedCurriculum.modules.map((m) => m.id)).toEqual(['strategic-m1', 'strategic-m2', 'strategic-m3']);
+    expect(typedCurriculum.modules.map((m) => m.id)).toEqual([
+      'strategic-m1', 'strategic-m2', 'strategic-m3', 'strategic-m4',
+    ]);
     expect(typedCurriculum.lessons.map((l) => l.id)).toEqual([
       'strategic-m1.l1', 'strategic-m1.l2', 'strategic-m1.l3', 'strategic-m1.l4',
       'strategic-m2.l1', 'strategic-m2.l2', 'strategic-m2.l3',
       'strategic-m3.l1', 'strategic-m3.l2', 'strategic-m3.l3', 'strategic-m3.l4', 'strategic-m3.l5',
+      'strategic-m4.l1', 'strategic-m4.l2', 'strategic-m4.l3', 'strategic-m4.l4',
     ]);
+  });
+
+  it('module 4 chains linearly off the end of module 3', () => {
+    const byId = new Map(typedCurriculum.lessons.map((l) => [l.id, l]));
+    expect(byId.get('strategic-m4.l1')!.prerequisites).toEqual(['strategic-m3.l5']);
+    expect(byId.get('strategic-m4.l2')!.prerequisites).toEqual(['strategic-m4.l1']);
+    expect(byId.get('strategic-m4.l3')!.prerequisites).toEqual(['strategic-m4.l2']);
+    expect(byId.get('strategic-m4.l4')!.prerequisites).toEqual(['strategic-m4.l3']);
+  });
+
+  it("equilibrium builds on best_response: an equilibrium item's distractor is tagged as an incomplete best-response comparison, not a fresh misconception", () => {
+    const item = itemById.get('i.m4.eq.check');
+    expect(item?.type).toBe('reason_choice');
+    if (item?.type === 'reason_choice') {
+      const incomplete = item.options.find((o) => o.misconception === 'strategic-incomplete_comparison');
+      expect(incomplete).toBeDefined();
+    }
   });
 
   it('gates lessons on completion of the lesson that introduced each required concept, including across module boundaries', () => {

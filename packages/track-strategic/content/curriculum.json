@@ -8,7 +8,8 @@
       "moduleIds": [
         "strategic-m1",
         "strategic-m2",
-        "strategic-m3"
+        "strategic-m3",
+        "strategic-m4"
       ]
     }
   ],
@@ -47,6 +48,18 @@
         "strategic-m3.l3",
         "strategic-m3.l4",
         "strategic-m3.l5"
+      ]
+    },
+    {
+      "id": "strategic-m4",
+      "trackId": "strategic",
+      "sequence": 4,
+      "title": "When the Game Repeats",
+      "lessonIds": [
+        "strategic-m4.l1",
+        "strategic-m4.l2",
+        "strategic-m4.l3",
+        "strategic-m4.l4"
       ]
     }
   ],
@@ -536,6 +549,163 @@
       ],
       "apply": "Next time you're comparing two close options, check specifically whether one weakly dominates the other — never worse, and better in at least one real scenario — rather than just going with a gut preference.",
       "reflect": "Where have you mistaken \"never worse, sometimes better\" for an ironclad guarantee, when it was really just a reasonable edge?"
+    },
+    {
+      "id": "strategic-m4.l1",
+      "trackId": "strategic",
+      "moduleId": "strategic-m4",
+      "sequence": 1,
+      "title": "A Stable Pair of Choices",
+      "objectives": [
+        "Recognise a pair of choices where neither side's own action is a best response to switch away from, given the other's choice."
+      ],
+      "concepts": [
+        "equilibrium"
+      ],
+      "prerequisites": [
+        "strategic-m3.l5"
+      ],
+      "interactiveItemIds": [
+        "i.m4.eq.check",
+        "i.m4.eq.switch",
+        "i.m4.eq.both"
+      ],
+      "masteryItemIds": [],
+      "teach": [
+        "A pair of choices, one for each player, is an equilibrium when each player's choice is a best response to the other's. Neither side, seeing exactly what the other picked, would want to switch to something else.",
+        "Treating an equilibrium as the best possible outcome for both players. It isn't — it only means neither side wants to unilaterally change their own choice, given what the other is doing. A pair can be an equilibrium and still be worse for both players than some other pair they aren't at.",
+        "Checking for an equilibrium means asking the best-response question twice: is your choice a best response to theirs, and is theirs a best response to yours? Both have to hold at once — confirming only one side's best response isn't enough.",
+        "This is just an application of best response, not a new kind of reasoning: an equilibrium is simply a pair of choices where the best-response check passes in both directions simultaneously."
+      ],
+      "example": "You and a colleague each decide whether to back up a shared document to the office server. Server is your best response to Server, and Server is your colleague's best response to Server too — both backing up to the server is an equilibrium. Neither of you, seeing the other's choice, would want to switch to keeping it local only.",
+      "practicePrompts": [
+        "Pick a situation with a pair of choices, one for each side.",
+        "Check: is your choice a best response to theirs?",
+        "Check the other direction too: is their choice a best response to yours?"
+      ],
+      "apply": "In your next shared decision, check both directions — is your choice a best response to theirs, and is theirs a best response to yours — before assuming you've settled on something stable.",
+      "reflect": "Think of an arrangement with someone else that's lasted a while. Is it stable because neither of you wants to switch, given what the other does — or for some other reason?",
+      "contentVersion": 1
+    },
+    {
+      "id": "strategic-m4.l2",
+      "trackId": "strategic",
+      "moduleId": "strategic-m4",
+      "sequence": 2,
+      "title": "More Than One Stable Point",
+      "objectives": [
+        "Recognise when a situation has more than one equilibrium, and that nothing inside the situation itself picks one over another."
+      ],
+      "concepts": [
+        "multiple_equilibria"
+      ],
+      "prerequisites": [
+        "strategic-m4.l1"
+      ],
+      "interactiveItemIds": [
+        "i.m4.multi.find",
+        "i.m4.multi.second",
+        "i.m4.multi.settle"
+      ],
+      "masteryItemIds": [],
+      "teach": [
+        "Some situations have more than one pair of choices that's an equilibrium. A pure coordination situation, where both sides do best by matching each other, is a common example: both choosing option A is stable, and so, separately, is both choosing option B.",
+        "Checking only one candidate pair and stopping once it passes the equilibrium test. A situation can have a second, equally real equilibrium sitting right alongside the first one — finding one doesn't rule out another.",
+        "When more than one equilibrium exists, nothing in the payoffs themselves says which one the players will actually land on. Something outside the situation — past practice, a prior agreement, which option is more visible or familiar — is usually what settles it in practice.",
+        "Assuming that because a situation has multiple equilibria, any pair of choices at all is just as stable as any other. Most pairs still fail the equilibrium test; it's specifically the handful that pass it that are the candidates, and a real situation can have exactly one, several, or occasionally none."
+      ],
+      "example": "You and a colleague are each picking a video call platform for a meeting you're both joining. If you pick the same one, the call works; if you pick different ones, it doesn't. Both picking Platform A is an equilibrium — and, separately, both picking Platform B is too. Nothing in the situation itself says which one you'll end up on; habit or a quick message beforehand usually settles it.",
+      "practicePrompts": [
+        "Think of a coordination situation with more than one way to successfully match.",
+        "Check whether a second pair of matching choices is also stable, not just the first one you thought of.",
+        "Ask what, outside the payoffs themselves, is likely to settle which one actually happens."
+      ],
+      "apply": "In your next coordination situation, check for a second possible stable match before assuming the first one you thought of is the only option.",
+      "reflect": "Think of a shared habit or convention you and someone else settled into. Was there a real alternative that would have worked just as well, if you'd landed on it instead?",
+      "contentVersion": 1
+    },
+    {
+      "id": "strategic-m4.l3",
+      "trackId": "strategic",
+      "moduleId": "strategic-m4",
+      "sequence": 3,
+      "title": "When Today Affects Tomorrow",
+      "objectives": [
+        "Recognise when a choice is shaped by its effect on future rounds, not just the immediate payoff."
+      ],
+      "concepts": [
+        "repeated_interaction"
+      ],
+      "prerequisites": [
+        "strategic-m4.l2"
+      ],
+      "interactiveItemIds": [
+        "i.m4.repeat.spot",
+        "i.m4.repeat.future",
+        "i.m4.repeat.onceoff"
+      ],
+      "masteryItemIds": [],
+      "teach": [
+        "Everything so far has reasoned about a single round: one choice, one payoff, done. When the same players expect to face each other again, a choice made today can also shape what the other player expects and does in future rounds — sometimes called the shadow of the future.",
+        "Reasoning about a choice as if this were the only round, when really it's one of many. What looks best for this round alone can be a poor choice once its effect on every future round is counted too.",
+        "Repetition can make a choice worth making even when it wouldn't pay off in a single round by itself — for instance, choosing not to take a one-round advantage, in order to keep an arrangement going that pays off repeatedly over many future rounds.",
+        "Assuming that repetition automatically fixes every incentive problem. It doesn't — it only matters if both sides actually expect to interact again, and know roughly how many future rounds there might be. A last round, with no round after it to protect, can reason exactly like a one-off."
+      ],
+      "example": "You and a neighbour share a tool shed. Taking the last of the shared nails without replacing them would be your best move in a single interaction. But you share the shed every month — taking them without replacing them risks your neighbour stocking separately next time and no longer sharing with you at all. Replacing them protects an arrangement worth more over many future months than the nails are worth once.",
+      "practicePrompts": [
+        "Think of a choice involving someone you expect to interact with again.",
+        "Ask what would be best if this were a one-off, with no future rounds at all.",
+        "Ask whether that answer changes once you count its effect on future rounds."
+      ],
+      "apply": "Before a choice involving someone you'll interact with again, ask explicitly whether you're reasoning about just this round, or about its effect on every round after it too.",
+      "reflect": "Where have you made a choice that only makes sense once you count its effect on a relationship or arrangement going forward, not just this one instance?",
+      "contentVersion": 1
+    },
+    {
+      "id": "strategic-m4.l4",
+      "trackId": "strategic",
+      "moduleId": "strategic-m4",
+      "sequence": 4,
+      "title": "Starting Well, Then Mirroring",
+      "objectives": [
+        "Describe a reciprocal strategy: start cooperatively, then mirror whatever the other side did last round.",
+        "Distinguish reciprocity from unconditional cooperation.",
+        "Describe a repeated situation completely, using everything covered across all four modules."
+      ],
+      "concepts": [
+        "reciprocity"
+      ],
+      "prerequisites": [
+        "strategic-m4.l3"
+      ],
+      "interactiveItemIds": [
+        "i.m4.recip.rule",
+        "i.m4.recip.punish",
+        "i.m4.recip.forgive",
+        "i.m4.words"
+      ],
+      "masteryItemIds": [
+        "i.m4.t.eq",
+        "i.m4.t.multi",
+        "i.m4.t.repeat",
+        "i.m4.t.recip"
+      ],
+      "explanationBackItemId": "i.m4.words",
+      "teach": [
+        "A reciprocal strategy, sometimes called tit-for-tat, is simple: start by cooperating, and on every later round, do whatever the other side did on the round before. It rewards cooperation with more cooperation and answers a defection with a defection of its own.",
+        "Treating reciprocity as the same thing as always cooperating regardless of what the other side does. It isn't — a reciprocal strategy answers defection with defection just as readily as it answers cooperation with cooperation. Unconditional cooperation has no response to being taken advantage of; reciprocity does.",
+        "Reciprocity is forgiving: a single defection is met with a single defection back, not a permanent switch to defecting forever. If the other side returns to cooperating, a reciprocal strategy returns to cooperating too, on the very next round.",
+        "This is why reciprocity tends to work well in a genuinely repeated interaction: it's simple to recognise, it rewards cooperation without being exploitable, and it doesn't hold a grudge past what the other side's own behaviour currently calls for."
+      ],
+      "example": "You and a colleague alternate covering each other's shifts. You cover for them whenever they ask (starting cooperatively). The one time they decline to cover for you, you decline their next request too (mirroring the defection). The time after that, they cover for you again, so you go back to covering for them too (forgiving, not holding a grudge).",
+      "practicePrompts": [
+        "Think of a repeated arrangement with someone where favours or effort go both ways.",
+        "Check: do you start cooperatively, by default?",
+        "Check: if they didn't reciprocate once, did you mirror that just for the one round, or longer?"
+      ],
+      "apply": "In your next repeated arrangement with someone, try reciprocity deliberately: start cooperatively, mirror exactly what they did last time, and return to cooperating the moment they do.",
+      "reflect": "Think of a repeated relationship where you held a grudge longer than one round after a single let-down. What would have been different if you'd mirrored just that one round, then returned to cooperating?",
+      "contentVersion": 1
     }
   ],
   "concepts": [
@@ -622,6 +792,30 @@
       "trackId": "strategic",
       "moduleId": "strategic-m3",
       "label": "An action weakly dominates another when it is never worse and sometimes better"
+    },
+    {
+      "id": "equilibrium",
+      "trackId": "strategic",
+      "moduleId": "strategic-m4",
+      "label": "A pair of choices where each is a best response to the other"
+    },
+    {
+      "id": "multiple_equilibria",
+      "trackId": "strategic",
+      "moduleId": "strategic-m4",
+      "label": "A situation with more than one stable pair of choices"
+    },
+    {
+      "id": "repeated_interaction",
+      "trackId": "strategic",
+      "moduleId": "strategic-m4",
+      "label": "How repetition changes what's worth choosing"
+    },
+    {
+      "id": "reciprocity",
+      "trackId": "strategic",
+      "moduleId": "strategic-m4",
+      "label": "Starting cooperatively, then mirroring the other side's last choice"
     }
   ],
   "misconceptions": [
@@ -726,6 +920,30 @@
       "trackId": "strategic",
       "label": "WEAK_AS_STRICT",
       "description": "Called a weakly dominant action strictly dominant: treated a tie as a win when comparing across all of the other’s choices."
+    },
+    {
+      "id": "strategic-equilibrium_as_best_outcome",
+      "trackId": "strategic",
+      "label": "Equilibrium mistaken for the best outcome",
+      "description": "Treating a stable pair of choices as the best possible result for both players, rather than simply one neither side wants to unilaterally change."
+    },
+    {
+      "id": "strategic-ignored_other_equilibrium",
+      "trackId": "strategic",
+      "label": "Ignored a second stable pair",
+      "description": "Checking only one pair of choices for stability and missing that a different pair is also stable."
+    },
+    {
+      "id": "strategic-one_shot_reasoning_in_repeat",
+      "trackId": "strategic",
+      "label": "One-shot reasoning applied to a repeated situation",
+      "description": "Reasoning about a choice as if this were the only round, ignoring how it will shape the other player's choices in future rounds."
+    },
+    {
+      "id": "strategic-reciprocity_as_unconditional",
+      "trackId": "strategic",
+      "label": "Reciprocity mistaken for unconditional cooperation",
+      "description": "Treating a reciprocal strategy as always cooperating regardless of what the other side does, rather than mirroring their last choice."
     }
   ]
 }

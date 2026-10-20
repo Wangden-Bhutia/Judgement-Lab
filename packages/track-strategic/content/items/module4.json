@@ -1,0 +1,464 @@
+[
+  {
+    "id": "i.m4.eq.check",
+    "concept": "equilibrium",
+    "scenario": "You and a flatmate each decide whether to buy a shared grocery staple this week or assume the other will. Buying it yourself is your best response if you expect your flatmate won't, and your flatmate's best response is the same reasoning in reverse. You both end up buying it, and you both expected the other not to.",
+    "type": "reason_choice",
+    "prompt": "Is both of you buying it an equilibrium?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Yes, since it's the best outcome available to you as a household.",
+        "misconception": "strategic-equilibrium_as_best_outcome"
+      },
+      {
+        "id": "B",
+        "text": "No: given that your flatmate bought it, your best response would have been not to — so this isn't an equilibrium, even though you both ended up buying it.",
+        "conceptTag": "equilibrium"
+      },
+      {
+        "id": "C",
+        "text": "Yes, because you both made a choice.",
+        "misconception": "strategic-incomplete_comparison"
+      }
+    ],
+    "acceptableAnswers": [
+      "B"
+    ],
+    "explanation": "An equilibrium requires each side's choice to be a best response to the other's. If buying it yourself stops being your best response once you know your flatmate already bought it, this pair of choices isn't stable, regardless of how good or bad the outcome is."
+  },
+  {
+    "id": "i.m4.eq.switch",
+    "concept": "equilibrium",
+    "scenario": "You and a colleague each decide whether to back up a shared document to the office server or keep it local. Server is a dominant strategy for both of you — your best response to either of your colleague's choices.",
+    "type": "reason_choice",
+    "prompt": "Is both of you choosing Server an equilibrium?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Yes: Server is your best response to Server, and Server is your colleague's best response to Server too.",
+        "conceptTag": "equilibrium"
+      },
+      {
+        "id": "B",
+        "text": "No, since equilibrium only applies when your best choice depends on the other person's.",
+        "misconception": "strategic-incomplete_comparison"
+      },
+      {
+        "id": "C",
+        "text": "Only if both of you would also prefer it to every other possible pair of choices.",
+        "misconception": "strategic-equilibrium_as_best_outcome"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "A dominant strategy is automatically a best response to anything the other player does, including their actual choice — so both playing their dominant strategy is always an equilibrium, whether or not your best response depends on theirs."
+  },
+  {
+    "id": "i.m4.eq.both",
+    "concept": "equilibrium",
+    "scenario": "You and a friend are deciding where to meet: the fountain or the clock tower. You'd only go to the fountain if you expected your friend there too, and the same holds for your friend. You both go to the clock tower, each expecting the other to be there.",
+    "type": "reason_choice",
+    "prompt": "Is both of you at the clock tower an equilibrium?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Only if the fountain pair also fails the equilibrium check.",
+        "misconception": "strategic-incomplete_comparison"
+      },
+      {
+        "id": "B",
+        "text": "Yes, if clock tower is each of your best responses to the other choosing clock tower — regardless of what's true about the fountain pair.",
+        "conceptTag": "equilibrium"
+      },
+      {
+        "id": "C",
+        "text": "Only if it's the only pair of choices that works.",
+        "misconception": "strategic-equilibrium_as_best_outcome"
+      }
+    ],
+    "acceptableAnswers": [
+      "B"
+    ],
+    "explanation": "Whether one pair of choices is an equilibrium is checked on its own terms — is each side's choice a best response to the other's — without needing to rule out a different pair also being an equilibrium."
+  },
+  {
+    "id": "i.m4.multi.find",
+    "concept": "multiple_equilibria",
+    "scenario": "You and a colleague are each picking a video call platform for a meeting. If you pick the same one, the call works; if you pick different ones, it doesn't. You've confirmed both picking Platform A is an equilibrium.",
+    "type": "reason_choice",
+    "prompt": "Should Platform B also be checked?",
+    "options": [
+      {
+        "id": "A",
+        "text": "No: since Platform A is confirmed stable, Platform B can't also be an equilibrium.",
+        "misconception": "strategic-ignored_other_equilibrium"
+      },
+      {
+        "id": "B",
+        "text": "Yes: it's entirely possible Platform B is a second, equally real equilibrium.",
+        "conceptTag": "multiple_equilibria"
+      },
+      {
+        "id": "C",
+        "text": "No, since one working equilibrium is enough to solve the situation.",
+        "misconception": "strategic-ignored_other_equilibrium"
+      }
+    ],
+    "acceptableAnswers": [
+      "B"
+    ],
+    "explanation": "Finding one equilibrium doesn't rule out a second one existing alongside it — in a pure coordination situation like this, both platforms matching is typically stable, independently of each other."
+  },
+  {
+    "id": "i.m4.multi.second",
+    "concept": "multiple_equilibria",
+    "scenario": "You and a friend are deciding where to meet, the fountain or the clock tower, with both of you preferring to match the other's choice over being in the wrong place alone. You've confirmed that both choosing the fountain is an equilibrium.",
+    "type": "reason_choice",
+    "prompt": "What about both of you choosing the clock tower instead?",
+    "options": [
+      {
+        "id": "A",
+        "text": "It should also be checked — it's likely a second equilibrium in a situation shaped like this one.",
+        "conceptTag": "multiple_equilibria"
+      },
+      {
+        "id": "B",
+        "text": "Since matching at the fountain works, meeting at the clock tower would definitely fail.",
+        "misconception": "strategic-ignored_other_equilibrium"
+      },
+      {
+        "id": "C",
+        "text": "A situation can only ever have exactly one equilibrium, so there's nothing further to check.",
+        "misconception": "strategic-ignored_other_equilibrium"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "A situation built around matching, like this one, commonly has more than one stable matching pair — the clock tower deserves the same equilibrium check as the fountain got, not an assumption either way."
+  },
+  {
+    "id": "i.m4.multi.settle",
+    "concept": "multiple_equilibria",
+    "scenario": "You've confirmed a situation has two equilibria: both choosing Option A, and both choosing Option B.",
+    "type": "reason_choice",
+    "prompt": "What actually determines which equilibrium is reached?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The payoffs in the situation itself, the same way they determine whether something is an equilibrium at all.",
+        "misconception": "strategic-ignored_other_equilibrium"
+      },
+      {
+        "id": "B",
+        "text": "Something outside the payoffs — past practice, which option is more familiar, a quick message beforehand.",
+        "conceptTag": "multiple_equilibria"
+      },
+      {
+        "id": "C",
+        "text": "Nothing: either one, or neither, is equally likely with no way to influence it.",
+        "misconception": "strategic-ignored_other_equilibrium"
+      }
+    ],
+    "acceptableAnswers": [
+      "B"
+    ],
+    "explanation": "When the payoffs alone support more than one stable pair, something beyond the payoffs — convention, prior agreement, visibility — is usually what actually settles which one the players land on."
+  },
+  {
+    "id": "i.m4.repeat.spot",
+    "concept": "repeated_interaction",
+    "scenario": "You split a cab fare with a co-worker after a late shift, just this once — you don't expect to share a cab with them again.",
+    "type": "reason_choice",
+    "prompt": "Should this be reasoned about as a repeated interaction?",
+    "options": [
+      {
+        "id": "A",
+        "text": "No: since you don't expect to interact again, reasoning about just this one round is appropriate here.",
+        "conceptTag": "repeated_interaction"
+      },
+      {
+        "id": "B",
+        "text": "Yes, on principle, even for a single shared cab ride.",
+        "misconception": "strategic-one_shot_reasoning_in_repeat"
+      },
+      {
+        "id": "C",
+        "text": "It doesn't matter either way — expecting future interaction or not never changes which choice makes sense.",
+        "misconception": "strategic-one_shot_reasoning_in_repeat"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Repeated-interaction reasoning only applies when there's a real expectation of future rounds. A genuine one-off is exactly that — there's no future round for today's choice to shape."
+  },
+  {
+    "id": "i.m4.repeat.future",
+    "concept": "repeated_interaction",
+    "scenario": "You and a neighbour share a tool shed every month. Taking the last of the shared nails without replacing them would be your best move if this were the only time you'd ever share the shed.",
+    "type": "reason_choice",
+    "prompt": "Does sharing the shed every month change what's worth doing?",
+    "options": [
+      {
+        "id": "A",
+        "text": "No: since taking them without replacing is best for this one instance, it's the right call regardless of future months.",
+        "misconception": "strategic-one_shot_reasoning_in_repeat"
+      },
+      {
+        "id": "B",
+        "text": "Yes: the choice should also account for how it affects whether your neighbour keeps sharing with you in future months.",
+        "conceptTag": "repeated_interaction"
+      },
+      {
+        "id": "C",
+        "text": "No, future months can't be factored in until they actually arrive.",
+        "misconception": "strategic-one_shot_reasoning_in_repeat"
+      }
+    ],
+    "acceptableAnswers": [
+      "B"
+    ],
+    "explanation": "With a genuinely repeated interaction, a choice that looks best for this one instance can be a poor choice once its effect on every future round is counted too."
+  },
+  {
+    "id": "i.m4.repeat.onceoff",
+    "concept": "repeated_interaction",
+    "scenario": "You and a colleague have worked together on a long string of projects, with more planned. On the very last project the two of you will ever share, before you each move to different teams permanently, you're deciding how much effort to put in.",
+    "type": "reason_choice",
+    "prompt": "How should this last project be reasoned about?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Since there's no round after this one for either of you to protect, it can be reasoned about much like a genuine one-off, even though the earlier projects were a real repeated interaction.",
+        "conceptTag": "repeated_interaction"
+      },
+      {
+        "id": "B",
+        "text": "The long history together means every future consideration still applies exactly as it did before, even on the last project.",
+        "misconception": "strategic-one_shot_reasoning_in_repeat"
+      },
+      {
+        "id": "C",
+        "text": "A long shared history always outweighs the fact that no more rounds are coming.",
+        "misconception": "strategic-one_shot_reasoning_in_repeat"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "What makes repeated interaction change incentives is the expectation of future rounds. A known last round, with nothing after it to protect, loses that — and can reason much like a one-off, even after a long shared history."
+  },
+  {
+    "id": "i.m4.recip.rule",
+    "concept": "reciprocity",
+    "scenario": "You and a colleague alternate covering each other's shifts. You're deciding how to handle the very first request, before either of you has done anything yet.",
+    "type": "reason_choice",
+    "prompt": "What does a reciprocal strategy do on this first round?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cover their shift when asked — a reciprocal strategy begins cooperatively, before anything else has happened.",
+        "conceptTag": "reciprocity"
+      },
+      {
+        "id": "B",
+        "text": "Decline the first request, to see what they'll do before committing to anything.",
+        "misconception": "strategic-reciprocity_as_unconditional"
+      },
+      {
+        "id": "C",
+        "text": "Cover their shift no matter what they do afterward, since that's what reciprocity means.",
+        "misconception": "strategic-reciprocity_as_unconditional"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "A reciprocal strategy starts by cooperating by default — there's nothing to mirror yet on the very first round, so it opens cooperatively."
+  },
+  {
+    "id": "i.m4.recip.punish",
+    "concept": "reciprocity",
+    "scenario": "You've been covering a colleague's shifts whenever asked. This week, they decline to cover one of yours without a good reason.",
+    "type": "reason_choice",
+    "prompt": "What does reciprocity call for next?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Keep covering their shifts exactly as before, regardless of what they just did.",
+        "misconception": "strategic-reciprocity_as_unconditional"
+      },
+      {
+        "id": "B",
+        "text": "Decline their next request too, mirroring what they just did, then return to covering for them once they cooperate again.",
+        "conceptTag": "reciprocity"
+      },
+      {
+        "id": "C",
+        "text": "Stop covering their shifts permanently, since they've shown they can't be relied on.",
+        "misconception": "strategic-reciprocity_as_unconditional"
+      }
+    ],
+    "acceptableAnswers": [
+      "B"
+    ],
+    "explanation": "Reciprocity answers a defection with a defection of its own — but only for that one round, not as a permanent switch. Continuing to cooperate unconditionally, or cutting them off forever, are both different from mirroring."
+  },
+  {
+    "id": "i.m4.recip.forgive",
+    "concept": "reciprocity",
+    "scenario": "After mirroring your colleague's one declined shift by declining theirs, they cover your next shift as normal, back to cooperating.",
+    "type": "reason_choice",
+    "prompt": "What does reciprocity call for now?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Decline their request anyway, since trust was already broken once.",
+        "misconception": "strategic-reciprocity_as_unconditional"
+      },
+      {
+        "id": "B",
+        "text": "Cover their shift again on the very next round, since reciprocity mirrors their most recent choice, not past rounds.",
+        "conceptTag": "reciprocity"
+      },
+      {
+        "id": "C",
+        "text": "Wait several more rounds of cooperation before resuming, to be certain.",
+        "misconception": "strategic-reciprocity_as_unconditional"
+      }
+    ],
+    "acceptableAnswers": [
+      "B"
+    ],
+    "explanation": "Reciprocity is forgiving: it responds to the other side's most recent choice, not a running tally of past ones. The moment they return to cooperating, a reciprocal strategy returns to cooperating too."
+  },
+  {
+    "id": "i.m4.words",
+    "concept": "reciprocity",
+    "scenario": "You and a neighbour each decide whether to replace shared tools you both use up, over many months of sharing.",
+    "type": "own_words",
+    "prompt": "In your own words, describe this repeated situation: the players, their actions, what each wanted, whether choices depended on each other, and how repetition shaped what was worth choosing.",
+    "modelAnswer": "\"My neighbour and I each decide whether to replace shared tools we use up.\" \"Each of us can replace them or not.\" \"We both want to keep sharing, but also want to save the small effort of replacing.\" \"Whether I replace them affects whether my neighbour keeps sharing next time, so our choices depend on each other.\" \"Because we share repeatedly, replacing them is worth it even though it wouldn't be if we only shared once.\"",
+    "rubric": [
+      "Names everyone whose choice changes the result, and nobody else.",
+      "Lists the options open to each person.",
+      "Says what each person wants, including how the other's choice matters to them.",
+      "Explains how repetition changes what's worth choosing, compared to a single round."
+    ]
+  },
+  {
+    "id": "i.m4.t.eq",
+    "concept": "equilibrium",
+    "scenario": "You and a housemate each decide whether to lock the front door when you leave last. Locking is your best response if you expect your housemate to leave it unlocked, and your housemate's best response is the same reasoning in reverse. You both end up locking it, each expecting the other not to.",
+    "type": "reason_choice",
+    "prompt": "Is both of you locking the door an equilibrium?",
+    "options": [
+      {
+        "id": "A",
+        "text": "No: given that your housemate locked it, your best response would have been not to — so this isn't an equilibrium, even though you both locked it.",
+        "conceptTag": "equilibrium"
+      },
+      {
+        "id": "B",
+        "text": "Yes, since a locked door is the best outcome for the household.",
+        "misconception": "strategic-equilibrium_as_best_outcome"
+      },
+      {
+        "id": "C",
+        "text": "Yes, because neither of you is unhappy with a locked door.",
+        "misconception": "strategic-incomplete_comparison"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "An equilibrium requires each side's choice to be a best response to the other's. If your best response would have changed once you knew your housemate's actual choice, this pair isn't stable, regardless of how good the outcome looks."
+  },
+  {
+    "id": "i.m4.t.multi",
+    "concept": "multiple_equilibria",
+    "scenario": "You and a friend are picking a messaging app to coordinate plans, matching on the same one being what makes it work. You've confirmed both using App A is an equilibrium.",
+    "type": "reason_choice",
+    "prompt": "Should App B also be checked?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Yes — it's entirely possible it's also a stable match.",
+        "conceptTag": "multiple_equilibria"
+      },
+      {
+        "id": "B",
+        "text": "No, since App A is confirmed stable, App B can safely be ruled out without checking.",
+        "misconception": "strategic-ignored_other_equilibrium"
+      },
+      {
+        "id": "C",
+        "text": "No, a matching situation like this one can only ever have a single equilibrium.",
+        "misconception": "strategic-ignored_other_equilibrium"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "A pure coordination situation typically has more than one stable matching pair — confirming one doesn't rule out a second existing independently."
+  },
+  {
+    "id": "i.m4.t.repeat",
+    "concept": "repeated_interaction",
+    "scenario": "You and a colleague regularly trade favours at work, with no end to the working relationship in sight. You're deciding whether to help with a request that costs you a bit of time but isn't strictly required.",
+    "type": "reason_choice",
+    "prompt": "What should factor into this decision?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Only the immediate cost of this one favour.",
+        "misconception": "strategic-one_shot_reasoning_in_repeat"
+      },
+      {
+        "id": "B",
+        "text": "How helping, or not, shapes whether your colleague helps you in future rounds, alongside the immediate cost.",
+        "conceptTag": "repeated_interaction"
+      },
+      {
+        "id": "C",
+        "text": "Nothing: since the relationship is ongoing, the immediate cost of this one favour is irrelevant.",
+        "misconception": "strategic-one_shot_reasoning_in_repeat"
+      }
+    ],
+    "acceptableAnswers": [
+      "B"
+    ],
+    "explanation": "With a genuinely ongoing relationship, a choice's effect on future rounds belongs in the reasoning alongside its immediate cost — not instead of it, and not ignored in favour of it."
+  },
+  {
+    "id": "i.m4.t.recip",
+    "concept": "reciprocity",
+    "scenario": "You and a study partner alternate sharing notes. They miss sharing theirs once, without explanation. The next time, they share as normal again.",
+    "type": "reason_choice",
+    "prompt": "What does reciprocity call for on this next round?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Share your notes again as normal, since reciprocity mirrors their most recent choice, not the earlier miss.",
+        "conceptTag": "reciprocity"
+      },
+      {
+        "id": "B",
+        "text": "Stop sharing your notes with them from now on, since they've already shown they can't be relied on.",
+        "misconception": "strategic-reciprocity_as_unconditional"
+      },
+      {
+        "id": "C",
+        "text": "Keep sharing exactly as before even at the time they missed, since reciprocity always means cooperating.",
+        "misconception": "strategic-reciprocity_as_unconditional"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Reciprocity tracks the other side's most recent choice. A single missed round, once followed by a return to cooperating, is met with cooperation again — not a lasting switch in either direction."
+  }
+]
