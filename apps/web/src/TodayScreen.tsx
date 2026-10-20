@@ -52,18 +52,33 @@ function findNextLesson(
   return null;
 }
 
-/**
- * Deliberately lean: just what's due for review and one card per track
- * that still has something to practise -- not the full syllabus (that's
- * Library's job now). Showing both here was the original bug: the bottom
- * nav's track links did nothing but scroll to content already on screen.
+/** Most recent lastAttemptAt across a track's lessons, as a timestamp --
+ * 0 if the track has never been touched. Used to pick which track gets
+ * today's one card: untouched tracks (0) sort first, then whichever
+ * track has gone longest without activity once everything has some
+ * history. No manual picker -- Library is where you go for something
+ * specific; Today recommends exactly one thing. */
+function lastActivity(modules: Module[], progress: ReadonlyMap<string, LessonProgressState>): number {
+  let latest = 0;
+  for (const module of modules) {
+    for (const lessonId of module.lessonIds) {
+      const at = progress.get(lessonId)?.lastAttemptAt;
+      if (at) latest = Math.max(latest, new Date(at).getTime());
+    }
+  }
+  return latest;
+}
+
+/** Deliberately lean: Today recommends exactly one thing -- the due
+ * reviews if any exist (time-sensitive), otherwise one track's next
+ * lesson (the track least recently practised). Not a menu of all three
+ * tracks' cards, and not the full syllabus either (that's Library's job).
  */
 export function TodayScreen({ tracks, lessonById, progress, dueReviewCount, onSelectLesson, onStartReview }: TodayScreenProps) {
-  return (
-    <div className="today-screen">
-      <h1>Today</h1>
-
-      {dueReviewCount > 0 && (
+  if (dueReviewCount > 0) {
+    return (
+      <div className="today-screen">
+        <h1>Today</h1>
         <section className="today-card review-card">
           <p className="today-card-module">Spaced review</p>
           <h2>
@@ -72,33 +87,43 @@ export function TodayScreen({ tracks, lessonById, progress, dueReviewCount, onSe
           <p>Quick retrieval checks across everything you've learned so far, to keep it from fading.</p>
           <button onClick={onStartReview}>Start review</button>
         </section>
-      )}
+      </div>
+    );
+  }
 
-      {tracks.map((track) => {
-        const next = findNextLesson(track.modules, lessonById, progress);
+  const candidates = tracks
+    .map((track) => ({ track, next: findNextLesson(track.modules, lessonById, progress) }))
+    .filter((c): c is { track: TrackSection; next: NextLesson } => c.next !== null)
+    .sort((a, b) => lastActivity(a.track.modules, progress) - lastActivity(b.track.modules, progress));
 
-        if (!next) {
-          return (
-            <div key={track.id} className="track-complete-chip">
-              <span className="track-complete-icon">{track.icon}</span>
-              <span>{track.title} — every lesson complete. Revisit it from Library.</span>
-            </div>
-          );
-        }
+  const picked = candidates[0];
 
-        return (
-          <section key={track.id} className="today-card">
-            <div className="today-card-track">
-              <span className="today-card-track-icon">{track.icon}</span>
-              <span>{track.title}</span>
-            </div>
-            <p className="today-card-module">{next.module.title}</p>
-            <h2>{next.lesson.title}</h2>
-            <p>{next.lesson.objectives[0]}</p>
-            <button onClick={() => onSelectLesson(next.lesson)}>{STATUS_LABEL[next.status]}</button>
-          </section>
-        );
-      })}
+  if (!picked) {
+    return (
+      <div className="today-screen">
+        <h1>Today</h1>
+        <section className="today-card today-card-done">
+          <h2>Every lesson, in every track, is complete.</h2>
+          <p>Nothing left to start today -- visit Library to revisit anything, or Settings to reset and begin again.</p>
+        </section>
+      </div>
+    );
+  }
+
+  const { track, next } = picked;
+  return (
+    <div className="today-screen">
+      <h1>Today</h1>
+      <section className="today-card">
+        <div className="today-card-track">
+          <span className="today-card-track-icon">{track.icon}</span>
+          <h2>{track.title}</h2>
+        </div>
+        <p className="today-card-module">{next.module.title}</p>
+        <h3>{next.lesson.title}</h3>
+        <p>{next.lesson.objectives[0]}</p>
+        <button onClick={() => onSelectLesson(next.lesson)}>{STATUS_LABEL[next.status]}</button>
+      </section>
     </div>
   );
 }

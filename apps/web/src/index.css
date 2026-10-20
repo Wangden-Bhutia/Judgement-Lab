@@ -6,7 +6,11 @@
      -- flat surfaces, subtle borders, generous spacing. */
   --bg: hsl(60 7% 96%);
   --text-h: hsl(220 15% 25%);
-  --text: hsl(220 10% 45%);
+  /* L40, not clarity's original L45 -- L45 measures 4.20:1 against the
+     tinted .today-card background (needs 4.5:1 for WCAG AA normal text).
+     L40 clears it with margin (5.02:1) in that worst case and only
+     improves contrast everywhere else --text is used. */
+  --text: hsl(220 10% 40%);
   --border: hsl(45 15% 88%);
   --code-bg: hsl(40 15% 90%);
   --card-bg: hsl(45 30% 98%);
@@ -25,6 +29,11 @@
   letter-spacing: 0.18px;
   color-scheme: light dark;
   color: var(--text);
+  /* Native radio/checkbox controls (reason_choice, classify, own_words
+     rubric) otherwise render in the browser's stock blue, clashing with
+     the sage/cream palette everywhere else -- accent-color is inherited,
+     so setting it once here covers every form control in the app. */
+  accent-color: var(--accent);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -75,7 +84,8 @@ body {
 }
 
 h1,
-h2 {
+h2,
+h3 {
   font-family: var(--heading);
   font-weight: 500;
   letter-spacing: 0.01em;
@@ -97,6 +107,11 @@ h2 {
   @media (max-width: 1024px) {
     font-size: 21px;
   }
+}
+h3 {
+  font-size: 18px;
+  line-height: 120%;
+  margin: 0 0 4px;
 }
 p {
   margin: 0;
