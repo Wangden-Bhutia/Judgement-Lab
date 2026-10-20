@@ -42,7 +42,7 @@ export function AboutScreen({ trackTitles, onDone }: AboutScreenProps) {
         <p>
           Telling what someone did apart from the story you've added about why, and holding more than one
           explanation before settling on one. Most of what reading people fairly and giving less-biased feedback
-          comes down to. A short primer: 3 lessons, more an introduction than a full course.
+          comes down to. 2 modules so far: 7 lessons, still shorter than Emotional Skills but growing.
         </p>
       </section>
 
