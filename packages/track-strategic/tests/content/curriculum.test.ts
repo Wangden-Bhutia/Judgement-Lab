@@ -5,6 +5,8 @@ import module1Items from '../../content/items/module1.json' with { type: 'json' 
 import module2Items from '../../content/items/module2.json' with { type: 'json' };
 import module3Items from '../../content/items/module3.json' with { type: 'json' };
 import module4Items from '../../content/items/module4.json' with { type: 'json' };
+import bankDeepeningItems from '../../content/items/bank-deepening.json' with { type: 'json' };
+import weeklyCheckpointItems from '../../content/items/weekly-checkpoints.json' with { type: 'json' };
 
 const typedCurriculum = curriculum as Curriculum;
 const typedItems: Item[] = [
@@ -12,6 +14,8 @@ const typedItems: Item[] = [
   ...(module2Items as Item[]),
   ...(module3Items as Item[]),
   ...(module4Items as Item[]),
+  ...(bankDeepeningItems as Item[]),
+  ...(weeklyCheckpointItems as Item[]),
 ];
 const itemById = new Map(typedItems.map((i) => [i.id, i]));
 
@@ -22,25 +26,57 @@ describe('converted Strategic Reasoning content (Modules 1-4)', () => {
     expect(result.valid).toBe(true);
   });
 
-  it('has 4 modules and 16 lessons, in order, under one track', () => {
+  it('has 4 modules and 20 lessons, in order, under one track', () => {
+    // Pass 1 of the week-based restructuring: each module gained one
+    // integrative checkpoint-day lesson (m1.l5, m2.l4, m3.l6, m4.l5) that
+    // combines that module's concepts rather than introducing a new one.
     expect(typedCurriculum.tracks.map((t) => t.id)).toEqual(['strategic']);
     expect(typedCurriculum.modules.map((m) => m.id)).toEqual([
       'strategic-m1', 'strategic-m2', 'strategic-m3', 'strategic-m4',
     ]);
     expect(typedCurriculum.lessons.map((l) => l.id)).toEqual([
-      'strategic-m1.l1', 'strategic-m1.l2', 'strategic-m1.l3', 'strategic-m1.l4',
-      'strategic-m2.l1', 'strategic-m2.l2', 'strategic-m2.l3',
-      'strategic-m3.l1', 'strategic-m3.l2', 'strategic-m3.l3', 'strategic-m3.l4', 'strategic-m3.l5',
-      'strategic-m4.l1', 'strategic-m4.l2', 'strategic-m4.l3', 'strategic-m4.l4',
+      'strategic-m1.l1', 'strategic-m1.l2', 'strategic-m1.l3', 'strategic-m1.l4', 'strategic-m1.l5',
+      'strategic-m2.l1', 'strategic-m2.l2', 'strategic-m2.l3', 'strategic-m2.l4',
+      'strategic-m3.l1', 'strategic-m3.l2', 'strategic-m3.l3', 'strategic-m3.l4', 'strategic-m3.l5', 'strategic-m3.l6',
+      'strategic-m4.l1', 'strategic-m4.l2', 'strategic-m4.l3', 'strategic-m4.l4', 'strategic-m4.l5',
     ]);
   });
 
-  it('module 4 chains linearly off the end of module 3', () => {
+  it('module 4 chains linearly off the end of module 3\'s checkpoint lesson', () => {
     const byId = new Map(typedCurriculum.lessons.map((l) => [l.id, l]));
-    expect(byId.get('strategic-m4.l1')!.prerequisites).toEqual(['strategic-m3.l5']);
+    expect(byId.get('strategic-m4.l1')!.prerequisites).toEqual(['strategic-m3.l6']);
     expect(byId.get('strategic-m4.l2')!.prerequisites).toEqual(['strategic-m4.l1']);
     expect(byId.get('strategic-m4.l3')!.prerequisites).toEqual(['strategic-m4.l2']);
     expect(byId.get('strategic-m4.l4')!.prerequisites).toEqual(['strategic-m4.l3']);
+    expect(byId.get('strategic-m4.l5')!.prerequisites).toEqual(['strategic-m4.l4']);
+  });
+
+  it('each module\'s new checkpoint lesson requires every lesson in that module, not just the last one by number', () => {
+    // Module internals branch rather than chain purely linearly (e.g. m3.l2,
+    // l3 and l5 all branch directly off m3.l1), so a checkpoint lesson
+    // gating "the whole week is done" has to require every lesson in the
+    // module explicitly, not rely on the highest-numbered one transitively
+    // covering the rest.
+    const byId = new Map(typedCurriculum.lessons.map((l) => [l.id, l]));
+    expect(new Set(byId.get('strategic-m1.l5')!.prerequisites)).toEqual(
+      new Set(['strategic-m1.l1', 'strategic-m1.l2', 'strategic-m1.l3', 'strategic-m1.l4'])
+    );
+    expect(new Set(byId.get('strategic-m3.l6')!.prerequisites)).toEqual(
+      new Set(['strategic-m3.l1', 'strategic-m3.l2', 'strategic-m3.l3', 'strategic-m3.l4', 'strategic-m3.l5'])
+    );
+  });
+
+  it('each new checkpoint lesson\'s items are each tagged with one concept but combine 2+ of that week\'s concepts in the scenario itself', () => {
+    const checkpointLessonIds = ['strategic-m1.l5', 'strategic-m2.l4', 'strategic-m3.l6', 'strategic-m4.l5'];
+    for (const lessonId of checkpointLessonIds) {
+      const lesson = typedCurriculum.lessons.find((l) => l.id === lessonId)!;
+      expect(lesson.masteryItemIds.length).toBeGreaterThanOrEqual(3);
+      expect(lesson.concepts.length).toBeGreaterThanOrEqual(3);
+      for (const itemId of lesson.masteryItemIds) {
+        const item = itemById.get(itemId);
+        expect(item?.scenario!.length).toBeGreaterThan(40);
+      }
+    }
   });
 
   it("equilibrium builds on best_response: an equilibrium item's distractor is tagged as an incomplete best-response comparison, not a fresh misconception", () => {
@@ -52,21 +88,24 @@ describe('converted Strategic Reasoning content (Modules 1-4)', () => {
     }
   });
 
-  it('gates lessons on completion of the lesson that introduced each required concept, including across module boundaries', () => {
+  it('gates lessons within a module on completion of the lesson that introduced each required concept', () => {
     const byId = new Map(typedCurriculum.lessons.map((l) => [l.id, l]));
     expect(byId.get('strategic-m1.l1')!.prerequisites).toEqual([]);
     expect(new Set(byId.get('strategic-m1.l4')!.prerequisites)).toEqual(
       new Set(['strategic-m1.l1', 'strategic-m1.l2'])
     );
-    // m2.l1 introduces best_response, which requires strategic_dependence
-    // (introduced in m1.l4) and payoff (introduced in m1.l2) -- a lesson
-    // in module 2 gated on two lessons from module 1, not its own module.
-    expect(new Set(byId.get('strategic-m2.l1')!.prerequisites)).toEqual(
-      new Set(['strategic-m1.l2', 'strategic-m1.l4'])
-    );
-    // m3.l1 introduces dominant_strategy, which requires best_response
-    // (introduced in m2.l1).
-    expect(byId.get('strategic-m3.l1')!.prerequisites).toEqual(['strategic-m2.l1']);
+  });
+
+  it("gates each week's first lesson on completion of the PREVIOUS week's checkpoint lesson, not individual concept lessons", () => {
+    // Pass 1 superseded the old per-concept cross-module gating (m2.l1 used
+    // to require m1.l2 and m1.l4 directly) with a single checkpoint-lesson
+    // gate -- m1.l5 itself already requires every one of module 1's
+    // lessons, so gating m2.l1 on m1.l5 alone is equivalent and makes the
+    // "finish the week before starting the next one" structure explicit.
+    const byId = new Map(typedCurriculum.lessons.map((l) => [l.id, l]));
+    expect(byId.get('strategic-m2.l1')!.prerequisites).toEqual(['strategic-m1.l5']);
+    expect(byId.get('strategic-m3.l1')!.prerequisites).toEqual(['strategic-m2.l4']);
+    expect(byId.get('strategic-m4.l1')!.prerequisites).toEqual(['strategic-m3.l6']);
   });
 
   it('a lesson that introduces no new concept still has a non-empty concepts list (falls back to what it requires)', () => {

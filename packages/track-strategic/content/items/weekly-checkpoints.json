@@ -1,0 +1,338 @@
+[
+  {
+    "id": "i.wk1.chk.a",
+    "concept": "players",
+    "scenario": "You and a co-worker, Priya, each pick a lunch spot today: the deli or the café. You post your choice on the team chat at 11am and leave for an errand. Priya reads the chat at noon and picks hers after seeing yours. Your manager, who isn't eating out today, reads the same chat but has no lunch choice to make.",
+    "type": "reason_choice",
+    "prompt": "Which description of this situation is complete and correct?",
+    "options": [
+      {
+        "id": "A",
+        "text": "You and Priya are the only players; you choose first, and Priya sees your choice before picking hers.",
+        "conceptTag": "players"
+      },
+      {
+        "id": "B",
+        "text": "You, Priya and your manager are all players, since all three read the chat.",
+        "misconception": "strategic-model_extra_player"
+      },
+      {
+        "id": "C",
+        "text": "You and Priya are the only players, choosing at the same time without seeing each other.",
+        "misconception": "strategic-model_wrong_timing"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "A player is anyone whose choice affects the outcome — your manager makes no lunch choice, so isn't one. Posting at 11am and Priya reading at noon means you chose first and she saw it before choosing."
+  },
+  {
+    "id": "i.wk1.chk.b",
+    "concept": "strategic_dependence",
+    "scenario": "You and a housemate, Dan, each decide whether to buy a shared cleaning supply this week. You'd prefer Dan buy it alone, saving you the cost — but if neither of you buys it, you're both worse off than if either one does.",
+    "type": "reason_choice",
+    "prompt": "Which statement correctly captures both your preference and whether your result depends on Dan?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Your top preference is Dan buying it alone, but your actual result still depends on what Dan chooses — if neither buys, you're both worse off.",
+        "conceptTag": "strategic_dependence"
+      },
+      {
+        "id": "B",
+        "text": "Your top preference is Dan buying it alone, and your result doesn't depend on Dan at all.",
+        "misconception": "strategic-ignored_dependence"
+      },
+      {
+        "id": "C",
+        "text": "Since you'd prefer Dan buy it, you should assume he will and not consider it further.",
+        "misconception": "strategic-ignored_dependence"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Preferences rank what you want; strategic dependence is separate and still applies — how things actually turn out for you depends on Dan's choice, regardless of what you'd prefer."
+  },
+  {
+    "id": "i.wk1.chk.c",
+    "concept": "timing",
+    "scenario": "Two event organisers, you and Farah, are each picking a date for a community event: Saturday or Sunday. You'd both rather pick different days than clash, since clashing would split your audiences. You announce Saturday on the community board first; Farah checks the board before announcing hers.",
+    "type": "reason_choice",
+    "prompt": "Given everything above, what is Farah's best choice, and what does she know when making it?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Sunday is her best choice; she knows your choice (Saturday) before picking, since she checked the board after you posted.",
+        "conceptTag": "timing"
+      },
+      {
+        "id": "B",
+        "text": "Saturday is her best choice, to match you; she knows your choice before picking.",
+        "misconception": "strategic-across_not_within"
+      },
+      {
+        "id": "C",
+        "text": "Sunday is her best choice; she's choosing blind, without knowing yours.",
+        "misconception": "strategic-model_wrong_info"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "You chose and posted first; Farah checked afterward, so she has your choice as information. Since you both prefer differing over clashing, her best response to Saturday is Sunday."
+  },
+  {
+    "id": "i.wk2.chk.a",
+    "concept": "coordination",
+    "scenario": "You and a project partner, Owen, are each picking a document format for a shared file: PDF or editable text. If you pick the same format, collaboration is smooth; if you pick different ones, you'll waste time converting. You find out Owen has already saved his copy as PDF.",
+    "type": "reason_choice",
+    "prompt": "Given that, what is your best response, and is this a coordination or anti-coordination situation?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Save yours as PDF too — this is a coordination situation, since matching Owen's choice is what pays off.",
+        "conceptTag": "coordination"
+      },
+      {
+        "id": "B",
+        "text": "Save yours as editable text — this is an anti-coordination situation, since differing from Owen is what pays off.",
+        "misconception": "strategic-across_not_within"
+      },
+      {
+        "id": "C",
+        "text": "Save yours as PDF, but this is unrelated to coordination since Owen already chose.",
+        "misconception": "strategic-incomplete_comparison"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Your best response to Owen's known choice (PDF) is to match it, which is exactly what makes this a coordination situation — your best response moves to match whatever he does."
+  },
+  {
+    "id": "i.wk2.chk.b",
+    "concept": "belief_response",
+    "scenario": "You're deciding how much food to prepare for a potluck: a lot or a little. You think there's a 60% chance many guests show up and a 40% chance few do. Preparing a lot does well if many show up and poorly (wasted food) if few do; preparing a little is fine either way but disappoints if many show up.",
+    "type": "reason_choice",
+    "prompt": "Which choice is the best response to your belief, and why?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Preparing a lot, since weighting each outcome by its likelihood (60% many, 40% few) makes it the better average choice given this specific belief.",
+        "conceptTag": "belief_response"
+      },
+      {
+        "id": "B",
+        "text": "Preparing a little, since it's safer regardless of what you believe about turnout.",
+        "misconception": "strategic-not_br_to_own_prediction"
+      },
+      {
+        "id": "C",
+        "text": "Either choice is equally good, since turnout is uncertain either way.",
+        "misconception": "strategic-incomplete_comparison"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "A belief response weighs each possible outcome by its likelihood. At 60% likely many guests, the average payoff favours preparing a lot — a different belief could flip this."
+  },
+  {
+    "id": "i.wk2.chk.c",
+    "concept": "best_response",
+    "scenario": "You and a teammate, Marcus, are picking which side of the court to defend in a scrimmage. Whichever side Marcus defends, you do better defending the other side — except right now, you don't actually know which side Marcus has picked yet.",
+    "type": "reason_choice",
+    "prompt": "What should you do, given you don't yet know Marcus's choice?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Form a belief about which side Marcus is likely to pick, then choose your best response to that belief, since you can't yet respond to a known choice.",
+        "conceptTag": "best_response"
+      },
+      {
+        "id": "B",
+        "text": "Wait to choose until you can see which side Marcus actually picks, since a best response requires a known choice.",
+        "misconception": "strategic-not_br_to_own_prediction"
+      },
+      {
+        "id": "C",
+        "text": "Pick a side at random, since without knowing Marcus's choice there's no reasoning to do.",
+        "misconception": "strategic-incomplete_comparison"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Best response works against a known choice; belief response is what you fall back on when the other player's actual choice isn't yet known — picking your best response to your belief about what they'll do."
+  },
+  {
+    "id": "i.wk3.chk.a",
+    "concept": "dominant_strategy",
+    "scenario": "You and a rival food stall each decide whether to offer a loyalty card. Offering one gives you more customers whether your rival offers one or not. Not offering a loyalty card never gives you more customers than offering one does, in either case.",
+    "type": "reason_choice",
+    "prompt": "What's true about offering a loyalty card for you?",
+    "options": [
+      {
+        "id": "A",
+        "text": "It's a dominant strategy for you, and not offering one is a dominated action.",
+        "conceptTag": "dominant_strategy"
+      },
+      {
+        "id": "B",
+        "text": "It's a dominant strategy for you, but that says nothing about not offering one.",
+        "misconception": "strategic-incomplete_comparison"
+      },
+      {
+        "id": "C",
+        "text": "It's only a dominant strategy if your rival also offers a loyalty card.",
+        "misconception": "strategic-incomplete_comparison"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "A dominant strategy and a dominated action are two sides of the same comparison here: if offering a card beats not offering one against every rival choice, not offering one is automatically dominated."
+  },
+  {
+    "id": "i.wk3.chk.b",
+    "concept": "iesds",
+    "scenario": "In a simple pricing grid, one shop's 'discount' tier is dominated by its 'standard' tier against every price the rival charges. Once 'discount' is set aside, the rival's own 'clearance' tier turns out to be dominated too, but only once 'discount' is gone from consideration.",
+    "type": "reason_choice",
+    "prompt": "What does this show about iterated elimination?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Removing one dominated option can reveal a second one that wasn't dominated while the first was still being considered.",
+        "conceptTag": "iesds"
+      },
+      {
+        "id": "B",
+        "text": "Once one option is eliminated, no further options can become newly dominated.",
+        "misconception": "strategic-eliminated_undominated"
+      },
+      {
+        "id": "C",
+        "text": "The rival's 'clearance' tier must have been dominated from the very start, independent of 'discount'.",
+        "misconception": "strategic-eliminated_undominated"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "This is exactly why iteration matters: a round of elimination can change what's dominated in the next round, which is why each round has to be re-checked against what's actually still on the table."
+  },
+  {
+    "id": "i.wk3.chk.c",
+    "concept": "weak_dominance",
+    "scenario": "A gym offers a free trial week or not. Offering it is never worse for the gym than not offering it, whatever a rival gym does — and strictly better only if the rival also runs a promotion. Separately, the gym is deciding on a different choice where one option is strictly better against every possible rival action, no exceptions.",
+    "type": "reason_choice",
+    "prompt": "How do these two choices differ for the gym?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The free trial choice is weak dominance (never worse, sometimes better); the second choice is strict dominance (always better, no exceptions).",
+        "conceptTag": "weak_dominance"
+      },
+      {
+        "id": "B",
+        "text": "Both choices are examples of strict dominance, since both involve one option beating another.",
+        "misconception": "strategic-weak_as_strict"
+      },
+      {
+        "id": "C",
+        "text": "Both choices are examples of weak dominance, since neither is guaranteed to be the best possible outcome.",
+        "misconception": "strategic-weak_as_strict"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Weak dominance (never worse, sometimes better) and strict dominance (always better) are different claims — the free trial fits the weaker one, the other choice fits the stronger one."
+  },
+  {
+    "id": "i.wk4.chk.a",
+    "concept": "equilibrium",
+    "scenario": "You and a flatmate, Jo, are each deciding whether to subscribe to a streaming service separately or share one account. Sharing is your best response if Jo shares, and sharing is Jo's best response if you share. You both end up sharing one account.",
+    "type": "reason_choice",
+    "prompt": "Is both of you sharing one account an equilibrium, and is it necessarily the best outcome for you both?",
+    "options": [
+      {
+        "id": "A",
+        "text": "It's an equilibrium, since each of you is best-responding to the other — but that doesn't mean it's the best possible outcome for both of you.",
+        "conceptTag": "equilibrium"
+      },
+      {
+        "id": "B",
+        "text": "It's an equilibrium, and that guarantees it's also the best possible outcome for both of you.",
+        "misconception": "strategic-equilibrium_as_best_outcome"
+      },
+      {
+        "id": "C",
+        "text": "It can't be an equilibrium unless it's also the best possible outcome for both of you.",
+        "misconception": "strategic-equilibrium_as_best_outcome"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "An equilibrium only requires each side's choice to be a best response to the other's — it says nothing about whether some other, better pair of choices exists elsewhere."
+  },
+  {
+    "id": "i.wk4.chk.b",
+    "concept": "repeated_interaction",
+    "scenario": "You and a colleague split catering costs for a recurring team lunch, with many more lunches planned. This time, you're tempted to under-report your share of the bill to save a little money, which would go unnoticed just this once.",
+    "type": "reason_choice",
+    "prompt": "Should you under-report your share, and why does repetition matter here?",
+    "options": [
+      {
+        "id": "A",
+        "text": "No — because the lunches are recurring, under-reporting risks your colleague's trust and cooperation in many future rounds, not just this one-time saving.",
+        "conceptTag": "repeated_interaction"
+      },
+      {
+        "id": "B",
+        "text": "Yes — since it would go unnoticed this one time, the recurring nature of the lunches doesn't change anything.",
+        "misconception": "strategic-one_shot_reasoning_in_repeat"
+      },
+      {
+        "id": "C",
+        "text": "It doesn't matter either way, since trust isn't something that's affected by small choices like this.",
+        "misconception": "strategic-one_shot_reasoning_in_repeat"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "With a genuinely repeated arrangement, a small one-time gain has to be weighed against its effect on every future round — exactly the shadow of the future this week covered."
+  },
+  {
+    "id": "i.wk4.chk.c",
+    "concept": "reciprocity",
+    "scenario": "You and a study partner alternate explaining difficult topics to each other, with no end to the study group in sight. Your partner explains clearly and generously every single time, without exception, even on days you're too tired to reciprocate well.",
+    "type": "reason_choice",
+    "prompt": "Is your study partner's behaviour an example of reciprocity?",
+    "options": [
+      {
+        "id": "A",
+        "text": "No — reciprocity would mirror your effort level; always being generous regardless of what you do is unconditional cooperation, not reciprocity.",
+        "conceptTag": "reciprocity"
+      },
+      {
+        "id": "B",
+        "text": "Yes — reciprocity means being consistently generous no matter what the other person does.",
+        "misconception": "strategic-reciprocity_as_unconditional"
+      },
+      {
+        "id": "C",
+        "text": "Yes, as long as the arrangement is repeated rather than a one-off.",
+        "misconception": "strategic-reciprocity_as_unconditional"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "A genuinely reciprocal strategy mirrors the other side's last move — always cooperating regardless of what you do is a different thing: unconditional cooperation, which reciprocity is often confused with."
+  }
+]

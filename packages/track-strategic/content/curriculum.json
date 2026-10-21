@@ -23,7 +23,8 @@
         "strategic-m1.l1",
         "strategic-m1.l2",
         "strategic-m1.l3",
-        "strategic-m1.l4"
+        "strategic-m1.l4",
+        "strategic-m1.l5"
       ]
     },
     {
@@ -34,7 +35,8 @@
       "lessonIds": [
         "strategic-m2.l1",
         "strategic-m2.l2",
-        "strategic-m2.l3"
+        "strategic-m2.l3",
+        "strategic-m2.l4"
       ]
     },
     {
@@ -47,7 +49,8 @@
         "strategic-m3.l2",
         "strategic-m3.l3",
         "strategic-m3.l4",
-        "strategic-m3.l5"
+        "strategic-m3.l5",
+        "strategic-m3.l6"
       ]
     },
     {
@@ -59,7 +62,8 @@
         "strategic-m4.l1",
         "strategic-m4.l2",
         "strategic-m4.l3",
-        "strategic-m4.l4"
+        "strategic-m4.l4",
+        "strategic-m4.l5"
       ]
     }
   ],
@@ -81,7 +85,9 @@
       "interactiveItemIds": [
         "i.m1.players",
         "i.m1.actions",
-        "i.m1.players.three"
+        "i.m1.players.three",
+        "i.bank.players",
+        "i.bank.actions"
       ],
       "masteryItemIds": [
         "i.m1.actions"
@@ -121,7 +127,9 @@
       "interactiveItemIds": [
         "i.m1.ranking",
         "i.m1.ranking.tie",
-        "i.m1.payoff"
+        "i.m1.payoff",
+        "i.bank.preferences",
+        "i.bank.payoff"
       ],
       "masteryItemIds": [
         "i.m1.ranking.tie",
@@ -166,7 +174,9 @@
         "i.m1.info.three",
         "i.m1.unseen",
         "i.m1.first.unseen",
-        "i.m1.unseen.why"
+        "i.m1.unseen.why",
+        "i.bank.timing",
+        "i.bank.information"
       ],
       "masteryItemIds": [],
       "contentVersion": 1,
@@ -205,6 +215,7 @@
         "i.m1.depends.three",
         "i.m1.depends.turns",
         "i.m1.depends.unseen",
+        "i.bank.strategic_dependence",
         "i.m1.words"
       ],
       "masteryItemIds": [
@@ -231,6 +242,55 @@
       "reflect": "What's one situation where you reacted on instinct, without really asking what the other person was likely to do?"
     },
     {
+      "id": "strategic-m1.l5",
+      "trackId": "strategic",
+      "moduleId": "strategic-m1",
+      "sequence": 5,
+      "title": "Reading the Whole Situation",
+      "objectives": [
+        "Combine players, actions, preferences, payoff, timing, information and strategic dependence to read one situation completely, not one piece at a time."
+      ],
+      "concepts": [
+        "players",
+        "actions",
+        "preferences",
+        "payoff",
+        "timing",
+        "information",
+        "strategic_dependence"
+      ],
+      "prerequisites": [
+        "strategic-m1.l1",
+        "strategic-m1.l2",
+        "strategic-m1.l3",
+        "strategic-m1.l4"
+      ],
+      "interactiveItemIds": [
+        "i.wk1.chk.a",
+        "i.wk1.chk.b",
+        "i.wk1.chk.c"
+      ],
+      "masteryItemIds": [
+        "i.wk1.chk.a",
+        "i.wk1.chk.b",
+        "i.wk1.chk.c"
+      ],
+      "teach": [
+        "Every real situation hands you all of this at once, not one labelled piece at a time: who's actually a player, what they can choose, what they want, who knows what and when, and whether your result depends on theirs. This week's four lessons separated those pieces out to learn them cleanly. This lesson puts them back together.",
+        "Treating each question in isolation, as if the earlier lessons' topics don't interact in a single scenario. A real situation doesn't announce 'this part is about timing, this part is about preferences' — reading it means pulling out whichever pieces actually matter, together, without being told which lesson they came from.",
+        "None of this week's questions is actually new, either — putting them together is just applying the same best-response and dependence reasoning to a fuller picture at once, rather than to one isolated piece."
+      ],
+      "example": "You and a neighbour, Faisal, are each deciding whether to mow a shared strip of grass this week. You post a note on the shared fence saying you'll do it Tuesday; Faisal reads it Wednesday. Faisal would rather you mow it than do it himself, but if neither of you does, it gets overgrown and bothers you both. Reading this completely: players are you and Faisal; actions are mow or don't; you chose first (timing), and Faisal saw your note before deciding (information); Faisal's top preference is you mowing it, but his actual result still depends on what you do (strategic dependence).",
+      "practicePrompts": [
+        "Pick a situation you're in that involves at least one other person.",
+        "Try to name every piece at once: who's a player, what they can choose, what each wants, who knows what and when.",
+        "Check whether your result in it actually depends on what the other person chooses."
+      ],
+      "apply": "Next time a situation involving someone else feels complicated, write out the full picture in one go — players, actions, preferences, timing, information, and whether your results depend on each other — rather than reasoning about pieces of it separately.",
+      "reflect": "Think back over this week's four lessons. Which single piece — players, preferences, timing, or strategic dependence — do you most often skip when sizing up a situation in real life?",
+      "contentVersion": 1
+    },
+    {
       "id": "strategic-m2.l1",
       "trackId": "strategic",
       "moduleId": "strategic-m2",
@@ -243,8 +303,7 @@
         "best_response"
       ],
       "prerequisites": [
-        "strategic-m1.l2",
-        "strategic-m1.l4"
+        "strategic-m1.l5"
       ],
       "interactiveItemIds": [
         "i.m2.br.match",
@@ -252,7 +311,8 @@
         "i.m2.br.three",
         "i.m2.br.fill",
         "i.m2.br.known",
-        "i.m2.br.tie"
+        "i.m2.br.tie",
+        "i.bank.best_response"
       ],
       "masteryItemIds": [],
       "contentVersion": 1,
@@ -291,7 +351,8 @@
         "i.m2.flip.apart",
         "i.m2.flip.three",
         "i.m2.pattern.match",
-        "i.m2.pattern.apart"
+        "i.m2.pattern.apart",
+        "i.bank.coordination"
       ],
       "masteryItemIds": [],
       "contentVersion": 1,
@@ -329,6 +390,7 @@
         "i.m2.belief",
         "i.m2.belief.near",
         "i.m2.belief.three",
+        "i.bank.belief_response",
         "i.m2.words"
       ],
       "masteryItemIds": [
@@ -355,6 +417,50 @@
       "reflect": "Where have you acted on a hunch about someone else's likely choice without ever making the belief, or the comparison, explicit?"
     },
     {
+      "id": "strategic-m2.l4",
+      "trackId": "strategic",
+      "moduleId": "strategic-m2",
+      "sequence": 4,
+      "title": "Responding, Put Together",
+      "objectives": [
+        "Combine best response, coordination and belief response to choose well whether the other side's choice is known, matched, or only believed."
+      ],
+      "concepts": [
+        "best_response",
+        "coordination",
+        "belief_response"
+      ],
+      "prerequisites": [
+        "strategic-m2.l1",
+        "strategic-m2.l2",
+        "strategic-m2.l3"
+      ],
+      "interactiveItemIds": [
+        "i.wk2.chk.a",
+        "i.wk2.chk.b",
+        "i.wk2.chk.c"
+      ],
+      "masteryItemIds": [
+        "i.wk2.chk.a",
+        "i.wk2.chk.b",
+        "i.wk2.chk.c"
+      ],
+      "teach": [
+        "This week built one idea in three stages: best response (react to a known choice), coordination (notice when your best response moves to match or differ from theirs), and belief response (react to a choice you don't know yet, only believe something about). Real situations don't announce which of the three you're in.",
+        "Assuming the same approach always applies. Whether you should be matching, differing, or weighing a belief depends entirely on what you actually know about the other side's choice at the moment you're deciding — known, matchable, or uncertain are three different starting points, not one.",
+        "This is the same discipline as every lesson in this track so far: name what you actually know before choosing which tool fits, rather than reaching for whichever one you used last."
+      ],
+      "example": "You and a co-presenter are picking slide software for a joint talk. If you know they've already picked one, your job is a best response: match it. If you don't know yet but think they're more likely to pick one over the other, your job is a belief response: weigh the likelihoods. Same situation, different tools, depending on what you actually know when you choose.",
+      "practicePrompts": [
+        "Pick a decision involving someone else's choice.",
+        "Ask: do you actually know their choice, or only have a belief about it?",
+        "Pick the matching tool — best response to a known choice, or belief response to an uncertain one."
+      ],
+      "apply": "Before your next decision involving someone else, check first whether you actually know their choice or are only guessing at it — and use best response or belief response accordingly, not whichever feels more natural.",
+      "reflect": "Think of a recent decision where you treated an uncertain guess about someone's choice as if it were a known fact. What would a genuine belief response have looked like instead?",
+      "contentVersion": 1
+    },
+    {
       "id": "strategic-m3.l1",
       "trackId": "strategic",
       "moduleId": "strategic-m3",
@@ -367,12 +473,13 @@
         "dominant_strategy"
       ],
       "prerequisites": [
-        "strategic-m2.l1"
+        "strategic-m2.l4"
       ],
       "interactiveItemIds": [
         "i.m3.dom.reason",
         "i.m3.dom.fill",
-        "i.m3.three.dom"
+        "i.m3.three.dom",
+        "i.bank.dominant_strategy"
       ],
       "masteryItemIds": [],
       "contentVersion": 1,
@@ -447,7 +554,8 @@
         "strategic-m3.l1"
       ],
       "interactiveItemIds": [
-        "i.m3.dominated"
+        "i.m3.dominated",
+        "i.bank.dominated_action"
       ],
       "masteryItemIds": [
         "i.m3.contrast.match",
@@ -489,6 +597,7 @@
         "i.m3.iesds.step",
         "i.m3.iesds",
         "i.m3.iesds.stuck",
+        "i.bank.iesds",
         "i.m3.words"
       ],
       "masteryItemIds": [],
@@ -526,7 +635,8 @@
       ],
       "interactiveItemIds": [
         "i.m3.weak",
-        "i.m3.weak.b"
+        "i.m3.weak.b",
+        "i.bank.weak_dominance"
       ],
       "masteryItemIds": [
         "i.m3.t.dom",
@@ -551,6 +661,53 @@
       "reflect": "Where have you mistaken \"never worse, sometimes better\" for an ironclad guarantee, when it was really just a reasonable edge?"
     },
     {
+      "id": "strategic-m3.l6",
+      "trackId": "strategic",
+      "moduleId": "strategic-m3",
+      "sequence": 6,
+      "title": "Dominance, Start to Finish",
+      "objectives": [
+        "Combine dominant strategy, dominated action, iterated elimination and weak dominance into one process for narrowing down choices."
+      ],
+      "concepts": [
+        "dominant_strategy",
+        "dominated_action",
+        "iesds",
+        "weak_dominance"
+      ],
+      "prerequisites": [
+        "strategic-m3.l1",
+        "strategic-m3.l2",
+        "strategic-m3.l3",
+        "strategic-m3.l4",
+        "strategic-m3.l5"
+      ],
+      "interactiveItemIds": [
+        "i.wk3.chk.a",
+        "i.wk3.chk.b",
+        "i.wk3.chk.c"
+      ],
+      "masteryItemIds": [
+        "i.wk3.chk.a",
+        "i.wk3.chk.b",
+        "i.wk3.chk.c"
+      ],
+      "teach": [
+        "This week's four ideas are really one process in stages: find a dominant strategy if one exists; notice that whatever's dominant for you makes the alternative dominated; remove dominated options and re-check what's left (iteration); and when nothing is strictly dominant, check for the weaker claim of weak dominance instead.",
+        "Treating these as four separate topics to apply one at a time rather than one narrowing-down process. In practice you check for a dominant strategy, and if none exists outright, you look for what can be eliminated, re-check, and only fall back to weak dominance once strict dominance has been ruled out.",
+        "Each stage still rests on the same single comparison from the start of this module — is one option better against every one of the other side's choices — just applied with more patience and in the right order."
+      ],
+      "example": "A shop is picking a pricing tier. Checking each tier against every rival price (dominant strategy), the shop finds one tier beats all others outright — which also means the others were dominated. If no single tier had dominated outright, the next move would have been eliminating any clearly worse tier first (iteration), then checking the remainder for at least a weak-dominance edge.",
+      "practicePrompts": [
+        "Pick a decision with more than two options.",
+        "Check first for a dominant strategy among your options.",
+        "If none exists, check whether anything can be eliminated as dominated, then re-check what's left."
+      ],
+      "apply": "Next time you're facing more than two options, work through the narrowing-down process in order: check for a dominant strategy, eliminate anything dominated and re-check, then fall back to weak dominance only if nothing strictly dominates.",
+      "reflect": "Think of a choice with several options where you picked one without really ruling the others out. Would checking for dominance, then elimination, have changed which one you picked?",
+      "contentVersion": 1
+    },
+    {
       "id": "strategic-m4.l1",
       "trackId": "strategic",
       "moduleId": "strategic-m4",
@@ -563,12 +720,13 @@
         "equilibrium"
       ],
       "prerequisites": [
-        "strategic-m3.l5"
+        "strategic-m3.l6"
       ],
       "interactiveItemIds": [
         "i.m4.eq.check",
         "i.m4.eq.switch",
-        "i.m4.eq.both"
+        "i.m4.eq.both",
+        "i.bank.equilibrium"
       ],
       "masteryItemIds": [],
       "teach": [
@@ -605,7 +763,8 @@
       "interactiveItemIds": [
         "i.m4.multi.find",
         "i.m4.multi.second",
-        "i.m4.multi.settle"
+        "i.m4.multi.settle",
+        "i.bank.multiple_equilibria"
       ],
       "masteryItemIds": [],
       "teach": [
@@ -642,7 +801,8 @@
       "interactiveItemIds": [
         "i.m4.repeat.spot",
         "i.m4.repeat.future",
-        "i.m4.repeat.onceoff"
+        "i.m4.repeat.onceoff",
+        "i.bank.repeated_interaction"
       ],
       "masteryItemIds": [],
       "teach": [
@@ -682,6 +842,7 @@
         "i.m4.recip.rule",
         "i.m4.recip.punish",
         "i.m4.recip.forgive",
+        "i.bank.reciprocity",
         "i.m4.words"
       ],
       "masteryItemIds": [
@@ -705,6 +866,49 @@
       ],
       "apply": "In your next repeated arrangement with someone, try reciprocity deliberately: start cooperatively, mirror exactly what they did last time, and return to cooperating the moment they do.",
       "reflect": "Think of a repeated relationship where you held a grudge longer than one round after a single let-down. What would have been different if you'd mirrored just that one round, then returned to cooperating?",
+      "contentVersion": 1
+    },
+    {
+      "id": "strategic-m4.l5",
+      "trackId": "strategic",
+      "moduleId": "strategic-m4",
+      "sequence": 5,
+      "title": "A Repeated Situation, Fully Read",
+      "objectives": [
+        "Combine equilibrium, multiple equilibria, repeated interaction and reciprocity to read an ongoing relationship completely."
+      ],
+      "concepts": [
+        "equilibrium",
+        "multiple_equilibria",
+        "repeated_interaction",
+        "reciprocity"
+      ],
+      "prerequisites": [
+        "strategic-m4.l4"
+      ],
+      "interactiveItemIds": [
+        "i.wk4.chk.a",
+        "i.wk4.chk.b",
+        "i.wk4.chk.c"
+      ],
+      "masteryItemIds": [
+        "i.wk4.chk.a",
+        "i.wk4.chk.b",
+        "i.wk4.chk.c"
+      ],
+      "teach": [
+        "This week asked what's stable (equilibrium), whether more than one stable point exists (multiple equilibria), what changes when the same players meet repeatedly (repeated interaction), and a simple strategy built for exactly that setting (reciprocity). Together, they're how you read an ongoing relationship or arrangement, not just a single round.",
+        "Treating an ongoing relationship as a one-off decision each time, rather than checking whether it's settled into a stable pattern, whether a different stable pattern was possible, and what today's choice does to tomorrow's.",
+        "As with every module before this one, none of these four ideas requires new reasoning — equilibrium is best response checked twice, and reciprocity is best response applied one round at a time, now with a memory of what just happened."
+      ],
+      "example": "You and a neighbour have settled into always helping move each other's bins out on collection day (an equilibrium, and quite possibly one of several that could have worked). You keep doing it because the arrangement is ongoing, not a one-off (repeated interaction), and if your neighbour ever skipped a turn, you'd mirror it once rather than holding a permanent grudge (reciprocity).",
+      "practicePrompts": [
+        "Think of an ongoing arrangement you have with someone else.",
+        "Check whether it's an equilibrium — would either of you want to unilaterally switch, given what the other does?",
+        "Ask whether you're treating it like a repeated relationship or reasoning about just today."
+      ],
+      "apply": "Pick one ongoing arrangement in your life and read it completely: is it stable, could a different stable pattern have worked just as well, and are you reasoning about its effect on future rounds or just this one?",
+      "reflect": "Across this whole module, which idea — equilibrium, multiple equilibria, repeated interaction, or reciprocity — changed how you think about an ongoing relationship the most?",
       "contentVersion": 1
     }
   ],

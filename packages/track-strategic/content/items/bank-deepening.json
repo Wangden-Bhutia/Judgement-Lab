@@ -1,0 +1,500 @@
+[
+  {
+    "id": "i.bank.players",
+    "concept": "players",
+    "scenario": "Two gardening club members, Priya and Owen, each decide whether to water a shared plot today. The club's treasurer, who never visits the plot, has no say in it.",
+    "type": "reason_choice",
+    "prompt": "Whose choices decide how the plot gets watered?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Priya, Owen and the treasurer, since all three are in the club.",
+        "misconception": "strategic-model_extra_player"
+      },
+      {
+        "id": "B",
+        "text": "Priya and Owen: each of their choices changes the result.",
+        "conceptTag": "players"
+      },
+      {
+        "id": "C",
+        "text": "Only Priya: Owen has no real say in the result.",
+        "misconception": "strategic-model_missing_player"
+      }
+    ],
+    "acceptableAnswers": [
+      "B"
+    ],
+    "explanation": "A player is anyone whose choice affects the outcome. The treasurer, who makes no choice here, is not a player."
+  },
+  {
+    "id": "i.bank.actions",
+    "concept": "actions",
+    "scenario": "A food truck owner picks a lunch spot each day: the park, the office park, or the stadium lot.",
+    "type": "reason_choice",
+    "prompt": "What can the owner choose from today?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The park, the office park, or the stadium lot — any of them.",
+        "conceptTag": "actions"
+      },
+      {
+        "id": "B",
+        "text": "Only the park or the office park, nothing else.",
+        "misconception": "strategic-model_missing_action"
+      },
+      {
+        "id": "C",
+        "text": "Only the stadium lot, since it's usually busiest.",
+        "misconception": "strategic-model_missing_action"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "An action is one of the choices a player can actually make. All three spots are genuinely open to the owner today."
+  },
+  {
+    "id": "i.bank.preferences",
+    "concept": "preferences",
+    "scenario": "Two roommates, Lee and Sam, are picking a weekend activity: hiking or a movie. Sam is an outdoors person who finds movies tedious.",
+    "type": "reason_choice",
+    "prompt": "Which outcome does Sam like most?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Both of them hiking.",
+        "conceptTag": "preferences"
+      },
+      {
+        "id": "B",
+        "text": "Both of them watching the movie.",
+        "misconception": "strategic-model_wrong_ranking"
+      },
+      {
+        "id": "C",
+        "text": "Lee picks the movie and Sam goes hiking alone.",
+        "misconception": "strategic-model_wrong_ranking"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Preferences rank the outcomes for one player. An outdoors person who dislikes movies ranks both hiking above both watching a movie."
+  },
+  {
+    "id": "i.bank.payoff",
+    "concept": "payoff",
+    "type": "fill_in",
+    "scenario": "Two food stalls, yours and a rival's, each pick a price: high or low. If you both go high, you each make 4. If you go low and they go high, you make 5 and they make 1. If you both go low, you each make 2.",
+    "prompt": "In the table, when you choose Low and the rival chooses High, your payoff is ___ and the rival's payoff is ___.",
+    "slots": [
+      {
+        "id": "s1",
+        "acceptedValues": [
+          "5"
+        ]
+      },
+      {
+        "id": "s2",
+        "acceptedValues": [
+          "1"
+        ]
+      }
+    ],
+    "explanation": "A payoff is a number for how much a player likes an outcome. You going low while the rival stays high gives you 5 and the rival 1."
+  },
+  {
+    "id": "i.bank.timing",
+    "concept": "timing",
+    "scenario": "Two siblings split weekend chores. One posts a chore list on the fridge Saturday morning before leaving for work. The other reads it that afternoon and picks their own tasks around it.",
+    "type": "reason_choice",
+    "prompt": "Who chooses first?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The one who posted the list, before leaving for work.",
+        "conceptTag": "timing"
+      },
+      {
+        "id": "B",
+        "text": "The one who read the list that afternoon.",
+        "misconception": "strategic-model_wrong_timing"
+      },
+      {
+        "id": "C",
+        "text": "Neither: they both choose at the same moment.",
+        "misconception": "strategic-model_wrong_timing"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Timing says who chooses when. Posting the list and leaving means that sibling committed to their choice first."
+  },
+  {
+    "id": "i.bank.information",
+    "concept": "information",
+    "scenario": "Two siblings split weekend chores. One posts a chore list on the fridge Saturday morning before leaving for work. The other reads it that afternoon and picks their own tasks around it.",
+    "type": "reason_choice",
+    "prompt": "When the second sibling picks their tasks, what do they know about the first sibling's choice?",
+    "options": [
+      {
+        "id": "A",
+        "text": "They've already seen the first sibling's list.",
+        "conceptTag": "information"
+      },
+      {
+        "id": "B",
+        "text": "They haven't seen it yet.",
+        "misconception": "strategic-model_wrong_info"
+      },
+      {
+        "id": "C",
+        "text": "They chose before the first sibling did.",
+        "misconception": "strategic-model_wrong_timing"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Information says what each player knows when choosing. Reading the posted list means the second sibling has already seen the first's choice."
+  },
+  {
+    "id": "i.bank.strategic_dependence",
+    "concept": "strategic_dependence",
+    "scenario": "You and a co-worker, Nina, each decide whether to bring your own lunch or order delivery today. If you both order from the same place, you can split the delivery fee; if only one of you orders, that person pays the full fee alone.",
+    "type": "reason_choice",
+    "prompt": "Does how things go for you depend on what Nina chooses?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Yes: whether you save on the fee depends on whether Nina also orders.",
+        "conceptTag": "strategic_dependence"
+      },
+      {
+        "id": "B",
+        "text": "No: your own choice alone decides how much you pay.",
+        "misconception": "strategic-ignored_dependence"
+      },
+      {
+        "id": "C",
+        "text": "Only if Nina sees your choice before deciding.",
+        "misconception": "strategic-model_wrong_info"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "There is strategic dependence when your result depends on someone else's choice as well as your own — here, whether you split the fee depends on Nina's choice."
+  },
+  {
+    "id": "i.bank.best_response",
+    "concept": "best_response",
+    "scenario": "You and a teammate, Marcus, are picking which side of the court to defend. You find out Marcus has already committed to the left side.",
+    "type": "reason_choice",
+    "prompt": "Given that, which side is better for you to defend?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Whichever side gives you the better result specifically against Marcus defending left.",
+        "conceptTag": "best_response"
+      },
+      {
+        "id": "B",
+        "text": "Whichever side would be better if Marcus had picked right instead.",
+        "misconception": "strategic-across_not_within"
+      },
+      {
+        "id": "C",
+        "text": "The side that's better for you no matter what Marcus does, without checking.",
+        "misconception": "strategic-incomplete_comparison"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "A best response is the action that gives you the highest payoff given the other player's actual choice — here, specifically against Marcus defending left."
+  },
+  {
+    "id": "i.bank.coordination",
+    "concept": "coordination",
+    "scenario": "You and a co-presenter are each picking which slide deck software to open for a joint presentation. If you open the same one, you can share your screen smoothly; if you open different ones, the handoff is clumsy.",
+    "type": "reason_choice",
+    "prompt": "Does your better choice depend on what your co-presenter picks?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Yes: your better choice changes to match whichever one they pick.",
+        "conceptTag": "coordination"
+      },
+      {
+        "id": "B",
+        "text": "No: one of the two software options is simply better for you either way.",
+        "misconception": "strategic-incomplete_comparison"
+      },
+      {
+        "id": "C",
+        "text": "Yes, but only because they can see your screen first.",
+        "misconception": "strategic-model_wrong_info"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "In a coordination situation, your best response is to match the other player's choice — here, picking the same software they did."
+  },
+  {
+    "id": "i.bank.belief_response",
+    "concept": "belief_response",
+    "scenario": "You're deciding whether to bring an umbrella or not. You think there's a 70% chance of rain and a 30% chance it stays dry.",
+    "type": "reason_choice",
+    "prompt": "Which choice does best on average, given that belief?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Bring the umbrella, given how likely rain is.",
+        "conceptTag": "belief_response"
+      },
+      {
+        "id": "B",
+        "text": "Leave the umbrella, given how likely rain is.",
+        "misconception": "strategic-not_br_to_own_prediction"
+      },
+      {
+        "id": "C",
+        "text": "It doesn't matter either way, since the outcome is uncertain.",
+        "misconception": "strategic-incomplete_comparison"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "A belief response weighs each possible outcome by how likely it is. At 70% rain, bringing the umbrella does better on average."
+  },
+  {
+    "id": "i.bank.dominant_strategy",
+    "concept": "dominant_strategy",
+    "scenario": "You and a co-author each decide whether to back up your shared draft to cloud storage or keep it on your own laptop only. Backing up to the cloud gives you a better outcome whether your co-author backs up too or not.",
+    "type": "reason_choice",
+    "prompt": "Is backing up to the cloud a dominant strategy for you?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Yes: it's better for you whatever your co-author does.",
+        "conceptTag": "dominant_strategy"
+      },
+      {
+        "id": "B",
+        "text": "No: which choice is better for you depends on what your co-author does.",
+        "misconception": "strategic-incomplete_comparison"
+      },
+      {
+        "id": "C",
+        "text": "Yes, but only because it's better against one specific choice of your co-author's.",
+        "misconception": "strategic-incomplete_comparison"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "A dominant strategy gives you a higher payoff than any alternative, whatever the other player does — here, that holds for cloud backup against either of your co-author's choices."
+  },
+  {
+    "id": "i.bank.dominated_action",
+    "concept": "dominated_action",
+    "scenario": "Two small business owners are each picking a supplier: local or overseas. For one of them, overseas always gives a worse margin than local, whichever supplier their competitor uses.",
+    "type": "reason_choice",
+    "prompt": "Is overseas a dominated action for that owner?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Yes: local gives them a higher margin whatever their competitor does.",
+        "conceptTag": "dominated_action"
+      },
+      {
+        "id": "B",
+        "text": "No: overseas is only worse in one specific case.",
+        "misconception": "strategic-incomplete_comparison"
+      },
+      {
+        "id": "C",
+        "text": "Yes, but only if their competitor also chooses overseas.",
+        "misconception": "strategic-incomplete_comparison"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "An action is dominated when another action gives a higher payoff whatever the other player does — here, local beats overseas against either of the competitor's choices."
+  },
+  {
+    "id": "i.bank.iesds",
+    "concept": "iesds",
+    "scenario": "In a pricing grid, one shop's 'premium' tier is dominated by its 'standard' tier no matter what a rival shop charges. After setting 'premium' aside, a second comparison that was previously unclear becomes obvious.",
+    "type": "reason_choice",
+    "prompt": "What should happen with the previously-unclear comparison?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Re-check it now that 'premium' is set aside, since removing a dominated option can make a new one clear.",
+        "conceptTag": "iesds"
+      },
+      {
+        "id": "B",
+        "text": "Ignore it, since the first elimination already solved the situation.",
+        "misconception": "strategic-eliminated_undominated"
+      },
+      {
+        "id": "C",
+        "text": "Re-check it including 'premium' again, since it might still matter.",
+        "misconception": "strategic-eliminated_undominated"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Iterated elimination removes dominated actions one round at a time and re-checks what's left — a comparison that was unclear can resolve once a dominated option is gone."
+  },
+  {
+    "id": "i.bank.weak_dominance",
+    "concept": "weak_dominance",
+    "scenario": "A café can offer loyalty stamps or not. Offering them is never worse for the café than not offering them, whatever a nearby rival café does — and strictly better if the rival starts offering stamps too.",
+    "type": "reason_choice",
+    "prompt": "What's true about offering loyalty stamps, compared to not offering them?",
+    "options": [
+      {
+        "id": "A",
+        "text": "It weakly dominates not offering them: never worse, and better in at least one case.",
+        "conceptTag": "weak_dominance"
+      },
+      {
+        "id": "B",
+        "text": "It strictly dominates not offering them: always better, no exceptions.",
+        "misconception": "strategic-weak_as_strict"
+      },
+      {
+        "id": "C",
+        "text": "Neither dominates the other, since it depends entirely on the rival.",
+        "misconception": "strategic-incomplete_comparison"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Weak dominance means never worse, and better in at least one case — a weaker, more common claim than strict dominance."
+  },
+  {
+    "id": "i.bank.equilibrium",
+    "concept": "equilibrium",
+    "scenario": "Two small shop owners on the same street each decide whether to open on Sundays. Opening is each owner's best response to the other opening, and also each owner's best response to the other staying closed. Both end up opening.",
+    "type": "reason_choice",
+    "prompt": "Is both of them opening on Sundays an equilibrium?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Yes: opening is each owner's best response to the other's actual choice.",
+        "conceptTag": "equilibrium"
+      },
+      {
+        "id": "B",
+        "text": "Only if opening is also the best possible outcome for both of them.",
+        "misconception": "strategic-equilibrium_as_best_outcome"
+      },
+      {
+        "id": "C",
+        "text": "No, since neither owner's best response depends on the other's choice here.",
+        "misconception": "strategic-incomplete_comparison"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Since opening is a dominant strategy for each owner here, it's automatically a best response to the other's actual choice — so both opening is an equilibrium."
+  },
+  {
+    "id": "i.bank.multiple_equilibria",
+    "concept": "multiple_equilibria",
+    "scenario": "Two study partners are picking which library floor to meet on, floor 2 or floor 3, with both preferring to be on the same floor as the other over studying alone. Both meeting on floor 2 has already been confirmed as an equilibrium.",
+    "type": "reason_choice",
+    "prompt": "Should floor 3 also be checked?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Yes — it's entirely possible both meeting on floor 3 is a second, equally stable equilibrium.",
+        "conceptTag": "multiple_equilibria"
+      },
+      {
+        "id": "B",
+        "text": "No, since floor 2 being confirmed stable rules out floor 3.",
+        "misconception": "strategic-ignored_other_equilibrium"
+      },
+      {
+        "id": "C",
+        "text": "No, a matching situation like this always has exactly one equilibrium.",
+        "misconception": "strategic-ignored_other_equilibrium"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "A pure matching situation like this commonly has more than one stable pair — floor 3 deserves the same check floor 2 got, not an assumption either way."
+  },
+  {
+    "id": "i.bank.repeated_interaction",
+    "concept": "repeated_interaction",
+    "scenario": "You carpool with a colleague every week, with no end in sight. You're deciding whether to chip in for gas this week even though it's technically the other person's turn to pay.",
+    "type": "reason_choice",
+    "prompt": "What should factor into this decision?",
+    "options": [
+      {
+        "id": "A",
+        "text": "How paying, or not, shapes whether your colleague keeps carpooling with you in future weeks, not just this week's cost.",
+        "conceptTag": "repeated_interaction"
+      },
+      {
+        "id": "B",
+        "text": "Only this week's cost, since whose turn it is settles the matter.",
+        "misconception": "strategic-one_shot_reasoning_in_repeat"
+      },
+      {
+        "id": "C",
+        "text": "Nothing: since the carpool is ongoing, this week's cost is irrelevant either way.",
+        "misconception": "strategic-one_shot_reasoning_in_repeat"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "With a genuinely ongoing arrangement, a choice's effect on future rounds belongs in the reasoning alongside its immediate cost."
+  },
+  {
+    "id": "i.bank.reciprocity",
+    "concept": "reciprocity",
+    "scenario": "You and a neighbour take turns walking each other's dogs. Last week, you forgot and skipped your turn without explanation. This week, your neighbour walks your dog anyway, as normal.",
+    "type": "reason_choice",
+    "prompt": "What does reciprocity call for on your next turn?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Walk their dog as normal, since reciprocity mirrors their most recent choice — which was to cooperate.",
+        "conceptTag": "reciprocity"
+      },
+      {
+        "id": "B",
+        "text": "Skip your turn again, since you already broke the pattern once.",
+        "misconception": "strategic-reciprocity_as_unconditional"
+      },
+      {
+        "id": "C",
+        "text": "Wait a few more turns before resuming, to be sure the arrangement still holds.",
+        "misconception": "strategic-reciprocity_as_unconditional"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Reciprocity tracks the other side's most recent choice, not a running tally. Since they just cooperated, a reciprocal strategy cooperates back immediately."
+  }
+]
