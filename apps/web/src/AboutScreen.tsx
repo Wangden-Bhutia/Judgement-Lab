@@ -11,11 +11,11 @@ export function AboutScreen({ trackTitles, onDone }: AboutScreenProps) {
       <section className="settings-block">
         <p>
           Judgment Lab is three daily-practice tracks — {trackTitles.join(', ')} — sharing one engine and one
-          storage layer. They're not the same length, on purpose: Emotional Skills is a full 12-week course, while
-          Strategic Reasoning and Behavioural Observation are shorter primers. Today recommends one lesson at a
-          time, from whichever track has gone longest without practice, so once a shorter track is finished it
-          simply stops coming up there — Library is still there to revisit it any time. There is no account and no
-          backend: everything you see here lives only in this browser.
+          storage layer. All three are now full, roughly 12-week courses, built so any of them, done daily, gets
+          you to the same kind of depth. Today recommends one lesson at a time, from whichever track has gone
+          longest without practice, so once a track is finished it simply stops coming up there — Library is still
+          there to revisit it any time. There is no account and no backend: everything you see here lives only in
+          this browser.
         </p>
       </section>
 
@@ -23,8 +23,10 @@ export function AboutScreen({ trackTitles, onDone }: AboutScreenProps) {
         <h2>Strategic Reasoning</h2>
         <p>
           Reading a situation before reacting to it — who actually has a say, what their real options are, what
-          each side knows. The kind of judgment a negotiation or a conflicted project call calls for. 4 modules so
-          far: 16 lessons, still shorter than Emotional Skills but growing.
+          each side knows — and turning that into better negotiation, fewer bias-driven mistakes, and more honest,
+          effective communication under pressure. 12 modules, 59 lessons: observation and leverage, repeated
+          interactions, negotiation, cognitive biases, and direct communication, closing with an integrative
+          capstone.
         </p>
       </section>
 
@@ -32,8 +34,9 @@ export function AboutScreen({ trackTitles, onDone }: AboutScreenProps) {
         <h2>Emotional Skills</h2>
         <p>
           Noticing, naming, and regulating emotion under real pressure — criticism, conflict, a looming deadline —
-          instead of just reacting to it. The deep track here: a 12-week course, the one you'll likely still be
-          working through once the other two are done.
+          instead of just reacting to it. 9 phases, 60 sessions, spanning foundations, interpretation, strategy
+          choice, criticism and conflict, and professional composure, with a weekly checkpoint built into every
+          phase.
         </p>
       </section>
 
@@ -41,8 +44,9 @@ export function AboutScreen({ trackTitles, onDone }: AboutScreenProps) {
         <h2>Behavioural Observation</h2>
         <p>
           Telling what someone did apart from the story you've added about why, and holding more than one
-          explanation before settling on one. Most of what reading people fairly and giving less-biased feedback
-          comes down to. 2 modules so far: 7 lessons, still shorter than Emotional Skills but growing.
+          explanation before settling on one. Most of what reading people fairly, listening well, giving and
+          receiving feedback, and taking someone else's perspective actually comes down to. 12 modules, 58
+          lessons, closing with an integrative capstone.
         </p>
       </section>
 

@@ -15,9 +15,9 @@ export function OnboardingScreen({ mode, onDone }: OnboardingScreenProps) {
         <p>
           Three practice tracks — Strategic Reasoning, Emotional Skills, and Behavioural Observation — share one
           engine and one habit. Today recommends one lesson at a time; there's no need to juggle all three
-          yourself. They're not the same length, though: Emotional Skills is a full 12-week course, while the
-          other two are shorter primers you'll likely finish in a couple of weeks. Once a track is done, Today
-          simply stops suggesting it — Library is still there to revisit it any time.
+          yourself. All three are now full, roughly 12-week courses of similar depth — this isn't a quick primer
+          you finish in a couple of weeks, in any of the three. Once a track is done, Today simply stops
+          suggesting it — Library is still there to revisit it any time.
         </p>
       </section>
 
