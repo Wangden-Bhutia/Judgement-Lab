@@ -1,0 +1,352 @@
+[
+  {
+    "id": "i.cap.neg.a",
+    "concept": "sunk_cost",
+    "scenario": "You're selling a used car and recently spent $800 on repairs. A buyer's offer is below what you'd hoped, and you find yourself resisting it partly because of the $800 you put in.",
+    "type": "reason_choice",
+    "prompt": "What should the $800 already spent mean for your reservation value?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Nothing directly — it's gone regardless of the sale price, and your reservation value should be set by your actual BATNA (what you'd do if you didn't sell), not by what you've already spent.",
+        "conceptTag": "sunk_cost"
+      },
+      {
+        "id": "B",
+        "text": "It should raise your reservation value, since you need to recoup the repair cost.",
+        "misconception": "strategic-sunk_cost_influence"
+      },
+      {
+        "id": "C",
+        "text": "It should be added directly to your target price as a fixed markup.",
+        "misconception": "strategic-sunk_cost_influence"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "The $800 is sunk regardless of the sale price — a reservation value grounded in your actual BATNA, not in recouping past spending, is the correct basis for evaluating the offer."
+  },
+  {
+    "id": "i.cap.neg.b",
+    "concept": "overconfidence",
+    "scenario": "You're '90% sure' your car is worth more than comparable listings suggest, based on how well you've maintained it, though you haven't actually checked how your confidence in past valuations has held up.",
+    "type": "reason_choice",
+    "prompt": "What's the useful check here?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Checking actual comparable sales, and being honest about how accurate your past confident valuations have actually turned out to be.",
+        "conceptTag": "overconfidence"
+      },
+      {
+        "id": "B",
+        "text": "Trusting the 90% figure, since it's based on genuine knowledge of the car's condition.",
+        "misconception": "strategic-overconfidence_unchecked"
+      },
+      {
+        "id": "C",
+        "text": "Raising your asking price further, since confidence in your own assessment should be reflected in a higher number.",
+        "misconception": "strategic-overconfidence_unchecked"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Genuine knowledge of the car doesn't automatically make the valuation accurate — comparable sales data and an honest look at past calibration are the actual check, not the strength of the feeling."
+  },
+  {
+    "id": "i.cap.neg.c",
+    "concept": "zopa",
+    "scenario": "Having corrected your reservation value for sunk cost and your market read for overconfidence, you estimate the buyer's maximum price is somewhat below your corrected reservation value.",
+    "type": "reason_choice",
+    "prompt": "What does this suggest for the negotiation?",
+    "options": [
+      {
+        "id": "A",
+        "text": "There may be no real ZOPA with this specific buyer at these corrected numbers — it may be more productive to look for a different buyer than to keep negotiating this one down.",
+        "conceptTag": "zopa"
+      },
+      {
+        "id": "B",
+        "text": "The negotiation should continue regardless, since a deal can always eventually be reached with enough back-and-forth.",
+        "misconception": "strategic-zopa_assumed"
+      },
+      {
+        "id": "C",
+        "text": "The reservation value should be lowered again to manufacture a ZOPA with this buyer specifically.",
+        "misconception": "strategic-sunk_cost_influence"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Once the reservation value is correctly grounded (free of sunk cost and overconfidence), a genuine gap with this buyer's likely maximum is real information — it may mean this isn't the right buyer, not that the reservation value itself needs further second-guessing."
+  },
+  {
+    "id": "i.cap.group.a",
+    "concept": "players",
+    "scenario": "A five-household community group is deciding whether to fund a shared garden. Two households already discussed the idea privately over the weekend, before tonight's meeting.",
+    "type": "reason_choice",
+    "prompt": "What should be read first, before deciding how to participate?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Who the real players are (all five households, assuming each has a genuine say) and what the two who spoke privately already know or have decided, which the other three don't.",
+        "conceptTag": "players"
+      },
+      {
+        "id": "B",
+        "text": "Only the two households who met privately matter; the rest can be treated as not real players.",
+        "misconception": "strategic-model_missing_player"
+      },
+      {
+        "id": "C",
+        "text": "Timing and information don't matter here, since it's a single group meeting.",
+        "misconception": "strategic-model_wrong_info"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "All five households are genuine players if each has a real say, and the private prior conversation means two of them enter the meeting with information the other three don't — both worth reading before deciding how to engage."
+  },
+  {
+    "id": "i.cap.group.b",
+    "concept": "reading_stated_incentives",
+    "scenario": "At the meeting, one household states budget concerns as their reason for opposing the garden. That household also happens to have a driveway that borders the proposed garden site.",
+    "type": "reason_choice",
+    "prompt": "What's the balanced way to read this stated position?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Take the budget concern as potentially genuine, while also considering, without assuming dishonesty, that the driveway proximity might be an additional incentive shaping the position.",
+        "conceptTag": "reading_stated_incentives"
+      },
+      {
+        "id": "B",
+        "text": "Accept the budget concern as the complete explanation, since that's what was stated.",
+        "misconception": "strategic-incentive_taken_at_face_value"
+      },
+      {
+        "id": "C",
+        "text": "Assume the budget concern is entirely fabricated, since the driveway proximity is the real reason.",
+        "misconception": "strategic-incentive_taken_at_face_value"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "A stated reason and an unstated, separate incentive can both genuinely be in play — reading for the fuller picture doesn't require dismissing the stated reason as false."
+  },
+  {
+    "id": "i.cap.group.c",
+    "concept": "assertive_communication",
+    "scenario": "Having read the group completely — who the real players are, what the two early-discussers know, and what might be behind the budget objection — you're deciding how to state your own support for the garden.",
+    "type": "reason_choice",
+    "prompt": "What does reading the situation completely suggest about how to communicate your position?",
+    "options": [
+      {
+        "id": "A",
+        "text": "State your support clearly and specifically, acknowledging the driveway household's concern directly rather than ignoring it, since you now have a fuller read of what's actually driving the discussion.",
+        "conceptTag": "assertive_communication"
+      },
+      {
+        "id": "B",
+        "text": "Stay quiet, since the two households who spoke privately have effectively already decided the outcome.",
+        "misconception": "strategic-silence_as_passivity"
+      },
+      {
+        "id": "C",
+        "text": "State your support forcefully and dismiss the budget objection as clearly insincere.",
+        "misconception": "strategic-disagreement_as_combat"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "The strategic reading (who knows what, what's really motivating each position) is what informs an assertive, specific statement of your own view — one that engages honestly with the objection rather than ignoring or dismissing it."
+  },
+  {
+    "id": "i.cap.rel.a",
+    "concept": "repeated_interaction",
+    "scenario": "A long-running business partnership hits a real disagreement over which direction to take the company. Both partners expect to keep working together for years if this gets resolved well.",
+    "type": "reason_choice",
+    "prompt": "What should the expectation of continuing to work together shape about how this disagreement is handled?",
+    "options": [
+      {
+        "id": "A",
+        "text": "How the disagreement is conducted now shapes the partnership's future just as much as the decision itself does — it's not a one-off negotiation to be won.",
+        "conceptTag": "repeated_interaction"
+      },
+      {
+        "id": "B",
+        "text": "Nothing — a disagreement should be resolved purely on its own merits, with no regard for the ongoing relationship.",
+        "misconception": "strategic-one_shot_reasoning_in_repeat"
+      },
+      {
+        "id": "C",
+        "text": "The expectation of continuing together means the disagreement should simply be avoided rather than addressed.",
+        "misconception": "strategic-silence_as_passivity"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "A genuinely ongoing partnership means this conversation's conduct, not just its outcome, shapes the relationship going forward — exactly the repeated-interaction reasoning from earlier in the course."
+  },
+  {
+    "id": "i.cap.rel.b",
+    "concept": "boundaries_and_refusal",
+    "scenario": "One partner states clearly, \"I can't agree to this direction, it goes against what I think the business needs,\" without padding it with extensive justification or repeated apology.",
+    "type": "reason_choice",
+    "prompt": "What does this demonstrate, combined with the fact that the partnership is ongoing?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A clear boundary stated directly, which — unlike an over-explained or vague one — is actually more likely to be respected and allow the partnership to move forward productively.",
+        "conceptTag": "boundaries_and_refusal"
+      },
+      {
+        "id": "B",
+        "text": "An overly harsh statement that risks damaging the ongoing partnership, which should instead be softened with much more explanation.",
+        "misconception": "strategic-boundary_overexplained"
+      },
+      {
+        "id": "C",
+        "text": "A violation of repeated-interaction reasoning, since stating any firm boundary conflicts with maintaining an ongoing relationship.",
+        "misconception": "strategic-passive_or_aggressive_confused"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "A clear, undiluted boundary is compatible with — and often better for — an ongoing relationship than an over-explained or avoided one; clarity and relationship-preservation aren't in tension here."
+  },
+  {
+    "id": "i.cap.rel.c",
+    "concept": "productive_disagreement",
+    "scenario": "Before stating her own firm position, the other partner says, \"You're right that we need to address rising costs — I just think this particular direction isn't the way to do it.\"",
+    "type": "reason_choice",
+    "prompt": "What does this opening demonstrate, and why does it matter for a relationship that continues?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Naming what's valid in the other partner's underlying concern before disagreeing, which tends to make the disagreement land better and protects the ongoing partnership from feeling like a win/lose fight.",
+        "conceptTag": "productive_disagreement"
+      },
+      {
+        "id": "B",
+        "text": "Full agreement with the other partner's direction, despite appearing to disagree.",
+        "misconception": "strategic-disagreement_as_combat"
+      },
+      {
+        "id": "C",
+        "text": "An unnecessary step that only matters in one-off negotiations, not in ongoing relationships.",
+        "misconception": "strategic-one_shot_reasoning_in_repeat"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Acknowledging the valid underlying concern (rising costs) before disagreeing with the specific direction is exactly what makes productive disagreement work — and it matters more, not less, in a relationship that has to continue afterward."
+  },
+  {
+    "id": "i.cap.full.a",
+    "concept": "best_response",
+    "scenario": "Deciding whether to continue a strained but long-standing client relationship, you're weighing what response would be best given the client's most recent, specific behaviour, not given how they've acted on average over the years.",
+    "type": "reason_choice",
+    "prompt": "What idea from early in the course does this reasoning draw on?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Best response — reacting to the client's actual, specific recent choice, not an average or a hoped-for version of their behaviour.",
+        "conceptTag": "best_response"
+      },
+      {
+        "id": "B",
+        "text": "This is unrelated to anything from earlier in the course, since it's a relationship question, not a game-theory one.",
+        "misconception": "strategic-incomplete_comparison"
+      },
+      {
+        "id": "C",
+        "text": "This only involves negotiation concepts, since it concerns a client relationship.",
+        "misconception": "strategic-incomplete_comparison"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Reacting to the client's actual recent, specific behaviour — rather than an average impression — is exactly the best-response reasoning from early in the course, applied to a real relationship decision."
+  },
+  {
+    "id": "i.cap.full.b",
+    "concept": "batna",
+    "scenario": "As part of deciding whether to continue the client relationship, you work out what you'd actually do with the freed-up time and capacity if you ended it.",
+    "type": "reason_choice",
+    "prompt": "What is this step?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Working out your BATNA — the real alternative to continuing the relationship, which any reservation value for continuing should be measured against.",
+        "conceptTag": "batna"
+      },
+      {
+        "id": "B",
+        "text": "An unnecessary step, since the decision should be based purely on how the relationship currently feels.",
+        "misconception": "strategic-batna_ignored"
+      },
+      {
+        "id": "C",
+        "text": "A negotiation tactic only relevant if you plan to renegotiate terms with the client directly.",
+        "misconception": "strategic-batna_ignored"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Working out the real alternative to continuing — what you'd do with the freed capacity — is exactly a BATNA, and it's what any decision to continue or end the relationship should actually be measured against."
+  },
+  {
+    "id": "i.cap.full.c",
+    "concept": "overconfidence",
+    "scenario": "You feel strongly that the client relationship will improve on its own if given more time, though you haven't actually checked how often similar situations with other clients have genuinely turned around versus continued to decline.",
+    "type": "reason_choice",
+    "prompt": "What does the whole course suggest about this feeling?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Check it against your actual track record with similar situations, rather than trusting the strength of the feeling itself — the same overconfidence check from week 8, applied here.",
+        "conceptTag": "overconfidence"
+      },
+      {
+        "id": "B",
+        "text": "Trust the feeling, since strong intuition about a long-standing relationship is usually reliable.",
+        "misconception": "strategic-overconfidence_unchecked"
+      },
+      {
+        "id": "C",
+        "text": "The feeling is irrelevant, since only the client's stated intentions should matter.",
+        "misconception": "strategic-overconfidence_unchecked"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "A strong feeling that things will improve is exactly the kind of confidence that needs checking against an actual track record, not trusted on its own strength — the same correction from the overconfidence lesson, now applied to a real, personally significant decision."
+  },
+  {
+    "id": "i.cap.words",
+    "concept": "strategic_dependence",
+    "type": "own_words",
+    "scenario": "Think of one real, current decision in your life — something you're actually facing, not a hypothetical.",
+    "prompt": "In your own words, read this decision completely using this course: who the players are and what each can choose; whether a best response, dominant strategy, or equilibrium applies; your BATNA and reservation value if negotiation is involved; any personal biases (sunk cost, overconfidence, anchoring) that might be distorting your view; and how you'd communicate your position clearly.",
+    "modelAnswer": "\"The decision is X.\" \"The players are A and B, and each can choose Y or Z.\" \"My best response, or the stable equilibrium here, is...\" \"My BATNA is... so my reservation value is...\" \"Checking for bias: am I influenced by sunk cost or overconfidence here?\" \"My plan for communicating this clearly, acknowledging the other side's valid points, is...\"",
+    "rubric": [
+      "States a real, specific, current decision, not a hypothetical one.",
+      "Reads the situation using at least four distinct ideas from across the whole course, named explicitly.",
+      "Checks explicitly for at least one personal bias that might be distorting the decision.",
+      "Reaches an actual conclusion or next step, not just a list of considerations."
+    ]
+  }
+]

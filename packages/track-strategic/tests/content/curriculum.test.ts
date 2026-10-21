@@ -10,6 +10,7 @@ import weeklyCheckpointItems from '../../content/items/weekly-checkpoints.json' 
 import negotiationItems from '../../content/items/negotiation.json' with { type: 'json' };
 import biasesItems from '../../content/items/biases.json' with { type: 'json' };
 import communicationItems from '../../content/items/communication.json' with { type: 'json' };
+import capstoneItems from '../../content/items/capstone.json' with { type: 'json' };
 
 const typedCurriculum = curriculum as Curriculum;
 const typedItems: Item[] = [
@@ -22,6 +23,7 @@ const typedItems: Item[] = [
   ...(negotiationItems as Item[]),
   ...(biasesItems as Item[]),
   ...(communicationItems as Item[]),
+  ...(capstoneItems as Item[]),
 ];
 const itemById = new Map(typedItems.map((i) => [i.id, i]));
 
@@ -186,6 +188,43 @@ describe('converted Strategic Reasoning content (Modules 1-9)', () => {
       expect(manipulationConfusion).toBeDefined();
       const correct = item.options.find((o) => item.acceptableAnswers.includes(o.id));
       expect(correct?.conceptTag).toBe('persuasion_principles');
+    }
+  });
+
+  it('has 1 capstone module (12) with 4 lessons, chaining linearly off module 11\'s checkpoint, introducing no new concepts', () => {
+    expect(typedCurriculum.modules.map((m) => m.id).slice(11)).toEqual(['strategic-m12']);
+    expect(typedCurriculum.lessons.map((l) => l.id).slice(55)).toEqual([
+      'strategic-m12.l1', 'strategic-m12.l2', 'strategic-m12.l3', 'strategic-m12.l4',
+    ]);
+    const byId = new Map(typedCurriculum.lessons.map((l) => [l.id, l]));
+    expect(byId.get('strategic-m12.l1')!.prerequisites).toEqual(['strategic-m11.l5']);
+    expect(byId.get('strategic-m12.l2')!.prerequisites).toEqual(['strategic-m12.l1']);
+    expect(byId.get('strategic-m12.l3')!.prerequisites).toEqual(['strategic-m12.l2']);
+    expect(byId.get('strategic-m12.l4')!.prerequisites).toEqual(['strategic-m12.l3']);
+
+    // The capstone draws on concepts from across the whole course rather
+    // than introducing its own -- every concept its items reference must
+    // already exist in the curriculum's concept list from earlier modules.
+    const capstoneLessonIds = new Set(['strategic-m12.l1', 'strategic-m12.l2', 'strategic-m12.l3', 'strategic-m12.l4']);
+    const allConceptIds = new Set(typedCurriculum.concepts.map((c) => c.id));
+    const capstoneLessons = typedCurriculum.lessons.filter((l) => capstoneLessonIds.has(l.id));
+    for (const lesson of capstoneLessons) {
+      for (const conceptId of lesson.concepts) {
+        expect(allConceptIds.has(conceptId), `${lesson.id} references unknown concept ${conceptId}`).toBe(true);
+      }
+    }
+    expect(typedCurriculum.concepts).toHaveLength(46);
+  });
+
+  it('each capstone lesson\'s items draw on concepts from more than one earlier module, not just one', () => {
+    const capstoneLessonIds = ['strategic-m12.l1', 'strategic-m12.l2', 'strategic-m12.l3', 'strategic-m12.l4'];
+    const moduleOfConcept = new Map(typedCurriculum.concepts.map((c) => [c.id, c.moduleId]));
+    for (const lessonId of capstoneLessonIds) {
+      const lesson = typedCurriculum.lessons.find((l) => l.id === lessonId)!;
+      const itemConceptModules = new Set(
+        lesson.interactiveItemIds.map((id) => moduleOfConcept.get(itemById.get(id)!.concept))
+      );
+      expect(itemConceptModules.size, `${lessonId}'s items should span more than one module`).toBeGreaterThan(1);
     }
   });
 

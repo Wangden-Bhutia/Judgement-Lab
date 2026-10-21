@@ -16,7 +16,8 @@
         "strategic-m8",
         "strategic-m9",
         "strategic-m10",
-        "strategic-m11"
+        "strategic-m11",
+        "strategic-m12"
       ]
     }
   ],
@@ -162,6 +163,18 @@
         "strategic-m11.l3",
         "strategic-m11.l4",
         "strategic-m11.l5"
+      ]
+    },
+    {
+      "id": "strategic-m12",
+      "trackId": "strategic",
+      "sequence": 12,
+      "title": "Putting It All Together",
+      "lessonIds": [
+        "strategic-m12.l1",
+        "strategic-m12.l2",
+        "strategic-m12.l3",
+        "strategic-m12.l4"
       ]
     }
   ],
@@ -2359,6 +2372,192 @@
       ],
       "apply": "Before your next difficult conversation, plan explicitly for all four: how to stay assertive, what specific request you're making, what might be valid in the other side, and where a pause might help.",
       "reflect": "In your own words, describe a real difficult conversation you're facing or recently had, and check it against as many of this module's eight communication ideas as actually apply.",
+      "contentVersion": 1
+    },
+    {
+      "id": "strategic-m12.l1",
+      "trackId": "strategic",
+      "moduleId": "strategic-m12",
+      "sequence": 1,
+      "title": "A Negotiation With a Bias Trap",
+      "objectives": [
+        "Negotiate a real deal while recognising and correcting for a personal bias distorting your own side of it."
+      ],
+      "concepts": [
+        "batna",
+        "reservation_value",
+        "zopa",
+        "anchoring_negotiation",
+        "sunk_cost",
+        "overconfidence"
+      ],
+      "prerequisites": [
+        "strategic-m11.l5"
+      ],
+      "interactiveItemIds": [
+        "i.cap.neg.a",
+        "i.cap.neg.b",
+        "i.cap.neg.c"
+      ],
+      "masteryItemIds": [
+        "i.cap.neg.a",
+        "i.cap.neg.b",
+        "i.cap.neg.c"
+      ],
+      "teach": [
+        "A real negotiation rarely arrives clean. It usually comes bundled with at least one of the personal biases from weeks 8-9, quietly distorting your own reasoning before the other side ever says a word.",
+        "Treating negotiation preparation (BATNA, reservation value, ZOPA) and bias-checking (sunk cost, overconfidence, anchoring) as separate skills to apply at different times. In a real negotiation, they're checked together, on the same decision, at the same moment.",
+        "The sunk-cost and overconfidence checks from weeks 8-9 apply just as directly to a negotiation as they do to any other decision — money already spent on something you're now selling, or confidence in your own read of the market, can distort a reservation value just as easily as they distort any other number."
+      ],
+      "example": "Selling a used car you've recently spent $800 repairing, you're tempted to set your reservation value higher to 'recoup' the repair cost (sunk cost), and you're '90% sure' it's worth more than comparable listings suggest, based on a gut feeling about its condition (overconfidence). A clean reservation value ignores the $800 entirely and checks your market read against actual comparable sales, not your own confidence.",
+      "practicePrompts": [
+        "Think of a real negotiation you're facing or recently had.",
+        "Check your own reasoning for sunk cost or overconfidence before checking the other side's position.",
+        "Notice whether either bias has quietly shifted your reservation value."
+      ],
+      "apply": "Before your next real negotiation, explicitly check your own reservation value for sunk cost and your own market read for overconfidence, before doing anything else.",
+      "reflect": "Think of a past negotiation where a personal bias, not the other side's tactics, was the main thing working against you.",
+      "contentVersion": 1
+    },
+    {
+      "id": "strategic-m12.l2",
+      "trackId": "strategic",
+      "moduleId": "strategic-m12",
+      "sequence": 2,
+      "title": "A Group Decision, Read Completely",
+      "objectives": [
+        "Read a multi-party group decision completely — players, timing, information, incentives — and communicate within it assertively."
+      ],
+      "concepts": [
+        "players",
+        "timing",
+        "information",
+        "multiparty_negotiation",
+        "reading_stated_incentives",
+        "assertive_communication"
+      ],
+      "prerequisites": [
+        "strategic-m12.l1"
+      ],
+      "interactiveItemIds": [
+        "i.cap.group.a",
+        "i.cap.group.b",
+        "i.cap.group.c"
+      ],
+      "masteryItemIds": [
+        "i.cap.group.a",
+        "i.cap.group.b",
+        "i.cap.group.c"
+      ],
+      "teach": [
+        "A group decision with three or more people draws on the very first ideas in this course — who's actually a player, what they can choose, who knows what and when — just as much as it draws on the multi-party complications from week 7.",
+        "Treating a group decision as a simplified version of a two-party one, or treating the communication skill involved (speaking up clearly) as separate from the strategic reading of who actually has a say and what they're likely to do.",
+        "Reading the situation completely — who's a real player, what each knows, what might really be motivating each stated position — is what tells you when and how to speak up assertively, rather than guessing."
+      ],
+      "example": "A five-household community group is deciding whether to fund a shared garden. Reading it completely means identifying who actually has a real say (not just who's loudest), noting that two households have already discussed it privately before the meeting (timing and information), and that one household's stated budget concern might also reflect a separate, unstated preference about garden location — before deciding how to state your own position assertively.",
+      "practicePrompts": [
+        "Think of a decision involving three or more people you're part of.",
+        "Map out who the real players are, and what each might know that others don't.",
+        "Consider what's really motivating each stated position, before planning how to speak up."
+      ],
+      "apply": "Before your next group decision, map out the players, timing, information, and likely incentives completely before deciding how and when to state your own position.",
+      "reflect": "Think of a group decision that went differently than you expected. What would reading it completely, beforehand, have told you?",
+      "contentVersion": 1
+    },
+    {
+      "id": "strategic-m12.l3",
+      "trackId": "strategic",
+      "moduleId": "strategic-m12",
+      "sequence": 3,
+      "title": "When the Relationship Continues",
+      "objectives": [
+        "Resolve a conflict within an ongoing relationship using repeated-interaction reasoning, clear boundaries, and productive disagreement together."
+      ],
+      "concepts": [
+        "repeated_interaction",
+        "reciprocity",
+        "equilibrium",
+        "boundaries_and_refusal",
+        "productive_disagreement"
+      ],
+      "prerequisites": [
+        "strategic-m12.l2"
+      ],
+      "interactiveItemIds": [
+        "i.cap.rel.a",
+        "i.cap.rel.b",
+        "i.cap.rel.c"
+      ],
+      "masteryItemIds": [
+        "i.cap.rel.a",
+        "i.cap.rel.b",
+        "i.cap.rel.c"
+      ],
+      "teach": [
+        "A conflict inside an ongoing relationship — a business partnership, a long friendship, a family arrangement — is exactly where repeated-interaction reasoning and communication skills have to work together: what you say and how you say it shapes a relationship that continues long after this one conversation.",
+        "Treating the conflict as a single, isolated negotiation, forgetting that reciprocity and the shadow of the future apply directly to how this conversation itself is conducted, not just to the arrangement being discussed.",
+        "A clear boundary and productive disagreement — naming what's valid in the other person's view before stating your own position — are what let a stable, repeated arrangement actually survive a real conflict, rather than fracturing it or papering over it."
+      ],
+      "example": "A long-running business partnership hits a real disagreement over direction. Treating it with repeated-interaction reasoning means recognising that how this disagreement is handled shapes the partnership's future, not just this decision; reciprocity means engaging in good faith, matching the other partner's own good-faith effort; and stating a real boundary (\"I can't agree to this direction\") while acknowledging what's valid in their view is what lets the partnership actually continue past the disagreement, rather than either caving or rupturing.",
+      "practicePrompts": [
+        "Think of a conflict within an ongoing relationship you're part of.",
+        "Consider how this specific conversation shapes the relationship going forward, not just the immediate issue.",
+        "Draft a boundary or position that's both clear and acknowledges what's valid in the other side."
+      ],
+      "apply": "In your next conflict within an ongoing relationship, explicitly consider how the conversation itself shapes the relationship's future, and state your position clearly while naming what's valid in theirs.",
+      "reflect": "Think of a relationship that was genuinely strengthened, not weakened, by how a real conflict within it was handled. What made the difference?",
+      "contentVersion": 1
+    },
+    {
+      "id": "strategic-m12.l4",
+      "trackId": "strategic",
+      "moduleId": "strategic-m12",
+      "sequence": 4,
+      "title": "The Full Picture",
+      "objectives": [
+        "Apply the full course — reading a situation, responding to a choice, dominance reasoning, repeated interaction, negotiation, personal biases, and communication — to one real, current decision.",
+        "Describe that decision completely, in your own words, as the closing synthesis of the whole course."
+      ],
+      "concepts": [
+        "strategic_dependence",
+        "best_response",
+        "dominant_strategy",
+        "equilibrium",
+        "batna",
+        "zopa",
+        "sunk_cost",
+        "overconfidence",
+        "assertive_communication",
+        "productive_disagreement"
+      ],
+      "prerequisites": [
+        "strategic-m12.l3"
+      ],
+      "interactiveItemIds": [
+        "i.cap.full.a",
+        "i.cap.full.b",
+        "i.cap.full.c",
+        "i.cap.words"
+      ],
+      "masteryItemIds": [
+        "i.cap.full.a",
+        "i.cap.full.b",
+        "i.cap.full.c"
+      ],
+      "explanationBackItemId": "i.cap.words",
+      "teach": [
+        "Twelve modules back, the first lesson in this course asked a simple question: who's actually deciding, and what can they choose? Everything since — responding to a choice, dominance, repeated interaction, negotiation, your own biases, how you communicate — has been building toward reading a real, messy situation completely, and acting well inside it.",
+        "Treating this course as a set of separate topics to recall individually, rather than one integrated way of reading a situation. The actual skill was never any single idea — it was building the habit of checking a real situation against all of them, the way the last four lessons just did.",
+        "This closes the course. The real test isn't this lesson's items — it's whether, the next time a real negotiation, group decision, repeated relationship, or personal bias shows up in your own life, you actually reach for this."
+      ],
+      "example": "A real decision — say, whether to continue a strained but long-standing client relationship — can be read with the whole course at once: who are the real players and what's each side's best response (module 1-2); is there a dominant strategy or a stable equilibrium here (module 3-4); what's your BATNA and the real ZOPA, if a renegotiation is needed (module 5-6); is sunk cost or overconfidence distorting your own view of it (module 8-9); and how do you communicate your actual position clearly, acknowledging what's valid in theirs (module 10-11).",
+      "practicePrompts": [
+        "Pick one real, current decision in your life — not a hypothetical one.",
+        "Read it against as many of this course's modules as genuinely apply.",
+        "Notice which module's lens changes your view of the decision the most."
+      ],
+      "apply": "Take the one real decision you picked, and actually use what this check revealed — don't just note it, act on it.",
+      "reflect": "Across this whole course, which single idea has already changed how you handle a real situation in your daily life?",
       "contentVersion": 1
     }
   ],
