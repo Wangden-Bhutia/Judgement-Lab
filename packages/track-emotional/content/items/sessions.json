@@ -81,7 +81,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Emotions are best kept out of decisions as far as possible"
+        "text": "Emotions are best kept out of decisions as far as possible",
+        "misconception": "emotional-mc-w01d1"
       },
       {
         "id": "B",
@@ -90,11 +91,13 @@
       },
       {
         "id": "C",
-        "text": "Emotions are reliable guides that should usually be followed"
+        "text": "Emotions are reliable guides that should usually be followed",
+        "misconception": "emotional-mc-w01d1"
       },
       {
         "id": "D",
-        "text": "Strong emotions show a skill gap that training should remove"
+        "text": "Strong emotions show a skill gap that training should remove",
+        "misconception": "emotional-mc-w01d1"
       }
     ],
     "acceptableAnswers": [
@@ -110,7 +113,8 @@
     "options": [
       {
         "id": "A",
-        "text": "A loss that has already happened"
+        "text": "A loss that has already happened",
+        "misconception": "emotional-mc-w01d1"
       },
       {
         "id": "B",
@@ -119,11 +123,13 @@
       },
       {
         "id": "C",
-        "text": "An unfair obstacle in your way"
+        "text": "An unfair obstacle in your way",
+        "misconception": "emotional-mc-w01d1"
       },
       {
         "id": "D",
-        "text": "That you have done something wrong"
+        "text": "That you have done something wrong",
+        "misconception": "emotional-mc-w01d1"
       }
     ],
     "acceptableAnswers": [
@@ -193,7 +199,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Situation selection"
+        "text": "Situation selection",
+        "misconception": "emotional-mc-w01d2"
       },
       {
         "id": "B",
@@ -202,11 +209,13 @@
       },
       {
         "id": "C",
-        "text": "Response modulation"
+        "text": "Response modulation",
+        "misconception": "emotional-mc-w01d2"
       },
       {
         "id": "D",
-        "text": "Attentional deployment"
+        "text": "Attentional deployment",
+        "misconception": "emotional-mc-w01d2"
       }
     ],
     "acceptableAnswers": [
@@ -222,7 +231,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Later links are where the strongest feelings can be removed"
+        "text": "Later links are where the strongest feelings can be removed",
+        "misconception": "emotional-mc-w01d2"
       },
       {
         "id": "B",
@@ -231,11 +241,13 @@
       },
       {
         "id": "C",
-        "text": "Early links are the only ones research has studied"
+        "text": "Early links are the only ones research has studied",
+        "misconception": "emotional-mc-w01d2"
       },
       {
         "id": "D",
-        "text": "Working early means the emotion will not appear at all"
+        "text": "Working early means the emotion will not appear at all",
+        "misconception": "emotional-mc-w01d2"
       }
     ],
     "acceptableAnswers": [
@@ -303,7 +315,8 @@
     "options": [
       {
         "id": "A",
-        "text": "It is linked to better wellbeing because it keeps conflict down"
+        "text": "It is linked to better wellbeing because it keeps conflict down",
+        "misconception": "emotional-mc-w01d3"
       },
       {
         "id": "B",
@@ -312,11 +325,13 @@
       },
       {
         "id": "C",
-        "text": "It is linked to worse outcomes only for people who are already anxious"
+        "text": "It is linked to worse outcomes only for people who are already anxious",
+        "misconception": "emotional-mc-w01d3"
       },
       {
         "id": "D",
-        "text": "It is harmful in every moment, even briefly in a meeting"
+        "text": "It is harmful in every moment, even briefly in a meeting",
+        "misconception": "emotional-mc-w01d3"
       }
     ],
     "acceptableAnswers": [
@@ -332,7 +347,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Showing as little emotion as possible at work"
+        "text": "Showing as little emotion as possible at work",
+        "misconception": "emotional-mc-w01d3"
       },
       {
         "id": "B",
@@ -341,11 +357,13 @@
       },
       {
         "id": "C",
-        "text": "Expressing each feeling honestly as it arises"
+        "text": "Expressing each feeling honestly as it arises",
+        "misconception": "emotional-mc-w01d3"
       },
       {
         "id": "D",
-        "text": "Replacing negative feelings with positive ones"
+        "text": "Replacing negative feelings with positive ones",
+        "misconception": "emotional-mc-w01d3"
       }
     ],
     "acceptableAnswers": [
@@ -374,7 +392,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Reread his notes three times tonight"
+        "text": "Reread his notes three times tonight",
+        "misconception": "emotional-mc-w01d4"
       },
       {
         "id": "B",
@@ -383,11 +402,13 @@
       },
       {
         "id": "C",
-        "text": "Highlight the key sentences in his notes"
+        "text": "Highlight the key sentences in his notes",
+        "misconception": "emotional-mc-w01d4"
       },
       {
         "id": "D",
-        "text": "Watch a summary video twice"
+        "text": "Watch a summary video twice",
+        "misconception": "emotional-mc-w01d4"
       }
     ],
     "acceptableAnswers": [
@@ -403,7 +424,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Rereading each lesson until it feels familiar"
+        "text": "Rereading each lesson until it feels familiar",
+        "misconception": "emotional-mc-w01d4"
       },
       {
         "id": "B",
@@ -412,11 +434,13 @@
       },
       {
         "id": "C",
-        "text": "Summarising notes in your own words once"
+        "text": "Summarising notes in your own words once",
+        "misconception": "emotional-mc-w01d4"
       },
       {
         "id": "D",
-        "text": "Highlighting the key sentences in each lesson"
+        "text": "Highlighting the key sentences in each lesson",
+        "misconception": "emotional-mc-w01d4"
       }
     ],
     "acceptableAnswers": [
@@ -432,7 +456,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Yes, once all of its quick checks are answered"
+        "text": "Yes, once all of its quick checks are answered",
+        "misconception": "emotional-mc-w01d4"
       },
       {
         "id": "B",
@@ -441,11 +466,13 @@
       },
       {
         "id": "C",
-        "text": "Yes, if the explain-back self-rating is high"
+        "text": "Yes, if the explain-back self-rating is high",
+        "misconception": "emotional-mc-w01d4"
       },
       {
         "id": "D",
-        "text": "Only for lessons that are not checkpoints"
+        "text": "Only for lessons that are not checkpoints",
+        "misconception": "emotional-mc-w01d4"
       }
     ],
     "acceptableAnswers": [
@@ -461,7 +488,8 @@
     "options": [
       {
         "id": "A",
-        "text": "The training is probably reducing your skill"
+        "text": "The training is probably reducing your skill",
+        "misconception": "emotional-mc-w01d4"
       },
       {
         "id": "B",
@@ -470,11 +498,13 @@
       },
       {
         "id": "C",
-        "text": "The checkpoint scores are more likely to be wrong than your ratings"
+        "text": "The checkpoint scores are more likely to be wrong than your ratings",
+        "misconception": "emotional-mc-w01d4"
       },
       {
         "id": "D",
-        "text": "You should stop rating yourself because ratings are unreliable"
+        "text": "You should stop rating yourself because ratings are unreliable",
+        "misconception": "emotional-mc-w01d4"
       }
     ],
     "acceptableAnswers": [
@@ -577,11 +607,13 @@
     "options": [
       {
         "id": "A",
-        "text": "Upset about how it went"
+        "text": "Upset about how it went",
+        "misconception": "emotional-mc-w02d1"
       },
       {
         "id": "B",
-        "text": "Stressed and a bit low"
+        "text": "Stressed and a bit low",
+        "misconception": "emotional-mc-w02d1"
       },
       {
         "id": "C",
@@ -590,7 +622,8 @@
       },
       {
         "id": "D",
-        "text": "Not feeling great today"
+        "text": "Not feeling great today",
+        "misconception": "emotional-mc-w02d1"
       }
     ],
     "acceptableAnswers": [
@@ -606,7 +639,8 @@
     "options": [
       {
         "id": "A",
-        "text": "It has been shown to cause better wellbeing"
+        "text": "It has been shown to cause better wellbeing",
+        "misconception": "emotional-mc-w02d1"
       },
       {
         "id": "B",
@@ -615,11 +649,13 @@
       },
       {
         "id": "C",
-        "text": "It is fixed early in life and hard to change"
+        "text": "It is fixed early in life and hard to change",
+        "misconception": "emotional-mc-w02d1"
       },
       {
         "id": "D",
-        "text": "It mainly matters for positive emotions"
+        "text": "It mainly matters for positive emotions",
+        "misconception": "emotional-mc-w02d1"
       }
     ],
     "acceptableAnswers": [
@@ -687,7 +723,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Suppression"
+        "text": "Suppression",
+        "misconception": "emotional-mc-w02d2"
       },
       {
         "id": "B",
@@ -696,11 +733,13 @@
       },
       {
         "id": "C",
-        "text": "Distraction"
+        "text": "Distraction",
+        "misconception": "emotional-mc-w02d2"
       },
       {
         "id": "D",
-        "text": "Reappraisal"
+        "text": "Reappraisal",
+        "misconception": "emotional-mc-w02d2"
       }
     ],
     "acceptableAnswers": [
@@ -716,7 +755,8 @@
     "options": [
       {
         "id": "A",
-        "text": "I am an angry person today"
+        "text": "I am an angry person today",
+        "misconception": "emotional-mc-w02d2"
       },
       {
         "id": "B",
@@ -725,11 +765,13 @@
       },
       {
         "id": "C",
-        "text": "Anger is taking over again"
+        "text": "Anger is taking over again",
+        "misconception": "emotional-mc-w02d2"
       },
       {
         "id": "D",
-        "text": "I feel angry because they were unfair"
+        "text": "I feel angry because they were unfair",
+        "misconception": "emotional-mc-w02d2"
       }
     ],
     "acceptableAnswers": [
@@ -763,15 +805,18 @@
       },
       {
         "id": "B",
-        "text": "Boredom"
+        "text": "Boredom",
+        "misconception": "emotional-mc-w02d3"
       },
       {
         "id": "C",
-        "text": "Pride"
+        "text": "Pride",
+        "misconception": "emotional-mc-w02d3"
       },
       {
         "id": "D",
-        "text": "Joy at seeing him"
+        "text": "Joy at seeing him",
+        "misconception": "emotional-mc-w02d3"
       }
     ],
     "acceptableAnswers": [
@@ -787,7 +832,8 @@
     "options": [
       {
         "id": "A",
-        "text": "A single emotion with a misleading name"
+        "text": "A single emotion with a misleading name",
+        "misconception": "emotional-mc-w02d3"
       },
       {
         "id": "B",
@@ -796,11 +842,13 @@
       },
       {
         "id": "C",
-        "text": "Suppression of the hurt"
+        "text": "Suppression of the hurt",
+        "misconception": "emotional-mc-w02d3"
       },
       {
         "id": "D",
-        "text": "Reappraisal of the hurt into anger"
+        "text": "Reappraisal of the hurt into anger",
+        "misconception": "emotional-mc-w02d3"
       }
     ],
     "acceptableAnswers": [
@@ -816,7 +864,8 @@
     "options": [
       {
         "id": "A",
-        "text": "A reliable diagnosis of what you really feel"
+        "text": "A reliable diagnosis of what you really feel",
+        "misconception": "emotional-mc-w02d3"
       },
       {
         "id": "B",
@@ -825,11 +874,13 @@
       },
       {
         "id": "C",
-        "text": "Something to ignore unless it is obvious"
+        "text": "Something to ignore unless it is obvious",
+        "misconception": "emotional-mc-w02d3"
       },
       {
         "id": "D",
-        "text": "A fact about your personality"
+        "text": "A fact about your personality",
+        "misconception": "emotional-mc-w02d3"
       }
     ],
     "acceptableAnswers": [
@@ -858,7 +909,8 @@
     "options": [
       {
         "id": "A",
-        "text": "\"I will check in more often.\""
+        "text": "\"I will check in more often.\"",
+        "misconception": "emotional-mc-w02d4"
       },
       {
         "id": "B",
@@ -867,11 +919,13 @@
       },
       {
         "id": "C",
-        "text": "\"I will write a full page every night.\""
+        "text": "\"I will write a full page every night.\"",
+        "misconception": "emotional-mc-w02d4"
       },
       {
         "id": "D",
-        "text": "\"When I feel bad, I will check in.\""
+        "text": "\"When I feel bad, I will check in.\"",
+        "misconception": "emotional-mc-w02d4"
       }
     ],
     "acceptableAnswers": [
@@ -892,15 +946,18 @@
       },
       {
         "id": "B",
-        "text": "About 10 minutes of writing"
+        "text": "About 10 minutes of writing",
+        "misconception": "emotional-mc-w02d4"
       },
       {
         "id": "C",
-        "text": "About 20 minutes with full detail"
+        "text": "About 20 minutes with full detail",
+        "misconception": "emotional-mc-w02d4"
       },
       {
         "id": "D",
-        "text": "As long as it takes to explain the cause"
+        "text": "As long as it takes to explain the cause",
+        "misconception": "emotional-mc-w02d4"
       }
     ],
     "acceptableAnswers": [
@@ -916,7 +973,8 @@
     "options": [
       {
         "id": "A",
-        "text": "After the first few entries"
+        "text": "After the first few entries",
+        "misconception": "emotional-mc-w02d4"
       },
       {
         "id": "B",
@@ -925,11 +983,13 @@
       },
       {
         "id": "C",
-        "text": "Only once the journal shows a cause"
+        "text": "Only once the journal shows a cause",
+        "misconception": "emotional-mc-w02d4"
       },
       {
         "id": "D",
-        "text": "Only if you also log every day"
+        "text": "Only if you also log every day",
+        "misconception": "emotional-mc-w02d4"
       }
     ],
     "acceptableAnswers": [
@@ -1010,7 +1070,8 @@
     "options": [
       {
         "id": "A",
-        "text": "They are more accurate than emotion words"
+        "text": "They are more accurate than emotion words",
+        "misconception": "emotional-mc-w03d1"
       },
       {
         "id": "B",
@@ -1019,11 +1080,13 @@
       },
       {
         "id": "C",
-        "text": "They can replace naming the emotion"
+        "text": "They can replace naming the emotion",
+        "misconception": "emotional-mc-w03d1"
       },
       {
         "id": "D",
-        "text": "They show whether the situation is dangerous"
+        "text": "They show whether the situation is dangerous",
+        "misconception": "emotional-mc-w03d1"
       }
     ],
     "acceptableAnswers": [
@@ -1039,7 +1102,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Anxiety, in most cases"
+        "text": "Anxiety, in most cases",
+        "misconception": "emotional-mc-w03d1"
       },
       {
         "id": "B",
@@ -1048,11 +1112,13 @@
       },
       {
         "id": "C",
-        "text": "Anger, if someone is involved"
+        "text": "Anger, if someone is involved",
+        "misconception": "emotional-mc-w03d1"
       },
       {
         "id": "D",
-        "text": "A health problem to check first"
+        "text": "A health problem to check first",
+        "misconception": "emotional-mc-w03d1"
       }
     ],
     "acceptableAnswers": [
@@ -1112,7 +1178,8 @@
     "options": [
       {
         "id": "A",
-        "text": "The action itself, already under way"
+        "text": "The action itself, already under way",
+        "misconception": "emotional-mc-w03d2"
       },
       {
         "id": "B",
@@ -1121,11 +1188,13 @@
       },
       {
         "id": "C",
-        "text": "A belief about what should happen"
+        "text": "A belief about what should happen",
+        "misconception": "emotional-mc-w03d2"
       },
       {
         "id": "D",
-        "text": "A memory of what you did last time"
+        "text": "A memory of what you did last time",
+        "misconception": "emotional-mc-w03d2"
       }
     ],
     "acceptableAnswers": [
@@ -1141,7 +1210,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Send it quickly so it does not build up"
+        "text": "Send it quickly so it does not build up",
+        "misconception": "emotional-mc-w03d2"
       },
       {
         "id": "B",
@@ -1150,11 +1220,13 @@
       },
       {
         "id": "C",
-        "text": "Rewrite it more politely and send it now"
+        "text": "Rewrite it more politely and send it now",
+        "misconception": "emotional-mc-w03d2"
       },
       {
         "id": "D",
-        "text": "Push the feeling away and carry on"
+        "text": "Push the feeling away and carry on",
+        "misconception": "emotional-mc-w03d2"
       }
     ],
     "acceptableAnswers": [
@@ -1183,7 +1255,8 @@
     "options": [
       {
         "id": "A",
-        "text": "His anger will drain away completely"
+        "text": "His anger will drain away completely",
+        "misconception": "emotional-mc-w03d3"
       },
       {
         "id": "B",
@@ -1192,11 +1265,13 @@
       },
       {
         "id": "C",
-        "text": "It will not affect him at all"
+        "text": "It will not affect him at all",
+        "misconception": "emotional-mc-w03d3"
       },
       {
         "id": "D",
-        "text": "He will feel guilty"
+        "text": "He will feel guilty",
+        "misconception": "emotional-mc-w03d3"
       }
     ],
     "acceptableAnswers": [
@@ -1212,7 +1287,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Venting reduced anger compared with waiting"
+        "text": "Venting reduced anger compared with waiting",
+        "misconception": "emotional-mc-w03d3"
       },
       {
         "id": "B",
@@ -1221,11 +1297,13 @@
       },
       {
         "id": "C",
-        "text": "Venting had no effect either way"
+        "text": "Venting had no effect either way",
+        "misconception": "emotional-mc-w03d3"
       },
       {
         "id": "D",
-        "text": "Venting helped only when done alone"
+        "text": "Venting helped only when done alone",
+        "misconception": "emotional-mc-w03d3"
       }
     ],
     "acceptableAnswers": [
@@ -1241,7 +1319,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Going over the grievance in full detail"
+        "text": "Going over the grievance in full detail",
+        "misconception": "emotional-mc-w03d3"
       },
       {
         "id": "B",
@@ -1250,11 +1329,13 @@
       },
       {
         "id": "C",
-        "text": "Getting others to agree you were wronged"
+        "text": "Getting others to agree you were wronged",
+        "misconception": "emotional-mc-w03d3"
       },
       {
         "id": "D",
-        "text": "Proving that you were right"
+        "text": "Proving that you were right",
+        "misconception": "emotional-mc-w03d3"
       }
     ],
     "acceptableAnswers": [
@@ -1344,7 +1425,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Situation selection"
+        "text": "Situation selection",
+        "misconception": "emotional-mc-w03d4"
       },
       {
         "id": "B",
@@ -1353,11 +1435,13 @@
       },
       {
         "id": "C",
-        "text": "Cognitive change"
+        "text": "Cognitive change",
+        "misconception": "emotional-mc-w03d4"
       },
       {
         "id": "D",
-        "text": "Attentional deployment"
+        "text": "Attentional deployment",
+        "misconception": "emotional-mc-w03d4"
       }
     ],
     "acceptableAnswers": [
@@ -1373,7 +1457,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Yes, if used early enough"
+        "text": "Yes, if used early enough",
+        "misconception": "emotional-mc-w03d4"
       },
       {
         "id": "B",
@@ -1382,11 +1467,13 @@
       },
       {
         "id": "C",
-        "text": "They solve it only for mild problems"
+        "text": "They solve it only for mild problems",
+        "misconception": "emotional-mc-w03d4"
       },
       {
         "id": "D",
-        "text": "They work only when you feel calm"
+        "text": "They work only when you feel calm",
+        "misconception": "emotional-mc-w03d4"
       }
     ],
     "acceptableAnswers": [
@@ -1477,7 +1564,8 @@
     "options": [
       {
         "id": "A",
-        "text": "He was dismissive of my idea"
+        "text": "He was dismissive of my idea",
+        "misconception": "emotional-mc-w04d1"
       },
       {
         "id": "B",
@@ -1486,11 +1574,13 @@
       },
       {
         "id": "C",
-        "text": "He did not care what I said"
+        "text": "He did not care what I said",
+        "misconception": "emotional-mc-w04d1"
       },
       {
         "id": "D",
-        "text": "He was distracted by something"
+        "text": "He was distracted by something",
+        "misconception": "emotional-mc-w04d1"
       }
     ],
     "acceptableAnswers": [
@@ -1506,7 +1596,8 @@
     "options": [
       {
         "id": "A",
-        "text": "The facts of the situation alone"
+        "text": "The facts of the situation alone",
+        "misconception": "emotional-mc-w04d1"
       },
       {
         "id": "B",
@@ -1515,11 +1606,13 @@
       },
       {
         "id": "C",
-        "text": "How tired or hungry we are"
+        "text": "How tired or hungry we are",
+        "misconception": "emotional-mc-w04d1"
       },
       {
         "id": "D",
-        "text": "What other people think of the situation"
+        "text": "What other people think of the situation",
+        "misconception": "emotional-mc-w04d1"
       }
     ],
     "acceptableAnswers": [
@@ -1592,7 +1685,8 @@
     "options": [
       {
         "id": "A",
-        "text": "To prove your first reading was wrong"
+        "text": "To prove your first reading was wrong",
+        "misconception": "emotional-mc-w04d2"
       },
       {
         "id": "B",
@@ -1601,11 +1695,13 @@
       },
       {
         "id": "C",
-        "text": "To find the most positive reading"
+        "text": "To find the most positive reading",
+        "misconception": "emotional-mc-w04d2"
       },
       {
         "id": "D",
-        "text": "To stop feeling the emotion"
+        "text": "To stop feeling the emotion",
+        "misconception": "emotional-mc-w04d2"
       }
     ],
     "acceptableAnswers": [
@@ -1621,7 +1717,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Suppression"
+        "text": "Suppression",
+        "misconception": "emotional-mc-w04d2"
       },
       {
         "id": "B",
@@ -1630,11 +1727,13 @@
       },
       {
         "id": "C",
-        "text": "Distraction"
+        "text": "Distraction",
+        "misconception": "emotional-mc-w04d2"
       },
       {
         "id": "D",
-        "text": "Acceptance"
+        "text": "Acceptance",
+        "misconception": "emotional-mc-w04d2"
       }
     ],
     "acceptableAnswers": [
@@ -1724,7 +1823,8 @@
     "options": [
       {
         "id": "A",
-        "text": "A reasonable conclusion from their silence"
+        "text": "A reasonable conclusion from their silence",
+        "misconception": "emotional-mc-w04d3"
       },
       {
         "id": "B",
@@ -1733,11 +1833,13 @@
       },
       {
         "id": "C",
-        "text": "All-or-nothing thinking"
+        "text": "All-or-nothing thinking",
+        "misconception": "emotional-mc-w04d3"
       },
       {
         "id": "D",
-        "text": "Catastrophising"
+        "text": "Catastrophising",
+        "misconception": "emotional-mc-w04d3"
       }
     ],
     "acceptableAnswers": [
@@ -1753,7 +1855,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Probably false"
+        "text": "Probably false",
+        "misconception": "emotional-mc-w04d3"
       },
       {
         "id": "B",
@@ -1762,11 +1865,13 @@
       },
       {
         "id": "C",
-        "text": "Probably true"
+        "text": "Probably true",
+        "misconception": "emotional-mc-w04d3"
       },
       {
         "id": "D",
-        "text": "Best ignored"
+        "text": "Best ignored",
+        "misconception": "emotional-mc-w04d3"
       }
     ],
     "acceptableAnswers": [
@@ -1834,7 +1939,8 @@
     "options": [
       {
         "id": "A",
-        "text": "As positive as possible"
+        "text": "As positive as possible",
+        "misconception": "emotional-mc-w04d4"
       },
       {
         "id": "B",
@@ -1843,11 +1949,13 @@
       },
       {
         "id": "C",
-        "text": "Different from your first reading"
+        "text": "Different from your first reading",
+        "misconception": "emotional-mc-w04d4"
       },
       {
         "id": "D",
-        "text": "Something others would agree with"
+        "text": "Something others would agree with",
+        "misconception": "emotional-mc-w04d4"
       }
     ],
     "acceptableAnswers": [
@@ -1868,15 +1976,18 @@
       },
       {
         "id": "B",
-        "text": "Making you feel better about yourself"
+        "text": "Making you feel better about yourself",
+        "misconception": "emotional-mc-w04d4"
       },
       {
         "id": "C",
-        "text": "Taking the focus off the problem"
+        "text": "Taking the focus off the problem",
+        "misconception": "emotional-mc-w04d4"
       },
       {
         "id": "D",
-        "text": "Showing you were too hard on yourself"
+        "text": "Showing you were too hard on yourself",
+        "misconception": "emotional-mc-w04d4"
       }
     ],
     "acceptableAnswers": [
@@ -1918,7 +2029,8 @@
     "options": [
       {
         "id": "A",
-        "text": "\"Why did she say that to me? Why do I always mess up?\""
+        "text": "\"Why did she say that to me? Why do I always mess up?\"",
+        "misconception": "emotional-mc-w05d1"
       },
       {
         "id": "B",
@@ -1927,11 +2039,13 @@
       },
       {
         "id": "C",
-        "text": "\"I will not think about it.\""
+        "text": "\"I will not think about it.\"",
+        "misconception": "emotional-mc-w05d1"
       },
       {
         "id": "D",
-        "text": "\"She is impossible.\""
+        "text": "\"She is impossible.\"",
+        "misconception": "emotional-mc-w05d1"
       }
     ],
     "acceptableAnswers": [
@@ -1947,7 +2061,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Reliving the event vividly"
+        "text": "Reliving the event vividly",
+        "misconception": "emotional-mc-w05d1"
       },
       {
         "id": "B",
@@ -1956,11 +2071,13 @@
       },
       {
         "id": "C",
-        "text": "Not thinking about the event"
+        "text": "Not thinking about the event",
+        "misconception": "emotional-mc-w05d1"
       },
       {
         "id": "D",
-        "text": "Seeing the bright side"
+        "text": "Seeing the bright side",
+        "misconception": "emotional-mc-w05d1"
       }
     ],
     "acceptableAnswers": [
@@ -1976,7 +2093,8 @@
     "options": [
       {
         "id": "A",
-        "text": "More rumination at first"
+        "text": "More rumination at first",
+        "misconception": "emotional-mc-w05d1"
       },
       {
         "id": "B",
@@ -1985,11 +2103,13 @@
       },
       {
         "id": "C",
-        "text": "No difference in reactivity"
+        "text": "No difference in reactivity",
+        "misconception": "emotional-mc-w05d1"
       },
       {
         "id": "D",
-        "text": "Less emotion overall"
+        "text": "Less emotion overall",
+        "misconception": "emotional-mc-w05d1"
       }
     ],
     "acceptableAnswers": [
@@ -2018,7 +2138,8 @@
     "options": [
       {
         "id": "A",
-        "text": "It will make you feel worse"
+        "text": "It will make you feel worse",
+        "misconception": "emotional-mc-w05d2"
       },
       {
         "id": "B",
@@ -2027,11 +2148,13 @@
       },
       {
         "id": "C",
-        "text": "You stop caring about anything"
+        "text": "You stop caring about anything",
+        "misconception": "emotional-mc-w05d2"
       },
       {
         "id": "D",
-        "text": "Nothing changes"
+        "text": "Nothing changes",
+        "misconception": "emotional-mc-w05d2"
       }
     ],
     "acceptableAnswers": [
@@ -2052,15 +2175,18 @@
       },
       {
         "id": "B",
-        "text": "Who is responsible for this?"
+        "text": "Who is responsible for this?",
+        "misconception": "emotional-mc-w05d2"
       },
       {
         "id": "C",
-        "text": "What is the worst outcome?"
+        "text": "What is the worst outcome?",
+        "misconception": "emotional-mc-w05d2"
       },
       {
         "id": "D",
-        "text": "How can I stop feeling this?"
+        "text": "How can I stop feeling this?",
+        "misconception": "emotional-mc-w05d2"
       }
     ],
     "acceptableAnswers": [
@@ -2076,7 +2202,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Remind yourself it will pass"
+        "text": "Remind yourself it will pass",
+        "misconception": "emotional-mc-w05d2"
       },
       {
         "id": "B",
@@ -2085,11 +2212,13 @@
       },
       {
         "id": "C",
-        "text": "Think it through until it feels settled"
+        "text": "Think it through until it feels settled",
+        "misconception": "emotional-mc-w05d2"
       },
       {
         "id": "D",
-        "text": "Accept that nothing can be done"
+        "text": "Accept that nothing can be done",
+        "misconception": "emotional-mc-w05d2"
       }
     ],
     "acceptableAnswers": [
@@ -2157,7 +2286,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Approving of the situation"
+        "text": "Approving of the situation",
+        "misconception": "emotional-mc-w05d3"
       },
       {
         "id": "B",
@@ -2166,11 +2296,13 @@
       },
       {
         "id": "C",
-        "text": "Waiting until the feeling passes"
+        "text": "Waiting until the feeling passes",
+        "misconception": "emotional-mc-w05d3"
       },
       {
         "id": "D",
-        "text": "Deciding nothing can be done"
+        "text": "Deciding nothing can be done",
+        "misconception": "emotional-mc-w05d3"
       }
     ],
     "acceptableAnswers": [
@@ -2186,7 +2318,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Keep looking until a reinterpretation fits"
+        "text": "Keep looking until a reinterpretation fits",
+        "misconception": "emotional-mc-w05d3"
       },
       {
         "id": "B",
@@ -2195,11 +2328,13 @@
       },
       {
         "id": "C",
-        "text": "Focus on the bright side anyway"
+        "text": "Focus on the bright side anyway",
+        "misconception": "emotional-mc-w05d3"
       },
       {
         "id": "D",
-        "text": "Talk it through until it fades"
+        "text": "Talk it through until it fades",
+        "misconception": "emotional-mc-w05d3"
       }
     ],
     "acceptableAnswers": [
@@ -2289,7 +2424,8 @@
     "options": [
       {
         "id": "A",
-        "text": "They clearly did not like my work"
+        "text": "They clearly did not like my work",
+        "misconception": "emotional-mc-w05d4"
       },
       {
         "id": "B",
@@ -2298,11 +2434,13 @@
       },
       {
         "id": "C",
-        "text": "It was strong and they missed its value"
+        "text": "It was strong and they missed its value",
+        "misconception": "emotional-mc-w05d4"
       },
       {
         "id": "D",
-        "text": "I should not propose ideas again"
+        "text": "I should not propose ideas again",
+        "misconception": "emotional-mc-w05d4"
       }
     ],
     "acceptableAnswers": [
@@ -2318,7 +2456,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Work well if you repeat it"
+        "text": "Work well if you repeat it",
+        "misconception": "emotional-mc-w05d4"
       },
       {
         "id": "B",
@@ -2327,11 +2466,13 @@
       },
       {
         "id": "C",
-        "text": "Help in the short run"
+        "text": "Help in the short run",
+        "misconception": "emotional-mc-w05d4"
       },
       {
         "id": "D",
-        "text": "Work if others agree"
+        "text": "Work if others agree",
+        "misconception": "emotional-mc-w05d4"
       }
     ],
     "acceptableAnswers": [
@@ -2438,7 +2579,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Finding one best strategy and using it well"
+        "text": "Finding one best strategy and using it well",
+        "misconception": "emotional-mc-w06d1"
       },
       {
         "id": "B",
@@ -2447,11 +2589,13 @@
       },
       {
         "id": "C",
-        "text": "Using every strategy equally often"
+        "text": "Using every strategy equally often",
+        "misconception": "emotional-mc-w06d1"
       },
       {
         "id": "D",
-        "text": "Choosing the strategy that feels best"
+        "text": "Choosing the strategy that feels best",
+        "misconception": "emotional-mc-w06d1"
       }
     ],
     "acceptableAnswers": [
@@ -2472,15 +2616,18 @@
       },
       {
         "id": "B",
-        "text": "Attentional deployment"
+        "text": "Attentional deployment",
+        "misconception": "emotional-mc-w06d1"
       },
       {
         "id": "C",
-        "text": "Reappraisal"
+        "text": "Reappraisal",
+        "misconception": "emotional-mc-w06d1"
       },
       {
         "id": "D",
-        "text": "Situation selection"
+        "text": "Situation selection",
+        "misconception": "emotional-mc-w06d1"
       }
     ],
     "acceptableAnswers": [
@@ -2496,7 +2643,8 @@
     "options": [
       {
         "id": "A",
-        "text": "During the heated client meeting, at intensity 9, so it is honest"
+        "text": "During the heated client meeting, at intensity 9, so it is honest",
+        "misconception": "emotional-mc-w06d1"
       },
       {
         "id": "B",
@@ -2505,11 +2653,13 @@
       },
       {
         "id": "C",
-        "text": "Not at work; feelings are best kept private"
+        "text": "Not at work; feelings are best kept private",
+        "misconception": "emotional-mc-w06d1"
       },
       {
         "id": "D",
-        "text": "In the team chat, so the whole team knows where you stand"
+        "text": "In the team chat, so the whole team knows where you stand",
+        "misconception": "emotional-mc-w06d1"
       }
     ],
     "acceptableAnswers": [
@@ -2577,7 +2727,8 @@
     "options": [
       {
         "id": "A",
-        "text": "A careful reappraisal of the situation"
+        "text": "A careful reappraisal of the situation",
+        "misconception": "emotional-mc-w06d2"
       },
       {
         "id": "B",
@@ -2586,11 +2737,13 @@
       },
       {
         "id": "C",
-        "text": "Say what you feel while it is fresh"
+        "text": "Say what you feel while it is fresh",
+        "misconception": "emotional-mc-w06d2"
       },
       {
         "id": "D",
-        "text": "Make the decision quickly"
+        "text": "Make the decision quickly",
+        "misconception": "emotional-mc-w06d2"
       }
     ],
     "acceptableAnswers": [
@@ -2606,7 +2759,8 @@
     "options": [
       {
         "id": "A",
-        "text": "It is used at high intensity"
+        "text": "It is used at high intensity",
+        "misconception": "emotional-mc-w06d2"
       },
       {
         "id": "B",
@@ -2615,11 +2769,13 @@
       },
       {
         "id": "C",
-        "text": "It is used for more than a minute"
+        "text": "It is used for more than a minute",
+        "misconception": "emotional-mc-w06d2"
       },
       {
         "id": "D",
-        "text": "It is used at work"
+        "text": "It is used at work",
+        "misconception": "emotional-mc-w06d2"
       }
     ],
     "acceptableAnswers": [
@@ -2689,15 +2845,18 @@
       },
       {
         "id": "B",
-        "text": "Nothing can be changed right now"
+        "text": "Nothing can be changed right now",
+        "misconception": "emotional-mc-w06d3"
       },
       {
         "id": "C",
-        "text": "You are at intensity 10"
+        "text": "You are at intensity 10",
+        "misconception": "emotional-mc-w06d3"
       },
       {
         "id": "D",
-        "text": "You want to understand why it happened"
+        "text": "You want to understand why it happened",
+        "misconception": "emotional-mc-w06d3"
       }
     ],
     "acceptableAnswers": [
@@ -2713,7 +2872,8 @@
     "options": [
       {
         "id": "A",
-        "text": "List as many solutions as possible"
+        "text": "List as many solutions as possible",
+        "misconception": "emotional-mc-w06d3"
       },
       {
         "id": "B",
@@ -2722,11 +2882,13 @@
       },
       {
         "id": "C",
-        "text": "Decide who is responsible"
+        "text": "Decide who is responsible",
+        "misconception": "emotional-mc-w06d3"
       },
       {
         "id": "D",
-        "text": "Pick the quickest fix"
+        "text": "Pick the quickest fix",
+        "misconception": "emotional-mc-w06d3"
       }
     ],
     "acceptableAnswers": [
@@ -2794,7 +2956,8 @@
     "options": [
       {
         "id": "A",
-        "text": "I will stay calmer when my manager criticises me"
+        "text": "I will stay calmer when my manager criticises me",
+        "misconception": "emotional-mc-w06d4"
       },
       {
         "id": "B",
@@ -2803,11 +2966,13 @@
       },
       {
         "id": "C",
-        "text": "When I feel criticised, I will try to be patient"
+        "text": "When I feel criticised, I will try to be patient",
+        "misconception": "emotional-mc-w06d4"
       },
       {
         "id": "D",
-        "text": "If I get upset, then I will do better"
+        "text": "If I get upset, then I will do better",
+        "misconception": "emotional-mc-w06d4"
       }
     ],
     "acceptableAnswers": [
@@ -2828,15 +2993,18 @@
       },
       {
         "id": "B",
-        "text": "Increasing motivation to change"
+        "text": "Increasing motivation to change",
+        "misconception": "emotional-mc-w06d4"
       },
       {
         "id": "C",
-        "text": "Helping you avoid the cue"
+        "text": "Helping you avoid the cue",
+        "misconception": "emotional-mc-w06d4"
       },
       {
         "id": "D",
-        "text": "Reducing the emotion before the cue"
+        "text": "Reducing the emotion before the cue",
+        "misconception": "emotional-mc-w06d4"
       }
     ],
     "acceptableAnswers": [
@@ -2917,7 +3085,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Why do I keep making this mistake?"
+        "text": "Why do I keep making this mistake?",
+        "misconception": "emotional-mc-w07d1"
       },
       {
         "id": "B",
@@ -2926,11 +3095,13 @@
       },
       {
         "id": "C",
-        "text": "What does this say about me?"
+        "text": "What does this say about me?",
+        "misconception": "emotional-mc-w07d1"
       },
       {
         "id": "D",
-        "text": "Why did this happen, and what does it mean?"
+        "text": "Why did this happen, and what does it mean?",
+        "misconception": "emotional-mc-w07d1"
       }
     ],
     "acceptableAnswers": [
@@ -2946,7 +3117,8 @@
     "options": [
       {
         "id": "A",
-        "text": "The thoughts feel important"
+        "text": "The thoughts feel important",
+        "misconception": "emotional-mc-w07d1"
       },
       {
         "id": "B",
@@ -2955,11 +3127,13 @@
       },
       {
         "id": "C",
-        "text": "Thinking about the past"
+        "text": "Thinking about the past",
+        "misconception": "emotional-mc-w07d1"
       },
       {
         "id": "D",
-        "text": "Feeling upset while thinking"
+        "text": "Feeling upset while thinking",
+        "misconception": "emotional-mc-w07d1"
       }
     ],
     "acceptableAnswers": [
@@ -3029,15 +3203,18 @@
       },
       {
         "id": "B",
-        "text": "Worry as much as possible to get it out"
+        "text": "Worry as much as possible to get it out",
+        "misconception": "emotional-mc-w07d2"
       },
       {
         "id": "C",
-        "text": "Try to solve every worry"
+        "text": "Try to solve every worry",
+        "misconception": "emotional-mc-w07d2"
       },
       {
         "id": "D",
-        "text": "Look for reassurance"
+        "text": "Look for reassurance",
+        "misconception": "emotional-mc-w07d2"
       }
     ],
     "acceptableAnswers": [
@@ -3053,7 +3230,8 @@
     "options": [
       {
         "id": "A",
-        "text": "A proven treatment for worry"
+        "text": "A proven treatment for worry",
+        "misconception": "emotional-mc-w07d2"
       },
       {
         "id": "B",
@@ -3062,11 +3240,13 @@
       },
       {
         "id": "C",
-        "text": "Useful only for anxiety disorders"
+        "text": "Useful only for anxiety disorders",
+        "misconception": "emotional-mc-w07d2"
       },
       {
         "id": "D",
-        "text": "A clinical technique"
+        "text": "A clinical technique",
+        "misconception": "emotional-mc-w07d2"
       }
     ],
     "acceptableAnswers": [
@@ -3134,7 +3314,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Settle the uncertainty once you get it"
+        "text": "Settle the uncertainty once you get it",
+        "misconception": "emotional-mc-w07d3"
       },
       {
         "id": "B",
@@ -3143,11 +3324,13 @@
       },
       {
         "id": "C",
-        "text": "Make little difference either way"
+        "text": "Make little difference either way",
+        "misconception": "emotional-mc-w07d3"
       },
       {
         "id": "D",
-        "text": "Help if you ask the right person"
+        "text": "Help if you ask the right person",
+        "misconception": "emotional-mc-w07d3"
       }
     ],
     "acceptableAnswers": [
@@ -3163,7 +3346,8 @@
     "options": [
       {
         "id": "A",
-        "text": "I need to find out before I can relax"
+        "text": "I need to find out before I can relax",
+        "misconception": "emotional-mc-w07d3"
       },
       {
         "id": "B",
@@ -3172,11 +3356,13 @@
       },
       {
         "id": "C",
-        "text": "It will probably be fine"
+        "text": "It will probably be fine",
+        "misconception": "emotional-mc-w07d3"
       },
       {
         "id": "D",
-        "text": "I will think it through tonight"
+        "text": "I will think it through tonight",
+        "misconception": "emotional-mc-w07d3"
       }
     ],
     "acceptableAnswers": [
@@ -3192,7 +3378,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Leaving a party where someone is threatening you"
+        "text": "Leaving a party where someone is threatening you",
+        "misconception": "emotional-mc-w07d3"
       },
       {
         "id": "B",
@@ -3201,11 +3388,13 @@
       },
       {
         "id": "C",
-        "text": "Not replying to an anonymous abusive message"
+        "text": "Not replying to an anonymous abusive message",
+        "misconception": "emotional-mc-w07d3"
       },
       {
         "id": "D",
-        "text": "Taking a rest day when you are ill"
+        "text": "Taking a rest day when you are ill",
+        "misconception": "emotional-mc-w07d3"
       }
     ],
     "acceptableAnswers": [
@@ -3265,7 +3454,8 @@
     "options": [
       {
         "id": "A",
-        "text": "That was a poor effort; I need to be better"
+        "text": "That was a poor effort; I need to be better",
+        "misconception": "emotional-mc-w07d4"
       },
       {
         "id": "B",
@@ -3274,11 +3464,13 @@
       },
       {
         "id": "C",
-        "text": "It was not my fault; the timing was bad"
+        "text": "It was not my fault; the timing was bad",
+        "misconception": "emotional-mc-w07d4"
       },
       {
         "id": "D",
-        "text": "I should have known this would happen"
+        "text": "I should have known this would happen",
+        "misconception": "emotional-mc-w07d4"
       }
     ],
     "acceptableAnswers": [
@@ -3294,7 +3486,8 @@
     "options": [
       {
         "id": "A",
-        "text": "That your expectations were too high"
+        "text": "That your expectations were too high",
+        "misconception": "emotional-mc-w07d4"
       },
       {
         "id": "B",
@@ -3303,11 +3496,13 @@
       },
       {
         "id": "C",
-        "text": "That you made a mistake"
+        "text": "That you made a mistake",
+        "misconception": "emotional-mc-w07d4"
       },
       {
         "id": "D",
-        "text": "That you should try something else"
+        "text": "That you should try something else",
+        "misconception": "emotional-mc-w07d4"
       }
     ],
     "acceptableAnswers": [
@@ -3349,7 +3544,8 @@
     "options": [
       {
         "id": "A",
-        "text": "\"They were fine; you just did not read them properly.\""
+        "text": "\"They were fine; you just did not read them properly.\"",
+        "misconception": "emotional-mc-w08d1"
       },
       {
         "id": "B",
@@ -3358,11 +3554,13 @@
       },
       {
         "id": "C",
-        "text": "\"Sorry, I am terrible at this.\""
+        "text": "\"Sorry, I am terrible at this.\"",
+        "misconception": "emotional-mc-w08d1"
       },
       {
         "id": "D",
-        "text": "Saying nothing and avoiding them"
+        "text": "Saying nothing and avoiding them",
+        "misconception": "emotional-mc-w08d1"
       }
     ],
     "acceptableAnswers": [
@@ -3378,7 +3576,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Correct any errors in it"
+        "text": "Correct any errors in it",
+        "misconception": "emotional-mc-w08d1"
       },
       {
         "id": "B",
@@ -3387,11 +3586,13 @@
       },
       {
         "id": "C",
-        "text": "Show you can take it"
+        "text": "Show you can take it",
+        "misconception": "emotional-mc-w08d1"
       },
       {
         "id": "D",
-        "text": "Agree so it ends quickly"
+        "text": "Agree so it ends quickly",
+        "misconception": "emotional-mc-w08d1"
       }
     ],
     "acceptableAnswers": [
@@ -3407,7 +3608,8 @@
     "options": [
       {
         "id": "A",
-        "text": "You agree with it"
+        "text": "You agree with it",
+        "misconception": "emotional-mc-w08d1"
       },
       {
         "id": "B",
@@ -3416,11 +3618,13 @@
       },
       {
         "id": "C",
-        "text": "You admit fault"
+        "text": "You admit fault",
+        "misconception": "emotional-mc-w08d1"
       },
       {
         "id": "D",
-        "text": "You end the conversation"
+        "text": "You end the conversation",
+        "misconception": "emotional-mc-w08d1"
       }
     ],
     "acceptableAnswers": [
@@ -3492,7 +3696,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Very little that is useful"
+        "text": "Very little that is useful",
+        "misconception": "emotional-mc-w08d2"
       },
       {
         "id": "B",
@@ -3501,11 +3706,13 @@
       },
       {
         "id": "C",
-        "text": "That you are not good at the job"
+        "text": "That you are not good at the job",
+        "misconception": "emotional-mc-w08d2"
       },
       {
         "id": "D",
-        "text": "That you should argue your case"
+        "text": "That you should argue your case",
+        "misconception": "emotional-mc-w08d2"
       }
     ],
     "acceptableAnswers": [
@@ -3521,7 +3728,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Immediately, while it is fresh"
+        "text": "Immediately, while it is fresh",
+        "misconception": "emotional-mc-w08d2"
       },
       {
         "id": "B",
@@ -3530,11 +3738,13 @@
       },
       {
         "id": "C",
-        "text": "Once the other person asks again"
+        "text": "Once the other person asks again",
+        "misconception": "emotional-mc-w08d2"
       },
       {
         "id": "D",
-        "text": "Only after a formal review"
+        "text": "Only after a formal review",
+        "misconception": "emotional-mc-w08d2"
       }
     ],
     "acceptableAnswers": [
@@ -3563,7 +3773,8 @@
     "options": [
       {
         "id": "A",
-        "text": "The colleague apologises at once"
+        "text": "The colleague apologises at once",
+        "misconception": "emotional-mc-w08d3"
       },
       {
         "id": "B",
@@ -3572,11 +3783,13 @@
       },
       {
         "id": "C",
-        "text": "Everyone forgets it immediately"
+        "text": "Everyone forgets it immediately",
+        "misconception": "emotional-mc-w08d3"
       },
       {
         "id": "D",
-        "text": "Your idea is more likely to be adopted"
+        "text": "Your idea is more likely to be adopted",
+        "misconception": "emotional-mc-w08d3"
       }
     ],
     "acceptableAnswers": [
@@ -3592,7 +3805,8 @@
     "options": [
       {
         "id": "A",
-        "text": "A light joke back to ease the mood"
+        "text": "A light joke back to ease the mood",
+        "misconception": "emotional-mc-w08d3"
       },
       {
         "id": "B",
@@ -3601,11 +3815,13 @@
       },
       {
         "id": "C",
-        "text": "\"That was uncalled for.\""
+        "text": "\"That was uncalled for.\"",
+        "misconception": "emotional-mc-w08d3"
       },
       {
         "id": "D",
-        "text": "Saying nothing and moving on"
+        "text": "Saying nothing and moving on",
+        "misconception": "emotional-mc-w08d3"
       }
     ],
     "acceptableAnswers": [
@@ -3626,15 +3842,18 @@
       },
       {
         "id": "B",
-        "text": "The comment was mild"
+        "text": "The comment was mild",
+        "misconception": "emotional-mc-w08d3"
       },
       {
         "id": "C",
-        "text": "You want to avoid conflict"
+        "text": "You want to avoid conflict",
+        "misconception": "emotional-mc-w08d3"
       },
       {
         "id": "D",
-        "text": "Only by email"
+        "text": "Only by email",
+        "misconception": "emotional-mc-w08d3"
       }
     ],
     "acceptableAnswers": [
@@ -3699,7 +3918,8 @@
     "options": [
       {
         "id": "A",
-        "text": "What they did wrong"
+        "text": "What they did wrong",
+        "misconception": "emotional-mc-w08d4"
       },
       {
         "id": "B",
@@ -3708,11 +3928,13 @@
       },
       {
         "id": "C",
-        "text": "Every issue you have"
+        "text": "Every issue you have",
+        "misconception": "emotional-mc-w08d4"
       },
       {
         "id": "D",
-        "text": "An apology first"
+        "text": "An apology first",
+        "misconception": "emotional-mc-w08d4"
       }
     ],
     "acceptableAnswers": [
@@ -3728,7 +3950,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Makes the talk go better"
+        "text": "Makes the talk go better",
+        "misconception": "emotional-mc-w08d4"
       },
       {
         "id": "B",
@@ -3737,11 +3960,13 @@
       },
       {
         "id": "C",
-        "text": "Is a sign of readiness"
+        "text": "Is a sign of readiness",
+        "misconception": "emotional-mc-w08d4"
       },
       {
         "id": "D",
-        "text": "Is the respectful choice"
+        "text": "Is the respectful choice",
+        "misconception": "emotional-mc-w08d4"
       }
     ],
     "acceptableAnswers": [
@@ -3827,15 +4052,18 @@
       },
       {
         "id": "B",
-        "text": "How the other person should behave"
+        "text": "How the other person should behave",
+        "misconception": "emotional-mc-w09d1"
       },
       {
         "id": "C",
-        "text": "Why the other person is wrong"
+        "text": "Why the other person is wrong",
+        "misconception": "emotional-mc-w09d1"
       },
       {
         "id": "D",
-        "text": "A full explanation of your reasons"
+        "text": "A full explanation of your reasons",
+        "misconception": "emotional-mc-w09d1"
       }
     ],
     "acceptableAnswers": [
@@ -3851,7 +4079,8 @@
     "options": [
       {
         "id": "A",
-        "text": "It was too harsh"
+        "text": "It was too harsh",
+        "misconception": "emotional-mc-w09d1"
       },
       {
         "id": "B",
@@ -3860,11 +4089,13 @@
       },
       {
         "id": "C",
-        "text": "A sign you should explain more"
+        "text": "A sign you should explain more",
+        "misconception": "emotional-mc-w09d1"
       },
       {
         "id": "D",
-        "text": "You need to apologise"
+        "text": "You need to apologise",
+        "misconception": "emotional-mc-w09d1"
       }
     ],
     "acceptableAnswers": [
@@ -3880,11 +4111,13 @@
     "options": [
       {
         "id": "A",
-        "text": "Passive"
+        "text": "Passive",
+        "misconception": "emotional-mc-w09d1"
       },
       {
         "id": "B",
-        "text": "Aggressive"
+        "text": "Aggressive",
+        "misconception": "emotional-mc-w09d1"
       },
       {
         "id": "C",
@@ -3893,7 +4126,8 @@
       },
       {
         "id": "D",
-        "text": "Passive-aggressive"
+        "text": "Passive-aggressive",
+        "misconception": "emotional-mc-w09d1"
       }
     ],
     "acceptableAnswers": [
@@ -3961,7 +4195,8 @@
     "options": [
       {
         "id": "A",
-        "text": "\"Sorry, but you...\""
+        "text": "\"Sorry, but you...\"",
+        "misconception": "emotional-mc-w09d2"
       },
       {
         "id": "B",
@@ -3970,11 +4205,13 @@
       },
       {
         "id": "C",
-        "text": "\"Sorry if you were upset\""
+        "text": "\"Sorry if you were upset\"",
+        "misconception": "emotional-mc-w09d2"
       },
       {
         "id": "D",
-        "text": "Explaining why you did it"
+        "text": "Explaining why you did it",
+        "misconception": "emotional-mc-w09d2"
       }
     ],
     "acceptableAnswers": [
@@ -3995,15 +4232,18 @@
       },
       {
         "id": "B",
-        "text": "During the peak"
+        "text": "During the peak",
+        "misconception": "emotional-mc-w09d2"
       },
       {
         "id": "C",
-        "text": "Before you have thought it through"
+        "text": "Before you have thought it through",
+        "misconception": "emotional-mc-w09d2"
       },
       {
         "id": "D",
-        "text": "In front of others"
+        "text": "In front of others",
+        "misconception": "emotional-mc-w09d2"
       }
     ],
     "acceptableAnswers": [
@@ -4032,7 +4272,8 @@
     "options": [
       {
         "id": "A",
-        "text": "\"You will be fine, do not worry.\""
+        "text": "\"You will be fine, do not worry.\"",
+        "misconception": "emotional-mc-w09d3"
       },
       {
         "id": "B",
@@ -4041,11 +4282,13 @@
       },
       {
         "id": "C",
-        "text": "\"I moved three times last year and it was easy.\""
+        "text": "\"I moved three times last year and it was easy.\"",
+        "misconception": "emotional-mc-w09d3"
       },
       {
         "id": "D",
-        "text": "\"Just make a checklist.\""
+        "text": "\"Just make a checklist.\"",
+        "misconception": "emotional-mc-w09d3"
       }
     ],
     "acceptableAnswers": [
@@ -4061,7 +4304,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Agreeing with them"
+        "text": "Agreeing with them",
+        "misconception": "emotional-mc-w09d3"
       },
       {
         "id": "B",
@@ -4070,11 +4314,13 @@
       },
       {
         "id": "C",
-        "text": "Offering a solution"
+        "text": "Offering a solution",
+        "misconception": "emotional-mc-w09d3"
       },
       {
         "id": "D",
-        "text": "Telling them it is not so bad"
+        "text": "Telling them it is not so bad",
+        "misconception": "emotional-mc-w09d3"
       }
     ],
     "acceptableAnswers": [
@@ -4090,7 +4336,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Solve, then validate"
+        "text": "Solve, then validate",
+        "misconception": "emotional-mc-w09d3"
       },
       {
         "id": "B",
@@ -4099,11 +4346,13 @@
       },
       {
         "id": "C",
-        "text": "Validate only if you agree"
+        "text": "Validate only if you agree",
+        "misconception": "emotional-mc-w09d3"
       },
       {
         "id": "D",
-        "text": "Solve only"
+        "text": "Solve only",
+        "misconception": "emotional-mc-w09d3"
       }
     ],
     "acceptableAnswers": [
@@ -4193,7 +4442,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Pick the response you would usually give"
+        "text": "Pick the response you would usually give",
+        "misconception": "emotional-mc-w09d4"
       },
       {
         "id": "B",
@@ -4202,11 +4452,13 @@
       },
       {
         "id": "C",
-        "text": "Look for the most assertive response"
+        "text": "Look for the most assertive response",
+        "misconception": "emotional-mc-w09d4"
       },
       {
         "id": "D",
-        "text": "Choose the option that would feel most satisfying"
+        "text": "Choose the option that would feel most satisfying",
+        "misconception": "emotional-mc-w09d4"
       }
     ],
     "acceptableAnswers": [
@@ -4222,7 +4474,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Give you a score to beat"
+        "text": "Give you a score to beat",
+        "misconception": "emotional-mc-w09d4"
       },
       {
         "id": "B",
@@ -4231,11 +4484,13 @@
       },
       {
         "id": "C",
-        "text": "Show the right answer"
+        "text": "Show the right answer",
+        "misconception": "emotional-mc-w09d4"
       },
       {
         "id": "D",
-        "text": "Compare you with others"
+        "text": "Compare you with others",
+        "misconception": "emotional-mc-w09d4"
       }
     ],
     "acceptableAnswers": [
@@ -4320,7 +4575,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Showing no feelings"
+        "text": "Showing no feelings",
+        "misconception": "emotional-mc-w10d1"
       },
       {
         "id": "B",
@@ -4329,11 +4585,13 @@
       },
       {
         "id": "C",
-        "text": "Keeping feelings until later"
+        "text": "Keeping feelings until later",
+        "misconception": "emotional-mc-w10d1"
       },
       {
         "id": "D",
-        "text": "Being polite at all times"
+        "text": "Being polite at all times",
+        "misconception": "emotional-mc-w10d1"
       }
     ],
     "acceptableAnswers": [
@@ -4349,7 +4607,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Unprofessional"
+        "text": "Unprofessional",
+        "misconception": "emotional-mc-w10d1"
       },
       {
         "id": "B",
@@ -4358,11 +4617,13 @@
       },
       {
         "id": "C",
-        "text": "Suppression"
+        "text": "Suppression",
+        "misconception": "emotional-mc-w10d1"
       },
       {
         "id": "D",
-        "text": "Venting the frustration"
+        "text": "Venting the frustration",
+        "misconception": "emotional-mc-w10d1"
       }
     ],
     "acceptableAnswers": [
@@ -4391,7 +4652,8 @@
     "options": [
       {
         "id": "A",
-        "text": "\"Sure,\" then work until 2 am"
+        "text": "\"Sure,\" then work until 2 am",
+        "misconception": "emotional-mc-w10d2"
       },
       {
         "id": "B",
@@ -4400,11 +4662,13 @@
       },
       {
         "id": "C",
-        "text": "\"No, that is unreasonable.\""
+        "text": "\"No, that is unreasonable.\"",
+        "misconception": "emotional-mc-w10d2"
       },
       {
         "id": "D",
-        "text": "Saying nothing and letting it slip"
+        "text": "Saying nothing and letting it slip",
+        "misconception": "emotional-mc-w10d2"
       }
     ],
     "acceptableAnswers": [
@@ -4420,7 +4684,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Refuses the demand politely"
+        "text": "Refuses the demand politely",
+        "misconception": "emotional-mc-w10d2"
       },
       {
         "id": "B",
@@ -4429,11 +4694,13 @@
       },
       {
         "id": "C",
-        "text": "Agrees and works late"
+        "text": "Agrees and works late",
+        "misconception": "emotional-mc-w10d2"
       },
       {
         "id": "D",
-        "text": "Asks someone else to decide"
+        "text": "Asks someone else to decide",
+        "misconception": "emotional-mc-w10d2"
       }
     ],
     "acceptableAnswers": [
@@ -4454,15 +4721,18 @@
       },
       {
         "id": "B",
-        "text": "Say yes to keep trust"
+        "text": "Say yes to keep trust",
+        "misconception": "emotional-mc-w10d2"
       },
       {
         "id": "C",
-        "text": "Explain your workload"
+        "text": "Explain your workload",
+        "misconception": "emotional-mc-w10d2"
       },
       {
         "id": "D",
-        "text": "Ask for more time"
+        "text": "Ask for more time",
+        "misconception": "emotional-mc-w10d2"
       }
     ],
     "acceptableAnswers": [
@@ -4522,7 +4792,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Decide quickly"
+        "text": "Decide quickly",
+        "misconception": "emotional-mc-w10d3"
       },
       {
         "id": "B",
@@ -4531,11 +4802,13 @@
       },
       {
         "id": "C",
-        "text": "Gather all the facts"
+        "text": "Gather all the facts",
+        "misconception": "emotional-mc-w10d3"
       },
       {
         "id": "D",
-        "text": "Ask what others think"
+        "text": "Ask what others think",
+        "misconception": "emotional-mc-w10d3"
       }
     ],
     "acceptableAnswers": [
@@ -4556,15 +4829,18 @@
       },
       {
         "id": "B",
-        "text": "Showing who decided"
+        "text": "Showing who decided",
+        "misconception": "emotional-mc-w10d3"
       },
       {
         "id": "C",
-        "text": "Giving extra time"
+        "text": "Giving extra time",
+        "misconception": "emotional-mc-w10d3"
       },
       {
         "id": "D",
-        "text": "Showing you were right"
+        "text": "Showing you were right",
+        "misconception": "emotional-mc-w10d3"
       }
     ],
     "acceptableAnswers": [
@@ -4659,15 +4935,18 @@
       },
       {
         "id": "B",
-        "text": "Go with your instinct"
+        "text": "Go with your instinct",
+        "misconception": "emotional-mc-w10d4"
       },
       {
         "id": "C",
-        "text": "Pick the fastest option"
+        "text": "Pick the fastest option",
+        "misconception": "emotional-mc-w10d4"
       },
       {
         "id": "D",
-        "text": "Pick the safest option"
+        "text": "Pick the safest option",
+        "misconception": "emotional-mc-w10d4"
       }
     ],
     "acceptableAnswers": [
@@ -4683,7 +4962,8 @@
     "options": [
       {
         "id": "A",
-        "text": "A shortcut to avoid"
+        "text": "A shortcut to avoid",
+        "misconception": "emotional-mc-w10d4"
       },
       {
         "id": "B",
@@ -4692,11 +4972,13 @@
       },
       {
         "id": "C",
-        "text": "Only for small tasks"
+        "text": "Only for small tasks",
+        "misconception": "emotional-mc-w10d4"
       },
       {
         "id": "D",
-        "text": "Second best to perfect"
+        "text": "Second best to perfect",
+        "misconception": "emotional-mc-w10d4"
       }
     ],
     "acceptableAnswers": [
@@ -4777,7 +5059,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Checking rumours often"
+        "text": "Checking rumours often",
+        "misconception": "emotional-mc-w11d1"
       },
       {
         "id": "B",
@@ -4786,11 +5069,13 @@
       },
       {
         "id": "C",
-        "text": "Preparing for the worst"
+        "text": "Preparing for the worst",
+        "misconception": "emotional-mc-w11d1"
       },
       {
         "id": "D",
-        "text": "Keeping a low profile"
+        "text": "Keeping a low profile",
+        "misconception": "emotional-mc-w11d1"
       }
     ],
     "acceptableAnswers": [
@@ -4811,15 +5096,18 @@
       },
       {
         "id": "B",
-        "text": "Keep you fully informed"
+        "text": "Keep you fully informed",
+        "misconception": "emotional-mc-w11d1"
       },
       {
         "id": "C",
-        "text": "Reduce the news you see"
+        "text": "Reduce the news you see",
+        "misconception": "emotional-mc-w11d1"
       },
       {
         "id": "D",
-        "text": "Avoid all info"
+        "text": "Avoid all info",
+        "misconception": "emotional-mc-w11d1"
       }
     ],
     "acceptableAnswers": [
@@ -4879,7 +5167,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Replay it to learn from it"
+        "text": "Replay it to learn from it",
+        "misconception": "emotional-mc-w11d2"
       },
       {
         "id": "B",
@@ -4888,11 +5177,13 @@
       },
       {
         "id": "C",
-        "text": "Send a follow-up email at once"
+        "text": "Send a follow-up email at once",
+        "misconception": "emotional-mc-w11d2"
       },
       {
         "id": "D",
-        "text": "Move straight on"
+        "text": "Move straight on",
+        "misconception": "emotional-mc-w11d2"
       }
     ],
     "acceptableAnswers": [
@@ -4913,15 +5204,18 @@
       },
       {
         "id": "B",
-        "text": "Abstract and evaluative"
+        "text": "Abstract and evaluative",
+        "misconception": "emotional-mc-w11d2"
       },
       {
         "id": "C",
-        "text": "Done straight after"
+        "text": "Done straight after",
+        "misconception": "emotional-mc-w11d2"
       },
       {
         "id": "D",
-        "text": "Done with others"
+        "text": "Done with others",
+        "misconception": "emotional-mc-w11d2"
       }
     ],
     "acceptableAnswers": [
@@ -4950,7 +5244,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Challenging the plan forcefully in a large meeting"
+        "text": "Challenging the plan forcefully in a large meeting",
+        "misconception": "emotional-mc-w11d3"
       },
       {
         "id": "B",
@@ -4959,11 +5254,13 @@
       },
       {
         "id": "C",
-        "text": "Saying nothing and complaining to peers"
+        "text": "Saying nothing and complaining to peers",
+        "misconception": "emotional-mc-w11d3"
       },
       {
         "id": "D",
-        "text": "Agreeing in the meeting and quietly not doing it"
+        "text": "Agreeing in the meeting and quietly not doing it",
+        "misconception": "emotional-mc-w11d3"
       }
     ],
     "acceptableAnswers": [
@@ -4984,15 +5281,18 @@
       },
       {
         "id": "B",
-        "text": "The main problem"
+        "text": "The main problem",
+        "misconception": "emotional-mc-w11d3"
       },
       {
         "id": "C",
-        "text": "Your concern"
+        "text": "Your concern",
+        "misconception": "emotional-mc-w11d3"
       },
       {
         "id": "D",
-        "text": "An apology"
+        "text": "An apology",
+        "misconception": "emotional-mc-w11d3"
       }
     ],
     "acceptableAnswers": [
@@ -5013,15 +5313,18 @@
       },
       {
         "id": "B",
-        "text": "Keep pushing until they change it"
+        "text": "Keep pushing until they change it",
+        "misconception": "emotional-mc-w11d3"
       },
       {
         "id": "C",
-        "text": "Go along and say nothing more"
+        "text": "Go along and say nothing more",
+        "misconception": "emotional-mc-w11d3"
       },
       {
         "id": "D",
-        "text": "Quietly do it your own way"
+        "text": "Quietly do it your own way",
+        "misconception": "emotional-mc-w11d3"
       }
     ],
     "acceptableAnswers": [
@@ -5037,7 +5340,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Say nothing; the risk is too high"
+        "text": "Say nothing; the risk is too high",
+        "misconception": "emotional-mc-w11d3"
       },
       {
         "id": "B",
@@ -5046,11 +5350,13 @@
       },
       {
         "id": "C",
-        "text": "Raise it in the all-hands meeting so others back you"
+        "text": "Raise it in the all-hands meeting so others back you",
+        "misconception": "emotional-mc-w11d3"
       },
       {
         "id": "D",
-        "text": "Go straight to their manager"
+        "text": "Go straight to their manager",
+        "misconception": "emotional-mc-w11d3"
       }
     ],
     "acceptableAnswers": [
@@ -5145,15 +5451,18 @@
       },
       {
         "id": "B",
-        "text": "Your first response"
+        "text": "Your first response",
+        "misconception": "emotional-mc-w11d4"
       },
       {
         "id": "C",
-        "text": "The best outcome"
+        "text": "The best outcome",
+        "misconception": "emotional-mc-w11d4"
       },
       {
         "id": "D",
-        "text": "What others would do"
+        "text": "What others would do",
+        "misconception": "emotional-mc-w11d4"
       }
     ],
     "acceptableAnswers": [
@@ -5169,7 +5478,8 @@
     "options": [
       {
         "id": "A",
-        "text": "No feelings allowed"
+        "text": "No feelings allowed",
+        "misconception": "emotional-mc-w11d4"
       },
       {
         "id": "B",
@@ -5178,11 +5488,13 @@
       },
       {
         "id": "C",
-        "text": "Only facts, no feelings"
+        "text": "Only facts, no feelings",
+        "misconception": "emotional-mc-w11d4"
       },
       {
         "id": "D",
-        "text": "Rules over people"
+        "text": "Rules over people",
+        "misconception": "emotional-mc-w11d4"
       }
     ],
     "acceptableAnswers": [
@@ -5272,15 +5584,18 @@
       },
       {
         "id": "B",
-        "text": "It is because of my parents"
+        "text": "It is because of my parents",
+        "misconception": "emotional-mc-w12d1"
       },
       {
         "id": "C",
-        "text": "I am defensive by nature"
+        "text": "I am defensive by nature",
+        "misconception": "emotional-mc-w12d1"
       },
       {
         "id": "D",
-        "text": "Others are unfair to me"
+        "text": "Others are unfair to me",
+        "misconception": "emotional-mc-w12d1"
       }
     ],
     "acceptableAnswers": [
@@ -5296,7 +5611,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Causal claims about childhood"
+        "text": "Causal claims about childhood",
+        "misconception": "emotional-mc-w12d1"
       },
       {
         "id": "B",
@@ -5305,11 +5621,13 @@
       },
       {
         "id": "C",
-        "text": "Diagnoses"
+        "text": "Diagnoses",
+        "misconception": "emotional-mc-w12d1"
       },
       {
         "id": "D",
-        "text": "Predictions"
+        "text": "Predictions",
+        "misconception": "emotional-mc-w12d1"
       }
     ],
     "acceptableAnswers": [
@@ -5325,7 +5643,8 @@
     "options": [
       {
         "id": "A",
-        "text": "I snap because I did not learn to cope as a child"
+        "text": "I snap because I did not learn to cope as a child",
+        "misconception": "emotional-mc-w12d1"
       },
       {
         "id": "B",
@@ -5334,11 +5653,13 @@
       },
       {
         "id": "C",
-        "text": "My partner causes my anger"
+        "text": "My partner causes my anger",
+        "misconception": "emotional-mc-w12d1"
       },
       {
         "id": "D",
-        "text": "I am an angry person"
+        "text": "I am an angry person",
+        "misconception": "emotional-mc-w12d1"
       }
     ],
     "acceptableAnswers": [
@@ -5406,7 +5727,8 @@
     "options": [
       {
         "id": "A",
-        "text": "A form of therapy"
+        "text": "A form of therapy",
+        "misconception": "emotional-mc-w12d2"
       },
       {
         "id": "B",
@@ -5415,11 +5737,13 @@
       },
       {
         "id": "C",
-        "text": "Crisis support"
+        "text": "Crisis support",
+        "misconception": "emotional-mc-w12d2"
       },
       {
         "id": "D",
-        "text": "A diagnostic tool"
+        "text": "A diagnostic tool",
+        "misconception": "emotional-mc-w12d2"
       }
     ],
     "acceptableAnswers": [
@@ -5435,7 +5759,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Keep using the app only"
+        "text": "Keep using the app only",
+        "misconception": "emotional-mc-w12d2"
       },
       {
         "id": "B",
@@ -5444,11 +5769,13 @@
       },
       {
         "id": "C",
-        "text": "Wait to see if it passes"
+        "text": "Wait to see if it passes",
+        "misconception": "emotional-mc-w12d2"
       },
       {
         "id": "D",
-        "text": "Talk to a friend first"
+        "text": "Talk to a friend first",
+        "misconception": "emotional-mc-w12d2"
       }
     ],
     "acceptableAnswers": [
@@ -5477,7 +5804,8 @@
     "options": [
       {
         "id": "A",
-        "text": "A full reflection every day forever"
+        "text": "A full reflection every day forever",
+        "misconception": "emotional-mc-w12d3"
       },
       {
         "id": "B",
@@ -5486,11 +5814,13 @@
       },
       {
         "id": "C",
-        "text": "Practise only when things go badly"
+        "text": "Practise only when things go badly",
+        "misconception": "emotional-mc-w12d3"
       },
       {
         "id": "D",
-        "text": "Restart the whole programme every month"
+        "text": "Restart the whole programme every month",
+        "misconception": "emotional-mc-w12d3"
       }
     ],
     "acceptableAnswers": [
@@ -5511,15 +5841,18 @@
       },
       {
         "id": "B",
-        "text": "They show mastery"
+        "text": "They show mastery",
+        "misconception": "emotional-mc-w12d3"
       },
       {
         "id": "C",
-        "text": "They are fun"
+        "text": "They are fun",
+        "misconception": "emotional-mc-w12d3"
       },
       {
         "id": "D",
-        "text": "They add notifications"
+        "text": "They add notifications",
+        "misconception": "emotional-mc-w12d3"
       }
     ],
     "acceptableAnswers": [
@@ -5535,7 +5868,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Daily hour-long sessions"
+        "text": "Daily hour-long sessions",
+        "misconception": "emotional-mc-w12d3"
       },
       {
         "id": "B",
@@ -5544,11 +5878,13 @@
       },
       {
         "id": "C",
-        "text": "Rereading lessons"
+        "text": "Rereading lessons",
+        "misconception": "emotional-mc-w12d3"
       },
       {
         "id": "D",
-        "text": "Only reading"
+        "text": "Only reading",
+        "misconception": "emotional-mc-w12d3"
       }
     ],
     "acceptableAnswers": [
@@ -5618,15 +5954,18 @@
       },
       {
         "id": "B",
-        "text": "A summary of the emotion"
+        "text": "A summary of the emotion",
+        "misconception": "emotional-mc-w12d4"
       },
       {
         "id": "C",
-        "text": "A rating of mood"
+        "text": "A rating of mood",
+        "misconception": "emotional-mc-w12d4"
       },
       {
         "id": "D",
-        "text": "An apology"
+        "text": "An apology",
+        "misconception": "emotional-mc-w12d4"
       }
     ],
     "acceptableAnswers": [
@@ -5647,15 +5986,18 @@
       },
       {
         "id": "B",
-        "text": "What worked last time"
+        "text": "What worked last time",
+        "misconception": "emotional-mc-w12d4"
       },
       {
         "id": "C",
-        "text": "What others prefer"
+        "text": "What others prefer",
+        "misconception": "emotional-mc-w12d4"
       },
       {
         "id": "D",
-        "text": "What feels easiest"
+        "text": "What feels easiest",
+        "misconception": "emotional-mc-w12d4"
       }
     ],
     "acceptableAnswers": [
@@ -5671,7 +6013,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Conclude experiments do not work for you"
+        "text": "Conclude experiments do not work for you",
+        "misconception": "emotional-mc-w12d4"
       },
       {
         "id": "B",
@@ -5680,11 +6023,13 @@
       },
       {
         "id": "C",
-        "text": "Ignore the result and keep the hypothesis"
+        "text": "Ignore the result and keep the hypothesis",
+        "misconception": "emotional-mc-w12d4"
       },
       {
         "id": "D",
-        "text": "Repeat the same test until it works"
+        "text": "Repeat the same test until it works",
+        "misconception": "emotional-mc-w12d4"
       }
     ],
     "acceptableAnswers": [
@@ -5718,15 +6063,18 @@
       },
       {
         "id": "B",
-        "text": "A command that must be acted on immediately"
+        "text": "A command that must be acted on immediately",
+        "misconception": "emotional-mc-w01d1"
       },
       {
         "id": "C",
-        "text": "Proof that the colleague acted inconsiderately on purpose"
+        "text": "Proof that the colleague acted inconsiderately on purpose",
+        "misconception": "emotional-mc-w01d1"
       },
       {
         "id": "D",
-        "text": "A malfunction that should be suppressed as quickly as possible"
+        "text": "A malfunction that should be suppressed as quickly as possible",
+        "misconception": "emotional-mc-w01d1"
       }
     ],
     "acceptableAnswers": [
@@ -5747,15 +6095,18 @@
       },
       {
         "id": "B",
-        "text": "The situation, since the cancellation did happen"
+        "text": "The situation, since the cancellation did happen",
+        "misconception": "emotional-mc-w01d2"
       },
       {
         "id": "C",
-        "text": "The body signal, since a tight chest was actually felt"
+        "text": "The body signal, since a tight chest was actually felt",
+        "misconception": "emotional-mc-w01d2"
       },
       {
         "id": "D",
-        "text": "The urge, since wanting to reply sharply was actually felt"
+        "text": "The urge, since wanting to reply sharply was actually felt",
+        "misconception": "emotional-mc-w01d2"
       }
     ],
     "acceptableAnswers": [
@@ -5776,15 +6127,18 @@
       },
       {
         "id": "B",
-        "text": "Nothing distinguishes them; holding back any urge is suppression"
+        "text": "Nothing distinguishes them; holding back any urge is suppression",
+        "misconception": "emotional-mc-w01d3"
       },
       {
         "id": "C",
-        "text": "It only avoids suppression if the sharp reply is eventually sent"
+        "text": "It only avoids suppression if the sharp reply is eventually sent",
+        "misconception": "emotional-mc-w01d3"
       },
       {
         "id": "D",
-        "text": "It avoids suppression because the irritation itself has already faded"
+        "text": "It avoids suppression because the irritation itself has already faded",
+        "misconception": "emotional-mc-w01d3"
       }
     ],
     "acceptableAnswers": [
@@ -5805,15 +6159,18 @@
       },
       {
         "id": "B",
-        "text": "Because self-ratings are always inaccurate and should be ignored entirely"
+        "text": "Because self-ratings are always inaccurate and should be ignored entirely",
+        "misconception": "emotional-mc-w01d4"
       },
       {
         "id": "C",
-        "text": "Because checkpoint scores are only a formality and carry no real information"
+        "text": "Because checkpoint scores are only a formality and carry no real information",
+        "misconception": "emotional-mc-w01d4"
       },
       {
         "id": "D",
-        "text": "Because combining the two numbers would be mathematically impossible"
+        "text": "Because combining the two numbers would be mathematically impossible",
+        "misconception": "emotional-mc-w01d4"
       }
     ],
     "acceptableAnswers": [
@@ -5834,15 +6191,18 @@
       },
       {
         "id": "B",
-        "text": "Nothing; any emotion word is equally useful as long as it is negative"
+        "text": "Nothing; any emotion word is equally useful as long as it is negative",
+        "misconception": "emotional-mc-w02d1"
       },
       {
         "id": "C",
-        "text": "A guarantee that the feeling will immediately become less intense"
+        "text": "A guarantee that the feeling will immediately become less intense",
+        "misconception": "emotional-mc-w02d1"
       },
       {
         "id": "D",
-        "text": "Proof that the original word \"stressed\" was factually wrong"
+        "text": "Proof that the original word \"stressed\" was factually wrong",
+        "misconception": "emotional-mc-w02d1"
       }
     ],
     "acceptableAnswers": [
@@ -5863,15 +6223,18 @@
       },
       {
         "id": "B",
-        "text": "It is expected to resolve the delay and the deadline directly"
+        "text": "It is expected to resolve the delay and the deadline directly",
+        "misconception": "emotional-mc-w02d2"
       },
       {
         "id": "C",
-        "text": "It has no effect of any kind and is purely a formality"
+        "text": "It has no effect of any kind and is purely a formality",
+        "misconception": "emotional-mc-w02d2"
       },
       {
         "id": "D",
-        "text": "It is expected to make the feelings disappear completely and immediately"
+        "text": "It is expected to make the feelings disappear completely and immediately",
+        "misconception": "emotional-mc-w02d2"
       }
     ],
     "acceptableAnswers": [
@@ -5892,15 +6255,18 @@
       },
       {
         "id": "B",
-        "text": "That the earlier frustration and worry were not genuine feelings"
+        "text": "That the earlier frustration and worry were not genuine feelings",
+        "misconception": "emotional-mc-w02d3"
       },
       {
         "id": "C",
-        "text": "That only one of the three feelings can actually be real at a time"
+        "text": "That only one of the three feelings can actually be real at a time",
+        "misconception": "emotional-mc-w02d3"
       },
       {
         "id": "D",
-        "text": "That noticing a third feeling means the first two should be ignored"
+        "text": "That noticing a third feeling means the first two should be ignored",
+        "misconception": "emotional-mc-w02d3"
       }
     ],
     "acceptableAnswers": [
@@ -5921,15 +6287,18 @@
       },
       {
         "id": "B",
-        "text": "Naming only the single loudest emotion and ignoring that any other feeling was present"
+        "text": "Naming only the single loudest emotion and ignoring that any other feeling was present",
+        "misconception": "emotional-mc-w02d4"
       },
       {
         "id": "C",
-        "text": "Running the check-in three separate times, once for each feeling identified"
+        "text": "Running the check-in three separate times, once for each feeling identified",
+        "misconception": "emotional-mc-w02d4"
       },
       {
         "id": "D",
-        "text": "Skipping the check-in entirely, since the feelings are already too mixed to describe"
+        "text": "Skipping the check-in entirely, since the feelings are already too mixed to describe",
+        "misconception": "emotional-mc-w02d4"
       }
     ],
     "acceptableAnswers": [
@@ -5950,15 +6319,18 @@
       },
       {
         "id": "B",
-        "text": "As proof that the other person in the exchange is behaving badly"
+        "text": "As proof that the other person in the exchange is behaving badly",
+        "misconception": "emotional-mc-w03d1"
       },
       {
         "id": "C",
-        "text": "As something to judge and criticise oneself for feeling"
+        "text": "As something to judge and criticise oneself for feeling",
+        "misconception": "emotional-mc-w03d1"
       },
       {
         "id": "D",
-        "text": "As irrelevant background noise that is best ignored completely"
+        "text": "As irrelevant background noise that is best ignored completely",
+        "misconception": "emotional-mc-w03d1"
       }
     ],
     "acceptableAnswers": [
@@ -5979,15 +6351,18 @@
       },
       {
         "id": "B",
-        "text": "Treating the urge as identical to the action of actually walking out"
+        "text": "Treating the urge as identical to the action of actually walking out",
+        "misconception": "emotional-mc-w03d2"
       },
       {
         "id": "C",
-        "text": "Suppressing all awareness of the urge so it cannot be acted on by mistake"
+        "text": "Suppressing all awareness of the urge so it cannot be acted on by mistake",
+        "misconception": "emotional-mc-w03d2"
       },
       {
         "id": "D",
-        "text": "Acting on the urge immediately, since it followed directly from a real body signal"
+        "text": "Acting on the urge immediately, since it followed directly from a real body signal",
+        "misconception": "emotional-mc-w03d2"
       }
     ],
     "acceptableAnswers": [
@@ -6008,15 +6383,18 @@
       },
       {
         "id": "B",
-        "text": "Venting reliably drains anger and is the best choice whenever anger is strong"
+        "text": "Venting reliably drains anger and is the best choice whenever anger is strong",
+        "misconception": "emotional-mc-w03d3"
       },
       {
         "id": "C",
-        "text": "Venting has no effect on anger in either direction"
+        "text": "Venting has no effect on anger in either direction",
+        "misconception": "emotional-mc-w03d3"
       },
       {
         "id": "D",
-        "text": "Venting only fails to help if it is done quietly rather than loudly"
+        "text": "Venting only fails to help if it is done quietly rather than loudly",
+        "misconception": "emotional-mc-w03d3"
       }
     ],
     "acceptableAnswers": [
@@ -6037,15 +6415,18 @@
       },
       {
         "id": "B",
-        "text": "Breathing resets should always be used the instant any strong emotion appears, regardless of context"
+        "text": "Breathing resets should always be used the instant any strong emotion appears, regardless of context",
+        "misconception": "emotional-mc-w03d4"
       },
       {
         "id": "C",
-        "text": "It is a well-fitted choice only because it happened to work this particular time"
+        "text": "It is a well-fitted choice only because it happened to work this particular time",
+        "misconception": "emotional-mc-w03d4"
       },
       {
         "id": "D",
-        "text": "Breathing resets are only appropriate once a decision has already been made to leave the room"
+        "text": "Breathing resets are only appropriate once a decision has already been made to leave the room",
+        "misconception": "emotional-mc-w03d4"
       }
     ],
     "acceptableAnswers": [
@@ -6066,15 +6447,18 @@
       },
       {
         "id": "B",
-        "text": "Both statements are equally factual, since they describe the same event"
+        "text": "Both statements are equally factual, since they describe the same event",
+        "misconception": "emotional-mc-w04d1"
       },
       {
         "id": "C",
-        "text": "\"She's avoiding me\" is the fact, since it explains what actually happened"
+        "text": "\"She's avoiding me\" is the fact, since it explains what actually happened",
+        "misconception": "emotional-mc-w04d1"
       },
       {
         "id": "D",
-        "text": "Neither statement is a fact, since both involve some interpretation"
+        "text": "Neither statement is a fact, since both involve some interpretation",
+        "misconception": "emotional-mc-w04d1"
       }
     ],
     "acceptableAnswers": [
@@ -6095,15 +6479,18 @@
       },
       {
         "id": "B",
-        "text": "It proves that the first explanation, \"avoiding me,\" was definitely wrong"
+        "text": "It proves that the first explanation, \"avoiding me,\" was definitely wrong",
+        "misconception": "emotional-mc-w04d2"
       },
       {
         "id": "C",
-        "text": "It guarantees that the correct explanation is now known for certain"
+        "text": "It guarantees that the correct explanation is now known for certain",
+        "misconception": "emotional-mc-w04d2"
       },
       {
         "id": "D",
-        "text": "It has no real effect, since the first explanation usually turns out to be right anyway"
+        "text": "It has no real effect, since the first explanation usually turns out to be right anyway",
+        "misconception": "emotional-mc-w04d2"
       }
     ],
     "acceptableAnswers": [
@@ -6124,15 +6511,18 @@
       },
       {
         "id": "B",
-        "text": "All-or-nothing thinking, since the statement uses an extreme word like \"always\""
+        "text": "All-or-nothing thinking, since the statement uses an extreme word like \"always\"",
+        "misconception": "emotional-mc-w04d3"
       },
       {
         "id": "C",
-        "text": "No thinking trap at all, since any plausible-sounding reading is automatically trap-free"
+        "text": "No thinking trap at all, since any plausible-sounding reading is automatically trap-free",
+        "misconception": "emotional-mc-w04d3"
       },
       {
         "id": "D",
-        "text": "Catastrophising, since the statement imagines the worst possible long-term outcome"
+        "text": "Catastrophising, since the statement imagines the worst possible long-term outcome",
+        "misconception": "emotional-mc-w04d3"
       }
     ],
     "acceptableAnswers": [
@@ -6153,15 +6543,18 @@
       },
       {
         "id": "B",
-        "text": "The evidence fully confirms that she is avoiding the message"
+        "text": "The evidence fully confirms that she is avoiding the message",
+        "misconception": "emotional-mc-w04d4"
       },
       {
         "id": "C",
-        "text": "The evidence fully rules out that she is avoiding the message"
+        "text": "The evidence fully rules out that she is avoiding the message",
+        "misconception": "emotional-mc-w04d4"
       },
       {
         "id": "D",
-        "text": "An evidence check is pointless once any alternative explanation has been generated"
+        "text": "An evidence check is pointless once any alternative explanation has been generated",
+        "misconception": "emotional-mc-w04d4"
       }
     ],
     "acceptableAnswers": [
@@ -6182,15 +6575,18 @@
       },
       {
         "id": "B",
-        "text": "It replaces the need for an evidence check entirely"
+        "text": "It replaces the need for an evidence check entirely",
+        "misconception": "emotional-mc-w05d1"
       },
       {
         "id": "C",
-        "text": "It is guaranteed to produce a different factual conclusion than the evidence check did"
+        "text": "It is guaranteed to produce a different factual conclusion than the evidence check did",
+        "misconception": "emotional-mc-w05d1"
       },
       {
         "id": "D",
-        "text": "It only works if the episode is retold to another person, not described alone"
+        "text": "It only works if the episode is retold to another person, not described alone",
+        "misconception": "emotional-mc-w05d1"
       }
     ],
     "acceptableAnswers": [
@@ -6211,15 +6607,18 @@
       },
       {
         "id": "B",
-        "text": "Proving that the episode will be completely forgotten in exactly one year"
+        "text": "Proving that the episode will be completely forgotten in exactly one year",
+        "misconception": "emotional-mc-w05d2"
       },
       {
         "id": "C",
-        "text": "Replacing the need to ever resolve the actual situation"
+        "text": "Replacing the need to ever resolve the actual situation",
+        "misconception": "emotional-mc-w05d2"
       },
       {
         "id": "D",
-        "text": "Making the episode feel more urgent by extending how long it is thought about"
+        "text": "Making the episode feel more urgent by extending how long it is thought about",
+        "misconception": "emotional-mc-w05d2"
       }
     ],
     "acceptableAnswers": [
@@ -6240,15 +6639,18 @@
       },
       {
         "id": "B",
-        "text": "Because giving up would mean never acting; acceptance means acting anyway regardless of what matters"
+        "text": "Because giving up would mean never acting; acceptance means acting anyway regardless of what matters",
+        "misconception": "emotional-mc-w05d3"
       },
       {
         "id": "C",
-        "text": "Because acceptance requires that the uneasy feeling disappear before any action can be taken"
+        "text": "Because acceptance requires that the uneasy feeling disappear before any action can be taken",
+        "misconception": "emotional-mc-w05d3"
       },
       {
         "id": "D",
-        "text": "There is no real difference between acceptance and giving up in this case"
+        "text": "There is no real difference between acceptance and giving up in this case",
+        "misconception": "emotional-mc-w05d3"
       }
     ],
     "acceptableAnswers": [
@@ -6269,15 +6671,18 @@
       },
       {
         "id": "B",
-        "text": "Any reappraisal that ends on a reassuring note is automatically fair by definition"
+        "text": "Any reappraisal that ends on a reassuring note is automatically fair by definition",
+        "misconception": "emotional-mc-w05d4"
       },
       {
         "id": "C",
-        "text": "Fairness requires the reappraisal to deny that the situation is uncertain at all"
+        "text": "Fairness requires the reappraisal to deny that the situation is uncertain at all",
+        "misconception": "emotional-mc-w05d4"
       },
       {
         "id": "D",
-        "text": "A reappraisal is fair only if it fully resolves the original uncertainty about the message"
+        "text": "A reappraisal is fair only if it fully resolves the original uncertainty about the message",
+        "misconception": "emotional-mc-w05d4"
       }
     ],
     "acceptableAnswers": [
@@ -6298,15 +6703,18 @@
       },
       {
         "id": "B",
-        "text": "Using all three strategies simultaneously, every time, regardless of the situation"
+        "text": "Using all three strategies simultaneously, every time, regardless of the situation",
+        "misconception": "emotional-mc-w06d1"
       },
       {
         "id": "C",
-        "text": "Picking whichever strategy requires the least effort, regardless of fit"
+        "text": "Picking whichever strategy requires the least effort, regardless of fit",
+        "misconception": "emotional-mc-w06d1"
       },
       {
         "id": "D",
-        "text": "Expressing the emotion is always the right default choice in any situation"
+        "text": "Expressing the emotion is always the right default choice in any situation",
+        "misconception": "emotional-mc-w06d1"
       }
     ],
     "acceptableAnswers": [
@@ -6327,15 +6735,18 @@
       },
       {
         "id": "B",
-        "text": "Intensity is irrelevant; the same strategy should be used regardless of how strong the feeling is"
+        "text": "Intensity is irrelevant; the same strategy should be used regardless of how strong the feeling is",
+        "misconception": "emotional-mc-w06d2"
       },
       {
         "id": "C",
-        "text": "Only the mild, everyday version of the feeling should ever be addressed with a strategy"
+        "text": "Only the mild, everyday version of the feeling should ever be addressed with a strategy",
+        "misconception": "emotional-mc-w06d2"
       },
       {
         "id": "D",
-        "text": "Sharp spikes should always be addressed with reappraisal and nothing else"
+        "text": "Sharp spikes should always be addressed with reappraisal and nothing else",
+        "misconception": "emotional-mc-w06d2"
       }
     ],
     "acceptableAnswers": [
@@ -6356,15 +6767,18 @@
       },
       {
         "id": "B",
-        "text": "Problem solving means feeling the frustration as intensely as possible until it resolves itself"
+        "text": "Problem solving means feeling the frustration as intensely as possible until it resolves itself",
+        "misconception": "emotional-mc-w06d3"
       },
       {
         "id": "C",
-        "text": "Problem solving only applies to causes that cannot be identified at all"
+        "text": "Problem solving only applies to causes that cannot be identified at all",
+        "misconception": "emotional-mc-w06d3"
       },
       {
         "id": "D",
-        "text": "Identifying the cause is sufficient on its own; no further action is required"
+        "text": "Identifying the cause is sufficient on its own; no further action is required",
+        "misconception": "emotional-mc-w06d3"
       }
     ],
     "acceptableAnswers": [
@@ -6385,15 +6799,18 @@
       },
       {
         "id": "B",
-        "text": "It replaces the need to have identified a concrete next step in the first place"
+        "text": "It replaces the need to have identified a concrete next step in the first place",
+        "misconception": "emotional-mc-w06d4"
       },
       {
         "id": "C",
-        "text": "If-then plans are only useful for triggers that are rare and unpredictable"
+        "text": "If-then plans are only useful for triggers that are rare and unpredictable",
+        "misconception": "emotional-mc-w06d4"
       },
       {
         "id": "D",
-        "text": "Writing the plan guarantees the scheduling conflict will stop recurring entirely"
+        "text": "Writing the plan guarantees the scheduling conflict will stop recurring entirely",
+        "misconception": "emotional-mc-w06d4"
       }
     ],
     "acceptableAnswers": [
@@ -6414,15 +6831,18 @@
       },
       {
         "id": "B",
-        "text": "Reflection, since any amount of thinking about a problem counts as reflection"
+        "text": "Reflection, since any amount of thinking about a problem counts as reflection",
+        "misconception": "emotional-mc-w07d1"
       },
       {
         "id": "C",
-        "text": "Neither, since the test only applies to feelings, not to project delays"
+        "text": "Neither, since the test only applies to feelings, not to project delays",
+        "misconception": "emotional-mc-w07d1"
       },
       {
         "id": "D",
-        "text": "Rumination only if the replaying happens for more than an hour at a time"
+        "text": "Rumination only if the replaying happens for more than an hour at a time",
+        "misconception": "emotional-mc-w07d1"
       }
     ],
     "acceptableAnswers": [
@@ -6443,15 +6863,18 @@
       },
       {
         "id": "B",
-        "text": "Guarantee that no worried thought about the project will occur outside the window"
+        "text": "Guarantee that no worried thought about the project will occur outside the window",
+        "misconception": "emotional-mc-w07d2"
       },
       {
         "id": "C",
-        "text": "Force a solution to the project delay to be found within exactly 15 minutes"
+        "text": "Force a solution to the project delay to be found within exactly 15 minutes",
+        "misconception": "emotional-mc-w07d2"
       },
       {
         "id": "D",
-        "text": "Replace the need to ever address the actual project delay"
+        "text": "Replace the need to ever address the actual project delay",
+        "misconception": "emotional-mc-w07d2"
       }
     ],
     "acceptableAnswers": [
@@ -6472,15 +6895,18 @@
       },
       {
         "id": "B",
-        "text": "An example of restrictive avoidance, since checking less often is itself a form of avoidance"
+        "text": "An example of restrictive avoidance, since checking less often is itself a form of avoidance",
+        "misconception": "emotional-mc-w07d3"
       },
       {
         "id": "C",
-        "text": "Proof that the uncertainty about the project has actually been resolved"
+        "text": "Proof that the uncertainty about the project has actually been resolved",
+        "misconception": "emotional-mc-w07d3"
       },
       {
         "id": "D",
-        "text": "An unrelated habit that has nothing to do with tolerating uncertainty"
+        "text": "An unrelated habit that has nothing to do with tolerating uncertainty",
+        "misconception": "emotional-mc-w07d3"
       }
     ],
     "acceptableAnswers": [
@@ -6501,15 +6927,18 @@
       },
       {
         "id": "B",
-        "text": "Because only uncontrollable causes are worth reviewing after a setback"
+        "text": "Because only uncontrollable causes are worth reviewing after a setback",
+        "misconception": "emotional-mc-w07d4"
       },
       {
         "id": "C",
-        "text": "Because the review is pointless once a setback has already happened"
+        "text": "Because the review is pointless once a setback has already happened",
+        "misconception": "emotional-mc-w07d4"
       },
       {
         "id": "D",
-        "text": "Because controllable and uncontrollable parts always turn out to be the same thing"
+        "text": "Because controllable and uncontrollable parts always turn out to be the same thing",
+        "misconception": "emotional-mc-w07d4"
       }
     ],
     "acceptableAnswers": [
@@ -6530,15 +6959,18 @@
       },
       {
         "id": "B",
-        "text": "It is a way of disputing the manager's criticism without saying so directly"
+        "text": "It is a way of disputing the manager's criticism without saying so directly",
+        "misconception": "emotional-mc-w08d1"
       },
       {
         "id": "C",
-        "text": "It guarantees the criticism will turn out to be unfounded"
+        "text": "It guarantees the criticism will turn out to be unfounded",
+        "misconception": "emotional-mc-w08d1"
       },
       {
         "id": "D",
-        "text": "It has no real purpose beyond buying a few seconds of time"
+        "text": "It has no real purpose beyond buying a few seconds of time",
+        "misconception": "emotional-mc-w08d1"
       }
     ],
     "acceptableAnswers": [
@@ -6559,15 +6991,18 @@
       },
       {
         "id": "B",
-        "text": "The entire report should be treated as having missed the point, as the original comment suggested"
+        "text": "The entire report should be treated as having missed the point, as the original comment suggested",
+        "misconception": "emotional-mc-w08d2"
       },
       {
         "id": "C",
-        "text": "Both parts of the feedback should be dismissed, since the manager changed their framing partway through"
+        "text": "Both parts of the feedback should be dismissed, since the manager changed their framing partway through",
+        "misconception": "emotional-mc-w08d2"
       },
       {
         "id": "D",
-        "text": "Only the framing comment should be taken seriously, since it was more specific"
+        "text": "Only the framing comment should be taken seriously, since it was more specific",
+        "misconception": "emotional-mc-w08d2"
       }
     ],
     "acceptableAnswers": [
@@ -6588,15 +7023,18 @@
       },
       {
         "id": "B",
-        "text": "Automatically matching the sharper tone to show the comment will not be tolerated"
+        "text": "Automatically matching the sharper tone to show the comment will not be tolerated",
+        "misconception": "emotional-mc-w08d3"
       },
       {
         "id": "C",
-        "text": "Disengaging is never an acceptable response to a dismissive comment"
+        "text": "Disengaging is never an acceptable response to a dismissive comment",
+        "misconception": "emotional-mc-w08d3"
       },
       {
         "id": "D",
-        "text": "The only acceptable response to a dismissive comment is to set a boundary immediately"
+        "text": "The only acceptable response to a dismissive comment is to set a boundary immediately",
+        "misconception": "emotional-mc-w08d3"
       }
     ],
     "acceptableAnswers": [
@@ -6617,15 +7055,18 @@
       },
       {
         "id": "B",
-        "text": "Re-litigating the framing comment, since it was the most memorable part of the exchange"
+        "text": "Re-litigating the framing comment, since it was the most memorable part of the exchange",
+        "misconception": "emotional-mc-w08d4"
       },
       {
         "id": "C",
-        "text": "Ignoring the tone entirely, since the data concern was the only accurate part of the feedback"
+        "text": "Ignoring the tone entirely, since the data concern was the only accurate part of the feedback",
+        "misconception": "emotional-mc-w08d4"
       },
       {
         "id": "D",
-        "text": "Avoiding the follow-up conversation altogether now that the feedback has been sorted privately"
+        "text": "Avoiding the follow-up conversation altogether now that the feedback has been sorted privately",
+        "misconception": "emotional-mc-w08d4"
       }
     ],
     "acceptableAnswers": [
@@ -6646,15 +7087,18 @@
       },
       {
         "id": "B",
-        "text": "It is aggressive, since it directly names what should not continue"
+        "text": "It is aggressive, since it directly names what should not continue",
+        "misconception": "emotional-mc-w09d1"
       },
       {
         "id": "C",
-        "text": "It is passive, since it does not demand an apology"
+        "text": "It is passive, since it does not demand an apology",
+        "misconception": "emotional-mc-w09d1"
       },
       {
         "id": "D",
-        "text": "There is no meaningful difference between assertive, aggressive and passive here"
+        "text": "There is no meaningful difference between assertive, aggressive and passive here",
+        "misconception": "emotional-mc-w09d1"
       }
     ],
     "acceptableAnswers": [
@@ -6675,15 +7119,18 @@
       },
       {
         "id": "B",
-        "text": "Any statement that includes the word \"sorry\" counts as a specific repair"
+        "text": "Any statement that includes the word \"sorry\" counts as a specific repair",
+        "misconception": "emotional-mc-w09d2"
       },
       {
         "id": "C",
-        "text": "A repair only counts if it undoes the original report entirely"
+        "text": "A repair only counts if it undoes the original report entirely",
+        "misconception": "emotional-mc-w09d2"
       },
       {
         "id": "D",
-        "text": "Repair is unnecessary once a boundary has already been stated"
+        "text": "Repair is unnecessary once a boundary has already been stated",
+        "misconception": "emotional-mc-w09d2"
       }
     ],
     "acceptableAnswers": [
@@ -6704,15 +7151,18 @@
       },
       {
         "id": "B",
-        "text": "Full agreement with everything in the manager's original criticism"
+        "text": "Full agreement with everything in the manager's original criticism",
+        "misconception": "emotional-mc-w09d3"
       },
       {
         "id": "C",
-        "text": "A refusal to acknowledge the manager's feelings at all"
+        "text": "A refusal to acknowledge the manager's feelings at all",
+        "misconception": "emotional-mc-w09d3"
       },
       {
         "id": "D",
-        "text": "Validation and agreement are the same thing and cannot be separated"
+        "text": "Validation and agreement are the same thing and cannot be separated",
+        "misconception": "emotional-mc-w09d3"
       }
     ],
     "acceptableAnswers": [
@@ -6733,15 +7183,18 @@
       },
       {
         "id": "B",
-        "text": "No trade-off exists; combining all three always costs nothing extra"
+        "text": "No trade-off exists; combining all three always costs nothing extra",
+        "misconception": "emotional-mc-w09d4"
       },
       {
         "id": "C",
-        "text": "Choosing all three means none of them can be done well"
+        "text": "Choosing all three means none of them can be done well",
+        "misconception": "emotional-mc-w09d4"
       },
       {
         "id": "D",
-        "text": "A proportionate response in conflict should always pick only one of the three"
+        "text": "A proportionate response in conflict should always pick only one of the three",
+        "misconception": "emotional-mc-w09d4"
       }
     ],
     "acceptableAnswers": [
@@ -6762,15 +7215,18 @@
       },
       {
         "id": "B",
-        "text": "Hiding all trace of the frustration so that no one on the call can tell anything is felt"
+        "text": "Hiding all trace of the frustration so that no one on the call can tell anything is felt",
+        "misconception": "emotional-mc-w10d1"
       },
       {
         "id": "C",
-        "text": "Letting the frustration fully take over the call until it passes on its own"
+        "text": "Letting the frustration fully take over the call until it passes on its own",
+        "misconception": "emotional-mc-w10d1"
       },
       {
         "id": "D",
-        "text": "Composure requires that the frustration not be felt at all in the first place"
+        "text": "Composure requires that the frustration not be felt at all in the first place",
+        "misconception": "emotional-mc-w10d1"
       }
     ],
     "acceptableAnswers": [
@@ -6791,15 +7247,18 @@
       },
       {
         "id": "B",
-        "text": "Agreeing to the same-day turnaround regardless of feasibility, to avoid conflict"
+        "text": "Agreeing to the same-day turnaround regardless of feasibility, to avoid conflict",
+        "misconception": "emotional-mc-w10d2"
       },
       {
         "id": "C",
-        "text": "Refusing outright with no alternative offered"
+        "text": "Refusing outright with no alternative offered",
+        "misconception": "emotional-mc-w10d2"
       },
       {
         "id": "D",
-        "text": "Ending the call without responding to the demand at all"
+        "text": "Ending the call without responding to the demand at all",
+        "misconception": "emotional-mc-w10d2"
       }
     ],
     "acceptableAnswers": [
@@ -6820,15 +7279,18 @@
       },
       {
         "id": "B",
-        "text": "It guarantees that the decision made will turn out to be the best possible one"
+        "text": "It guarantees that the decision made will turn out to be the best possible one",
+        "misconception": "emotional-mc-w10d3"
       },
       {
         "id": "C",
-        "text": "It is only useful when there is no real pressure or time constraint"
+        "text": "It is only useful when there is no real pressure or time constraint",
+        "misconception": "emotional-mc-w10d3"
       },
       {
         "id": "D",
-        "text": "Pausing before deciding is the same as refusing to decide at all"
+        "text": "Pausing before deciding is the same as refusing to decide at all",
+        "misconception": "emotional-mc-w10d3"
       }
     ],
     "acceptableAnswers": [
@@ -6849,15 +7311,18 @@
       },
       {
         "id": "B",
-        "text": "That the routine only ever works for client-facing situations"
+        "text": "That the routine only ever works for client-facing situations",
+        "misconception": "emotional-mc-w10d4"
       },
       {
         "id": "C",
-        "text": "That the routine must be relearned from scratch for every new type of scenario"
+        "text": "That the routine must be relearned from scratch for every new type of scenario",
+        "misconception": "emotional-mc-w10d4"
       },
       {
         "id": "D",
-        "text": "That staying cold, rather than engaged, is what actually makes a routine transferable"
+        "text": "That staying cold, rather than engaged, is what actually makes a routine transferable",
+        "misconception": "emotional-mc-w10d4"
       }
     ],
     "acceptableAnswers": [
@@ -6878,15 +7343,18 @@
       },
       {
         "id": "B",
-        "text": "Treating every rumour as equally reliable information to act on immediately"
+        "text": "Treating every rumour as equally reliable information to act on immediately",
+        "misconception": "emotional-mc-w11d1"
       },
       {
         "id": "C",
-        "text": "Waiting to do any work at all until the reorganisation is fully confirmed in detail"
+        "text": "Waiting to do any work at all until the reorganisation is fully confirmed in detail",
+        "misconception": "emotional-mc-w11d1"
       },
       {
         "id": "D",
-        "text": "Assuming the most dramatic rumour is automatically the most likely to be true"
+        "text": "Assuming the most dramatic rumour is automatically the most likely to be true",
+        "misconception": "emotional-mc-w11d1"
       }
     ],
     "acceptableAnswers": [
@@ -6907,15 +7375,18 @@
       },
       {
         "id": "B",
-        "text": "Erasing all memory of what happened in the difficult meeting"
+        "text": "Erasing all memory of what happened in the difficult meeting",
+        "misconception": "emotional-mc-w11d2"
       },
       {
         "id": "C",
-        "text": "Replacing the need to ever follow up on what the meeting covered"
+        "text": "Replacing the need to ever follow up on what the meeting covered",
+        "misconception": "emotional-mc-w11d2"
       },
       {
         "id": "D",
-        "text": "Proving that the difficult meeting did not actually matter"
+        "text": "Proving that the difficult meeting did not actually matter",
+        "misconception": "emotional-mc-w11d2"
       }
     ],
     "acceptableAnswers": [
@@ -6936,15 +7407,18 @@
       },
       {
         "id": "B",
-        "text": "Not disagreeing at all, since the power difference makes any disagreement too risky"
+        "text": "Not disagreeing at all, since the power difference makes any disagreement too risky",
+        "misconception": "emotional-mc-w11d3"
       },
       {
         "id": "C",
-        "text": "Disagreeing in exactly the same way regardless of who the disagreement is with"
+        "text": "Disagreeing in exactly the same way regardless of who the disagreement is with",
+        "misconception": "emotional-mc-w11d3"
       },
       {
         "id": "D",
-        "text": "Waiting for the senior leader to change their mind without ever raising the disagreement directly"
+        "text": "Waiting for the senior leader to change their mind without ever raising the disagreement directly",
+        "misconception": "emotional-mc-w11d3"
       }
     ],
     "acceptableAnswers": [
@@ -6965,15 +7439,18 @@
       },
       {
         "id": "B",
-        "text": "Raising the concern with the senior leader first, before addressing the rumours or recovering from the earlier meeting"
+        "text": "Raising the concern with the senior leader first, before addressing the rumours or recovering from the earlier meeting",
+        "misconception": "emotional-mc-w11d4"
       },
       {
         "id": "C",
-        "text": "Treating the rumours as settled and skipping the recovery step to save time before the senior conversation"
+        "text": "Treating the rumours as settled and skipping the recovery step to save time before the senior conversation",
+        "misconception": "emotional-mc-w11d4"
       },
       {
         "id": "D",
-        "text": "Only one of the three skills from this week is actually needed in a mixed scenario like this"
+        "text": "Only one of the three skills from this week is actually needed in a mixed scenario like this",
+        "misconception": "emotional-mc-w11d4"
       }
     ],
     "acceptableAnswers": [
@@ -6994,15 +7471,18 @@
       },
       {
         "id": "B",
-        "text": "Definite proof of a specific, deep-seated psychological cause"
+        "text": "Definite proof of a specific, deep-seated psychological cause",
+        "misconception": "emotional-mc-w12d1"
       },
       {
         "id": "C",
-        "text": "Random, unconnected events with no actual pattern at all"
+        "text": "Random, unconnected events with no actual pattern at all",
+        "misconception": "emotional-mc-w12d1"
       },
       {
         "id": "D",
-        "text": "A pattern that, once noticed, requires no further attention"
+        "text": "A pattern that, once noticed, requires no further attention",
+        "misconception": "emotional-mc-w12d1"
       }
     ],
     "acceptableAnswers": [
@@ -7023,15 +7503,18 @@
       },
       {
         "id": "B",
-        "text": "Concluding that every skill learned in this course has been a complete waste of time"
+        "text": "Concluding that every skill learned in this course has been a complete waste of time",
+        "misconception": "emotional-mc-w12d2"
       },
       {
         "id": "C",
-        "text": "Ignoring the persistence entirely, since all patterns eventually resolve on their own"
+        "text": "Ignoring the persistence entirely, since all patterns eventually resolve on their own",
+        "misconception": "emotional-mc-w12d2"
       },
       {
         "id": "D",
-        "text": "Assuming no further action of any kind is ever appropriate once a pattern has been mapped"
+        "text": "Assuming no further action of any kind is ever appropriate once a pattern has been mapped",
+        "misconception": "emotional-mc-w12d2"
       }
     ],
     "acceptableAnswers": [
@@ -7052,15 +7535,18 @@
       },
       {
         "id": "B",
-        "text": "Any plan that mentions skills learned in this course automatically counts as realistic"
+        "text": "Any plan that mentions skills learned in this course automatically counts as realistic",
+        "misconception": "emotional-mc-w12d3"
       },
       {
         "id": "C",
-        "text": "A plan is only realistic if it includes every skill covered in the entire course"
+        "text": "A plan is only realistic if it includes every skill covered in the entire course",
+        "misconception": "emotional-mc-w12d3"
       },
       {
         "id": "D",
-        "text": "Realistic maintenance plans do not need to specify any particular schedule"
+        "text": "Realistic maintenance plans do not need to specify any particular schedule",
+        "misconception": "emotional-mc-w12d3"
       }
     ],
     "acceptableAnswers": [
@@ -7081,15 +7567,18 @@
       },
       {
         "id": "B",
-        "text": "The experiment's result should be discarded if it does not match the original hypothesis"
+        "text": "The experiment's result should be discarded if it does not match the original hypothesis",
+        "misconception": "emotional-mc-w12d4"
       },
       {
         "id": "C",
-        "text": "A mismatched result means the maintenance plan itself has already failed completely"
+        "text": "A mismatched result means the maintenance plan itself has already failed completely",
+        "misconception": "emotional-mc-w12d4"
       },
       {
         "id": "D",
-        "text": "Only a result that confirms the original hypothesis is worth paying attention to"
+        "text": "Only a result that confirms the original hypothesis is worth paying attention to",
+        "misconception": "emotional-mc-w12d4"
       }
     ],
     "acceptableAnswers": [

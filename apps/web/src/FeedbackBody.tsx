@@ -14,9 +14,7 @@ interface FeedbackBodyProps {
  *
  * When the wrong answer was tagged with a specific misconception, names
  * that reasoning error directly -- every distractor across all three
- * tracks is authored with one, but until now nothing in the UI ever read
- * it, so a wrong answer always got the same static item.explanation
- * regardless of which specific mistake it revealed.
+ * tracks is authored with one.
  */
 export function FeedbackBody({ evaluation, misconceptionById }: FeedbackBodyProps) {
   const misconceptions = evaluation.misconceptions

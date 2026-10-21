@@ -183,12 +183,40 @@ describe('converted Emotional Skills content (60-session curriculum)', () => {
     }
   });
 
-  it('no item carries a misconception tag -- ESL\'s source data has no structured misconception taxonomy, unlike Strategos', () => {
+  it('every wrong reason_choice option carries a misconception tag, one per concept, matching Strategic/BO\'s density', () => {
+    // ESL's source data originally had no structured misconception
+    // taxonomy, unlike Strategos -- so a wrong answer only ever showed the
+    // item's static explanation, never a named reasoning error, unlike the
+    // other two tracks (FeedbackBody.tsx reads evaluation.misconceptions
+    // to show that extra line, but ESL never populated it). Closed the gap
+    // with one misconception per real concept (48 total, reusing the same
+    // id across every item that teaches that concept), designed from the
+    // actual wrong-option text already written for each concept, not
+    // generically guessed.
+    expect(typedCurriculum.misconceptions).toHaveLength(48);
     for (const item of typedItems) {
       if (item.type !== 'reason_choice') continue;
-      expect(item.options.every((o) => o.misconception === undefined)).toBe(true);
+      for (const option of item.options) {
+        const isCorrect = item.acceptableAnswers.includes(option.id);
+        if (isCorrect) {
+          expect(option.misconception).toBeUndefined();
+        } else {
+          expect(option.misconception).toBe(`emotional-mc-${item.concept}`);
+        }
+      }
     }
-    expect(typedCurriculum.misconceptions).toEqual([]);
+  });
+
+  it('every misconception referenced by an item option is registered with a real (non-empty) description', () => {
+    const referencedIds = new Set(
+      typedItems.flatMap((i) => (i.type === 'reason_choice' ? i.options.map((o) => o.misconception) : []))
+    );
+    for (const id of referencedIds) {
+      if (!id) continue;
+      const misconception = typedCurriculum.misconceptions.find((m) => m.id === id);
+      expect(misconception, `misconception "${id}" is referenced but not registered`).toBeDefined();
+      expect(misconception!.description.length).toBeGreaterThan(10);
+    }
   });
 
   it('every session carries its teaching prose, apply task and reflect prompt -- not just its items', () => {

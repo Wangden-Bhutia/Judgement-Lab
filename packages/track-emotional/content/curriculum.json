@@ -2969,5 +2969,294 @@
       "label": "You can design a small behavioural experiment and revise your hypothesis from the result."
     }
   ],
-  "misconceptions": []
+  "misconceptions": [
+    {
+      "id": "emotional-mc-w01d1",
+      "trackId": "emotional",
+      "label": "Emotion treated as command or verdict",
+      "description": "Treating an emotion as a command that must be obeyed immediately, or as proof about someone else's intent, rather than as a signal worth considering without being obliged to act on it."
+    },
+    {
+      "id": "emotional-mc-w01d2",
+      "trackId": "emotional",
+      "label": "Chain steps confused with each other",
+      "description": "Mixing up the observed situation, the interpretation, the body signal, the urge and the action in an emotional episode -- for example treating an urge as if it were the action, or a body signal as if it were the triggering situation."
+    },
+    {
+      "id": "emotional-mc-w01d3",
+      "trackId": "emotional",
+      "label": "Suppression and deliberate restraint not told apart",
+      "description": "Treating any temporary holding-back of expression as equivalent to habitual suppression, or treating habitual suppression as harmless, rather than recognising a deliberate, time-limited choice to hold back as a different, more flexible thing."
+    },
+    {
+      "id": "emotional-mc-w01d4",
+      "trackId": "emotional",
+      "label": "Passive review mistaken for retrieval practice",
+      "description": "Treating rereading or highlighting as equivalent to active retrieval, or treating a self-rating as the same kind of evidence as a checkpoint score, rather than keeping completion, self-rating and checkpoint mastery as separate, different kinds of evidence."
+    },
+    {
+      "id": "emotional-mc-w02d1",
+      "trackId": "emotional",
+      "label": "Granularity treated as unimportant or fixed",
+      "description": "Treating one emotion word as just as useful as another regardless of precision, or assuming emotional granularity cannot be improved or only matters for positive feelings."
+    },
+    {
+      "id": "emotional-mc-w02d2",
+      "trackId": "emotional",
+      "label": "Naming a feeling mistaken for resolving it",
+      "description": "Expecting that naming a feeling in words will resolve the situation that caused it or make the feeling disappear, rather than treating affect labelling as a regulation aid that does not fix the underlying cause."
+    },
+    {
+      "id": "emotional-mc-w02d3",
+      "trackId": "emotional",
+      "label": "Only one emotion in an episode treated as real",
+      "description": "Assuming only one emotion can genuinely be present in an episode, so noticing a second or hidden feeling means the first one was not real, or that a quieter feeling should be ignored."
+    },
+    {
+      "id": "emotional-mc-w02d4",
+      "trackId": "emotional",
+      "label": "Daily check-in treated as needing to be exhaustive",
+      "description": "Assuming a daily emotional check-in must be long, fully detailed, or capture every feeling at once to be useful, rather than treating a brief, approximate check-in as valuable on its own."
+    },
+    {
+      "id": "emotional-mc-w03d1",
+      "trackId": "emotional",
+      "label": "Body signal treated as proof about the situation",
+      "description": "Treating a bodily sensation as direct proof about what is actually happening or about another person's behaviour, or as something to judge rather than simply notice."
+    },
+    {
+      "id": "emotional-mc-w03d2",
+      "trackId": "emotional",
+      "label": "Urge treated as the same as the action",
+      "description": "Treating an urge to act as if it were the action itself, or as a signal that must be acted on immediately, rather than something to notice and then separately choose whether and when to act on."
+    },
+    {
+      "id": "emotional-mc-w03d3",
+      "trackId": "emotional",
+      "label": "Venting assumed to drain anger",
+      "description": "Assuming that venting anger loudly or at length reliably drains it, rather than recognising that venting tends to rehearse and sustain anger instead."
+    },
+    {
+      "id": "emotional-mc-w03d4",
+      "trackId": "emotional",
+      "label": "Breathing or grounding treated as a universal fix or reflex",
+      "description": "Treating a breathing or grounding reset as something to use automatically for every strong feeling regardless of fit, or as a fix that resolves the underlying problem, rather than a tool chosen deliberately for moments where lowering arousal is what is actually needed."
+    },
+    {
+      "id": "emotional-mc-w04d1",
+      "trackId": "emotional",
+      "label": "Interpretation mistaken for observed fact",
+      "description": "Treating an interpretation -- a guess about motive or meaning -- as if it were itself an observable, camera-recordable fact."
+    },
+    {
+      "id": "emotional-mc-w04d2",
+      "trackId": "emotional",
+      "label": "Generating alternatives mistaken for confirming one",
+      "description": "Assuming that generating alternative explanations proves the original interpretation was wrong, or that it settles which explanation is actually correct, rather than simply keeping more than one explanation open."
+    },
+    {
+      "id": "emotional-mc-w04d3",
+      "trackId": "emotional",
+      "label": "A thinking trap treated as proof the thought is false, or spotted everywhere",
+      "description": "Assuming that identifying a thinking trap like mind-reading or catastrophising proves the thought is false, or swinging the other way and treating every negative-sounding thought as automatically a distortion."
+    },
+    {
+      "id": "emotional-mc-w04d4",
+      "trackId": "emotional",
+      "label": "Evidence check expected to produce certainty",
+      "description": "Expecting an honest evidence check to fully confirm or fully rule out an interpretation, rather than accepting that real uncertainty can remain after weighing the evidence fairly."
+    },
+    {
+      "id": "emotional-mc-w05d1",
+      "trackId": "emotional",
+      "label": "Self-distancing confused with avoidance or substituted for other steps",
+      "description": "Confusing self-distancing (describing an event from an outside perspective) with simply not thinking about the event, or treating it as a replacement for other steps like an evidence check rather than a complement to them."
+    },
+    {
+      "id": "emotional-mc-w05d2",
+      "trackId": "emotional",
+      "label": "Temporal distance mistaken for a prediction or a reason to stop caring",
+      "description": "Treating the question of how something will look later as a literal prediction that must come true, or as a reason to stop caring entirely, rather than as a proportion check on the present upset."
+    },
+    {
+      "id": "emotional-mc-w05d3",
+      "trackId": "emotional",
+      "label": "Acceptance confused with approval or giving up",
+      "description": "Treating acceptance of a feeling as approving of the situation that caused it, or as equivalent to giving up on action, rather than as allowing the feeling while still acting on what matters."
+    },
+    {
+      "id": "emotional-mc-w05d4",
+      "trackId": "emotional",
+      "label": "A reassuring reappraisal assumed to be a fair one",
+      "description": "Assuming a reappraisal is fair simply because it ends on a reassuring note, rather than checking that it is actually grounded in the facts and does not deny genuine uncertainty."
+    },
+    {
+      "id": "emotional-mc-w06d1",
+      "trackId": "emotional",
+      "label": "One strategy applied as a universal default",
+      "description": "Defaulting to the same regulation strategy, or using all of them at once, regardless of the situation and goal, rather than judging which family of strategy actually fits."
+    },
+    {
+      "id": "emotional-mc-w06d2",
+      "trackId": "emotional",
+      "label": "Strategy choice treated as independent of intensity",
+      "description": "Choosing a regulation strategy without considering how intense the feeling actually is, assuming the same strategy fits a mild version and a sharp spike of the same emotion equally well."
+    },
+    {
+      "id": "emotional-mc-w06d3",
+      "trackId": "emotional",
+      "label": "Identifying a cause mistaken for solving it",
+      "description": "Treating identification of a stressor's cause as sufficient on its own, without converting it into a concrete next step, or assuming problem solving works by feeling the emotion more intensely."
+    },
+    {
+      "id": "emotional-mc-w06d4",
+      "trackId": "emotional",
+      "label": "An if-then plan assumed to guarantee the outcome",
+      "description": "Treating a written if-then plan as a guarantee that the predictable trigger will stop recurring, or as replacing the need for a concrete next step, rather than as a pre-commitment that still requires that step to actually be identified."
+    },
+    {
+      "id": "emotional-mc-w07d1",
+      "trackId": "emotional",
+      "label": "Any dwelling on a problem counted as reflection",
+      "description": "Assuming that any amount of thinking about a problem counts as reflection, rather than applying the \"is there a next step?\" test to tell rumination (repeated replay with no new step) from genuine reflection."
+    },
+    {
+      "id": "emotional-mc-w07d2",
+      "trackId": "emotional",
+      "label": "A worry window expected to eliminate or solve the worry",
+      "description": "Expecting a worry window to guarantee no intrusive worry occurs outside it, or to force a solution within the window itself, rather than simply bounding when worry is engaged with on purpose."
+    },
+    {
+      "id": "emotional-mc-w07d3",
+      "trackId": "emotional",
+      "label": "Protective and restrictive avoidance confused",
+      "description": "Treating any reduction in checking or reassurance-seeking as restrictive avoidance, rather than telling apart avoidance that still allows action to continue (protective) from avoidance that prevents it (restrictive)."
+    },
+    {
+      "id": "emotional-mc-w07d4",
+      "trackId": "emotional",
+      "label": "Controllable and uncontrollable parts of a setback not separated",
+      "description": "Reviewing a setback by blaming only uncontrollable factors, only controllable ones, or treating the two as the same thing, rather than separating them to find the one useful lesson."
+    },
+    {
+      "id": "emotional-mc-w08d1",
+      "trackId": "emotional",
+      "label": "A clarifying question mistaken for a disguised dispute",
+      "description": "Treating a clarifying question about criticism as covert disagreement or as a stalling tactic, rather than as a genuine step that delays evaluation until there is enough information."
+    },
+    {
+      "id": "emotional-mc-w08d2",
+      "trackId": "emotional",
+      "label": "Feedback treated as a single accurate-or-inaccurate unit",
+      "description": "Treating an entire piece of feedback as either fully accurate or fully inaccurate, rather than sorting it into accurate, partly accurate, and inaccurate parts."
+    },
+    {
+      "id": "emotional-mc-w08d3",
+      "trackId": "emotional",
+      "label": "One fixed response assumed to fit every provocation",
+      "description": "Assuming the same response -- matching the tone, always disengaging, or always setting a boundary -- fits every provocation, rather than choosing deliberately among responding, delaying, disengaging, or setting a boundary."
+    },
+    {
+      "id": "emotional-mc-w08d4",
+      "trackId": "emotional",
+      "label": "A planned conversation drifts from what was actually sorted out",
+      "description": "Planning a difficult conversation around whichever part of an exchange was most memorable or emotionally charged, rather than around what was actually confirmed as accurate or inaccurate beforehand."
+    },
+    {
+      "id": "emotional-mc-w09d1",
+      "trackId": "emotional",
+      "label": "Assertive, aggressive and passive responses not told apart",
+      "description": "Mislabelling a direct, respectful boundary statement as aggressive or passive, or assuming a boundary needs a full explanation or an apology to be valid."
+    },
+    {
+      "id": "emotional-mc-w09d2",
+      "trackId": "emotional",
+      "label": "A generic apology mistaken for a specific repair",
+      "description": "Treating any statement that includes an apology as a specific repair, rather than one that proposes a concrete, forward-looking change tied to what actually went wrong."
+    },
+    {
+      "id": "emotional-mc-w09d3",
+      "trackId": "emotional",
+      "label": "Validation conflated with agreement",
+      "description": "Treating validating someone's feeling as the same thing as agreeing with their view or decision, rather than as two separable things -- a feeling can be validated as understandable without agreeing with the conclusion."
+    },
+    {
+      "id": "emotional-mc-w09d4",
+      "trackId": "emotional",
+      "label": "A proportionate response assumed to be free or impossible to combine",
+      "description": "Assuming that combining a boundary, a repair and validation in one response costs nothing extra, or that doing more than one at once means none of them is done well, rather than recognising a real trade-off between effort and completeness."
+    },
+    {
+      "id": "emotional-mc-w10d1",
+      "trackId": "emotional",
+      "label": "Composure confused with suppressing all feeling",
+      "description": "Treating workplace composure as requiring that no feeling be shown or felt at all, rather than staying engaged and useful while still feeling, and perhaps showing, the emotion."
+    },
+    {
+      "id": "emotional-mc-w10d2",
+      "trackId": "emotional",
+      "label": "A demand answered with a flat yes or no instead of options",
+      "description": "Responding to an excessive demand with an unconditional yes or a flat refusal, rather than offering specific, concrete options."
+    },
+    {
+      "id": "emotional-mc-w10d3",
+      "trackId": "emotional",
+      "label": "A pause before deciding mistaken for refusing to decide",
+      "description": "Treating a brief pause before a pressured decision as equivalent to refusing to decide, or expecting a decision routine to guarantee the objectively best outcome, rather than simply making the trade-off explicit and leaving room to revisit it."
+    },
+    {
+      "id": "emotional-mc-w10d4",
+      "trackId": "emotional",
+      "label": "A pressure routine assumed not to generalise",
+      "description": "Assuming a pressure routine learned in one specific situation cannot transfer to a different, unfamiliar one, or that going cold rather than staying engaged is what makes a routine transferable."
+    },
+    {
+      "id": "emotional-mc-w11d1",
+      "trackId": "emotional",
+      "label": "Unconfirmed rumour treated as settled fact",
+      "description": "Treating an unconfirmed rumour as reliable information to act on immediately, or assuming the most dramatic version of a rumour is automatically the most likely to be true, rather than separating confirmed facts and controllables from rumour."
+    },
+    {
+      "id": "emotional-mc-w11d2",
+      "trackId": "emotional",
+      "label": "A recovery routine expected to erase the memory or replace follow-up",
+      "description": "Expecting a short recovery routine after a difficult meeting to erase the memory of what happened or to replace any follow-up the meeting might call for, rather than simply resetting enough to keep working effectively."
+    },
+    {
+      "id": "emotional-mc-w11d3",
+      "trackId": "emotional",
+      "label": "Power difference used to avoid disagreeing, or ignored entirely",
+      "description": "Either avoiding a disagreement altogether because of a power difference, or disagreeing in exactly the same way regardless of who holds more power and different incentives, rather than adapting tactics while still being honest about the disagreement."
+    },
+    {
+      "id": "emotional-mc-w11d4",
+      "trackId": "emotional",
+      "label": "Composure skills treated as substitutes for each other",
+      "description": "Assuming only one professional composure skill is needed in a mixed, complex scenario, or applying the skills out of the order the situation actually calls for, rather than combining them as the scenario requires."
+    },
+    {
+      "id": "emotional-mc-w12d1",
+      "trackId": "emotional",
+      "label": "A mapped pattern treated as a proven cause, or as irrelevant",
+      "description": "Treating a recurring pattern as definite proof of a specific underlying cause, or dismissing it as random and unconnected, rather than describing the pattern and the short-term relief it brings without overclaiming its cause."
+    },
+    {
+      "id": "emotional-mc-w12d2",
+      "trackId": "emotional",
+      "label": "Persistence of a pattern taken as proof that training failed entirely",
+      "description": "Concluding that a persistent pattern means everything learned so far was wasted, or that no further action beyond self-training is ever appropriate, rather than recognising a reasonable sign that further support is worth seeking."
+    },
+    {
+      "id": "emotional-mc-w12d3",
+      "trackId": "emotional",
+      "label": "A vague intention mistaken for a maintenance plan",
+      "description": "Treating a vague, open-ended intention to keep practising as a real maintenance plan, rather than one that specifies concrete skills and a concrete schedule."
+    },
+    {
+      "id": "emotional-mc-w12d4",
+      "trackId": "emotional",
+      "label": "A disconfirming experiment result dismissed instead of used",
+      "description": "Discarding or ignoring an experiment's result because it did not match the original hypothesis, or treating a mismatched result as proof the whole plan failed, rather than using it to revise the hypothesis."
+    }
+  ]
 }
