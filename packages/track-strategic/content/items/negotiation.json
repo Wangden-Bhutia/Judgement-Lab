@@ -1,0 +1,1360 @@
+[
+  {
+    "id": "i.neg.batna.a",
+    "concept": "batna",
+    "scenario": "You're interviewing for a new job while still employed at your current one, which you'd happily keep if nothing better comes along.",
+    "type": "reason_choice",
+    "prompt": "What is your BATNA in this negotiation?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Staying in your current job — your real fallback if this offer doesn't work out.",
+        "conceptTag": "batna"
+      },
+      {
+        "id": "B",
+        "text": "The highest salary you can imagine asking for.",
+        "misconception": "strategic-reservation_as_target"
+      },
+      {
+        "id": "C",
+        "text": "Whatever the new company first offers you.",
+        "misconception": "strategic-batna_ignored"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Your BATNA is your real fallback if no deal happens — here, staying employed where you already are, not a hoped-for number or the other side's first move."
+  },
+  {
+    "id": "i.neg.batna.b",
+    "concept": "batna",
+    "scenario": "A small business owner is negotiating with one supplier. She hasn't looked into any other suppliers and has no real sense of what else is available.",
+    "type": "reason_choice",
+    "prompt": "What's the risk in this negotiation?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Without a real BATNA, she can't actually judge whether this supplier's terms are good or bad for her.",
+        "conceptTag": "batna"
+      },
+      {
+        "id": "B",
+        "text": "There's no risk, since she's already decided to use this supplier anyway.",
+        "misconception": "strategic-batna_ignored"
+      },
+      {
+        "id": "C",
+        "text": "The risk only matters if the supplier knows she hasn't checked alternatives.",
+        "misconception": "strategic-batna_ignored"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Without a worked-out BATNA, there's no real benchmark to judge an offer against — the risk exists regardless of whether the other side knows it."
+  },
+  {
+    "id": "i.neg.batna.c",
+    "concept": "batna",
+    "scenario": "Two neighbours are negotiating how to split the cost of a shared fence repair. One neighbour would, worst case, just pay for a cheaper fix on his own side alone and let the shared sections go unrepaired.",
+    "type": "reason_choice",
+    "prompt": "What does that worst-case option tell us?",
+    "options": [
+      {
+        "id": "A",
+        "text": "It's his BATNA — what he'd actually do if no agreement is reached with his neighbour.",
+        "conceptTag": "batna"
+      },
+      {
+        "id": "B",
+        "text": "It's his reservation value, the specific split he won't go below.",
+        "misconception": "strategic-reservation_as_target"
+      },
+      {
+        "id": "C",
+        "text": "It's irrelevant, since the two neighbours are expected to reach a deal anyway.",
+        "misconception": "strategic-batna_ignored"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "A BATNA is the real fallback action if no deal happens — here, the cheaper solo fix. The reservation value would be the specific shared-cost split he derives from comparing this BATNA to the negotiation."
+  },
+  {
+    "id": "i.neg.resv.a",
+    "concept": "reservation_value",
+    "scenario": "You're selling a used bike. Your BATNA is a guaranteed $150 from a shop's trade-in offer. You'd love to get $220 privately, but you'd rather just take the trade-in than sell privately for less than $160.",
+    "type": "reason_choice",
+    "prompt": "What is your reservation value here?",
+    "options": [
+      {
+        "id": "A",
+        "text": "$160 — the specific private-sale price below which the trade-in becomes the better option.",
+        "conceptTag": "reservation_value"
+      },
+      {
+        "id": "B",
+        "text": "$220 — what you're hoping to get.",
+        "misconception": "strategic-reservation_as_target"
+      },
+      {
+        "id": "C",
+        "text": "$150 — the same as your BATNA.",
+        "misconception": "strategic-reservation_as_target"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "The reservation value is the specific walk-away point in THIS deal, derived from the BATNA but not identical to it — here, $160 is where private sale stops being worth the extra hassle over the $150 trade-in."
+  },
+  {
+    "id": "i.neg.resv.b",
+    "concept": "reservation_value",
+    "scenario": "A freelancer's target rate is $80/hour. Her BATNA — a different available project — works out to roughly $60/hour. She's deciding her reservation value for this negotiation.",
+    "type": "reason_choice",
+    "prompt": "Which number should her reservation value be closest to?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Something close to $60/hour, since that's what the alternative project is actually worth to her.",
+        "conceptTag": "reservation_value"
+      },
+      {
+        "id": "B",
+        "text": "$80/hour, matching her target exactly.",
+        "misconception": "strategic-reservation_as_target"
+      },
+      {
+        "id": "C",
+        "text": "Whatever the client first proposes.",
+        "misconception": "strategic-batna_ignored"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "A reservation value is derived from the BATNA, not the target — it should sit near what the real alternative is worth, not near her aspiration."
+  },
+  {
+    "id": "i.neg.resv.c",
+    "concept": "reservation_value",
+    "scenario": "Midway through negotiating a car's price, a buyer starts feeling impatient and considers accepting a price above what he'd calculated beforehand as his limit.",
+    "type": "reason_choice",
+    "prompt": "What does having a pre-set reservation value protect against here?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Accepting a worse deal than his BATNA just because of in-the-moment impatience.",
+        "conceptTag": "reservation_value"
+      },
+      {
+        "id": "B",
+        "text": "Nothing — reservation values only matter before a negotiation starts, not during it.",
+        "misconception": "strategic-reservation_as_target"
+      },
+      {
+        "id": "C",
+        "text": "Having to reveal his BATNA to the seller.",
+        "misconception": "strategic-reservation_as_target"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "A reservation value set in advance is exactly what protects against accepting something worse than your alternative under in-the-moment pressure or fatigue."
+  },
+  {
+    "id": "i.neg.zopa.a",
+    "concept": "zopa",
+    "scenario": "A buyer's reservation value for a used laptop is $500 (won't pay more). The seller's reservation value is $420 (won't accept less).",
+    "type": "reason_choice",
+    "prompt": "Does a zone of possible agreement exist here, and if so, what is it?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Yes — the ZOPA is $420 to $500, any price in that range beats both sides' alternatives.",
+        "conceptTag": "zopa"
+      },
+      {
+        "id": "B",
+        "text": "No, since the buyer and seller haven't agreed on an exact price yet.",
+        "misconception": "strategic-zopa_assumed"
+      },
+      {
+        "id": "C",
+        "text": "Yes, but only at exactly $460, the midpoint.",
+        "misconception": "strategic-zopa_assumed"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "A ZOPA is the full range between the two reservation values, not a single point — here, $420 to $500 is the range where a deal beats both sides' alternatives."
+  },
+  {
+    "id": "i.neg.zopa.b",
+    "concept": "zopa",
+    "scenario": "A job candidate's reservation salary is $75,000. The employer's maximum budget for the role, which the candidate doesn't know, is actually $68,000.",
+    "type": "reason_choice",
+    "prompt": "What does this mean for the negotiation?",
+    "options": [
+      {
+        "id": "A",
+        "text": "There's no ZOPA — no salary exists that beats both sides' alternatives, so continuing to negotiate salary alone won't resolve this.",
+        "conceptTag": "zopa"
+      },
+      {
+        "id": "B",
+        "text": "The ZOPA is $68,000 to $75,000, and they should keep negotiating within it.",
+        "misconception": "strategic-zopa_assumed"
+      },
+      {
+        "id": "C",
+        "text": "There's always a ZOPA somewhere if both sides want a deal badly enough.",
+        "misconception": "strategic-zopa_assumed"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "When one side's reservation value is above the other's, there's no ZOPA on that issue at all — further salary negotiation alone can't bridge it; something else (role, title, other issues) would have to change the picture."
+  },
+  {
+    "id": "i.neg.zopa.c",
+    "concept": "zopa",
+    "scenario": "Two business partners are negotiating a buyout price. Neither has stated a firm number yet, and both are still probing the other's flexibility.",
+    "type": "reason_choice",
+    "prompt": "What's the right approach to a possible ZOPA here?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Estimate each side's reservation value as best as possible from what's said and known, rather than assuming either a ZOPA definitely exists or definitely doesn't.",
+        "conceptTag": "zopa"
+      },
+      {
+        "id": "B",
+        "text": "Assume a ZOPA exists, since both partners want the business relationship to end amicably.",
+        "misconception": "strategic-zopa_assumed"
+      },
+      {
+        "id": "C",
+        "text": "Wait until both sides have stated exact numbers before thinking about ZOPA at all.",
+        "misconception": "strategic-zopa_assumed"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "A ZOPA has to be estimated, often before exact numbers are on the table — wanting a deal doesn't guarantee one exists, and waiting for certainty before considering it at all wastes the estimate's usefulness."
+  },
+  {
+    "id": "i.neg.int.a",
+    "concept": "interests_vs_positions",
+    "scenario": "Two co-founders are arguing over a position: one insists the company must relocate to a specific city.",
+    "type": "reason_choice",
+    "prompt": "What's the best next step to understand the real interest behind that position?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ask directly why that specific city matters to them.",
+        "conceptTag": "interests_vs_positions"
+      },
+      {
+        "id": "B",
+        "text": "Argue for a different city, since the stated position is clearly what they want.",
+        "misconception": "strategic-positions_as_interests"
+      },
+      {
+        "id": "C",
+        "text": "Assume the interest is simply liking that city more.",
+        "misconception": "strategic-positions_as_interests"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Asking directly is the fastest way to surface the interest behind a stated position — assuming you already know it risks missing the actual reason, which might be solvable without that specific city at all."
+  },
+  {
+    "id": "i.neg.int.b",
+    "concept": "interests_vs_positions",
+    "scenario": "A tenant insists on a position: the landlord must repaint the whole apartment before move-in. It turns out the tenant's real interest is just not wanting to deal with paint fumes during the first week living there.",
+    "type": "reason_choice",
+    "prompt": "What does knowing the real interest open up?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A solution the stated position didn't include, like painting a week before move-in instead of a full repaint done differently.",
+        "conceptTag": "interests_vs_positions"
+      },
+      {
+        "id": "B",
+        "text": "Nothing new — the landlord still just has to decide whether to repaint or not.",
+        "misconception": "strategic-positions_as_interests"
+      },
+      {
+        "id": "C",
+        "text": "Confirmation that the original position was already the only solution.",
+        "misconception": "strategic-positions_as_interests"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Once the real interest (avoiding fumes at move-in) is clear, solutions the original position never mentioned — like timing the paint job differently — become available."
+  },
+  {
+    "id": "i.neg.int.c",
+    "concept": "interests_vs_positions",
+    "scenario": "A supplier states a firm position: payment must be received within 15 days. A buyer assumes this is simply the supplier's rigid policy and stops asking further.",
+    "type": "reason_choice",
+    "prompt": "What might the buyer be missing?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The actual interest behind the position — perhaps cash flow timing — which might be satisfiable a different way, like a partial early payment.",
+        "conceptTag": "interests_vs_positions"
+      },
+      {
+        "id": "B",
+        "text": "Nothing — a firm stated position never has a different interest behind it.",
+        "misconception": "strategic-positions_as_interests"
+      },
+      {
+        "id": "C",
+        "text": "The supplier's BATNA, which is unrelated to interests versus positions.",
+        "misconception": "strategic-positions_as_interests"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Stopping at the stated position risks missing an interest-based solution — asking what's actually driving the 15-day requirement might reveal more flexibility than the position alone suggests."
+  },
+  {
+    "id": "i.neg.di.a",
+    "concept": "distributive_integrative",
+    "scenario": "A buyer and seller are negotiating the price of a one-of-a-kind painting, with nothing else being discussed.",
+    "type": "reason_choice",
+    "prompt": "Is this negotiation distributive, integrative, or could it be either?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Distributive — with only one issue (price) and no other terms on the table, every dollar one side gains is a dollar the other loses.",
+        "conceptTag": "distributive_integrative"
+      },
+      {
+        "id": "B",
+        "text": "Integrative, since any negotiation has room to create value if both sides try hard enough.",
+        "misconception": "strategic-distributive_as_only_mode"
+      },
+      {
+        "id": "C",
+        "text": "Neither applies, since art sales are a special case.",
+        "misconception": "strategic-distributive_as_only_mode"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "With a single fixed issue and nothing else to trade, this negotiation really is distributive — integrative value creation requires more than one issue or differing priorities to work with."
+  },
+  {
+    "id": "i.neg.di.b",
+    "concept": "distributive_integrative",
+    "scenario": "A job offer negotiation involves salary, start date, and number of remote days — all three can move somewhat independently.",
+    "type": "reason_choice",
+    "prompt": "How should this negotiation be approached?",
+    "options": [
+      {
+        "id": "A",
+        "text": "As a mix: salary may be fairly distributive, but start date and remote days likely have room to create value for both sides.",
+        "conceptTag": "distributive_integrative"
+      },
+      {
+        "id": "B",
+        "text": "As purely distributive, since salary is the only issue that really matters.",
+        "misconception": "strategic-distributive_as_only_mode"
+      },
+      {
+        "id": "C",
+        "text": "As purely integrative, since there are three issues instead of one.",
+        "misconception": "strategic-distributive_as_only_mode"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Multiple issues don't automatically make a negotiation purely integrative — each issue needs its own check for whether it's fixed or has room to create value."
+  },
+  {
+    "id": "i.neg.di.c",
+    "concept": "distributive_integrative",
+    "scenario": "Two companies are negotiating a merger involving price, leadership roles, and the combined company's name.",
+    "type": "reason_choice",
+    "prompt": "What's the risk of treating this entire negotiation as purely distributive?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Missing trades across the three issues that could leave both companies better off than a pure price fight would.",
+        "conceptTag": "distributive_integrative"
+      },
+      {
+        "id": "B",
+        "text": "There's no risk, since mergers are always distributive by nature.",
+        "misconception": "strategic-distributive_as_only_mode"
+      },
+      {
+        "id": "C",
+        "text": "The only risk is taking too long to agree on price.",
+        "misconception": "strategic-distributive_as_only_mode"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "A negotiation with multiple issues of differing importance to each side usually has real integrative potential — treating it as one fixed pie to split risks leaving value on the table."
+  },
+  {
+    "id": "i.neg.anc.a",
+    "concept": "anchoring_negotiation",
+    "scenario": "Two parties are about to negotiate a contract price. Neither has spoken yet.",
+    "type": "reason_choice",
+    "prompt": "What's the strategic value of making the first offer, if you have a justified number ready?",
+    "options": [
+      {
+        "id": "A",
+        "text": "It tends to anchor the eventual outcome closer to your number than if you waited for them to anchor first.",
+        "conceptTag": "anchoring_negotiation"
+      },
+      {
+        "id": "B",
+        "text": "None — the final price depends only on each side's reservation value, not on who spoke first.",
+        "misconception": "strategic-anchor_passive"
+      },
+      {
+        "id": "C",
+        "text": "It only matters if the other side has no idea what a fair price looks like.",
+        "misconception": "strategic-anchor_passive"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Anchoring is a real, well-documented effect — the first number tends to pull the eventual settlement toward it, which is why deciding deliberately whether to anchor first matters."
+  },
+  {
+    "id": "i.neg.anc.b",
+    "concept": "anchoring_negotiation",
+    "scenario": "A negotiator opens with an extremely aggressive number, far beyond anything they could justify if asked why.",
+    "type": "reason_choice",
+    "prompt": "What's the risk of this kind of anchor?",
+    "options": [
+      {
+        "id": "A",
+        "text": "It can backfire — an anchor with no justification can signal bad faith and undermine the credibility of the anchor itself.",
+        "conceptTag": "anchoring_negotiation"
+      },
+      {
+        "id": "B",
+        "text": "There's no risk — a more aggressive anchor always produces a better final outcome.",
+        "misconception": "strategic-anchor_passive"
+      },
+      {
+        "id": "C",
+        "text": "The only risk is that it takes longer to reach agreement.",
+        "misconception": "strategic-anchor_passive"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "An anchor works best when it can be justified — an unsupported, extreme anchor risks being dismissed outright rather than shifting the eventual outcome in your favour."
+  },
+  {
+    "id": "i.neg.anc.c",
+    "concept": "anchoring_negotiation",
+    "scenario": "In a salary negotiation, a candidate waits for the employer to name a number first, assuming it's more polite to let them start.",
+    "type": "reason_choice",
+    "prompt": "What does research on anchoring suggest about this choice?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Waiting likely shifts the eventual outcome toward the employer's anchor rather than the candidate's — a deliberate decision about who anchors first is worth making.",
+        "conceptTag": "anchoring_negotiation"
+      },
+      {
+        "id": "B",
+        "text": "It makes no real difference who speaks first in a salary negotiation.",
+        "misconception": "strategic-anchor_passive"
+      },
+      {
+        "id": "C",
+        "text": "Waiting is always the stronger move, since it reveals the employer's position first.",
+        "misconception": "strategic-anchor_passive"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Defaulting to let the other side anchor, out of politeness or habit, gives up a real lever — the choice is worth making deliberately rather than by default."
+  },
+  {
+    "id": "i.neg.con.a",
+    "concept": "concession_signaling",
+    "scenario": "In a price negotiation, the seller concedes $300 immediately and without hesitation when the buyer pushes back once.",
+    "type": "reason_choice",
+    "prompt": "What should the buyer take from this quick, large concession?",
+    "options": [
+      {
+        "id": "A",
+        "text": "It's one signal among several possible explanations — it could mean there's plenty of room left, or that this particular point barely mattered to the seller.",
+        "conceptTag": "concession_signaling"
+      },
+      {
+        "id": "B",
+        "text": "It definitely means the seller is desperate and will keep conceding at the same rate.",
+        "misconception": "strategic-concession_misread"
+      },
+      {
+        "id": "C",
+        "text": "It should be ignored entirely, since concessions never reveal anything reliable.",
+        "misconception": "strategic-concession_misread"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "A single concession supports more than one explanation — reading it as certain proof of desperation overclaims what one data point can tell you."
+  },
+  {
+    "id": "i.neg.con.b",
+    "concept": "concession_signaling",
+    "scenario": "Across several rounds, a negotiator's concessions go from $400, to $150, to $40, to refusing to move further.",
+    "type": "reason_choice",
+    "prompt": "What does this pattern, taken as a whole, suggest?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The shrinking size of each concession suggests they're approaching their actual reservation value.",
+        "conceptTag": "concession_signaling"
+      },
+      {
+        "id": "B",
+        "text": "Nothing reliable — individual concessions can't be compared to each other meaningfully.",
+        "misconception": "strategic-concession_misread"
+      },
+      {
+        "id": "C",
+        "text": "They're bluffing, since real limits don't show up as a gradual pattern.",
+        "misconception": "strategic-concession_misread"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "A shrinking pattern of concessions across several rounds is a more reliable signal than any single concession — it suggests genuinely approaching a limit, not just pausing."
+  },
+  {
+    "id": "i.neg.con.c",
+    "concept": "concession_signaling",
+    "scenario": "A negotiator gives up an issue quickly and painlessly, and the other side concludes that issue must have been very important to them, since they \"must be hiding how much they wanted to keep it.\"",
+    "type": "reason_choice",
+    "prompt": "Is this conclusion sound?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Not necessarily — a quick, easy concession is at least as likely to mean the issue was a low priority for them.",
+        "conceptTag": "concession_signaling"
+      },
+      {
+        "id": "B",
+        "text": "Yes — an easy concession always signals the issue was secretly important.",
+        "misconception": "strategic-concession_misread"
+      },
+      {
+        "id": "C",
+        "text": "Yes, since people only give up things that matter to them easily when trying to deceive.",
+        "misconception": "strategic-concession_misread"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "A quick, easy concession is actually a classic signal of low priority, not hidden importance — this is exactly the kind of single-concession over-reading worth resisting."
+  },
+  {
+    "id": "i.neg.multi.a",
+    "concept": "multi_issue_tradeoff",
+    "scenario": "A freelancer values rate highly and deadline flexibility less. Their client values a fast turnaround highly and is relatively flexible on rate.",
+    "type": "reason_choice",
+    "prompt": "What trade would create value for both of them?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The freelancer accepts a faster deadline in exchange for a higher rate, since each side gives up what they value less for more of what they value most.",
+        "conceptTag": "multi_issue_tradeoff"
+      },
+      {
+        "id": "B",
+        "text": "They should negotiate rate and deadline completely separately, to keep things simple.",
+        "misconception": "strategic-single_issue_framing"
+      },
+      {
+        "id": "C",
+        "text": "There's no trade available here, since rate and deadline are unrelated issues.",
+        "misconception": "strategic-single_issue_framing"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "When two parties value the same issues in opposite proportions, trading across those issues together, not separately, is exactly where multi-issue value creation comes from."
+  },
+  {
+    "id": "i.neg.multi.b",
+    "concept": "multi_issue_tradeoff",
+    "scenario": "A negotiation over a software contract includes price, support hours, and contract length. The parties negotiate and finalise price first, before discussing the other two issues at all.",
+    "type": "reason_choice",
+    "prompt": "What's the risk of this approach?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Locking in price first can rule out trades across all three issues that might have left both sides better off.",
+        "conceptTag": "multi_issue_tradeoff"
+      },
+      {
+        "id": "B",
+        "text": "There's no risk, since price is always the most important issue to settle first.",
+        "misconception": "strategic-single_issue_framing"
+      },
+      {
+        "id": "C",
+        "text": "The only risk is that it takes longer overall.",
+        "misconception": "strategic-single_issue_framing"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Settling one issue fully before considering the others forecloses trades that only become visible once all the issues are on the table together."
+  },
+  {
+    "id": "i.neg.multi.c",
+    "concept": "multi_issue_tradeoff",
+    "scenario": "Two siblings are dividing their late parent's belongings: a car, a piano, and some furniture. One sibling only really wants the piano; the other has no interest in it at all but wants the car.",
+    "type": "reason_choice",
+    "prompt": "What does this suggest about how to approach the division?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Negotiate all three items together, since their differing priorities make an efficient trade possible across the set.",
+        "conceptTag": "multi_issue_tradeoff"
+      },
+      {
+        "id": "B",
+        "text": "Split every item's value exactly in half regardless of who wants what.",
+        "misconception": "strategic-single_issue_framing"
+      },
+      {
+        "id": "C",
+        "text": "Negotiate the car first, then deal with the piano and furniture separately afterward.",
+        "misconception": "strategic-single_issue_framing"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "With clearly differing priorities across the items, negotiating them as a set — rather than one at a time or by a flat even split — is what lets each sibling get more of what they actually value."
+  },
+  {
+    "id": "i.neg.multi2.a",
+    "concept": "multiparty_negotiation",
+    "scenario": "Three friends are splitting a vacation rental's cost unevenly based on room size. One friend negotiates privately with each of the other two, separately, about their share.",
+    "type": "reason_choice",
+    "prompt": "What's the risk of negotiating privately with each person one at a time?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The two friends might later compare notes and feel the split wasn't handled consistently or fairly across all three.",
+        "conceptTag": "multiparty_negotiation"
+      },
+      {
+        "id": "B",
+        "text": "There's no risk, since each negotiation is separate and doesn't affect the others.",
+        "misconception": "strategic-two_party_assumption"
+      },
+      {
+        "id": "C",
+        "text": "The only risk is it takes more time than negotiating with both at once.",
+        "misconception": "strategic-two_party_assumption"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "In a multi-party situation, each pairwise negotiation isn't actually independent — the parties can compare outcomes afterward, which a two-party framing misses."
+  },
+  {
+    "id": "i.neg.multi2.b",
+    "concept": "multiparty_negotiation",
+    "scenario": "In a three-way business partnership dispute, two of the three partners discover they actually agree on the main issue and discuss it together before involving the third.",
+    "type": "reason_choice",
+    "prompt": "What does this show about multi-party negotiation?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Who talks to whom, and in what order, can shape the outcome — a coalition between two parties changes what's achievable with the third.",
+        "conceptTag": "multiparty_negotiation"
+      },
+      {
+        "id": "B",
+        "text": "It shows nothing different from a normal two-party negotiation.",
+        "misconception": "strategic-two_party_assumption"
+      },
+      {
+        "id": "C",
+        "text": "It's unfair and shouldn't be allowed to happen in any negotiation.",
+        "misconception": "strategic-two_party_assumption"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "The possibility of two parties aligning against, or without, a third is exactly the kind of dynamic that only exists once there are more than two parties involved."
+  },
+  {
+    "id": "i.neg.multi2.c",
+    "concept": "multiparty_negotiation",
+    "scenario": "A community group is deciding on a shared project among five households. One household assumes that convincing the loudest member of the group is the same as convincing everyone.",
+    "type": "reason_choice",
+    "prompt": "What's the flaw in that assumption?",
+    "options": [
+      {
+        "id": "A",
+        "text": "It treats a multi-party decision as if it were two-party, missing that the other four households' separate interests still need addressing.",
+        "conceptTag": "multiparty_negotiation"
+      },
+      {
+        "id": "B",
+        "text": "There's no flaw — convincing the most vocal person is always sufficient in a group.",
+        "misconception": "strategic-two_party_assumption"
+      },
+      {
+        "id": "C",
+        "text": "The flaw is only that it takes longer to convince five people instead of one.",
+        "misconception": "strategic-two_party_assumption"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Reducing a multi-party decision to convincing one person is a two-party assumption applied where it doesn't fit — the other parties' actual agreement still has to be secured separately."
+  },
+  {
+    "id": "i.neg.info.a",
+    "concept": "information_asymmetry",
+    "scenario": "A buyer assumes a seller has no other interested buyers, based on nothing the seller has actually said.",
+    "type": "reason_choice",
+    "prompt": "What's the problem with this assumption?",
+    "options": [
+      {
+        "id": "A",
+        "text": "It's unverified — treating a guess about the seller's alternatives as a known fact risks a bad negotiating strategy built on nothing solid.",
+        "conceptTag": "information_asymmetry"
+      },
+      {
+        "id": "B",
+        "text": "There's no problem, since buyers can usually tell when sellers are bluffing.",
+        "misconception": "strategic-overconfident_about_their_batna"
+      },
+      {
+        "id": "C",
+        "text": "The only problem is it might offend the seller if asked about it directly.",
+        "misconception": "strategic-overconfident_about_their_batna"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "An unverified assumption about the other side's alternatives is still just a guess — treating it as certain is a real risk, whether or not the guess happens to be right."
+  },
+  {
+    "id": "i.neg.info.b",
+    "concept": "information_asymmetry",
+    "scenario": "A listing says a price is 'firm.' A prospective buyer wants to know if there's any real flexibility.",
+    "type": "reason_choice",
+    "prompt": "What's the most useful next step?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ask directly whether there's flexibility, especially under specific conditions like a longer commitment or faster close.",
+        "conceptTag": "information_asymmetry"
+      },
+      {
+        "id": "B",
+        "text": "Take the listing's wording as the final, confirmed truth and don't ask further.",
+        "misconception": "strategic-overconfident_about_their_batna"
+      },
+      {
+        "id": "C",
+        "text": "Assume 'firm' always means there's secretly more room, since sellers exaggerate.",
+        "misconception": "strategic-overconfident_about_their_batna"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "A direct, specific question is usually the fastest way to narrow the real gap between an assumption and the other side's actual position — better than either taking a label at face value or assuming the opposite."
+  },
+  {
+    "id": "i.neg.info.c",
+    "concept": "information_asymmetry",
+    "scenario": "During a negotiation, one party claims confidently to know exactly what the other side's walk-away point is, based only on body language.",
+    "type": "reason_choice",
+    "prompt": "How much should that confidence be trusted?",
+    "options": [
+      {
+        "id": "A",
+        "text": "With real caution — body language can inform an estimate, but it's still an estimate, not verified information.",
+        "conceptTag": "information_asymmetry"
+      },
+      {
+        "id": "B",
+        "text": "Completely — body language reliably reveals someone's true walk-away point.",
+        "misconception": "strategic-overconfident_about_their_batna"
+      },
+      {
+        "id": "C",
+        "text": "Not at all — body language never provides any useful information in a negotiation.",
+        "misconception": "strategic-overconfident_about_their_batna"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Signals like body language can inform an estimate of the other side's position, but treating that estimate as confirmed fact overstates what it actually tells you."
+  },
+  {
+    "id": "i.neg.fair.a",
+    "concept": "fairness_framing",
+    "scenario": "A landlord raises rent to exactly what the market would bear, delivered with no explanation, right before a lease renewal deadline.",
+    "type": "reason_choice",
+    "prompt": "What's the risk, beyond the tenant simply accepting or rejecting the number?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The tenant may perceive it as unfair and respond in ways that cost the landlord later — contesting it, moving out, or caring less about the property.",
+        "conceptTag": "fairness_framing"
+      },
+      {
+        "id": "B",
+        "text": "There's no risk beyond the tenant's immediate yes or no decision.",
+        "misconception": "strategic-fairness_ignored"
+      },
+      {
+        "id": "C",
+        "text": "The only consideration that matters is whether the number itself is legally allowed.",
+        "misconception": "strategic-fairness_ignored"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "A numerically optimal deal that feels unfair to the other side can cost more later than it gains now — fairness perception is a real factor beyond the number itself."
+  },
+  {
+    "id": "i.neg.fair.b",
+    "concept": "fairness_framing",
+    "scenario": "Two negotiators reach the identical final price. One explains their reasoning clearly throughout; the other simply states the number as non-negotiable from the start.",
+    "type": "reason_choice",
+    "prompt": "Which approach is more likely to produce a deal the other side actually honours well?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The one with visible, explained reasoning — it tends to be perceived as fairer even at the same final number.",
+        "conceptTag": "fairness_framing"
+      },
+      {
+        "id": "B",
+        "text": "Both are equally likely, since the final number is what actually matters.",
+        "misconception": "strategic-fairness_ignored"
+      },
+      {
+        "id": "C",
+        "text": "The non-negotiable approach, since it signals more confidence.",
+        "misconception": "strategic-fairness_ignored"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "The same numeric outcome, explained with visible reasoning, tends to be perceived as fairer than the identical outcome delivered as a flat demand — and perceived fairness affects how well a deal holds up."
+  },
+  {
+    "id": "i.neg.fair.c",
+    "concept": "fairness_framing",
+    "scenario": "A manager negotiates a pay rise with an employee that's technically favourable to the company, using the employee's weak BATNA as leverage.",
+    "type": "reason_choice",
+    "prompt": "What's a realistic risk of this approach, beyond this single negotiation?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The employee may feel treated unfairly and disengage, look for other options, or remember it at the next negotiation.",
+        "conceptTag": "fairness_framing"
+      },
+      {
+        "id": "B",
+        "text": "There's no risk, since the deal is numerically favourable to the company.",
+        "misconception": "strategic-fairness_ignored"
+      },
+      {
+        "id": "C",
+        "text": "The only risk is a slightly awkward conversation in the moment.",
+        "misconception": "strategic-fairness_ignored"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "A deal that exploits a weak BATNA without regard for how it's perceived can damage an ongoing relationship well beyond the single negotiation it was reached in."
+  },
+  {
+    "id": "i.neg.walk.a",
+    "concept": "walkaway_judgment",
+    "scenario": "A car buyer's reservation value is $18,000. The seller's final offer, after a long back-and-forth, is $18,200. The buyer is tempted to walk away on principle.",
+    "type": "reason_choice",
+    "prompt": "What does walk-away judgment suggest here?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Accept it — $18,200 is still close to, and arguably within reason of, the reservation value, and walking away over principle alone isn't justified by the numbers.",
+        "conceptTag": "walkaway_judgment"
+      },
+      {
+        "id": "B",
+        "text": "Walk away, since any offer above the stated reservation value should always be refused.",
+        "misconception": "strategic-walkaway_misjudged"
+      },
+      {
+        "id": "C",
+        "text": "Accept it automatically, since walking away is always the weaker move.",
+        "misconception": "strategic-walkaway_misjudged"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Reservation values guide judgment, not rigid rules — an offer very close to the line calls for weighing it against the alternative directly, not a reflexive walk-away."
+  },
+  {
+    "id": "i.neg.walk.b",
+    "concept": "walkaway_judgment",
+    "scenario": "After hours of negotiating, a buyer accepts a final price above their pre-set reservation value, mainly because they're exhausted and want the process to be over.",
+    "type": "reason_choice",
+    "prompt": "What happened here?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Fatigue led to accepting a deal worse than the alternative — exactly what a pre-set reservation value is meant to guard against.",
+        "conceptTag": "walkaway_judgment"
+      },
+      {
+        "id": "B",
+        "text": "Nothing problematic — accepting any offer after a long negotiation is always reasonable.",
+        "misconception": "strategic-walkaway_misjudged"
+      },
+      {
+        "id": "C",
+        "text": "The buyer simply changed their reservation value mid-negotiation, which is fine.",
+        "misconception": "strategic-walkaway_misjudged"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Accepting a deal worse than your reservation value out of fatigue, rather than reconsidering the value itself deliberately, is exactly the failure mode a pre-set reservation value exists to prevent."
+  },
+  {
+    "id": "i.neg.walk.c",
+    "concept": "walkaway_judgment",
+    "scenario": "A seller receives an offer that's actually above their reservation value, but refuses out of frustration at how the negotiation was conducted.",
+    "type": "reason_choice",
+    "prompt": "What's the risk in this decision?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Walking away from a deal that beat their own alternative, over how the process felt rather than the actual numbers.",
+        "conceptTag": "walkaway_judgment"
+      },
+      {
+        "id": "B",
+        "text": "There's no risk — refusing any offer that feels disrespectful is always the right call.",
+        "misconception": "strategic-walkaway_misjudged"
+      },
+      {
+        "id": "C",
+        "text": "The only risk is having to restart the negotiation from scratch.",
+        "misconception": "strategic-walkaway_misjudged"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Walking away from an offer that genuinely beats your reservation value, over frustration rather than the actual terms, is the opposite failure mode — just as real a misjudgment as over-accepting."
+  },
+  {
+    "id": "i.wk5.chk.a",
+    "concept": "batna",
+    "scenario": "You're negotiating a freelance contract. You haven't worked out your BATNA, but you have a vague sense that $60/hour 'feels fair' based on nothing specific.",
+    "type": "reason_choice",
+    "prompt": "What's missing from this preparation?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A real BATNA to anchor the reservation value to — 'feels fair' isn't a substitute for knowing your actual alternative.",
+        "conceptTag": "batna"
+      },
+      {
+        "id": "B",
+        "text": "Nothing — a gut sense of fairness is an acceptable substitute for working out a BATNA.",
+        "misconception": "strategic-batna_ignored"
+      },
+      {
+        "id": "C",
+        "text": "Only the ZOPA estimate is missing; the BATNA step can be skipped if you have a target number.",
+        "misconception": "strategic-reservation_as_target"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "A felt sense of fairness isn't grounded in anything real without a worked-out BATNA behind it — the reservation value this week's prep builds toward depends on actually knowing your alternative."
+  },
+  {
+    "id": "i.wk5.chk.b",
+    "concept": "zopa",
+    "scenario": "You've worked out your reservation value for a rent negotiation ($1,800 max). You haven't estimated the landlord's reservation value at all, and you're also taking their stated 'the rent is what it is' at face value without asking why.",
+    "type": "reason_choice",
+    "prompt": "What two things does this preparation still need?",
+    "options": [
+      {
+        "id": "A",
+        "text": "An estimate of the landlord's reservation value (to check for a ZOPA) and the interest behind their stated position (to see if there's room the position doesn't show).",
+        "conceptTag": "zopa"
+      },
+      {
+        "id": "B",
+        "text": "Nothing further — your own reservation value is the only number that matters in a negotiation.",
+        "misconception": "strategic-zopa_assumed"
+      },
+      {
+        "id": "C",
+        "text": "Only a ZOPA estimate; the landlord's stated position should always be taken at face value.",
+        "misconception": "strategic-positions_as_interests"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Preparation this thorough needs both halves: a ZOPA estimate to know if a deal is even possible, and the interest behind their position to know if the stated line is as fixed as it sounds."
+  },
+  {
+    "id": "i.wk5.chk.c",
+    "concept": "interests_vs_positions",
+    "scenario": "Before a salary negotiation, you've worked out your BATNA and reservation value clearly. You haven't thought at all about what the employer's stated 'budget cap' position might actually be covering — whether it's truly fixed, or whether a signing bonus or title change might satisfy the same underlying constraint differently.",
+    "type": "reason_choice",
+    "prompt": "What's the risk of stopping preparation here?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Missing a possible trade or alternative structure that could satisfy the employer's real interest without matching their stated position exactly.",
+        "conceptTag": "interests_vs_positions"
+      },
+      {
+        "id": "B",
+        "text": "None — BATNA and reservation value are the only preparation that actually matters.",
+        "misconception": "strategic-positions_as_interests"
+      },
+      {
+        "id": "C",
+        "text": "The risk only applies if the employer's budget cap position turns out to be untrue.",
+        "misconception": "strategic-positions_as_interests"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Even strong BATNA and reservation-value preparation leaves value on the table if the other side's stated position is taken at face value without probing the interest behind it."
+  },
+  {
+    "id": "i.wk6.chk.a",
+    "concept": "distributive_integrative",
+    "scenario": "In a contract negotiation involving price and delivery timeline, one side opens with an aggressive price anchor before any discussion of timeline has happened, treating the whole negotiation as a single distributive fight over price.",
+    "type": "reason_choice",
+    "prompt": "What does this approach risk missing?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Whether timeline has real integrative potential — differing priorities on timeline could create a trade the pure price anchor never explores.",
+        "conceptTag": "distributive_integrative"
+      },
+      {
+        "id": "B",
+        "text": "Nothing — anchoring aggressively on price first is always the correct opening move.",
+        "misconception": "strategic-distributive_as_only_mode"
+      },
+      {
+        "id": "C",
+        "text": "Only the pace of later concessions is affected by opening this way.",
+        "misconception": "strategic-concession_misread"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Anchoring hard on a distributive issue before checking whether other issues have integrative potential can foreclose trades that a wider opening conversation might have found."
+  },
+  {
+    "id": "i.wk6.chk.b",
+    "concept": "concession_signaling",
+    "scenario": "Partway through a multi-issue negotiation, one side makes a large, fast concession on delivery timeline but holds firm on price. The other side reads this as 'they're desperate and will cave on price too soon.'",
+    "type": "reason_choice",
+    "prompt": "What does this reading miss?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The quick timeline concession more likely signals timeline was a lower priority for them, not that they're desperate overall — and it doesn't predict their price flexibility at all.",
+        "conceptTag": "concession_signaling"
+      },
+      {
+        "id": "B",
+        "text": "Nothing — a fast concession on one issue reliably predicts similar concessions on every other issue.",
+        "misconception": "strategic-concession_misread"
+      },
+      {
+        "id": "C",
+        "text": "It misses that this must be a multi-party negotiation, not a two-party one.",
+        "misconception": "strategic-two_party_assumption"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "A concession on one issue reveals something about that issue's priority to them, not their overall position across every other issue — generalising from one concession to the whole negotiation overclaims what it shows."
+  },
+  {
+    "id": "i.wk6.chk.c",
+    "concept": "multi_issue_tradeoff",
+    "scenario": "Two sides have finished negotiating price to a firm, final number. Only afterward does it emerge that one side cared far more about contract length than price, and the other cared far more about price than length.",
+    "type": "reason_choice",
+    "prompt": "What does this sequence show?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Settling price first, before the issues' relative priorities were known, likely closed off a trade across price and contract length that would have benefited both sides more.",
+        "conceptTag": "multi_issue_tradeoff"
+      },
+      {
+        "id": "B",
+        "text": "Nothing was lost, since price was settled fairly either way.",
+        "misconception": "strategic-single_issue_framing"
+      },
+      {
+        "id": "C",
+        "text": "The mistake was failing to anchor on contract length first instead of price.",
+        "misconception": "strategic-anchor_passive"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "This is the classic cost of single-issue framing: negotiating issues one at a time, in an order that doesn't reflect either side's actual priorities, can close off trades that would have made both sides better off."
+  },
+  {
+    "id": "i.wk7.chk.a",
+    "concept": "multiparty_negotiation",
+    "scenario": "Three business partners are dissolving a partnership. One partner privately reaches an understanding with a second about how assets should be split, then presents it to the third as already settled, without having gathered the third partner's input at all.",
+    "type": "reason_choice",
+    "prompt": "What complications does this scenario combine?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A multi-party coalition dynamic, plus a fairness risk — the third partner, excluded from input, is likely to perceive the outcome as unfair regardless of the actual numbers.",
+        "conceptTag": "multiparty_negotiation"
+      },
+      {
+        "id": "B",
+        "text": "Just a two-party negotiation that happens to involve three people's names.",
+        "misconception": "strategic-two_party_assumption"
+      },
+      {
+        "id": "C",
+        "text": "Only an information asymmetry problem, unrelated to fairness or multiple parties.",
+        "misconception": "strategic-fairness_ignored"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "This combines two complications at once: a coalition forming between two of three parties, and the real risk that excluding the third from the process — not just the outcome — will be perceived as unfair."
+  },
+  {
+    "id": "i.wk7.chk.b",
+    "concept": "information_asymmetry",
+    "scenario": "Negotiating a house sale, a buyer assumes confidently that the seller is desperate to sell quickly, based only on the listing being a few weeks old. The buyer makes a lowball offer on that basis and refuses to budge, risking losing the deal.",
+    "type": "reason_choice",
+    "prompt": "What combination of errors does this show?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Overconfidence about the seller's actual BATNA (unverified), paired with a walk-away judgment not actually grounded in a real reservation value.",
+        "conceptTag": "information_asymmetry"
+      },
+      {
+        "id": "B",
+        "text": "No error — a few weeks on the market is reliable, confirmed proof of desperation.",
+        "misconception": "strategic-overconfident_about_their_batna"
+      },
+      {
+        "id": "C",
+        "text": "Only a fairness framing problem, unrelated to information asymmetry.",
+        "misconception": "strategic-fairness_ignored"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "An unverified guess about the other side's BATNA, acted on with real confidence, compounds with a walk-away stance that was never actually checked against a real reservation value — two complications reinforcing each other."
+  },
+  {
+    "id": "i.wk7.chk.c",
+    "concept": "walkaway_judgment",
+    "scenario": "In a multi-party family negotiation over inheriting a business, one sibling receives an offer from the other two that's actually above her own reservation value, but refuses it because she feels the process excluded her early on, even though the final number is fair.",
+    "type": "reason_choice",
+    "prompt": "What does this combine?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A fairness-framing problem from earlier in the process leading to a walk-away decision that isn't actually justified by the numbers on the table now.",
+        "conceptTag": "walkaway_judgment"
+      },
+      {
+        "id": "B",
+        "text": "A straightforward case of correctly rejecting a bad offer.",
+        "misconception": "strategic-walkaway_misjudged"
+      },
+      {
+        "id": "C",
+        "text": "An unrelated multi-party dynamic with nothing to do with walk-away judgment.",
+        "misconception": "strategic-two_party_assumption"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "A legitimate fairness grievance about how the process was handled is a real thing to address directly — but letting it drive a walk-away decision on an offer that otherwise beats her reservation value conflates two separate problems."
+  },
+  {
+    "id": "i.neg.words",
+    "concept": "walkaway_judgment",
+    "type": "own_words",
+    "scenario": "Think of a real negotiation you're facing, or one you've been through recently.",
+    "prompt": "In your own words, describe it completely: your BATNA and reservation value, where you think the ZOPA was, the interest behind the other side's stated position, and which complications (multiple parties, missing information, fairness concerns) applied.",
+    "modelAnswer": "\"My BATNA was X, so my reservation value for this deal was Y.\" \"I estimated their reservation value was around Z, so a ZOPA of roughly Y to Z likely existed.\" \"Their stated position was A, but I think the real interest behind it was B.\" \"The complications that applied were C — for example, more than two people were involved, or I wasn't sure of their real alternative.\"",
+    "rubric": [
+      "States a real BATNA and the reservation value derived from it.",
+      "Estimates whether a ZOPA existed, not just states a wished-for price.",
+      "Separates the other side's stated position from their likely underlying interest.",
+      "Names at least one real complication from this module that applied to the situation."
+    ]
+  },
+  {
+    "id": "i.wk5.chk.d",
+    "concept": "reservation_value",
+    "scenario": "You're negotiating the sale of a used sofa. Your BATNA is giving it to a donation charity that will pick it up for free. You're working out your reservation value for a private sale, and separately, you're estimating whether a buyer's likely price range overlaps with yours at all.",
+    "type": "reason_choice",
+    "prompt": "What's the correct relationship between these two tasks?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Your reservation value should be derived from your BATNA first (free donation means almost any paid offer beats it), and only then does checking for an overlapping range with the buyer make sense.",
+        "conceptTag": "reservation_value"
+      },
+      {
+        "id": "B",
+        "text": "The reservation value and the overlap check are unrelated and can be done in either order with no difference.",
+        "misconception": "strategic-zopa_assumed"
+      },
+      {
+        "id": "C",
+        "text": "Since the BATNA is free, no reservation value is needed at all — any price is automatically acceptable.",
+        "misconception": "strategic-reservation_as_target"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "A reservation value is always derived from the BATNA before it's meaningful to check for an overlapping range — here, a free BATNA still implies a real (low but nonzero) reservation value, not an absence of one."
+  },
+  {
+    "id": "i.wk6.chk.d",
+    "concept": "anchoring_negotiation",
+    "scenario": "In a multi-issue contract negotiation, one side has decided price is largely distributive but is still unsure whether to anchor first or wait, partly because they're unsure how to justify a number if challenged.",
+    "type": "reason_choice",
+    "prompt": "What does this week's material suggest they do?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Anchor first with a justified number, since on a distributive issue, waiting tends to shift the eventual price toward whichever side anchors.",
+        "conceptTag": "anchoring_negotiation"
+      },
+      {
+        "id": "B",
+        "text": "Wait for the other side to anchor, since anchoring never matters on distributive issues.",
+        "misconception": "strategic-anchor_passive"
+      },
+      {
+        "id": "C",
+        "text": "Anchor with the most aggressive number imaginable, regardless of whether it can be justified.",
+        "misconception": "strategic-anchor_passive"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "On a distributive issue specifically, anchoring tends to matter most — a justified first offer is worth preparing deliberately rather than defaulting to wait, and an unjustifiable anchor risks backfiring."
+  },
+  {
+    "id": "i.wk7.chk.d",
+    "concept": "fairness_framing",
+    "scenario": "In a three-sibling inheritance negotiation, one sibling proposes a split that's numerically defensible but presents it as a final, non-negotiable number with no explanation, to all three at once.",
+    "type": "reason_choice",
+    "prompt": "What risk does this combine?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A multi-party dynamic (three siblings, not two) combined with a fairness-framing risk — an unexplained, non-negotiable number is more likely to be rejected by the other two regardless of whether it's numerically reasonable.",
+        "conceptTag": "fairness_framing"
+      },
+      {
+        "id": "B",
+        "text": "No real risk, since a numerically defensible split is always accepted regardless of how it's presented.",
+        "misconception": "strategic-fairness_ignored"
+      },
+      {
+        "id": "C",
+        "text": "Only a walk-away judgment risk, unrelated to how the proposal was framed.",
+        "misconception": "strategic-fairness_ignored"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "A numerically sound split delivered without explanation or room for input is exactly the kind of presentation that triggers a fairness-perception problem, especially with more than two parties involved."
+  }
+]

@@ -9,7 +9,10 @@
         "strategic-m1",
         "strategic-m2",
         "strategic-m3",
-        "strategic-m4"
+        "strategic-m4",
+        "strategic-m5",
+        "strategic-m6",
+        "strategic-m7"
       ]
     }
   ],
@@ -64,6 +67,45 @@
         "strategic-m4.l3",
         "strategic-m4.l4",
         "strategic-m4.l5"
+      ]
+    },
+    {
+      "id": "strategic-m5",
+      "trackId": "strategic",
+      "sequence": 5,
+      "title": "Preparing to Negotiate",
+      "lessonIds": [
+        "strategic-m5.l1",
+        "strategic-m5.l2",
+        "strategic-m5.l3",
+        "strategic-m5.l4",
+        "strategic-m5.l5"
+      ]
+    },
+    {
+      "id": "strategic-m6",
+      "trackId": "strategic",
+      "sequence": 6,
+      "title": "At the Negotiating Table",
+      "lessonIds": [
+        "strategic-m6.l1",
+        "strategic-m6.l2",
+        "strategic-m6.l3",
+        "strategic-m6.l4",
+        "strategic-m6.l5"
+      ]
+    },
+    {
+      "id": "strategic-m7",
+      "trackId": "strategic",
+      "sequence": 7,
+      "title": "Negotiation Complications",
+      "lessonIds": [
+        "strategic-m7.l1",
+        "strategic-m7.l2",
+        "strategic-m7.l3",
+        "strategic-m7.l4",
+        "strategic-m7.l5"
       ]
     }
   ],
@@ -910,6 +952,584 @@
       "apply": "Pick one ongoing arrangement in your life and read it completely: is it stable, could a different stable pattern have worked just as well, and are you reasoning about its effect on future rounds or just this one?",
       "reflect": "Across this whole module, which idea — equilibrium, multiple equilibria, repeated interaction, or reciprocity — changed how you think about an ongoing relationship the most?",
       "contentVersion": 1
+    },
+    {
+      "id": "strategic-m5.l1",
+      "trackId": "strategic",
+      "moduleId": "strategic-m5",
+      "sequence": 1,
+      "title": "Your Best Alternative",
+      "objectives": [
+        "Identify your BATNA — what you'll actually do if this negotiation doesn't result in a deal — before negotiating."
+      ],
+      "concepts": [
+        "batna"
+      ],
+      "prerequisites": [
+        "strategic-m4.l5"
+      ],
+      "interactiveItemIds": [
+        "i.neg.batna.a",
+        "i.neg.batna.b",
+        "i.neg.batna.c"
+      ],
+      "masteryItemIds": [],
+      "teach": [
+        "Your BATNA — Best Alternative To a Negotiated Agreement — is what you'll actually do if this negotiation falls through. It's not a wish; it's your real fallback: another job offer, another buyer, doing the work yourself, or simply walking away.",
+        "Negotiating without working out your BATNA first. Without it, there's no way to judge whether an offer is actually good for you — you're reacting to how the offer feels, not comparing it to what you'd get anyway if you said no.",
+        "A strong BATNA is leverage, even if you never mention it directly: knowing you have a real, acceptable alternative changes how willing you are to walk away, and that willingness shapes the whole negotiation, often without a word being said about it."
+      ],
+      "example": "You're negotiating a freelance rate with a client. Your BATNA is a different, slightly less exciting project another client already offered you at a known rate. That number — not a vague sense of what feels fair — is what tells you whether this client's offer is actually worth accepting.",
+      "practicePrompts": [
+        "Think of a negotiation you're facing or recently had.",
+        "Name your actual fallback if no deal happens — not a hope, a real alternative.",
+        "Ask whether you'd worked that out before you started negotiating, or only during it."
+      ],
+      "apply": "Before your next negotiation of any kind, write down your actual BATNA — what you'll really do if it falls through — before you say a single word to the other side.",
+      "reflect": "Think of a past negotiation where you accepted a deal without really knowing your alternative. Looking back, was it actually better than what you'd have gotten anyway?",
+      "contentVersion": 1
+    },
+    {
+      "id": "strategic-m5.l2",
+      "trackId": "strategic",
+      "moduleId": "strategic-m5",
+      "sequence": 2,
+      "title": "Your Actual Walk-Away Price",
+      "objectives": [
+        "Derive a reservation value from your BATNA, and distinguish it from your target or hoped-for outcome."
+      ],
+      "concepts": [
+        "reservation_value"
+      ],
+      "prerequisites": [
+        "strategic-m5.l1"
+      ],
+      "interactiveItemIds": [
+        "i.neg.resv.a",
+        "i.neg.resv.b",
+        "i.neg.resv.c"
+      ],
+      "masteryItemIds": [],
+      "teach": [
+        "Your reservation value is the specific point in this negotiation — a price, a date, a set of terms — below which you're actually better off taking your BATNA instead. It's derived directly from your BATNA, translated into the terms of this particular deal.",
+        "Confusing your reservation value with your target. Your target is what you're hoping for — ambitious, aspirational. Your reservation value is the much more modest line you won't go below. Treating them as the same number means either giving up too easily or holding out for something your BATNA doesn't actually justify.",
+        "Knowing your reservation value in advance protects you from a classic trap: accepting a deal in the moment, caught up in the back-and-forth, that's actually worse than just walking away would have been."
+      ],
+      "example": "Your BATNA for selling a used car is a guaranteed $4,000 trade-in at a dealership. Your target for a private sale might be $5,500. Your reservation value — the real floor — is something like $4,200, just above your BATNA to make the extra hassle of a private sale worth it. Anything below that, the dealership trade-in is simply better.",
+      "practicePrompts": [
+        "Take a negotiation where you know your BATNA.",
+        "Translate it into a specific number or set of terms for this deal — your reservation value.",
+        "Check: is that the same number as what you're hoping for, or genuinely lower?"
+      ],
+      "apply": "Before your next negotiation, write your reservation value down separately from your target, so the two don't blur together once the conversation starts.",
+      "reflect": "Where have you let your target and your reservation value blur into the same number, and how did that affect what you accepted?",
+      "contentVersion": 1
+    },
+    {
+      "id": "strategic-m5.l3",
+      "trackId": "strategic",
+      "moduleId": "strategic-m5",
+      "sequence": 3,
+      "title": "Where a Deal Is Possible",
+      "objectives": [
+        "Check whether a zone of possible agreement exists between your reservation value and theirs, rather than assuming one does."
+      ],
+      "concepts": [
+        "zopa"
+      ],
+      "prerequisites": [
+        "strategic-m5.l2"
+      ],
+      "interactiveItemIds": [
+        "i.neg.zopa.a",
+        "i.neg.zopa.b",
+        "i.neg.zopa.c"
+      ],
+      "masteryItemIds": [],
+      "teach": [
+        "A zone of possible agreement (ZOPA) is the range between the two sides' reservation values where a deal that both would accept actually exists. If your reservation value is $4,200 and theirs (the most they'd pay) is $5,000, the ZOPA is $4,200-$5,000 — any price in that range beats both sides' alternatives.",
+        "Assuming a ZOPA exists without checking. If your reservation value is $4,200 and the most the other side would ever pay is $3,800, there's no ZOPA at all — no deal can beat both sides' alternatives, and continuing to negotiate as if one exists just wastes effort.",
+        "You usually can't know the other side's reservation value directly — it has to be estimated from what they say, what they do, and what you know about their own alternatives. Treating your estimate as certain is its own risk, but having none at all means negotiating blind."
+      ],
+      "example": "You're negotiating rent with a prospective landlord. Your reservation value (the most you'd pay rather than keep looking) is $1,800. If the landlord's reservation value (the least they'd accept rather than leave it vacant another month) is $1,600, the ZOPA is $1,600-$1,800 — a real range where a deal benefits you both.",
+      "practicePrompts": [
+        "Take a negotiation where you know your own reservation value.",
+        "Estimate the other side's reservation value as best you can from what you know.",
+        "Check whether a real range exists between the two — and if it doesn't, what that actually means for continuing."
+      ],
+      "apply": "In your next negotiation, try to estimate the other side's reservation value early, even roughly, so you know whether you're negotiating over a real range or chasing a deal that can't exist.",
+      "reflect": "Think of a negotiation that dragged on without resolving. Looking back, is it possible there was no real ZOPA at all?",
+      "contentVersion": 1
+    },
+    {
+      "id": "strategic-m5.l4",
+      "trackId": "strategic",
+      "moduleId": "strategic-m5",
+      "sequence": 4,
+      "title": "What They Want vs What They're Asking For",
+      "objectives": [
+        "Distinguish a stated position from the underlying interest behind it, to find solutions a rigid position would miss."
+      ],
+      "concepts": [
+        "interests_vs_positions"
+      ],
+      "prerequisites": [
+        "strategic-m5.l3"
+      ],
+      "interactiveItemIds": [
+        "i.neg.int.a",
+        "i.neg.int.b",
+        "i.neg.int.c"
+      ],
+      "masteryItemIds": [],
+      "teach": [
+        "A position is what someone is asking for in words: 'I need the deadline moved to Friday.' An interest is the actual want behind it: maybe it's not Friday specifically, but not wanting to work the weekend. Two people can hold rigid, opposed positions while having interests that are easy to satisfy together.",
+        "Treating a stated position as if it were the actual interest. Arguing over the position itself — Friday versus Monday — can block a solution that would satisfy the real interest in a way neither side had proposed, like splitting the remaining work differently.",
+        "Asking why someone wants what they're asking for, directly and without assuming you already know, is usually the fastest way to uncover the interest behind a position — faster than guessing or than holding your own ground and hoping theirs gives way."
+      ],
+      "example": "A colleague insists a project must launch by Friday (their position). Asking why reveals the real interest: they're presenting it to their manager Monday morning and need it done before then. Launching Saturday evening instead of Friday satisfies that interest just as well, even though it isn't the position they stated.",
+      "practicePrompts": [
+        "Think of a disagreement where someone held a firm position.",
+        "Ask yourself what interest might be behind that position, not just the position itself.",
+        "Consider whether a different solution could satisfy that interest without matching their stated position exactly."
+      ],
+      "apply": "Next time someone states a firm position in a negotiation or disagreement, ask directly what's driving it, before arguing with the position itself.",
+      "reflect": "Think of a time you stated a firm position yourself. What was the actual interest behind it, and would a different solution have satisfied you just as well?",
+      "contentVersion": 1
+    },
+    {
+      "id": "strategic-m5.l5",
+      "trackId": "strategic",
+      "moduleId": "strategic-m5",
+      "sequence": 5,
+      "title": "Before You Sit Down",
+      "objectives": [
+        "Combine BATNA, reservation value, ZOPA and interests-vs-positions into one preparation routine before any negotiation."
+      ],
+      "concepts": [
+        "batna",
+        "reservation_value",
+        "zopa",
+        "interests_vs_positions"
+      ],
+      "prerequisites": [
+        "strategic-m5.l1",
+        "strategic-m5.l2",
+        "strategic-m5.l3",
+        "strategic-m5.l4"
+      ],
+      "interactiveItemIds": [
+        "i.wk5.chk.a",
+        "i.wk5.chk.b",
+        "i.wk5.chk.c",
+        "i.wk5.chk.d"
+      ],
+      "masteryItemIds": [
+        "i.wk5.chk.a",
+        "i.wk5.chk.b",
+        "i.wk5.chk.c",
+        "i.wk5.chk.d"
+      ],
+      "teach": [
+        "This week built the preparation that should happen before any negotiation starts: know your BATNA, translate it into a reservation value, estimate whether a ZOPA exists, and separate the other side's stated position from their real interest.",
+        "Walking into a negotiation having done only one or two of these, and treating that as enough preparation. Each piece covers a different blind spot — skipping any one of them leaves you negotiating on partial information, even if you feel ready.",
+        "None of this requires revealing anything to the other side. All four are things you work out for yourself, before and during the conversation, to negotiate from a clearer position — not scripts for what to say."
+      ],
+      "example": "Before negotiating a salary, you'd work out your BATNA (a real other offer, or staying put), your reservation value (the minimum that beats it), an estimate of the employer's likely range (ZOPA), and the interest behind their stated budget constraint (is it really fixed, or could a signing bonus or title change the shape of the deal?).",
+      "practicePrompts": [
+        "Pick an upcoming negotiation, real or likely.",
+        "Work through all four questions for it: BATNA, reservation value, likely ZOPA, their interest behind their likely position.",
+        "Notice which of the four you'd normally have skipped."
+      ],
+      "apply": "Before your next real negotiation, go through all four preparation steps in writing, not just in your head, before the conversation starts.",
+      "reflect": "Across this week, which of the four ideas — BATNA, reservation value, ZOPA, or interests vs positions — was most missing from how you've prepared for negotiations in the past?",
+      "contentVersion": 1
+    },
+    {
+      "id": "strategic-m6.l1",
+      "trackId": "strategic",
+      "moduleId": "strategic-m6",
+      "sequence": 1,
+      "title": "Splitting the Pie or Growing It",
+      "objectives": [
+        "Distinguish distributive negotiation (claiming a fixed amount) from integrative negotiation (creating more to share)."
+      ],
+      "concepts": [
+        "distributive_integrative"
+      ],
+      "prerequisites": [
+        "strategic-m5.l5"
+      ],
+      "interactiveItemIds": [
+        "i.neg.di.a",
+        "i.neg.di.b",
+        "i.neg.di.c"
+      ],
+      "masteryItemIds": [],
+      "teach": [
+        "Distributive negotiation splits a fixed amount — what one side gains, the other loses. Integrative negotiation looks for ways to grow what's available first, so both sides can end up with more than a straight split would give them.",
+        "Assuming every negotiation is purely distributive. Many negotiations have more than one issue, or differing priorities, which opens room to create value — missing that turns a negotiation that could have grown the pie into an unnecessarily tense fight over slices of a smaller one.",
+        "A single negotiation is often both: some parts genuinely are fixed and must be split, while other parts have real room to create more value first. Treating the whole thing as one mode or the other misses what's actually true about each part."
+      ],
+      "example": "Negotiating a used car's price is mostly distributive — one number, fixed total. Negotiating a job offer is often integrative — salary, start date, remote days and title can all move independently, and a flexible start date might cost the employer little while being worth a lot to you.",
+      "practicePrompts": [
+        "Think of an upcoming or recent negotiation.",
+        "List everything actually being decided, not just the headline number.",
+        "For each one, ask whether it's genuinely fixed (distributive) or has room to create value (integrative)."
+      ],
+      "apply": "Before your next negotiation, list every issue involved, not just the main one, and check each for room to create value before assuming it's a fixed split.",
+      "reflect": "Think of a negotiation you treated as purely distributive. Looking back, was there a second issue that could have grown what was available?",
+      "contentVersion": 1
+    },
+    {
+      "id": "strategic-m6.l2",
+      "trackId": "strategic",
+      "moduleId": "strategic-m6",
+      "sequence": 2,
+      "title": "Who Should Make the First Offer",
+      "objectives": [
+        "Recognise how a first offer anchors the eventual outcome, and decide deliberately whether to anchor first."
+      ],
+      "concepts": [
+        "anchoring_negotiation"
+      ],
+      "prerequisites": [
+        "strategic-m6.l1"
+      ],
+      "interactiveItemIds": [
+        "i.neg.anc.a",
+        "i.neg.anc.b",
+        "i.neg.anc.c"
+      ],
+      "masteryItemIds": [],
+      "teach": [
+        "The first offer in a negotiation tends to anchor everything that follows — later offers and the eventual settlement cluster around it more than people realise, even when both sides know anchoring is a real effect.",
+        "Defaulting to let the other side make the first offer, out of politeness or uncertainty, without weighing that doing so usually shifts the outcome toward their anchor rather than yours.",
+        "Anchoring works best with a number you can justify if asked — an unsupported, wildly aggressive anchor can backfire by signalling you're not negotiating in good faith, undermining the very anchor you were trying to set."
+      ],
+      "example": "In a salary negotiation, whichever side names a number first tends to pull the final offer toward it — a candidate who opens with a well-justified, ambitious number, backed by market research, usually ends up higher than one who waits for the employer to name a figure first.",
+      "practicePrompts": [
+        "Think of a negotiation where you let the other side make the first offer.",
+        "Consider what might have changed if you'd anchored first with a justified number instead.",
+        "Think of one where you anchored first — did you have a justification ready if asked?"
+      ],
+      "apply": "Before your next negotiation, decide deliberately whether to make the first offer, with a justified number ready, rather than defaulting to waiting.",
+      "reflect": "Where has letting the other side anchor first worked against you, in hindsight?",
+      "contentVersion": 1
+    },
+    {
+      "id": "strategic-m6.l3",
+      "trackId": "strategic",
+      "moduleId": "strategic-m6",
+      "sequence": 3,
+      "title": "What a Concession Says",
+      "objectives": [
+        "Read what the size and pace of a concession signals, without over-reading it as more than it is."
+      ],
+      "concepts": [
+        "concession_signaling"
+      ],
+      "prerequisites": [
+        "strategic-m6.l2"
+      ],
+      "interactiveItemIds": [
+        "i.neg.con.a",
+        "i.neg.con.b",
+        "i.neg.con.c"
+      ],
+      "masteryItemIds": [],
+      "teach": [
+        "A concession — giving ground on price, terms, or timing — sends a signal beyond its immediate content: how large it is and how quickly it comes both suggest something about how much room the other side still has, or how much that issue actually matters to them.",
+        "Reading a concession as revealing only one thing when several explanations fit. A quick, large concession might signal desperation — or it might just mean that particular issue was never a priority for them, and giving it up cost them little.",
+        "Concessions that shrink in size as a negotiation goes on usually signal approaching a real limit; concessions that stay large and frequent usually signal there's still plenty of room left. Watching the pattern across several concessions tells you more than reading any single one in isolation."
+      ],
+      "example": "A seller drops their price by $500 in the first round without hesitation, then by $100 in the next, then refuses to move further. The shrinking pattern — not the first concession alone — is what signals they're approaching their actual reservation value.",
+      "practicePrompts": [
+        "Think of a negotiation with several rounds of back-and-forth.",
+        "Look at the pattern of concessions made, not just one of them in isolation.",
+        "Consider what explanation besides 'weakness' could fit a quick early concession."
+      ],
+      "apply": "In your next multi-round negotiation, track the size and pace of concessions on both sides across the whole conversation, not just react to each one individually.",
+      "reflect": "Where have you read a single concession as revealing more than it actually did?",
+      "contentVersion": 1
+    },
+    {
+      "id": "strategic-m6.l4",
+      "trackId": "strategic",
+      "moduleId": "strategic-m6",
+      "sequence": 4,
+      "title": "Trading Across What You Value Differently",
+      "objectives": [
+        "Find efficient trades across multiple issues that each side values differently, rather than negotiating one issue at a time."
+      ],
+      "concepts": [
+        "multi_issue_tradeoff"
+      ],
+      "prerequisites": [
+        "strategic-m6.l3"
+      ],
+      "interactiveItemIds": [
+        "i.neg.multi.a",
+        "i.neg.multi.b",
+        "i.neg.multi.c"
+      ],
+      "masteryItemIds": [],
+      "teach": [
+        "When a negotiation has more than one issue, and the two sides don't value those issues identically, trading across them can leave both sides better off than settling each issue separately. Giving up something you care little about in exchange for something you care a lot about, where the other side's priorities are reversed, creates value neither a single-issue negotiation nor an even split would find.",
+        "Negotiating one issue fully before moving to the next. Settling price before discussing timeline, for instance, can lock in a worse deal than negotiating both together would have, once it turns out the other side cared much more about timeline than price.",
+        "Finding these trades requires knowing, or asking about, which issues matter most to each side — which is exactly what distinguishing positions from interests, from earlier this module, is for."
+      ],
+      "example": "A freelancer and a client are negotiating rate and deadline together. The freelancer cares more about rate than deadline; the client, facing a tight budget but a flexible launch date, cares more about the reverse. Trading a slightly lower rate for a later deadline leaves both better off than negotiating rate and deadline as two separate, unrelated fights.",
+      "practicePrompts": [
+        "Think of a negotiation involving more than one issue.",
+        "Rank how much each issue matters to you.",
+        "Consider what the other side might value differently, and what trade could follow from that."
+      ],
+      "apply": "In your next multi-issue negotiation, put all the issues on the table together and look for trades across them, rather than resolving them one at a time.",
+      "reflect": "Think of a negotiation you handled one issue at a time. What trade might multi-issue bargaining have revealed?",
+      "contentVersion": 1
+    },
+    {
+      "id": "strategic-m6.l5",
+      "trackId": "strategic",
+      "moduleId": "strategic-m6",
+      "sequence": 5,
+      "title": "At the Table",
+      "objectives": [
+        "Combine distributive/integrative framing, anchoring, concession-reading and multi-issue trades into one live negotiation."
+      ],
+      "concepts": [
+        "distributive_integrative",
+        "anchoring_negotiation",
+        "concession_signaling",
+        "multi_issue_tradeoff"
+      ],
+      "prerequisites": [
+        "strategic-m6.l1",
+        "strategic-m6.l2",
+        "strategic-m6.l3",
+        "strategic-m6.l4"
+      ],
+      "interactiveItemIds": [
+        "i.wk6.chk.a",
+        "i.wk6.chk.b",
+        "i.wk6.chk.c",
+        "i.wk6.chk.d"
+      ],
+      "masteryItemIds": [
+        "i.wk6.chk.a",
+        "i.wk6.chk.b",
+        "i.wk6.chk.c",
+        "i.wk6.chk.d"
+      ],
+      "teach": [
+        "Last week was preparation; this week is what happens once the conversation starts. Whether to anchor, how to read concessions, and where to look for multi-issue trades all depend on first recognising whether you're splitting a fixed amount or growing what's available.",
+        "Applying one of these tools out of context — anchoring aggressively in a situation that's actually integrative, where a collaborative opening would find more value than a combative one, or missing a multi-issue trade because the conversation never widened past the first distributive issue raised.",
+        "All four build on last week's preparation: you can't anchor with a justified number without knowing your BATNA, and you can't spot a multi-issue trade without having already separated positions from interests."
+      ],
+      "example": "In a salary negotiation, recognising that salary itself is somewhat distributive but title, start date and remote days are more integrative changes the whole approach: anchor firmly on salary with a justified number, but stay open and exploratory on the other issues, watching for trades the employer's own concessions reveal.",
+      "practicePrompts": [
+        "Think through a negotiation you're preparing for.",
+        "Decide which parts are distributive and which are integrative before you start.",
+        "Plan whether to anchor, and what multi-issue trade you might propose."
+      ],
+      "apply": "Walk into your next real negotiation having explicitly decided, in advance, which issues are distributive, which are integrative, whether you'll anchor, and what trade you might propose.",
+      "reflect": "Across this week, which single tool — anchoring, concession-reading, or multi-issue trading — do you most need to practise deliberately rather than doing by instinct?",
+      "contentVersion": 1
+    },
+    {
+      "id": "strategic-m7.l1",
+      "trackId": "strategic",
+      "moduleId": "strategic-m7",
+      "sequence": 1,
+      "title": "More Than Two People in the Room",
+      "objectives": [
+        "Recognise how a third party changes a negotiation — coalitions, sequencing, and whose interests actually need satisfying."
+      ],
+      "concepts": [
+        "multiparty_negotiation"
+      ],
+      "prerequisites": [
+        "strategic-m6.l5"
+      ],
+      "interactiveItemIds": [
+        "i.neg.multi2.a",
+        "i.neg.multi2.b",
+        "i.neg.multi2.c"
+      ],
+      "masteryItemIds": [],
+      "teach": [
+        "Everything so far assumed two sides. With three or more parties, new things matter: who talks to whom first, whether two parties might team up against a third, and whether a deal needs everyone's agreement or just a majority.",
+        "Reasoning about a multi-party situation as if it were still two-sided — treating one other party as THE other side while ignoring that a third party's interests, and their relationship to the first two, change what deals are actually available.",
+        "In a multi-party negotiation, the order you talk to people in can matter as much as what you say — reaching an early understanding with one party can shift what's achievable with the others, for better or worse."
+      ],
+      "example": "Three roommates are splitting a renovation cost unevenly, based on room size. Negotiating with each roommate separately, one at a time, risks each one comparing notes afterward and feeling shortchanged relative to what the others got — unlike a two-person negotiation, what's fair here depends on how all three outcomes compare to each other, not just each deal in isolation.",
+      "practicePrompts": [
+        "Think of a decision involving three or more people.",
+        "Consider whether any two of them might have aligned interests against the third.",
+        "Think about whether the order you'd talk to each of them in matters."
+      ],
+      "apply": "Before your next decision involving three or more people, map out each person's interests separately, and consider who to talk to first and why.",
+      "reflect": "Think of a group decision that went badly. Was a two-party assumption — treating it as you versus one other person — part of why?",
+      "contentVersion": 1
+    },
+    {
+      "id": "strategic-m7.l2",
+      "trackId": "strategic",
+      "moduleId": "strategic-m7",
+      "sequence": 2,
+      "title": "What You Don't Know About Them",
+      "objectives": [
+        "Recognise information asymmetry in a negotiation and probe for it rather than assuming you already know the other side's position."
+      ],
+      "concepts": [
+        "information_asymmetry"
+      ],
+      "prerequisites": [
+        "strategic-m7.l1"
+      ],
+      "interactiveItemIds": [
+        "i.neg.info.a",
+        "i.neg.info.b",
+        "i.neg.info.c"
+      ],
+      "masteryItemIds": [],
+      "teach": [
+        "You almost never know the other side's BATNA, reservation value, or true priorities for certain — you're negotiating with an estimate, built from what they say and do, not with their actual numbers.",
+        "Assuming you already know the other side's alternatives or constraints without having actually verified them. Confident guesses about someone else's position are still guesses, and treating them as facts can lead you to concede too much, or hold out for a deal that was never on the table.",
+        "Open, specific questions — not just watching for signals — are often the fastest way to narrow the gap between your estimate of the other side's position and the reality, though their answers still need weighing against what you independently know."
+      ],
+      "example": "You assume a landlord won't budge on rent because the listing says 'firm.' Simply asking whether there's any flexibility, especially for a longer lease, sometimes reveals constraints — or lack of them — that the listing's wording never actually confirmed either way.",
+      "practicePrompts": [
+        "Think of a negotiation where you assumed something about the other side's position.",
+        "Ask whether that assumption was ever actually confirmed, or just inferred.",
+        "Think of one specific question that could have tested it directly."
+      ],
+      "apply": "In your next negotiation, ask at least one direct question aimed at testing an assumption you're making about the other side's constraints, rather than just acting on the assumption.",
+      "reflect": "Where has an unverified assumption about someone else's position cost you in a past negotiation?",
+      "contentVersion": 1
+    },
+    {
+      "id": "strategic-m7.l3",
+      "trackId": "strategic",
+      "moduleId": "strategic-m7",
+      "sequence": 3,
+      "title": "Why a 'Fair' Deal Sticks Better",
+      "objectives": [
+        "Recognise that a deal perceived as unfair by the other side is less likely to be accepted or honoured, even if it benefits you numerically."
+      ],
+      "concepts": [
+        "fairness_framing"
+      ],
+      "prerequisites": [
+        "strategic-m7.l2"
+      ],
+      "interactiveItemIds": [
+        "i.neg.fair.a",
+        "i.neg.fair.b",
+        "i.neg.fair.c"
+      ],
+      "masteryItemIds": [],
+      "teach": [
+        "People routinely reject or resent deals they see as unfair, even when the deal still leaves them better off than their alternative. A negotiation isn't just about the final number — it's also about whether the other side walks away feeling treated reasonably.",
+        "Optimising purely for your own numeric outcome while ignoring how the deal will be perceived. A technically 'winning' deal that the other side experiences as exploitative can fall apart, get renegotiated later, or damage a relationship you'll need again.",
+        "Framing matters here as much as substance: the same numeric outcome, explained with visible reasoning the other side can follow, tends to land as fairer than the identical outcome delivered as a flat take-it-or-leave-it."
+      ],
+      "example": "A landlord raises rent exactly to what the market would bear, with no explanation. A tenant who feels blindsided may contest it, move out resentfully, or stop maintaining the place carefully — the same increase, explained with comparable listings shown upfront, is far more likely to be simply accepted.",
+      "practicePrompts": [
+        "Think of a deal you negotiated that technically favoured you.",
+        "Consider how the other side likely experienced it — as fair, or as a loss.",
+        "Think of how you might have framed the same outcome to land better."
+      ],
+      "apply": "In your next negotiation, explain your reasoning for an offer openly, not just the number itself, so the other side can see why it's reasonable.",
+      "reflect": "Where has a deal that was good for you on paper caused problems later because the other side felt it was unfair?",
+      "contentVersion": 1
+    },
+    {
+      "id": "strategic-m7.l4",
+      "trackId": "strategic",
+      "moduleId": "strategic-m7",
+      "sequence": 4,
+      "title": "Recognising When to Walk Away",
+      "objectives": [
+        "Judge when an offer is actually worse than your reservation value, resisting both premature acceptance and ego-driven refusal."
+      ],
+      "concepts": [
+        "walkaway_judgment"
+      ],
+      "prerequisites": [
+        "strategic-m7.l3"
+      ],
+      "interactiveItemIds": [
+        "i.neg.walk.a",
+        "i.neg.walk.b",
+        "i.neg.walk.c"
+      ],
+      "masteryItemIds": [],
+      "teach": [
+        "Walking away is the right call exactly when an offer is worse than your reservation value — not a moment before, and not a moment after. Both directions of error are common: accepting something worse than your BATNA out of fatigue or momentum, and refusing something better than your BATNA out of pride.",
+        "Treating 'walk away' as always the strong move, or always the weak one. Neither is true — the only question that actually matters is whether the specific offer on the table beats your specific reservation value, worked out before the pressure of the moment.",
+        "A clearly pre-set reservation value is what makes this judgment possible in the moment — without one, both over-accepting and over-refusing are easy to talk yourself into, because there's no fixed line to check the offer against."
+      ],
+      "example": "You're negotiating a car's price and have a firm reservation value of $18,000, below your BATNA at another dealer. The seller's final offer is $18,200. Walking away over $200, on principle, is worse for you than accepting — just as accepting $19,500 out of exhaustion would also be a mistake, since it's worse than your own alternative.",
+      "practicePrompts": [
+        "Think of a negotiation where you were tempted to accept out of fatigue.",
+        "Check whether the offer was actually above or below your reservation value.",
+        "Think of a case where pride, not the numbers, nearly made you walk away from a good deal."
+      ],
+      "apply": "In your next negotiation, write your reservation value down before you start, and check any final offer against that exact number, not against how you feel in the moment.",
+      "reflect": "Think back over this whole module. Which single idea — BATNA, ZOPA, anchoring, or walk-away judgment — do you most need to actually use next time you negotiate something real?",
+      "contentVersion": 1
+    },
+    {
+      "id": "strategic-m7.l5",
+      "trackId": "strategic",
+      "moduleId": "strategic-m7",
+      "sequence": 5,
+      "title": "Complications",
+      "objectives": [
+        "Combine multi-party dynamics, information asymmetry, fairness framing and walk-away judgment into reading a messier real negotiation."
+      ],
+      "concepts": [
+        "multiparty_negotiation",
+        "information_asymmetry",
+        "fairness_framing",
+        "walkaway_judgment"
+      ],
+      "prerequisites": [
+        "strategic-m7.l1",
+        "strategic-m7.l2",
+        "strategic-m7.l3",
+        "strategic-m7.l4"
+      ],
+      "interactiveItemIds": [
+        "i.wk7.chk.a",
+        "i.wk7.chk.b",
+        "i.wk7.chk.c",
+        "i.wk7.chk.d",
+        "i.neg.words"
+      ],
+      "masteryItemIds": [
+        "i.wk7.chk.a",
+        "i.wk7.chk.b",
+        "i.wk7.chk.c",
+        "i.wk7.chk.d"
+      ],
+      "explanationBackItemId": "i.neg.words",
+      "teach": [
+        "Real negotiations are rarely the clean two-party, full-information, single-round version the earlier weeks used to teach each idea cleanly. More parties, missing information, fairness concerns, and genuine uncertainty about when to walk away usually show up together, not one at a time.",
+        "Treating a complication as an excuse to abandon the preparation from weeks 5 and 6. A multi-party, uncertain, fairness-sensitive negotiation still benefits from knowing your BATNA and reservation value — the complications change the conversation, not the prep work underneath it.",
+        "This closes out the negotiation module. Everything from BATNA through walk-away judgment is meant to work together on one real negotiation, not as separate tools used one at a time."
+      ],
+      "example": "Negotiating a shared family home's sale among three siblings involves all four complications at once: three parties with different financial needs (multiparty), uncertainty about what each sibling would actually accept (information asymmetry), a need for the split to feel fair to all three regardless of the legal minimum (fairness), and each sibling needing their own walk-away judgment about whether a buyout offer beats simply co-owning it longer.",
+      "practicePrompts": [
+        "Think of a real negotiation involving more than two people or real uncertainty.",
+        "Identify which of this week's four complications are actually present in it.",
+        "Consider what preparation from weeks 5 and 6 still applies underneath the complications."
+      ],
+      "apply": "Pick one real, upcoming negotiation in your life — even a small one — and prepare for it fully: BATNA, reservation value, likely ZOPA, interests behind positions, and which of this week's complications apply.",
+      "reflect": "In your own words, describe a real negotiation you're facing or recently had: your BATNA and reservation value, where the ZOPA likely was, and which complications from this week applied.",
+      "contentVersion": 1
     }
   ],
   "concepts": [
@@ -1020,6 +1640,78 @@
       "trackId": "strategic",
       "moduleId": "strategic-m4",
       "label": "Starting cooperatively, then mirroring the other side's last choice"
+    },
+    {
+      "id": "batna",
+      "trackId": "strategic",
+      "moduleId": "strategic-m5",
+      "label": "Your best alternative to a negotiated agreement"
+    },
+    {
+      "id": "reservation_value",
+      "trackId": "strategic",
+      "moduleId": "strategic-m5",
+      "label": "The actual point below which you walk away"
+    },
+    {
+      "id": "zopa",
+      "trackId": "strategic",
+      "moduleId": "strategic-m5",
+      "label": "The range where a deal is possible for both sides"
+    },
+    {
+      "id": "interests_vs_positions",
+      "trackId": "strategic",
+      "moduleId": "strategic-m5",
+      "label": "What someone wants, versus what they're asking for"
+    },
+    {
+      "id": "distributive_integrative",
+      "trackId": "strategic",
+      "moduleId": "strategic-m6",
+      "label": "Splitting a fixed amount, versus growing what's available"
+    },
+    {
+      "id": "anchoring_negotiation",
+      "trackId": "strategic",
+      "moduleId": "strategic-m6",
+      "label": "How the first offer shapes the eventual outcome"
+    },
+    {
+      "id": "concession_signaling",
+      "trackId": "strategic",
+      "moduleId": "strategic-m6",
+      "label": "What the size and pace of a concession reveals"
+    },
+    {
+      "id": "multi_issue_tradeoff",
+      "trackId": "strategic",
+      "moduleId": "strategic-m6",
+      "label": "Trading across issues valued differently by each side"
+    },
+    {
+      "id": "multiparty_negotiation",
+      "trackId": "strategic",
+      "moduleId": "strategic-m7",
+      "label": "How a third party changes a negotiation"
+    },
+    {
+      "id": "information_asymmetry",
+      "trackId": "strategic",
+      "moduleId": "strategic-m7",
+      "label": "What you don't know about the other side"
+    },
+    {
+      "id": "fairness_framing",
+      "trackId": "strategic",
+      "moduleId": "strategic-m7",
+      "label": "Why a deal perceived as fair holds up better"
+    },
+    {
+      "id": "walkaway_judgment",
+      "trackId": "strategic",
+      "moduleId": "strategic-m7",
+      "label": "Recognising when a deal is actually worse than your alternative"
     }
   ],
   "misconceptions": [
@@ -1148,6 +1840,78 @@
       "trackId": "strategic",
       "label": "Reciprocity mistaken for unconditional cooperation",
       "description": "Treating a reciprocal strategy as always cooperating regardless of what the other side does, rather than mirroring their last choice."
+    },
+    {
+      "id": "strategic-batna_ignored",
+      "trackId": "strategic",
+      "label": "BATNA ignored",
+      "description": "Negotiating without working out your best alternative to a deal, so there's no way to tell a good offer from a bad one."
+    },
+    {
+      "id": "strategic-reservation_as_target",
+      "trackId": "strategic",
+      "label": "Reservation value confused with target",
+      "description": "Treating your walk-away point (reservation value) as the same thing as your hoped-for outcome (target), when they're different numbers serving different purposes."
+    },
+    {
+      "id": "strategic-zopa_assumed",
+      "trackId": "strategic",
+      "label": "ZOPA assumed without checking",
+      "description": "Assuming a deal is possible without checking whether the two sides' acceptable ranges actually overlap."
+    },
+    {
+      "id": "strategic-positions_as_interests",
+      "trackId": "strategic",
+      "label": "Position mistaken for interest",
+      "description": "Treating what someone is asking for (their position) as the same thing as what they actually want (their interest), missing room for a different solution that serves the same want."
+    },
+    {
+      "id": "strategic-distributive_as_only_mode",
+      "trackId": "strategic",
+      "label": "Negotiation assumed purely distributive",
+      "description": "Treating every negotiation as a fixed pie to be split, missing opportunities to create additional value both sides could share."
+    },
+    {
+      "id": "strategic-anchor_passive",
+      "trackId": "strategic",
+      "label": "Passively letting the other side anchor",
+      "description": "Defaulting to let the other party make the first offer without considering that doing so often shifts the eventual outcome in their favour."
+    },
+    {
+      "id": "strategic-concession_misread",
+      "trackId": "strategic",
+      "label": "Concession pattern misread",
+      "description": "Reading a concession's size or speed as revealing something it doesn't — for instance, assuming a quick concession always signals weakness rather than a low-priority issue."
+    },
+    {
+      "id": "strategic-single_issue_framing",
+      "trackId": "strategic",
+      "label": "Single-issue framing",
+      "description": "Negotiating one issue at a time instead of bundling several, missing trades that would let each side get more of what they value most."
+    },
+    {
+      "id": "strategic-two_party_assumption",
+      "trackId": "strategic",
+      "label": "Two-party assumption in a multi-party situation",
+      "description": "Reasoning as if only two parties are involved when a third party's presence, alliances, or sequencing actually changes the dynamics."
+    },
+    {
+      "id": "strategic-overconfident_about_their_batna",
+      "trackId": "strategic",
+      "label": "Overconfidence about the other side's BATNA",
+      "description": "Assuming you know the other party's alternatives or walk-away point without having actually verified it."
+    },
+    {
+      "id": "strategic-fairness_ignored",
+      "trackId": "strategic",
+      "label": "Fairness perception ignored",
+      "description": "Focusing only on your own numeric outcome while ignoring whether the other side will see the deal as fair enough to actually accept or honour."
+    },
+    {
+      "id": "strategic-walkaway_misjudged",
+      "trackId": "strategic",
+      "label": "Walk-away point misjudged",
+      "description": "Either accepting a deal worse than your reservation value out of momentum, or walking away from a deal that actually beat it, out of ego or overconfidence."
     }
   ]
 }

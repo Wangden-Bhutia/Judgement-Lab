@@ -7,6 +7,7 @@ import module3ItemsJson from '../content/items/module3.json' with { type: 'json'
 import module4ItemsJson from '../content/items/module4.json' with { type: 'json' };
 import bankDeepeningItemsJson from '../content/items/bank-deepening.json' with { type: 'json' };
 import weeklyCheckpointItemsJson from '../content/items/weekly-checkpoints.json' with { type: 'json' };
+import negotiationItemsJson from '../content/items/negotiation.json' with { type: 'json' };
 
 export const strategicCurriculum = curriculumJson as Curriculum;
 export const strategicItems: Item[] = [
@@ -16,4 +17,5 @@ export const strategicItems: Item[] = [
   ...(module4ItemsJson as Item[]),
   ...(bankDeepeningItemsJson as Item[]),
   ...(weeklyCheckpointItemsJson as Item[]),
+  ...(negotiationItemsJson as Item[]),
 ];

@@ -7,6 +7,7 @@ import module3Items from '../../content/items/module3.json' with { type: 'json' 
 import module4Items from '../../content/items/module4.json' with { type: 'json' };
 import bankDeepeningItems from '../../content/items/bank-deepening.json' with { type: 'json' };
 import weeklyCheckpointItems from '../../content/items/weekly-checkpoints.json' with { type: 'json' };
+import negotiationItems from '../../content/items/negotiation.json' with { type: 'json' };
 
 const typedCurriculum = curriculum as Curriculum;
 const typedItems: Item[] = [
@@ -16,10 +17,11 @@ const typedItems: Item[] = [
   ...(module4Items as Item[]),
   ...(bankDeepeningItems as Item[]),
   ...(weeklyCheckpointItems as Item[]),
+  ...(negotiationItems as Item[]),
 ];
 const itemById = new Map(typedItems.map((i) => [i.id, i]));
 
-describe('converted Strategic Reasoning content (Modules 1-4)', () => {
+describe('converted Strategic Reasoning content (Modules 1-7)', () => {
   it('validates against the shared content schema', () => {
     const result = validateContent(typedCurriculum, typedItems);
     expect(result.errors).toEqual([]);
@@ -31,10 +33,10 @@ describe('converted Strategic Reasoning content (Modules 1-4)', () => {
     // integrative checkpoint-day lesson (m1.l5, m2.l4, m3.l6, m4.l5) that
     // combines that module's concepts rather than introducing a new one.
     expect(typedCurriculum.tracks.map((t) => t.id)).toEqual(['strategic']);
-    expect(typedCurriculum.modules.map((m) => m.id)).toEqual([
+    expect(typedCurriculum.modules.map((m) => m.id).slice(0, 4)).toEqual([
       'strategic-m1', 'strategic-m2', 'strategic-m3', 'strategic-m4',
     ]);
-    expect(typedCurriculum.lessons.map((l) => l.id)).toEqual([
+    expect(typedCurriculum.lessons.map((l) => l.id).slice(0, 20)).toEqual([
       'strategic-m1.l1', 'strategic-m1.l2', 'strategic-m1.l3', 'strategic-m1.l4', 'strategic-m1.l5',
       'strategic-m2.l1', 'strategic-m2.l2', 'strategic-m2.l3', 'strategic-m2.l4',
       'strategic-m3.l1', 'strategic-m3.l2', 'strategic-m3.l3', 'strategic-m3.l4', 'strategic-m3.l5', 'strategic-m3.l6',
@@ -76,6 +78,45 @@ describe('converted Strategic Reasoning content (Modules 1-4)', () => {
         const item = itemById.get(itemId);
         expect(item?.scenario!.length).toBeGreaterThan(40);
       }
+    }
+  });
+
+  it('has 3 negotiation modules (5-7) and 15 lessons, chaining off module 4\'s checkpoint', () => {
+    expect(typedCurriculum.modules.map((m) => m.id).slice(4)).toEqual([
+      'strategic-m5', 'strategic-m6', 'strategic-m7',
+    ]);
+    expect(typedCurriculum.lessons.map((l) => l.id).slice(20)).toEqual([
+      'strategic-m5.l1', 'strategic-m5.l2', 'strategic-m5.l3', 'strategic-m5.l4', 'strategic-m5.l5',
+      'strategic-m6.l1', 'strategic-m6.l2', 'strategic-m6.l3', 'strategic-m6.l4', 'strategic-m6.l5',
+      'strategic-m7.l1', 'strategic-m7.l2', 'strategic-m7.l3', 'strategic-m7.l4', 'strategic-m7.l5',
+    ]);
+    const byId = new Map(typedCurriculum.lessons.map((l) => [l.id, l]));
+    expect(byId.get('strategic-m5.l1')!.prerequisites).toEqual(['strategic-m4.l5']);
+    expect(byId.get('strategic-m6.l1')!.prerequisites).toEqual(['strategic-m5.l5']);
+    expect(byId.get('strategic-m7.l1')!.prerequisites).toEqual(['strategic-m6.l5']);
+  });
+
+  it('each negotiation week\'s checkpoint lesson requires every lesson in that week', () => {
+    const byId = new Map(typedCurriculum.lessons.map((l) => [l.id, l]));
+    expect(new Set(byId.get('strategic-m5.l5')!.prerequisites)).toEqual(
+      new Set(['strategic-m5.l1', 'strategic-m5.l2', 'strategic-m5.l3', 'strategic-m5.l4'])
+    );
+    expect(new Set(byId.get('strategic-m6.l5')!.prerequisites)).toEqual(
+      new Set(['strategic-m6.l1', 'strategic-m6.l2', 'strategic-m6.l3', 'strategic-m6.l4'])
+    );
+    expect(new Set(byId.get('strategic-m7.l5')!.prerequisites)).toEqual(
+      new Set(['strategic-m7.l1', 'strategic-m7.l2', 'strategic-m7.l3', 'strategic-m7.l4'])
+    );
+  });
+
+  it('reservation_value is correctly derived from BATNA, not confused with a hoped-for target', () => {
+    const item = itemById.get('i.neg.resv.a');
+    expect(item?.type).toBe('reason_choice');
+    if (item?.type === 'reason_choice') {
+      const targetConfusion = item.options.find((o) => o.misconception === 'strategic-reservation_as_target');
+      expect(targetConfusion).toBeDefined();
+      const correct = item.options.find((o) => item.acceptableAnswers.includes(o.id));
+      expect(correct?.conceptTag).toBe('reservation_value');
     }
   });
 
@@ -192,17 +233,18 @@ describe('converted Strategic Reasoning content (Modules 1-4)', () => {
     }
   });
 
-  it('every concept has a checkpoint item somewhere, across all 3 modules', () => {
+  it('every concept has a checkpoint item somewhere, across every module', () => {
     // Was 4 of 14 (actions, preferences, payoff, dominated_action) with no
     // checkpoint item anywhere, meaning mastery was permanently
     // unreachable for them -- core-engine's mastery model needs >=2
     // delayed-evidence attempts, and a concept with zero checkpoint items
-    // can never get its first. Fixed by pointing m1.l1/m1.l2's
-    // masteryItemIds at their own already-authored items for actions and
-    // preferences/payoff, and adding dominated_action's own item
-    // (i.m3.dominated) to m3.l3's masteryItemIds, which previously only
-    // listed items tagged with the different, similarly-named
-    // dominant_strategy concept.
+    // can never get its first. Fixed originally for modules 1-3, and this
+    // same gap resurfaced in Pass 2 (3 of the 12 new negotiation concepts
+    // -- reservation_value, anchoring_negotiation, fairness_framing --
+    // shipped with no checkpoint item at all until this test caught it).
+    // This generic check, run against the full curriculum on every pass,
+    // is what's meant to catch that class of bug going forward without
+    // relying on remembering to check by hand each time.
     const conceptsWithCheckpointItem = new Set(
       typedCurriculum.lessons.flatMap((lesson) => lesson.masteryItemIds.map((id) => itemById.get(id)!.concept))
     );
