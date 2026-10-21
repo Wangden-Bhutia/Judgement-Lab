@@ -9,7 +9,9 @@
         "behavioural-mod-1",
         "behavioural-mod-2",
         "behavioural-mod-3",
-        "behavioural-mod-4"
+        "behavioural-mod-4",
+        "behavioural-mod-5",
+        "behavioural-mod-6"
       ]
     }
   ],
@@ -63,6 +65,32 @@
         "behavioural-les-17",
         "behavioural-les-18",
         "behavioural-les-19"
+      ]
+    },
+    {
+      "id": "behavioural-mod-5",
+      "trackId": "behavioural",
+      "sequence": 5,
+      "title": "Listening That Actually Works",
+      "lessonIds": [
+        "behavioural-les-20",
+        "behavioural-les-21",
+        "behavioural-les-22",
+        "behavioural-les-23",
+        "behavioural-les-24"
+      ]
+    },
+    {
+      "id": "behavioural-mod-6",
+      "trackId": "behavioural",
+      "sequence": 6,
+      "title": "Responding to What You Hear",
+      "lessonIds": [
+        "behavioural-les-25",
+        "behavioural-les-26",
+        "behavioural-les-27",
+        "behavioural-les-28",
+        "behavioural-les-29"
       ]
     }
   ],
@@ -905,6 +933,433 @@
       "apply": "In your next real interaction, deliberately hold your read of someone loosely, and check it with a direct question before acting on it.",
       "reflect": "In your own words, describe a real recent moment of reading someone or a room, and check it against as many of these eight ideas as actually apply.",
       "contentVersion": 1
+    },
+    {
+      "id": "behavioural-les-20",
+      "trackId": "behavioural",
+      "moduleId": "behavioural-mod-5",
+      "sequence": 20,
+      "title": "Giving Someone Your Actual Attention",
+      "objectives": [
+        "Give someone genuine, undivided attention while they're speaking, rather than appearing to listen while mentally elsewhere."
+      ],
+      "concepts": [
+        "active_listening_mechanics"
+      ],
+      "prerequisites": [
+        "behavioural-les-19"
+      ],
+      "interactiveItemIds": [
+        "i.lis.att.a",
+        "i.lis.att.b",
+        "i.lis.att.c",
+        "i.lis.att.words"
+      ],
+      "masteryItemIds": [
+        "i.lis.att.a",
+        "i.lis.att.b"
+      ],
+      "explanationBackItemId": "i.lis.att.words",
+      "teach": [
+        "Active listening starts with actually attending — putting down the phone, facing the person, not doing something else at the same time. It sounds obvious, and it's routinely skipped anyway.",
+        "Appearing to listen — nodding, making eye contact — while mentally elsewhere: distracted, or already composing what to say next. The other person can usually tell, even when the outward signs look right.",
+        "This isn't about dramatic gestures of attentiveness — it's about the basic, unglamorous discipline of actually directing your attention to what's being said, for the length of time it takes to be said."
+      ],
+      "example": "A friend starts telling you about a hard day while you're half-scrolling your phone, nodding along. Even if you catch most of the words, you miss the parts that would have told you how to actually respond well — and they usually notice the half-attention anyway.",
+      "practicePrompts": [
+        "Think of a recent conversation where you were only half-listening.",
+        "Identify what pulled your attention away.",
+        "Consider what fully attending would have actually required — not more effort, just removing the distraction."
+      ],
+      "apply": "In your next real conversation, remove the obvious distraction (phone down, other task paused) before the other person starts speaking, not partway through.",
+      "reflect": "Think of a time you noticed someone wasn't really listening to you, even though they looked like they were. What gave it away?",
+      "contentVersion": 1
+    },
+    {
+      "id": "behavioural-les-21",
+      "trackId": "behavioural",
+      "moduleId": "behavioural-mod-5",
+      "sequence": 21,
+      "title": "Saying Back What You Heard",
+      "objectives": [
+        "Paraphrase what someone said to confirm understanding before responding with your own view."
+      ],
+      "concepts": [
+        "paraphrasing_and_reflecting"
+      ],
+      "prerequisites": [
+        "behavioural-les-20"
+      ],
+      "interactiveItemIds": [
+        "i.lis.para.a",
+        "i.lis.para.b",
+        "i.lis.para.c",
+        "i.lis.para.words"
+      ],
+      "masteryItemIds": [
+        "i.lis.para.a",
+        "i.lis.para.b"
+      ],
+      "explanationBackItemId": "i.lis.para.words",
+      "teach": [
+        "Paraphrasing is restating what you heard, in your own words, before responding with your own view — \"so what you're saying is...\" It confirms you actually understood, and shows the other person they were heard.",
+        "Skipping straight to your own response or opinion without confirming understanding first. It's easy to respond to what you assumed someone meant, rather than what they actually said.",
+        "A good paraphrase isn't a word-for-word repeat — it's a genuine attempt to capture the meaning, which also makes it easy for the other person to correct you if you got it wrong."
+      ],
+      "example": "A colleague describes a frustrating situation with a client. Before offering advice, saying \"so it sounds like the real issue is the client keeps changing requirements after sign-off, not the requirements themselves\" confirms the actual understanding — and gives the colleague a chance to correct it if that's not quite right.",
+      "practicePrompts": [
+        "Think of a recent conversation where you jumped straight to a response.",
+        "Draft what a paraphrase would have sounded like before that response.",
+        "Notice whether your assumed understanding matches what a careful paraphrase would have captured."
+      ],
+      "apply": "In your next conversation about something that matters, paraphrase what you heard before offering your own view, and notice if it gets corrected.",
+      "reflect": "Think of a time someone responded to something you didn't actually say. What would a paraphrase have caught before they responded?",
+      "contentVersion": 1
+    },
+    {
+      "id": "behavioural-les-22",
+      "trackId": "behavioural",
+      "moduleId": "behavioural-mod-5",
+      "sequence": 22,
+      "title": "Questions That Actually Open Things Up",
+      "objectives": [
+        "Ask open questions that genuinely invite the other person's view, rather than leading questions that steer toward a particular answer."
+      ],
+      "concepts": [
+        "open_vs_leading_questions"
+      ],
+      "prerequisites": [
+        "behavioural-les-21"
+      ],
+      "interactiveItemIds": [
+        "i.lis.q.a",
+        "i.lis.q.b",
+        "i.lis.q.c",
+        "i.lis.q.words"
+      ],
+      "masteryItemIds": [
+        "i.lis.q.a",
+        "i.lis.q.b"
+      ],
+      "explanationBackItemId": "i.lis.q.words",
+      "teach": [
+        "An open question genuinely invites the other person's own answer — \"what did you think of it?\" A leading question presupposes or steers toward a particular answer — \"don't you think it went badly?\" already contains the expected response.",
+        "Asking a leading question while believing it's a genuine, open one. Leading questions often don't feel leading from the inside — they feel like obviously reasonable framings.",
+        "The test is whether the question would sound just as natural with the opposite answer implied. \"What did you think?\" passes; \"wasn't that a disaster?\" doesn't."
+      ],
+      "example": "\"Don't you think we should just cancel the project?\" presupposes an answer and makes genuine disagreement harder to voice. \"What do you think we should do about the project?\" genuinely opens space for an answer that might be completely different from what was expected.",
+      "practicePrompts": [
+        "Think of a question you've recently asked someone.",
+        "Check whether it presupposed a particular answer.",
+        "Rewrite it as a genuinely open version."
+      ],
+      "apply": "Before asking an important question, check it for the leading-question test: would it sound equally natural with the opposite answer implied?",
+      "reflect": "Think of a time someone asked you a leading question that made it hard to give your real answer. What would an open version have sounded like?",
+      "contentVersion": 1
+    },
+    {
+      "id": "behavioural-les-23",
+      "trackId": "behavioural",
+      "moduleId": "behavioural-mod-5",
+      "sequence": 23,
+      "title": "Listening to Understand, Not to Respond",
+      "objectives": [
+        "Notice and resist formulating your reply while someone is still speaking, so you're actually taking in what they're saying."
+      ],
+      "concepts": [
+        "listening_to_understand_vs_respond"
+      ],
+      "prerequisites": [
+        "behavioural-les-22"
+      ],
+      "interactiveItemIds": [
+        "i.lis.urv.a",
+        "i.lis.urv.b",
+        "i.lis.urv.c",
+        "i.lis.urv.words"
+      ],
+      "masteryItemIds": [
+        "i.lis.urv.a",
+        "i.lis.urv.b"
+      ],
+      "explanationBackItemId": "i.lis.urv.words",
+      "teach": [
+        "It's easy to spend someone else's talking time drafting your own reply — planning what to say next, waiting for a pause to jump in — rather than actually processing what they're saying as they say it.",
+        "Not noticing this is happening. It feels like listening from the inside, since attention is still technically directed at the other person, but the processing is going toward constructing a response, not toward understanding.",
+        "The fix isn't complicated: notice when your attention has shifted to planning a reply, and bring it back to simply taking in what's being said, trusting that a response will come once they've actually finished."
+      ],
+      "example": "A friend is explaining why they're upset about something, and halfway through, you've already started composing your defence of the thing they're upset about — so you miss the second half of what they actually said, including the part that might have changed your response entirely.",
+      "practicePrompts": [
+        "Think of a recent conversation where you noticed yourself planning a reply mid-sentence.",
+        "Consider what you might have missed in the rest of what they said.",
+        "Practice noticing the shift to reply-planning the next time it happens."
+      ],
+      "apply": "In your next real conversation, notice the moment your attention shifts to planning a reply, and deliberately bring it back to listening until they've finished.",
+      "reflect": "Think of a time you responded to only the first half of what someone said, because you'd started planning your reply too early. What did you miss?",
+      "contentVersion": 1
+    },
+    {
+      "id": "behavioural-les-24",
+      "trackId": "behavioural",
+      "moduleId": "behavioural-mod-5",
+      "sequence": 24,
+      "title": "Listening, Put Together",
+      "objectives": [
+        "Combine attention, paraphrasing, open questions and listening-to-understand into one real conversation."
+      ],
+      "concepts": [
+        "active_listening_mechanics",
+        "paraphrasing_and_reflecting",
+        "open_vs_leading_questions",
+        "listening_to_understand_vs_respond"
+      ],
+      "prerequisites": [
+        "behavioural-les-20",
+        "behavioural-les-21",
+        "behavioural-les-22",
+        "behavioural-les-23"
+      ],
+      "interactiveItemIds": [
+        "i.wk5.lis.chk.a",
+        "i.wk5.lis.chk.b",
+        "i.wk5.lis.chk.c",
+        "i.wk5.lis.chk.d"
+      ],
+      "masteryItemIds": [
+        "i.wk5.lis.chk.a",
+        "i.wk5.lis.chk.b",
+        "i.wk5.lis.chk.c",
+        "i.wk5.lis.chk.d"
+      ],
+      "teach": [
+        "This week built four pieces of real listening: full attention, confirming understanding through paraphrase, asking genuinely open questions, and catching yourself when you've switched to reply-planning instead of listening.",
+        "Doing one of these well while missing another in the same conversation — giving full attention but asking a leading question, or paraphrasing well but having already half-formulated a rebuttal underneath it.",
+        "All four point the same direction: toward actually taking in what the other person is saying, rather than performing the outward signs of listening while your own agenda runs underneath."
+      ],
+      "example": "A colleague raises a concern. Giving full attention (not checking your phone), you listen all the way through without drafting a rebuttal, ask \"what would help here?\" rather than \"don't you think it'll be fine?\", and paraphrase their concern back before responding — all four together, not just one.",
+      "practicePrompts": [
+        "Think of an upcoming conversation that matters.",
+        "Plan to check yourself against all four: attention, paraphrasing, open questions, listening not rebutting.",
+        "Notice afterward which one was hardest to actually do."
+      ],
+      "apply": "In your next real conversation, deliberately practise all four together: full attention, a genuine paraphrase, an open question, and catching yourself if you start reply-planning early.",
+      "reflect": "Across this week, which of the four — attention, paraphrasing, open questions, or listening-not-responding — is hardest for you personally?",
+      "contentVersion": 1
+    },
+    {
+      "id": "behavioural-les-25",
+      "trackId": "behavioural",
+      "moduleId": "behavioural-mod-6",
+      "sequence": 25,
+      "title": "Do They Want Solutions, or to Be Heard?",
+      "objectives": [
+        "Tell apart a request for solutions from a desire to be heard, and respond to which one is actually being asked for."
+      ],
+      "concepts": [
+        "venting_vs_problem_solving"
+      ],
+      "prerequisites": [
+        "behavioural-les-24"
+      ],
+      "interactiveItemIds": [
+        "i.lis.vent.a",
+        "i.lis.vent.b",
+        "i.lis.vent.c",
+        "i.lis.vent.words"
+      ],
+      "masteryItemIds": [
+        "i.lis.vent.a",
+        "i.lis.vent.b"
+      ],
+      "explanationBackItemId": "i.lis.vent.words",
+      "teach": [
+        "Someone describing a problem sometimes wants it solved, and sometimes just wants to be heard — venting, processing out loud, or simply wanting acknowledgment. Offering a solution to someone who wanted to vent can land as dismissive, even when the solution is good.",
+        "Assuming every problem described is a request to solve it. Jumping straight to fixes, unasked, can cut off the part of the conversation where the person actually processes what happened.",
+        "When it's unclear which is wanted, asking directly — \"do you want ideas, or do you just want to vent?\" — is simpler and more reliable than guessing from tone alone."
+      ],
+      "example": "A friend describes a frustrating interaction with a family member, in detail, with clear emotion. Jumping straight to \"here's what you should do\" can land as dismissive of the actual frustration — asking \"do you want my take, or do you just need to get this out?\" lets them tell you which they actually want.",
+      "practicePrompts": [
+        "Think of a recent time someone described a problem to you.",
+        "Consider whether they actually wanted it solved, or wanted to be heard.",
+        "Think of how you'd ask directly next time, rather than guessing."
+      ],
+      "apply": "Next time someone describes a problem, ask directly whether they want ideas or just want to be heard, rather than assuming.",
+      "reflect": "Think of a time someone offered you a solution when you really just wanted to vent. How did that land?",
+      "contentVersion": 1
+    },
+    {
+      "id": "behavioural-les-26",
+      "trackId": "behavioural",
+      "moduleId": "behavioural-mod-6",
+      "sequence": 26,
+      "title": "What's Not Being Said",
+      "objectives": [
+        "Notice omissions, hesitations, and avoided topics as information, not just the content that was explicitly said."
+      ],
+      "concepts": [
+        "listening_for_the_unsaid"
+      ],
+      "prerequisites": [
+        "behavioural-les-25"
+      ],
+      "interactiveItemIds": [
+        "i.lis.unsaid.a",
+        "i.lis.unsaid.b",
+        "i.lis.unsaid.c",
+        "i.lis.unsaid.words"
+      ],
+      "masteryItemIds": [
+        "i.lis.unsaid.a",
+        "i.lis.unsaid.b"
+      ],
+      "explanationBackItemId": "i.lis.unsaid.words",
+      "teach": [
+        "What someone doesn't mention, hesitates over, or visibly steers away from is itself information, alongside what they do say — a detailed account that skips entirely over one obvious person or moment is worth noticing.",
+        "Only tracking the content that's explicitly said, missing a conspicuous gap, hesitation, or avoided topic that's sitting right alongside it.",
+        "Noticing an omission isn't the same as knowing why it's there — it's a cue worth holding (and maybe gently asking about), not a confirmed conclusion about what's being hidden."
+      ],
+      "example": "A colleague gives a detailed account of a project's problems, mentioning every team member except one, who happens to be central to the issue. The omission is worth noticing — not as proof of a specific grievance, but as something that might be worth a gentle, direct question later.",
+      "practicePrompts": [
+        "Think of a recent detailed account someone gave you.",
+        "Consider what was noticeably absent from it.",
+        "Think of how you might gently ask about an omission without assuming what it means."
+      ],
+      "apply": "In your next conversation, notice not just what's said but what's conspicuously left out, hesitated over, or avoided.",
+      "reflect": "Think of a time you later learned something important that someone had clearly avoided mentioning. Was there a cue you missed at the time?",
+      "contentVersion": 1
+    },
+    {
+      "id": "behavioural-les-27",
+      "trackId": "behavioural",
+      "moduleId": "behavioural-mod-6",
+      "sequence": 27,
+      "title": "Ask, Don't Assume",
+      "objectives": [
+        "Ask a clarifying question when something is unclear, rather than filling the gap with an assumption."
+      ],
+      "concepts": [
+        "clarifying_before_assuming"
+      ],
+      "prerequisites": [
+        "behavioural-les-26"
+      ],
+      "interactiveItemIds": [
+        "i.lis.clar.a",
+        "i.lis.clar.b",
+        "i.lis.clar.c",
+        "i.lis.clar.words"
+      ],
+      "masteryItemIds": [
+        "i.lis.clar.a",
+        "i.lis.clar.b"
+      ],
+      "explanationBackItemId": "i.lis.clar.words",
+      "teach": [
+        "When something someone says is genuinely unclear, a direct clarifying question is almost always cheaper and more reliable than filling the gap with an assumption and acting on it.",
+        "Filling an unclear point with whatever explanation comes to mind first, then treating that filled-in version as if it were actually said.",
+        "Clarifying questions don't need to be elaborate — \"what do you mean by that?\" or \"can you say more?\" usually does the job, and signals genuine engagement rather than impatience."
+      ],
+      "example": "A colleague says a deadline \"might be tight.\" Assuming this means \"probably fine\" versus assuming it means \"likely to slip\" are both guesses — asking \"tight as in we might miss it, or tight as in it'll be close but doable?\" actually finds out, rather than planning around an assumption either way.",
+      "practicePrompts": [
+        "Think of a recent unclear statement someone made to you.",
+        "Notice what assumption you filled the gap with.",
+        "Draft the clarifying question you could have asked instead."
+      ],
+      "apply": "Next time something someone says is genuinely unclear, ask a direct clarifying question before acting on an assumption.",
+      "reflect": "Think of a time an assumption you filled an unclear gap with turned out to be wrong. What would asking have avoided?",
+      "contentVersion": 1
+    },
+    {
+      "id": "behavioural-les-28",
+      "trackId": "behavioural",
+      "moduleId": "behavioural-mod-6",
+      "sequence": 28,
+      "title": "Listening Across a Different Style",
+      "objectives": [
+        "Adjust how you listen for someone whose communication style or background genuinely differs from your own, rather than assuming your own style is the default."
+      ],
+      "concepts": [
+        "listening_across_difference"
+      ],
+      "prerequisites": [
+        "behavioural-les-27"
+      ],
+      "interactiveItemIds": [
+        "i.lis.diff.a",
+        "i.lis.diff.b",
+        "i.lis.diff.c",
+        "i.lis.diff.words"
+      ],
+      "masteryItemIds": [
+        "i.lis.diff.a",
+        "i.lis.diff.b"
+      ],
+      "explanationBackItemId": "i.lis.diff.words",
+      "teach": [
+        "People genuinely differ in communication style — some are direct, some indirect; some think out loud, some process silently before speaking; norms around pace, volume, and directness vary across backgrounds and cultures too.",
+        "Listening and interpreting everyone through your own default style, without adjusting — reading someone's indirectness as evasiveness, or someone's silence as disengagement, when it's simply a different normal way of communicating.",
+        "Adjusting doesn't mean guessing at every possible cultural difference in advance — it means staying aware that your own style isn't the universal baseline, and being willing to ask or notice when someone's pattern genuinely differs from yours."
+      ],
+      "example": "A team member who processes thoughts silently before speaking takes longer pauses in discussions than a colleague who thinks out loud. Reading the pause as disengagement or lack of a view, rather than simply a different processing style, risks cutting off a real contribution before it's had time to form.",
+      "practicePrompts": [
+        "Think of someone whose communication style genuinely differs from your own.",
+        "Consider a time you may have misread their style through your own default lens.",
+        "Think of what adjusting your listening for them might actually look like."
+      ],
+      "apply": "With someone whose communication style differs from yours, consciously adjust your listening — more patience for pauses, more directness in checking understanding — rather than defaulting to your own norm.",
+      "reflect": "Think of a time your own communication style was misread by someone who assumed their style was the default. What would you have wanted them to understand instead?",
+      "contentVersion": 1
+    },
+    {
+      "id": "behavioural-les-29",
+      "trackId": "behavioural",
+      "moduleId": "behavioural-mod-6",
+      "sequence": 29,
+      "title": "Responding Well",
+      "objectives": [
+        "Combine venting-vs-solving, listening for the unsaid, clarifying over assuming, and listening across difference into one complete response to a real conversation.",
+        "Describe a real conversation, using everything covered across both listening modules."
+      ],
+      "concepts": [
+        "venting_vs_problem_solving",
+        "listening_for_the_unsaid",
+        "clarifying_before_assuming",
+        "listening_across_difference"
+      ],
+      "prerequisites": [
+        "behavioural-les-25",
+        "behavioural-les-26",
+        "behavioural-les-27",
+        "behavioural-les-28"
+      ],
+      "interactiveItemIds": [
+        "i.wk6.lis.chk.a",
+        "i.wk6.lis.chk.b",
+        "i.wk6.lis.chk.c",
+        "i.wk6.lis.chk.d",
+        "i.lis.words"
+      ],
+      "masteryItemIds": [
+        "i.wk6.lis.chk.a",
+        "i.wk6.lis.chk.b",
+        "i.wk6.lis.chk.c",
+        "i.wk6.lis.chk.d"
+      ],
+      "explanationBackItemId": "i.lis.words",
+      "teach": [
+        "This week covered telling venting from problem-solving, noticing what's unsaid, asking instead of assuming, and adjusting for a different communication style. Together with last week's attention, paraphrasing, open questions and listening-not-responding, that's eight habits for genuinely hearing someone.",
+        "Treating good listening as a performance — the right nods, the right pauses — rather than the actual, quieter discipline all eight of these ideas point toward: attending fully, confirming understanding, noticing gaps, asking rather than guessing, and adjusting for real differences in how people communicate.",
+        "This closes out both listening modules. The next module, on feedback, assumes this kind of listening as its foundation — feedback given or received without it tends to go badly."
+      ],
+      "example": "A friend from a different cultural background describes a work conflict indirectly, with noticeable pauses and no direct mention of one colleague. Reading this well means adjusting for their style (not misreading indirectness as evasiveness), noticing the omission without assuming its meaning, asking a clarifying question about what they actually want from the conversation (venting or advice), rather than guessing from tone alone.",
+      "practicePrompts": [
+        "Think of a real, upcoming or recent conversation.",
+        "Check it against all eight ideas from this week and last.",
+        "Consider what you'd do differently with all eight in mind."
+      ],
+      "apply": "In your next real conversation that matters, deliberately bring all eight listening ideas to it, not just the ones that come naturally.",
+      "reflect": "In your own words, describe a real recent conversation, and check it against as many of these eight listening ideas as actually apply.",
+      "contentVersion": 1
     }
   ],
   "concepts": [
@@ -1003,6 +1458,54 @@
       "trackId": "behavioural",
       "moduleId": "behavioural-mod-4",
       "label": "Verifying an inferred read instead of acting on it blind"
+    },
+    {
+      "id": "active_listening_mechanics",
+      "trackId": "behavioural",
+      "moduleId": "behavioural-mod-5",
+      "label": "Giving someone your actual, undivided attention"
+    },
+    {
+      "id": "paraphrasing_and_reflecting",
+      "trackId": "behavioural",
+      "moduleId": "behavioural-mod-5",
+      "label": "Restating what you heard to confirm understanding"
+    },
+    {
+      "id": "open_vs_leading_questions",
+      "trackId": "behavioural",
+      "moduleId": "behavioural-mod-5",
+      "label": "Questions that genuinely open things up, versus ones that steer"
+    },
+    {
+      "id": "listening_to_understand_vs_respond",
+      "trackId": "behavioural",
+      "moduleId": "behavioural-mod-5",
+      "label": "Taking in what's said, instead of drafting your reply while they talk"
+    },
+    {
+      "id": "venting_vs_problem_solving",
+      "trackId": "behavioural",
+      "moduleId": "behavioural-mod-6",
+      "label": "Telling whether someone wants to be heard or wants solutions"
+    },
+    {
+      "id": "listening_for_the_unsaid",
+      "trackId": "behavioural",
+      "moduleId": "behavioural-mod-6",
+      "label": "Noticing omissions, hesitations, and avoided topics"
+    },
+    {
+      "id": "clarifying_before_assuming",
+      "trackId": "behavioural",
+      "moduleId": "behavioural-mod-6",
+      "label": "Asking a clarifying question instead of filling a gap with assumption"
+    },
+    {
+      "id": "listening_across_difference",
+      "trackId": "behavioural",
+      "moduleId": "behavioural-mod-6",
+      "label": "Adjusting how you listen for someone whose style genuinely differs from yours"
     }
   ],
   "misconceptions": [
@@ -1113,6 +1616,54 @@
       "trackId": "behavioural",
       "label": "An inferred read acted on without checking",
       "description": "Acting on an inferred read of someone's internal state as if it were confirmed, without ever checking it against reality through a direct, low-pressure question."
+    },
+    {
+      "id": "behavioural-half_listening",
+      "trackId": "behavioural",
+      "label": "Half-listening",
+      "description": "Appearing to listen while mentally elsewhere — distracted, or already planning what to say next — rather than actually taking in what's being said."
+    },
+    {
+      "id": "behavioural-paraphrase_skipped",
+      "trackId": "behavioural",
+      "label": "Paraphrasing skipped",
+      "description": "Moving straight to your own response or opinion without first confirming you've understood what the other person actually said."
+    },
+    {
+      "id": "behavioural-leading_question_used",
+      "trackId": "behavioural",
+      "label": "A leading question used instead of an open one",
+      "description": "Asking a question that presupposes or steers toward a particular answer, rather than one that genuinely opens space for the other person's actual view."
+    },
+    {
+      "id": "behavioural-listening_to_rebut",
+      "trackId": "behavioural",
+      "label": "Listening to rebut, not to understand",
+      "description": "Mentally formulating a counter-argument or response while the other person is still speaking, instead of actually taking in what they're saying."
+    },
+    {
+      "id": "behavioural-solutions_offered_unasked",
+      "trackId": "behavioural",
+      "label": "Solutions offered when not asked for",
+      "description": "Jumping to solve a problem when the person wanted to be heard, not have the problem fixed for them."
+    },
+    {
+      "id": "behavioural-unsaid_missed",
+      "trackId": "behavioural",
+      "label": "What's unsaid missed",
+      "description": "Focusing only on what's explicitly said, missing hesitations, omissions, or a topic being noticeably avoided."
+    },
+    {
+      "id": "behavioural-gap_filled_with_assumption",
+      "trackId": "behavioural",
+      "label": "A gap filled with assumption instead of a question",
+      "description": "Filling a genuine gap in understanding with an assumption, rather than simply asking a clarifying question."
+    },
+    {
+      "id": "behavioural-own_style_assumed_universal",
+      "trackId": "behavioural",
+      "label": "Own communication style assumed universal",
+      "description": "Listening and interpreting through your own default communication style or norms, without adjusting for someone whose style genuinely differs."
     }
   ]
 }

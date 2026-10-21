@@ -1,0 +1,1024 @@
+[
+  {
+    "id": "i.lis.att.a",
+    "concept": "active_listening_mechanics",
+    "scenario": "A colleague starts explaining a problem while you continue typing an email, glancing up occasionally and nodding.",
+    "type": "reason_choice",
+    "prompt": "What's missing here?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Actual, undivided attention — nodding while continuing another task gives the appearance of listening without the substance.",
+        "conceptTag": "active_listening_mechanics"
+      },
+      {
+        "id": "B",
+        "text": "Nothing — nodding and occasional glances are sufficient signs of attentive listening.",
+        "misconception": "behavioural-half_listening"
+      },
+      {
+        "id": "C",
+        "text": "Nothing is missing as long as you can repeat back the last sentence they said.",
+        "misconception": "behavioural-half_listening"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "The outward signs of listening (nodding, glancing up) don't substitute for actually directing attention to what's being said — continuing another task means real content is likely being missed."
+  },
+  {
+    "id": "i.lis.att.b",
+    "concept": "active_listening_mechanics",
+    "scenario": "Before a friend starts telling you something that's clearly on their mind, you put your phone face-down and turn to face them.",
+    "type": "reason_choice",
+    "prompt": "What does this small action demonstrate?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A deliberate removal of an obvious distraction before the conversation starts, not a dramatic gesture but a basic condition for actually attending.",
+        "conceptTag": "active_listening_mechanics"
+      },
+      {
+        "id": "B",
+        "text": "An unnecessary, performative gesture that doesn't actually affect how well you listen.",
+        "misconception": "behavioural-half_listening"
+      },
+      {
+        "id": "C",
+        "text": "Nothing useful, since real attentiveness has nothing to do with physical setup.",
+        "misconception": "behavioural-half_listening"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Removing an obvious distraction before the conversation starts is a basic, unglamorous but genuinely necessary condition for actually directing attention, not just a performative gesture."
+  },
+  {
+    "id": "i.lis.att.c",
+    "concept": "active_listening_mechanics",
+    "scenario": "During a meeting, someone appears to make consistent eye contact with the speaker but is mentally planning their grocery list.",
+    "type": "reason_choice",
+    "prompt": "What does this show about outward signs of attentiveness?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Outward signs like eye contact don't guarantee actual attention — the substance of listening is about where the mind is actually directed, not just the visible posture.",
+        "conceptTag": "active_listening_mechanics"
+      },
+      {
+        "id": "B",
+        "text": "Consistent eye contact is itself sufficient proof of genuine attention, regardless of internal focus.",
+        "misconception": "behavioural-half_listening"
+      },
+      {
+        "id": "C",
+        "text": "This is impossible — eye contact and mental distraction can't coexist.",
+        "misconception": "behavioural-half_listening"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Visible signs of attention and actual mental engagement are separable — the outward posture of listening doesn't guarantee the substance of it."
+  },
+  {
+    "id": "i.lis.para.a",
+    "concept": "paraphrasing_and_reflecting",
+    "scenario": "A friend describes feeling overwhelmed by a long list of competing deadlines at work. You respond immediately with a list of productivity tips.",
+    "type": "reason_choice",
+    "prompt": "What's missing before the response?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A paraphrase confirming you understood what's actually overwhelming them, before jumping to suggestions.",
+        "conceptTag": "paraphrasing_and_reflecting"
+      },
+      {
+        "id": "B",
+        "text": "Nothing — responding immediately with helpful suggestions is always the right move.",
+        "misconception": "behavioural-paraphrase_skipped"
+      },
+      {
+        "id": "C",
+        "text": "A longer, more detailed list of additional tips.",
+        "misconception": "behavioural-paraphrase_skipped"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Responding immediately, without confirming understanding first, risks addressing a problem that isn't quite what was actually described — a brief paraphrase catches that before offering a response."
+  },
+  {
+    "id": "i.lis.para.b",
+    "concept": "paraphrasing_and_reflecting",
+    "scenario": "\"So if I'm hearing you right, the real frustration is that the requirements keep changing after you've already signed off — not the requirements themselves?\" is said in response to a colleague's complaint.",
+    "type": "reason_choice",
+    "prompt": "What does this demonstrate?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A genuine paraphrase that captures the meaning in different words, giving the colleague a chance to confirm or correct it.",
+        "conceptTag": "paraphrasing_and_reflecting"
+      },
+      {
+        "id": "B",
+        "text": "An unnecessary repetition that doesn't add anything to the conversation.",
+        "misconception": "behavioural-paraphrase_skipped"
+      },
+      {
+        "id": "C",
+        "text": "An attempt to put words in the colleague's mouth rather than listen.",
+        "misconception": "behavioural-paraphrase_skipped"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "A genuine paraphrase, offered as a check rather than a declaration, confirms understanding and gives the other person room to correct it — exactly what makes it useful rather than empty repetition."
+  },
+  {
+    "id": "i.lis.para.c",
+    "concept": "paraphrasing_and_reflecting",
+    "scenario": "After a long explanation from a team member, you simply say \"got it, moving on\" and begin discussing next steps.",
+    "type": "reason_choice",
+    "prompt": "What's the risk here?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Without a genuine paraphrase, there's no actual confirmation that the understanding behind \"got it\" matches what the team member meant.",
+        "conceptTag": "paraphrasing_and_reflecting"
+      },
+      {
+        "id": "B",
+        "text": "No risk — saying \"got it\" is functionally equivalent to a paraphrase.",
+        "misconception": "behavioural-paraphrase_skipped"
+      },
+      {
+        "id": "C",
+        "text": "The only risk is that it might seem rushed, unrelated to actual understanding.",
+        "misconception": "behavioural-paraphrase_skipped"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "\"Got it\" confirms nothing about what was actually understood — a real paraphrase, restating the content in your own words, is what actually tests and confirms understanding."
+  },
+  {
+    "id": "i.lis.q.a",
+    "concept": "open_vs_leading_questions",
+    "scenario": "\"Don't you think we should just scrap this whole approach?\" is asked in a team discussion.",
+    "type": "reason_choice",
+    "prompt": "What's the issue with this question?",
+    "options": [
+      {
+        "id": "A",
+        "text": "It's a leading question — it presupposes the answer (scrapping the approach) rather than genuinely opening space for a different view.",
+        "conceptTag": "open_vs_leading_questions"
+      },
+      {
+        "id": "B",
+        "text": "There's no issue — it's a perfectly open invitation for the team's honest opinion.",
+        "misconception": "behavioural-leading_question_used"
+      },
+      {
+        "id": "C",
+        "text": "The issue is only that it's phrased as a question rather than a statement.",
+        "misconception": "behavioural-leading_question_used"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Framing a question with \"don't you think...\" builds in the expected answer, making genuine disagreement harder to voice — the defining feature of a leading, rather than open, question."
+  },
+  {
+    "id": "i.lis.q.b",
+    "concept": "open_vs_leading_questions",
+    "scenario": "\"What's your honest take on this approach?\" is asked in the same team discussion.",
+    "type": "reason_choice",
+    "prompt": "How does this compare to a leading version of the same question?",
+    "options": [
+      {
+        "id": "A",
+        "text": "This is genuinely open — it would sound equally natural whether the expected answer was positive or negative, unlike a version that presupposes one.",
+        "conceptTag": "open_vs_leading_questions"
+      },
+      {
+        "id": "B",
+        "text": "It's still leading, since any question about an approach implies some expected answer.",
+        "misconception": "behavioural-leading_question_used"
+      },
+      {
+        "id": "C",
+        "text": "It's less useful than a leading question, since it doesn't guide the conversation toward a decision.",
+        "misconception": "behavioural-leading_question_used"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "The test for an open question is whether it would sound equally natural with either answer — this one passes, unlike a version that already contains the expected response."
+  },
+  {
+    "id": "i.lis.q.c",
+    "concept": "open_vs_leading_questions",
+    "scenario": "A manager asks a team member, \"you're on board with this plan, right?\" rather than \"what do you think of this plan?\"",
+    "type": "reason_choice",
+    "prompt": "What's the practical effect of the first phrasing?",
+    "options": [
+      {
+        "id": "A",
+        "text": "It makes it harder for the team member to voice genuine disagreement, since the question already presupposes agreement.",
+        "conceptTag": "open_vs_leading_questions"
+      },
+      {
+        "id": "B",
+        "text": "No practical effect — both phrasings are equally likely to surface honest disagreement.",
+        "misconception": "behavioural-leading_question_used"
+      },
+      {
+        "id": "C",
+        "text": "It's a more efficient way to get agreement and should be preferred for that reason.",
+        "misconception": "behavioural-leading_question_used"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "A question that already presupposes agreement makes genuine disagreement socially harder to voice — the open version genuinely leaves room for either answer."
+  },
+  {
+    "id": "i.lis.urv.a",
+    "concept": "listening_to_understand_vs_respond",
+    "scenario": "While a friend is still explaining what upset them, you notice you've already started mentally drafting your defence of the thing they're upset about.",
+    "type": "reason_choice",
+    "prompt": "What's happening here?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Listening has shifted from understanding to reply-planning, which risks missing the rest of what they're actually saying.",
+        "conceptTag": "listening_to_understand_vs_respond"
+      },
+      {
+        "id": "B",
+        "text": "This is normal and doesn't affect how well the rest of the conversation is understood.",
+        "misconception": "behavioural-listening_to_rebut"
+      },
+      {
+        "id": "C",
+        "text": "Planning a response while someone talks is actually a sign of more engaged listening, since it shows active thinking.",
+        "misconception": "behavioural-listening_to_rebut"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Once attention shifts to constructing a response, it's no longer fully directed at taking in what's being said — the rest of the explanation risks being missed, including parts that might change the response."
+  },
+  {
+    "id": "i.lis.urv.b",
+    "concept": "listening_to_understand_vs_respond",
+    "scenario": "Noticing that your attention has shifted to planning a reply, you consciously bring it back to just listening, trusting a response will come once the other person finishes.",
+    "type": "reason_choice",
+    "prompt": "What does this demonstrate?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Catching the shift to reply-planning and deliberately returning attention to understanding, rather than letting the reply-planning continue uninterrupted.",
+        "conceptTag": "listening_to_understand_vs_respond"
+      },
+      {
+        "id": "B",
+        "text": "An unnecessary extra step that delays the response without adding value.",
+        "misconception": "behavioural-listening_to_rebut"
+      },
+      {
+        "id": "C",
+        "text": "A sign of not having a strong enough opinion to respond immediately.",
+        "misconception": "behavioural-listening_to_rebut"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Noticing and correcting the shift to reply-planning is exactly the discipline this habit requires — it's not a delay tactic, it's what keeps the rest of the explanation from being missed."
+  },
+  {
+    "id": "i.lis.urv.c",
+    "concept": "listening_to_understand_vs_respond",
+    "scenario": "In a heated discussion, someone interrupts partway through the other person's point to begin their counter-argument.",
+    "type": "reason_choice",
+    "prompt": "What does the interruption suggest about how the listening was happening?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The counter-argument was likely being formulated before the other person had finished, meaning the rest of their point was probably not fully taken in.",
+        "conceptTag": "listening_to_understand_vs_respond"
+      },
+      {
+        "id": "B",
+        "text": "Interrupting to respond quickly shows strong engagement with the conversation.",
+        "misconception": "behavioural-listening_to_rebut"
+      },
+      {
+        "id": "C",
+        "text": "The interruption has no bearing on whether the earlier part of the point was understood.",
+        "misconception": "behavioural-listening_to_rebut"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "An interruption to deliver a counter-argument is a strong sign the response was being constructed before the point was finished — which usually means part of it was missed, not fully engaged with."
+  },
+  {
+    "id": "i.lis.vent.a",
+    "concept": "venting_vs_problem_solving",
+    "scenario": "A friend describes a frustrating day in detail, with clear emotion, without asking for advice at any point.",
+    "type": "reason_choice",
+    "prompt": "What's the most useful first response?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Asking directly whether they want ideas or just want to be heard, rather than assuming either.",
+        "conceptTag": "venting_vs_problem_solving"
+      },
+      {
+        "id": "B",
+        "text": "Immediately offering a list of ways to fix the frustrating situation.",
+        "misconception": "behavioural-solutions_offered_unasked"
+      },
+      {
+        "id": "C",
+        "text": "Changing the subject, since no request for help was made.",
+        "misconception": "behavioural-solutions_offered_unasked"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Without a clear signal either way, asking directly is more reliable than guessing — jumping straight to solutions when venting was wanted can land as dismissive."
+  },
+  {
+    "id": "i.lis.vent.b",
+    "concept": "venting_vs_problem_solving",
+    "scenario": "A colleague explicitly says, \"I just need to vent for a second, I don't need advice,\" before describing a frustrating situation.",
+    "type": "reason_choice",
+    "prompt": "What's the appropriate response?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Listening and acknowledging, without offering solutions, since that's explicitly what was requested.",
+        "conceptTag": "venting_vs_problem_solving"
+      },
+      {
+        "id": "B",
+        "text": "Offering solutions anyway, since they're likely to be genuinely helpful regardless of the stated preference.",
+        "misconception": "behavioural-solutions_offered_unasked"
+      },
+      {
+        "id": "C",
+        "text": "Asking again whether they're sure they don't want advice.",
+        "misconception": "behavioural-solutions_offered_unasked"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "When someone explicitly states what kind of response they want, respecting that is the appropriate response — offering solutions anyway overrides a clearly stated preference."
+  },
+  {
+    "id": "i.lis.vent.c",
+    "concept": "venting_vs_problem_solving",
+    "scenario": "A team member describes a recurring technical problem and ends with, \"what do you think I should try next?\"",
+    "type": "reason_choice",
+    "prompt": "What does this ending suggest?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A direct request for solutions this time — unlike pure venting, the explicit question signals solutions are actually wanted.",
+        "conceptTag": "venting_vs_problem_solving"
+      },
+      {
+        "id": "B",
+        "text": "The team member should still be asked whether they want to vent instead, regardless of the explicit question.",
+        "misconception": "behavioural-solutions_offered_unasked"
+      },
+      {
+        "id": "C",
+        "text": "Offering solutions here would be presumptuous and solutions should never be offered unprompted.",
+        "misconception": "behavioural-solutions_offered_unasked"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "An explicit request for suggestions is a clear signal, unlike an ambiguous description — responding with solutions here matches what was actually asked for."
+  },
+  {
+    "id": "i.lis.unsaid.a",
+    "concept": "listening_for_the_unsaid",
+    "scenario": "A colleague gives a detailed account of a project's problems, mentioning every team member involved except one, who happens to be central to the project.",
+    "type": "reason_choice",
+    "prompt": "What's worth noticing here?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The conspicuous omission of that one person is worth noting as information, alongside everything that was actually said.",
+        "conceptTag": "listening_for_the_unsaid"
+      },
+      {
+        "id": "B",
+        "text": "Nothing — only what's explicitly mentioned carries any information.",
+        "misconception": "behavioural-unsaid_missed"
+      },
+      {
+        "id": "C",
+        "text": "The omission definitely means the colleague is avoiding blame for that person's mistakes.",
+        "misconception": "behavioural-unsaid_missed"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "A conspicuous gap in an otherwise detailed account is worth noticing as information — not proof of a specific reason, but a genuine cue alongside what was explicitly said."
+  },
+  {
+    "id": "i.lis.unsaid.b",
+    "concept": "listening_for_the_unsaid",
+    "scenario": "Someone hesitates noticeably and changes the subject slightly whenever a particular topic comes close to being discussed.",
+    "type": "reason_choice",
+    "prompt": "What should be done with this pattern?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Note it as a genuine signal worth holding, and perhaps gently asking about later, rather than ignoring it or assuming a specific reason.",
+        "conceptTag": "listening_for_the_unsaid"
+      },
+      {
+        "id": "B",
+        "text": "Ignore it entirely, since only directly stated content matters.",
+        "misconception": "behavioural-unsaid_missed"
+      },
+      {
+        "id": "C",
+        "text": "Push directly and repeatedly on the avoided topic until they address it.",
+        "misconception": "behavioural-unsaid_missed"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "A noticed pattern of hesitation and avoidance is real information worth holding — the careful response is noting it (and maybe gently asking later), not ignoring it or forcing it."
+  },
+  {
+    "id": "i.lis.unsaid.c",
+    "concept": "listening_for_the_unsaid",
+    "scenario": "In a team retrospective, one person who usually comments on process issues says nothing at all during that part of the discussion.",
+    "type": "reason_choice",
+    "prompt": "What does the silence suggest?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A deviation from their normal pattern worth noticing, alongside everything explicitly discussed — though not yet a confirmed reason for it.",
+        "conceptTag": "listening_for_the_unsaid"
+      },
+      {
+        "id": "B",
+        "text": "Nothing worth noting, since silence carries no information in a group discussion.",
+        "misconception": "behavioural-unsaid_missed"
+      },
+      {
+        "id": "C",
+        "text": "Clear proof they have no opinion on the process issues this time.",
+        "misconception": "behavioural-unsaid_missed"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "A deviation from someone's usual pattern of participation is worth noticing as a real signal — without yet concluding a specific reason for it."
+  },
+  {
+    "id": "i.lis.clar.a",
+    "concept": "clarifying_before_assuming",
+    "scenario": "A colleague says a deadline \"might be tight.\" You proceed assuming this means \"probably fine either way.\"",
+    "type": "reason_choice",
+    "prompt": "What would have been more reliable than this assumption?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Asking directly what \"tight\" means here — likely to miss, or close but doable — rather than filling the ambiguity with a guess.",
+        "conceptTag": "clarifying_before_assuming"
+      },
+      {
+        "id": "B",
+        "text": "The assumption was reasonable and didn't need checking.",
+        "misconception": "behavioural-gap_filled_with_assumption"
+      },
+      {
+        "id": "C",
+        "text": "Assuming the opposite, more pessimistic interpretation instead.",
+        "misconception": "behavioural-gap_filled_with_assumption"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "A genuinely ambiguous statement is better resolved by asking directly than by filling it with any particular assumption, optimistic or pessimistic."
+  },
+  {
+    "id": "i.lis.clar.b",
+    "concept": "clarifying_before_assuming",
+    "scenario": "\"When you say you're 'not sure about this plan,' do you mean you have specific concerns, or just a general hesitation?\" is asked in response to an ambiguous comment.",
+    "type": "reason_choice",
+    "prompt": "What does this demonstrate?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A direct clarifying question that resolves the ambiguity, rather than guessing at which meaning was intended.",
+        "conceptTag": "clarifying_before_assuming"
+      },
+      {
+        "id": "B",
+        "text": "An overly demanding response to a simple comment.",
+        "misconception": "behavioural-gap_filled_with_assumption"
+      },
+      {
+        "id": "C",
+        "text": "An unnecessary step, since \"not sure\" clearly means the same thing regardless of context.",
+        "misconception": "behavioural-gap_filled_with_assumption"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "A direct, specific clarifying question resolves a genuinely ambiguous phrase far more reliably than assuming one particular meaning — \"not sure\" could mean several different things."
+  },
+  {
+    "id": "i.lis.clar.c",
+    "concept": "clarifying_before_assuming",
+    "scenario": "A manager receives a one-word reply (\"sure\") to a proposed change and proceeds assuming full enthusiasm.",
+    "type": "reason_choice",
+    "prompt": "What's the risk in this assumption?",
+    "options": [
+      {
+        "id": "A",
+        "text": "\"Sure\" is ambiguous — it could mean genuine enthusiasm or reluctant acceptance, and assuming the more convenient interpretation risks missing real hesitation.",
+        "conceptTag": "clarifying_before_assuming"
+      },
+      {
+        "id": "B",
+        "text": "No risk — \"sure\" always means genuine enthusiasm regardless of context.",
+        "misconception": "behavioural-gap_filled_with_assumption"
+      },
+      {
+        "id": "C",
+        "text": "The only risk is that it takes more time to ask a follow-up question.",
+        "misconception": "behavioural-gap_filled_with_assumption"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "A short, ambiguous reply like \"sure\" genuinely could carry different meanings — assuming the more convenient interpretation risks missing real reluctance that a brief follow-up question would have caught."
+  },
+  {
+    "id": "i.lis.diff.a",
+    "concept": "listening_across_difference",
+    "scenario": "A team member who processes thoughts silently before speaking takes noticeably longer pauses in discussions than colleagues who think out loud.",
+    "type": "reason_choice",
+    "prompt": "How should the pauses be read?",
+    "options": [
+      {
+        "id": "A",
+        "text": "As a different, genuine processing style, not disengagement or lack of a view — worth adjusting for, like giving more time before moving on.",
+        "conceptTag": "listening_across_difference"
+      },
+      {
+        "id": "B",
+        "text": "As a sign the team member isn't engaged with the discussion.",
+        "misconception": "behavioural-own_style_assumed_universal"
+      },
+      {
+        "id": "C",
+        "text": "As a sign the team member should be asked to think faster to match everyone else's pace.",
+        "misconception": "behavioural-own_style_assumed_universal"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "A longer pause before speaking can simply be a different, genuine processing style — reading it through the lens of a faster-paced default style risks cutting off a real contribution."
+  },
+  {
+    "id": "i.lis.diff.b",
+    "concept": "listening_across_difference",
+    "scenario": "A colleague from a culture that communicates indirectly expresses disagreement through a softened, roundabout phrasing rather than a direct statement.",
+    "type": "reason_choice",
+    "prompt": "What's the risk of reading this through a direct-communication default?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Missing that real disagreement is being expressed, because it doesn't match the phrasing a more direct style would use.",
+        "conceptTag": "listening_across_difference"
+      },
+      {
+        "id": "B",
+        "text": "No risk — indirect phrasing never actually communicates real disagreement.",
+        "misconception": "behavioural-own_style_assumed_universal"
+      },
+      {
+        "id": "C",
+        "text": "The colleague should be asked to adopt a more direct communication style going forward.",
+        "misconception": "behavioural-own_style_assumed_universal"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Reading everyone through one default communication style risks missing real content — genuine disagreement expressed indirectly is still genuine disagreement, just phrased differently."
+  },
+  {
+    "id": "i.lis.diff.c",
+    "concept": "listening_across_difference",
+    "scenario": "A manager notices that a team member from a different professional background uses much more hedged, qualified language (\"this might not be right, but...\") than colleagues who state views more assertively.",
+    "type": "reason_choice",
+    "prompt": "What's the careful read, considering communication style?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The hedged language might reflect a different communication norm rather than genuinely lower confidence in the underlying idea — worth weighing the content itself, not just the phrasing.",
+        "conceptTag": "listening_across_difference"
+      },
+      {
+        "id": "B",
+        "text": "Hedged language always indicates the underlying idea is weaker and should be weighted less.",
+        "misconception": "behavioural-own_style_assumed_universal"
+      },
+      {
+        "id": "C",
+        "text": "The team member should be coached to drop all hedging language immediately.",
+        "misconception": "behavioural-own_style_assumed_universal"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Hedged phrasing can be a stylistic norm rather than a genuine signal of low confidence — weighing the actual content of the idea, not just how assertively it's phrased, avoids under-crediting it."
+  },
+  {
+    "id": "i.wk5.lis.chk.a",
+    "concept": "active_listening_mechanics",
+    "scenario": "A friend starts describing something that's clearly bothering them. You put your phone away and face them (attention), but you ask \"you're not really that bothered by it, are you?\" partway through.",
+    "type": "reason_choice",
+    "prompt": "What's the combined issue here?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Good attention is undercut by a leading question that presupposes the answer, rather than a genuinely open one that would let them actually say how bothered they are.",
+        "conceptTag": "active_listening_mechanics"
+      },
+      {
+        "id": "B",
+        "text": "There's no issue, since giving full attention is the only thing that matters.",
+        "misconception": "behavioural-leading_question_used"
+      },
+      {
+        "id": "C",
+        "text": "The question is fine since attention was already given beforehand.",
+        "misconception": "behavioural-leading_question_used"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Full attention is necessary but not sufficient — a leading question asked with full attention still steers the conversation away from what the person might actually want to say."
+  },
+  {
+    "id": "i.wk5.lis.chk.b",
+    "concept": "paraphrasing_and_reflecting",
+    "scenario": "You paraphrase a colleague's concern well (\"so the issue is X\"), but you'd already started mentally drafting your counter-argument before they finished explaining it.",
+    "type": "reason_choice",
+    "prompt": "What does this combination suggest?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The paraphrase might be based on an incomplete understanding, since attention had shifted to rebuttal-planning before the explanation was finished.",
+        "conceptTag": "paraphrasing_and_reflecting"
+      },
+      {
+        "id": "B",
+        "text": "A good paraphrase guarantees full understanding regardless of when attention shifted to planning a response.",
+        "misconception": "behavioural-listening_to_rebut"
+      },
+      {
+        "id": "C",
+        "text": "Planning a response early and paraphrasing well are unrelated skills with no bearing on each other.",
+        "misconception": "behavioural-listening_to_rebut"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "A paraphrase built on a partial understanding (because attention shifted to rebuttal before the explanation finished) risks confidently restating something that's actually incomplete."
+  },
+  {
+    "id": "i.wk5.lis.chk.c",
+    "concept": "open_vs_leading_questions",
+    "scenario": "In a team discussion, someone asks an open question (\"what do you all think?\") but then interrupts the first response to begin arguing against it.",
+    "type": "reason_choice",
+    "prompt": "What does the interruption undercut?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The genuine openness of the question — interrupting a response to argue suggests the question wasn't actually inviting a full, considered answer.",
+        "conceptTag": "open_vs_leading_questions"
+      },
+      {
+        "id": "B",
+        "text": "Nothing — an open question remains open regardless of what happens after it's asked.",
+        "misconception": "behavioural-listening_to_rebut"
+      },
+      {
+        "id": "C",
+        "text": "The interruption is a normal and appropriate part of any open discussion.",
+        "misconception": "behavioural-listening_to_rebut"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Asking an open question and then interrupting the response undercuts the openness in practice — listening-to-understand, not just the phrasing of the question, is what makes a question genuinely open in effect."
+  },
+  {
+    "id": "i.wk5.lis.chk.d",
+    "concept": "listening_to_understand_vs_respond",
+    "scenario": "During a difficult conversation, you notice yourself starting to plan a defensive reply. You consciously bring your attention back, let the person finish, and then paraphrase what they said before responding.",
+    "type": "reason_choice",
+    "prompt": "What does this sequence demonstrate?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Catching the shift to reply-planning, returning to genuine attention, and confirming understanding through paraphrase before responding — three of this week's habits working together.",
+        "conceptTag": "listening_to_understand_vs_respond"
+      },
+      {
+        "id": "B",
+        "text": "An overly cautious approach that delays a necessary response unnecessarily.",
+        "misconception": "behavioural-listening_to_rebut"
+      },
+      {
+        "id": "C",
+        "text": "A sign of not having a clear enough opinion to respond immediately.",
+        "misconception": "behavioural-listening_to_rebut"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "This sequence is exactly the combination this week built toward — catching reply-planning, returning to attention, and paraphrasing before responding, rather than any one in isolation."
+  },
+  {
+    "id": "i.wk6.lis.chk.a",
+    "concept": "venting_vs_problem_solving",
+    "scenario": "A colleague from a culture with a more indirect communication style describes a frustrating situation without directly asking for help, pausing noticeably at one point without finishing a thought.",
+    "type": "reason_choice",
+    "prompt": "What's the combined, careful response?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Consider that the indirect style might mean a direct request for solutions won't come even if wanted (listening across difference), notice the pause as worth attention (unsaid), and ask directly whether solutions or just listening is wanted, rather than assuming either.",
+        "conceptTag": "venting_vs_problem_solving"
+      },
+      {
+        "id": "B",
+        "text": "Assume venting is wanted, since no explicit request for solutions was made.",
+        "misconception": "behavioural-solutions_offered_unasked"
+      },
+      {
+        "id": "C",
+        "text": "Assume solutions are wanted, since that's the more proactive response.",
+        "misconception": "behavioural-solutions_offered_unasked"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Communication style, an unsaid pause, and the venting/solving ambiguity all compound here — the most reliable response combines noticing all of them and asking directly, rather than guessing from any one alone."
+  },
+  {
+    "id": "i.wk6.lis.chk.b",
+    "concept": "listening_for_the_unsaid",
+    "scenario": "A team member gives a detailed update that conspicuously never mentions a delayed deliverable everyone knows about. You're deciding whether to ask about it directly or assume they forgot.",
+    "type": "reason_choice",
+    "prompt": "What's the careful combined approach?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Note the omission as worth attention, and ask a direct clarifying question about the delayed deliverable rather than filling the gap with an assumption about why it was left out.",
+        "conceptTag": "listening_for_the_unsaid"
+      },
+      {
+        "id": "B",
+        "text": "Assume they simply forgot and move on without mentioning it.",
+        "misconception": "behavioural-gap_filled_with_assumption"
+      },
+      {
+        "id": "C",
+        "text": "Assume the omission means they're hiding bad news and confront them about it.",
+        "misconception": "behavioural-gap_filled_with_assumption"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Noticing the omission and then asking directly, rather than filling the gap with any particular assumption, is the combination this module builds toward — the omission flags attention, the question resolves it."
+  },
+  {
+    "id": "i.wk6.lis.chk.c",
+    "concept": "clarifying_before_assuming",
+    "scenario": "A colleague whose communication style is normally very direct gives an unusually hedged, qualified answer (\"I'm not totally sure, but maybe...\") to a direct question.",
+    "type": "reason_choice",
+    "prompt": "What should this shift in their own style prompt?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A direct clarifying question about the hedging itself, since it's a deviation from their normal style worth asking about rather than assuming it means low confidence in the underlying idea.",
+        "conceptTag": "clarifying_before_assuming"
+      },
+      {
+        "id": "B",
+        "text": "Assuming the idea itself must be weak, since hedging always indicates low confidence.",
+        "misconception": "behavioural-own_style_assumed_universal"
+      },
+      {
+        "id": "C",
+        "text": "Ignoring the shift entirely, since style shifts never carry information.",
+        "misconception": "behavioural-unsaid_missed"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "A deviation from someone's own normal style (not a generic hedge, but THIS person being unusually hedged) is a real signal worth a direct clarifying question, rather than an assumption drawn from a generic reading of hedged language."
+  },
+  {
+    "id": "i.wk6.lis.chk.d",
+    "concept": "listening_across_difference",
+    "scenario": "A manager is listening to a team member from a different cultural background describe a workplace concern indirectly, with pauses, in a context where the manager isn't sure if solutions or just acknowledgment is wanted.",
+    "type": "reason_choice",
+    "prompt": "What's the fully combined, careful approach?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Adjust for the indirect style rather than reading it as evasive, notice the pauses as information rather than disengagement, and ask directly what kind of response is wanted rather than assuming any of it.",
+        "conceptTag": "listening_across_difference"
+      },
+      {
+        "id": "B",
+        "text": "Interpret the indirectness and pauses through the manager's own default direct style, and offer solutions immediately since that feels proactive.",
+        "misconception": "behavioural-own_style_assumed_universal"
+      },
+      {
+        "id": "C",
+        "text": "Conclude the team member doesn't have a clear concern, since it wasn't stated directly and quickly.",
+        "misconception": "behavioural-unsaid_missed"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "All four ideas reinforce each other here: respecting a different style, noticing pauses as real signals, and asking directly rather than assuming — the combination this whole module has been building toward."
+  },
+  {
+    "id": "i.lis.words",
+    "concept": "listening_to_understand_vs_respond",
+    "type": "own_words",
+    "scenario": "Think of a real, recent conversation where listening well actually mattered.",
+    "prompt": "In your own words, describe the conversation and check it against as many of this module's eight ideas as apply: attention, paraphrasing, open questions, listening not responding, venting vs. solving, the unsaid, clarifying vs. assuming, and listening across difference.",
+    "modelAnswer": "\"The conversation was X.\" \"Checking attention: was I actually focused, or distracted?\" \"Checking paraphrase: did I confirm understanding before responding?\" \"Checking venting vs. solving: did I know which one was wanted?\" \"Checking the unsaid: was there anything conspicuously missing?\" \"Checking difference: did their style differ from mine, and did I adjust?\"",
+    "rubric": [
+      "States a real, specific conversation, not a hypothetical one.",
+      "Checks it against at least four of this module's eight ideas by name.",
+      "Identifies at least one place listening could have been better.",
+      "States what doing it differently would actually have looked like."
+    ]
+  },
+  {
+    "id": "i.lis.att.words",
+    "concept": "active_listening_mechanics",
+    "type": "own_words",
+    "scenario": "Think of a recent conversation where your attention wasn't fully on the other person.",
+    "prompt": "In your own words, explain what full attention actually requires, and what commonly gets in the way of it.",
+    "modelAnswer": "Full attention means directing your mind at what's being said, for as long as it's being said, not just producing the outward signs of listening (nodding, eye contact) while doing something else or thinking about something else. What gets in the way is usually a concrete, removable distraction — a phone, a task, a half-formed thought — not a lack of care.",
+    "rubric": [
+      "Distinguishes outward signs of listening from actual attention.",
+      "Names a concrete thing that commonly competes for attention.",
+      "States that removing the distraction, not more effort, is usually the fix.",
+      "Uses a real or plausible example, not just the definition."
+    ]
+  },
+  {
+    "id": "i.lis.para.words",
+    "concept": "paraphrasing_and_reflecting",
+    "type": "own_words",
+    "scenario": "Think of a time you responded to someone without first confirming you understood them.",
+    "prompt": "In your own words, explain what paraphrasing does that just saying \"got it\" doesn't.",
+    "modelAnswer": "Paraphrasing restates what you heard in your own words, which actually tests whether you understood — and gives the other person a chance to correct you if you got it wrong. \"Got it\" confirms nothing; it's just an acknowledgment, not evidence of accurate understanding.",
+    "rubric": [
+      "Explains that paraphrasing restates content in your own words.",
+      "States that it functions as a check, open to correction.",
+      "Contrasts this with an empty acknowledgment like \"got it\".",
+      "Gives a real or plausible example."
+    ]
+  },
+  {
+    "id": "i.lis.q.words",
+    "concept": "open_vs_leading_questions",
+    "type": "own_words",
+    "scenario": "Think of a question you've asked, or been asked, that may have presupposed its own answer.",
+    "prompt": "In your own words, explain the difference between an open and a leading question, and how to test which one you've asked.",
+    "modelAnswer": "An open question genuinely invites the other person's own view, without presupposing an answer. A leading question already contains the expected answer in its framing (\"don't you think...\"). The test: would the question sound equally natural with the opposite answer implied? If not, it's leading.",
+    "rubric": [
+      "States the core difference between open and leading questions.",
+      "Gives the \"equally natural either way\" test or an equivalent.",
+      "Uses a real or plausible example of each.",
+      "Notes that leading questions often don't feel leading from the inside."
+    ]
+  },
+  {
+    "id": "i.lis.urv.words",
+    "concept": "listening_to_understand_vs_respond",
+    "type": "own_words",
+    "scenario": "Think of a conversation where you noticed yourself planning your reply before the other person finished.",
+    "prompt": "In your own words, explain what listening-to-respond costs you, and how to catch yourself doing it.",
+    "modelAnswer": "Listening to respond means attention shifts to constructing your own reply before the other person has finished, so the rest of what they say is likely to be missed or only partially processed. Catching it means noticing the shift and deliberately returning attention to understanding, trusting the reply can wait until they're done.",
+    "rubric": [
+      "States that reply-planning competes with actually taking in the rest of what's said.",
+      "Describes a concrete way to notice the shift happening.",
+      "States the fix as returning attention, not suppressing the urge to respond entirely.",
+      "Gives a real or plausible example."
+    ]
+  },
+  {
+    "id": "i.lis.vent.words",
+    "concept": "venting_vs_problem_solving",
+    "type": "own_words",
+    "scenario": "Think of a time you weren't sure whether someone wanted advice or just wanted to be heard.",
+    "prompt": "In your own words, explain why asking directly is more reliable than guessing from tone, and what the risk of guessing wrong is.",
+    "modelAnswer": "Tone alone doesn't reliably signal whether someone wants solutions or just wants to vent — the same frustrated tone can mean either. Asking directly (\"do you want ideas, or do you just want to vent?\") resolves the ambiguity cheaply. Guessing wrong and offering unwanted solutions can land as dismissive of the actual feeling being expressed.",
+    "rubric": [
+      "States that tone alone is an unreliable signal.",
+      "Gives the direct-question alternative.",
+      "States the risk of guessing wrong (dismissiveness).",
+      "Uses a real or plausible example."
+    ]
+  },
+  {
+    "id": "i.lis.unsaid.words",
+    "concept": "listening_for_the_unsaid",
+    "type": "own_words",
+    "scenario": "Think of a time you later realized someone had clearly avoided mentioning something important.",
+    "prompt": "In your own words, explain what noticing an omission is useful for, and what it is not proof of.",
+    "modelAnswer": "A conspicuous omission, hesitation, or avoided topic is information worth holding alongside what's explicitly said — it flags something worth gentle attention or a later question. It is not, by itself, proof of a specific reason for the omission; jumping to a confident conclusion from a gap alone is overreaching.",
+    "rubric": [
+      "States that an omission is a genuine signal worth noting.",
+      "States it is not proof of any specific reason.",
+      "Describes a careful response (holding it, maybe asking later) rather than ignoring or confronting.",
+      "Gives a real or plausible example."
+    ]
+  },
+  {
+    "id": "i.lis.clar.words",
+    "concept": "clarifying_before_assuming",
+    "type": "own_words",
+    "scenario": "Think of a time an assumption you made about something unclear turned out to be wrong.",
+    "prompt": "In your own words, explain why a direct clarifying question usually beats filling a gap with an assumption.",
+    "modelAnswer": "An assumption fills a genuine ambiguity with whichever interpretation comes to mind first, and then gets treated as if it were actually said — which can be wrong in either direction. A direct clarifying question (\"what do you mean by that?\") actually resolves the ambiguity instead of guessing at it, and is almost always cheap to ask.",
+    "rubric": [
+      "States that an assumption risks being wrong in either direction.",
+      "States that a clarifying question actually resolves the ambiguity rather than guessing.",
+      "Notes that clarifying questions are usually low-cost to ask.",
+      "Gives a real or plausible example."
+    ]
+  },
+  {
+    "id": "i.lis.diff.words",
+    "concept": "listening_across_difference",
+    "type": "own_words",
+    "scenario": "Think of someone whose communication style genuinely differs from your own.",
+    "prompt": "In your own words, explain the risk of listening through only your own default communication style.",
+    "modelAnswer": "Listening through your own default style risks misreading someone else's genuinely different style as a deficiency — reading indirectness as evasiveness, a longer pause as disengagement, or hedged language as low confidence, when it's simply a different normal way of communicating. Adjusting means staying aware your own style isn't the baseline, not predicting every possible difference in advance.",
+    "rubric": [
+      "States the risk of treating your own style as the universal default.",
+      "Gives at least one concrete example of a style difference being misread.",
+      "States that adjusting doesn't require predicting every difference in advance.",
+      "Uses a real or plausible example."
+    ]
+  }
+]

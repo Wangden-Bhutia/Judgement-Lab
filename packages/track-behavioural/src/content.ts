@@ -6,6 +6,7 @@ import module2ItemsJson from '../content/items/module2.json' with { type: 'json'
 import bankDeepeningItemsJson from '../content/items/bank-deepening.json' with { type: 'json' };
 import weeklyCheckpointItemsJson from '../content/items/weekly-checkpoints.json' with { type: 'json' };
 import signalsItemsJson from '../content/items/signals.json' with { type: 'json' };
+import listeningItemsJson from '../content/items/listening.json' with { type: 'json' };
 
 export const behaviouralCurriculum = curriculumJson as Curriculum;
 export const behaviouralItems: Item[] = [
@@ -14,4 +15,5 @@ export const behaviouralItems: Item[] = [
   ...(bankDeepeningItemsJson as Item[]),
   ...(weeklyCheckpointItemsJson as Item[]),
   ...(signalsItemsJson as Item[]),
+  ...(listeningItemsJson as Item[]),
 ];
