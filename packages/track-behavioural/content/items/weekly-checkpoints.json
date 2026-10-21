@@ -1,0 +1,226 @@
+[
+  {
+    "id": "i.wk1.beh.chk.a",
+    "concept": "observation_vs_interpretation",
+    "scenario": "A colleague, usually talkative in meetings, stays quiet throughout one meeting and leaves right as it ends, without lingering to chat as usual.",
+    "type": "reason_choice",
+    "prompt": "Which complete read of this moment correctly separates observation from interpretation, and considers more than one explanation?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Observable: quieter than usual, left promptly. Not established: why — distraction, disagreement, feeling unwell, and simply being in a rush are all still-open alternatives.",
+        "conceptTag": "observation_vs_interpretation"
+      },
+      {
+        "id": "B",
+        "text": "The colleague is upset about something discussed in the meeting.",
+        "misconception": "behavioural-premature_motive_attribution"
+      },
+      {
+        "id": "C",
+        "text": "The colleague has become a quieter person generally.",
+        "misconception": "behavioural-overgeneralising_from_one_incident"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Only the quietness and prompt exit are directly observable in this one meeting — multiple explanations remain genuinely open, and neither a dramatic nor a trait-based conclusion is established by this alone."
+  },
+  {
+    "id": "i.wk1.beh.chk.b",
+    "concept": "attribution",
+    "scenario": "The same colleague is unusually quiet in two more meetings over the following weeks, but is their normal talkative self in one-on-one conversations with you during that same period.",
+    "type": "reason_choice",
+    "prompt": "What does checking distinctiveness here suggest?",
+    "options": [
+      {
+        "id": "A",
+        "text": "High distinctiveness (only quiet in the group meeting setting, not one-on-one) points toward something about that specific setting, not a general personality shift.",
+        "conceptTag": "attribution"
+      },
+      {
+        "id": "B",
+        "text": "The pattern across three meetings is now consistent enough to conclude a general trait shift, regardless of the one-on-one behaviour.",
+        "misconception": "behavioural-ignoring_situational_factors"
+      },
+      {
+        "id": "C",
+        "text": "The one-on-one behaviour is irrelevant to understanding the meeting behaviour.",
+        "misconception": "behavioural-ignoring_situational_factors"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Normal behaviour in one-on-one settings alongside consistent quietness specifically in meetings is high distinctiveness — it points toward something about the meeting setting itself, not a general change in the person."
+  },
+  {
+    "id": "i.wk1.beh.chk.c",
+    "concept": "generating_alternative_explanations",
+    "scenario": "You've noticed the pattern (quiet in meetings, normal one-on-one) and have one theory: the colleague disagrees with the direction being discussed in meetings but doesn't want to say so publicly.",
+    "type": "reason_choice",
+    "prompt": "What should happen with this one theory?",
+    "options": [
+      {
+        "id": "A",
+        "text": "At least one alternative explanation should be generated — for instance, discomfort speaking in groups generally, or a recent change in meeting format — before treating this theory as the answer.",
+        "conceptTag": "generating_alternative_explanations"
+      },
+      {
+        "id": "B",
+        "text": "It should be accepted, since it's the most specific and interesting explanation available.",
+        "misconception": "behavioural-ignoring_alternative_explanations"
+      },
+      {
+        "id": "C",
+        "text": "It should be confirmed by watching only for signs that support it in future meetings.",
+        "misconception": "behavioural-confirmation_bias"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "A specific, plausible-sounding theory still deserves at least one genuine alternative before being treated as settled — especially since confirming it by watching only for supporting signs would be confirmation bias."
+  },
+  {
+    "id": "i.wk1.beh.chk.d",
+    "concept": "evidence_based_inference",
+    "scenario": "You've now considered the pattern, checked distinctiveness, and generated more than one explanation for the colleague's quietness in meetings specifically.",
+    "type": "reason_choice",
+    "prompt": "What's the appropriate next step, given everything considered so far?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hold the remaining plausible explanations as still open, and consider a low-pressure, direct way to learn more — like asking how they're finding the meetings — rather than acting on any single theory.",
+        "conceptTag": "evidence_based_inference"
+      },
+      {
+        "id": "B",
+        "text": "Since several steps of analysis have been done, it's now reasonable to be fully confident in the disagreement theory.",
+        "misconception": "behavioural-premature_motive_attribution"
+      },
+      {
+        "id": "C",
+        "text": "No further action is useful, since explanations can never be fully confirmed.",
+        "misconception": "behavioural-ignoring_alternative_explanations"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Careful observation and multiple explanations narrow things down, but evidence-based inference means staying open until there's enough evidence to settle it — a direct, low-pressure question is often the most useful next step, not more analysis in isolation."
+  },
+  {
+    "id": "i.wk2.beh.chk.a",
+    "concept": "consistency_consensus_distinctiveness",
+    "scenario": "A new team member misses an early deadline. You're trying to decide whether this reveals something about their reliability, and separately, you're aware this is their first project with unfamiliar tools.",
+    "type": "reason_choice",
+    "prompt": "What does combining the covariation check with an awareness of base rates suggest?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Low consistency (a first instance, no track record yet) combined with a high base rate for new-tool unfamiliarity causing early delays both suggest caution before concluding anything about reliability specifically.",
+        "conceptTag": "consistency_consensus_distinctiveness"
+      },
+      {
+        "id": "B",
+        "text": "A missed deadline is a missed deadline regardless of context, and reliability can be judged from this one instance.",
+        "misconception": "behavioural-overgeneralising_from_one_incident"
+      },
+      {
+        "id": "C",
+        "text": "The unfamiliar tools are irrelevant once a deadline has actually been missed.",
+        "misconception": "behavioural-ignoring_situational_factors"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "A single early instance, combined with a plausible high base rate for the situational cause (new tools), both argue for withholding judgment about reliability specifically — more instances, under more typical conditions, would be needed."
+  },
+  {
+    "id": "i.wk2.beh.chk.b",
+    "concept": "base_rate_neglect",
+    "scenario": "After the missed deadline, you learn the team member has now missed two more deadlines over the following month, under normal working conditions this time.",
+    "type": "reason_choice",
+    "prompt": "How does this change the earlier caution from checking base rates?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A growing pattern under normal conditions, not just the unfamiliar-tools instance, is a meaningfully different and stronger signal than the single early case alone.",
+        "conceptTag": "base_rate_neglect"
+      },
+      {
+        "id": "B",
+        "text": "It doesn't change anything — the base-rate caution from the first instance should apply indefinitely regardless of further evidence.",
+        "misconception": "behavioural-ignoring_alternative_explanations"
+      },
+      {
+        "id": "C",
+        "text": "Three missed deadlines total means the team member was never actually struggling with the tools at all.",
+        "misconception": "behavioural-overgeneralising_from_one_incident"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Appropriate initial caution doesn't mean permanent suspension of judgment — a growing pattern under normal conditions is genuinely stronger evidence than the single, context-explained first instance."
+  },
+  {
+    "id": "i.wk2.beh.chk.c",
+    "concept": "regression_to_the_mean",
+    "scenario": "A manager gives the team member direct feedback after the third missed deadline. The next deadline is met. The manager concludes the feedback conversation fixed the problem.",
+    "type": "reason_choice",
+    "prompt": "What alternative explanation does regression to the mean raise here?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A string of three misses sitting far from a more typical performance level was likely to be followed by a better result anyway — the feedback's actual effect, if any, isn't established by this one instance alone.",
+        "conceptTag": "regression_to_the_mean"
+      },
+      {
+        "id": "B",
+        "text": "The feedback conversation is clearly and definitively what fixed the problem.",
+        "misconception": "behavioural-overgeneralising_from_one_incident"
+      },
+      {
+        "id": "C",
+        "text": "The feedback conversation definitely had no effect at all.",
+        "misconception": "behavioural-ignoring_alternative_explanations"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "An unusually poor run of performance drifting back toward a more typical level is exactly what regression to the mean predicts, independent of whatever intervention happened in between — not proof the feedback had no effect, just that this one instance doesn't establish that it did."
+  },
+  {
+    "id": "i.wk2.beh.chk.d",
+    "concept": "small_sample_generalisation",
+    "scenario": "Four deadlines is now the full history with this team member: one missed (new tools), two missed (unclear cause), one met (after feedback).",
+    "type": "reason_choice",
+    "prompt": "What does matching confidence to sample size suggest about judging this person's reliability now?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Four instances, with mixed and partly-explained causes, is still a fairly small and noisy sample — real caution is still warranted before treating this as a settled read of their reliability.",
+        "conceptTag": "small_sample_generalisation"
+      },
+      {
+        "id": "B",
+        "text": "Four instances is more than enough to be fully confident about this person's general reliability as a trait.",
+        "misconception": "behavioural-overgeneralising_from_one_incident"
+      },
+      {
+        "id": "C",
+        "text": "No number of instances would ever be enough to say anything, so the question isn't worth revisiting.",
+        "misconception": "behavioural-ignoring_alternative_explanations"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Four instances with mixed, partly situational causes is still a small and noisy sample — matching confidence to that means continued caution, not a settled verdict, while staying open to revising as more evidence comes in."
+  }
+]

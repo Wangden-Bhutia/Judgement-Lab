@@ -1,0 +1,226 @@
+[
+  {
+    "id": "i.beh.obs-020",
+    "concept": "observation_vs_interpretation",
+    "scenario": "A neighbour waves less enthusiastically than usual and doesn't stop to chat one morning.",
+    "type": "reason_choice",
+    "prompt": "What is the complete, correct read of this moment?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The neighbour's wave was briefer and they didn't stop to chat; why is not established by this alone.",
+        "conceptTag": "observation_vs_interpretation"
+      },
+      {
+        "id": "B",
+        "text": "The neighbour is upset about something.",
+        "misconception": "behavioural-premature_motive_attribution"
+      },
+      {
+        "id": "C",
+        "text": "The neighbour is naturally a less friendly person than previously thought.",
+        "misconception": "behavioural-confusing_observation_with_interpretation"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Only the briefer wave and not stopping are directly observable. Being upset, being busy, or simply being distracted are all still-open interpretations, not established facts."
+  },
+  {
+    "id": "i.beh.evidence-001",
+    "concept": "evidence_based_inference",
+    "scenario": "A friend cancels plans twice in one month, each time citing a different reason (work, feeling unwell).",
+    "type": "reason_choice",
+    "prompt": "What's the evidence-based way to treat this pattern?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Note the pattern as worth attention, while naming more than one plausible explanation — a genuinely busy stretch, avoidance, or coincidence — without settling on one yet.",
+        "conceptTag": "evidence_based_inference"
+      },
+      {
+        "id": "B",
+        "text": "Conclude the friend is avoiding you, since two cancellations is a clear pattern.",
+        "misconception": "behavioural-overgeneralising_from_one_incident"
+      },
+      {
+        "id": "C",
+        "text": "Dismiss the pattern entirely, since each cancellation had a separate stated reason.",
+        "misconception": "behavioural-ignoring_alternative_explanations"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Two instances with different stated reasons is suggestive but not conclusive — evidence-based inference holds more than one explanation open rather than jumping to the most dramatic one or dismissing the pattern entirely."
+  },
+  {
+    "id": "i.beh.attr-020",
+    "concept": "attribution",
+    "scenario": "A usually punctual employee is late twice in one week. A manager concludes the employee has become unreliable.",
+    "type": "reason_choice",
+    "prompt": "What does this conclusion overlook?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Situational factors — a change in commute, a family matter, two unrelated one-off delays — that could equally explain two late arrivals from someone normally punctual.",
+        "conceptTag": "attribution"
+      },
+      {
+        "id": "B",
+        "text": "Nothing — two late arrivals in a week is sufficient to establish unreliability as a trait.",
+        "misconception": "behavioural-ignoring_situational_factors"
+      },
+      {
+        "id": "C",
+        "text": "The manager's own schedule, which is irrelevant to the employee's lateness.",
+        "misconception": "behavioural-overgeneralising_from_one_incident"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "A usually punctual person being late twice is exactly the case where situational explanations deserve real consideration, before concluding something has changed about their character."
+  },
+  {
+    "id": "i.beh.alt-020",
+    "concept": "generating_alternative_explanations",
+    "scenario": "A colleague stops responding to messages as quickly as before. One explanation comes to mind immediately: they're annoyed with you.",
+    "type": "reason_choice",
+    "prompt": "What should happen before settling on that explanation?",
+    "options": [
+      {
+        "id": "A",
+        "text": "At least one alternative explanation should be generated — a busier week, a notification issue, an unrelated personal matter — before concluding the first one that came to mind is correct.",
+        "conceptTag": "generating_alternative_explanations"
+      },
+      {
+        "id": "B",
+        "text": "Nothing further — the first explanation that comes to mind is usually the most reliable one.",
+        "misconception": "behavioural-ignoring_alternative_explanations"
+      },
+      {
+        "id": "C",
+        "text": "The explanation should be confirmed by looking only for evidence that supports it.",
+        "misconception": "behavioural-confirmation_bias"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "The first explanation that comes to mind is rarely the only plausible one — deliberately generating at least one alternative before settling is what distinguishes this from jumping to a conclusion."
+  },
+  {
+    "id": "i.beh.pattern-020",
+    "concept": "consistency_consensus_distinctiveness",
+    "scenario": "A usually easygoing friend snaps irritably at a mutual friend during a group dinner. No one else at the table reacts that way to the mutual friend, and your friend has never reacted this way to them before.",
+    "type": "reason_choice",
+    "prompt": "What does checking consistency, distinctiveness and consensus suggest here?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Low consistency (a one-off) and low consensus (no one else reacts this way) both point toward something specific to the moment or the two people involved, not a general trait.",
+        "conceptTag": "consistency_consensus_distinctiveness"
+      },
+      {
+        "id": "B",
+        "text": "Your friend must generally be irritable, since the snapping actually happened.",
+        "misconception": "behavioural-skipping_covariation_check"
+      },
+      {
+        "id": "C",
+        "text": "Since it happened once, it reveals nothing at all worth considering.",
+        "misconception": "behavioural-ignoring_alternative_explanations"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Low consistency and low consensus together point away from a general trait and toward something specific to this moment or relationship — worth noting, not dismissing, but not a trait conclusion either."
+  },
+  {
+    "id": "i.beh.base-020",
+    "concept": "base_rate_neglect",
+    "scenario": "A single dramatic story about a product failure goes viral online. A friend decides never to buy that product, despite it having a very low failure rate across millions of units sold.",
+    "type": "reason_choice",
+    "prompt": "What's missing from this decision?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Weighing the vivid story against the actual, much lower base rate of failure across all units sold.",
+        "conceptTag": "base_rate_neglect"
+      },
+      {
+        "id": "B",
+        "text": "Nothing — a dramatic enough story is sufficient reason to avoid a product regardless of its overall failure rate.",
+        "misconception": "behavioural-ignoring_base_rate"
+      },
+      {
+        "id": "C",
+        "text": "The viral story must mean the true failure rate is actually much higher than reported.",
+        "misconception": "behavioural-premature_motive_attribution"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "A single vivid story, however dramatic, doesn't change the actual base rate — weighing the story against the real failure rate gives a much better-calibrated decision than the story alone."
+  },
+  {
+    "id": "i.beh.regr-020",
+    "concept": "regression_to_the_mean",
+    "scenario": "A student does unusually well on one test after a particularly focused study session. The next test, studied for normally, the score is more typical. A parent concludes the focused session method 'stopped working'.",
+    "type": "reason_choice",
+    "prompt": "What does regression to the mean suggest about this conclusion?",
+    "options": [
+      {
+        "id": "A",
+        "text": "An unusually high score was likely to be followed by a more typical one regardless of study method — the drop doesn't necessarily mean the method stopped working.",
+        "conceptTag": "regression_to_the_mean"
+      },
+      {
+        "id": "B",
+        "text": "The conclusion is correct — a drop in score after a change in method always means the method failed.",
+        "misconception": "behavioural-overgeneralising_from_one_incident"
+      },
+      {
+        "id": "C",
+        "text": "The second test must have been unusually difficult, which is the only other possible explanation.",
+        "misconception": "behavioural-ignoring_alternative_explanations"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "An unusually high score sits far from the student's typical level, so a more typical follow-up score is exactly what regression to the mean predicts, independent of whether the study method still works."
+  },
+  {
+    "id": "i.beh.small-020",
+    "concept": "small_sample_generalisation",
+    "scenario": "Someone tries a new recipe twice and both times it turns out poorly, leading them to conclude the recipe itself is simply bad.",
+    "type": "reason_choice",
+    "prompt": "What does matching confidence to sample size suggest here?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Two attempts is a small sample — cooking technique, ingredient quality, or measurement errors are all still plausible alternative explanations before blaming the recipe itself.",
+        "conceptTag": "small_sample_generalisation"
+      },
+      {
+        "id": "B",
+        "text": "Two failed attempts is more than enough to conclusively blame the recipe.",
+        "misconception": "behavioural-overgeneralising_from_one_incident"
+      },
+      {
+        "id": "C",
+        "text": "Since it's only two attempts, nothing at all can be concluded and trying again is pointless.",
+        "misconception": "behavioural-ignoring_alternative_explanations"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Two attempts are worth noting but remain a small sample — several other explanations are at least as plausible as the recipe itself being flawed, and more attempts would narrow it down further."
+  }
+]

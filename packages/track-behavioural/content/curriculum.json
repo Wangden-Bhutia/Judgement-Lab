@@ -20,7 +20,8 @@
       "lessonIds": [
         "behavioural-les-1",
         "behavioural-les-2",
-        "behavioural-les-3"
+        "behavioural-les-3",
+        "behavioural-les-8"
       ]
     },
     {
@@ -32,7 +33,8 @@
         "behavioural-les-4",
         "behavioural-les-5",
         "behavioural-les-6",
-        "behavioural-les-7"
+        "behavioural-les-7",
+        "behavioural-les-9"
       ]
     }
   ],
@@ -57,6 +59,8 @@
         "i.beh.obs-001",
         "i.beh.obs-002",
         "i.beh.obs-003",
+        "i.beh.obs-020",
+        "i.beh.evidence-001",
         "i.beh.les-1.explain"
       ],
       "masteryItemIds": [
@@ -71,7 +75,14 @@
         "Treating \"I can't be sure yet\" as an unsatisfying non-answer rather than the most accurate one available. Holding multiple explanations open takes more effort than picking one, and some situations genuinely call for a decision before all the evidence is in."
       ],
       "example": "A normally talkative colleague becomes quiet after another colleague is praised in a meeting, and looks at their phone for the rest of it. Observable: The colleague spoke less and looked at their phone more, starting right after the praise. Reasonable inferences: Something changed in the colleague's behaviour around the time of the praise. What's uncertain: Why the behaviour changed — the praise is one plausible trigger, but not the only one. Alternatives: The colleague felt overlooked by the praise. The colleague received unrelated difficult news just before the meeting. The colleague was simply distracted by something on their phone, unrelated to the meeting. Further evidence that would help: Whether the pattern repeats around similar praise in the future, or a direct, low-pressure conversation with the colleague.",
-      "contentVersion": 1
+      "contentVersion": 1,
+      "practicePrompts": [
+        "Think of something you observed about someone's behaviour today.",
+        "State only the observable part in one plain sentence.",
+        "Separately, name one interpretation you jumped to, and one alternative interpretation that would fit the same observation."
+      ],
+      "apply": "Today, when you catch yourself forming a quick read of someone's behaviour, pause and separate the plain observation from the interpretation before acting on either.",
+      "reflect": "Think of a recent moment you were confident about why someone did something. Was that confidence based on an observation, or an interpretation you'd stopped noticing as a guess?"
     },
     {
       "id": "behavioural-les-2",
@@ -95,6 +106,7 @@
         "i.beh.attr-001",
         "i.beh.attr-002",
         "i.beh.attr-003",
+        "i.beh.attr-020",
         "i.beh.les-2.explain"
       ],
       "masteryItemIds": [
@@ -107,7 +119,14 @@
         "Assuming the dispositional explanation must be right because it fits how the person generally seems. Fitting a prior impression isn't the same as being supported by the evidence in front of you right now. Weighing disposition against situation doesn't tell you which one is correct here — it only stops you from defaulting to disposition without considering the alternative."
       ],
       "example": "A new team member misses an important deadline on their very first project. Observable: The team member did not submit the deliverable by the deadline. Reasonable inferences: Something prevented the deliverable from being completed on time. What's uncertain: Whether the cause was something about the person (poor planning, disorganisation) or something about the situation (unclear instructions, competing urgent requests, a personal emergency). Alternatives: The team member underestimated the scope of the work. The team member received conflicting priorities from two different people. The deadline itself was unrealistic given the information they were given. Further evidence that would help: Whether the pattern repeats on a second deadline where instructions are clear and competing demands are lower.",
-      "contentVersion": 1
+      "contentVersion": 1,
+      "practicePrompts": [
+        "Think of a behaviour you recently explained with someone's personality or character.",
+        "Ask what situational factors might also explain it.",
+        "Consider whether you'd apply the same situational generosity to your own similar behaviour."
+      ],
+      "apply": "Next time you explain someone's behaviour with a trait, deliberately generate one situational explanation before settling on the trait-based one.",
+      "reflect": "Think of a time someone misjudged your behaviour as revealing your character, when it was really about your situation. What would you have wanted them to consider instead?"
     },
     {
       "id": "behavioural-les-3",
@@ -131,6 +150,7 @@
         "i.beh.alt-001",
         "i.beh.alt-002",
         "i.beh.alt-003",
+        "i.beh.alt-020",
         "i.beh.les-3.explain"
       ],
       "masteryItemIds": [
@@ -143,13 +163,67 @@
         "Believing that a strong hunch is more likely to be correct because it came quickly. A hunch that formed before much evidence was in isn't more reliable for having arrived first. Generating alternatives doesn't tell you which explanation is actually correct — it protects you from narrowing in on one explanation prematurely, which is a different, earlier problem."
       ],
       "example": "After you give a friend honest feedback on a plan of theirs, they stop initiating conversations with you for a week. Observable: The friend hasn't initiated conversation for a week, starting after the feedback. Reasonable inferences: Something changed around the time of the feedback. What's uncertain: Whether the feedback is the cause, and if so, whether it was the content, the delivery, or the timing. Alternatives: The friend is upset about the feedback specifically. The friend is busy with something unrelated this week. The friend tends to go quiet for a while after any feedback, regardless of its content. Further evidence that would help: Whether the pattern continues past this week, or whether asking directly, without sounding accusatory, gets a clear answer.",
+      "contentVersion": 1,
+      "practicePrompts": [
+        "Think of a belief you currently hold fairly strongly about someone.",
+        "Ask what evidence would change your mind, and whether you've actually looked for it.",
+        "Generate one alternative explanation for the evidence you do have, before concluding you were right."
+      ],
+      "apply": "Before settling on an explanation for someone's behaviour today, deliberately generate at least one alternative explanation first, even if you end up rejecting it.",
+      "reflect": "Think of a belief about someone that you've mostly only seen confirming evidence for. Have you actually looked for evidence that would challenge it?"
+    },
+    {
+      "id": "behavioural-les-8",
+      "trackId": "behavioural",
+      "moduleId": "behavioural-mod-1",
+      "sequence": 4,
+      "title": "Putting Observation Together",
+      "objectives": [
+        "Combine observation vs. interpretation, attribution, generating alternatives and evidence-based inference to read one real situation completely."
+      ],
+      "concepts": [
+        "observation_vs_interpretation",
+        "attribution",
+        "generating_alternative_explanations",
+        "evidence_based_inference"
+      ],
+      "prerequisites": [
+        "behavioural-les-1",
+        "behavioural-les-2",
+        "behavioural-les-3"
+      ],
+      "interactiveItemIds": [
+        "i.wk1.beh.chk.a",
+        "i.wk1.beh.chk.b",
+        "i.wk1.beh.chk.c",
+        "i.wk1.beh.chk.d"
+      ],
+      "masteryItemIds": [
+        "i.wk1.beh.chk.a",
+        "i.wk1.beh.chk.b",
+        "i.wk1.beh.chk.c",
+        "i.wk1.beh.chk.d"
+      ],
+      "teach": [
+        "The first three lessons separated four skills out to learn them cleanly: telling observation from interpretation, checking disposition against situation, generating real alternatives, and holding conclusions to the evidence. A real situation hands you all four at once, unlabelled.",
+        "Applying only one of these checks and treating that as a complete read. In practice, a confusing moment with someone usually calls for all four together — what did you actually observe, does the pattern (or its absence) point toward the person or the situation, what else could explain it, and how much does the evidence so far actually support any one conclusion.",
+        "None of this requires distrusting every read you ever make of someone — it means matching how confident you are to how much work these four checks have actually done on this particular situation."
+      ],
+      "example": "A usually talkative colleague goes quiet in meetings specifically, but stays normal one-on-one. Reading this completely: the quietness and its meeting-specific pattern are observable; the distinctiveness points toward the setting, not the person; more than one explanation (discomfort speaking in groups, disagreement, a change in format) is worth holding open; and a direct, low-pressure question is a better next step than confident conclusions from analysis alone.",
+      "practicePrompts": [
+        "Think of a confusing behaviour you've noticed in someone recently.",
+        "Separate what you actually observed from what you inferred.",
+        "Check whether the pattern points toward the person or the situation, and name at least one alternative explanation."
+      ],
+      "apply": "Next time someone's behaviour puzzles you, run all four checks together before settling on an explanation: what's observable, what the pattern suggests, what else could explain it, and how confident the evidence actually supports being.",
+      "reflect": "Across these three lessons, which single check — separating observation from interpretation, checking the situation, or generating alternatives — do you most often skip?",
       "contentVersion": 1
     },
     {
       "id": "behavioural-les-4",
       "trackId": "behavioural",
       "moduleId": "behavioural-mod-2",
-      "sequence": 4,
+      "sequence": 5,
       "title": "Does This Pattern Hold?",
       "objectives": [
         "Use consistency, distinctiveness and consensus to weigh a dispositional explanation against a situational one.",
@@ -161,12 +235,13 @@
         "evidence_based_inference"
       ],
       "prerequisites": [
-        "behavioural-les-3"
+        "behavioural-les-8"
       ],
       "interactiveItemIds": [
         "i.beh.pattern-001",
         "i.beh.pattern-002",
         "i.beh.pattern-003",
+        "i.beh.pattern-020",
         "i.beh.les-4.explain"
       ],
       "masteryItemIds": [
@@ -194,7 +269,7 @@
       "id": "behavioural-les-5",
       "trackId": "behavioural",
       "moduleId": "behavioural-mod-2",
-      "sequence": 5,
+      "sequence": 6,
       "title": "How Common Is This, Really?",
       "objectives": [
         "Explain what a base rate is and why it matters when judging a single instance of behaviour.",
@@ -212,6 +287,7 @@
         "i.beh.base-001",
         "i.beh.base-002",
         "i.beh.base-003",
+        "i.beh.base-020",
         "i.beh.les-5.explain"
       ],
       "masteryItemIds": [
@@ -239,7 +315,7 @@
       "id": "behavioural-les-6",
       "trackId": "behavioural",
       "moduleId": "behavioural-mod-2",
-      "sequence": 6,
+      "sequence": 7,
       "title": "Don't Mistake Drift for an Effect",
       "objectives": [
         "Explain regression to the mean and why it follows unusually extreme performances.",
@@ -257,6 +333,7 @@
         "i.beh.regr-001",
         "i.beh.regr-002",
         "i.beh.regr-003",
+        "i.beh.regr-020",
         "i.beh.les-6.explain"
       ],
       "masteryItemIds": [
@@ -284,7 +361,7 @@
       "id": "behavioural-les-7",
       "trackId": "behavioural",
       "moduleId": "behavioural-mod-2",
-      "sequence": 7,
+      "sequence": 8,
       "title": "One Instance Isn't a Pattern Yet",
       "objectives": [
         "Explain why a pattern seen in only a few instances is less reliable than it feels.",
@@ -302,6 +379,7 @@
         "i.beh.small-001",
         "i.beh.small-002",
         "i.beh.small-003",
+        "i.beh.small-020",
         "i.beh.les-7.explain"
       ],
       "masteryItemIds": [
@@ -323,6 +401,54 @@
       ],
       "apply": "Before generalising from a pattern, count how many instances it's actually based on — and treat two or three as a reason for caution, not confidence.",
       "reflect": "Where have you generalised about someone from fewer instances than you'd want to admit?",
+      "contentVersion": 1
+    },
+    {
+      "id": "behavioural-les-9",
+      "trackId": "behavioural",
+      "moduleId": "behavioural-mod-2",
+      "sequence": 9,
+      "title": "Patterns, Combined",
+      "objectives": [
+        "Combine consistency/distinctiveness/consensus, base rates, regression to the mean, and small-sample caution to judge a pattern over time correctly."
+      ],
+      "concepts": [
+        "consistency_consensus_distinctiveness",
+        "base_rate_neglect",
+        "regression_to_the_mean",
+        "small_sample_generalisation"
+      ],
+      "prerequisites": [
+        "behavioural-les-4",
+        "behavioural-les-5",
+        "behavioural-les-6",
+        "behavioural-les-7"
+      ],
+      "interactiveItemIds": [
+        "i.wk2.beh.chk.a",
+        "i.wk2.beh.chk.b",
+        "i.wk2.beh.chk.c",
+        "i.wk2.beh.chk.d"
+      ],
+      "masteryItemIds": [
+        "i.wk2.beh.chk.a",
+        "i.wk2.beh.chk.b",
+        "i.wk2.beh.chk.c",
+        "i.wk2.beh.chk.d"
+      ],
+      "teach": [
+        "This module's four ideas all govern how much weight a pattern over time actually deserves: the covariation check, how common the behaviour generally is, whether an extreme result is just drifting back to average, and whether enough instances exist to trust the pattern at all.",
+        "Treating a developing pattern as settled after checking only one of these. A real pattern — someone's performance, a recurring behaviour, a string of related events — usually needs more than one of these checks as it develops, not a single verdict delivered early and never revisited.",
+        "Confidence in a read of a pattern should grow or shrink as genuinely new evidence arrives, not stay fixed at whatever the first instance suggested — that's the thread connecting all four ideas in this module."
+      ],
+      "example": "A new team member misses an early deadline (low consistency, a plausible situational cause — new tools, a high base rate for that kind of early friction). More misses follow under normal conditions (the pattern strengthens). A good deadline follows feedback (possibly the feedback working, possibly regression to the mean — not yet established). Across four data points total, real caution about a settled verdict on their reliability is still warranted — a small, mixed sample.",
+      "practicePrompts": [
+        "Think of a pattern involving someone's behaviour that's developed over several instances.",
+        "Check it against as many of this module's four ideas as apply.",
+        "Notice whether your confidence in your read has actually tracked the number and quality of instances."
+      ],
+      "apply": "Next time you're forming a judgment about a pattern in someone's behaviour, explicitly check it against consistency/distinctiveness/consensus, the base rate, possible regression to the mean, and whether the sample is actually large enough yet.",
+      "reflect": "Across this module, which idea most changed how quickly you're willing to call something a real pattern rather than noise?",
       "contentVersion": 1
     }
   ],
