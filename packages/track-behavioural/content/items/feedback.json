@@ -1,0 +1,1024 @@
+[
+  {
+    "id": "i.fb.spec.a",
+    "concept": "specific_not_vague_feedback",
+    "scenario": "A manager tells an employee, \"you need to be more professional.\"",
+    "type": "reason_choice",
+    "prompt": "What's the issue with this feedback?",
+    "options": [
+      {
+        "id": "A",
+        "text": "It's a vague trait judgment that doesn't name a specific behavior the employee can actually change.",
+        "conceptTag": "specific_not_vague_feedback"
+      },
+      {
+        "id": "B",
+        "text": "No issue — \"more professional\" is clear enough direction on its own.",
+        "misconception": "behavioural-vague_trait_feedback"
+      },
+      {
+        "id": "C",
+        "text": "The only issue is that it should have been delivered more gently.",
+        "misconception": "behavioural-vague_trait_feedback"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "\"More professional\" doesn't point to any specific action — it leaves the employee guessing at what to actually change, unlike feedback that names a specific instance."
+  },
+  {
+    "id": "i.fb.spec.b",
+    "concept": "specific_not_vague_feedback",
+    "scenario": "\"In yesterday's client call, you interrupted the client twice before they finished their question\" is given as feedback.",
+    "type": "reason_choice",
+    "prompt": "What does this demonstrate?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A specific, observed instance that the person can actually recognize and address, unlike a vague trait judgment.",
+        "conceptTag": "specific_not_vague_feedback"
+      },
+      {
+        "id": "B",
+        "text": "An overly harsh and unnecessarily detailed way to give feedback.",
+        "misconception": "behavioural-vague_trait_feedback"
+      },
+      {
+        "id": "C",
+        "text": "Feedback that's no more useful than a general statement like \"be more patient.\"",
+        "misconception": "behavioural-vague_trait_feedback"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Naming the specific call, the specific behavior, and when it happened gives the person something concrete to recognize and address — far more actionable than a general trait statement."
+  },
+  {
+    "id": "i.fb.spec.c",
+    "concept": "specific_not_vague_feedback",
+    "scenario": "An employee receives the feedback \"you need to show more initiative\" and isn't sure what to actually do differently.",
+    "type": "reason_choice",
+    "prompt": "What would resolve the employee's uncertainty?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The feedback should have named a specific situation where more initiative was expected and what that would have looked like.",
+        "conceptTag": "specific_not_vague_feedback"
+      },
+      {
+        "id": "B",
+        "text": "Nothing — the employee should be able to infer the specific expectation from a general trait statement.",
+        "misconception": "behavioural-vague_trait_feedback"
+      },
+      {
+        "id": "C",
+        "text": "The feedback was already as specific as it needs to be.",
+        "misconception": "behavioural-vague_trait_feedback"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "A trait statement like \"more initiative\" leaves the specific expected action unstated — naming an actual situation and what action was expected resolves exactly the uncertainty the employee is left with."
+  },
+  {
+    "id": "i.fb.char.a",
+    "concept": "separating_behavior_from_character",
+    "scenario": "After a missed deadline, a manager tells an employee, \"you're unreliable.\"",
+    "type": "reason_choice",
+    "prompt": "What's the issue with this framing?",
+    "options": [
+      {
+        "id": "A",
+        "text": "It labels the employee's character rather than addressing the specific missed deadline as an action.",
+        "conceptTag": "separating_behavior_from_character"
+      },
+      {
+        "id": "B",
+        "text": "No issue — a missed deadline justifies a character judgment like this.",
+        "misconception": "behavioural-character_labeled"
+      },
+      {
+        "id": "C",
+        "text": "The only issue is that \"unreliable\" is too mild a word for a missed deadline.",
+        "misconception": "behavioural-character_labeled"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "\"You're unreliable\" generalizes one missed deadline into a judgment about identity, rather than addressing the specific action — the missed deadline — that actually happened."
+  },
+  {
+    "id": "i.fb.char.b",
+    "concept": "separating_behavior_from_character",
+    "scenario": "\"This is the second deadline this month that's slipped without a heads-up\" is said instead of \"you're unreliable.\"",
+    "type": "reason_choice",
+    "prompt": "What does this rephrasing demonstrate?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A direct critique aimed at a specific pattern of actions, rather than a character label.",
+        "conceptTag": "separating_behavior_from_character"
+      },
+      {
+        "id": "B",
+        "text": "A softer, less honest way of saying the same thing.",
+        "misconception": "behavioural-character_labeled"
+      },
+      {
+        "id": "C",
+        "text": "An unnecessary rewording that doesn't actually change what's being communicated.",
+        "misconception": "behavioural-character_labeled"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "This version is just as direct and honest as \"unreliable,\" but it stays aimed at a specific, describable pattern of actions rather than labeling the person's character."
+  },
+  {
+    "id": "i.fb.char.c",
+    "concept": "separating_behavior_from_character",
+    "scenario": "A colleague says, \"you're careless,\" after noticing one formatting error in a report.",
+    "type": "reason_choice",
+    "prompt": "What's the issue with generalizing from one error to this label?",
+    "options": [
+      {
+        "id": "A",
+        "text": "One formatting error is a single action, not evidence of a fixed character trait, and labeling it as such overstates what was actually observed.",
+        "conceptTag": "separating_behavior_from_character"
+      },
+      {
+        "id": "B",
+        "text": "No issue — one clear error is sufficient evidence of a general character trait.",
+        "misconception": "behavioural-character_labeled"
+      },
+      {
+        "id": "C",
+        "text": "The issue is only that \"careless\" isn't a strong enough word for the error.",
+        "misconception": "behavioural-character_labeled"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "A single observed error is evidence about that one instance, not a fixed trait — generalizing it into a character label overstates what was actually seen."
+  },
+  {
+    "id": "i.fb.time.a",
+    "concept": "feedback_timing_and_framing",
+    "scenario": "A manager corrects an employee's mistake in front of the entire team during a meeting.",
+    "type": "reason_choice",
+    "prompt": "What's the issue with this approach, independent of whether the correction itself was accurate?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The public setting makes the feedback much harder to actually hear, regardless of how accurate the content is.",
+        "conceptTag": "feedback_timing_and_framing"
+      },
+      {
+        "id": "B",
+        "text": "There's no issue, since accurate feedback should be given as soon as the mistake is noticed, regardless of setting.",
+        "misconception": "behavioural-feedback_ambushed"
+      },
+      {
+        "id": "C",
+        "text": "The only issue is that the manager should have used gentler wording.",
+        "misconception": "behavioural-feedback_ambushed"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Even perfectly accurate feedback tends to trigger a defensive reaction when delivered publicly and without warning — the setting itself, not just the content, determines whether it can actually land."
+  },
+  {
+    "id": "i.fb.time.b",
+    "concept": "feedback_timing_and_framing",
+    "scenario": "A manager waits until a private one-on-one, later the same day, to raise a concern about a missed step.",
+    "type": "reason_choice",
+    "prompt": "What does this choice demonstrate?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Choosing a setting where the feedback can actually be heard and processed, rather than delivered as an ambush.",
+        "conceptTag": "feedback_timing_and_framing"
+      },
+      {
+        "id": "B",
+        "text": "An unnecessary delay that makes the feedback less effective.",
+        "misconception": "behavioural-feedback_ambushed"
+      },
+      {
+        "id": "C",
+        "text": "A sign the manager isn't confident the feedback is actually valid.",
+        "misconception": "behavioural-feedback_ambushed"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Choosing a private, same-day moment keeps the feedback timely while giving the person a setting where they can actually process it, rather than defend against how it arrived."
+  },
+  {
+    "id": "i.fb.time.c",
+    "concept": "feedback_timing_and_framing",
+    "scenario": "An employee receives corrective feedback for the first time about an ongoing problem, weeks after it started, with no prior warning that it was an issue.",
+    "type": "reason_choice",
+    "prompt": "What's the concern with this timing?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A long, unflagged delay followed by sudden feedback can itself feel like an ambush, even if the content is accurate.",
+        "conceptTag": "feedback_timing_and_framing"
+      },
+      {
+        "id": "B",
+        "text": "There's no concern, since feedback is equally easy to hear regardless of how long it's been delayed.",
+        "misconception": "behavioural-feedback_ambushed"
+      },
+      {
+        "id": "C",
+        "text": "The concern is only that the feedback should have been even more delayed to avoid conflict.",
+        "misconception": "behavioural-feedback_ambushed"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "A long silence followed by sudden feedback can land as an ambush of its own kind — the person had no earlier signal that something needed to change."
+  },
+  {
+    "id": "i.fb.bal.a",
+    "concept": "balancing_positive_and_corrective",
+    "scenario": "A performance review lists five things that went wrong and nothing that went right, even though most of the work was solid.",
+    "type": "reason_choice",
+    "prompt": "What's the issue with this review?",
+    "options": [
+      {
+        "id": "A",
+        "text": "It gives an inaccurate, overly negative picture by omitting what was actually working.",
+        "conceptTag": "balancing_positive_and_corrective"
+      },
+      {
+        "id": "B",
+        "text": "No issue — a review should focus only on what needs to improve.",
+        "misconception": "behavioural-feedback_unbalanced"
+      },
+      {
+        "id": "C",
+        "text": "The issue is only that it should have included even more corrective points.",
+        "misconception": "behavioural-feedback_unbalanced"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Omitting what was actually working, when most of the work was solid, leaves an inaccurate picture — not a more honest one, just a more negative one than the situation warrants."
+  },
+  {
+    "id": "i.fb.bal.b",
+    "concept": "balancing_positive_and_corrective",
+    "scenario": "A manager gives only praise in a review, leaving out a real, recurring problem to avoid an uncomfortable conversation.",
+    "type": "reason_choice",
+    "prompt": "What's the issue here?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Omitting the real recurring problem is just as inaccurate as a review with no praise at all — the picture given doesn't match the full situation.",
+        "conceptTag": "balancing_positive_and_corrective"
+      },
+      {
+        "id": "B",
+        "text": "No issue — avoiding discomfort is a good enough reason to leave out a real problem.",
+        "misconception": "behavioural-feedback_unbalanced"
+      },
+      {
+        "id": "C",
+        "text": "The issue is only that the praise should have been even more generous to compensate.",
+        "misconception": "behavioural-feedback_unbalanced"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "An all-praise review that omits a real recurring problem gives just as distorted a picture as an all-criticism one — balance means accuracy, not avoiding discomfort."
+  },
+  {
+    "id": "i.fb.bal.c",
+    "concept": "balancing_positive_and_corrective",
+    "scenario": "A review notes two specific things that are working well, alongside one specific, clearly described problem that needs attention.",
+    "type": "reason_choice",
+    "prompt": "What does this review demonstrate?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A genuinely accurate, balanced picture — neither padded with empty praise nor stripped of real corrective content.",
+        "conceptTag": "balancing_positive_and_corrective"
+      },
+      {
+        "id": "B",
+        "text": "A watered-down review that fails to communicate the seriousness of the problem.",
+        "misconception": "behavioural-feedback_unbalanced"
+      },
+      {
+        "id": "C",
+        "text": "Review content that should always follow a fixed ratio of praise to criticism.",
+        "misconception": "behavioural-feedback_unbalanced"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Including both what's genuinely working and a clearly described problem gives an accurate picture — balance is about matching the full situation, not hitting a fixed ratio."
+  },
+  {
+    "id": "i.fb.def.a",
+    "concept": "receiving_without_defensiveness",
+    "scenario": "An employee receives feedback about a missed step and immediately starts explaining why it happened, before the manager has finished describing the issue.",
+    "type": "reason_choice",
+    "prompt": "What's happening here?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A defensive justification is starting before the feedback has actually been fully taken in.",
+        "conceptTag": "receiving_without_defensiveness"
+      },
+      {
+        "id": "B",
+        "text": "This is the appropriate, efficient way to respond to feedback.",
+        "misconception": "behavioural-defensive_immediate_justification"
+      },
+      {
+        "id": "C",
+        "text": "Explaining immediately shows strong engagement with the feedback.",
+        "misconception": "behavioural-defensive_immediate_justification"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Jumping to justify before the manager has finished risks responding to an incomplete understanding of the feedback, and signals the instinct to defend rather than take it in first."
+  },
+  {
+    "id": "i.fb.def.b",
+    "concept": "receiving_without_defensiveness",
+    "scenario": "\"Let me make sure I understand what you're pointing to\" is said before responding to a piece of corrective feedback.",
+    "type": "reason_choice",
+    "prompt": "What does this demonstrate?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A pause that separates taking in the feedback from reacting to it, without necessarily agreeing with it yet.",
+        "conceptTag": "receiving_without_defensiveness"
+      },
+      {
+        "id": "B",
+        "text": "An unnecessary delay that just postpones giving a defense.",
+        "misconception": "behavioural-defensive_immediate_justification"
+      },
+      {
+        "id": "C",
+        "text": "An implicit agreement with everything the feedback says.",
+        "misconception": "behavioural-defensive_immediate_justification"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Pausing to confirm understanding is not the same as agreeing — it separates actually taking in what was said from deciding how to respond to it."
+  },
+  {
+    "id": "i.fb.def.c",
+    "concept": "receiving_without_defensiveness",
+    "scenario": "A team member receives critical feedback and visibly tenses up, interrupting to list reasons the criticism doesn't apply.",
+    "type": "reason_choice",
+    "prompt": "What risk does this reaction create?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The rest of the feedback, including parts that might be fair or useful, risks being missed while the justification is being formed.",
+        "conceptTag": "receiving_without_defensiveness"
+      },
+      {
+        "id": "B",
+        "text": "No risk — interrupting to clarify misunderstandings is always the right move.",
+        "misconception": "behavioural-defensive_immediate_justification"
+      },
+      {
+        "id": "C",
+        "text": "The only risk is that it might seem rude to the person giving feedback.",
+        "misconception": "behavioural-defensive_immediate_justification"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "An immediate defensive reaction risks cutting off the rest of the feedback before it's even been heard, including parts that might turn out to be fair or useful."
+  },
+  {
+    "id": "i.fb.worth.a",
+    "concept": "separating_feedback_from_self_worth",
+    "scenario": "After feedback that a presentation ran long and lost the room, someone concludes \"I'm bad at public speaking\" and \"not cut out for this job.\"",
+    "type": "reason_choice",
+    "prompt": "What's the issue with this reaction?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A specific, narrow piece of feedback about one presentation has been expanded into a much larger judgment about overall worth and ability.",
+        "conceptTag": "separating_feedback_from_self_worth"
+      },
+      {
+        "id": "B",
+        "text": "This is a reasonable and proportionate response to the feedback given.",
+        "misconception": "behavioural-feedback_as_identity_attack"
+      },
+      {
+        "id": "C",
+        "text": "The issue is only that the conclusion should have been even more severe.",
+        "misconception": "behavioural-feedback_as_identity_attack"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "The feedback was about one presentation; the conclusion drawn is about overall ability and fit for the job — a much larger judgment than the specific feedback actually supports."
+  },
+  {
+    "id": "i.fb.worth.b",
+    "concept": "separating_feedback_from_self_worth",
+    "scenario": "\"I made an error in this one report\" is kept as the takeaway from feedback, rather than expanding it into \"I'm bad at this job.\"",
+    "type": "reason_choice",
+    "prompt": "What does keeping the takeaway this specific demonstrate?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Treating the feedback as information about one instance, without letting it expand into a judgment about overall worth.",
+        "conceptTag": "separating_feedback_from_self_worth"
+      },
+      {
+        "id": "B",
+        "text": "A dismissive refusal to take the feedback seriously.",
+        "misconception": "behavioural-feedback_as_identity_attack"
+      },
+      {
+        "id": "C",
+        "text": "An unrealistic attempt to avoid ever feeling bad about mistakes.",
+        "misconception": "behavioural-feedback_as_identity_attack"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Keeping the takeaway specific to the actual instance is what lets the feedback be taken seriously without expanding into an unsupported judgment about overall worth."
+  },
+  {
+    "id": "i.fb.worth.c",
+    "concept": "separating_feedback_from_self_worth",
+    "scenario": "Someone receiving critical feedback about a single project decision feels it as a judgment on whether they belong in their role at all.",
+    "type": "reason_choice",
+    "prompt": "What gap does this reaction reveal?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A gap between what the feedback specifically addressed (one decision) and the much broader judgment (belonging in the role) it's been expanded into.",
+        "conceptTag": "separating_feedback_from_self_worth"
+      },
+      {
+        "id": "B",
+        "text": "No gap — feedback about any single decision is a fair basis for judging whether someone belongs in a role.",
+        "misconception": "behavioural-feedback_as_identity_attack"
+      },
+      {
+        "id": "C",
+        "text": "A gap that shows the feedback should not have been given at all.",
+        "misconception": "behavioural-feedback_as_identity_attack"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "The feedback addressed one decision; the reaction expands it into a judgment about belonging in the role entirely — a much broader conclusion the specific feedback doesn't actually support."
+  },
+  {
+    "id": "i.fb.ask.a",
+    "concept": "asking_for_specifics",
+    "scenario": "An employee receives the feedback \"this needs more polish\" and nods, unsure exactly what to change, without asking anything further.",
+    "type": "reason_choice",
+    "prompt": "What's missing here?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A direct question asking what specifically needs more polish, rather than guessing or leaving it unclear.",
+        "conceptTag": "asking_for_specifics"
+      },
+      {
+        "id": "B",
+        "text": "Nothing — \"more polish\" is clear enough to act on without clarification.",
+        "misconception": "behavioural-vague_feedback_accepted_unclarified"
+      },
+      {
+        "id": "C",
+        "text": "A longer explanation of why the work doesn't need more polish.",
+        "misconception": "behavioural-vague_feedback_accepted_unclarified"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "\"More polish\" doesn't specify what to change — asking directly for a specific example is what turns it into something actionable, instead of guessing."
+  },
+  {
+    "id": "i.fb.ask.b",
+    "concept": "asking_for_specifics",
+    "scenario": "\"Can you point to a specific slide or section where that was most noticeable?\" is asked in response to vague feedback about a presentation.",
+    "type": "reason_choice",
+    "prompt": "What does this question demonstrate?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A direct request for specifics that turns a vague impression into something concrete enough to act on.",
+        "conceptTag": "asking_for_specifics"
+      },
+      {
+        "id": "B",
+        "text": "An attempt to argue with or dismiss the feedback.",
+        "misconception": "behavioural-vague_feedback_accepted_unclarified"
+      },
+      {
+        "id": "C",
+        "text": "An unnecessary step, since the original feedback was already specific enough.",
+        "misconception": "behavioural-vague_feedback_accepted_unclarified"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Asking for a specific example is a genuine request for clarification, not a dismissal — it's exactly the step that makes vague feedback usable."
+  },
+  {
+    "id": "i.fb.ask.c",
+    "concept": "asking_for_specifics",
+    "scenario": "Someone receives the comment \"be more proactive\" and spends the next week guessing at what that might mean, without ever asking.",
+    "type": "reason_choice",
+    "prompt": "What would have resolved the guessing?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Asking directly for a specific situation where more proactive action was expected.",
+        "conceptTag": "asking_for_specifics"
+      },
+      {
+        "id": "B",
+        "text": "Continuing to guess, since asking for clarification would seem like pushing back on the feedback.",
+        "misconception": "behavioural-vague_feedback_accepted_unclarified"
+      },
+      {
+        "id": "C",
+        "text": "Nothing — the vague feedback was already clear enough to act on correctly.",
+        "misconception": "behavioural-vague_feedback_accepted_unclarified"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "A direct question about a specific expected situation resolves the ambiguity far more reliably than a week of guessing — asking for clarification isn't pushing back, it's making the feedback usable."
+  },
+  {
+    "id": "i.fb.sel.a",
+    "concept": "acting_on_feedback_selectively",
+    "scenario": "A single client makes an offhand comment about a proposal's formatting. The team immediately overhauls its entire formatting process in response.",
+    "type": "reason_choice",
+    "prompt": "What's the issue with this response?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A single offhand comment was treated as decisive without weighing whether it reflected a broader, repeated pattern.",
+        "conceptTag": "acting_on_feedback_selectively"
+      },
+      {
+        "id": "B",
+        "text": "No issue — all feedback should be acted on immediately and fully, regardless of how isolated it is.",
+        "misconception": "behavioural-all_feedback_treated_equally"
+      },
+      {
+        "id": "C",
+        "text": "The issue is only that the overhaul wasn't thorough enough.",
+        "misconception": "behavioural-all_feedback_treated_equally"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "One offhand comment, acted on as if it were a confirmed pattern, overweights a single data point — weighing it against whether it's actually been repeated would have been more appropriate."
+  },
+  {
+    "id": "i.fb.sel.b",
+    "concept": "acting_on_feedback_selectively",
+    "scenario": "The same formatting concern is raised independently by three different clients over two months, and the team then changes its formatting process.",
+    "type": "reason_choice",
+    "prompt": "What does this response demonstrate?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Weighing feedback by whether it reflects a real, repeated pattern before acting on it.",
+        "conceptTag": "acting_on_feedback_selectively"
+      },
+      {
+        "id": "B",
+        "text": "An unnecessary delay — the first comment alone should have triggered the same change.",
+        "misconception": "behavioural-all_feedback_treated_equally"
+      },
+      {
+        "id": "C",
+        "text": "Treating customer feedback as something that should never be acted on.",
+        "misconception": "behavioural-all_feedback_treated_equally"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Acting once a concern is confirmed as a repeated, independent pattern — rather than on the first isolated comment — is exactly the kind of weighing this habit is about."
+  },
+  {
+    "id": "i.fb.sel.c",
+    "concept": "acting_on_feedback_selectively",
+    "scenario": "Someone receives conflicting feedback from two sources: a mentor with direct, relevant expertise, and an acquaintance with no relevant background, both on the same decision.",
+    "type": "reason_choice",
+    "prompt": "How should the two be weighed?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The mentor's feedback deserves more weight given their direct relevant expertise, though the acquaintance's view isn't necessarily worthless.",
+        "conceptTag": "acting_on_feedback_selectively"
+      },
+      {
+        "id": "B",
+        "text": "Both pieces of feedback should be treated as equally valid regardless of the source's expertise.",
+        "misconception": "behavioural-all_feedback_treated_equally"
+      },
+      {
+        "id": "C",
+        "text": "The acquaintance's feedback should automatically be ignored entirely just because they lack expertise.",
+        "misconception": "behavioural-all_feedback_treated_equally"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Weighing feedback by the source's relevant expertise — without dismissing a less-expert view entirely — is the kind of honest judgment this habit requires, rather than treating every source as interchangeable."
+  },
+  {
+    "id": "i.wk7.fb.chk.a",
+    "concept": "specific_not_vague_feedback",
+    "scenario": "A manager gives feedback that is specific (\"the report had three mismatched numbers\") but delivers it in front of the whole team with no warning.",
+    "type": "reason_choice",
+    "prompt": "What does this combination show?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Specificity alone doesn't guarantee feedback lands well — poor timing and framing can still undercut even accurate, specific content.",
+        "conceptTag": "specific_not_vague_feedback"
+      },
+      {
+        "id": "B",
+        "text": "Nothing — specific feedback is always well-received regardless of how or where it's delivered.",
+        "misconception": "behavioural-feedback_ambushed"
+      },
+      {
+        "id": "C",
+        "text": "The specificity itself is the problem, since vaguer feedback would have been safer in public.",
+        "misconception": "behavioural-feedback_ambushed"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Being specific is necessary but not sufficient — the same specific content, delivered publicly and without warning, is still likely to trigger a defensive reaction rather than actually land."
+  },
+  {
+    "id": "i.wk7.fb.chk.b",
+    "concept": "separating_behavior_from_character",
+    "scenario": "Feedback aimed at an action (\"this missed the deadline\") is given, but the overall review contains nothing else, leaving the person with the impression their work is uniformly failing.",
+    "type": "reason_choice",
+    "prompt": "What's the combined issue?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Correctly aiming at the action doesn't make up for an unbalanced review that omits everything that's actually working.",
+        "conceptTag": "separating_behavior_from_character"
+      },
+      {
+        "id": "B",
+        "text": "There's no issue, since aiming at the action is the only thing that matters in a review.",
+        "misconception": "behavioural-feedback_unbalanced"
+      },
+      {
+        "id": "C",
+        "text": "The issue is that the deadline critique shouldn't have been included at all.",
+        "misconception": "behavioural-feedback_unbalanced"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Aiming feedback at the action rather than the person is necessary but doesn't by itself make a review accurate — an unbalanced review can still distort the overall picture even with well-aimed individual points."
+  },
+  {
+    "id": "i.wk7.fb.chk.c",
+    "concept": "feedback_timing_and_framing",
+    "scenario": "A manager picks a good private moment to deliver feedback (timing), but the feedback itself is vague (\"just be better about this\") with no specific instance named.",
+    "type": "reason_choice",
+    "prompt": "What does this combination show?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Good timing doesn't make vague feedback actionable — the person still doesn't know what specifically to change, regardless of the setting.",
+        "conceptTag": "feedback_timing_and_framing"
+      },
+      {
+        "id": "B",
+        "text": "The private setting fully compensates for the vagueness of the content.",
+        "misconception": "behavioural-vague_trait_feedback"
+      },
+      {
+        "id": "C",
+        "text": "Timing is the only thing that matters; specificity is unnecessary once the setting is right.",
+        "misconception": "behavioural-vague_trait_feedback"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Timing and specificity are separate dimensions — a well-timed delivery of vague content is still vague, and the person still doesn't have anything concrete to act on."
+  },
+  {
+    "id": "i.wk7.fb.chk.d",
+    "concept": "balancing_positive_and_corrective",
+    "scenario": "A manager gives a balanced review (acknowledging strengths and one real problem) but labels the problem as a character flaw (\"you're careless\") rather than describing the specific action.",
+    "type": "reason_choice",
+    "prompt": "What does this combination reveal?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Balance between positive and corrective content doesn't fix a character label standing in for a specific, describable action.",
+        "conceptTag": "balancing_positive_and_corrective"
+      },
+      {
+        "id": "B",
+        "text": "The balance alone makes the character label acceptable.",
+        "misconception": "behavioural-character_labeled"
+      },
+      {
+        "id": "C",
+        "text": "Nothing is wrong, since the review already includes positive content.",
+        "misconception": "behavioural-character_labeled"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Balance and separating behavior from character are independent requirements — a review can be balanced in content while still mislabeling a specific action as a character flaw."
+  },
+  {
+    "id": "i.wk8.fb.chk.a",
+    "concept": "receiving_without_defensiveness",
+    "scenario": "Someone receives vague feedback (\"this needs work\") and immediately starts defending their approach, without pausing or asking what specifically needs work.",
+    "type": "reason_choice",
+    "prompt": "What's the combined issue?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Both receiving the feedback defensively and failing to ask for specifics compound here — pausing first, then asking what specifically needs work, would address both at once.",
+        "conceptTag": "receiving_without_defensiveness"
+      },
+      {
+        "id": "B",
+        "text": "Defending immediately is the correct response to vague feedback.",
+        "misconception": "behavioural-defensive_immediate_justification"
+      },
+      {
+        "id": "C",
+        "text": "No issue, since vague feedback doesn't need to be clarified before responding.",
+        "misconception": "behavioural-vague_feedback_accepted_unclarified"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "The defensive reaction and the missed opportunity to ask for specifics reinforce each other — pausing instead of justifying, then asking what the vague comment actually refers to, addresses both."
+  },
+  {
+    "id": "i.wk8.fb.chk.b",
+    "concept": "separating_feedback_from_self_worth",
+    "scenario": "Someone receives feedback about one specific missed detail and, without asking for further specifics, concludes they're generally incompetent at their job.",
+    "type": "reason_choice",
+    "prompt": "What's the combined issue?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The jump to a broad self-worth judgment happened without even confirming the specific scope of the feedback by asking — compounding an unsupported leap with a missed chance to clarify.",
+        "conceptTag": "separating_feedback_from_self_worth"
+      },
+      {
+        "id": "B",
+        "text": "The conclusion about general incompetence is reasonable given any specific critical feedback.",
+        "misconception": "behavioural-feedback_as_identity_attack"
+      },
+      {
+        "id": "C",
+        "text": "Asking for specifics would not have changed anything about the self-worth conclusion.",
+        "misconception": "behavioural-feedback_as_identity_attack"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Asking for specifics first would likely have kept the feedback scoped to the actual detail missed, rather than letting it expand unchecked into a broad, unsupported judgment about overall competence."
+  },
+  {
+    "id": "i.wk8.fb.chk.c",
+    "concept": "asking_for_specifics",
+    "scenario": "Someone asks for a specific example behind vague feedback, receives one, and then treats that single example as proof of a sweeping pattern across all their work.",
+    "type": "reason_choice",
+    "prompt": "What's the combined issue?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Asking for specifics was the right move, but weighing the single resulting example as if it were a confirmed, sweeping pattern overreaches in the other direction.",
+        "conceptTag": "asking_for_specifics"
+      },
+      {
+        "id": "B",
+        "text": "One specific example is always sufficient proof of a general pattern once it's been named.",
+        "misconception": "behavioural-all_feedback_treated_equally"
+      },
+      {
+        "id": "C",
+        "text": "Asking for the specific example was unnecessary since the original vague feedback was enough.",
+        "misconception": "behavioural-vague_feedback_accepted_unclarified"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Getting a specific example is genuinely useful, but one example still needs to be weighed honestly — treating it as proof of a sweeping pattern overreaches just as much as never asking for specifics at all."
+  },
+  {
+    "id": "i.wk8.fb.chk.d",
+    "concept": "acting_on_feedback_selectively",
+    "scenario": "Someone receives critical feedback from a source with little relevant expertise, reacts defensively without pausing, and ends up concluding the feedback says something bad about their fundamental worth.",
+    "type": "reason_choice",
+    "prompt": "What's the fully combined issue?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The defensive reaction, the leap to a self-worth judgment, and the failure to weigh the source's limited expertise all compound — pausing, scoping the feedback to its specific content, and weighing the source would address all three.",
+        "conceptTag": "acting_on_feedback_selectively"
+      },
+      {
+        "id": "B",
+        "text": "Since the feedback was critical, it must be acted on fully regardless of the source's expertise.",
+        "misconception": "behavioural-all_feedback_treated_equally"
+      },
+      {
+        "id": "C",
+        "text": "The defensive reaction is the only real problem here; the source's expertise doesn't matter.",
+        "misconception": "behavioural-defensive_immediate_justification"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "All three ideas reinforce each other: pausing instead of reacting defensively, keeping the feedback scoped rather than letting it become a self-worth judgment, and weighing the source's limited relevant expertise before deciding how much to act on it."
+  },
+  {
+    "id": "i.fb.words",
+    "concept": "acting_on_feedback_selectively",
+    "type": "own_words",
+    "scenario": "Think of a real piece of feedback you've recently given or received.",
+    "prompt": "In your own words, describe the feedback and check it against as many of this module's eight ideas as apply: specificity, separating behavior from character, timing and framing, balance, receiving without defensiveness, separating feedback from self-worth, asking for specifics, and weighing feedback selectively.",
+    "modelAnswer": "\"The feedback was X.\" \"Checking specificity: was it a concrete instance or a vague trait?\" \"Checking timing: was it delivered somewhere it could actually be heard?\" \"Checking my own reaction: did I pause before responding, or justify immediately?\" \"Checking weighing: how much should this actually change, given the source and whether it's a pattern?\"",
+    "rubric": [
+      "States a real, specific piece of feedback, not a hypothetical one.",
+      "Checks it against at least four of this module's eight ideas by name.",
+      "Identifies at least one place the feedback (given or received) could have been handled better.",
+      "States what doing it differently would actually have looked like."
+    ]
+  },
+  {
+    "id": "i.fb.spec.words",
+    "concept": "specific_not_vague_feedback",
+    "type": "own_words",
+    "scenario": "Think of vague feedback you've given or received recently.",
+    "prompt": "In your own words, explain what makes feedback actionable, and what a vague trait judgment is missing.",
+    "modelAnswer": "Actionable feedback names a specific, observed instance — what was said or done, and when — so the person has something concrete to recognize and address. A vague trait judgment (\"be more professional\") doesn't point to any specific moment, leaving the person to guess at what actually needs to change.",
+    "rubric": [
+      "States that actionable feedback names a specific instance.",
+      "States what a vague trait judgment is missing.",
+      "Gives a real or plausible example of each.",
+      "Explains why specificity makes feedback easier to act on."
+    ]
+  },
+  {
+    "id": "i.fb.char.words",
+    "concept": "separating_behavior_from_character",
+    "type": "own_words",
+    "scenario": "Think of a time feedback about one action got generalized into a judgment about who you are, or you did this to someone else.",
+    "prompt": "In your own words, explain the difference between critiquing an action and labeling a person's character.",
+    "modelAnswer": "Critiquing an action addresses a specific thing someone did (\"this missed the deadline\"); labeling character turns that into a judgment about who they are (\"you're unreliable\"). The same honest, direct point can usually be made about the action without the character label, and tends to be received far less defensively.",
+    "rubric": [
+      "States the difference between an action critique and a character label.",
+      "Gives a real or plausible example of each.",
+      "States that aiming at the action doesn't mean softening the message.",
+      "Notes the different reaction the two tend to provoke."
+    ]
+  },
+  {
+    "id": "i.fb.time.words",
+    "concept": "feedback_timing_and_framing",
+    "type": "own_words",
+    "scenario": "Think of feedback you've received that was well-timed, or poorly-timed (public, sudden, or long-delayed).",
+    "prompt": "In your own words, explain why the same feedback content can land completely differently depending on timing and setting.",
+    "modelAnswer": "The same accurate content can trigger a defensive reaction simply because of when and where it's delivered — publicly rather than privately, as a surprise rather than with warning, or so delayed that it feels sudden anyway. Choosing timing and framing isn't about softening the content, it's about choosing a setting where the person can actually process it.",
+    "rubric": [
+      "States that timing/setting affects whether feedback can be heard, independent of content.",
+      "Gives a real or plausible example of good or bad timing.",
+      "States that this isn't about softening the message.",
+      "Notes at least one specific timing factor (public/private, warned/unwarned, prompt/delayed)."
+    ]
+  },
+  {
+    "id": "i.fb.bal.words",
+    "concept": "balancing_positive_and_corrective",
+    "type": "own_words",
+    "scenario": "Think of feedback you've given or received that was all criticism, or all praise.",
+    "prompt": "In your own words, explain why both all-criticism and all-praise feedback can be inaccurate.",
+    "modelAnswer": "All-criticism feedback omits what's actually working, giving a falsely negative picture when a lot is going right. All-praise feedback omits a real problem to avoid discomfort, giving a falsely positive picture. Balance means matching the full, accurate situation — not hitting some fixed ratio of positive to negative comments.",
+    "rubric": [
+      "Explains why all-criticism feedback can be inaccurate.",
+      "Explains why all-praise feedback can also be inaccurate.",
+      "States that balance means accuracy, not a fixed ratio.",
+      "Gives a real or plausible example."
+    ]
+  },
+  {
+    "id": "i.fb.def.words",
+    "concept": "receiving_without_defensiveness",
+    "type": "own_words",
+    "scenario": "Think of a time you (or someone else) reacted defensively to feedback before fully taking it in.",
+    "prompt": "In your own words, explain what's lost when a defensive justification starts before feedback is fully heard.",
+    "modelAnswer": "When a justification starts forming before the feedback is finished, attention shifts toward defending rather than understanding, so parts of what's actually being said — including parts that might be fair — risk being missed entirely. Pausing before responding isn't agreeing with everything said; it just separates taking it in from reacting to it.",
+    "rubric": [
+      "States that a defensive reaction can cause parts of the feedback to be missed.",
+      "States that pausing isn't the same as agreeing.",
+      "Gives a real or plausible example.",
+      "Describes a concrete way to pause before responding."
+    ]
+  },
+  {
+    "id": "i.fb.worth.words",
+    "concept": "separating_feedback_from_self_worth",
+    "type": "own_words",
+    "scenario": "Think of a time one piece of critical feedback expanded, in your mind, into a judgment about your overall worth or ability.",
+    "prompt": "In your own words, explain the gap between what specific feedback actually says and a broader self-worth conclusion.",
+    "modelAnswer": "Specific feedback addresses one instance (\"this report had an error\"); a self-worth conclusion (\"I'm bad at this job\") is a much larger, unsupported leap from that one instance. Keeping the two separate means letting the feedback be about the specific thing it's actually about, without expanding it into a verdict on overall competence or worth.",
+    "rubric": [
+      "States the gap between specific feedback and a self-worth conclusion.",
+      "Gives a real or plausible example of the leap happening.",
+      "States that this doesn't mean never feeling uncomfortable about feedback.",
+      "Explains what keeping the scope narrow actually looks like."
+    ]
+  },
+  {
+    "id": "i.fb.ask.words",
+    "concept": "asking_for_specifics",
+    "type": "own_words",
+    "scenario": "Think of vague feedback you've received and had to guess at the meaning of.",
+    "prompt": "In your own words, explain why asking for a specific example turns vague feedback into something usable.",
+    "modelAnswer": "Vague feedback (\"needs more polish,\" \"be more proactive\") doesn't say what to actually change, so acting on it means guessing. A direct question asking for a specific example or situation turns the vague impression into something concrete enough to actually act on, and isn't pushing back on the feedback itself.",
+    "rubric": [
+      "States why vague feedback is hard to act on directly.",
+      "States that asking for specifics isn't the same as disputing the feedback.",
+      "Gives a real or plausible example of a clarifying question.",
+      "Explains what the clarified version makes possible."
+    ]
+  },
+  {
+    "id": "i.fb.sel.words",
+    "concept": "acting_on_feedback_selectively",
+    "type": "own_words",
+    "scenario": "Think of a time you treated one piece of feedback as more (or less) decisive than it deserved.",
+    "prompt": "In your own words, explain how to weigh feedback by its source and whether it's a repeated pattern.",
+    "modelAnswer": "Not all feedback deserves equal weight — a single offhand comment is worth noting but not necessarily acting on fully, while the same point raised independently and repeatedly, or raised by someone with direct relevant expertise, deserves more. Weighing feedback this way isn't dismissing anything uncomfortable; it's an honest judgment about which specific pieces are actually worth acting on.",
+    "rubric": [
+      "States that feedback varies in how much weight it deserves.",
+      "Names at least one factor that should raise or lower that weight (repetition, source expertise).",
+      "States that weighing isn't the same as dismissing uncomfortable feedback.",
+      "Gives a real or plausible example."
+    ]
+  }
+]

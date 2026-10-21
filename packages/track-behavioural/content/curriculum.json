@@ -11,7 +11,9 @@
         "behavioural-mod-3",
         "behavioural-mod-4",
         "behavioural-mod-5",
-        "behavioural-mod-6"
+        "behavioural-mod-6",
+        "behavioural-mod-7",
+        "behavioural-mod-8"
       ]
     }
   ],
@@ -91,6 +93,32 @@
         "behavioural-les-27",
         "behavioural-les-28",
         "behavioural-les-29"
+      ]
+    },
+    {
+      "id": "behavioural-mod-7",
+      "trackId": "behavioural",
+      "sequence": 7,
+      "title": "Giving Feedback That Lands",
+      "lessonIds": [
+        "behavioural-les-30",
+        "behavioural-les-31",
+        "behavioural-les-32",
+        "behavioural-les-33",
+        "behavioural-les-34"
+      ]
+    },
+    {
+      "id": "behavioural-mod-8",
+      "trackId": "behavioural",
+      "sequence": 8,
+      "title": "Receiving Feedback Well",
+      "lessonIds": [
+        "behavioural-les-35",
+        "behavioural-les-36",
+        "behavioural-les-37",
+        "behavioural-les-38",
+        "behavioural-les-39"
       ]
     }
   ],
@@ -1360,6 +1388,433 @@
       "apply": "In your next real conversation that matters, deliberately bring all eight listening ideas to it, not just the ones that come naturally.",
       "reflect": "In your own words, describe a real recent conversation, and check it against as many of these eight listening ideas as actually apply.",
       "contentVersion": 1
+    },
+    {
+      "id": "behavioural-les-30",
+      "trackId": "behavioural",
+      "moduleId": "behavioural-mod-7",
+      "sequence": 30,
+      "title": "Say What Actually Happened",
+      "objectives": [
+        "Describe feedback as a specific, observed behavior rather than a vague trait or judgment."
+      ],
+      "concepts": [
+        "specific_not_vague_feedback"
+      ],
+      "prerequisites": [
+        "behavioural-les-29"
+      ],
+      "interactiveItemIds": [
+        "i.fb.spec.a",
+        "i.fb.spec.b",
+        "i.fb.spec.c",
+        "i.fb.spec.words"
+      ],
+      "masteryItemIds": [
+        "i.fb.spec.a",
+        "i.fb.spec.b"
+      ],
+      "explanationBackItemId": "i.fb.spec.words",
+      "teach": [
+        "Useful feedback describes a specific, observed behavior — what was said or done, and when — rather than a vague trait (\"you're disorganized\") that the person can't actually act on.",
+        "Giving feedback as a general trait or character judgment rather than a specific instance. \"You're not a team player\" gives no actionable handle; \"you didn't loop the team in on the schedule change\" does.",
+        "The test is whether the feedback points to a specific moment the person can actually remember and address, not a sweeping characterization they're left to guess at."
+      ],
+      "example": "\"You're careless with details\" is a trait judgment with no clear next step. \"The report you sent Tuesday had three numbers that didn't match the spreadsheet\" names a specific, checkable instance the person can actually do something about.",
+      "practicePrompts": [
+        "Think of vague feedback you've given or received.",
+        "Identify what specific instance it was probably pointing at.",
+        "Rewrite it as a specific, observed behavior."
+      ],
+      "apply": "Next time you give feedback, replace any trait language with a specific, dated instance of what was actually said or done.",
+      "reflect": "Think of a time you received vague feedback and weren't sure what to actually do differently. What specific instance might it have been about?",
+      "contentVersion": 1
+    },
+    {
+      "id": "behavioural-les-31",
+      "trackId": "behavioural",
+      "moduleId": "behavioural-mod-7",
+      "sequence": 31,
+      "title": "Critique the Action, Not the Person",
+      "objectives": [
+        "Give feedback that addresses a specific action, without labeling the person's character."
+      ],
+      "concepts": [
+        "separating_behavior_from_character"
+      ],
+      "prerequisites": [
+        "behavioural-les-30"
+      ],
+      "interactiveItemIds": [
+        "i.fb.char.a",
+        "i.fb.char.b",
+        "i.fb.char.c",
+        "i.fb.char.words"
+      ],
+      "masteryItemIds": [
+        "i.fb.char.a",
+        "i.fb.char.b"
+      ],
+      "explanationBackItemId": "i.fb.char.words",
+      "teach": [
+        "Feedback aimed at an action (\"this missed the deadline\") is easier to hear and act on than feedback that labels the person (\"you're unreliable\") — even when both are responding to the same event.",
+        "Reaching for a character label when the actual target is one action. It's a short step from \"this was late\" to \"you're always late,\" but the second is a judgment of identity, not a description of an event.",
+        "Separating the two doesn't mean softening the message — a specific, direct critique of an action can be just as honest as a character label, without the same defensive reaction it tends to provoke."
+      ],
+      "example": "\"You're unreliable\" labels the person. \"This is the second deadline this month that's slipped without a heads-up\" names a specific pattern of actions — direct, but aimed at behavior, not identity.",
+      "practicePrompts": [
+        "Think of feedback you've given that labeled a person's character.",
+        "Identify the specific action underneath the label.",
+        "Rewrite the feedback aimed at the action instead."
+      ],
+      "apply": "Next time you're about to say \"you're [trait]\", stop and name the specific action instead.",
+      "reflect": "Think of a time feedback about one action got generalized into a judgment about who you are. How did that land, compared to feedback about just the action?",
+      "contentVersion": 1
+    },
+    {
+      "id": "behavioural-les-32",
+      "trackId": "behavioural",
+      "moduleId": "behavioural-mod-7",
+      "sequence": 32,
+      "title": "Choosing When and How",
+      "objectives": [
+        "Choose a time and framing for feedback that lets it actually be heard, rather than ambushing the person."
+      ],
+      "concepts": [
+        "feedback_timing_and_framing"
+      ],
+      "prerequisites": [
+        "behavioural-les-31"
+      ],
+      "interactiveItemIds": [
+        "i.fb.time.a",
+        "i.fb.time.b",
+        "i.fb.time.c",
+        "i.fb.time.words"
+      ],
+      "masteryItemIds": [
+        "i.fb.time.a",
+        "i.fb.time.b"
+      ],
+      "explanationBackItemId": "i.fb.time.words",
+      "teach": [
+        "The same feedback lands differently depending on when and how it's delivered — privately versus in front of others, right after an incident versus much later, with warning versus out of nowhere.",
+        "Delivering feedback as an ambush — publicly, with no warning, or at a moment when the person can't actually process or respond to it. Even accurate feedback can fail here simply because of how it arrived.",
+        "Good timing and framing isn't about softening the content — it's about choosing a moment and setting where the person is actually in a position to hear it, rather than just defend against the delivery."
+      ],
+      "example": "Correcting someone's error in front of the whole team, mid-meeting, tends to trigger a defensive reaction regardless of how fair the correction is. The same point, raised privately afterward, is far more likely to actually land.",
+      "practicePrompts": [
+        "Think of feedback you've received that was well-timed or poorly-timed.",
+        "Identify what made the timing or setting work or not work.",
+        "Consider how you'd choose timing for feedback you need to give soon."
+      ],
+      "apply": "Before your next piece of corrective feedback, deliberately choose a private, well-timed moment rather than the first available one.",
+      "reflect": "Think of a time feedback was delivered as an ambush — in public, or with no warning. How did the setting itself affect how it was received?",
+      "contentVersion": 1
+    },
+    {
+      "id": "behavioural-les-33",
+      "trackId": "behavioural",
+      "moduleId": "behavioural-mod-7",
+      "sequence": 33,
+      "title": "An Accurate Picture, Not Just Criticism",
+      "objectives": [
+        "Give feedback that balances honest corrective content with acknowledgment of what's working."
+      ],
+      "concepts": [
+        "balancing_positive_and_corrective"
+      ],
+      "prerequisites": [
+        "behavioural-les-32"
+      ],
+      "interactiveItemIds": [
+        "i.fb.bal.a",
+        "i.fb.bal.b",
+        "i.fb.bal.c",
+        "i.fb.bal.words"
+      ],
+      "masteryItemIds": [
+        "i.fb.bal.a",
+        "i.fb.bal.b"
+      ],
+      "explanationBackItemId": "i.fb.bal.words",
+      "teach": [
+        "Useful feedback gives an accurate picture — what's working, alongside what isn't — rather than only corrective content, which can make a genuinely strong performance look uniformly bad.",
+        "Overloading feedback with only criticism (demoralizing, and an inaccurate picture if other things are going well), or the opposite: only praise, with real problems left unsaid to avoid discomfort.",
+        "Balance isn't a fixed ratio of positive-to-negative comments — it's giving feedback that's actually accurate to the full situation, not padded or softened for its own sake."
+      ],
+      "example": "A review that lists five things that went wrong and nothing that went right leaves someone with a distorted picture if, in fact, most of the work was solid. A review that's all praise, omitting a real recurring problem, is just as inaccurate in the other direction.",
+      "practicePrompts": [
+        "Think of feedback you've given that was all criticism or all praise.",
+        "Consider what got left out of the picture either way.",
+        "Think of how you'd give a more accurate, balanced version."
+      ],
+      "apply": "In your next piece of feedback, deliberately check that it reflects the full accurate picture — not padded with empty praise, not stripped of what's actually working.",
+      "reflect": "Think of a time you received feedback that was only criticism or only praise. What would a more accurate, balanced version have included?",
+      "contentVersion": 1
+    },
+    {
+      "id": "behavioural-les-34",
+      "trackId": "behavioural",
+      "moduleId": "behavioural-mod-7",
+      "sequence": 34,
+      "title": "Giving Feedback, Put Together",
+      "objectives": [
+        "Combine specificity, separating behavior from character, timing, and balance into one piece of real feedback."
+      ],
+      "concepts": [
+        "specific_not_vague_feedback",
+        "separating_behavior_from_character",
+        "feedback_timing_and_framing",
+        "balancing_positive_and_corrective"
+      ],
+      "prerequisites": [
+        "behavioural-les-30",
+        "behavioural-les-31",
+        "behavioural-les-32",
+        "behavioural-les-33"
+      ],
+      "interactiveItemIds": [
+        "i.wk7.fb.chk.a",
+        "i.wk7.fb.chk.b",
+        "i.wk7.fb.chk.c",
+        "i.wk7.fb.chk.d"
+      ],
+      "masteryItemIds": [
+        "i.wk7.fb.chk.a",
+        "i.wk7.fb.chk.b",
+        "i.wk7.fb.chk.c",
+        "i.wk7.fb.chk.d"
+      ],
+      "teach": [
+        "This week built four pieces of giving feedback well: being specific instead of vague, aiming at the action instead of the person, choosing timing and framing that can actually be heard, and keeping the picture balanced and accurate.",
+        "Doing one of these well while missing another — being specific but delivering it as a public ambush, or balanced but still vague enough that neither the praise nor the correction points to anything concrete.",
+        "All four point the same direction: feedback that's actually useful to the person receiving it, not just accurate from the giver's point of view."
+      ],
+      "example": "Pulling a colleague aside privately (timing), to note that \"the client email on Tuesday missed the pricing update\" (specific, aimed at the action, not \"you're careless\"), alongside acknowledging that the rest of the proposal was strong (balance) — all four together, not just one.",
+      "practicePrompts": [
+        "Think of feedback you need to give soon.",
+        "Draft it checking all four: specific, aimed at the action, well-timed, balanced.",
+        "Notice which of the four was hardest to actually include."
+      ],
+      "apply": "The next time you give real feedback, deliberately check it against all four ideas before delivering it.",
+      "reflect": "Across this week, which of the four — specificity, separating action from character, timing, or balance — is hardest for you personally to get right?",
+      "contentVersion": 1
+    },
+    {
+      "id": "behavioural-les-35",
+      "trackId": "behavioural",
+      "moduleId": "behavioural-mod-8",
+      "sequence": 35,
+      "title": "Taking It In Before Responding",
+      "objectives": [
+        "Take in feedback before responding, rather than justifying or explaining it away immediately."
+      ],
+      "concepts": [
+        "receiving_without_defensiveness"
+      ],
+      "prerequisites": [
+        "behavioural-les-34"
+      ],
+      "interactiveItemIds": [
+        "i.fb.def.a",
+        "i.fb.def.b",
+        "i.fb.def.c",
+        "i.fb.def.words"
+      ],
+      "masteryItemIds": [
+        "i.fb.def.a",
+        "i.fb.def.b"
+      ],
+      "explanationBackItemId": "i.fb.def.words",
+      "teach": [
+        "Feedback, especially corrective feedback, triggers an instinct to justify or explain immediately. Taking it in first — before responding at all — gives you a chance to actually process what's being said.",
+        "Jumping straight to a defense or explanation before the feedback has been fully taken in. This can look like listening from the outside, while the content is barely registering underneath.",
+        "Taking a moment — even just a breath, or saying \"let me think about that\" — before responding isn't the same as agreeing with everything said. It just separates understanding from reacting."
+      ],
+      "example": "A manager points out a missed step in a process. The instinct is to immediately explain why it happened. Pausing first — \"let me make sure I understand what you're pointing to\" — actually confirms what's being said before responding to it, defensively or otherwise.",
+      "practicePrompts": [
+        "Think of a recent time you received feedback and responded defensively right away.",
+        "Consider what you might have missed by responding before fully taking it in.",
+        "Practice pausing before responding, the next time feedback comes."
+      ],
+      "apply": "Next time you receive feedback, pause before responding — even briefly — rather than justifying immediately.",
+      "reflect": "Think of a time you reacted defensively to feedback before you'd actually taken it in. What might you have understood differently with a pause first?",
+      "contentVersion": 1
+    },
+    {
+      "id": "behavioural-les-36",
+      "trackId": "behavioural",
+      "moduleId": "behavioural-mod-8",
+      "sequence": 36,
+      "title": "It's About One Thing You Did, Not Who You Are",
+      "objectives": [
+        "Treat critical feedback as information about a specific action, not a judgment of one's fundamental worth."
+      ],
+      "concepts": [
+        "separating_feedback_from_self_worth"
+      ],
+      "prerequisites": [
+        "behavioural-les-35"
+      ],
+      "interactiveItemIds": [
+        "i.fb.worth.a",
+        "i.fb.worth.b",
+        "i.fb.worth.c",
+        "i.fb.worth.words"
+      ],
+      "masteryItemIds": [
+        "i.fb.worth.a",
+        "i.fb.worth.b"
+      ],
+      "explanationBackItemId": "i.fb.worth.words",
+      "teach": [
+        "Critical feedback about a specific action is information about that instance, not a verdict on someone's fundamental worth or identity — even when it stings in a way that feels personal.",
+        "Expanding a specific critique into a global judgment about yourself — \"I made an error in this report\" becoming \"I'm bad at this job\" or \"I'm not good enough.\"",
+        "Keeping the two separate doesn't mean feedback never feels uncomfortable — it means not letting one specific critique expand into a conclusion about your overall worth or competence."
+      ],
+      "example": "A piece of feedback that a presentation ran too long and lost the room is information about that one presentation. Hearing it as \"I'm bad at public speaking\" or \"I'm not cut out for this\" expands one specific instance into a much larger, harder-to-shake judgment that the feedback never actually made.",
+      "practicePrompts": [
+        "Think of a time critical feedback felt like a judgment on your overall worth.",
+        "Identify the specific, narrower thing the feedback was actually about.",
+        "Notice the gap between the specific feedback and the broader judgment you added."
+      ],
+      "apply": "Next time feedback stings, check whether you're reacting to the specific point made or to a broader judgment you've added on top of it.",
+      "reflect": "Think of a time you let one piece of critical feedback expand into a judgment about your overall worth or ability. What was the feedback actually, specifically about?",
+      "contentVersion": 1
+    },
+    {
+      "id": "behavioural-les-37",
+      "trackId": "behavioural",
+      "moduleId": "behavioural-mod-8",
+      "sequence": 37,
+      "title": "Asking What That Actually Means",
+      "objectives": [
+        "Ask for specifics when feedback is vague, rather than accepting it without clarification."
+      ],
+      "concepts": [
+        "asking_for_specifics"
+      ],
+      "prerequisites": [
+        "behavioural-les-36"
+      ],
+      "interactiveItemIds": [
+        "i.fb.ask.a",
+        "i.fb.ask.b",
+        "i.fb.ask.c",
+        "i.fb.ask.words"
+      ],
+      "masteryItemIds": [
+        "i.fb.ask.a",
+        "i.fb.ask.b"
+      ],
+      "explanationBackItemId": "i.fb.ask.words",
+      "teach": [
+        "Vague feedback (\"this needs more polish,\" \"be more proactive\") is hard to act on as given. Asking directly what it specifically refers to turns it into something usable.",
+        "Accepting vague feedback at face value, nodding along without actually knowing what to change, then guessing at what might have been meant.",
+        "Asking for specifics isn't pushing back on the feedback — it's the step that makes vague feedback genuinely useful, by turning a general impression into something concrete enough to act on."
+      ],
+      "example": "\"This presentation needs more polish\" doesn't say what to actually change. Asking \"can you point to a specific slide or section where that was most noticeable?\" turns a vague impression into something that can actually be fixed.",
+      "practicePrompts": [
+        "Think of vague feedback you've received and accepted without clarifying.",
+        "Draft the clarifying question you could have asked.",
+        "Consider what concrete change the clarified version might have pointed to."
+      ],
+      "apply": "Next time you receive vague feedback, ask directly for a specific example before trying to act on it.",
+      "reflect": "Think of a time you acted on vague feedback by guessing what it meant, rather than asking. Did your guess match what was actually meant?",
+      "contentVersion": 1
+    },
+    {
+      "id": "behavioural-les-38",
+      "trackId": "behavioural",
+      "moduleId": "behavioural-mod-8",
+      "sequence": 38,
+      "title": "Not All Feedback Is Equally Worth Acting On",
+      "objectives": [
+        "Judge which feedback is actually worth acting on, rather than treating every piece of feedback as equally valid."
+      ],
+      "concepts": [
+        "acting_on_feedback_selectively"
+      ],
+      "prerequisites": [
+        "behavioural-les-37"
+      ],
+      "interactiveItemIds": [
+        "i.fb.sel.a",
+        "i.fb.sel.b",
+        "i.fb.sel.c",
+        "i.fb.sel.words"
+      ],
+      "masteryItemIds": [
+        "i.fb.sel.a",
+        "i.fb.sel.b"
+      ],
+      "explanationBackItemId": "i.fb.sel.words",
+      "teach": [
+        "Feedback varies in how much weight it deserves — a pattern repeated by several people carries more than a single offhand comment; feedback from someone with direct relevant expertise carries more than a passing opinion.",
+        "Treating every piece of feedback received as equally valid and actionable, regardless of who it's from, how often it's been said, or whether it fits the actual context.",
+        "Weighing feedback isn't dismissing anything uncomfortable — it's judging, honestly, which specific pieces are actually worth acting on, based on the source and the pattern, not just reacting to whichever one landed most recently."
+      ],
+      "example": "One client's offhand comment about a proposal's formatting is worth noting but not necessarily acting on. The same formatting concern, raised independently by three different clients over two months, is a real pattern worth taking seriously.",
+      "practicePrompts": [
+        "Think of a piece of feedback you acted on without weighing its source or how often it had come up.",
+        "Think of a piece of feedback you dismissed that, in hindsight, deserved more weight.",
+        "Consider how you'd weigh a piece of feedback you've recently received."
+      ],
+      "apply": "The next time you receive feedback, weigh it by source and pattern before deciding how much to act on it.",
+      "reflect": "Think of a time you treated a single piece of feedback as more decisive than it deserved, or a repeated pattern as less decisive than it deserved. What would weighing it more carefully have changed?",
+      "contentVersion": 1
+    },
+    {
+      "id": "behavioural-les-39",
+      "trackId": "behavioural",
+      "moduleId": "behavioural-mod-8",
+      "sequence": 39,
+      "title": "Receiving Feedback Well, Put Together",
+      "objectives": [
+        "Combine receiving without defensiveness, separating feedback from self-worth, asking for specifics, and weighing feedback selectively into one complete response.",
+        "Describe a real piece of feedback you've received, using everything covered across both feedback modules."
+      ],
+      "concepts": [
+        "receiving_without_defensiveness",
+        "separating_feedback_from_self_worth",
+        "asking_for_specifics",
+        "acting_on_feedback_selectively"
+      ],
+      "prerequisites": [
+        "behavioural-les-35",
+        "behavioural-les-36",
+        "behavioural-les-37",
+        "behavioural-les-38"
+      ],
+      "interactiveItemIds": [
+        "i.wk8.fb.chk.a",
+        "i.wk8.fb.chk.b",
+        "i.wk8.fb.chk.c",
+        "i.wk8.fb.chk.d",
+        "i.fb.words"
+      ],
+      "masteryItemIds": [
+        "i.wk8.fb.chk.a",
+        "i.wk8.fb.chk.b",
+        "i.wk8.fb.chk.c",
+        "i.wk8.fb.chk.d"
+      ],
+      "explanationBackItemId": "i.fb.words",
+      "teach": [
+        "This week covered receiving feedback without immediate defensiveness, keeping it separate from self-worth, asking for specifics when it's vague, and weighing which feedback is actually worth acting on. Together with last week's giving-feedback habits, that's eight ideas for feedback working well in both directions.",
+        "Treating feedback as something to survive rather than genuinely use — either shutting down defensively, or accepting everything uncritically without weighing it, both of which skip the actual work of taking feedback in and judging it honestly.",
+        "This closes out both feedback modules. The next module, on perspective-taking, builds on this: understanding someone else's view requires some of the same discipline — taking it in before reacting — that receiving feedback well requires."
+      ],
+      "example": "A colleague gives you blunt, vague feedback (\"this isn't working\") in front of others. Receiving it well means pausing rather than justifying immediately, not reading it as a verdict on your competence, asking afterward what specifically wasn't working, and then honestly weighing how much to actually change based on whether this is a one-off comment or a pattern others have also raised.",
+      "practicePrompts": [
+        "Think of a real piece of feedback you've recently received.",
+        "Check it against all eight ideas from this week and last.",
+        "Consider what you'd do differently with all eight in mind."
+      ],
+      "apply": "The next time you receive real feedback that matters, deliberately bring all eight feedback ideas to it, not just the ones that come naturally.",
+      "reflect": "In your own words, describe a real piece of feedback you've received, and check it against as many of these eight feedback ideas as actually apply.",
+      "contentVersion": 1
     }
   ],
   "concepts": [
@@ -1506,6 +1961,54 @@
       "trackId": "behavioural",
       "moduleId": "behavioural-mod-6",
       "label": "Adjusting how you listen for someone whose style genuinely differs from yours"
+    },
+    {
+      "id": "specific_not_vague_feedback",
+      "trackId": "behavioural",
+      "moduleId": "behavioural-mod-7",
+      "label": "Describing a specific observed behavior, not a vague trait"
+    },
+    {
+      "id": "separating_behavior_from_character",
+      "trackId": "behavioural",
+      "moduleId": "behavioural-mod-7",
+      "label": "Critiquing the action, not labeling the person"
+    },
+    {
+      "id": "feedback_timing_and_framing",
+      "trackId": "behavioural",
+      "moduleId": "behavioural-mod-7",
+      "label": "Choosing the right time and framing so feedback can actually be heard"
+    },
+    {
+      "id": "balancing_positive_and_corrective",
+      "trackId": "behavioural",
+      "moduleId": "behavioural-mod-7",
+      "label": "Giving an accurate picture, not only criticism or only praise"
+    },
+    {
+      "id": "receiving_without_defensiveness",
+      "trackId": "behavioural",
+      "moduleId": "behavioural-mod-8",
+      "label": "Taking in feedback before responding, instead of justifying immediately"
+    },
+    {
+      "id": "separating_feedback_from_self_worth",
+      "trackId": "behavioural",
+      "moduleId": "behavioural-mod-8",
+      "label": "Treating critical feedback as information, not an attack on identity"
+    },
+    {
+      "id": "asking_for_specifics",
+      "trackId": "behavioural",
+      "moduleId": "behavioural-mod-8",
+      "label": "Asking what vague feedback actually refers to"
+    },
+    {
+      "id": "acting_on_feedback_selectively",
+      "trackId": "behavioural",
+      "moduleId": "behavioural-mod-8",
+      "label": "Judging which feedback is actually worth acting on"
     }
   ],
   "misconceptions": [
@@ -1664,6 +2167,54 @@
       "trackId": "behavioural",
       "label": "Own communication style assumed universal",
       "description": "Listening and interpreting through your own default communication style or norms, without adjusting for someone whose style genuinely differs."
+    },
+    {
+      "id": "behavioural-vague_trait_feedback",
+      "trackId": "behavioural",
+      "label": "Feedback given as a vague trait or judgment",
+      "description": "Giving feedback as a general trait or character judgment (\"you're disorganized\") rather than a specific, observed behavior the person can actually act on."
+    },
+    {
+      "id": "behavioural-character_labeled",
+      "trackId": "behavioural",
+      "label": "The person's character labeled, not the action",
+      "description": "Critiquing who someone is as a person, rather than a specific action they took, even when the intent was to address the action."
+    },
+    {
+      "id": "behavioural-feedback_ambushed",
+      "trackId": "behavioural",
+      "label": "Feedback delivered as an ambush",
+      "description": "Giving feedback at a poorly chosen time or in a way that catches the person off guard, publicly or without warning, rather than framing it so it can actually be heard."
+    },
+    {
+      "id": "behavioural-feedback_unbalanced",
+      "trackId": "behavioural",
+      "label": "Feedback unbalanced — all criticism or empty praise",
+      "description": "Giving feedback that's either all corrective with no acknowledgment of what's working, or all praise with no honest corrective content — either way failing to give an accurate, useful picture."
+    },
+    {
+      "id": "behavioural-defensive_immediate_justification",
+      "trackId": "behavioural",
+      "label": "Immediate defensive justification",
+      "description": "Responding to feedback by immediately justifying or explaining it away, before actually taking in what was said."
+    },
+    {
+      "id": "behavioural-feedback_as_identity_attack",
+      "trackId": "behavioural",
+      "label": "Feedback treated as an attack on identity",
+      "description": "Treating critical feedback about a specific action as a judgment on one's fundamental worth or identity, rather than information about one instance of behavior."
+    },
+    {
+      "id": "behavioural-vague_feedback_accepted_unclarified",
+      "trackId": "behavioural",
+      "label": "Vague feedback accepted without asking for specifics",
+      "description": "Accepting vague, hard-to-act-on feedback at face value without asking what specifically it refers to."
+    },
+    {
+      "id": "behavioural-all_feedback_treated_equally",
+      "trackId": "behavioural",
+      "label": "All feedback treated as equally valid",
+      "description": "Treating every piece of feedback received as equally valid and actionable, regardless of the source's expertise, context, or pattern of repetition."
     }
   ]
 }
