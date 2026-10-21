@@ -8,6 +8,7 @@ import weeklyCheckpointItems from '../../content/items/weekly-checkpoints.json' 
 import signalsItems from '../../content/items/signals.json' with { type: 'json' };
 import listeningItems from '../../content/items/listening.json' with { type: 'json' };
 import feedbackItems from '../../content/items/feedback.json' with { type: 'json' };
+import perspectiveItems from '../../content/items/perspective.json' with { type: 'json' };
 
 const typedCurriculum = curriculum as Curriculum;
 const typedItems: Item[] = [
@@ -18,6 +19,7 @@ const typedItems: Item[] = [
   ...(signalsItems as Item[]),
   ...(listeningItems as Item[]),
   ...(feedbackItems as Item[]),
+  ...(perspectiveItems as Item[]),
 ];
 const itemById = new Map(typedItems.map((i) => [i.id, i]));
 
@@ -30,9 +32,11 @@ const CHECKPOINT_LESSON_IDS = new Set([
   'behavioural-les-29',
   'behavioural-les-34',
   'behavioural-les-39',
+  'behavioural-les-44',
+  'behavioural-les-49',
 ]);
 
-describe('converted Behavioural Observation content (Modules 1-8)', () => {
+describe('converted Behavioural Observation content (Modules 1-10)', () => {
   it('validates against the shared content schema', () => {
     const result = validateContent(typedCurriculum, typedItems);
     expect(result.errors).toEqual([]);
@@ -149,6 +153,33 @@ describe('converted Behavioural Observation content (Modules 1-8)', () => {
       new Set(['behavioural-les-35', 'behavioural-les-36', 'behavioural-les-37', 'behavioural-les-38'])
     );
     for (const lessonId of ['behavioural-les-34', 'behavioural-les-39']) {
+      const lesson = typedCurriculum.lessons.find((l) => l.id === lessonId)!;
+      const checkpointConcepts = new Set(lesson.masteryItemIds.map((id) => itemById.get(id)!.concept));
+      expect(checkpointConcepts.size).toBe(4);
+      expect(checkpointConcepts).toEqual(new Set(lesson.concepts));
+    }
+  });
+
+  it('has 2 more modules (9-10) and 10 more lessons for Perspective-taking, chaining off module 8\'s checkpoint', () => {
+    expect(typedCurriculum.modules.map((m) => m.id).slice(8, 10)).toEqual(['behavioural-mod-9', 'behavioural-mod-10']);
+    expect(typedCurriculum.lessons.map((l) => l.id).slice(39, 49)).toEqual([
+      'behavioural-les-40', 'behavioural-les-41', 'behavioural-les-42', 'behavioural-les-43', 'behavioural-les-44',
+      'behavioural-les-45', 'behavioural-les-46', 'behavioural-les-47', 'behavioural-les-48', 'behavioural-les-49',
+    ]);
+    const byId = new Map(typedCurriculum.lessons.map((l) => [l.id, l]));
+    expect(byId.get('behavioural-les-40')!.prerequisites).toEqual(['behavioural-les-39']);
+    expect(byId.get('behavioural-les-45')!.prerequisites).toEqual(['behavioural-les-44']);
+  });
+
+  it('each perspective-module checkpoint lesson requires every lesson in that module and covers all 4 of its concepts', () => {
+    const byId = new Map(typedCurriculum.lessons.map((l) => [l.id, l]));
+    expect(new Set(byId.get('behavioural-les-44')!.prerequisites)).toEqual(
+      new Set(['behavioural-les-40', 'behavioural-les-41', 'behavioural-les-42', 'behavioural-les-43'])
+    );
+    expect(new Set(byId.get('behavioural-les-49')!.prerequisites)).toEqual(
+      new Set(['behavioural-les-45', 'behavioural-les-46', 'behavioural-les-47', 'behavioural-les-48'])
+    );
+    for (const lessonId of ['behavioural-les-44', 'behavioural-les-49']) {
       const lesson = typedCurriculum.lessons.find((l) => l.id === lessonId)!;
       const checkpointConcepts = new Set(lesson.masteryItemIds.map((id) => itemById.get(id)!.concept));
       expect(checkpointConcepts.size).toBe(4);

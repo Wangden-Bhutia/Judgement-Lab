@@ -13,7 +13,9 @@
         "behavioural-mod-5",
         "behavioural-mod-6",
         "behavioural-mod-7",
-        "behavioural-mod-8"
+        "behavioural-mod-8",
+        "behavioural-mod-9",
+        "behavioural-mod-10"
       ]
     }
   ],
@@ -119,6 +121,32 @@
         "behavioural-les-37",
         "behavioural-les-38",
         "behavioural-les-39"
+      ]
+    },
+    {
+      "id": "behavioural-mod-9",
+      "trackId": "behavioural",
+      "sequence": 9,
+      "title": "Seeing It From Where They Stand",
+      "lessonIds": [
+        "behavioural-les-40",
+        "behavioural-les-41",
+        "behavioural-les-42",
+        "behavioural-les-43",
+        "behavioural-les-44"
+      ]
+    },
+    {
+      "id": "behavioural-mod-10",
+      "trackId": "behavioural",
+      "sequence": 10,
+      "title": "Responding to Someone Else's View",
+      "lessonIds": [
+        "behavioural-les-45",
+        "behavioural-les-46",
+        "behavioural-les-47",
+        "behavioural-les-48",
+        "behavioural-les-49"
       ]
     }
   ],
@@ -1815,6 +1843,433 @@
       "apply": "The next time you receive real feedback that matters, deliberately bring all eight feedback ideas to it, not just the ones that come naturally.",
       "reflect": "In your own words, describe a real piece of feedback you've received, and check it against as many of these eight feedback ideas as actually apply.",
       "contentVersion": 1
+    },
+    {
+      "id": "behavioural-les-40",
+      "trackId": "behavioural",
+      "moduleId": "behavioural-mod-9",
+      "sequence": 40,
+      "title": "Their View, Not Yours, Reflected Back",
+      "objectives": [
+        "Imagine someone's actual, possibly different view of a situation, rather than assuming they see it the way you do."
+      ],
+      "concepts": [
+        "perspective_taking_vs_projection"
+      ],
+      "prerequisites": [
+        "behavioural-les-39"
+      ],
+      "interactiveItemIds": [
+        "i.per.proj.a",
+        "i.per.proj.b",
+        "i.per.proj.c",
+        "i.per.proj.words"
+      ],
+      "masteryItemIds": [
+        "i.per.proj.a",
+        "i.per.proj.b"
+      ],
+      "explanationBackItemId": "i.per.proj.words",
+      "teach": [
+        "Perspective-taking means actually imagining someone else's distinct view of a situation — their information, priorities, and history with it — not assuming they see it the way you do.",
+        "Projection: quietly substituting your own view for theirs, and treating that substitution as if it were genuine perspective-taking. It often doesn't feel like an assumption — it feels like obvious common sense.",
+        "The test is whether you can describe their view in terms that could turn out to be wrong — if your account of their perspective is indistinguishable from your own opinion, it's probably projection, not perspective-taking."
+      ],
+      "example": "Assuming a colleague who missed a deadline must not care about the project, because that's how you'd feel if you missed one, skips over the possibility that they're dealing with something you don't know about — a different possibility than the one your own view supplies by default.",
+      "practicePrompts": [
+        "Think of a time you assumed someone saw a situation the way you did.",
+        "Consider what their actual, possibly different view might have been.",
+        "Notice whether your assumption could have turned out wrong."
+      ],
+      "apply": "Before assuming how someone sees a situation, ask yourself whether your account of their view could turn out to be wrong — if not, you may be projecting rather than imagining their actual view.",
+      "reflect": "Think of a time someone assumed your view matched theirs, when it didn't. What did they miss by not actually imagining your perspective?",
+      "contentVersion": 1
+    },
+    {
+      "id": "behavioural-les-41",
+      "trackId": "behavioural",
+      "moduleId": "behavioural-mod-9",
+      "sequence": 41,
+      "title": "What They Know That You Don't",
+      "objectives": [
+        "Account for what the other person does or doesn't know, rather than judging their reaction as if they shared your full information."
+      ],
+      "concepts": [
+        "knowledge_asymmetry"
+      ],
+      "prerequisites": [
+        "behavioural-les-40"
+      ],
+      "interactiveItemIds": [
+        "i.per.know.a",
+        "i.per.know.b",
+        "i.per.know.c",
+        "i.per.know.words"
+      ],
+      "masteryItemIds": [
+        "i.per.know.a",
+        "i.per.know.b"
+      ],
+      "explanationBackItemId": "i.per.know.words",
+      "teach": [
+        "People act and react based on what they actually know, which often isn't the same as what you know — you might have context they lack, or they might have context you lack.",
+        "Judging someone's reaction as if they had your full information, without checking whether a knowledge gap — in either direction — explains the difference.",
+        "Resolving a knowledge asymmetry usually just means asking what the other person actually knows, rather than assuming either that they know what you know, or that you know everything relevant to their reaction."
+      ],
+      "example": "A teammate seems unreasonably frustrated by a schedule change that seems minor to you — until you learn they'd already told a client a date based on the old schedule, information you didn't have. Their reaction made sense once the knowledge gap was accounted for.",
+      "practicePrompts": [
+        "Think of a time someone's reaction seemed disproportionate until you learned what they knew that you didn't.",
+        "Think of a time you reacted strongly to something because of information others didn't have.",
+        "Consider how checking for a knowledge gap might change your read of a recent disagreement."
+      ],
+      "apply": "Next time someone's reaction seems disproportionate, ask what they might know that you don't, before concluding their reaction is unreasonable.",
+      "reflect": "Think of a time your own reaction to something seemed confusing to someone else because they didn't know something you did. What would explaining that gap have clarified?",
+      "contentVersion": 1
+    },
+    {
+      "id": "behavioural-les-42",
+      "trackId": "behavioural",
+      "moduleId": "behavioural-mod-9",
+      "sequence": 42,
+      "title": "How It Probably Feels, Not Just What They Think",
+      "objectives": [
+        "Infer how a situation likely feels to someone, not just what they think about it."
+      ],
+      "concepts": [
+        "emotional_perspective_taking"
+      ],
+      "prerequisites": [
+        "behavioural-les-41"
+      ],
+      "interactiveItemIds": [
+        "i.per.emo.a",
+        "i.per.emo.b",
+        "i.per.emo.c",
+        "i.per.emo.words"
+      ],
+      "masteryItemIds": [
+        "i.per.emo.a",
+        "i.per.emo.b"
+      ],
+      "explanationBackItemId": "i.per.emo.words",
+      "teach": [
+        "Perspective-taking includes the emotional dimension — how a situation likely feels to someone — not just the cognitive one, what they probably think or believe about it.",
+        "Working out someone's view purely as an information problem (what do they know, what do they conclude) while skipping over how the situation likely feels to them.",
+        "Emotional perspective-taking doesn't require guessing a precise emotion — it means at minimum registering that a situation likely carries some emotional weight for the other person, not just a factual position."
+      ],
+      "example": "Understanding that a colleague disagrees with a reorg decision on the merits (the cognitive view) is only part of the picture if the reorg also means losing a team they built over years — the loss likely carries real emotional weight that a purely factual read of their position would miss.",
+      "practicePrompts": [
+        "Think of a disagreement where you understood someone's reasoning but not how the situation felt to them.",
+        "Consider what emotional weight the situation might have carried for them.",
+        "Notice the difference between understanding their position and understanding their experience of it."
+      ],
+      "apply": "In your next disagreement with someone, consciously ask not just what they think, but how the situation likely feels to them.",
+      "reflect": "Think of a time someone understood your reasoning but missed how the situation actually felt to you. What was missing from their understanding?",
+      "contentVersion": 1
+    },
+    {
+      "id": "behavioural-les-43",
+      "trackId": "behavioural",
+      "moduleId": "behavioural-mod-9",
+      "sequence": 43,
+      "title": "Checking Your Read of Someone Else",
+      "objectives": [
+        "Check an inferred read of someone's perspective against what they actually say, rather than treating the inference as confirmed."
+      ],
+      "concepts": [
+        "empathy_accuracy_checking"
+      ],
+      "prerequisites": [
+        "behavioural-les-42"
+      ],
+      "interactiveItemIds": [
+        "i.per.chk.a",
+        "i.per.chk.b",
+        "i.per.chk.c",
+        "i.per.chk.words"
+      ],
+      "masteryItemIds": [
+        "i.per.chk.a",
+        "i.per.chk.b"
+      ],
+      "explanationBackItemId": "i.per.chk.words",
+      "teach": [
+        "An inferred read of someone's perspective is a guess, however informed — checking it against what they actually say (\"is that right, or am I missing something?\") is what turns a guess into something confirmed.",
+        "Treating an empathic read as established fact, acting on it confidently without ever checking whether it matches what the person would actually say about their own view.",
+        "Checking doesn't undermine the empathic effort — it's the step that makes it reliable, the same way paraphrasing confirms understanding rather than replacing it."
+      ],
+      "example": "Inferring that a quiet teammate is upset about being passed over for a project, and then checking directly (\"you've seemed a bit off since the project announcement — is that what's going on, or is it something else?\") rather than acting on the guess as if it were confirmed.",
+      "practicePrompts": [
+        "Think of a time you acted on an inferred read of someone's feelings without checking it.",
+        "Consider whether the read turned out to be accurate.",
+        "Draft how you'd check a current read of someone's perspective directly."
+      ],
+      "apply": "Next time you form a read of someone's perspective or feelings, check it directly with them rather than acting on the guess alone.",
+      "reflect": "Think of a time someone's inferred read of your perspective turned out to be wrong, because they never checked it with you. What would checking have caught?",
+      "contentVersion": 1
+    },
+    {
+      "id": "behavioural-les-44",
+      "trackId": "behavioural",
+      "moduleId": "behavioural-mod-9",
+      "sequence": 44,
+      "title": "Seeing It From Where They Stand, Put Together",
+      "objectives": [
+        "Combine avoiding projection, accounting for knowledge gaps, emotional perspective-taking, and checking your read into one complete approach to understanding someone else's view."
+      ],
+      "concepts": [
+        "perspective_taking_vs_projection",
+        "knowledge_asymmetry",
+        "emotional_perspective_taking",
+        "empathy_accuracy_checking"
+      ],
+      "prerequisites": [
+        "behavioural-les-40",
+        "behavioural-les-41",
+        "behavioural-les-42",
+        "behavioural-les-43"
+      ],
+      "interactiveItemIds": [
+        "i.wk9.per.chk.a",
+        "i.wk9.per.chk.b",
+        "i.wk9.per.chk.c",
+        "i.wk9.per.chk.d"
+      ],
+      "masteryItemIds": [
+        "i.wk9.per.chk.a",
+        "i.wk9.per.chk.b",
+        "i.wk9.per.chk.c",
+        "i.wk9.per.chk.d"
+      ],
+      "teach": [
+        "This week built four pieces of actually seeing a situation from someone else's standpoint: avoiding projection, accounting for what they know that you don't (or vice versa), considering how it likely feels and not just what they think, and checking your read rather than assuming it's accurate.",
+        "Doing one well while skipping another — genuinely imagining their distinct view but never checking whether the guess is right, or checking a read that was projection all along.",
+        "All four point the same direction: an accurate understanding of someone else's actual standpoint, built and then verified, not assumed from your own."
+      ],
+      "example": "A colleague seems unusually upset about a decision. Rather than assuming they feel the way you would (avoiding projection), you consider what they might know that you don't (a prior commitment affected by the decision), register that this likely carries real emotional weight for them (not just a disagreement on the merits), and then check directly: \"this seems to have hit you harder than I expected — is that about the decision itself, or something else going on?\"",
+      "practicePrompts": [
+        "Think of someone whose current perspective you're unsure about.",
+        "Walk through all four: avoid projecting, consider knowledge gaps, consider the emotional weight, then check directly.",
+        "Notice which of the four was hardest to actually do."
+      ],
+      "apply": "The next time you're trying to understand someone else's view, deliberately walk through all four ideas before concluding you understand it.",
+      "reflect": "Across this week, which of the four — avoiding projection, knowledge gaps, emotional perspective-taking, or checking your read — is hardest for you personally?",
+      "contentVersion": 1
+    },
+    {
+      "id": "behavioural-les-45",
+      "trackId": "behavioural",
+      "moduleId": "behavioural-mod-10",
+      "sequence": 45,
+      "title": "Understandable Doesn't Mean You Agree",
+      "objectives": [
+        "Acknowledge someone's perspective as understandable without necessarily agreeing with their conclusion or decision."
+      ],
+      "concepts": [
+        "validating_without_agreeing"
+      ],
+      "prerequisites": [
+        "behavioural-les-44"
+      ],
+      "interactiveItemIds": [
+        "i.per.val.a",
+        "i.per.val.b",
+        "i.per.val.c",
+        "i.per.val.words"
+      ],
+      "masteryItemIds": [
+        "i.per.val.a",
+        "i.per.val.b"
+      ],
+      "explanationBackItemId": "i.per.val.words",
+      "teach": [
+        "Acknowledging that someone's perspective makes sense, given what they know and feel, is a separate act from agreeing with their conclusion or decision — you can genuinely validate the first without conceding the second.",
+        "Believing that saying \"I understand why you feel that way\" commits you to agreeing with the resulting decision, which leads to either withholding validation to avoid that commitment, or offering validation as a disguised concession.",
+        "A clean validation names the specific thing that's understandable (\"given what happened, I get why you're frustrated\") without implying the conclusion that follows from it is one you share."
+      ],
+      "example": "\"I get why you'd want to walk away from this deal, given how the last round went\" validates the frustration driving the position, without committing to agreeing that walking away is actually the right call — those are two separate claims.",
+      "practicePrompts": [
+        "Think of a time you withheld validating someone because you didn't want to seem to agree with their conclusion.",
+        "Consider how you could have validated the feeling without conceding the conclusion.",
+        "Draft a validation that names the understandable part specifically, separate from the decision."
+      ],
+      "apply": "Next time you disagree with someone's conclusion, practice validating the understandable part of their perspective explicitly, without implying you agree with where they land.",
+      "reflect": "Think of a time someone validated your perspective without agreeing with your conclusion. How did that distinction come across, and did it still feel genuine?",
+      "contentVersion": 1
+    },
+    {
+      "id": "behavioural-les-46",
+      "trackId": "behavioural",
+      "moduleId": "behavioural-mod-10",
+      "sequence": 46,
+      "title": "Knowing Your Own Limit",
+      "objectives": [
+        "Recognize and set a reasonable limit on empathic engagement, rather than overextending indefinitely."
+      ],
+      "concepts": [
+        "empathy_fatigue_and_boundaries"
+      ],
+      "prerequisites": [
+        "behavioural-les-45"
+      ],
+      "interactiveItemIds": [
+        "i.per.bound.a",
+        "i.per.bound.b",
+        "i.per.bound.c",
+        "i.per.bound.words"
+      ],
+      "masteryItemIds": [
+        "i.per.bound.a",
+        "i.per.bound.b"
+      ],
+      "explanationBackItemId": "i.per.bound.words",
+      "teach": [
+        "Empathic engagement has a real cost, and a sustainable limit — recognizing that limit, and setting a boundary around it, is part of being able to engage well rather than a failure of empathy.",
+        "Continuing to extend full empathic engagement well past a sustainable point, without noticing the cost or setting any limit, which tends to produce either burnout or a quieter withdrawal from engaging at all.",
+        "Setting a limit doesn't mean caring less — it means engaging in a way that can actually be sustained, rather than running the capacity for empathy down to nothing."
+      ],
+      "example": "Someone who always makes themselves available to listen to a friend's repeated, unchanging crisis, at real cost to their own time and energy, may eventually have nothing left to offer — recognizing a limit (\"I can talk for twenty minutes, but I need to go after that\") keeps the engagement sustainable instead of running it to zero.",
+      "practicePrompts": [
+        "Think of a time you extended empathic engagement well past what was sustainable for you.",
+        "Consider what a reasonable limit would have looked like.",
+        "Think of a current relationship where setting a limit might help you keep engaging well, rather than withdrawing entirely."
+      ],
+      "apply": "Identify one relationship where you tend to overextend empathically, and set one concrete, reasonable limit this week.",
+      "reflect": "Think of a time you didn't set a limit on empathic engagement and later felt depleted or resentful. What limit, in hindsight, would have kept you able to keep engaging?",
+      "contentVersion": 1
+    },
+    {
+      "id": "behavioural-les-47",
+      "trackId": "behavioural",
+      "moduleId": "behavioural-mod-10",
+      "sequence": 47,
+      "title": "Still Trying to Understand, Even in Disagreement",
+      "objectives": [
+        "Maintain genuine perspective-taking even during a heated disagreement, rather than abandoning it."
+      ],
+      "concepts": [
+        "perspective_taking_under_disagreement"
+      ],
+      "prerequisites": [
+        "behavioural-les-46"
+      ],
+      "interactiveItemIds": [
+        "i.per.dis.a",
+        "i.per.dis.b",
+        "i.per.dis.c",
+        "i.per.dis.words"
+      ],
+      "masteryItemIds": [
+        "i.per.dis.a",
+        "i.per.dis.b"
+      ],
+      "explanationBackItemId": "i.per.dis.words",
+      "teach": [
+        "Perspective-taking is hardest, and most valuable, exactly when a disagreement is heated — genuinely understanding the other side's view doesn't require giving up your own position.",
+        "Dropping any attempt to understand the other person's view as soon as a disagreement escalates, as if perspective-taking and holding a firm position were incompatible.",
+        "Maintaining perspective-taking in conflict means being able to state the other side's view accurately, in terms they'd recognize as fair, while still disagreeing with it — not conceding, just understanding."
+      ],
+      "example": "In a heated disagreement about a project decision, being able to say \"I think you're worried this delays the launch past a commitment you've already made — is that the core of it?\" while still holding your own position is a sign perspective-taking hasn't been abandoned, even though the disagreement is real.",
+      "practicePrompts": [
+        "Think of a heated disagreement where you stopped trying to understand the other side's view.",
+        "Consider what their view actually was, as they would have described it.",
+        "Practice stating the other side's view fairly, in a recent or ongoing disagreement, without conceding your own position."
+      ],
+      "apply": "In your next heated disagreement, try to state the other person's view in terms they'd recognize as fair, before continuing to argue your own.",
+      "reflect": "Think of a disagreement where someone kept trying to understand your view even while disagreeing with you. How did that affect the disagreement itself?",
+      "contentVersion": 1
+    },
+    {
+      "id": "behavioural-les-48",
+      "trackId": "behavioural",
+      "moduleId": "behavioural-mod-10",
+      "sequence": 48,
+      "title": "Honest and Caring, Not One or the Other",
+      "objectives": [
+        "Combine directness with care, rather than treating honesty and compassion as a tradeoff."
+      ],
+      "concepts": [
+        "compassionate_directness"
+      ],
+      "prerequisites": [
+        "behavioural-les-47"
+      ],
+      "interactiveItemIds": [
+        "i.per.comp.a",
+        "i.per.comp.b",
+        "i.per.comp.c",
+        "i.per.comp.words"
+      ],
+      "masteryItemIds": [
+        "i.per.comp.a",
+        "i.per.comp.b"
+      ],
+      "explanationBackItemId": "i.per.comp.words",
+      "teach": [
+        "Honesty and care aren't a tradeoff — a direct, truthful message delivered with real care for how it lands is both more honest and more useful than either a softened version or a blunt one.",
+        "Treating directness and care as mutually exclusive — believing honesty requires bluntness regardless of impact, or that care requires softening or withholding the truth.",
+        "Compassionate directness means saying the true thing clearly, while genuinely attending to the other person's experience of hearing it — neither sacrificed for the other."
+      ],
+      "example": "\"This isn't working and I don't think it's going to get better\" said with care for the moment and the person, rather than either softened into vague hints that obscure the actual message, or delivered bluntly with no attention to how it lands — the same honest content, delivered with genuine care.",
+      "practicePrompts": [
+        "Think of a time you softened a true message to the point it didn't land clearly.",
+        "Think of a time you delivered a true message bluntly, without attending to how it landed.",
+        "Draft a version of a message you need to deliver that's both direct and genuinely caring."
+      ],
+      "apply": "The next time you need to deliver a hard truth, draft it so it's fully honest and attends to how it will land for the other person — not one at the expense of the other.",
+      "reflect": "Think of a time someone delivered hard feedback or news to you in a way that was both honest and genuinely caring. What made it land as both?",
+      "contentVersion": 1
+    },
+    {
+      "id": "behavioural-les-49",
+      "trackId": "behavioural",
+      "moduleId": "behavioural-mod-10",
+      "sequence": 49,
+      "title": "Responding to Someone Else's View, Put Together",
+      "objectives": [
+        "Combine validating without agreeing, recognizing empathic limits, maintaining perspective-taking under disagreement, and compassionate directness into one complete response to someone else's view.",
+        "Describe a real situation involving someone else's perspective, using everything covered across both perspective-taking modules."
+      ],
+      "concepts": [
+        "validating_without_agreeing",
+        "empathy_fatigue_and_boundaries",
+        "perspective_taking_under_disagreement",
+        "compassionate_directness"
+      ],
+      "prerequisites": [
+        "behavioural-les-45",
+        "behavioural-les-46",
+        "behavioural-les-47",
+        "behavioural-les-48"
+      ],
+      "interactiveItemIds": [
+        "i.wk10.per.chk.a",
+        "i.wk10.per.chk.b",
+        "i.wk10.per.chk.c",
+        "i.wk10.per.chk.d",
+        "i.per.words"
+      ],
+      "masteryItemIds": [
+        "i.wk10.per.chk.a",
+        "i.wk10.per.chk.b",
+        "i.wk10.per.chk.c",
+        "i.wk10.per.chk.d"
+      ],
+      "explanationBackItemId": "i.per.words",
+      "teach": [
+        "This week covered validating a perspective without agreeing with it, recognizing a sustainable limit on empathic engagement, maintaining perspective-taking even in disagreement, and combining honesty with care. Together with last week's perspective-taking habits, that's eight ideas for understanding and responding to someone else's view well.",
+        "Treating empathy as either unconditional agreement or an unlimited resource, both of which break down — unconditional agreement collapses your own position, and an unlimited resource runs out.",
+        "This closes out both perspective-taking modules, and with them, the ten-module arc covering observation, pattern-reading, signals, listening, feedback, and perspective-taking — different facets of reading situations and people well."
+      ],
+      "example": "A friend is upset about a decision you disagree with. Responding well means validating the frustration as understandable (without agreeing the decision was wrong), maintaining a genuine attempt to see their view even while disagreeing, recognizing your own limit if the conversation runs long, and being honest about your actual disagreement with real care for how it lands — all four together.",
+      "practicePrompts": [
+        "Think of a real, current or recent situation involving someone else's perspective.",
+        "Check it against all eight ideas from this week and last.",
+        "Consider what you'd do differently with all eight in mind."
+      ],
+      "apply": "In your next conversation involving a genuinely different perspective, deliberately bring all eight ideas to it, not just the ones that come naturally.",
+      "reflect": "In your own words, describe a real situation involving someone else's perspective, and check it against as many of these eight ideas as actually apply.",
+      "contentVersion": 1
     }
   ],
   "concepts": [
@@ -2009,6 +2464,54 @@
       "trackId": "behavioural",
       "moduleId": "behavioural-mod-8",
       "label": "Judging which feedback is actually worth acting on"
+    },
+    {
+      "id": "perspective_taking_vs_projection",
+      "trackId": "behavioural",
+      "moduleId": "behavioural-mod-9",
+      "label": "Imagining someone's actual view, not assuming they see it like you"
+    },
+    {
+      "id": "knowledge_asymmetry",
+      "trackId": "behavioural",
+      "moduleId": "behavioural-mod-9",
+      "label": "Accounting for what they know that you don't, and vice versa"
+    },
+    {
+      "id": "emotional_perspective_taking",
+      "trackId": "behavioural",
+      "moduleId": "behavioural-mod-9",
+      "label": "Inferring how a situation likely feels to someone, not just what they think"
+    },
+    {
+      "id": "empathy_accuracy_checking",
+      "trackId": "behavioural",
+      "moduleId": "behavioural-mod-9",
+      "label": "Checking your read of someone's perspective against what they actually say"
+    },
+    {
+      "id": "validating_without_agreeing",
+      "trackId": "behavioural",
+      "moduleId": "behavioural-mod-10",
+      "label": "Acknowledging a perspective as understandable without agreeing with it"
+    },
+    {
+      "id": "empathy_fatigue_and_boundaries",
+      "trackId": "behavioural",
+      "moduleId": "behavioural-mod-10",
+      "label": "Recognising limits on empathic engagement"
+    },
+    {
+      "id": "perspective_taking_under_disagreement",
+      "trackId": "behavioural",
+      "moduleId": "behavioural-mod-10",
+      "label": "Maintaining perspective-taking even while disagreeing"
+    },
+    {
+      "id": "compassionate_directness",
+      "trackId": "behavioural",
+      "moduleId": "behavioural-mod-10",
+      "label": "Combining honesty with care, rather than trading one for the other"
     }
   ],
   "misconceptions": [
@@ -2215,6 +2718,54 @@
       "trackId": "behavioural",
       "label": "All feedback treated as equally valid",
       "description": "Treating every piece of feedback received as equally valid and actionable, regardless of the source's expertise, context, or pattern of repetition."
+    },
+    {
+      "id": "behavioural-projection_assumed",
+      "trackId": "behavioural",
+      "label": "Your own view projected onto someone else",
+      "description": "Assuming someone else sees a situation the way you do, rather than actually imagining their distinct, possibly different, actual view."
+    },
+    {
+      "id": "behavioural-knowledge_asymmetry_ignored",
+      "trackId": "behavioural",
+      "label": "A knowledge asymmetry ignored",
+      "description": "Failing to account for what the other person does or doesn't know that you do (or vice versa), and judging their reaction as if they had your full information."
+    },
+    {
+      "id": "behavioural-only_cognitive_perspective_taken",
+      "trackId": "behavioural",
+      "label": "Only the cognitive view considered, not the emotional one",
+      "description": "Working out what someone likely thinks about a situation while ignoring how it likely feels to them — treating perspective-taking as purely an information problem."
+    },
+    {
+      "id": "behavioural-empathic_guess_unchecked",
+      "trackId": "behavioural",
+      "label": "An empathic guess treated as confirmed without checking",
+      "description": "Treating your inferred read of someone's perspective or feelings as established fact, without checking it against what they actually say."
+    },
+    {
+      "id": "behavioural-agreement_required_to_validate",
+      "trackId": "behavioural",
+      "label": "Agreement treated as required to validate",
+      "description": "Believing that acknowledging someone's perspective as understandable requires actually agreeing with their conclusion or decision."
+    },
+    {
+      "id": "behavioural-empathic_overextension",
+      "trackId": "behavioural",
+      "label": "Empathic engagement overextended past a sustainable limit",
+      "description": "Continuing to extend full empathic engagement past the point that's sustainable, without recognizing or setting a reasonable limit."
+    },
+    {
+      "id": "behavioural-perspective_taking_abandoned_in_conflict",
+      "trackId": "behavioural",
+      "label": "Perspective-taking abandoned once disagreement starts",
+      "description": "Dropping any attempt to understand the other person's view as soon as a disagreement becomes heated, rather than maintaining it alongside holding your own position."
+    },
+    {
+      "id": "behavioural-honesty_or_care_but_not_both",
+      "trackId": "behavioural",
+      "label": "Honesty and care treated as a tradeoff",
+      "description": "Treating directness and care as mutually exclusive — assuming that being honest requires sacrificing care, or that being caring requires softening the truth."
     }
   ]
 }

@@ -1,0 +1,1024 @@
+[
+  {
+    "id": "i.per.proj.a",
+    "concept": "perspective_taking_vs_projection",
+    "scenario": "A colleague misses a deadline, and you assume they must not care about the project, because that's how you'd feel if you missed one.",
+    "type": "reason_choice",
+    "prompt": "What's the issue with this assumption?",
+    "options": [
+      {
+        "id": "A",
+        "text": "It substitutes your own likely reaction for their actual view, skipping over other explanations you don't yet know about.",
+        "conceptTag": "perspective_taking_vs_projection"
+      },
+      {
+        "id": "B",
+        "text": "No issue — assuming others would react the way you would is a reliable basis for understanding them.",
+        "misconception": "behavioural-projection_assumed"
+      },
+      {
+        "id": "C",
+        "text": "The only issue is that the assumption is too generous to the colleague.",
+        "misconception": "behavioural-projection_assumed"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Projecting your own likely reaction onto someone else skips over their actual, possibly different situation — a colleague missing a deadline could have reasons that have nothing to do with not caring."
+  },
+  {
+    "id": "i.per.proj.b",
+    "concept": "perspective_taking_vs_projection",
+    "scenario": "Before concluding how a teammate sees a new policy, you ask yourself what specific information or priorities might lead them to see it differently than you do.",
+    "type": "reason_choice",
+    "prompt": "What does this demonstrate?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Genuine perspective-taking — actively considering their distinct view rather than assuming it matches your own.",
+        "conceptTag": "perspective_taking_vs_projection"
+      },
+      {
+        "id": "B",
+        "text": "Unnecessary second-guessing, since most people see situations the same way.",
+        "misconception": "behavioural-projection_assumed"
+      },
+      {
+        "id": "C",
+        "text": "A sign of being unable to form your own clear opinion.",
+        "misconception": "behavioural-projection_assumed"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Actively asking what might lead someone to a different view is exactly what separates genuine perspective-taking from simply assuming they'd see it the way you do."
+  },
+  {
+    "id": "i.per.proj.c",
+    "concept": "perspective_taking_vs_projection",
+    "scenario": "Someone describes their understanding of a colleague's view, but the description is identical to their own opinion on the matter, with no acknowledgment it could be wrong.",
+    "type": "reason_choice",
+    "prompt": "What does this suggest?",
+    "options": [
+      {
+        "id": "A",
+        "text": "This is likely projection rather than genuine perspective-taking, since a real account of someone else's view could in principle turn out to be inaccurate.",
+        "conceptTag": "perspective_taking_vs_projection"
+      },
+      {
+        "id": "B",
+        "text": "This is strong evidence of accurate perspective-taking, since the two views matching is a good sign.",
+        "misconception": "behavioural-projection_assumed"
+      },
+      {
+        "id": "C",
+        "text": "There's no way to tell whether this is projection or genuine perspective-taking from this description alone.",
+        "misconception": "behavioural-projection_assumed"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "An account of someone else's view that's indistinguishable from your own opinion, and that couldn't turn out to be wrong, is a strong sign of projection rather than genuine, falsifiable perspective-taking."
+  },
+  {
+    "id": "i.per.know.a",
+    "concept": "knowledge_asymmetry",
+    "scenario": "A teammate reacts with unexpected frustration to a minor-seeming schedule change.",
+    "type": "reason_choice",
+    "prompt": "What should be considered before concluding the reaction is disproportionate?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Whether the teammate knows something relevant — like a prior commitment affected by the change — that explains the reaction.",
+        "conceptTag": "knowledge_asymmetry"
+      },
+      {
+        "id": "B",
+        "text": "Nothing further — a minor-seeming change should produce a correspondingly minor reaction regardless of context.",
+        "misconception": "behavioural-knowledge_asymmetry_ignored"
+      },
+      {
+        "id": "C",
+        "text": "The reaction should simply be dismissed as an overreaction.",
+        "misconception": "behavioural-knowledge_asymmetry_ignored"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "A reaction that looks disproportionate given what you know might make complete sense given something the other person knows that you don't — checking for that gap before judging the reaction is the key move."
+  },
+  {
+    "id": "i.per.know.b",
+    "concept": "knowledge_asymmetry",
+    "scenario": "After learning a teammate had already promised a client a date based on the old schedule, their frustration at a schedule change makes much more sense.",
+    "type": "reason_choice",
+    "prompt": "What does this demonstrate?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A reaction that seemed disproportionate is explained once the relevant knowledge asymmetry is accounted for.",
+        "conceptTag": "knowledge_asymmetry"
+      },
+      {
+        "id": "B",
+        "text": "The frustration was unjustified regardless of the client commitment.",
+        "misconception": "behavioural-knowledge_asymmetry_ignored"
+      },
+      {
+        "id": "C",
+        "text": "This information is irrelevant to understanding the reaction.",
+        "misconception": "behavioural-knowledge_asymmetry_ignored"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Once the teammate's specific knowledge (the client commitment) is accounted for, their reaction stops looking disproportionate — it's explained by a knowledge gap, not an overreaction."
+  },
+  {
+    "id": "i.per.know.c",
+    "concept": "knowledge_asymmetry",
+    "scenario": "Someone assumes a colleague has all the same context they do about a decision, and is confused when the colleague reacts as if they don't.",
+    "type": "reason_choice",
+    "prompt": "What's the likely source of the confusion?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A knowledge asymmetry in the other direction — the colleague may genuinely lack context the person assumed they had.",
+        "conceptTag": "knowledge_asymmetry"
+      },
+      {
+        "id": "B",
+        "text": "The colleague is being deliberately difficult, since everyone involved should have the same context.",
+        "misconception": "behavioural-knowledge_asymmetry_ignored"
+      },
+      {
+        "id": "C",
+        "text": "There's no plausible explanation for the confusion.",
+        "misconception": "behavioural-knowledge_asymmetry_ignored"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Knowledge asymmetry runs both directions — assuming someone has your context when they don't is just as much a gap as missing context they have that you don't."
+  },
+  {
+    "id": "i.per.emo.a",
+    "concept": "emotional_perspective_taking",
+    "scenario": "A colleague disagrees with a reorg decision. Understanding their stated reasoning on the merits is treated as sufficient understanding of their view.",
+    "type": "reason_choice",
+    "prompt": "What might be missing?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The emotional weight the reorg might carry for them — such as losing a team they built — separate from their stated reasoning on the merits.",
+        "conceptTag": "emotional_perspective_taking"
+      },
+      {
+        "id": "B",
+        "text": "Nothing — understanding someone's stated reasoning is the complete picture of their view.",
+        "misconception": "behavioural-only_cognitive_perspective_taken"
+      },
+      {
+        "id": "C",
+        "text": "Their reasoning should simply be dismissed if it has any emotional component.",
+        "misconception": "behavioural-only_cognitive_perspective_taken"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Understanding someone's stated reasoning is the cognitive half of their view — a decision like a reorg can also carry real emotional weight that a purely factual read misses entirely."
+  },
+  {
+    "id": "i.per.emo.b",
+    "concept": "emotional_perspective_taking",
+    "scenario": "Alongside understanding a colleague's reasoning against a decision, you also consider that the decision likely means losing something they've invested years in.",
+    "type": "reason_choice",
+    "prompt": "What does this additional consideration demonstrate?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Emotional perspective-taking — registering the likely emotional weight of the situation, not just the cognitive position.",
+        "conceptTag": "emotional_perspective_taking"
+      },
+      {
+        "id": "B",
+        "text": "An unnecessary distraction from the actual substance of the disagreement.",
+        "misconception": "behavioural-only_cognitive_perspective_taken"
+      },
+      {
+        "id": "C",
+        "text": "A sign that the decision should automatically be reversed.",
+        "misconception": "behavioural-only_cognitive_perspective_taken"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Considering the likely emotional weight of a situation, alongside the stated reasoning, is exactly what emotional perspective-taking adds to a purely cognitive read."
+  },
+  {
+    "id": "i.per.emo.c",
+    "concept": "emotional_perspective_taking",
+    "scenario": "Someone can accurately summarize a friend's stated opinion on a difficult family situation but seems surprised that the friend is also visibly distressed by it.",
+    "type": "reason_choice",
+    "prompt": "What does the surprise suggest was missing from their understanding?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The emotional dimension of the friend's experience, which wasn't captured by accurately summarizing their stated opinion alone.",
+        "conceptTag": "emotional_perspective_taking"
+      },
+      {
+        "id": "B",
+        "text": "Nothing was missing, since an accurate summary of someone's opinion is a complete understanding of their perspective.",
+        "misconception": "behavioural-only_cognitive_perspective_taken"
+      },
+      {
+        "id": "C",
+        "text": "The friend's distress is unrelated to their stated opinion and should be ignored.",
+        "misconception": "behavioural-only_cognitive_perspective_taken"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "An accurate summary of someone's stated opinion captures the cognitive dimension, but missing the emotional weight of a difficult situation means the understanding is still incomplete."
+  },
+  {
+    "id": "i.per.chk.a",
+    "concept": "empathy_accuracy_checking",
+    "scenario": "Someone infers that a quiet teammate is upset about being passed over for a project, and proceeds to act on this read without saying anything to the teammate.",
+    "type": "reason_choice",
+    "prompt": "What's missing before acting on this inference?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Checking the inferred read directly with the teammate, rather than treating the guess as confirmed.",
+        "conceptTag": "empathy_accuracy_checking"
+      },
+      {
+        "id": "B",
+        "text": "Nothing — a confident inference is as reliable as directly asking.",
+        "misconception": "behavioural-empathic_guess_unchecked"
+      },
+      {
+        "id": "C",
+        "text": "A more detailed, longer explanation of the reasoning behind the inference.",
+        "misconception": "behavioural-empathic_guess_unchecked"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "An inferred read, however reasonable, is still a guess — checking it directly with the person is what turns it into something confirmed, rather than acted on as if it already were."
+  },
+  {
+    "id": "i.per.chk.b",
+    "concept": "empathy_accuracy_checking",
+    "scenario": "\"You've seemed a bit off since the project announcement — is that what's going on, or is it something else?\" is asked, rather than assuming the inferred reason is correct.",
+    "type": "reason_choice",
+    "prompt": "What does this question demonstrate?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Checking an empathic read against what the person actually says, rather than treating the inference as settled.",
+        "conceptTag": "empathy_accuracy_checking"
+      },
+      {
+        "id": "B",
+        "text": "An intrusive question that undermines the empathic effort already made.",
+        "misconception": "behavioural-empathic_guess_unchecked"
+      },
+      {
+        "id": "C",
+        "text": "An unnecessary step, since the inference was probably already correct.",
+        "misconception": "behavioural-empathic_guess_unchecked"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Asking directly, while leaving room for a different answer (\"or is it something else\"), is what makes this a genuine check rather than a restatement of the assumption."
+  },
+  {
+    "id": "i.per.chk.c",
+    "concept": "empathy_accuracy_checking",
+    "scenario": "Someone acts warmly supportive toward a friend based on an assumed reason for their low mood, which turns out to be entirely wrong when the friend later explains what was actually going on.",
+    "type": "reason_choice",
+    "prompt": "What would have caught the mismatch earlier?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Checking the assumed reason directly with the friend before acting on it.",
+        "conceptTag": "empathy_accuracy_checking"
+      },
+      {
+        "id": "B",
+        "text": "Nothing could have caught it — empathic guesses about someone's internal state can't be checked.",
+        "misconception": "behavioural-empathic_guess_unchecked"
+      },
+      {
+        "id": "C",
+        "text": "Acting even more warmly and supportively, regardless of the actual reason.",
+        "misconception": "behavioural-empathic_guess_unchecked"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "A direct check against what the friend would actually say about their own situation would have caught the mismatch before acting on an incorrect assumption."
+  },
+  {
+    "id": "i.per.val.a",
+    "concept": "validating_without_agreeing",
+    "scenario": "A manager disagrees with an employee's decision to walk away from a deal, but says, \"I get why you'd want to walk away, given how the last round went.\"",
+    "type": "reason_choice",
+    "prompt": "What does this statement demonstrate?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Validating the understandable frustration behind the decision without necessarily agreeing that walking away is the right call.",
+        "conceptTag": "validating_without_agreeing"
+      },
+      {
+        "id": "B",
+        "text": "An implicit agreement that walking away from the deal is the correct decision.",
+        "misconception": "behavioural-agreement_required_to_validate"
+      },
+      {
+        "id": "C",
+        "text": "A contradiction, since you can't acknowledge a perspective you disagree with.",
+        "misconception": "behavioural-agreement_required_to_validate"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "This statement validates the frustration driving the decision, as a feeling that makes sense given the history, without committing to agreeing the decision itself is the right one."
+  },
+  {
+    "id": "i.per.val.b",
+    "concept": "validating_without_agreeing",
+    "scenario": "Someone withholds saying \"I understand why you feel that way\" to a colleague, worried it would be read as agreeing with the colleague's conclusion.",
+    "type": "reason_choice",
+    "prompt": "What's the issue with this hesitation?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Validation and agreement are separable — naming the understandable part specifically doesn't require conceding the conclusion.",
+        "conceptTag": "validating_without_agreeing"
+      },
+      {
+        "id": "B",
+        "text": "The hesitation is justified, since any validation necessarily implies agreement with the resulting conclusion.",
+        "misconception": "behavioural-agreement_required_to_validate"
+      },
+      {
+        "id": "C",
+        "text": "Validation should always be withheld when there's any disagreement.",
+        "misconception": "behavioural-agreement_required_to_validate"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "A validation that names the specific understandable part of someone's perspective doesn't have to imply agreement with where they land — those are two separable claims."
+  },
+  {
+    "id": "i.per.val.c",
+    "concept": "validating_without_agreeing",
+    "scenario": "\"I totally agree with you\" is said to someone, when what's actually meant is \"I understand why you feel that way, though I see it differently.\"",
+    "type": "reason_choice",
+    "prompt": "What's the risk of substituting the first statement for the second?",
+    "options": [
+      {
+        "id": "A",
+        "text": "It conflates validation with agreement, misrepresenting an actual disagreement as full agreement.",
+        "conceptTag": "validating_without_agreeing"
+      },
+      {
+        "id": "B",
+        "text": "No risk — the two statements communicate essentially the same thing.",
+        "misconception": "behavioural-agreement_required_to_validate"
+      },
+      {
+        "id": "C",
+        "text": "The risk is only that it sounds less enthusiastic than intended.",
+        "misconception": "behavioural-agreement_required_to_validate"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Saying \"I totally agree\" when the actual intent is validation-without-agreement misrepresents a genuine disagreement as full agreement — the two are not interchangeable."
+  },
+  {
+    "id": "i.per.bound.a",
+    "concept": "empathy_fatigue_and_boundaries",
+    "scenario": "A friend consistently makes themselves available for hours at a time to listen to someone's repeated, unchanging crisis, at real ongoing cost to their own time and energy.",
+    "type": "reason_choice",
+    "prompt": "What's the risk of this pattern?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Continuing without any limit risks exhausting their capacity to engage at all, through burnout or eventual withdrawal.",
+        "conceptTag": "empathy_fatigue_and_boundaries"
+      },
+      {
+        "id": "B",
+        "text": "No risk — empathic engagement should always be unlimited when someone is struggling.",
+        "misconception": "behavioural-empathic_overextension"
+      },
+      {
+        "id": "C",
+        "text": "The only risk is appearing insufficiently caring if a limit is ever set.",
+        "misconception": "behavioural-empathic_overextension"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Empathic engagement has a real, finite cost — continuing indefinitely without any limit risks running that capacity down to nothing, which serves neither person well in the long run."
+  },
+  {
+    "id": "i.per.bound.b",
+    "concept": "empathy_fatigue_and_boundaries",
+    "scenario": "\"I can talk for twenty minutes, but I need to go after that\" is said before a difficult conversation, rather than leaving the time open-ended indefinitely.",
+    "type": "reason_choice",
+    "prompt": "What does setting this limit demonstrate?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A reasonable boundary that keeps the engagement sustainable, rather than a failure of care.",
+        "conceptTag": "empathy_fatigue_and_boundaries"
+      },
+      {
+        "id": "B",
+        "text": "A sign of not caring enough about the other person's struggle.",
+        "misconception": "behavioural-empathic_overextension"
+      },
+      {
+        "id": "C",
+        "text": "An unnecessary limitation, since full empathic engagement should have no boundaries.",
+        "misconception": "behavioural-empathic_overextension"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Setting a clear, reasonable limit upfront keeps the engagement genuinely sustainable — it's what allows continued engagement over time, not a sign of caring less."
+  },
+  {
+    "id": "i.per.bound.c",
+    "concept": "empathy_fatigue_and_boundaries",
+    "scenario": "Someone who never sets any limit on empathic engagement eventually finds themselves quietly avoiding a friend altogether, rather than continuing to engage at all.",
+    "type": "reason_choice",
+    "prompt": "What does this outcome suggest about the lack of any earlier limit?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Overextending without any limit can eventually produce a worse outcome — complete withdrawal — than setting a sustainable limit earlier would have.",
+        "conceptTag": "empathy_fatigue_and_boundaries"
+      },
+      {
+        "id": "B",
+        "text": "This outcome has nothing to do with the earlier lack of a limit.",
+        "misconception": "behavioural-empathic_overextension"
+      },
+      {
+        "id": "C",
+        "text": "The right response going forward is still to never set any limit, but to try harder to keep engaging.",
+        "misconception": "behavioural-empathic_overextension"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Running empathic capacity down to nothing by never setting a limit can produce a worse outcome — complete avoidance — than a sustainable, bounded engagement would have."
+  },
+  {
+    "id": "i.per.dis.a",
+    "concept": "perspective_taking_under_disagreement",
+    "scenario": "In a heated disagreement about a project decision, someone stops attempting to understand the other side's view entirely, focusing only on restating their own position.",
+    "type": "reason_choice",
+    "prompt": "What's the issue with this approach?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Perspective-taking has been abandoned just when the disagreement makes it most valuable, treating understanding and disagreeing as incompatible.",
+        "conceptTag": "perspective_taking_under_disagreement"
+      },
+      {
+        "id": "B",
+        "text": "No issue — trying to understand the other side during a disagreement would mean conceding the argument.",
+        "misconception": "behavioural-perspective_taking_abandoned_in_conflict"
+      },
+      {
+        "id": "C",
+        "text": "This is the correct approach, since disagreements are best resolved by each side restating their position more firmly.",
+        "misconception": "behavioural-perspective_taking_abandoned_in_conflict"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Understanding the other side's view and continuing to disagree aren't incompatible — abandoning the attempt to understand doesn't strengthen the disagreement, it just loses the understanding."
+  },
+  {
+    "id": "i.per.dis.b",
+    "concept": "perspective_taking_under_disagreement",
+    "scenario": "\"I think you're worried this delays the launch past a commitment you've already made — is that the core of it?\" is said by someone who still disagrees with the other person's position.",
+    "type": "reason_choice",
+    "prompt": "What does this demonstrate?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Maintaining genuine perspective-taking while still holding a different position — understanding without conceding.",
+        "conceptTag": "perspective_taking_under_disagreement"
+      },
+      {
+        "id": "B",
+        "text": "An implicit concession to the other person's position.",
+        "misconception": "behavioural-perspective_taking_abandoned_in_conflict"
+      },
+      {
+        "id": "C",
+        "text": "A weakening of one's own argument by engaging with the other side at all.",
+        "misconception": "behavioural-perspective_taking_abandoned_in_conflict"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Stating the other side's view accurately, while still disagreeing, is exactly what maintaining perspective-taking under disagreement looks like — understanding, not conceding."
+  },
+  {
+    "id": "i.per.dis.c",
+    "concept": "perspective_taking_under_disagreement",
+    "scenario": "Two people in a heated disagreement each accurately state the other's position before continuing to argue their own.",
+    "type": "reason_choice",
+    "prompt": "What effect might this have on the disagreement, compared to neither side attempting it?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The disagreement is more likely to stay productive, since both sides are responding to each other's actual view rather than a caricature of it.",
+        "conceptTag": "perspective_taking_under_disagreement"
+      },
+      {
+        "id": "B",
+        "text": "No effect — accurately stating the other side's view has no bearing on how a disagreement proceeds.",
+        "misconception": "behavioural-perspective_taking_abandoned_in_conflict"
+      },
+      {
+        "id": "C",
+        "text": "It would make both sides seem less committed to their own position.",
+        "misconception": "behavioural-perspective_taking_abandoned_in_conflict"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Disagreements tend to go better when both sides are responding to each other's actual view, confirmed as accurate, rather than each other's position as caricatured or assumed."
+  },
+  {
+    "id": "i.per.comp.a",
+    "concept": "compassionate_directness",
+    "scenario": "A manager needs to tell an employee a project isn't working, and softens the message into vague hints that never quite state the actual problem.",
+    "type": "reason_choice",
+    "prompt": "What's the issue with this approach?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Softening the message into vague hints trades away honesty for care, leaving the employee without a clear, actionable message.",
+        "conceptTag": "compassionate_directness"
+      },
+      {
+        "id": "B",
+        "text": "No issue — softening a difficult message is always the more caring approach.",
+        "misconception": "behavioural-honesty_or_care_but_not_both"
+      },
+      {
+        "id": "C",
+        "text": "The issue is only that the hints should have been even softer.",
+        "misconception": "behavioural-honesty_or_care_but_not_both"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Vague hints that never state the actual problem sacrifice clarity for the sake of comfort — and often fail to be genuinely caring either, since the employee is left without the information they actually need."
+  },
+  {
+    "id": "i.per.comp.b",
+    "concept": "compassionate_directness",
+    "scenario": "\"This isn't working, and I don't think it's going to get better\" is said clearly and directly, with real attention to how the moment and the message land for the employee.",
+    "type": "reason_choice",
+    "prompt": "What does this combination demonstrate?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Compassionate directness — the same honest, clear content, delivered with genuine care for how it's received.",
+        "conceptTag": "compassionate_directness"
+      },
+      {
+        "id": "B",
+        "text": "A contradiction, since clear and direct feedback can't also be delivered with care.",
+        "misconception": "behavioural-honesty_or_care_but_not_both"
+      },
+      {
+        "id": "C",
+        "text": "An unnecessarily harsh way to deliver difficult feedback.",
+        "misconception": "behavioural-honesty_or_care_but_not_both"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Clarity and care aren't in tension here — the message stays fully honest while real attention is paid to the employee's experience of receiving it, which is exactly what compassionate directness combines."
+  },
+  {
+    "id": "i.per.comp.c",
+    "concept": "compassionate_directness",
+    "scenario": "Someone delivers accurate, difficult feedback bluntly, with no attention at all to the moment, setting, or how the person is likely to receive it.",
+    "type": "reason_choice",
+    "prompt": "What's missing from this delivery, even though the content itself is accurate?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Genuine attention to how the message lands for the other person — accuracy alone doesn't make the delivery compassionate.",
+        "conceptTag": "compassionate_directness"
+      },
+      {
+        "id": "B",
+        "text": "Nothing — accurate content delivered bluntly is sufficient, since honesty is the only thing that matters.",
+        "misconception": "behavioural-honesty_or_care_but_not_both"
+      },
+      {
+        "id": "C",
+        "text": "The content itself should have been softened or made less accurate to compensate.",
+        "misconception": "behavioural-honesty_or_care_but_not_both"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Accurate content delivered with no attention to how it lands is honest but not yet compassionate — the missing piece is genuine attention to the other person's experience of hearing it, not a less accurate message."
+  },
+  {
+    "id": "i.wk9.per.chk.a",
+    "concept": "perspective_taking_vs_projection",
+    "scenario": "Someone assumes a frustrated colleague feels the way they themselves would (projection), without considering that the colleague might know something about the situation that they don't (knowledge asymmetry).",
+    "type": "reason_choice",
+    "prompt": "What's the combined issue here?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Projecting a default emotional reaction skips both checking for a knowledge gap and considering the colleague's actual, possibly different view.",
+        "conceptTag": "perspective_taking_vs_projection"
+      },
+      {
+        "id": "B",
+        "text": "There's no issue, since assuming someone feels the way you would is a reasonable shortcut.",
+        "misconception": "behavioural-knowledge_asymmetry_ignored"
+      },
+      {
+        "id": "C",
+        "text": "The only fix needed is to check the knowledge gap; the emotional assumption is otherwise fine.",
+        "misconception": "behavioural-projection_assumed"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Projection and ignoring a knowledge asymmetry compound here — genuinely considering the colleague's distinct view would include asking what they might know that explains their reaction."
+  },
+  {
+    "id": "i.wk9.per.chk.b",
+    "concept": "knowledge_asymmetry",
+    "scenario": "After accounting for a knowledge gap that explains a colleague's frustration, someone still doesn't consider how the underlying situation likely feels to the colleague, only what they now know.",
+    "type": "reason_choice",
+    "prompt": "What's missing from this fuller picture?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The emotional dimension — accounting for the knowledge gap explains the reasoning, but not the likely emotional weight of the underlying situation.",
+        "conceptTag": "knowledge_asymmetry"
+      },
+      {
+        "id": "B",
+        "text": "Nothing — accounting for the knowledge gap is a complete understanding of the colleague's perspective.",
+        "misconception": "behavioural-only_cognitive_perspective_taken"
+      },
+      {
+        "id": "C",
+        "text": "The emotional dimension is irrelevant once the cognitive explanation is found.",
+        "misconception": "behavioural-only_cognitive_perspective_taken"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Resolving a knowledge gap explains the reasoning behind a reaction, but the emotional weight of the underlying situation for the colleague is a separate dimension still worth considering."
+  },
+  {
+    "id": "i.wk9.per.chk.c",
+    "concept": "emotional_perspective_taking",
+    "scenario": "Someone carefully considers both the cognitive and emotional dimensions of a colleague's perspective, then acts on this understanding without ever checking it with the colleague.",
+    "type": "reason_choice",
+    "prompt": "What's still missing?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Checking the carefully considered read against what the colleague actually says, since even a thorough inference is still a guess until confirmed.",
+        "conceptTag": "emotional_perspective_taking"
+      },
+      {
+        "id": "B",
+        "text": "Nothing — a carefully considered inference doesn't need to be checked.",
+        "misconception": "behavioural-empathic_guess_unchecked"
+      },
+      {
+        "id": "C",
+        "text": "The cognitive and emotional consideration was unnecessary if a check is going to happen anyway.",
+        "misconception": "behavioural-empathic_guess_unchecked"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Even a careful, well-considered read of someone's cognitive and emotional perspective is still an inference until it's actually checked against what they say."
+  },
+  {
+    "id": "i.wk9.per.chk.d",
+    "concept": "empathy_accuracy_checking",
+    "scenario": "Someone checks their read of a colleague's perspective directly, but the read being checked was built on an assumption that the colleague sees things the way they do, without considering a knowledge gap or the emotional dimension.",
+    "type": "reason_choice",
+    "prompt": "What does this reveal about checking alone?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Checking a read is only as useful as the read itself — checking a projected, under-considered guess doesn't substitute for building a genuinely considered one first.",
+        "conceptTag": "empathy_accuracy_checking"
+      },
+      {
+        "id": "B",
+        "text": "Checking any read, however it was formed, is sufficient on its own.",
+        "misconception": "behavioural-projection_assumed"
+      },
+      {
+        "id": "C",
+        "text": "Checking is unnecessary as long as the read is eventually confirmed by the colleague.",
+        "misconception": "behavioural-empathic_guess_unchecked"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "All four ideas work together: checking is valuable, but it works best on a read that already avoided projection, accounted for knowledge gaps, and considered the emotional dimension — not a shortcut that replaces building a genuine read in the first place."
+  },
+  {
+    "id": "i.wk10.per.chk.a",
+    "concept": "validating_without_agreeing",
+    "scenario": "A manager validates an employee's frustration about a decision (\"I get why you're upset\") but then, worried this implies agreement, avoids being direct about disagreeing with the employee's proposed response.",
+    "type": "reason_choice",
+    "prompt": "What's the combined issue here?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Validating the frustration was right, but avoiding directness about the actual disagreement sacrifices honesty for a care that validation alone didn't require giving up.",
+        "conceptTag": "validating_without_agreeing"
+      },
+      {
+        "id": "B",
+        "text": "The validation itself was the mistake, since it should have been withheld to avoid implying agreement.",
+        "misconception": "behavioural-agreement_required_to_validate"
+      },
+      {
+        "id": "C",
+        "text": "No issue — avoiding directness is the correct way to pair with validation.",
+        "misconception": "behavioural-honesty_or_care_but_not_both"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Validating the frustration and being direct about the actual disagreement aren't in tension — avoiding the directness here sacrifices honesty for a care that genuine validation didn't actually require giving up."
+  },
+  {
+    "id": "i.wk10.per.chk.b",
+    "concept": "empathy_fatigue_and_boundaries",
+    "scenario": "Someone keeps engaging with a friend's repeated crisis without any limit, while also telling the friend they fully understand and agree with every one of their reactions, to avoid any friction.",
+    "type": "reason_choice",
+    "prompt": "What's the combined issue?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Both overextending without a limit and conflating validation with agreement compound here, leaving no sustainable boundary and no honest distinction between understanding and endorsing.",
+        "conceptTag": "empathy_fatigue_and_boundaries"
+      },
+      {
+        "id": "B",
+        "text": "The only issue is the lack of a limit; agreeing with every reaction is a reasonable way to show support.",
+        "misconception": "behavioural-agreement_required_to_validate"
+      },
+      {
+        "id": "C",
+        "text": "Neither is an issue, since full agreement and unlimited engagement are the most supportive combination.",
+        "misconception": "behavioural-empathic_overextension"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Overextending without a limit and treating agreement as required for validation reinforce each other — a sustainable limit and an honest, separate validation would address both."
+  },
+  {
+    "id": "i.wk10.per.chk.c",
+    "concept": "perspective_taking_under_disagreement",
+    "scenario": "In a heated disagreement, someone maintains genuine perspective-taking (accurately stating the other side's view) but then delivers their own disagreement bluntly, with no attention to how it lands.",
+    "type": "reason_choice",
+    "prompt": "What's still missing from this response?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Compassionate directness — accurately understanding the other side doesn't by itself ensure the disagreement is delivered with care for how it's received.",
+        "conceptTag": "perspective_taking_under_disagreement"
+      },
+      {
+        "id": "B",
+        "text": "Nothing — accurately stating the other side's view is sufficient on its own.",
+        "misconception": "behavioural-honesty_or_care_but_not_both"
+      },
+      {
+        "id": "C",
+        "text": "The perspective-taking itself should be dropped if the disagreement is going to be delivered directly.",
+        "misconception": "behavioural-perspective_taking_abandoned_in_conflict"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Understanding the other side's view and delivering your own disagreement with genuine care are separate requirements — maintaining the first doesn't guarantee the second."
+  },
+  {
+    "id": "i.wk10.per.chk.d",
+    "concept": "compassionate_directness",
+    "scenario": "Someone delivers a hard truth with genuine care (compassionate directness), validates the other person's frustration honestly without pretending to agree, maintains their own differing view even as the conversation gets tense, and recognizes when they need to set a time limit on the conversation.",
+    "type": "reason_choice",
+    "prompt": "What does this fully combined response demonstrate?",
+    "options": [
+      {
+        "id": "A",
+        "text": "All four of this week's ideas working together: honest and caring delivery, validation without false agreement, maintained perspective-taking under tension, and a recognized sustainable limit.",
+        "conceptTag": "compassionate_directness"
+      },
+      {
+        "id": "B",
+        "text": "An unrealistic combination, since these four ideas can't actually coexist in one real conversation.",
+        "misconception": "behavioural-honesty_or_care_but_not_both"
+      },
+      {
+        "id": "C",
+        "text": "Only the time limit matters here; the other three are unnecessary once a limit is set.",
+        "misconception": "behavioural-empathic_overextension"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "This is exactly the combination this week built toward — compassionate directness, honest validation, maintained perspective-taking, and a recognized limit, all reinforcing rather than conflicting with each other."
+  },
+  {
+    "id": "i.per.words",
+    "concept": "perspective_taking_under_disagreement",
+    "type": "own_words",
+    "scenario": "Think of a real situation, current or recent, involving a perspective genuinely different from your own.",
+    "prompt": "In your own words, describe the situation and check it against as many of this module's eight ideas as apply: avoiding projection, knowledge asymmetry, emotional perspective-taking, checking your read, validating without agreeing, empathy fatigue and boundaries, perspective-taking under disagreement, and compassionate directness.",
+    "modelAnswer": "\"The situation was X.\" \"Checking projection: did I assume they saw it like me, or genuinely consider their view?\" \"Checking knowledge gaps: what did they know that I didn't, or vice versa?\" \"Checking the emotional dimension: how did it likely feel to them, not just what they thought?\" \"Checking validation: did I acknowledge their view as understandable without pretending to agree if I didn't?\" \"Checking my own limits and whether I stayed honest and caring at the same time.\"",
+    "rubric": [
+      "States a real, specific situation, not a hypothetical one.",
+      "Checks it against at least four of this module's eight ideas by name.",
+      "Identifies at least one place the perspective-taking or response could have been better.",
+      "States what doing it differently would actually have looked like."
+    ]
+  },
+  {
+    "id": "i.per.proj.words",
+    "concept": "perspective_taking_vs_projection",
+    "type": "own_words",
+    "scenario": "Think of a time you assumed someone's view matched your own, and it turned out it didn't.",
+    "prompt": "In your own words, explain the difference between genuine perspective-taking and projection.",
+    "modelAnswer": "Genuine perspective-taking means actually imagining someone's distinct view — their information, priorities, and history — which could in principle turn out to be wrong. Projection substitutes your own view for theirs and treats that substitution as if it were understanding, without acknowledging it could be inaccurate.",
+    "rubric": [
+      "States the core difference between perspective-taking and projection.",
+      "States that genuine perspective-taking could turn out to be wrong.",
+      "Gives a real or plausible example.",
+      "Notes that projection often doesn't feel like an assumption from the inside."
+    ]
+  },
+  {
+    "id": "i.per.know.words",
+    "concept": "knowledge_asymmetry",
+    "type": "own_words",
+    "scenario": "Think of a time someone's reaction seemed disproportionate until you learned what they knew that you didn't, or vice versa.",
+    "prompt": "In your own words, explain why accounting for a knowledge asymmetry matters before judging someone's reaction.",
+    "modelAnswer": "People react based on what they actually know, which often differs from what you know. A reaction that looks disproportionate from your own information might make complete sense once a knowledge gap — in either direction — is accounted for. Asking what the other person knows, rather than assuming shared information, usually resolves it.",
+    "rubric": [
+      "States that reactions are based on actual, possibly different information.",
+      "States that the gap can run in either direction.",
+      "Gives a real or plausible example.",
+      "Names asking directly as the way to resolve it."
+    ]
+  },
+  {
+    "id": "i.per.emo.words",
+    "concept": "emotional_perspective_taking",
+    "type": "own_words",
+    "scenario": "Think of a disagreement where you understood someone's reasoning but missed how the situation actually felt to them.",
+    "prompt": "In your own words, explain what emotional perspective-taking adds beyond understanding someone's stated reasoning.",
+    "modelAnswer": "Understanding someone's stated reasoning covers the cognitive side of their view, but a situation can also carry real emotional weight — loss, fear, pride — that a purely factual read misses. Emotional perspective-taking means registering that weight too, not treating perspective-taking as only an information problem.",
+    "rubric": [
+      "States the difference between cognitive and emotional perspective-taking.",
+      "Gives a real or plausible example where the emotional dimension mattered.",
+      "States this doesn't require guessing a precise emotion.",
+      "Explains why missing it leaves understanding incomplete."
+    ]
+  },
+  {
+    "id": "i.per.chk.words",
+    "concept": "empathy_accuracy_checking",
+    "type": "own_words",
+    "scenario": "Think of a time an inferred read of someone's feelings or view turned out to be wrong because it was never checked.",
+    "prompt": "In your own words, explain why checking an empathic read matters, even when the read feels confident.",
+    "modelAnswer": "An inferred read of someone's perspective or feelings is a guess, however informed, and confidence in the guess doesn't make it accurate. Checking it directly — asking if the read is right, or if something else is going on — is what turns the guess into something confirmed, the same way paraphrasing confirms understanding rather than replacing it.",
+    "rubric": [
+      "States that an inferred read remains a guess until checked.",
+      "States that confidence doesn't substitute for checking.",
+      "Gives a real or plausible example of checking a read.",
+      "Explains what checking actually adds."
+    ]
+  },
+  {
+    "id": "i.per.val.words",
+    "concept": "validating_without_agreeing",
+    "type": "own_words",
+    "scenario": "Think of a time you needed to acknowledge someone's feelings without agreeing with their conclusion, or someone did this for you.",
+    "prompt": "In your own words, explain why validating a perspective doesn't require agreeing with the conclusion that follows from it.",
+    "modelAnswer": "Validation acknowledges that a feeling or reaction makes sense given what someone knows and feels; agreement is a separate claim about whether their resulting decision or conclusion is correct. Naming the specific understandable part explicitly keeps the two separate, so you can validate honestly without implying agreement you don't actually have.",
+    "rubric": [
+      "States that validation and agreement are separable claims.",
+      "Gives a real or plausible example of validating without agreeing.",
+      "States what naming the specific understandable part looks like.",
+      "Explains the risk of conflating the two."
+    ]
+  },
+  {
+    "id": "i.per.bound.words",
+    "concept": "empathy_fatigue_and_boundaries",
+    "type": "own_words",
+    "scenario": "Think of a time you (or someone you know) overextended empathically without setting any limit, and what that eventually cost.",
+    "prompt": "In your own words, explain why setting a limit on empathic engagement isn't a failure of care.",
+    "modelAnswer": "Empathic engagement has a real, finite cost, and continuing without any limit risks exhausting the capacity to engage at all — through burnout or eventual withdrawal. Setting a clear, reasonable limit keeps the engagement sustainable over time, which serves the relationship better than running the capacity down to nothing.",
+    "rubric": [
+      "States that empathic engagement has a real cost and a sustainable limit.",
+      "States that setting a limit isn't the same as caring less.",
+      "Gives a real or plausible example.",
+      "Names the risk of not setting any limit (burnout or withdrawal)."
+    ]
+  },
+  {
+    "id": "i.per.dis.words",
+    "concept": "perspective_taking_under_disagreement",
+    "type": "own_words",
+    "scenario": "Think of a heated disagreement where you (or the other person) stopped trying to understand the other side's view.",
+    "prompt": "In your own words, explain why perspective-taking and disagreeing aren't incompatible.",
+    "modelAnswer": "Understanding someone's view accurately enough to state it fairly doesn't require agreeing with it — it's possible to genuinely understand why someone holds a position while still disagreeing with the position itself. Abandoning the attempt to understand once a disagreement gets heated doesn't strengthen your own position, it just loses the understanding.",
+    "rubric": [
+      "States that understanding and disagreeing aren't incompatible.",
+      "Gives a real or plausible example of maintaining both at once.",
+      "States what abandoning perspective-taking in conflict actually costs.",
+      "Describes what stating the other side's view fairly would look like."
+    ]
+  },
+  {
+    "id": "i.per.comp.words",
+    "concept": "compassionate_directness",
+    "type": "own_words",
+    "scenario": "Think of a time you had to deliver (or received) a hard truth, and consider whether it was handled with both honesty and care.",
+    "prompt": "In your own words, explain why honesty and care aren't actually a tradeoff.",
+    "modelAnswer": "A message can be fully honest and clear while still being delivered with genuine attention to how it will land for the other person — softening the content isn't required to show care, and ignoring how it lands isn't required to be honest. Compassionate directness means doing both at once, not trading one for the other.",
+    "rubric": [
+      "States that honesty and care aren't mutually exclusive.",
+      "Gives a real or plausible example of combining them.",
+      "Describes what a softened or a careless-but-honest version would look like, by contrast.",
+      "Explains what genuine attention to how a message lands actually involves."
+    ]
+  }
+]
