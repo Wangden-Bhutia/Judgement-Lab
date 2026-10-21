@@ -11,6 +11,7 @@ import feedbackItems from '../../content/items/feedback.json' with { type: 'json
 import perspectiveItems from '../../content/items/perspective.json' with { type: 'json' };
 import rapportItems from '../../content/items/rapport.json' with { type: 'json' };
 import capstoneItems from '../../content/items/capstone.json' with { type: 'json' };
+import varietyItems from '../../content/items/variety.json' with { type: 'json' };
 
 const typedCurriculum = curriculum as Curriculum;
 const typedItems: Item[] = [
@@ -24,6 +25,7 @@ const typedItems: Item[] = [
   ...(perspectiveItems as Item[]),
   ...(rapportItems as Item[]),
   ...(capstoneItems as Item[]),
+  ...(varietyItems as Item[]),
 ];
 const itemById = new Map(typedItems.map((i) => [i.id, i]));
 
@@ -361,5 +363,24 @@ describe('converted Behavioural Observation content (Modules 1-12)', () => {
     );
     const allConceptIds = typedCurriculum.concepts.map((c) => c.id);
     expect(new Set(conceptsWithCheckpointItem)).toEqual(new Set(allConceptIds));
+  });
+
+  it('each module\'s opening lesson now leads with a classify/sequence/match activity, not just reason_choice/own_words', () => {
+    // Originally 100% reason_choice/own_words, unlike Emotional Skills'
+    // genuine item-type variety (match/sequence/classify/reason_choice/
+    // own_words) -- closed by giving each of the 12 modules' opening
+    // lesson one new activity item, in the same lead position ESL itself
+    // uses for its own activity items (first in interactiveItemIds,
+    // before the existing checks).
+    const VARIETY_TYPES = new Set(['classify', 'sequence', 'match']);
+    const openingLessonIds = typedCurriculum.modules.map((m) => m.lessonIds[0]);
+    expect(openingLessonIds).toHaveLength(12);
+    for (const lessonId of openingLessonIds) {
+      const lesson = typedCurriculum.lessons.find((l) => l.id === lessonId)!;
+      const firstItem = itemById.get(lesson.interactiveItemIds[0]!)!;
+      expect(VARIETY_TYPES.has(firstItem.type), `${lessonId}'s first item should be a variety type, got ${firstItem.type}`).toBe(true);
+    }
+    const varietyTypeCounts = new Set(varietyItems.map((i) => i.type));
+    expect(varietyTypeCounts).toEqual(new Set(['classify', 'sequence', 'match']));
   });
 });

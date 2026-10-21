@@ -194,6 +194,7 @@
       ],
       "prerequisites": [],
       "interactiveItemIds": [
+        "i.var.m1.players",
         "i.m1.players",
         "i.m1.actions",
         "i.m1.players.three",
@@ -417,6 +418,7 @@
         "strategic-m1.l5"
       ],
       "interactiveItemIds": [
+        "i.var.m2.br",
         "i.m2.br.match",
         "i.m2.br.apart",
         "i.m2.br.three",
@@ -587,6 +589,7 @@
         "strategic-m2.l4"
       ],
       "interactiveItemIds": [
+        "i.var.m3.dom",
         "i.m3.dom.reason",
         "i.m3.dom.fill",
         "i.m3.three.dom",
@@ -834,6 +837,7 @@
         "strategic-m3.l6"
       ],
       "interactiveItemIds": [
+        "i.var.m4.eq",
         "i.m4.eq.check",
         "i.m4.eq.switch",
         "i.m4.eq.both",
@@ -1038,6 +1042,7 @@
         "strategic-m4.l5"
       ],
       "interactiveItemIds": [
+        "i.var.m5.batna",
         "i.neg.batna.a",
         "i.neg.batna.b",
         "i.neg.batna.c"
@@ -1230,6 +1235,7 @@
         "strategic-m5.l5"
       ],
       "interactiveItemIds": [
+        "i.var.m6.di",
         "i.neg.di.a",
         "i.neg.di.b",
         "i.neg.di.c"
@@ -1422,6 +1428,7 @@
         "strategic-m6.l5"
       ],
       "interactiveItemIds": [
+        "i.var.m7.multi",
         "i.neg.multi2.a",
         "i.neg.multi2.b",
         "i.neg.multi2.c"
@@ -1616,6 +1623,7 @@
         "strategic-m7.l5"
       ],
       "interactiveItemIds": [
+        "i.var.m8.over",
         "i.bias.over.a",
         "i.bias.over.b",
         "i.bias.over.c"
@@ -1808,6 +1816,7 @@
         "strategic-m8.l5"
       ],
       "interactiveItemIds": [
+        "i.var.m9.esc",
         "i.bias.esc.a",
         "i.bias.esc.b",
         "i.bias.esc.c"
@@ -2003,6 +2012,7 @@
         "strategic-m9.l5"
       ],
       "interactiveItemIds": [
+        "i.var.m10.pers",
         "i.comm.pers.a",
         "i.comm.pers.b",
         "i.comm.pers.c"
@@ -2195,6 +2205,7 @@
         "strategic-m10.l5"
       ],
       "interactiveItemIds": [
+        "i.var.m11.assert",
         "i.comm.assert.a",
         "i.comm.assert.b",
         "i.comm.assert.c"
@@ -2395,6 +2406,7 @@
         "strategic-m11.l5"
       ],
       "interactiveItemIds": [
+        "i.var.m12.cap",
         "i.cap.neg.a",
         "i.cap.neg.b",
         "i.cap.neg.c"

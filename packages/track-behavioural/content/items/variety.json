@@ -1,0 +1,496 @@
+[
+  {
+    "id": "i.var.les1.obs",
+    "concept": "observation_vs_interpretation",
+    "type": "classify",
+    "scenario": "A colleague has been quieter than usual all week in team meetings.",
+    "prompt": "Sort each statement into observation (what was actually seen or heard) or interpretation (a guess about what it means).",
+    "categories": [
+      {
+        "id": "obs",
+        "label": "Observation"
+      },
+      {
+        "id": "interp",
+        "label": "Interpretation"
+      }
+    ],
+    "entries": [
+      {
+        "id": "e1",
+        "label": "She spoke twice in this week's three meetings, compared to her usual five or six times",
+        "categoryId": "obs"
+      },
+      {
+        "id": "e2",
+        "label": "She's losing confidence in the project",
+        "categoryId": "interp"
+      },
+      {
+        "id": "e3",
+        "label": "She didn't volunteer for the new task when it was offered",
+        "categoryId": "obs"
+      },
+      {
+        "id": "e4",
+        "label": "She's annoyed about being passed over for the lead role",
+        "categoryId": "interp"
+      }
+    ],
+    "explanation": "An observation is something that was actually seen or heard and could be checked by someone else watching the same moment; an interpretation adds a reason or motive that wasn't directly observed."
+  },
+  {
+    "id": "i.var.les4.pat",
+    "concept": "consistency_consensus_distinctiveness",
+    "type": "match",
+    "scenario": "A colleague snapped at a teammate during a stressful product launch week.",
+    "prompt": "Match each of the three dimensions to the question it actually asks about this behaviour.",
+    "left": [
+      {
+        "id": "l0",
+        "label": "Consistency"
+      },
+      {
+        "id": "l1",
+        "label": "Distinctiveness"
+      },
+      {
+        "id": "l2",
+        "label": "Consensus"
+      }
+    ],
+    "right": [
+      {
+        "id": "r0",
+        "label": "Does this colleague snap in stressful weeks generally, or was this a one-off?"
+      },
+      {
+        "id": "r1",
+        "label": "Does this colleague snap at this particular teammate specifically, or at everyone under stress?"
+      },
+      {
+        "id": "r2",
+        "label": "Do other people on the team also tend to snap during a stressful launch week?"
+      }
+    ],
+    "correctPairs": [
+      {
+        "leftId": "l0",
+        "rightId": "r0"
+      },
+      {
+        "leftId": "l1",
+        "rightId": "r1"
+      },
+      {
+        "leftId": "l2",
+        "rightId": "r2"
+      }
+    ],
+    "explanation": "Consistency asks about this person over time, distinctiveness asks about this person across different targets or situations, and consensus asks about other people in the same situation — confusing the three leads to misreading a single stressful moment as a fixed trait."
+  },
+  {
+    "id": "i.var.les10.sig",
+    "concept": "verbal_nonverbal_congruence",
+    "type": "classify",
+    "scenario": "A teammate says \"I'm fine with the new plan\" in a team meeting.",
+    "prompt": "Sort each accompanying nonverbal detail into congruent (matches the words) or incongruent (conflicts with the words).",
+    "categories": [
+      {
+        "id": "congruent",
+        "label": "Congruent with the words"
+      },
+      {
+        "id": "incongruent",
+        "label": "Conflicts with the words"
+      }
+    ],
+    "entries": [
+      {
+        "id": "e1",
+        "label": "Said in a relaxed tone, maintaining normal eye contact",
+        "categoryId": "congruent"
+      },
+      {
+        "id": "e2",
+        "label": "Said while arms crossed tightly, voice flat, eyes on the table",
+        "categoryId": "incongruent"
+      },
+      {
+        "id": "e3",
+        "label": "Said with a brief nod and a small smile, posture open",
+        "categoryId": "congruent"
+      },
+      {
+        "id": "e4",
+        "label": "Said quickly, then an abrupt subject change before anyone can respond",
+        "categoryId": "incongruent"
+      }
+    ],
+    "explanation": "Congruence is whether the nonverbal signals point the same way as the words — a mismatch is worth noticing as a cue to pay closer attention, not decoded on its own as proof of what's actually going on."
+  },
+  {
+    "id": "i.var.les15.room",
+    "concept": "signal_ambiguity",
+    "type": "classify",
+    "scenario": "A colleague is unusually quiet and hasn't touched their lunch today.",
+    "prompt": "Sort each possible explanation for this single signal into plausible (worth holding as a real possibility) or overreach (jumping to a specific conclusion the signal alone doesn't support).",
+    "categories": [
+      {
+        "id": "plausible",
+        "label": "Plausible possibility"
+      },
+      {
+        "id": "overreach",
+        "label": "Overreach"
+      }
+    ],
+    "entries": [
+      {
+        "id": "e1",
+        "label": "Something personal might be on their mind",
+        "categoryId": "plausible"
+      },
+      {
+        "id": "e2",
+        "label": "They're definitely upset about yesterday's meeting",
+        "categoryId": "overreach"
+      },
+      {
+        "id": "e3",
+        "label": "They might just be feeling unwell",
+        "categoryId": "plausible"
+      },
+      {
+        "id": "e4",
+        "label": "They've clearly decided to quit and are avoiding everyone",
+        "categoryId": "overreach"
+      }
+    ],
+    "explanation": "A single signal like quietness almost always has more than one plausible cause — holding several open possibilities is different from confidently settling on one specific, dramatic explanation the signal alone doesn't actually establish."
+  },
+  {
+    "id": "i.var.les20.lis",
+    "concept": "active_listening_mechanics",
+    "type": "classify",
+    "scenario": "A friend starts explaining something that's clearly on their mind.",
+    "prompt": "Sort each behaviour into showing full attention or showing half-listening.",
+    "categories": [
+      {
+        "id": "full",
+        "label": "Full attention"
+      },
+      {
+        "id": "half",
+        "label": "Half-listening"
+      }
+    ],
+    "entries": [
+      {
+        "id": "e1",
+        "label": "Phone put away, facing the person, no other task running",
+        "categoryId": "full"
+      },
+      {
+        "id": "e2",
+        "label": "Nodding along while continuing to type an email",
+        "categoryId": "half"
+      },
+      {
+        "id": "e3",
+        "label": "Glancing at a notification but returning full focus immediately",
+        "categoryId": "half"
+      },
+      {
+        "id": "e4",
+        "label": "Waiting until they've finished before forming a response",
+        "categoryId": "full"
+      }
+    ],
+    "explanation": "Full attention means actually directing focus at what's being said for as long as it takes to be said — the outward signs of listening, like nodding, don't substitute for that if another task is still running underneath."
+  },
+  {
+    "id": "i.var.les25.resp",
+    "concept": "venting_vs_problem_solving",
+    "type": "match",
+    "scenario": "A friend describes a frustrating situation at length, with clear emotion.",
+    "prompt": "Match each friend's statement to what it most likely signals they want.",
+    "left": [
+      {
+        "id": "l0",
+        "label": "\"I just need to get this out, I don't need advice\""
+      },
+      {
+        "id": "l1",
+        "label": "\"What do you think I should do about this?\""
+      },
+      {
+        "id": "l2",
+        "label": "Describes the problem at length with no explicit request either way"
+      }
+    ],
+    "right": [
+      {
+        "id": "r0",
+        "label": "Wants to be heard"
+      },
+      {
+        "id": "r1",
+        "label": "Wants solutions"
+      },
+      {
+        "id": "r2",
+        "label": "Ambiguous — worth asking directly"
+      }
+    ],
+    "correctPairs": [
+      {
+        "leftId": "l0",
+        "rightId": "r0"
+      },
+      {
+        "leftId": "l1",
+        "rightId": "r1"
+      },
+      {
+        "leftId": "l2",
+        "rightId": "r2"
+      }
+    ],
+    "explanation": "An explicit statement either way is a clear signal; without one, asking directly which is wanted is more reliable than guessing from tone or detail alone."
+  },
+  {
+    "id": "i.var.les30.fb",
+    "concept": "specific_not_vague_feedback",
+    "type": "classify",
+    "scenario": "A manager wants to give feedback about an employee's recent report.",
+    "prompt": "Sort each piece of feedback into specific (names a concrete, dated instance) or vague (a general trait or impression).",
+    "categories": [
+      {
+        "id": "specific",
+        "label": "Specific"
+      },
+      {
+        "id": "vague",
+        "label": "Vague"
+      }
+    ],
+    "entries": [
+      {
+        "id": "e1",
+        "label": "\"You need to be more careful with details\"",
+        "categoryId": "vague"
+      },
+      {
+        "id": "e2",
+        "label": "\"Tuesday's report had three numbers that didn't match the spreadsheet\"",
+        "categoryId": "specific"
+      },
+      {
+        "id": "e3",
+        "label": "\"You're not detail-oriented enough\"",
+        "categoryId": "vague"
+      },
+      {
+        "id": "e4",
+        "label": "\"The client's name was misspelled twice in the proposal you sent Monday\"",
+        "categoryId": "specific"
+      }
+    ],
+    "explanation": "Specific feedback names a concrete, checkable instance the person can actually recognize and address; vague feedback states a general trait or impression with no clear next step."
+  },
+  {
+    "id": "i.var.les35.rec",
+    "concept": "receiving_without_defensiveness",
+    "type": "sequence",
+    "scenario": "A colleague is about to give you some critical feedback about a recent decision.",
+    "prompt": "Put the steps for receiving this feedback well in the right order.",
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Pause before responding, rather than justifying immediately"
+      },
+      {
+        "id": "s2",
+        "label": "Let them finish explaining the full concern"
+      },
+      {
+        "id": "s3",
+        "label": "Paraphrase what you heard to confirm understanding"
+      },
+      {
+        "id": "s4",
+        "label": "Decide how to respond, now that it's actually been taken in"
+      }
+    ],
+    "correctOrder": [
+      "s1",
+      "s2",
+      "s3",
+      "s4"
+    ],
+    "explanation": "Responding before the feedback is fully taken in risks reacting to an incomplete understanding — pausing, listening fully, and confirming understanding all come before deciding how to respond, not after."
+  },
+  {
+    "id": "i.var.les40.persp",
+    "concept": "perspective_taking_vs_projection",
+    "type": "classify",
+    "scenario": "A colleague seems unusually frustrated about a schedule change that looks minor from the outside.",
+    "prompt": "Sort each way of understanding their reaction into genuine perspective-taking or projection.",
+    "categories": [
+      {
+        "id": "taking",
+        "label": "Genuine perspective-taking"
+      },
+      {
+        "id": "projection",
+        "label": "Projection"
+      }
+    ],
+    "entries": [
+      {
+        "id": "e1",
+        "label": "Assuming they feel the way you would about the same change",
+        "categoryId": "projection"
+      },
+      {
+        "id": "e2",
+        "label": "Considering they might know something about the change's impact that you don't",
+        "categoryId": "taking"
+      },
+      {
+        "id": "e3",
+        "label": "Asking what specifically about the change is the issue for them",
+        "categoryId": "taking"
+      },
+      {
+        "id": "e4",
+        "label": "Concluding their reaction must mean the same thing your own reaction would mean",
+        "categoryId": "projection"
+      }
+    ],
+    "explanation": "Genuine perspective-taking actively considers that their view might differ from yours, for reasons you don't yet know; projection quietly substitutes your own likely reaction for theirs."
+  },
+  {
+    "id": "i.var.les45.val",
+    "concept": "validating_without_agreeing",
+    "type": "match",
+    "scenario": "A colleague is upset about a decision you actually disagree with.",
+    "prompt": "Match each response to what it actually does.",
+    "left": [
+      {
+        "id": "l0",
+        "label": "\"I get why you're frustrated, given how that went\""
+      },
+      {
+        "id": "l1",
+        "label": "\"You're completely right, we should reverse it\""
+      },
+      {
+        "id": "l2",
+        "label": "\"You shouldn't feel that way about it\""
+      }
+    ],
+    "right": [
+      {
+        "id": "r0",
+        "label": "Validates the feeling, without agreeing with the decision"
+      },
+      {
+        "id": "r1",
+        "label": "Agrees with the conclusion, not just the feeling"
+      },
+      {
+        "id": "r2",
+        "label": "Dismisses the feeling entirely"
+      }
+    ],
+    "correctPairs": [
+      {
+        "leftId": "l0",
+        "rightId": "r0"
+      },
+      {
+        "leftId": "l1",
+        "rightId": "r1"
+      },
+      {
+        "leftId": "l2",
+        "rightId": "r2"
+      }
+    ],
+    "explanation": "Validating a feeling as understandable and agreeing with the conclusion that follows from it are two separable things — only one of these three responses does the first without also doing (or refusing to do) the second."
+  },
+  {
+    "id": "i.var.les50.trust",
+    "concept": "consistency_builds_trust",
+    "type": "classify",
+    "scenario": "A new colleague is being evaluated for how trustworthy they seem.",
+    "prompt": "Sort each piece of evidence into builds trust over time or not yet real evidence.",
+    "categories": [
+      {
+        "id": "builds",
+        "label": "Builds trust over time"
+      },
+      {
+        "id": "not_yet",
+        "label": "Not yet real evidence"
+      }
+    ],
+    "entries": [
+      {
+        "id": "e1",
+        "label": "A sustained pattern of reliably following through on small commitments over months",
+        "categoryId": "builds"
+      },
+      {
+        "id": "e2",
+        "label": "One generous, memorable gesture early in the relationship",
+        "categoryId": "not_yet"
+      },
+      {
+        "id": "e3",
+        "label": "Consistently showing up prepared to routine, unglamorous meetings",
+        "categoryId": "builds"
+      },
+      {
+        "id": "e4",
+        "label": "A single impressive act of honesty, observed only once so far",
+        "categoryId": "not_yet"
+      }
+    ],
+    "explanation": "A sustained pattern across many smaller moments is what actually demonstrates trustworthiness over time — a single gesture, however genuine, doesn't yet establish that pattern on its own."
+  },
+  {
+    "id": "i.var.les55.cap",
+    "concept": "observation_vs_interpretation",
+    "type": "sequence",
+    "scenario": "A friend goes quiet mid-conversation after a comment is made.",
+    "prompt": "Put the steps for reading this moment well in the right order.",
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Notice the silence itself as the observed fact, separate from any story about why"
+      },
+      {
+        "id": "s2",
+        "label": "Give full attention rather than filling the gap with an assumption"
+      },
+      {
+        "id": "s3",
+        "label": "Consider their possibly different view, rather than assuming they feel what you'd feel"
+      },
+      {
+        "id": "s4",
+        "label": "Check the read directly, rather than acting on the unconfirmed guess"
+      }
+    ],
+    "correctOrder": [
+      "s1",
+      "s2",
+      "s3",
+      "s4"
+    ],
+    "explanation": "Each step builds on the last — an open observation, full attention, an un-projected read, and a direct check — and skipping any one of them risks acting on an interpretation that was never actually confirmed."
+  }
+]

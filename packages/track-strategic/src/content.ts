@@ -11,6 +11,7 @@ import negotiationItemsJson from '../content/items/negotiation.json' with { type
 import biasesItemsJson from '../content/items/biases.json' with { type: 'json' };
 import communicationItemsJson from '../content/items/communication.json' with { type: 'json' };
 import capstoneItemsJson from '../content/items/capstone.json' with { type: 'json' };
+import varietyItemsJson from '../content/items/variety.json' with { type: 'json' };
 
 export const strategicCurriculum = curriculumJson as Curriculum;
 export const strategicItems: Item[] = [
@@ -24,4 +25,5 @@ export const strategicItems: Item[] = [
   ...(biasesItemsJson as Item[]),
   ...(communicationItemsJson as Item[]),
   ...(capstoneItemsJson as Item[]),
+  ...(varietyItemsJson as Item[]),
 ];

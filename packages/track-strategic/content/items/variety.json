@@ -1,0 +1,484 @@
+[
+  {
+    "id": "i.var.m1.players",
+    "concept": "players",
+    "type": "classify",
+    "prompt": "Sort each person below into whether they are an actual player in this decision (someone who chooses between real options that affect the outcome) or not.",
+    "categories": [
+      {
+        "id": "player",
+        "label": "Player"
+      },
+      {
+        "id": "not_player",
+        "label": "Not a player"
+      }
+    ],
+    "entries": [
+      {
+        "id": "e1",
+        "label": "A manager deciding whether to approve or reject a budget request",
+        "categoryId": "player"
+      },
+      {
+        "id": "e2",
+        "label": "A customer whose satisfaction score is affected by the budget decision, but who has no say in it",
+        "categoryId": "not_player"
+      },
+      {
+        "id": "e3",
+        "label": "A second manager who must sign off before the budget is final",
+        "categoryId": "player"
+      },
+      {
+        "id": "e4",
+        "label": "A news outlet that might report on the outcome but has no role in deciding it",
+        "categoryId": "not_player"
+      }
+    ],
+    "explanation": "A player is someone who actually chooses between options that affect the outcome — being affected by a decision, or merely commenting on it, is not the same as having a real choice in it.",
+    "scenario": "A company is deciding on next quarter's marketing budget."
+  },
+  {
+    "id": "i.var.m2.br",
+    "concept": "best_response",
+    "type": "match",
+    "prompt": "Match each of the opponent's possible moves to your best response to it.",
+    "left": [
+      {
+        "id": "l0",
+        "label": "Opponent undercuts your price"
+      },
+      {
+        "id": "l1",
+        "label": "Opponent matches your price"
+      },
+      {
+        "id": "l2",
+        "label": "Opponent raises their price"
+      }
+    ],
+    "right": [
+      {
+        "id": "r0",
+        "label": "Match their price to hold the customer"
+      },
+      {
+        "id": "r1",
+        "label": "Hold your current price"
+      },
+      {
+        "id": "r2",
+        "label": "Raise your price too, capturing the gap"
+      }
+    ],
+    "correctPairs": [
+      {
+        "leftId": "l0",
+        "rightId": "r0"
+      },
+      {
+        "leftId": "l1",
+        "rightId": "r1"
+      },
+      {
+        "leftId": "l2",
+        "rightId": "r2"
+      }
+    ],
+    "explanation": "Best response means working out, for each specific move the other side might make, which of your own options actually does best against that particular move — not a single fixed answer.",
+    "scenario": "You and a competitor are setting prices for a similar product in the same market."
+  },
+  {
+    "id": "i.var.m3.dom",
+    "concept": "dominant_strategy",
+    "type": "sequence",
+    "prompt": "Put the steps for checking whether you have a dominant strategy in the correct order.",
+    "steps": [
+      {
+        "id": "s1",
+        "label": "List every choice the other player could make"
+      },
+      {
+        "id": "s2",
+        "label": "For each of their choices, work out your best response"
+      },
+      {
+        "id": "s3",
+        "label": "Check whether the same action of yours is the best response to all of their choices"
+      },
+      {
+        "id": "s4",
+        "label": "If so, that action is your dominant strategy"
+      }
+    ],
+    "correctOrder": [
+      "s1",
+      "s2",
+      "s3",
+      "s4"
+    ],
+    "explanation": "A dominant strategy is only confirmed by checking your best response against every one of the other player's possible choices, not just the one you expect them to make.",
+    "scenario": "You are deciding on a pricing strategy against a competitor who could price high or low."
+  },
+  {
+    "id": "i.var.m4.eq",
+    "concept": "equilibrium",
+    "type": "classify",
+    "prompt": "Sort each described pair of choices into whether it is a stable equilibrium (neither side wants to switch, given the other's choice) or not.",
+    "categories": [
+      {
+        "id": "stable",
+        "label": "Stable (equilibrium)"
+      },
+      {
+        "id": "unstable",
+        "label": "Not stable"
+      }
+    ],
+    "entries": [
+      {
+        "id": "e1",
+        "label": "Both sides are already playing their best response to what the other is doing",
+        "categoryId": "stable"
+      },
+      {
+        "id": "e2",
+        "label": "One side would clearly do better by switching, given what the other is doing",
+        "categoryId": "unstable"
+      },
+      {
+        "id": "e3",
+        "label": "Both sides would do better by switching to a different pair of choices together",
+        "categoryId": "unstable"
+      },
+      {
+        "id": "e4",
+        "label": "Each side has checked and confirmed neither can improve by changing alone",
+        "categoryId": "stable"
+      }
+    ],
+    "explanation": "A stable pair of choices is one where each side is already playing its best response to the other — not simply a pair that happens to be in place, which is unstable if either side could do better by switching.",
+    "scenario": "Two competitors have each settled on a pricing strategy in response to the other."
+  },
+  {
+    "id": "i.var.m5.batna",
+    "concept": "batna",
+    "type": "match",
+    "prompt": "Match each description of a walk-away option to the correct way of valuing it as a BATNA.",
+    "left": [
+      {
+        "id": "l0",
+        "label": "Another buyer offered $40,000 firm, in writing"
+      },
+      {
+        "id": "l1",
+        "label": "\"I could probably find another buyer eventually\""
+      },
+      {
+        "id": "l2",
+        "label": "A backup offer that expires before this negotiation closes"
+      }
+    ],
+    "right": [
+      {
+        "id": "r0",
+        "label": "A concrete, confirmed alternative — use it as your real BATNA"
+      },
+      {
+        "id": "r1",
+        "label": "A vague hope, not yet a real BATNA"
+      },
+      {
+        "id": "r2",
+        "label": "An alternative that needs re-checking, not treated as guaranteed"
+      }
+    ],
+    "correctPairs": [
+      {
+        "leftId": "l0",
+        "rightId": "r0"
+      },
+      {
+        "leftId": "l1",
+        "rightId": "r1"
+      },
+      {
+        "leftId": "l2",
+        "rightId": "r2"
+      }
+    ],
+    "explanation": "A BATNA is only as strong as how real and current it actually is — a vague hope and a confirmed, still-open offer are not the same kind of leverage, even if both are called an 'alternative'.",
+    "scenario": "You are preparing to negotiate a sale price and considering what happens if the deal falls through."
+  },
+  {
+    "id": "i.var.m6.di",
+    "concept": "distributive_integrative",
+    "type": "classify",
+    "prompt": "Sort each negotiation tactic into distributive (dividing a fixed pie) or integrative (growing the pie through trade).",
+    "categories": [
+      {
+        "id": "distributive",
+        "label": "Distributive"
+      },
+      {
+        "id": "integrative",
+        "label": "Integrative"
+      }
+    ],
+    "entries": [
+      {
+        "id": "e1",
+        "label": "Anchoring with an aggressive opening offer on price alone",
+        "categoryId": "distributive"
+      },
+      {
+        "id": "e2",
+        "label": "Asking what the other side actually needs, to find a trade across several issues",
+        "categoryId": "integrative"
+      },
+      {
+        "id": "e3",
+        "label": "Trading a longer contract term for a lower price, since each side values them differently",
+        "categoryId": "integrative"
+      },
+      {
+        "id": "e4",
+        "label": "Treating the deal as a fixed amount that one side's gain is the other's loss",
+        "categoryId": "distributive"
+      }
+    ],
+    "explanation": "Distributive tactics treat the deal as a fixed amount to be divided; integrative tactics look for trades across multiple issues that can grow the total value for both sides.",
+    "scenario": "Two parties are negotiating a contract covering price, term length, and support terms."
+  },
+  {
+    "id": "i.var.m7.multi",
+    "concept": "multiparty_negotiation",
+    "type": "sequence",
+    "prompt": "Put the steps for managing a three-party negotiation in a sensible order.",
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Identify every party actually at the table and what each one wants"
+      },
+      {
+        "id": "s2",
+        "label": "Look for which two parties' interests actually align, and where"
+      },
+      {
+        "id": "s3",
+        "label": "Consider whether a coalition between aligned parties changes the leverage"
+      },
+      {
+        "id": "s4",
+        "label": "Propose a deal that accounts for all three parties' interests, not just two"
+      }
+    ],
+    "correctOrder": [
+      "s1",
+      "s2",
+      "s3",
+      "s4"
+    ],
+    "explanation": "A three-party negotiation can't be managed as a simple back-and-forth — missing a party's interests, or ignoring a possible coalition, tends to produce deals that collapse once the left-out party reacts.",
+    "scenario": "Three departments are negotiating how to split a shared budget pool."
+  },
+  {
+    "id": "i.var.m8.over",
+    "concept": "overconfidence",
+    "type": "classify",
+    "prompt": "Sort each statement into appropriately confident or overconfident, given what it's actually based on.",
+    "categories": [
+      {
+        "id": "appropriate",
+        "label": "Appropriately confident"
+      },
+      {
+        "id": "overconfident",
+        "label": "Overconfident"
+      }
+    ],
+    "entries": [
+      {
+        "id": "e1",
+        "label": "\"I'm 95% sure,\" based on a single data point with no track record to check it against",
+        "categoryId": "overconfident"
+      },
+      {
+        "id": "e2",
+        "label": "\"I'm fairly sure, but there's real uncertainty here,\" based on limited evidence",
+        "categoryId": "appropriate"
+      },
+      {
+        "id": "e3",
+        "label": "\"This will definitely work,\" based on one past success in a similar situation",
+        "categoryId": "overconfident"
+      },
+      {
+        "id": "e4",
+        "label": "A stated confidence level that matches how often similar past estimates have actually been right",
+        "categoryId": "appropriate"
+      }
+    ],
+    "explanation": "Confidence is overconfident when it's higher than the actual evidence — especially a limited track record — can support, not simply when it's expressed strongly.",
+    "scenario": "A team is estimating how likely a new product launch is to hit its target date."
+  },
+  {
+    "id": "i.var.m9.esc",
+    "concept": "escalation_of_commitment",
+    "type": "sequence",
+    "prompt": "Put the typical stages of escalating commitment to a losing course of action in order.",
+    "steps": [
+      {
+        "id": "s1",
+        "label": "An initial investment is made in a chosen course of action"
+      },
+      {
+        "id": "s2",
+        "label": "Early signs suggest the course of action isn't working"
+      },
+      {
+        "id": "s3",
+        "label": "More resources are committed to justify the investment already made, rather than reassessed"
+      },
+      {
+        "id": "s4",
+        "label": "The sunk cost grows, making it feel even harder to walk away"
+      }
+    ],
+    "correctOrder": [
+      "s1",
+      "s2",
+      "s3",
+      "s4"
+    ],
+    "explanation": "Escalation of commitment is a pattern, not a single bad decision — each additional investment is driven by justifying the one before it, which is exactly what makes it hard to stop without a conscious check.",
+    "scenario": "A team has already invested significant budget in a project that keeps missing its milestones."
+  },
+  {
+    "id": "i.var.m10.pers",
+    "concept": "persuasion_principles",
+    "type": "match",
+    "prompt": "Match each persuasion principle to the example that best illustrates it.",
+    "left": [
+      {
+        "id": "l0",
+        "label": "Reciprocity"
+      },
+      {
+        "id": "l1",
+        "label": "Consistency"
+      },
+      {
+        "id": "l2",
+        "label": "Social proof"
+      }
+    ],
+    "right": [
+      {
+        "id": "r0",
+        "label": "Offering a small favor first, before making a request"
+      },
+      {
+        "id": "r1",
+        "label": "Getting someone to agree to a small commitment, then a larger related one"
+      },
+      {
+        "id": "r2",
+        "label": "Pointing out that most other people in a similar position already did this"
+      }
+    ],
+    "correctPairs": [
+      {
+        "leftId": "l0",
+        "rightId": "r0"
+      },
+      {
+        "leftId": "l1",
+        "rightId": "r1"
+      },
+      {
+        "leftId": "l2",
+        "rightId": "r2"
+      }
+    ],
+    "explanation": "Each principle works through a different mechanism — reciprocity through an owed favor, consistency through a prior small commitment, social proof through what others are seen doing — and confusing them leads to using the wrong lever for the situation.",
+    "scenario": "A salesperson is deciding which persuasion tactic to use with a hesitant client."
+  },
+  {
+    "id": "i.var.m11.assert",
+    "concept": "assertive_communication",
+    "type": "classify",
+    "prompt": "Sort each statement into assertive, aggressive, or passive.",
+    "categories": [
+      {
+        "id": "assertive",
+        "label": "Assertive"
+      },
+      {
+        "id": "aggressive",
+        "label": "Aggressive"
+      },
+      {
+        "id": "passive",
+        "label": "Passive"
+      }
+    ],
+    "entries": [
+      {
+        "id": "e1",
+        "label": "\"I need this by Friday. Can you confirm that works?\"",
+        "categoryId": "assertive"
+      },
+      {
+        "id": "e2",
+        "label": "\"You always leave things to the last minute.\"",
+        "categoryId": "aggressive"
+      },
+      {
+        "id": "e3",
+        "label": "Saying nothing about a missed deadline and hoping it doesn't happen again",
+        "categoryId": "passive"
+      },
+      {
+        "id": "e4",
+        "label": "\"I'm concerned about the timeline. Can we talk through it?\"",
+        "categoryId": "assertive"
+      }
+    ],
+    "explanation": "Assertive communication states a clear need or concern directly and respectfully — aggressive communication attacks or blames, and passive communication avoids stating the need at all.",
+    "scenario": "A colleague keeps missing agreed deadlines on a shared project."
+  },
+  {
+    "id": "i.var.m12.cap",
+    "concept": "batna",
+    "type": "sequence",
+    "prompt": "Put the steps for handling a negotiation that combines a bias trap (like overconfidence or sunk cost) with real leverage in a sensible order.",
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Establish your actual BATNA and reservation value before the conversation starts"
+      },
+      {
+        "id": "s2",
+        "label": "Notice if a bias, like sunk cost or overconfidence, is distorting your read of the situation"
+      },
+      {
+        "id": "s3",
+        "label": "Check your BATNA and reservation value again, separately from the biased impression"
+      },
+      {
+        "id": "s4",
+        "label": "Decide based on the checked numbers, not the biased impression"
+      }
+    ],
+    "correctOrder": [
+      "s1",
+      "s2",
+      "s3",
+      "s4"
+    ],
+    "explanation": "A bias trap is dangerous here specifically because it can distort the same numbers — BATNA, reservation value — that are supposed to anchor the decision, which is why checking them again, separately, is the step that actually catches it.",
+    "scenario": "A negotiation is underway where sunk cost and overconfidence both risk distorting the numbers that matter."
+  }
+]

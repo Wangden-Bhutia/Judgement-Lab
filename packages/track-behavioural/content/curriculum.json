@@ -195,6 +195,7 @@
       ],
       "prerequisites": [],
       "interactiveItemIds": [
+        "i.var.les1.obs",
         "i.beh.obs-001",
         "i.beh.obs-002",
         "i.beh.obs-003",
@@ -377,6 +378,7 @@
         "behavioural-les-8"
       ],
       "interactiveItemIds": [
+        "i.var.les4.pat",
         "i.beh.pattern-001",
         "i.beh.pattern-002",
         "i.beh.pattern-003",
@@ -606,6 +608,7 @@
         "behavioural-les-9"
       ],
       "interactiveItemIds": [
+        "i.var.les10.sig",
         "i.sig.cong.a",
         "i.sig.cong.b",
         "i.sig.cong.c",
@@ -818,6 +821,7 @@
         "behavioural-les-14"
       ],
       "interactiveItemIds": [
+        "i.var.les15.room",
         "i.sig.amb.a",
         "i.sig.amb.b",
         "i.sig.amb.c",
@@ -1033,6 +1037,7 @@
         "behavioural-les-19"
       ],
       "interactiveItemIds": [
+        "i.var.les20.lis",
         "i.lis.att.a",
         "i.lis.att.b",
         "i.lis.att.c",
@@ -1245,6 +1250,7 @@
         "behavioural-les-24"
       ],
       "interactiveItemIds": [
+        "i.var.les25.resp",
         "i.lis.vent.a",
         "i.lis.vent.b",
         "i.lis.vent.c",
@@ -1460,6 +1466,7 @@
         "behavioural-les-29"
       ],
       "interactiveItemIds": [
+        "i.var.les30.fb",
         "i.fb.spec.a",
         "i.fb.spec.b",
         "i.fb.spec.c",
@@ -1672,6 +1679,7 @@
         "behavioural-les-34"
       ],
       "interactiveItemIds": [
+        "i.var.les35.rec",
         "i.fb.def.a",
         "i.fb.def.b",
         "i.fb.def.c",
@@ -1887,6 +1895,7 @@
         "behavioural-les-39"
       ],
       "interactiveItemIds": [
+        "i.var.les40.persp",
         "i.per.proj.a",
         "i.per.proj.b",
         "i.per.proj.c",
@@ -2099,6 +2108,7 @@
         "behavioural-les-44"
       ],
       "interactiveItemIds": [
+        "i.var.les45.val",
         "i.per.val.a",
         "i.per.val.b",
         "i.per.val.c",
@@ -2314,6 +2324,7 @@
         "behavioural-les-49"
       ],
       "interactiveItemIds": [
+        "i.var.les50.trust",
         "i.rap.cons.a",
         "i.rap.cons.b",
         "i.rap.cons.c",
@@ -2528,6 +2539,7 @@
         "behavioural-les-54"
       ],
       "interactiveItemIds": [
+        "i.var.les55.cap",
         "i.cap.conv.a",
         "i.cap.conv.b",
         "i.cap.conv.c",
