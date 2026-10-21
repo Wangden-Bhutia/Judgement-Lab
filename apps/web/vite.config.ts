@@ -4,6 +4,11 @@ import { VitePWA } from 'vite-plugin-pwa'
 
 // https://vite.dev/config/
 export default defineConfig({
+  // GitHub Pages serves this project from /Judgement-Lab/, not the domain
+  // root, so every asset/route reference needs that prefix in production.
+  // GITHUB_PAGES is set only by the Pages deploy workflow; `pnpm dev` and
+  // any other build target still get the root path.
+  base: process.env.GITHUB_PAGES ? '/Judgement-Lab/' : '/',
   plugins: [
     react(),
     VitePWA({
@@ -22,11 +27,11 @@ export default defineConfig({
         name: 'Judgment Lab',
         short_name: 'Judgment Lab',
         description: 'Short exercises in reading a situation before reacting to it.',
-        start_url: '/',
+        start_url: process.env.GITHUB_PAGES ? '/Judgement-Lab/' : '/',
         display: 'standalone',
         background_color: '#f6f6f4',
         theme_color: '#678a60',
-        icons: [{ src: '/favicon.svg', sizes: 'any', type: 'image/svg+xml' }],
+        icons: [{ src: 'favicon.svg', sizes: 'any', type: 'image/svg+xml' }],
       },
     }),
   ],
