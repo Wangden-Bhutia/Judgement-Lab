@@ -173,6 +173,7 @@
         "i.emo.w01d1.explain"
       ],
       "masteryItemIds": [
+        "i.emo.w01d1-q1",
         "i.emo.w01d1-q2"
       ],
       "explanationBackItemId": "i.emo.w01d1.explain",
@@ -214,6 +215,7 @@
         "i.emo.w01d2.explain"
       ],
       "masteryItemIds": [
+        "i.emo.w01d2-q1",
         "i.emo.w01d2-q2"
       ],
       "explanationBackItemId": "i.emo.w01d2.explain",
@@ -255,6 +257,7 @@
         "i.emo.w01d3.explain"
       ],
       "masteryItemIds": [
+        "i.emo.w01d3-q1",
         "i.emo.w01d3-q2"
       ],
       "explanationBackItemId": "i.emo.w01d3.explain",
@@ -297,6 +300,8 @@
         "i.emo.w01d4.explain"
       ],
       "masteryItemIds": [
+        "i.emo.w01d4-q1",
+        "i.emo.w01d4-q2",
         "i.emo.w01d4-q3"
       ],
       "explanationBackItemId": "i.emo.w01d4.explain",
@@ -384,6 +389,7 @@
         "i.emo.w02d1.explain"
       ],
       "masteryItemIds": [
+        "i.emo.w02d1-q1",
         "i.emo.w02d1-q2"
       ],
       "explanationBackItemId": "i.emo.w02d1.explain",
@@ -425,6 +431,7 @@
         "i.emo.w02d2.explain"
       ],
       "masteryItemIds": [
+        "i.emo.w02d2-q1",
         "i.emo.w02d2-q2"
       ],
       "explanationBackItemId": "i.emo.w02d2.explain",
@@ -466,6 +473,7 @@
         "i.emo.w02d3.explain"
       ],
       "masteryItemIds": [
+        "i.emo.w02d3-q1",
         "i.emo.w02d3-q2"
       ],
       "explanationBackItemId": "i.emo.w02d3.explain",
@@ -507,6 +515,7 @@
         "i.emo.w02d4.explain"
       ],
       "masteryItemIds": [
+        "i.emo.w02d4-q1",
         "i.emo.w02d4-q2"
       ],
       "explanationBackItemId": "i.emo.w02d4.explain",
@@ -591,6 +600,7 @@
         "i.emo.w03d1.explain"
       ],
       "masteryItemIds": [
+        "i.emo.w03d1-q1",
         "i.emo.w03d1-q2"
       ],
       "explanationBackItemId": "i.emo.w03d1.explain",
@@ -632,6 +642,7 @@
         "i.emo.w03d2.explain"
       ],
       "masteryItemIds": [
+        "i.emo.w03d2-q1",
         "i.emo.w03d2-q2"
       ],
       "explanationBackItemId": "i.emo.w03d2.explain",
@@ -672,6 +683,7 @@
         "i.emo.w03d3.explain"
       ],
       "masteryItemIds": [
+        "i.emo.w03d3-q1",
         "i.emo.w03d3-q2"
       ],
       "explanationBackItemId": "i.emo.w03d3.explain",
@@ -712,6 +724,7 @@
         "i.emo.w03d4.explain"
       ],
       "masteryItemIds": [
+        "i.emo.w03d4-q1",
         "i.emo.w03d4-q2"
       ],
       "explanationBackItemId": "i.emo.w03d4.explain",
@@ -795,6 +808,7 @@
         "i.emo.w04d1.explain"
       ],
       "masteryItemIds": [
+        "i.emo.w04d1-q1",
         "i.emo.w04d1-q2"
       ],
       "explanationBackItemId": "i.emo.w04d1.explain",
@@ -836,6 +850,7 @@
         "i.emo.w04d2.explain"
       ],
       "masteryItemIds": [
+        "i.emo.w04d2-q1",
         "i.emo.w04d2-q2"
       ],
       "explanationBackItemId": "i.emo.w04d2.explain",
@@ -877,6 +892,7 @@
         "i.emo.w04d3.explain"
       ],
       "masteryItemIds": [
+        "i.emo.w04d3-q1",
         "i.emo.w04d3-q2"
       ],
       "explanationBackItemId": "i.emo.w04d3.explain",
@@ -918,6 +934,7 @@
         "i.emo.w04d4.explain"
       ],
       "masteryItemIds": [
+        "i.emo.w04d4-q1",
         "i.emo.w04d4-q2"
       ],
       "explanationBackItemId": "i.emo.w04d4.explain",
@@ -1003,6 +1020,7 @@
         "i.emo.w05d1.explain"
       ],
       "masteryItemIds": [
+        "i.emo.w05d1-q1",
         "i.emo.w05d1-q2"
       ],
       "explanationBackItemId": "i.emo.w05d1.explain",
@@ -1044,6 +1062,7 @@
         "i.emo.w05d2.explain"
       ],
       "masteryItemIds": [
+        "i.emo.w05d2-q1",
         "i.emo.w05d2-q2"
       ],
       "explanationBackItemId": "i.emo.w05d2.explain",
@@ -1083,6 +1102,7 @@
         "i.emo.w05d3.explain"
       ],
       "masteryItemIds": [
+        "i.emo.w05d3-q1",
         "i.emo.w05d3-q2"
       ],
       "explanationBackItemId": "i.emo.w05d3.explain",
@@ -1124,6 +1144,7 @@
         "i.emo.w05d4.explain"
       ],
       "masteryItemIds": [
+        "i.emo.w05d4-q1",
         "i.emo.w05d4-q2"
       ],
       "explanationBackItemId": "i.emo.w05d4.explain",
@@ -1210,6 +1231,8 @@
         "i.emo.w06d1.explain"
       ],
       "masteryItemIds": [
+        "i.emo.w06d1-q1",
+        "i.emo.w06d1-q2",
         "i.emo.w06d1-q3"
       ],
       "explanationBackItemId": "i.emo.w06d1.explain",
@@ -1252,6 +1275,7 @@
         "i.emo.w06d2.explain"
       ],
       "masteryItemIds": [
+        "i.emo.w06d2-q1",
         "i.emo.w06d2-q2"
       ],
       "explanationBackItemId": "i.emo.w06d2.explain",
@@ -1290,6 +1314,7 @@
         "i.emo.w06d3.explain"
       ],
       "masteryItemIds": [
+        "i.emo.w06d3-q1",
         "i.emo.w06d3-q2"
       ],
       "explanationBackItemId": "i.emo.w06d3.explain",
@@ -1331,6 +1356,7 @@
         "i.emo.w06d4.explain"
       ],
       "masteryItemIds": [
+        "i.emo.w06d4-q1",
         "i.emo.w06d4-q2"
       ],
       "explanationBackItemId": "i.emo.w06d4.explain",
@@ -1413,6 +1439,7 @@
         "i.emo.w07d1.explain"
       ],
       "masteryItemIds": [
+        "i.emo.w07d1-q1",
         "i.emo.w07d1-q2"
       ],
       "explanationBackItemId": "i.emo.w07d1.explain",
@@ -1452,6 +1479,7 @@
         "i.emo.w07d2.explain"
       ],
       "masteryItemIds": [
+        "i.emo.w07d2-q1",
         "i.emo.w07d2-q2"
       ],
       "explanationBackItemId": "i.emo.w07d2.explain",
@@ -1493,6 +1521,8 @@
         "i.emo.w07d3.explain"
       ],
       "masteryItemIds": [
+        "i.emo.w07d3-q1",
+        "i.emo.w07d3-q2",
         "i.emo.w07d3-q3"
       ],
       "explanationBackItemId": "i.emo.w07d3.explain",
@@ -1535,6 +1565,7 @@
         "i.emo.w07d4.explain"
       ],
       "masteryItemIds": [
+        "i.emo.w07d4-q1",
         "i.emo.w07d4-q2"
       ],
       "explanationBackItemId": "i.emo.w07d4.explain",
@@ -1619,6 +1650,7 @@
         "i.emo.w08d1.explain"
       ],
       "masteryItemIds": [
+        "i.emo.w08d1-q1",
         "i.emo.w08d1-q2"
       ],
       "explanationBackItemId": "i.emo.w08d1.explain",
@@ -1659,6 +1691,7 @@
         "i.emo.w08d2.explain"
       ],
       "masteryItemIds": [
+        "i.emo.w08d2-q1",
         "i.emo.w08d2-q2"
       ],
       "explanationBackItemId": "i.emo.w08d2.explain",
@@ -1700,6 +1733,7 @@
         "i.emo.w08d3.explain"
       ],
       "masteryItemIds": [
+        "i.emo.w08d3-q1",
         "i.emo.w08d3-q2"
       ],
       "explanationBackItemId": "i.emo.w08d3.explain",
@@ -1741,6 +1775,7 @@
         "i.emo.w08d4.explain"
       ],
       "masteryItemIds": [
+        "i.emo.w08d4-q1",
         "i.emo.w08d4-q2"
       ],
       "explanationBackItemId": "i.emo.w08d4.explain",
@@ -1825,6 +1860,8 @@
         "i.emo.w09d1.explain"
       ],
       "masteryItemIds": [
+        "i.emo.w09d1-q1",
+        "i.emo.w09d1-q2",
         "i.emo.w09d1-q3"
       ],
       "explanationBackItemId": "i.emo.w09d1.explain",
@@ -1867,6 +1904,7 @@
         "i.emo.w09d2.explain"
       ],
       "masteryItemIds": [
+        "i.emo.w09d2-q1",
         "i.emo.w09d2-q2"
       ],
       "explanationBackItemId": "i.emo.w09d2.explain",
@@ -1908,6 +1946,7 @@
         "i.emo.w09d3.explain"
       ],
       "masteryItemIds": [
+        "i.emo.w09d3-q1",
         "i.emo.w09d3-q2"
       ],
       "explanationBackItemId": "i.emo.w09d3.explain",
@@ -1948,6 +1987,7 @@
         "i.emo.w09d4.explain"
       ],
       "masteryItemIds": [
+        "i.emo.w09d4-q1",
         "i.emo.w09d4-q2"
       ],
       "explanationBackItemId": "i.emo.w09d4.explain",
@@ -2031,6 +2071,7 @@
         "i.emo.w10d1.explain"
       ],
       "masteryItemIds": [
+        "i.emo.w10d1-q1",
         "i.emo.w10d1-q2"
       ],
       "explanationBackItemId": "i.emo.w10d1.explain",
@@ -2070,6 +2111,7 @@
         "i.emo.w10d2.explain"
       ],
       "masteryItemIds": [
+        "i.emo.w10d2-q1",
         "i.emo.w10d2-q2"
       ],
       "explanationBackItemId": "i.emo.w10d2.explain",
@@ -2111,6 +2153,7 @@
         "i.emo.w10d3.explain"
       ],
       "masteryItemIds": [
+        "i.emo.w10d3-q1",
         "i.emo.w10d3-q2"
       ],
       "explanationBackItemId": "i.emo.w10d3.explain",
@@ -2151,6 +2194,7 @@
         "i.emo.w10d4.explain"
       ],
       "masteryItemIds": [
+        "i.emo.w10d4-q1",
         "i.emo.w10d4-q2"
       ],
       "explanationBackItemId": "i.emo.w10d4.explain",
@@ -2234,6 +2278,7 @@
         "i.emo.w11d1.explain"
       ],
       "masteryItemIds": [
+        "i.emo.w11d1-q1",
         "i.emo.w11d1-q2"
       ],
       "explanationBackItemId": "i.emo.w11d1.explain",
@@ -2274,6 +2319,7 @@
         "i.emo.w11d2.explain"
       ],
       "masteryItemIds": [
+        "i.emo.w11d2-q1",
         "i.emo.w11d2-q2"
       ],
       "explanationBackItemId": "i.emo.w11d2.explain",
@@ -2315,6 +2361,8 @@
         "i.emo.w11d3.explain"
       ],
       "masteryItemIds": [
+        "i.emo.w11d3-q1",
+        "i.emo.w11d3-q2",
         "i.emo.w11d3-q3"
       ],
       "explanationBackItemId": "i.emo.w11d3.explain",
@@ -2357,6 +2405,7 @@
         "i.emo.w11d4.explain"
       ],
       "masteryItemIds": [
+        "i.emo.w11d4-q1",
         "i.emo.w11d4-q2"
       ],
       "explanationBackItemId": "i.emo.w11d4.explain",
@@ -2440,6 +2489,8 @@
         "i.emo.w12d1.explain"
       ],
       "masteryItemIds": [
+        "i.emo.w12d1-q1",
+        "i.emo.w12d1-q2",
         "i.emo.w12d1-q3"
       ],
       "explanationBackItemId": "i.emo.w12d1.explain",
@@ -2482,6 +2533,7 @@
         "i.emo.w12d2.explain"
       ],
       "masteryItemIds": [
+        "i.emo.w12d2-q1",
         "i.emo.w12d2-q2"
       ],
       "explanationBackItemId": "i.emo.w12d2.explain",
@@ -2520,6 +2572,7 @@
         "i.emo.w12d3.explain"
       ],
       "masteryItemIds": [
+        "i.emo.w12d3-q1",
         "i.emo.w12d3-q2"
       ],
       "explanationBackItemId": "i.emo.w12d3.explain",
@@ -2561,6 +2614,8 @@
         "i.emo.w12d4.explain"
       ],
       "masteryItemIds": [
+        "i.emo.w12d4-q1",
+        "i.emo.w12d4-q2",
         "i.emo.w12d4-q3"
       ],
       "explanationBackItemId": "i.emo.w12d4.explain",

@@ -68,7 +68,7 @@ describe('converted Emotional Skills content (60-session curriculum)', () => {
     expect(review.masteryItemIds.length).toBeGreaterThan(0);
   });
 
-  it('a regular lesson still gives its own concept exactly one checkpoint item, drawn from its own checks', () => {
+  it('a regular lesson gives its own concept every one of its own checks as a checkpoint item, not just one', () => {
     // Originally a regular (non-d5) lesson left masteryItemIds empty
     // entirely, on the theory that the weekly checkpoint/review session
     // (d5) was where delayed evidence came from. But d5's own items are
@@ -76,14 +76,35 @@ describe('converted Emotional Skills content (60-session curriculum)', () => {
     // -- so d1-d4 concepts had no path to a checkpoint attempt at all,
     // and so could never enter the spaced-review schedule or reach
     // mastery, ever (core-engine/mastery.ts needs >=2 delayed-evidence
-    // attempts). Fixed by pointing each regular lesson's masteryItemIds
-    // at one of its own already-authored checks -- same content, just
-    // flagged as checkpoint-tier instead of first-pass-only.
+    // attempts). First fixed by pointing each regular lesson's
+    // masteryItemIds at just one of its own already-authored checks.
+    // That satisfied the >=2-items floor only by replaying the SAME single
+    // question on both the in-lesson pass and spaced review -- weak
+    // evidence, since getting one specific Q&A right twice isn't the same
+    // as being able to apply the concept generally. Every regular lesson
+    // already had a second, different check authored (some have a third);
+    // using all of them as checkpoint-tier, instead of just the first, is
+    // the same "point at already-authored content" fix taken the rest of
+    // the way, matching Strategic/Behavioural Observation's 2-per-lesson
+    // convention.
     const lesson = typedCurriculum.lessons.find((l) => l.id === 'emotional-w01d1')!;
-    expect(lesson.masteryItemIds).toHaveLength(1);
-    expect(lesson.interactiveItemIds).toContain(lesson.masteryItemIds[0]);
-    expect(itemById.get(lesson.masteryItemIds[0]!)?.concept).toBe(lesson.concepts[0]);
-    expect(lesson.interactiveItemIds.length).toBeGreaterThanOrEqual(3); // activity + >=1 check + explain
+    expect(lesson.masteryItemIds.length).toBeGreaterThanOrEqual(2);
+    for (const itemId of lesson.masteryItemIds) {
+      expect(lesson.interactiveItemIds).toContain(itemId);
+      expect(itemById.get(itemId)?.concept).toBe(lesson.concepts[0]);
+    }
+    expect(lesson.interactiveItemIds.length).toBeGreaterThanOrEqual(4); // activity + >=2 checks + explain
+  });
+
+  it('every regular lesson\'s masteryItemIds are exactly its own non-activity, non-explain checks -- none skipped, none foreign', () => {
+    for (const lesson of typedCurriculum.lessons) {
+      if (CHECKPOINT_LESSON_IDS.has(lesson.id)) continue;
+      const ownChecks = lesson.interactiveItemIds.filter(
+        (id) => id !== lesson.explanationBackItemId && !id.endsWith('.activity')
+      );
+      expect(lesson.masteryItemIds).toEqual(ownChecks);
+      expect(lesson.masteryItemIds.length).toBeGreaterThanOrEqual(2);
+    }
   });
 
   it('every lesson gives its own concept at least one checkpoint item -- no concept is permanently unmasterable', () => {
