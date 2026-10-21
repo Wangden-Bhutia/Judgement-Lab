@@ -328,18 +328,26 @@
         "Demonstrate the foundations."
       ],
       "concepts": [
-        "w01d5"
+        "w01d1",
+        "w01d2",
+        "w01d3",
+        "w01d4"
       ],
       "prerequisites": [
         "emotional-w01d4"
       ],
       "interactiveItemIds": [
+        "i.emo.w01chk.a",
+        "i.emo.w01chk.b",
+        "i.emo.w01chk.c",
+        "i.emo.w01chk.d",
         "i.emo.w01d5.explain"
       ],
       "masteryItemIds": [
-        "i.emo.w01d5-q1",
-        "i.emo.w01d5-q2",
-        "i.emo.w01d5-q3"
+        "i.emo.w01chk.a",
+        "i.emo.w01chk.b",
+        "i.emo.w01chk.c",
+        "i.emo.w01chk.d"
       ],
       "explanationBackItemId": "i.emo.w01d5.explain",
       "teach": [
@@ -527,18 +535,26 @@
         "Demonstrate precise noticing and naming."
       ],
       "concepts": [
-        "w02d5"
+        "w02d1",
+        "w02d2",
+        "w02d3",
+        "w02d4"
       ],
       "prerequisites": [
         "emotional-w02d4"
       ],
       "interactiveItemIds": [
+        "i.emo.w02chk.a",
+        "i.emo.w02chk.b",
+        "i.emo.w02chk.c",
+        "i.emo.w02chk.d",
         "i.emo.w02d5.explain"
       ],
       "masteryItemIds": [
-        "i.emo.w02d5-q1",
-        "i.emo.w02d5-q2",
-        "i.emo.w02d5-q3"
+        "i.emo.w02chk.a",
+        "i.emo.w02chk.b",
+        "i.emo.w02chk.c",
+        "i.emo.w02chk.d"
       ],
       "explanationBackItemId": "i.emo.w02d5.explain",
       "teach": [
@@ -724,18 +740,26 @@
         "Demonstrate body and impulse skills."
       ],
       "concepts": [
-        "w03d5"
+        "w03d1",
+        "w03d2",
+        "w03d3",
+        "w03d4"
       ],
       "prerequisites": [
         "emotional-w03d4"
       ],
       "interactiveItemIds": [
+        "i.emo.w03chk.a",
+        "i.emo.w03chk.b",
+        "i.emo.w03chk.c",
+        "i.emo.w03chk.d",
         "i.emo.w03d5.explain"
       ],
       "masteryItemIds": [
-        "i.emo.w03d5-q1",
-        "i.emo.w03d5-q2",
-        "i.emo.w03d5-q3"
+        "i.emo.w03chk.a",
+        "i.emo.w03chk.b",
+        "i.emo.w03chk.c",
+        "i.emo.w03chk.d"
       ],
       "explanationBackItemId": "i.emo.w03d5.explain",
       "teach": [
@@ -923,17 +947,26 @@
         "Retrieve interpretation skills."
       ],
       "concepts": [
-        "w04d5"
+        "w04d1",
+        "w04d2",
+        "w04d3",
+        "w04d4"
       ],
       "prerequisites": [
         "emotional-w04d4"
       ],
       "interactiveItemIds": [
+        "i.emo.w04chk.a",
+        "i.emo.w04chk.b",
+        "i.emo.w04chk.c",
+        "i.emo.w04chk.d",
         "i.emo.w04d5.explain"
       ],
       "masteryItemIds": [
-        "i.emo.w04d5-q1",
-        "i.emo.w04d5-q2"
+        "i.emo.w04chk.a",
+        "i.emo.w04chk.b",
+        "i.emo.w04chk.c",
+        "i.emo.w04chk.d"
       ],
       "explanationBackItemId": "i.emo.w04d5.explain",
       "teach": [
@@ -1121,18 +1154,26 @@
         "Demonstrate interpretation skills (weeks 4-5)."
       ],
       "concepts": [
-        "w05d5"
+        "w05d1",
+        "w05d2",
+        "w05d3",
+        "w05d4"
       ],
       "prerequisites": [
         "emotional-w05d4"
       ],
       "interactiveItemIds": [
+        "i.emo.w05chk.a",
+        "i.emo.w05chk.b",
+        "i.emo.w05chk.c",
+        "i.emo.w05chk.d",
         "i.emo.w05d5.explain"
       ],
       "masteryItemIds": [
-        "i.emo.w05d5-q1",
-        "i.emo.w05d5-q2",
-        "i.emo.w05d5-q3"
+        "i.emo.w05chk.a",
+        "i.emo.w05chk.b",
+        "i.emo.w05chk.c",
+        "i.emo.w05chk.d"
       ],
       "explanationBackItemId": "i.emo.w05d5.explain",
       "teach": [
@@ -1317,18 +1358,26 @@
         "Demonstrate strategy matching."
       ],
       "concepts": [
-        "w06d5"
+        "w06d1",
+        "w06d2",
+        "w06d3",
+        "w06d4"
       ],
       "prerequisites": [
         "emotional-w06d4"
       ],
       "interactiveItemIds": [
+        "i.emo.w06chk.a",
+        "i.emo.w06chk.b",
+        "i.emo.w06chk.c",
+        "i.emo.w06chk.d",
         "i.emo.w06d5.explain"
       ],
       "masteryItemIds": [
-        "i.emo.w06d5-q1",
-        "i.emo.w06d5-q2",
-        "i.emo.w06d5-q3"
+        "i.emo.w06chk.a",
+        "i.emo.w06chk.b",
+        "i.emo.w06chk.c",
+        "i.emo.w06chk.d"
       ],
       "explanationBackItemId": "i.emo.w06d5.explain",
       "teach": [
@@ -1515,18 +1564,26 @@
         "Demonstrate these skills."
       ],
       "concepts": [
-        "w07d5"
+        "w07d1",
+        "w07d2",
+        "w07d3",
+        "w07d4"
       ],
       "prerequisites": [
         "emotional-w07d4"
       ],
       "interactiveItemIds": [
+        "i.emo.w07chk.a",
+        "i.emo.w07chk.b",
+        "i.emo.w07chk.c",
+        "i.emo.w07chk.d",
         "i.emo.w07d5.explain"
       ],
       "masteryItemIds": [
-        "i.emo.w07d5-q1",
-        "i.emo.w07d5-q2",
-        "i.emo.w07d5-q3"
+        "i.emo.w07chk.a",
+        "i.emo.w07chk.b",
+        "i.emo.w07chk.c",
+        "i.emo.w07chk.d"
       ],
       "explanationBackItemId": "i.emo.w07d5.explain",
       "teach": [
@@ -1712,17 +1769,26 @@
         "Retrieve criticism skills."
       ],
       "concepts": [
-        "w08d5"
+        "w08d1",
+        "w08d2",
+        "w08d3",
+        "w08d4"
       ],
       "prerequisites": [
         "emotional-w08d4"
       ],
       "interactiveItemIds": [
+        "i.emo.w08chk.a",
+        "i.emo.w08chk.b",
+        "i.emo.w08chk.c",
+        "i.emo.w08chk.d",
         "i.emo.w08d5.explain"
       ],
       "masteryItemIds": [
-        "i.emo.w08d5-q1",
-        "i.emo.w08d5-q2"
+        "i.emo.w08chk.a",
+        "i.emo.w08chk.b",
+        "i.emo.w08chk.c",
+        "i.emo.w08chk.d"
       ],
       "explanationBackItemId": "i.emo.w08d5.explain",
       "teach": [
@@ -1910,18 +1976,26 @@
         "Demonstrate weeks 8-9 skills."
       ],
       "concepts": [
-        "w09d5"
+        "w09d1",
+        "w09d2",
+        "w09d3",
+        "w09d4"
       ],
       "prerequisites": [
         "emotional-w09d4"
       ],
       "interactiveItemIds": [
+        "i.emo.w09chk.a",
+        "i.emo.w09chk.b",
+        "i.emo.w09chk.c",
+        "i.emo.w09chk.d",
         "i.emo.w09d5.explain"
       ],
       "masteryItemIds": [
-        "i.emo.w09d5-q1",
-        "i.emo.w09d5-q2",
-        "i.emo.w09d5-q3"
+        "i.emo.w09chk.a",
+        "i.emo.w09chk.b",
+        "i.emo.w09chk.c",
+        "i.emo.w09chk.d"
       ],
       "explanationBackItemId": "i.emo.w09d5.explain",
       "teach": [
@@ -2105,17 +2179,26 @@
         "Retrieve composure skills."
       ],
       "concepts": [
-        "w10d5"
+        "w10d1",
+        "w10d2",
+        "w10d3",
+        "w10d4"
       ],
       "prerequisites": [
         "emotional-w10d4"
       ],
       "interactiveItemIds": [
+        "i.emo.w10chk.a",
+        "i.emo.w10chk.b",
+        "i.emo.w10chk.c",
+        "i.emo.w10chk.d",
         "i.emo.w10d5.explain"
       ],
       "masteryItemIds": [
-        "i.emo.w10d5-q1",
-        "i.emo.w10d5-q2"
+        "i.emo.w10chk.a",
+        "i.emo.w10chk.b",
+        "i.emo.w10chk.c",
+        "i.emo.w10chk.d"
       ],
       "explanationBackItemId": "i.emo.w10d5.explain",
       "teach": [
@@ -2301,18 +2384,26 @@
         "Demonstrate weeks 10-11."
       ],
       "concepts": [
-        "w11d5"
+        "w11d1",
+        "w11d2",
+        "w11d3",
+        "w11d4"
       ],
       "prerequisites": [
         "emotional-w11d4"
       ],
       "interactiveItemIds": [
+        "i.emo.w11chk.a",
+        "i.emo.w11chk.b",
+        "i.emo.w11chk.c",
+        "i.emo.w11chk.d",
         "i.emo.w11d5.explain"
       ],
       "masteryItemIds": [
-        "i.emo.w11d5-q1",
-        "i.emo.w11d5-q2",
-        "i.emo.w11d5-q3"
+        "i.emo.w11chk.a",
+        "i.emo.w11chk.b",
+        "i.emo.w11chk.c",
+        "i.emo.w11chk.d"
       ],
       "explanationBackItemId": "i.emo.w11d5.explain",
       "teach": [
@@ -2499,18 +2590,26 @@
         "Demonstrate integration."
       ],
       "concepts": [
-        "w12d5"
+        "w12d1",
+        "w12d2",
+        "w12d3",
+        "w12d4"
       ],
       "prerequisites": [
         "emotional-w12d4"
       ],
       "interactiveItemIds": [
+        "i.emo.w12chk.a",
+        "i.emo.w12chk.b",
+        "i.emo.w12chk.c",
+        "i.emo.w12chk.d",
         "i.emo.w12d5.explain"
       ],
       "masteryItemIds": [
-        "i.emo.w12d5-q1",
-        "i.emo.w12d5-q2",
-        "i.emo.w12d5-q3"
+        "i.emo.w12chk.a",
+        "i.emo.w12chk.b",
+        "i.emo.w12chk.c",
+        "i.emo.w12chk.d"
       ],
       "explanationBackItemId": "i.emo.w12d5.explain",
       "teach": [
@@ -2551,12 +2650,6 @@
       "label": "You can explain why retrieval and spacing are used here, and why self-ratings and check scores are kept separate."
     },
     {
-      "id": "w01d5",
-      "trackId": "emotional",
-      "moduleId": "emotional-p1",
-      "label": "Demonstrate the foundations."
-    },
-    {
       "id": "w02d1",
       "trackId": "emotional",
       "moduleId": "emotional-p2",
@@ -2579,12 +2672,6 @@
       "trackId": "emotional",
       "moduleId": "emotional-p2",
       "label": "You can run a 30-second check-in: emotion, intensity, and one body signal."
-    },
-    {
-      "id": "w02d5",
-      "trackId": "emotional",
-      "moduleId": "emotional-p2",
-      "label": "Demonstrate precise noticing and naming."
     },
     {
       "id": "w03d1",
@@ -2611,12 +2698,6 @@
       "label": "You can carry out a short breathing or grounding reset and say when it fits and when it does not."
     },
     {
-      "id": "w03d5",
-      "trackId": "emotional",
-      "moduleId": "emotional-p3",
-      "label": "Demonstrate body and impulse skills."
-    },
-    {
       "id": "w04d1",
       "trackId": "emotional",
       "moduleId": "emotional-p4",
@@ -2639,12 +2720,6 @@
       "trackId": "emotional",
       "moduleId": "emotional-p4",
       "label": "You can weigh evidence for and against an interpretation and state what remains uncertain."
-    },
-    {
-      "id": "w04d5",
-      "trackId": "emotional",
-      "moduleId": "emotional-p4",
-      "label": "Retrieve interpretation skills."
     },
     {
       "id": "w05d1",
@@ -2671,12 +2746,6 @@
       "label": "You can produce a fast, fair reappraisal that is not just positive thinking."
     },
     {
-      "id": "w05d5",
-      "trackId": "emotional",
-      "moduleId": "emotional-p4",
-      "label": "Demonstrate interpretation skills (weeks 4-5)."
-    },
-    {
       "id": "w06d1",
       "trackId": "emotional",
       "moduleId": "emotional-p5",
@@ -2699,12 +2768,6 @@
       "trackId": "emotional",
       "moduleId": "emotional-p5",
       "label": "You can write a specific if-then plan for a predictable trigger."
-    },
-    {
-      "id": "w06d5",
-      "trackId": "emotional",
-      "moduleId": "emotional-p5",
-      "label": "Demonstrate strategy matching."
     },
     {
       "id": "w07d1",
@@ -2731,12 +2794,6 @@
       "label": "You can review a setback for controllable and uncontrollable parts and pick one lesson."
     },
     {
-      "id": "w07d5",
-      "trackId": "emotional",
-      "moduleId": "emotional-p6",
-      "label": "Demonstrate these skills."
-    },
-    {
       "id": "w08d1",
       "trackId": "emotional",
       "moduleId": "emotional-p7",
@@ -2759,12 +2816,6 @@
       "trackId": "emotional",
       "moduleId": "emotional-p7",
       "label": "You can plan a difficult conversation: goal, opening line and a fallback."
-    },
-    {
-      "id": "w08d5",
-      "trackId": "emotional",
-      "moduleId": "emotional-p7",
-      "label": "Retrieve criticism skills."
     },
     {
       "id": "w09d1",
@@ -2791,12 +2842,6 @@
       "label": "You can choose a proportionate response in a conflict scenario and explain its trade-off."
     },
     {
-      "id": "w09d5",
-      "trackId": "emotional",
-      "moduleId": "emotional-p7",
-      "label": "Demonstrate weeks 8-9 skills."
-    },
-    {
       "id": "w10d1",
       "trackId": "emotional",
       "moduleId": "emotional-p8",
@@ -2819,12 +2864,6 @@
       "trackId": "emotional",
       "moduleId": "emotional-p8",
       "label": "You can apply the pressure routine to unfamiliar work scenarios."
-    },
-    {
-      "id": "w10d5",
-      "trackId": "emotional",
-      "moduleId": "emotional-p8",
-      "label": "Retrieve composure skills."
     },
     {
       "id": "w11d1",
@@ -2851,12 +2890,6 @@
       "label": "You can combine composure skills in mixed professional scenarios."
     },
     {
-      "id": "w11d5",
-      "trackId": "emotional",
-      "moduleId": "emotional-p8",
-      "label": "Demonstrate weeks 10-11."
-    },
-    {
       "id": "w12d1",
       "trackId": "emotional",
       "moduleId": "emotional-p9",
@@ -2879,12 +2912,6 @@
       "trackId": "emotional",
       "moduleId": "emotional-p9",
       "label": "You can design a small behavioural experiment and revise your hypothesis from the result."
-    },
-    {
-      "id": "w12d5",
-      "trackId": "emotional",
-      "moduleId": "emotional-p9",
-      "label": "Demonstrate integration."
     }
   ],
   "misconceptions": []

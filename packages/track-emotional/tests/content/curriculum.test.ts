@@ -15,6 +15,10 @@ const typedCurriculum = curriculum as Curriculum;
 const typedItems: Item[] = items as Item[];
 const itemById = new Map(typedItems.map((i) => [i.id, i]));
 
+const CHECKPOINT_LESSON_IDS = new Set(
+  Array.from({ length: 12 }, (_, i) => `emotional-w${String(i + 1).padStart(2, '0')}d5`)
+);
+
 describe('converted Emotional Skills content (60-session curriculum)', () => {
   it('validates against the shared content schema', () => {
     const result = validateContent(typedCurriculum, typedItems);
@@ -36,7 +40,11 @@ describe('converted Emotional Skills content (60-session curriculum)', () => {
     expect(lessonCountByModule.get('emotional-p1')).toBe(5);
   });
 
-  it('every item id is unique across all 244 items', () => {
+  it('every item id is unique across all 259 items', () => {
+    // 244 original items, minus the 33 old per-concept checkpoint questions
+    // removed by the checkpoint rework, plus the 48 new integrative ones
+    // (4 per week x 12 weeks) that replaced them.
+    expect(typedItems).toHaveLength(259);
     const ids = typedItems.map((i) => i.id);
     expect(new Set(ids).size).toBe(ids.length);
   });
@@ -94,16 +102,25 @@ describe('converted Emotional Skills content (60-session curriculum)', () => {
     }
   });
 
-  it('every session maps to exactly one concept (itself), per ESL\'s own "a skill is one session" design', () => {
+  it('every regular session maps to exactly one concept (itself); a checkpoint maps to its own week\'s 4 real concepts', () => {
+    // Originally every checkpoint/review session (d5) was tagged with its
+    // own synthetic placeholder concept (e.g. "w01d5"), never with the
+    // week's own d1-d4 concepts -- so even perfect per-lesson mastery never
+    // produced a single piece of evidence that the week's 4 skills could
+    // be combined, which is the whole point of a checkpoint. Reworked to
+    // match Strategic/Behavioural Observation's checkpoint convention:
+    // the 12 placeholder concepts are gone (60 -> 48), and each checkpoint
+    // now carries its own week's 4 real concept ids instead.
     for (const lesson of typedCurriculum.lessons) {
+      if (CHECKPOINT_LESSON_IDS.has(lesson.id)) continue;
       expect(lesson.concepts).toEqual([lesson.concepts[0]]);
     }
-    expect(typedCurriculum.concepts).toHaveLength(60);
-  });
-
-  it('a checkpoint concept gets a real label even though it has no competencies.ts entry (falls back to the session objective)', () => {
-    const concept = typedCurriculum.concepts.find((c) => c.id === 'w01d5')!;
-    expect(concept.label).toBe('Demonstrate the foundations.');
+    for (const lessonId of CHECKPOINT_LESSON_IDS) {
+      const lesson = typedCurriculum.lessons.find((l) => l.id === lessonId)!;
+      const week = lessonId.replace('emotional-', '').replace('d5', '');
+      expect(lesson.concepts).toEqual([`${week}d1`, `${week}d2`, `${week}d3`, `${week}d4`]);
+    }
+    expect(typedCurriculum.concepts).toHaveLength(48);
   });
 
   it('i.emo.w01d1.activity: a match activity pairs emotions with the right information they carry, with real per-pair feedback folded into one explanation', () => {
@@ -178,15 +195,41 @@ describe('converted Emotional Skills content (60-session curriculum)', () => {
     expect(lesson.apply).toMatch(/notice|ask/i);
   });
 
-  it('no concept has a masteryItemIds-derived checkpoint item covering more than one concept -- every concept is self-contained', () => {
-    // A direct consequence of the "a skill is one session, concept = session
-    // id" model: a checkpoint-tier item is always tagged with its own
-    // lesson's own concept, never attributed to a different, earlier
-    // session's skill.
+  it('a regular lesson\'s mastery item is tagged to its own single concept; a checkpoint\'s 4 mastery items cover its own week\'s 4 real concepts', () => {
     for (const lesson of typedCurriculum.lessons) {
+      if (CHECKPOINT_LESSON_IDS.has(lesson.id)) continue;
       for (const itemId of lesson.masteryItemIds) {
         expect(itemById.get(itemId)!.concept).toBe(lesson.concepts[0]);
       }
+    }
+    for (const lessonId of CHECKPOINT_LESSON_IDS) {
+      const lesson = typedCurriculum.lessons.find((l) => l.id === lessonId)!;
+      expect(lesson.masteryItemIds).toHaveLength(4);
+      const checkpointConcepts = new Set(lesson.masteryItemIds.map((id) => itemById.get(id)!.concept));
+      expect(checkpointConcepts.size).toBe(4);
+      expect(checkpointConcepts).toEqual(new Set(lesson.concepts));
+    }
+  });
+
+  it('every concept still has at least one checkpoint-tier item, so mastery is reachable for all 48', () => {
+    // Re-checked explicitly after the checkpoint rework, rather than
+    // assumed to still hold: each of the 48 real concepts now actually
+    // gets 2 checkpoint-tier items -- one from its own lesson (unchanged)
+    // and one from its week's reworked checkpoint -- rather than 1.
+    const conceptsWithCheckpointItem = new Set(
+      typedCurriculum.lessons.flatMap((lesson) => lesson.masteryItemIds.map((id) => itemById.get(id)!.concept))
+    );
+    expect(conceptsWithCheckpointItem).toEqual(new Set(typedCurriculum.concepts.map((c) => c.id)));
+  });
+
+  it('a checkpoint lesson still has no interactive activity and its explain item is retagged off the removed placeholder concept', () => {
+    for (const lessonId of CHECKPOINT_LESSON_IDS) {
+      const lesson = typedCurriculum.lessons.find((l) => l.id === lessonId)!;
+      const hasActivity = lesson.interactiveItemIds.some((id) => itemById.get(id)?.id.endsWith('.activity'));
+      expect(hasActivity).toBe(false);
+      expect(lesson.interactiveItemIds.at(-1)).toBe(lesson.explanationBackItemId);
+      const explainConcept = itemById.get(lesson.explanationBackItemId!)!.concept;
+      expect(lesson.concepts).toContain(explainConcept);
     }
   });
 });

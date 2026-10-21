@@ -484,7 +484,7 @@
   },
   {
     "id": "i.emo.w01d5.explain",
-    "concept": "w01d5",
+    "concept": "w01d1",
     "type": "own_words",
     "prompt": "Without looking back, explain the main ideas of week 1 to someone new to them, with one example from your own life.",
     "modelAnswer": "An emotion is a response that carries information about what matters. Situation, interpretation, body, urge, action, outcome. Suppression hides expression while the feeling continues. Completion means a session was finished.",
@@ -494,93 +494,6 @@
       "Suppression hides expression while the feeling continues.",
       "Completion means a session was finished."
     ]
-  },
-  {
-    "id": "i.emo.w01d5-q1",
-    "concept": "w01d5",
-    "type": "reason_choice",
-    "prompt": "An urge to shout is best described as...",
-    "options": [
-      {
-        "id": "A",
-        "text": "The first part of the action itself"
-      },
-      {
-        "id": "B",
-        "text": "A readiness to act that can be noticed",
-        "conceptTag": "w01d5"
-      },
-      {
-        "id": "C",
-        "text": "A thought about what the situation means"
-      },
-      {
-        "id": "D",
-        "text": "A physical sensation, such as a hot face"
-      }
-    ],
-    "acceptableAnswers": [
-      "B"
-    ],
-    "explanation": "Urges precede actions and can be observed."
-  },
-  {
-    "id": "i.emo.w01d5-q2",
-    "concept": "w01d5",
-    "type": "reason_choice",
-    "prompt": "Which is a plain fact rather than an interpretation?",
-    "options": [
-      {
-        "id": "A",
-        "text": "She ignored my message on purpose"
-      },
-      {
-        "id": "B",
-        "text": "She did not reply to my message today",
-        "conceptTag": "w01d5"
-      },
-      {
-        "id": "C",
-        "text": "She does not respect my time"
-      },
-      {
-        "id": "D",
-        "text": "She is annoyed with me about yesterday"
-      }
-    ],
-    "acceptableAnswers": [
-      "B"
-    ],
-    "explanation": "Facts are observable and free of motive guesses."
-  },
-  {
-    "id": "i.emo.w01d5-q3",
-    "concept": "w01d5",
-    "type": "reason_choice",
-    "prompt": "Flexible regulation means...",
-    "options": [
-      {
-        "id": "A",
-        "text": "Using reappraisal whenever you feel upset"
-      },
-      {
-        "id": "B",
-        "text": "Choosing strategies that fit context and goals",
-        "conceptTag": "w01d5"
-      },
-      {
-        "id": "C",
-        "text": "Keeping strong feelings to yourself at work"
-      },
-      {
-        "id": "D",
-        "text": "Expressing feelings openly in every setting"
-      }
-    ],
-    "acceptableAnswers": [
-      "B"
-    ],
-    "explanation": "No single strategy fits everywhere."
   },
   {
     "id": "i.emo.w02d1.explain",
@@ -1026,7 +939,7 @@
   },
   {
     "id": "i.emo.w02d5.explain",
-    "concept": "w02d5",
+    "concept": "w02d1",
     "type": "own_words",
     "prompt": "Without looking back, explain the main ideas of week 2 to someone new to them, with one example from your own life.",
     "modelAnswer": "Granularity means distinguishing emotions finely. Putting a feeling into a short word or phrase. Emotions can co-occur, for example relief and sadness. Small enough to do on a bad day.",
@@ -1036,93 +949,6 @@
       "Emotions can co-occur, for example relief and sadness.",
       "Small enough to do on a bad day."
     ]
-  },
-  {
-    "id": "i.emo.w02d5-q1",
-    "concept": "w02d5",
-    "type": "reason_choice",
-    "prompt": "Which is the best replacement for \"I feel stressed\" before a presentation?",
-    "options": [
-      {
-        "id": "A",
-        "text": "I feel bad about it"
-      },
-      {
-        "id": "B",
-        "text": "I feel nervous and a bit excited",
-        "conceptTag": "w02d5"
-      },
-      {
-        "id": "C",
-        "text": "I feel stressed but fine"
-      },
-      {
-        "id": "D",
-        "text": "I feel a bit off"
-      }
-    ],
-    "acceptableAnswers": [
-      "B"
-    ],
-    "explanation": "Granular and possibly mixed."
-  },
-  {
-    "id": "i.emo.w02d5-q2",
-    "concept": "w02d5",
-    "type": "reason_choice",
-    "prompt": "Affect labelling works best phrased as...",
-    "options": [
-      {
-        "id": "A",
-        "text": "I am a sad person"
-      },
-      {
-        "id": "B",
-        "text": "I notice sadness",
-        "conceptTag": "w02d5"
-      },
-      {
-        "id": "C",
-        "text": "I should not feel sad"
-      },
-      {
-        "id": "D",
-        "text": "I feel sad because I failed"
-      }
-    ],
-    "acceptableAnswers": [
-      "B"
-    ],
-    "explanation": "Observing language."
-  },
-  {
-    "id": "i.emo.w02d5-q3",
-    "concept": "w02d5",
-    "type": "reason_choice",
-    "prompt": "When anger covers hurt, which question helps?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Who is to blame for this?"
-      },
-      {
-        "id": "B",
-        "text": "What else is here?",
-        "conceptTag": "w02d5"
-      },
-      {
-        "id": "C",
-        "text": "How do I stop feeling this?"
-      },
-      {
-        "id": "D",
-        "text": "Why am I like this?"
-      }
-    ],
-    "acceptableAnswers": [
-      "B"
-    ],
-    "explanation": "Exploring layers."
   },
   {
     "id": "i.emo.w03d1.explain",
@@ -1570,7 +1396,7 @@
   },
   {
     "id": "i.emo.w03d5.explain",
-    "concept": "w03d5",
+    "concept": "w03d1",
     "type": "own_words",
     "prompt": "Without looking back, explain the main ideas of week 3 to someone new to them, with one example from your own life.",
     "modelAnswer": "Body signals often come before a named emotion. An urge is a readiness to act; an action is what you do. Venting while ruminating can keep anger active. High arousal narrows thinking.",
@@ -1580,93 +1406,6 @@
       "Venting while ruminating can keep anger active.",
       "High arousal narrows thinking."
     ]
-  },
-  {
-    "id": "i.emo.w03d5-q1",
-    "concept": "w03d5",
-    "type": "reason_choice",
-    "prompt": "First step when you notice a hot face in a meeting?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Leave the meeting quietly to cool down"
-      },
-      {
-        "id": "B",
-        "text": "Notice it as an early signal and name the emotion",
-        "conceptTag": "w03d5"
-      },
-      {
-        "id": "C",
-        "text": "Push the feeling down and keep talking"
-      },
-      {
-        "id": "D",
-        "text": "Make your point quickly before it builds"
-      }
-    ],
-    "acceptableAnswers": [
-      "B"
-    ],
-    "explanation": "Early alert, then name."
-  },
-  {
-    "id": "i.emo.w03d5-q2",
-    "concept": "w03d5",
-    "type": "reason_choice",
-    "prompt": "Which is least likely to reduce anger?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Slow breathing for a few minutes"
-      },
-      {
-        "id": "B",
-        "text": "Walking with a neutral focus"
-      },
-      {
-        "id": "C",
-        "text": "Replaying the insult while hitting something",
-        "conceptTag": "w03d5"
-      },
-      {
-        "id": "D",
-        "text": "Waiting before replying"
-      }
-    ],
-    "acceptableAnswers": [
-      "C"
-    ],
-    "explanation": "Rehearsal maintains anger."
-  },
-  {
-    "id": "i.emo.w03d5-q3",
-    "concept": "w03d5",
-    "type": "reason_choice",
-    "prompt": "An urge is best handled by...",
-    "options": [
-      {
-        "id": "A",
-        "text": "Acting quickly so it does not build"
-      },
-      {
-        "id": "B",
-        "text": "Noticing and delaying action",
-        "conceptTag": "w03d5"
-      },
-      {
-        "id": "C",
-        "text": "Pushing it down until it goes"
-      },
-      {
-        "id": "D",
-        "text": "Arguing yourself out of it"
-      }
-    ],
-    "acceptableAnswers": [
-      "B"
-    ],
-    "explanation": "Delay creates choice."
   },
   {
     "id": "i.emo.w04d1.explain",
@@ -2147,7 +1886,7 @@
   },
   {
     "id": "i.emo.w04d5.explain",
-    "concept": "w04d5",
+    "concept": "w04d1",
     "type": "own_words",
     "prompt": "Without looking back, explain the main ideas of week 4 to someone new to them, with one example from your own life.",
     "modelAnswer": "A fact is what a camera could record. The first interpretation is not the only plausible one. Traps are common mental shortcuts. List evidence for and against.",
@@ -2157,64 +1896,6 @@
       "Traps are common mental shortcuts.",
       "List evidence for and against."
     ]
-  },
-  {
-    "id": "i.emo.w04d5-q1",
-    "concept": "w04d5",
-    "type": "reason_choice",
-    "prompt": "Which is an interpretation?",
-    "options": [
-      {
-        "id": "A",
-        "text": "The meeting ran 20 minutes over"
-      },
-      {
-        "id": "B",
-        "text": "The manager is out to get me",
-        "conceptTag": "w04d5"
-      },
-      {
-        "id": "C",
-        "text": "The email arrived at 9pm"
-      },
-      {
-        "id": "D",
-        "text": "She said \"we need to talk\""
-      }
-    ],
-    "acceptableAnswers": [
-      "B"
-    ],
-    "explanation": "Motive guess."
-  },
-  {
-    "id": "i.emo.w04d5-q2",
-    "concept": "w04d5",
-    "type": "reason_choice",
-    "prompt": "Catastrophising is...",
-    "options": [
-      {
-        "id": "A",
-        "text": "Naming a feeling precisely"
-      },
-      {
-        "id": "B",
-        "text": "Jumping to the worst outcome",
-        "conceptTag": "w04d5"
-      },
-      {
-        "id": "C",
-        "text": "Seeing yourself from the outside"
-      },
-      {
-        "id": "D",
-        "text": "Mind-reading other people"
-      }
-    ],
-    "acceptableAnswers": [
-      "B"
-    ],
-    "explanation": "Worst-case leap."
   },
   {
     "id": "i.emo.w05d1.explain",
@@ -2660,7 +2341,7 @@
   },
   {
     "id": "i.emo.w05d5.explain",
-    "concept": "w05d5",
+    "concept": "w05d1",
     "type": "own_words",
     "prompt": "Without looking back, explain the main ideas of weeks 4 and 5 to someone new to them, with one example from your own life.",
     "modelAnswer": "A fact is what a camera could record. The first interpretation is not the only plausible one. Traps are common mental shortcuts. List evidence for and against. Taking an observer or third-person viewpoint. Imagining a future viewpoint changes proportion. Allowing a feeling without fighting it. Fair reappraisal fits the facts.",
@@ -2674,93 +2355,6 @@
       "Allowing a feeling without fighting it.",
       "Fair reappraisal fits the facts."
     ]
-  },
-  {
-    "id": "i.emo.w05d5-q1",
-    "concept": "w05d5",
-    "type": "reason_choice",
-    "prompt": "\"She must think I am lazy\" is an example of...",
-    "options": [
-      {
-        "id": "A",
-        "text": "A fair reading of her silence"
-      },
-      {
-        "id": "B",
-        "text": "Mind-reading",
-        "conceptTag": "w05d5"
-      },
-      {
-        "id": "C",
-        "text": "Catastrophising"
-      },
-      {
-        "id": "D",
-        "text": "Self-distancing"
-      }
-    ],
-    "acceptableAnswers": [
-      "B"
-    ],
-    "explanation": "Assumed thoughts."
-  },
-  {
-    "id": "i.emo.w05d5-q2",
-    "concept": "w05d5",
-    "type": "reason_choice",
-    "prompt": "Which helps when a painful fact cannot be reinterpreted?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Acceptance with valued action",
-        "conceptTag": "w05d5"
-      },
-      {
-        "id": "B",
-        "text": "Finding a more positive reading"
-      },
-      {
-        "id": "C",
-        "text": "Talking it through until it fades"
-      },
-      {
-        "id": "D",
-        "text": "Keeping the feeling to yourself"
-      }
-    ],
-    "acceptableAnswers": [
-      "A"
-    ],
-    "explanation": "Acceptance fits."
-  },
-  {
-    "id": "i.emo.w05d5-q3",
-    "concept": "w05d5",
-    "type": "reason_choice",
-    "prompt": "Using your own name to reflect is a form of...",
-    "options": [
-      {
-        "id": "A",
-        "text": "Self-distancing",
-        "conceptTag": "w05d5"
-      },
-      {
-        "id": "B",
-        "text": "Suppression"
-      },
-      {
-        "id": "C",
-        "text": "Rumination"
-      },
-      {
-        "id": "D",
-        "text": "Reappraisal"
-      }
-    ],
-    "acceptableAnswers": [
-      "A"
-    ],
-    "explanation": "Distanced self-talk."
   },
   {
     "id": "i.emo.w06d1.explain",
@@ -3252,7 +2846,7 @@
   },
   {
     "id": "i.emo.w06d5.explain",
-    "concept": "w06d5",
+    "concept": "w06d1",
     "type": "own_words",
     "prompt": "Without looking back, explain the main ideas of week 6 to someone new to them, with one example from your own life.",
     "modelAnswer": "Several strategy families exist. High intensity limits complex thinking. Define, generate, choose, act, review. Pre-deciding links a cue to an action.",
@@ -3262,93 +2856,6 @@
       "Define, generate, choose, act, review.",
       "Pre-deciding links a cue to an action."
     ]
-  },
-  {
-    "id": "i.emo.w06d5-q1",
-    "concept": "w06d5",
-    "type": "reason_choice",
-    "prompt": "Low-intensity irritation about a vague email; good choice?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Reply straight away to clear it up"
-      },
-      {
-        "id": "B",
-        "text": "Reappraise and ask a clarifying question",
-        "conceptTag": "w06d5"
-      },
-      {
-        "id": "C",
-        "text": "Ignore it and get on with work"
-      },
-      {
-        "id": "D",
-        "text": "Forward it to your manager"
-      }
-    ],
-    "acceptableAnswers": [
-      "B"
-    ],
-    "explanation": "Low intensity suits reappraisal."
-  },
-  {
-    "id": "i.emo.w06d5-q2",
-    "concept": "w06d5",
-    "type": "reason_choice",
-    "prompt": "Panic-level intensity before a call; first move?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Lower arousal briefly",
-        "conceptTag": "w06d5"
-      },
-      {
-        "id": "B",
-        "text": "A detailed analysis of the call"
-      },
-      {
-        "id": "C",
-        "text": "Rehearse every possible question"
-      },
-      {
-        "id": "D",
-        "text": "Tell yourself not to panic"
-      }
-    ],
-    "acceptableAnswers": [
-      "A"
-    ],
-    "explanation": "Reduce arousal first."
-  },
-  {
-    "id": "i.emo.w06d5-q3",
-    "concept": "w06d5",
-    "type": "reason_choice",
-    "prompt": "A strategy is adaptive when...",
-    "options": [
-      {
-        "id": "A",
-        "text": "It is the one you use most"
-      },
-      {
-        "id": "B",
-        "text": "It fits the context and goals",
-        "conceptTag": "w06d5"
-      },
-      {
-        "id": "C",
-        "text": "It is backed by research"
-      },
-      {
-        "id": "D",
-        "text": "It removes the emotion"
-      }
-    ],
-    "acceptableAnswers": [
-      "B"
-    ],
-    "explanation": "Flexibility."
   },
   {
     "id": "i.emo.w07d1.explain",
@@ -3810,7 +3317,7 @@
   },
   {
     "id": "i.emo.w07d5.explain",
-    "concept": "w07d5",
+    "concept": "w07d1",
     "type": "own_words",
     "prompt": "Without looking back, explain the main ideas of week 7 to someone new to them, with one example from your own life.",
     "modelAnswer": "Rumination is repetitive, abstract and evaluative. Worry is scheduled into a fixed slot. Checking and reassurance give short relief. Four questions: intent, facts, causes, next time.",
@@ -3820,93 +3327,6 @@
       "Checking and reassurance give short relief.",
       "Four questions: intent, facts, causes, next time."
     ]
-  },
-  {
-    "id": "i.emo.w07d5-q1",
-    "concept": "w07d5",
-    "type": "reason_choice",
-    "prompt": "You keep asking \"why did I say that?\" for an hour. Best shift?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Keep going until you understand why"
-      },
-      {
-        "id": "B",
-        "text": "Switch to \"what will I do next time?\"",
-        "conceptTag": "w07d5"
-      },
-      {
-        "id": "C",
-        "text": "Ask friends whether it was that bad"
-      },
-      {
-        "id": "D",
-        "text": "Distract yourself until bedtime"
-      }
-    ],
-    "acceptableAnswers": [
-      "B"
-    ],
-    "explanation": "Concrete, forward."
-  },
-  {
-    "id": "i.emo.w07d5-q2",
-    "concept": "w07d5",
-    "type": "reason_choice",
-    "prompt": "Waiting for test results, a helpful move is...",
-    "options": [
-      {
-        "id": "A",
-        "text": "Check the portal every 5 minutes"
-      },
-      {
-        "id": "B",
-        "text": "Name uncertainty and do one valued activity",
-        "conceptTag": "w07d5"
-      },
-      {
-        "id": "C",
-        "text": "Prepare for the worst result"
-      },
-      {
-        "id": "D",
-        "text": "Try not to think about it"
-      }
-    ],
-    "acceptableAnswers": [
-      "B"
-    ],
-    "explanation": "Tolerate and act."
-  },
-  {
-    "id": "i.emo.w07d5-q3",
-    "concept": "w07d5",
-    "type": "reason_choice",
-    "prompt": "After a failure, a useful first step is...",
-    "options": [
-      {
-        "id": "A",
-        "text": "Work out what it says about you"
-      },
-      {
-        "id": "B",
-        "text": "Acknowledge feeling, then facts",
-        "conceptTag": "w07d5"
-      },
-      {
-        "id": "C",
-        "text": "Find out who else contributed"
-      },
-      {
-        "id": "D",
-        "text": "Move straight on to the next task"
-      }
-    ],
-    "acceptableAnswers": [
-      "B"
-    ],
-    "explanation": "Review steps."
   },
   {
     "id": "i.emo.w08d1.explain",
@@ -4331,7 +3751,7 @@
   },
   {
     "id": "i.emo.w08d5.explain",
-    "concept": "w08d5",
+    "concept": "w08d1",
     "type": "own_words",
     "prompt": "Without looking back, explain the main ideas of week 8 to someone new to them, with one example from your own life.",
     "modelAnswer": "The first impulse is often to defend. Separate accurate, partly accurate and inaccurate parts. Provocation invites a contest. Goal, facts, feeling, request.",
@@ -4341,64 +3761,6 @@
       "Provocation invites a contest.",
       "Goal, facts, feeling, request."
     ]
-  },
-  {
-    "id": "i.emo.w08d5-q1",
-    "concept": "w08d5",
-    "type": "reason_choice",
-    "prompt": "Which sequence fits receiving criticism?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Explain, defend, move on"
-      },
-      {
-        "id": "B",
-        "text": "Breathe, listen, clarify, summarise",
-        "conceptTag": "w08d5"
-      },
-      {
-        "id": "C",
-        "text": "Agree with everything"
-      },
-      {
-        "id": "D",
-        "text": "Thank them and change topic"
-      }
-    ],
-    "acceptableAnswers": [
-      "B"
-    ],
-    "explanation": "Understand first."
-  },
-  {
-    "id": "i.emo.w08d5-q2",
-    "concept": "w08d5",
-    "type": "reason_choice",
-    "prompt": "Which response sets a boundary?",
-    "options": [
-      {
-        "id": "A",
-        "text": "\"Please don't speak to me like that; let's continue when it's respectful.\"",
-        "conceptTag": "w08d5"
-      },
-      {
-        "id": "B",
-        "text": "\"I am sorry you feel I spoke badly\""
-      },
-      {
-        "id": "C",
-        "text": "Staying quiet until they finish"
-      },
-      {
-        "id": "D",
-        "text": "\"Fine, whatever you think\""
-      }
-    ],
-    "acceptableAnswers": [
-      "A"
-    ],
-    "explanation": "Clear and calm."
   },
   {
     "id": "i.emo.w09d1.explain",
@@ -4883,7 +4245,7 @@
   },
   {
     "id": "i.emo.w09d5.explain",
-    "concept": "w09d5",
+    "concept": "w09d1",
     "type": "own_words",
     "prompt": "Without looking back, explain the main ideas of weeks 8 and 9 to someone new to them, with one example from your own life.",
     "modelAnswer": "The first impulse is often to defend. Separate accurate, partly accurate and inaccurate parts. Provocation invites a contest. Goal, facts, feeling, request. A limit, your action and often an alternative. Name your specific part. Validation acknowledges the feeling and why it makes sense. Validation lowers heat and shows you heard.",
@@ -4897,93 +4259,6 @@
       "Validation acknowledges the feeling and why it makes sense.",
       "Validation lowers heat and shows you heard."
     ]
-  },
-  {
-    "id": "i.emo.w09d5-q1",
-    "concept": "w09d5",
-    "type": "reason_choice",
-    "prompt": "A colleague snaps at you in front of others. A good option?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Snap back so it stops"
-      },
-      {
-        "id": "B",
-        "text": "Calmly redirect, then talk privately later",
-        "conceptTag": "w09d5"
-      },
-      {
-        "id": "C",
-        "text": "Let it go and say nothing"
-      },
-      {
-        "id": "D",
-        "text": "Report it to your manager at once"
-      }
-    ],
-    "acceptableAnswers": [
-      "B"
-    ],
-    "explanation": "Protect goals."
-  },
-  {
-    "id": "i.emo.w09d5-q2",
-    "concept": "w09d5",
-    "type": "reason_choice",
-    "prompt": "Feedback you think is unfair: first step?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Explain why it is wrong"
-      },
-      {
-        "id": "B",
-        "text": "Ask for an example and understand it",
-        "conceptTag": "w09d5"
-      },
-      {
-        "id": "C",
-        "text": "Agree to keep things smooth"
-      },
-      {
-        "id": "D",
-        "text": "Ask colleagues if they agree"
-      }
-    ],
-    "acceptableAnswers": [
-      "B"
-    ],
-    "explanation": "Understand."
-  },
-  {
-    "id": "i.emo.w09d5-q3",
-    "concept": "w09d5",
-    "type": "reason_choice",
-    "prompt": "\"I can't take that on, but I can help Monday\" is...",
-    "options": [
-      {
-        "id": "A",
-        "text": "A boundary",
-        "conceptTag": "w09d5"
-      },
-      {
-        "id": "B",
-        "text": "Aggression"
-      },
-      {
-        "id": "C",
-        "text": "Avoidance"
-      },
-      {
-        "id": "D",
-        "text": "Passive"
-      }
-    ],
-    "acceptableAnswers": [
-      "A"
-    ],
-    "explanation": "Clear limit plus option."
   },
   {
     "id": "i.emo.w10d1.explain",
@@ -5431,7 +4706,7 @@
   },
   {
     "id": "i.emo.w10d5.explain",
-    "concept": "w10d5",
+    "concept": "w10d1",
     "type": "own_words",
     "prompt": "Without looking back, explain the main ideas of week 10 to someone new to them, with one example from your own life.",
     "modelAnswer": "Composure: emotions inform but do not run actions. Separate content from timing. Pressure narrows attention. Pressure tends to skip pauses and questions.",
@@ -5441,64 +4716,6 @@
       "Pressure narrows attention.",
       "Pressure tends to skip pauses and questions."
     ]
-  },
-  {
-    "id": "i.emo.w10d5-q1",
-    "concept": "w10d5",
-    "type": "reason_choice",
-    "prompt": "A demand to finish two projects by tomorrow; good reply?",
-    "options": [
-      {
-        "id": "A",
-        "text": "\"Fine,\" and stay up all night"
-      },
-      {
-        "id": "B",
-        "text": "\"I can finish one by tomorrow; which first?\"",
-        "conceptTag": "w10d5"
-      },
-      {
-        "id": "C",
-        "text": "Explain why it is unfair"
-      },
-      {
-        "id": "D",
-        "text": "Start both and see"
-      }
-    ],
-    "acceptableAnswers": [
-      "B"
-    ],
-    "explanation": "Options."
-  },
-  {
-    "id": "i.emo.w10d5-q2",
-    "concept": "w10d5",
-    "type": "reason_choice",
-    "prompt": "Composure includes...",
-    "options": [
-      {
-        "id": "A",
-        "text": "Measured naming of concern",
-        "conceptTag": "w10d5"
-      },
-      {
-        "id": "B",
-        "text": "Hiding your concern"
-      },
-      {
-        "id": "C",
-        "text": "Saying exactly what you feel"
-      },
-      {
-        "id": "D",
-        "text": "Agreeing first"
-      }
-    ],
-    "acceptableAnswers": [
-      "A"
-    ],
-    "explanation": "Measured expression."
   },
   {
     "id": "i.emo.w11d1.explain",
@@ -5975,7 +5192,7 @@
   },
   {
     "id": "i.emo.w11d5.explain",
-    "concept": "w11d5",
+    "concept": "w11d1",
     "type": "own_words",
     "prompt": "Without looking back, explain the main ideas of weeks 10 and 11 to someone new to them, with one example from your own life.",
     "modelAnswer": "Composure: emotions inform but do not run actions. Separate content from timing. Pressure narrows attention. Pressure tends to skip pauses and questions. Separate what is known from rumours. Physical reset first. Prepare a short script in advance. Roles bring obligations such as confidentiality and safety.",
@@ -5989,93 +5206,6 @@
       "Prepare a short script in advance.",
       "Roles bring obligations such as confidentiality and safety."
     ]
-  },
-  {
-    "id": "i.emo.w11d5-q1",
-    "concept": "w11d5",
-    "type": "reason_choice",
-    "prompt": "Your manager questions your figures in front of the team. A good response?",
-    "options": [
-      {
-        "id": "A",
-        "text": "\"Good question. I'll check and confirm by 3pm.\"",
-        "conceptTag": "w11d5"
-      },
-      {
-        "id": "B",
-        "text": "\"Those figures are right; I checked.\""
-      },
-      {
-        "id": "C",
-        "text": "Agree and move on"
-      },
-      {
-        "id": "D",
-        "text": "Say nothing now and raise it later"
-      }
-    ],
-    "acceptableAnswers": [
-      "A"
-    ],
-    "explanation": "Composed, action-focused."
-  },
-  {
-    "id": "i.emo.w11d5-q2",
-    "concept": "w11d5",
-    "type": "reason_choice",
-    "prompt": "Unknown outcome of a promotion; useful move?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Check status often"
-      },
-      {
-        "id": "B",
-        "text": "Focus on controllables",
-        "conceptTag": "w11d5"
-      },
-      {
-        "id": "C",
-        "text": "Prepare for rejection"
-      },
-      {
-        "id": "D",
-        "text": "Ask others"
-      }
-    ],
-    "acceptableAnswers": [
-      "B"
-    ],
-    "explanation": "Controllables."
-  },
-  {
-    "id": "i.emo.w11d5-q3",
-    "concept": "w11d5",
-    "type": "reason_choice",
-    "prompt": "After a tense call, you should...",
-    "options": [
-      {
-        "id": "A",
-        "text": "Reset, note actions, switch focus",
-        "conceptTag": "w11d5"
-      },
-      {
-        "id": "B",
-        "text": "Replay it to learn"
-      },
-      {
-        "id": "C",
-        "text": "Email a summary at once"
-      },
-      {
-        "id": "D",
-        "text": "Go straight to the next task"
-      }
-    ],
-    "acceptableAnswers": [
-      "A"
-    ],
-    "explanation": "Recovery."
   },
   {
     "id": "i.emo.w12d1.explain",
@@ -6564,7 +5694,7 @@
   },
   {
     "id": "i.emo.w12d5.explain",
-    "concept": "w12d5",
+    "concept": "w12d1",
     "type": "own_words",
     "prompt": "Without looking back, explain the main ideas of week 12 to someone new to them, with one example from your own life.",
     "modelAnswer": "Look across several entries. This app is skills training, not therapy or crisis care. Small and linked to existing cues. Notice and name.",
@@ -6576,90 +5706,1395 @@
     ]
   },
   {
-    "id": "i.emo.w12d5-q1",
-    "concept": "w12d5",
+    "id": "i.emo.w01chk.a",
+    "concept": "w01d1",
     "type": "reason_choice",
-    "prompt": "Which best summarises this programme's aim?",
+    "prompt": "After a colleague cancels a meeting with no explanation, a flash of irritation shows up. What is the most accurate way to describe this irritation, in line with what emotions are actually for?",
     "options": [
       {
         "id": "A",
-        "text": "Feeling less negative emotion"
+        "text": "A signal that something that matters to you, such as respect for your time, may have been affected",
+        "conceptTag": "w01d1"
       },
       {
         "id": "B",
-        "text": "Flexible, context-sensitive regulation",
-        "conceptTag": "w12d5"
+        "text": "A command that must be acted on immediately"
       },
       {
         "id": "C",
-        "text": "Using reappraisal more often"
+        "text": "Proof that the colleague acted inconsiderately on purpose"
       },
       {
         "id": "D",
-        "text": "Staying calm at all times"
+        "text": "A malfunction that should be suppressed as quickly as possible"
       }
     ],
     "acceptableAnswers": [
-      "B"
+      "A"
     ],
-    "explanation": "Core aim."
+    "explanation": "Emotions carry information about what matters, including when the facts behind that information are not yet confirmed. Feeling the irritation does not oblige any particular action."
   },
   {
-    "id": "i.emo.w12d5-q2",
-    "concept": "w12d5",
+    "id": "i.emo.w01chk.b",
+    "concept": "w01d2",
     "type": "reason_choice",
-    "prompt": "A pattern you notice in your journal is best described...",
+    "prompt": "The same cancelled meeting is broken down step by step: the cancellation (situation), \"he doesn't value my time\" (interpretation), tight chest (body), wanting to send a sharp reply (urge), and whatever is actually done next (action). Which step in this chain is the one most directly open to question, rather than simply observed?",
     "options": [
       {
         "id": "A",
-        "text": "As a cause"
+        "text": "The interpretation, since it is one reading of the situation among others",
+        "conceptTag": "w01d2"
       },
       {
         "id": "B",
-        "text": "As a descriptive pattern",
-        "conceptTag": "w12d5"
+        "text": "The situation, since the cancellation did happen"
       },
       {
         "id": "C",
-        "text": "As a diagnosis"
+        "text": "The body signal, since a tight chest was actually felt"
       },
       {
         "id": "D",
-        "text": "As a fact about character"
+        "text": "The urge, since wanting to reply sharply was actually felt"
       }
     ],
     "acceptableAnswers": [
-      "B"
+      "A"
     ],
-    "explanation": "Descriptive."
+    "explanation": "Situation, body and urge are each things that actually occurred. The interpretation is a reading of the situation that could turn out to be wrong, which is exactly why it is worth examining before acting on the urge it produces."
   },
   {
-    "id": "i.emo.w12d5-q3",
-    "concept": "w12d5",
+    "id": "i.emo.w01chk.c",
+    "concept": "w01d3",
     "type": "reason_choice",
-    "prompt": "Skills are retained best with...",
+    "prompt": "Feeling the urge to send a sharp reply, the message is drafted but held unsent for an hour while other work continues, with the irritation still fully present and unexpressed. What distinguishes this from habitual suppression?",
     "options": [
       {
         "id": "A",
-        "text": "One cram session"
+        "text": "It is a deliberate, time-limited choice to hold back a specific urge, not an automatic, ongoing habit of hiding the feeling itself",
+        "conceptTag": "w01d3"
       },
       {
         "id": "B",
-        "text": "Spaced retrieval",
-        "conceptTag": "w12d5"
+        "text": "Nothing distinguishes them; holding back any urge is suppression"
       },
       {
         "id": "C",
-        "text": "Rereading notes"
+        "text": "It only avoids suppression if the sharp reply is eventually sent"
       },
       {
         "id": "D",
-        "text": "Reading once carefully"
+        "text": "It avoids suppression because the irritation itself has already faded"
       }
     ],
     "acceptableAnswers": [
-      "B"
+      "A"
     ],
-    "explanation": "Spacing and retrieval."
+    "explanation": "Habitual suppression is an automatic, ongoing habit of hiding a feeling, at a real cost. Holding back one specific urge, deliberately and for a limited time, while still feeling the emotion, is a different and more flexible choice."
+  },
+  {
+    "id": "i.emo.w01chk.d",
+    "concept": "w01d4",
+    "type": "reason_choice",
+    "prompt": "Reflecting on the cancelled-meeting episode a week later, the original self-rating of \"very irritated\" and the checkpoint score on this week's material are reviewed separately, rather than averaged into one number. Why does this programme deliberately keep self-ratings and checkpoint scores separate, rather than combining them?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Because retrieval and spacing test whether the skill can actually be used, which is a different question from how strongly something was felt at the time",
+        "conceptTag": "w01d4"
+      },
+      {
+        "id": "B",
+        "text": "Because self-ratings are always inaccurate and should be ignored entirely"
+      },
+      {
+        "id": "C",
+        "text": "Because checkpoint scores are only a formality and carry no real information"
+      },
+      {
+        "id": "D",
+        "text": "Because combining the two numbers would be mathematically impossible"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Self-ratings capture how an episode felt at the time; checkpoint scores, through retrieval and spacing, test whether the underlying skill can actually be recalled and applied later. Keeping them separate keeps each question honest."
+  },
+  {
+    "id": "i.emo.w02chk.a",
+    "concept": "w02d1",
+    "type": "reason_choice",
+    "prompt": "\"I'm stressed\" is the first description offered for a feeling that, on closer inspection, is really a mix of frustration at a delay and worry about a looming deadline. What does replacing \"stressed\" with the more precise words \"frustrated\" and \"worried\" actually add?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A more precise fit between the words used and what is actually happening, which is the point of emotion granularity",
+        "conceptTag": "w02d1"
+      },
+      {
+        "id": "B",
+        "text": "Nothing; any emotion word is equally useful as long as it is negative"
+      },
+      {
+        "id": "C",
+        "text": "A guarantee that the feeling will immediately become less intense"
+      },
+      {
+        "id": "D",
+        "text": "Proof that the original word \"stressed\" was factually wrong"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Granularity is about fit, not correctness. \"Stressed\" was not wrong, but \"frustrated\" and \"worried\" point to two more specific, more actionable feelings underneath it."
+  },
+  {
+    "id": "i.emo.w02chk.b",
+    "concept": "w02d2",
+    "type": "reason_choice",
+    "prompt": "In the middle of the same frustrating, worrying afternoon, the words \"I'm frustrated about the delay and worried about the deadline\" are said out loud. What is this naming, by itself, expected to accomplish?",
+    "options": [
+      {
+        "id": "A",
+        "text": "It helps regulate the feeling to some degree, without being expected to fix the delay or the deadline",
+        "conceptTag": "w02d2"
+      },
+      {
+        "id": "B",
+        "text": "It is expected to resolve the delay and the deadline directly"
+      },
+      {
+        "id": "C",
+        "text": "It has no effect of any kind and is purely a formality"
+      },
+      {
+        "id": "D",
+        "text": "It is expected to make the feelings disappear completely and immediately"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Affect labelling tends to help regulate a feeling somewhat, but it is not a fix for whatever caused it. Expecting it to resolve the delay or the deadline themselves sets it up to feel like it failed."
+  },
+  {
+    "id": "i.emo.w02chk.c",
+    "concept": "w02d3",
+    "type": "reason_choice",
+    "prompt": "Underneath the frustration and worry about the deadline, a quieter sense of relief is also present, since the delay means one less thing to coordinate today. What does noticing this third feeling demonstrate?",
+    "options": [
+      {
+        "id": "A",
+        "text": "That more than one emotion, including one that might otherwise be missed, can be present in the same episode at once",
+        "conceptTag": "w02d3"
+      },
+      {
+        "id": "B",
+        "text": "That the earlier frustration and worry were not genuine feelings"
+      },
+      {
+        "id": "C",
+        "text": "That only one of the three feelings can actually be real at a time"
+      },
+      {
+        "id": "D",
+        "text": "That noticing a third feeling means the first two should be ignored"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Mixed and layered emotions are common, and a quieter one, like relief, can sit underneath more obvious ones without cancelling them out."
+  },
+  {
+    "id": "i.emo.w02chk.d",
+    "concept": "w02d4",
+    "type": "reason_choice",
+    "prompt": "At the end of the frustrating, worrying, quietly relieving afternoon, a 30-second check-in is run: name the emotion, rate its intensity, note one body signal. Given that the afternoon actually involved frustration, worry, and relief together, what does running the check-in well require?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Picking out the most useful emotion and intensity to name right now, informed by the fuller, layered read of the afternoon, not just whichever feeling is loudest",
+        "conceptTag": "w02d4"
+      },
+      {
+        "id": "B",
+        "text": "Naming only the single loudest emotion and ignoring that any other feeling was present"
+      },
+      {
+        "id": "C",
+        "text": "Running the check-in three separate times, once for each feeling identified"
+      },
+      {
+        "id": "D",
+        "text": "Skipping the check-in entirely, since the feelings are already too mixed to describe"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "The daily check-in habit works even when, as here, more than one feeling is present. Granularity and layered awareness from this week make the 30-second check-in more accurate, not something that has to be done three times over."
+  },
+  {
+    "id": "i.emo.w03chk.a",
+    "concept": "w03d1",
+    "type": "reason_choice",
+    "prompt": "Before any thought has fully formed, a hot face and a tightness across the shoulders show up during a tense exchange. What is the most accurate way to treat these sensations at this stage?",
+    "options": [
+      {
+        "id": "A",
+        "text": "As bodily signals worth locating and describing, without yet judging them as good, bad, or a sign of weakness",
+        "conceptTag": "w03d1"
+      },
+      {
+        "id": "B",
+        "text": "As proof that the other person in the exchange is behaving badly"
+      },
+      {
+        "id": "C",
+        "text": "As something to judge and criticise oneself for feeling"
+      },
+      {
+        "id": "D",
+        "text": "As irrelevant background noise that is best ignored completely"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Body signals are information to notice and describe, before any judgment is added, either about oneself or about the situation."
+  },
+  {
+    "id": "i.emo.w03chk.b",
+    "concept": "w03d2",
+    "type": "reason_choice",
+    "prompt": "Along with the hot face and tight shoulders, a clear urge to walk out of the room shows up. What is the most useful next step with this urge, given what was just noticed in the body?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Naming the urge explicitly, then deciding separately whether and when to act on it",
+        "conceptTag": "w03d2"
+      },
+      {
+        "id": "B",
+        "text": "Treating the urge as identical to the action of actually walking out"
+      },
+      {
+        "id": "C",
+        "text": "Suppressing all awareness of the urge so it cannot be acted on by mistake"
+      },
+      {
+        "id": "D",
+        "text": "Acting on the urge immediately, since it followed directly from a real body signal"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "An urge, even one clearly tied to a real body signal, is not the same as the action. Noticing it and then choosing whether and when to act on it is the actual skill here, not suppressing it or acting on it automatically."
+  },
+  {
+    "id": "i.emo.w03chk.c",
+    "concept": "w03d3",
+    "type": "reason_choice",
+    "prompt": "Instead of walking out, a loud, extended vent about the tense exchange is chosen, on the theory that getting it all out will drain the anger. What does the research on venting suggest about this choice?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Venting tends to keep the anger going rather than draining it, so a lower-arousal alternative is likely to work better",
+        "conceptTag": "w03d3"
+      },
+      {
+        "id": "B",
+        "text": "Venting reliably drains anger and is the best choice whenever anger is strong"
+      },
+      {
+        "id": "C",
+        "text": "Venting has no effect on anger in either direction"
+      },
+      {
+        "id": "D",
+        "text": "Venting only fails to help if it is done quietly rather than loudly"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Venting tends to rehearse and sustain anger rather than releasing it, regardless of volume. A lower-arousal option, such as a brief pause or a breathing reset, tends to work better."
+  },
+  {
+    "id": "i.emo.w03chk.d",
+    "concept": "w03d4",
+    "type": "reason_choice",
+    "prompt": "Having noticed the body signals, named the urge to leave, and recognised that venting would likely keep the anger going, a short breathing reset is used instead before responding. What makes this a well-fitted choice, rather than a reflex?",
+    "options": [
+      {
+        "id": "A",
+        "text": "It follows directly from what was actually noticed and ruled out this week, and fits a moment where lowering arousal, not venting it, is what is called for",
+        "conceptTag": "w03d4"
+      },
+      {
+        "id": "B",
+        "text": "Breathing resets should always be used the instant any strong emotion appears, regardless of context"
+      },
+      {
+        "id": "C",
+        "text": "It is a well-fitted choice only because it happened to work this particular time"
+      },
+      {
+        "id": "D",
+        "text": "Breathing resets are only appropriate once a decision has already been made to leave the room"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "The breathing reset here is chosen because of what the body signals, the urge, and the venting research together point to, not applied as an automatic reflex for every strong feeling."
+  },
+  {
+    "id": "i.emo.w04chk.a",
+    "concept": "w04d1",
+    "type": "reason_choice",
+    "prompt": "\"She didn't reply to my message today\" and \"she's avoiding me\" are both said about the same unanswered message. Which of the two is the camera fact, and which is the interpretation?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The lack of a reply is the camera fact; \"she's avoiding me\" is one interpretation of it among others",
+        "conceptTag": "w04d1"
+      },
+      {
+        "id": "B",
+        "text": "Both statements are equally factual, since they describe the same event"
+      },
+      {
+        "id": "C",
+        "text": "\"She's avoiding me\" is the fact, since it explains what actually happened"
+      },
+      {
+        "id": "D",
+        "text": "Neither statement is a fact, since both involve some interpretation"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "A camera fact is what a camera could record: no reply arrived. \"Avoiding me\" adds a motive that was not directly observed, however plausible it might feel."
+  },
+  {
+    "id": "i.emo.w04chk.b",
+    "concept": "w04d2",
+    "type": "reason_choice",
+    "prompt": "Rather than settling on \"she's avoiding me,\" at least three different readings of the unanswered message are generated: she is avoiding it, she is simply busy, or she has not seen it yet. What does generating three alternatives accomplish here, compared to settling on the first explanation that comes to mind?",
+    "options": [
+      {
+        "id": "A",
+        "text": "It keeps more than one plausible explanation open before any one of them is acted on",
+        "conceptTag": "w04d2"
+      },
+      {
+        "id": "B",
+        "text": "It proves that the first explanation, \"avoiding me,\" was definitely wrong"
+      },
+      {
+        "id": "C",
+        "text": "It guarantees that the correct explanation is now known for certain"
+      },
+      {
+        "id": "D",
+        "text": "It has no real effect, since the first explanation usually turns out to be right anyway"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Generating alternatives does not identify the correct explanation on its own. What it does is keep the situation open to more than one plausible reading, rather than narrowing prematurely to the first one."
+  },
+  {
+    "id": "i.emo.w04chk.c",
+    "concept": "w04d3",
+    "type": "reason_choice",
+    "prompt": "\"She's avoiding me because she's annoyed\" is one of the three readings generated for the unanswered message. Which common thinking trap, if any, does this specific reading illustrate?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Mind-reading: assuming a specific motive or feeling in someone else without actual evidence for it",
+        "conceptTag": "w04d3"
+      },
+      {
+        "id": "B",
+        "text": "All-or-nothing thinking, since the statement uses an extreme word like \"always\""
+      },
+      {
+        "id": "C",
+        "text": "No thinking trap at all, since any plausible-sounding reading is automatically trap-free"
+      },
+      {
+        "id": "D",
+        "text": "Catastrophising, since the statement imagines the worst possible long-term outcome"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Mind-reading is assuming a specific motive or feeling in someone else without actual evidence. Not every negative-sounding thought is a distortion, but this particular one fits mind-reading specifically, not catastrophising or all-or-nothing thinking."
+  },
+  {
+    "id": "i.emo.w04chk.d",
+    "concept": "w04d4",
+    "type": "reason_choice",
+    "prompt": "Checking the evidence for and against \"she's avoiding me\": against it, she replied promptly to a message yesterday; for it, she has seemed quieter lately for reasons that are not yet known. What is the appropriately calibrated conclusion from weighing this evidence?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The evidence is mixed, so the interpretation remains genuinely uncertain rather than settled in either direction",
+        "conceptTag": "w04d4"
+      },
+      {
+        "id": "B",
+        "text": "The evidence fully confirms that she is avoiding the message"
+      },
+      {
+        "id": "C",
+        "text": "The evidence fully rules out that she is avoiding the message"
+      },
+      {
+        "id": "D",
+        "text": "An evidence check is pointless once any alternative explanation has been generated"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Weighing evidence for and against an interpretation can leave real uncertainty, as it does here, rather than a clean resolution. Stating that uncertainty honestly is the actual skill, not forcing a premature conclusion either way."
+  },
+  {
+    "id": "i.emo.w05chk.a",
+    "concept": "w05d1",
+    "type": "reason_choice",
+    "prompt": "The unanswered-message episode from earlier is now described as if watching it happen to someone else across the room, rather than from inside the original frustration. What does this self-distanced retelling add to the evidence check already carried out?",
+    "options": [
+      {
+        "id": "A",
+        "text": "It can reduce some of the emotional intensity attached to the episode, making the earlier evidence easier to weigh calmly",
+        "conceptTag": "w05d1"
+      },
+      {
+        "id": "B",
+        "text": "It replaces the need for an evidence check entirely"
+      },
+      {
+        "id": "C",
+        "text": "It is guaranteed to produce a different factual conclusion than the evidence check did"
+      },
+      {
+        "id": "D",
+        "text": "It only works if the episode is retold to another person, not described alone"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Self-distancing is a way of describing an event that can lower its emotional charge, which makes it easier to hold an already-uncertain evidence check calmly, rather than replacing that evidence check."
+  },
+  {
+    "id": "i.emo.w05chk.b",
+    "concept": "w05d2",
+    "type": "reason_choice",
+    "prompt": "The same unanswered-message episode is imagined one year from now, rather than right now. What is temporal distance being used for here?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Putting the current upset in proportion, by comparing its likely weight now against its likely weight much later",
+        "conceptTag": "w05d2"
+      },
+      {
+        "id": "B",
+        "text": "Proving that the episode will be completely forgotten in exactly one year"
+      },
+      {
+        "id": "C",
+        "text": "Replacing the need to ever resolve the actual situation"
+      },
+      {
+        "id": "D",
+        "text": "Making the episode feel more urgent by extending how long it is thought about"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Temporal distance is a proportion check: comparing how much weight something carries now against how much it is likely to carry later, without claiming to predict the exact outcome."
+  },
+  {
+    "id": "i.emo.w05chk.c",
+    "concept": "w05d3",
+    "type": "reason_choice",
+    "prompt": "The lingering uneasy feeling about the unanswered message is allowed to simply be present, while still going ahead with sending a different, unrelated message that matters. Why is this described as acceptance rather than giving up?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Because the feeling is allowed to exist without being fought, while action continues based on what actually matters, not based on the discomfort",
+        "conceptTag": "w05d3"
+      },
+      {
+        "id": "B",
+        "text": "Because giving up would mean never acting; acceptance means acting anyway regardless of what matters"
+      },
+      {
+        "id": "C",
+        "text": "Because acceptance requires that the uneasy feeling disappear before any action can be taken"
+      },
+      {
+        "id": "D",
+        "text": "There is no real difference between acceptance and giving up in this case"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Acceptance allows the feeling to be present while action is still guided by what genuinely matters, not by the discomfort itself. Giving up would mean dropping the action; acceptance keeps the action going alongside the feeling."
+  },
+  {
+    "id": "i.emo.w05chk.d",
+    "concept": "w05d4",
+    "type": "reason_choice",
+    "prompt": "Combining self-distancing and temporal distance, a fast reappraisal is produced: \"this is a single unanswered message, not evidence about the whole relationship, and it will likely matter very little by next month.\" What keeps this reappraisal fair, rather than just forced positive thinking?",
+    "options": [
+      {
+        "id": "A",
+        "text": "It stays anchored to the self-distanced, temporally proportionate view already built, rather than asserting an upbeat conclusion that ignores the uncertainty found earlier",
+        "conceptTag": "w05d4"
+      },
+      {
+        "id": "B",
+        "text": "Any reappraisal that ends on a reassuring note is automatically fair by definition"
+      },
+      {
+        "id": "C",
+        "text": "Fairness requires the reappraisal to deny that the situation is uncertain at all"
+      },
+      {
+        "id": "D",
+        "text": "A reappraisal is fair only if it fully resolves the original uncertainty about the message"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "A fair reappraisal is built on the more distanced, proportionate view this week developed, not asserted independently of it. That is what keeps it from being just forced positive thinking layered on top."
+  },
+  {
+    "id": "i.emo.w06chk.a",
+    "concept": "w06d1",
+    "type": "reason_choice",
+    "prompt": "Facing a recurring frustration at work, the question of whether to simply express the frustration out loud, try to solve the underlying problem, or use a reappraisal is considered before acting. What does treating these as a toolkit, rather than a single rule, actually mean here?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Judging which family of strategy actually fits this particular situation and goal, rather than defaulting to the same one every time",
+        "conceptTag": "w06d1"
+      },
+      {
+        "id": "B",
+        "text": "Using all three strategies simultaneously, every time, regardless of the situation"
+      },
+      {
+        "id": "C",
+        "text": "Picking whichever strategy requires the least effort, regardless of fit"
+      },
+      {
+        "id": "D",
+        "text": "Expressing the emotion is always the right default choice in any situation"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "A toolkit means judging fit to the specific situation and goal, not applying the same strategy, including expression, as a blanket default."
+  },
+  {
+    "id": "i.emo.w06chk.b",
+    "concept": "w06d2",
+    "type": "reason_choice",
+    "prompt": "The same recurring frustration is mild most days, but spikes sharply on days with a particular recurring trigger. How should the intensity difference affect which strategy from the toolkit is chosen on a given day?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A strategy suited to the actual intensity that day should be chosen, since what fits a mild version of the feeling may not fit a sharp spike",
+        "conceptTag": "w06d2"
+      },
+      {
+        "id": "B",
+        "text": "Intensity is irrelevant; the same strategy should be used regardless of how strong the feeling is"
+      },
+      {
+        "id": "C",
+        "text": "Only the mild, everyday version of the feeling should ever be addressed with a strategy"
+      },
+      {
+        "id": "D",
+        "text": "Sharp spikes should always be addressed with reappraisal and nothing else"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Matching a strategy to intensity is the point here: a mild, everyday version of a feeling and a sharp spike of the same feeling may call for genuinely different responses."
+  },
+  {
+    "id": "i.emo.w06chk.c",
+    "concept": "w06d3",
+    "type": "reason_choice",
+    "prompt": "On reflection, the recurring frustration traces back to one concrete, fixable cause: a specific recurring scheduling conflict. Given this, what does turning to problem solving actually require?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Converting the identified cause into one concrete next step, not just continuing to notice or feel the frustration about it",
+        "conceptTag": "w06d3"
+      },
+      {
+        "id": "B",
+        "text": "Problem solving means feeling the frustration as intensely as possible until it resolves itself"
+      },
+      {
+        "id": "C",
+        "text": "Problem solving only applies to causes that cannot be identified at all"
+      },
+      {
+        "id": "D",
+        "text": "Identifying the cause is sufficient on its own; no further action is required"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Problem solving turns an identified, fixable cause into one concrete next step. Identifying the cause is necessary but not sufficient on its own."
+  },
+  {
+    "id": "i.emo.w06chk.d",
+    "concept": "w06d4",
+    "type": "reason_choice",
+    "prompt": "Knowing the scheduling conflict will likely recur, an if-then plan is written: \"if the conflict comes up again, then I will propose the alternate time slot before the meeting starts.\" What does writing this specific if-then plan add, beyond already knowing the concrete next step?",
+    "options": [
+      {
+        "id": "A",
+        "text": "It pre-commits to the next step for the predictable trigger in advance, so intensity and in-the-moment strategy choice matter less when the trigger actually recurs",
+        "conceptTag": "w06d4"
+      },
+      {
+        "id": "B",
+        "text": "It replaces the need to have identified a concrete next step in the first place"
+      },
+      {
+        "id": "C",
+        "text": "If-then plans are only useful for triggers that are rare and unpredictable"
+      },
+      {
+        "id": "D",
+        "text": "Writing the plan guarantees the scheduling conflict will stop recurring entirely"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "An if-then plan pre-commits to the already-identified next step for a predictable trigger, reducing how much in-the-moment judgment about strategy and intensity is needed when the trigger actually shows up again."
+  },
+  {
+    "id": "i.emo.w07chk.a",
+    "concept": "w07d1",
+    "type": "reason_choice",
+    "prompt": "A delayed project is replayed over and over in thought, each time without arriving at any new next step. Using the \"is there a next step?\" test, is this rumination or reflection?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Rumination, since repeated replay with no new next step emerging is exactly what the test is designed to catch",
+        "conceptTag": "w07d1"
+      },
+      {
+        "id": "B",
+        "text": "Reflection, since any amount of thinking about a problem counts as reflection"
+      },
+      {
+        "id": "C",
+        "text": "Neither, since the test only applies to feelings, not to project delays"
+      },
+      {
+        "id": "D",
+        "text": "Rumination only if the replaying happens for more than an hour at a time"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "The \"is there a next step?\" test distinguishes rumination (repeated replay, no new next step) from reflection (thinking that produces one). Repeated replay with nothing new emerging is rumination by this test."
+  },
+  {
+    "id": "i.emo.w07chk.b",
+    "concept": "w07d2",
+    "type": "reason_choice",
+    "prompt": "Rather than letting the delayed-project thoughts intrude at random moments all day, a fixed 15-minute window after lunch is set aside to think about it on purpose. What is this worry window actually designed to do?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Contain the thinking to a bounded time and let it be set aside outside that window, rather than eliminating the thinking altogether",
+        "conceptTag": "w07d2"
+      },
+      {
+        "id": "B",
+        "text": "Guarantee that no worried thought about the project will occur outside the window"
+      },
+      {
+        "id": "C",
+        "text": "Force a solution to the project delay to be found within exactly 15 minutes"
+      },
+      {
+        "id": "D",
+        "text": "Replace the need to ever address the actual project delay"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "A worry window bounds when worry is engaged with on purpose; it is not a guarantee against intrusive thoughts outside it or a deadline for solving the underlying problem."
+  },
+  {
+    "id": "i.emo.w07chk.c",
+    "concept": "w07d3",
+    "type": "reason_choice",
+    "prompt": "Not knowing whether the delayed project will ultimately succeed, a decision is made to keep working on it, while declining to check its status every few minutes. What does declining to check constantly represent here?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Telling protective avoidance (restraint that still allows acting while uncertain) apart from restrictive avoidance (avoidance that prevents acting altogether)",
+        "conceptTag": "w07d3"
+      },
+      {
+        "id": "B",
+        "text": "An example of restrictive avoidance, since checking less often is itself a form of avoidance"
+      },
+      {
+        "id": "C",
+        "text": "Proof that the uncertainty about the project has actually been resolved"
+      },
+      {
+        "id": "D",
+        "text": "An unrelated habit that has nothing to do with tolerating uncertainty"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Declining to check constantly, while still continuing to act on the project, is protective: it allows action to continue under uncertainty. Restrictive avoidance would instead prevent the work itself from continuing."
+  },
+  {
+    "id": "i.emo.w07chk.d",
+    "concept": "w07d4",
+    "type": "reason_choice",
+    "prompt": "After the project ultimately does fail to meet its deadline, the setback is reviewed for what was within control (how the work was scheduled) and what was not (a key vendor's late delivery), and one lesson is picked. Why does separating controllable from uncontrollable parts matter here, specifically?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Because a useful lesson for next time should come from the controllable part, not from blaming or ignoring the uncontrollable one",
+        "conceptTag": "w07d4"
+      },
+      {
+        "id": "B",
+        "text": "Because only uncontrollable causes are worth reviewing after a setback"
+      },
+      {
+        "id": "C",
+        "text": "Because the review is pointless once a setback has already happened"
+      },
+      {
+        "id": "D",
+        "text": "Because controllable and uncontrollable parts always turn out to be the same thing"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "The useful lesson comes from the controllable part (scheduling), not from dwelling on the uncontrollable one (the vendor). Mixing the two up tends to produce either an unfair self-blame or no real lesson at all."
+  },
+  {
+    "id": "i.emo.w08chk.a",
+    "concept": "w08d1",
+    "type": "reason_choice",
+    "prompt": "A manager says, \"this report missed the point.\" Before reacting, one clarifying question is asked: \"can you say more about which part missed the point?\" What does asking this question, before forming an evaluation, accomplish?",
+    "options": [
+      {
+        "id": "A",
+        "text": "It delays evaluating the criticism until there is enough actual information to evaluate it fairly",
+        "conceptTag": "w08d1"
+      },
+      {
+        "id": "B",
+        "text": "It is a way of disputing the manager's criticism without saying so directly"
+      },
+      {
+        "id": "C",
+        "text": "It guarantees the criticism will turn out to be unfounded"
+      },
+      {
+        "id": "D",
+        "text": "It has no real purpose beyond buying a few seconds of time"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "A clarifying question delays evaluation until there is enough information to evaluate fairly. It is not a disguised dispute, nor is it guaranteed to make the criticism go away."
+  },
+  {
+    "id": "i.emo.w08chk.b",
+    "concept": "w08d2",
+    "type": "reason_choice",
+    "prompt": "The manager clarifies: the data in section two was outdated, but the framing of the recommendation was actually well received. Sorting this feedback, what is the accurate breakdown?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The data concern is accurate feedback; the framing comment indicates a part of the report that was not actually a problem",
+        "conceptTag": "w08d2"
+      },
+      {
+        "id": "B",
+        "text": "The entire report should be treated as having missed the point, as the original comment suggested"
+      },
+      {
+        "id": "C",
+        "text": "Both parts of the feedback should be dismissed, since the manager changed their framing partway through"
+      },
+      {
+        "id": "D",
+        "text": "Only the framing comment should be taken seriously, since it was more specific"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Sorting feedback into accurate, partly accurate and inaccurate parts, rather than reacting to the whole comment as one unit, is exactly what the clarifying question made possible here."
+  },
+  {
+    "id": "i.emo.w08chk.c",
+    "concept": "w08d3",
+    "type": "reason_choice",
+    "prompt": "In the same conversation, the manager's tone sharpens and a comment edges toward being personally dismissive, not just about the report. Which response best fits handling provocation without escalating?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Choosing deliberately among responding calmly, delaying the response, disengaging, or naming a boundary, rather than escalating to match the tone",
+        "conceptTag": "w08d3"
+      },
+      {
+        "id": "B",
+        "text": "Automatically matching the sharper tone to show the comment will not be tolerated"
+      },
+      {
+        "id": "C",
+        "text": "Disengaging is never an acceptable response to a dismissive comment"
+      },
+      {
+        "id": "D",
+        "text": "The only acceptable response to a dismissive comment is to set a boundary immediately"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Responding to provocation without escalating means deliberately choosing among several options, including responding, delaying, disengaging, or setting a boundary, rather than defaulting to matching the tone."
+  },
+  {
+    "id": "i.emo.w08chk.d",
+    "concept": "w08d4",
+    "type": "reason_choice",
+    "prompt": "Given that the data concern was fair, the framing comment was not actually a problem, and the tone briefly turned dismissive, a short follow-up conversation is planned: goal, opening line, fallback. What should this planned conversation's goal reasonably focus on, given everything sorted out this week?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Addressing the fair data concern and naming the dismissive tone separately, rather than either accepting the whole original comment or dismissing it entirely",
+        "conceptTag": "w08d4"
+      },
+      {
+        "id": "B",
+        "text": "Re-litigating the framing comment, since it was the most memorable part of the exchange"
+      },
+      {
+        "id": "C",
+        "text": "Ignoring the tone entirely, since the data concern was the only accurate part of the feedback"
+      },
+      {
+        "id": "D",
+        "text": "Avoiding the follow-up conversation altogether now that the feedback has been sorted privately"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "A well-planned difficult conversation builds directly on this week's sorting: addressing what was actually accurate, and separately naming what crossed a line, rather than treating the whole original comment as one undifferentiated unit."
+  },
+  {
+    "id": "i.emo.w09chk.a",
+    "concept": "w09d1",
+    "type": "reason_choice",
+    "prompt": "Following up on the manager conversation, a boundary is stated: \"I'm glad to discuss the data again, but I'd like us to keep the discussion focused on the report, not on me.\" What makes this an assertive boundary, rather than an aggressive or passive one?",
+    "options": [
+      {
+        "id": "A",
+        "text": "It states a clear, specific limit directly and respectfully, without attacking the other person or avoiding the issue entirely",
+        "conceptTag": "w09d1"
+      },
+      {
+        "id": "B",
+        "text": "It is aggressive, since it directly names what should not continue"
+      },
+      {
+        "id": "C",
+        "text": "It is passive, since it does not demand an apology"
+      },
+      {
+        "id": "D",
+        "text": "There is no meaningful difference between assertive, aggressive and passive here"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "An assertive boundary states a specific limit directly and respectfully. An aggressive version would attack the person; a passive version would avoid naming the limit at all."
+  },
+  {
+    "id": "i.emo.w09chk.b",
+    "concept": "w09d2",
+    "type": "reason_choice",
+    "prompt": "After the boundary is stated and acknowledged, a specific repair is offered: proposing a shared five-minute check before future reports go out, to catch data issues earlier. What makes this count as a specific repair, rather than a vague apology?",
+    "options": [
+      {
+        "id": "A",
+        "text": "It proposes a concrete future change tied directly to what actually went wrong, rather than just expressing regret in general terms",
+        "conceptTag": "w09d2"
+      },
+      {
+        "id": "B",
+        "text": "Any statement that includes the word \"sorry\" counts as a specific repair"
+      },
+      {
+        "id": "C",
+        "text": "A repair only counts if it undoes the original report entirely"
+      },
+      {
+        "id": "D",
+        "text": "Repair is unnecessary once a boundary has already been stated"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "A specific repair proposes a concrete, forward-looking change tied to the actual problem, which is a different and more useful thing than a general expression of regret."
+  },
+  {
+    "id": "i.emo.w09chk.c",
+    "concept": "w09d3",
+    "type": "reason_choice",
+    "prompt": "The manager mentions still feeling frustrated about how the original report situation unfolded. The response offered is: \"that makes sense, given how the deadline was managed,\" without agreeing that the original criticism was fully fair. What does this response demonstrate?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Validating the manager's feeling as understandable, without being required to agree with every part of their original assessment",
+        "conceptTag": "w09d3"
+      },
+      {
+        "id": "B",
+        "text": "Full agreement with everything in the manager's original criticism"
+      },
+      {
+        "id": "C",
+        "text": "A refusal to acknowledge the manager's feelings at all"
+      },
+      {
+        "id": "D",
+        "text": "Validation and agreement are the same thing and cannot be separated"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Validating a feeling as understandable and agreeing with every part of someone's original assessment are two separate things. This response does the first without committing to the second."
+  },
+  {
+    "id": "i.emo.w09chk.d",
+    "concept": "w09d4",
+    "type": "reason_choice",
+    "prompt": "In a mixed scenario combining a sharpened tone, a fair underlying concern, and lingering frustration on the other side, a response is chosen that sets one clear boundary, proposes one concrete repair, and validates the other person's frustration without fully agreeing with their original framing. What trade-off does choosing all three together involve?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Spending more effort up front on a fuller response, in exchange for addressing the tone, the practical fix, and the relationship all at once, rather than picking just one",
+        "conceptTag": "w09d4"
+      },
+      {
+        "id": "B",
+        "text": "No trade-off exists; combining all three always costs nothing extra"
+      },
+      {
+        "id": "C",
+        "text": "Choosing all three means none of them can be done well"
+      },
+      {
+        "id": "D",
+        "text": "A proportionate response in conflict should always pick only one of the three"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Combining a boundary, a repair and validation in one response takes more up-front effort than picking just one, in exchange for addressing the tone, the practical issue, and the relationship together, which a narrower response would leave only partly handled."
+  },
+  {
+    "id": "i.emo.w10chk.a",
+    "concept": "w10d1",
+    "type": "reason_choice",
+    "prompt": "During a tense client call, visible frustration is felt, but the call continues with clear, useful responses rather than going flat or distant. What does staying effective here, without going cold, actually require?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Continuing to feel and register the frustration while still engaging actively and usefully, rather than suppressing all visible feeling to appear unaffected",
+        "conceptTag": "w10d1"
+      },
+      {
+        "id": "B",
+        "text": "Hiding all trace of the frustration so that no one on the call can tell anything is felt"
+      },
+      {
+        "id": "C",
+        "text": "Letting the frustration fully take over the call until it passes on its own"
+      },
+      {
+        "id": "D",
+        "text": "Composure requires that the frustration not be felt at all in the first place"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Composure is not coldness: it means staying engaged and useful while still feeling the emotion, not suppressing all visible sign of it or being overtaken by it."
+  },
+  {
+    "id": "i.emo.w10chk.b",
+    "concept": "w10d2",
+    "type": "reason_choice",
+    "prompt": "The client on the same call demands an unrealistic same-day turnaround with no flexibility offered. What is the best-fitted response to this demand, given what staying effective under pressure calls for?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Offering specific options, such as a partial delivery today and the rest tomorrow, rather than a flat yes or a flat no",
+        "conceptTag": "w10d2"
+      },
+      {
+        "id": "B",
+        "text": "Agreeing to the same-day turnaround regardless of feasibility, to avoid conflict"
+      },
+      {
+        "id": "C",
+        "text": "Refusing outright with no alternative offered"
+      },
+      {
+        "id": "D",
+        "text": "Ending the call without responding to the demand at all"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Answering an excessive demand with concrete options, rather than a flat yes or no, is the specific skill here, and it fits directly with staying effective rather than going cold or capitulating."
+  },
+  {
+    "id": "i.emo.w10chk.c",
+    "concept": "w10d3",
+    "type": "reason_choice",
+    "prompt": "Needing to decide quickly whether to accept the client's counter-offer on the call, a brief pause is taken, the trade-off is stated out loud, a decision is made, and a date to revisit it is set. What does following this specific sequence add, compared to deciding on the spot without it?",
+    "options": [
+      {
+        "id": "A",
+        "text": "It slows the decision down just enough to name the trade-off explicitly and build in a review point, rather than deciding reactively under pressure",
+        "conceptTag": "w10d3"
+      },
+      {
+        "id": "B",
+        "text": "It guarantees that the decision made will turn out to be the best possible one"
+      },
+      {
+        "id": "C",
+        "text": "It is only useful when there is no real pressure or time constraint"
+      },
+      {
+        "id": "D",
+        "text": "Pausing before deciding is the same as refusing to decide at all"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "The pause, trade-off, decide, review-point sequence does not guarantee the best outcome, but it reliably slows a pressured decision down enough to make the trade-off explicit and leaves room to revisit it."
+  },
+  {
+    "id": "i.emo.w10chk.d",
+    "concept": "w10d4",
+    "type": "reason_choice",
+    "prompt": "The same pressure routine, built around the client call, is then applied to an unrelated, unfamiliar scenario: an internal budget dispute with no client involved at all. What does successfully applying the routine to this new, unfamiliar scenario demonstrate?",
+    "options": [
+      {
+        "id": "A",
+        "text": "That the routine generalises to a genuinely different kind of pressure, not just the specific client-call situation it was first used in",
+        "conceptTag": "w10d4"
+      },
+      {
+        "id": "B",
+        "text": "That the routine only ever works for client-facing situations"
+      },
+      {
+        "id": "C",
+        "text": "That the routine must be relearned from scratch for every new type of scenario"
+      },
+      {
+        "id": "D",
+        "text": "That staying cold, rather than engaged, is what actually makes a routine transferable"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "A pressure routine that only works in the exact scenario it was first learned in is not very useful. Applying it successfully to a genuinely different pressured scenario, like a budget dispute, is what shows it actually generalises."
+  },
+  {
+    "id": "i.emo.w11chk.a",
+    "concept": "w11d1",
+    "type": "reason_choice",
+    "prompt": "A reorganisation at work is announced with few details, and office rumours quickly fill in the gaps with dramatic, unconfirmed predictions. What does staying effective during this uncertainty actually require?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Separating what is actually controllable or confirmed from the unconfirmed rumours, rather than treating the rumours as settled fact",
+        "conceptTag": "w11d1"
+      },
+      {
+        "id": "B",
+        "text": "Treating every rumour as equally reliable information to act on immediately"
+      },
+      {
+        "id": "C",
+        "text": "Waiting to do any work at all until the reorganisation is fully confirmed in detail"
+      },
+      {
+        "id": "D",
+        "text": "Assuming the most dramatic rumour is automatically the most likely to be true"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Staying effective here means separating controllables and confirmed facts from the unconfirmed rumours, not treating the loudest or most dramatic rumour as if it were already settled."
+  },
+  {
+    "id": "i.emo.w11chk.b",
+    "concept": "w11d2",
+    "type": "reason_choice",
+    "prompt": "After a genuinely difficult meeting about the reorganisation goes poorly, a short recovery routine is used before returning to other work. What is this recovery routine primarily meant to accomplish?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Resetting enough to return to other work effectively, rather than carrying the meeting's disruption forward unaddressed",
+        "conceptTag": "w11d2"
+      },
+      {
+        "id": "B",
+        "text": "Erasing all memory of what happened in the difficult meeting"
+      },
+      {
+        "id": "C",
+        "text": "Replacing the need to ever follow up on what the meeting covered"
+      },
+      {
+        "id": "D",
+        "text": "Proving that the difficult meeting did not actually matter"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "A recovery routine resets enough to return to other work effectively; it does not erase the meeting or substitute for any follow-up it might call for."
+  },
+  {
+    "id": "i.emo.w11chk.c",
+    "concept": "w11d3",
+    "type": "reason_choice",
+    "prompt": "Having recovered enough to think clearly, a disagreement with a senior leader about the reorganisation's approach is raised directly, but tactically adapted for the real difference in power and incentives between the two. What does adapting tactics for unequal power specifically mean here?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Still disagreeing honestly, while choosing timing, framing and tone that account for the senior leader's different position and incentives",
+        "conceptTag": "w11d3"
+      },
+      {
+        "id": "B",
+        "text": "Not disagreeing at all, since the power difference makes any disagreement too risky"
+      },
+      {
+        "id": "C",
+        "text": "Disagreeing in exactly the same way regardless of who the disagreement is with"
+      },
+      {
+        "id": "D",
+        "text": "Waiting for the senior leader to change their mind without ever raising the disagreement directly"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Disagreeing upward means still being honest about the disagreement, while adapting timing, framing and tone for a real difference in power and incentives, rather than either avoiding the disagreement or ignoring the power difference."
+  },
+  {
+    "id": "i.emo.w11chk.d",
+    "concept": "w11d4",
+    "type": "reason_choice",
+    "prompt": "A mixed professional scenario combines uncertain rumours about the reorganisation, a disruptive meeting earlier that day, and a need to raise a concern with a senior leader before the day ends. What does handling this well require, drawing on the whole week?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Separating confirmed facts from rumour, using a short recovery from the earlier disruption, and then raising the concern upward with tactics adapted for the power difference, in that order",
+        "conceptTag": "w11d4"
+      },
+      {
+        "id": "B",
+        "text": "Raising the concern with the senior leader first, before addressing the rumours or recovering from the earlier meeting"
+      },
+      {
+        "id": "C",
+        "text": "Treating the rumours as settled and skipping the recovery step to save time before the senior conversation"
+      },
+      {
+        "id": "D",
+        "text": "Only one of the three skills from this week is actually needed in a mixed scenario like this"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "A mixed scenario like this calls on all three professional composure skills from the week together, roughly in the order that actually matters: separating fact from rumour, recovering enough to think clearly, and then raising the concern upward with suitably adapted tactics."
+  },
+  {
+    "id": "i.emo.w12chk.a",
+    "concept": "w12d1",
+    "type": "reason_choice",
+    "prompt": "Looking back across the past weeks, a recurring pattern is noticed: a tense exchange at work is usually followed by a quiet evening of avoiding messages, which brings short-term relief but leaves the original issue unresolved. What is the accurate way to describe this pattern, without overclaiming its cause?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A recurring sequence that provides short-term relief, described without yet claiming to know its full underlying cause",
+        "conceptTag": "w12d1"
+      },
+      {
+        "id": "B",
+        "text": "Definite proof of a specific, deep-seated psychological cause"
+      },
+      {
+        "id": "C",
+        "text": "Random, unconnected events with no actual pattern at all"
+      },
+      {
+        "id": "D",
+        "text": "A pattern that, once noticed, requires no further attention"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Mapping a pattern means describing a recurring sequence and the short-term relief it brings, without claiming certainty about a deeper cause that has not actually been established."
+  },
+  {
+    "id": "i.emo.w12chk.b",
+    "concept": "w12d2",
+    "type": "reason_choice",
+    "prompt": "Despite months of practising the skills from this course, the same tense-exchange-then-avoidance pattern still occurs most weeks, with little change. What should this persistence prompt consideration of?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Recognising a sign that self-training alone may not be enough here, and that further support could be worth seeking",
+        "conceptTag": "w12d2"
+      },
+      {
+        "id": "B",
+        "text": "Concluding that every skill learned in this course has been a complete waste of time"
+      },
+      {
+        "id": "C",
+        "text": "Ignoring the persistence entirely, since all patterns eventually resolve on their own"
+      },
+      {
+        "id": "D",
+        "text": "Assuming no further action of any kind is ever appropriate once a pattern has been mapped"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Recognising when self-training is not enough, and that further support is worth seeking, is itself a skill, not an admission that everything learned so far was useless."
+  },
+  {
+    "id": "i.emo.w12chk.c",
+    "concept": "w12d3",
+    "type": "reason_choice",
+    "prompt": "A maintenance plan is written specifying exactly which two skills from this course will be practised weekly, and on which day, rather than vaguely intending to \"keep working on things.\" What makes this plan realistic, rather than just well-intentioned?",
+    "options": [
+      {
+        "id": "A",
+        "text": "It specifies concrete skills and a concrete schedule, rather than a vague, open-ended intention",
+        "conceptTag": "w12d3"
+      },
+      {
+        "id": "B",
+        "text": "Any plan that mentions skills learned in this course automatically counts as realistic"
+      },
+      {
+        "id": "C",
+        "text": "A plan is only realistic if it includes every skill covered in the entire course"
+      },
+      {
+        "id": "D",
+        "text": "Realistic maintenance plans do not need to specify any particular schedule"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "A realistic maintenance plan specifies concrete skills and a concrete schedule, which is what separates it from a vague, open-ended intention to keep working on things in general."
+  },
+  {
+    "id": "i.emo.w12chk.d",
+    "concept": "w12d4",
+    "type": "reason_choice",
+    "prompt": "As part of the maintenance plan, a small experiment is designed: trying to respond to the next tense exchange within the hour instead of avoiding it, then checking whether the usual pattern still follows. What should happen if the result of this experiment does not match the original hypothesis about the pattern?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The hypothesis about the pattern should be revised based on what the experiment actually showed",
+        "conceptTag": "w12d4"
+      },
+      {
+        "id": "B",
+        "text": "The experiment's result should be discarded if it does not match the original hypothesis"
+      },
+      {
+        "id": "C",
+        "text": "A mismatched result means the maintenance plan itself has already failed completely"
+      },
+      {
+        "id": "D",
+        "text": "Only a result that confirms the original hypothesis is worth paying attention to"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "A behavioural experiment is only useful if its actual result, whatever it is, can revise the hypothesis. Discarding a mismatched result, or only attending to confirming ones, defeats the point of running the experiment at all."
   }
 ]
