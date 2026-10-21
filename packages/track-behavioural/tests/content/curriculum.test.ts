@@ -10,6 +10,7 @@ import listeningItems from '../../content/items/listening.json' with { type: 'js
 import feedbackItems from '../../content/items/feedback.json' with { type: 'json' };
 import perspectiveItems from '../../content/items/perspective.json' with { type: 'json' };
 import rapportItems from '../../content/items/rapport.json' with { type: 'json' };
+import capstoneItems from '../../content/items/capstone.json' with { type: 'json' };
 
 const typedCurriculum = curriculum as Curriculum;
 const typedItems: Item[] = [
@@ -22,6 +23,7 @@ const typedItems: Item[] = [
   ...(feedbackItems as Item[]),
   ...(perspectiveItems as Item[]),
   ...(rapportItems as Item[]),
+  ...(capstoneItems as Item[]),
 ];
 const itemById = new Map(typedItems.map((i) => [i.id, i]));
 
@@ -37,9 +39,10 @@ const CHECKPOINT_LESSON_IDS = new Set([
   'behavioural-les-44',
   'behavioural-les-49',
   'behavioural-les-54',
+  'behavioural-les-58',
 ]);
 
-describe('converted Behavioural Observation content (Modules 1-11)', () => {
+describe('converted Behavioural Observation content (Modules 1-12)', () => {
   it('validates against the shared content schema', () => {
     const result = validateContent(typedCurriculum, typedItems);
     expect(result.errors).toEqual([]);
@@ -204,6 +207,43 @@ describe('converted Behavioural Observation content (Modules 1-11)', () => {
       new Set(['behavioural-les-50', 'behavioural-les-51', 'behavioural-les-52', 'behavioural-les-53'])
     );
     expect(byId.get('behavioural-les-54')!.explanationBackItemId).toBeUndefined();
+  });
+
+  it('has 1 more module (12) and 4 more lessons for the capstone, chaining off module 11\'s checkpoint', () => {
+    // The capstone introduces 0 new concepts and 0 new misconceptions, the
+    // same role Strategic's capstone.json played -- every item here reuses
+    // a concept/misconception already registered by an earlier module, and
+    // each scenario deliberately combines threads from across the track.
+    expect(typedCurriculum.modules.map((m) => m.id).slice(11, 12)).toEqual(['behavioural-mod-12']);
+    expect(typedCurriculum.lessons.map((l) => l.id).slice(54, 58)).toEqual([
+      'behavioural-les-55', 'behavioural-les-56', 'behavioural-les-57', 'behavioural-les-58',
+    ]);
+    const byId = new Map(typedCurriculum.lessons.map((l) => [l.id, l]));
+    expect(byId.get('behavioural-les-55')!.prerequisites).toEqual(['behavioural-les-54']);
+    expect(byId.get('behavioural-les-56')!.prerequisites).toEqual(['behavioural-les-55']);
+    expect(byId.get('behavioural-les-57')!.prerequisites).toEqual(['behavioural-les-56']);
+    expect(new Set(byId.get('behavioural-les-58')!.prerequisites)).toEqual(
+      new Set(['behavioural-les-55', 'behavioural-les-56', 'behavioural-les-57'])
+    );
+  });
+
+  it('the capstone introduces no new concepts or misconceptions, and every capstone item reuses a registered one', () => {
+    const capstoneConceptIds = new Set([
+      'observation_vs_interpretation', 'active_listening_mechanics', 'empathy_accuracy_checking',
+      'specific_not_vague_feedback', 'perspective_taking_vs_projection', 'receiving_without_defensiveness',
+      'base_rate_neglect', 'checking_your_read', 'trust_calibrated_to_track_record',
+    ]);
+    const allConceptIds = new Set(typedCurriculum.concepts.map((c) => c.id));
+    for (const id of capstoneConceptIds) {
+      expect(allConceptIds.has(id)).toBe(true);
+    }
+    const capstoneLessonIds = new Set(['behavioural-les-55', 'behavioural-les-56', 'behavioural-les-57', 'behavioural-les-58']);
+    for (const lesson of typedCurriculum.lessons) {
+      if (!capstoneLessonIds.has(lesson.id)) continue;
+      for (const c of lesson.concepts) {
+        expect(allConceptIds.has(c)).toBe(true);
+      }
+    }
   });
 
   it('every teaching lesson has its original 3 scenario items plus one deepening item, then the explain-back item, then 2 mastery items', () => {

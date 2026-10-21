@@ -1,0 +1,422 @@
+[
+  {
+    "id": "i.cap.conv.a",
+    "concept": "observation_vs_interpretation",
+    "scenario": "A friend goes quiet mid-conversation after a comment is made. The immediate reaction is to think, \"they're annoyed with me.\"",
+    "type": "reason_choice",
+    "prompt": "What's the issue with treating this thought as settled, rather than as one possibility?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The silence is the observed fact; \"they're annoyed with me\" is an interpretation layered on top of it, not yet confirmed.",
+        "conceptTag": "observation_vs_interpretation"
+      },
+      {
+        "id": "B",
+        "text": "No issue — the silence is itself direct proof of annoyance.",
+        "misconception": "behavioural-confusing_observation_with_interpretation"
+      },
+      {
+        "id": "C",
+        "text": "The only issue is that the silence should have been interpreted as something even more negative.",
+        "misconception": "behavioural-confusing_observation_with_interpretation"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "The silence itself is what was observed; \"annoyed with me\" is one possible interpretation of it among others, and treating it as settled fact skips the step of actually checking."
+  },
+  {
+    "id": "i.cap.conv.b",
+    "concept": "active_listening_mechanics",
+    "scenario": "During the same silence, instead of filling the gap with an assumption, the other person's attention stays fully on the friend, without reaching for a phone or a distraction.",
+    "type": "reason_choice",
+    "prompt": "What does maintaining full attention here contribute, even before anything is said?",
+    "options": [
+      {
+        "id": "A",
+        "text": "It keeps genuine attention available for whatever the friend says next, rather than attention already spent on an assumption.",
+        "conceptTag": "active_listening_mechanics"
+      },
+      {
+        "id": "B",
+        "text": "Nothing — attention only matters once someone is actively speaking.",
+        "misconception": "behavioural-half_listening"
+      },
+      {
+        "id": "C",
+        "text": "It guarantees the friend will immediately explain what's wrong.",
+        "misconception": "behavioural-half_listening"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Full attention during the silence itself — not reaching for a distraction or a premature assumption — is what keeps genuine attention available for whatever actually comes next."
+  },
+  {
+    "id": "i.cap.conv.c",
+    "concept": "empathy_accuracy_checking",
+    "scenario": "Rather than acting on the assumption that the friend is annoyed, the question \"you went quiet there — everything okay, or is it something else?\" is asked directly.",
+    "type": "reason_choice",
+    "prompt": "What does this question accomplish, combined with the earlier observation and attention?",
+    "options": [
+      {
+        "id": "A",
+        "text": "It checks the inferred read directly, rather than acting on an unconfirmed interpretation of the observed silence.",
+        "conceptTag": "empathy_accuracy_checking"
+      },
+      {
+        "id": "B",
+        "text": "It confirms the original assumption was correct before it's even answered.",
+        "misconception": "behavioural-empathic_guess_unchecked"
+      },
+      {
+        "id": "C",
+        "text": "It's an unnecessary step once attention has already been given.",
+        "misconception": "behavioural-empathic_guess_unchecked"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "This question is the check that turns the earlier, unconfirmed interpretation into something the friend can actually confirm or correct — completing the loop from observation, through attention, to a checked read."
+  },
+  {
+    "id": "i.cap.fb.a",
+    "concept": "specific_not_vague_feedback",
+    "scenario": "A manager gives feedback naming a specific, dated instance: \"the report on Tuesday had three numbers that didn't match the spreadsheet.\"",
+    "type": "reason_choice",
+    "prompt": "What does this specificity contribute to the exchange, considered on its own?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A concrete, actionable instance the employee can actually recognize and address — though specificity alone doesn't guarantee the rest of the exchange goes well.",
+        "conceptTag": "specific_not_vague_feedback"
+      },
+      {
+        "id": "B",
+        "text": "A guarantee that the employee will receive the feedback well regardless of anything else in the exchange.",
+        "misconception": "behavioural-defensive_immediate_justification"
+      },
+      {
+        "id": "C",
+        "text": "Nothing useful, since specificity doesn't matter once the feedback is corrective.",
+        "misconception": "behavioural-vague_trait_feedback"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Specificity gives the employee something concrete to work with, but it's only one of several things that determine how the exchange actually goes — it doesn't by itself guarantee the rest goes well."
+  },
+  {
+    "id": "i.cap.fb.b",
+    "concept": "perspective_taking_vs_projection",
+    "scenario": "The employee receiving the specific feedback assumes the manager is building a case to push them out, without any actual evidence that's the manager's intent.",
+    "type": "reason_choice",
+    "prompt": "What's the issue with this assumption, given how specific and accurate the original feedback was?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The employee has projected a motive onto the manager rather than considering the manager's actual, likely more mundane intent.",
+        "conceptTag": "perspective_taking_vs_projection"
+      },
+      {
+        "id": "B",
+        "text": "No issue — specific feedback about an error is itself strong evidence of an intent to push someone out.",
+        "misconception": "behavioural-projection_assumed"
+      },
+      {
+        "id": "C",
+        "text": "The issue is that the feedback shouldn't have been specific, to avoid this interpretation.",
+        "misconception": "behavioural-projection_assumed"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Specific, accurate feedback about one error doesn't itself establish an intent to push someone out — assuming that motive is projection, substituting a fear for the manager's actual, unconfirmed intent."
+  },
+  {
+    "id": "i.cap.fb.c",
+    "concept": "receiving_without_defensiveness",
+    "scenario": "Having formed the assumption about the manager's motive, the employee responds by immediately listing justifications, before the manager has finished explaining the concern.",
+    "type": "reason_choice",
+    "prompt": "What does this reaction add on top of the earlier projected assumption?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A defensive response that cuts off the rest of the feedback before it's even been fully heard, compounding the earlier projected assumption.",
+        "conceptTag": "receiving_without_defensiveness"
+      },
+      {
+        "id": "B",
+        "text": "A reasonable and necessary response to being unfairly targeted.",
+        "misconception": "behavioural-defensive_immediate_justification"
+      },
+      {
+        "id": "C",
+        "text": "Nothing further — the projected assumption was already the whole problem.",
+        "misconception": "behavioural-defensive_immediate_justification"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "The defensive, immediate justification compounds the earlier projection — not only was the manager's motive assumed rather than checked, but the resulting defensiveness cuts off whatever the manager was actually about to say."
+  },
+  {
+    "id": "i.cap.pat.a",
+    "concept": "base_rate_neglect",
+    "scenario": "A normally reliable colleague misses one deadline, and this single instance is treated as a sign they've become unreliable going forward.",
+    "type": "reason_choice",
+    "prompt": "What's missing from this judgment?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Considering how common a single slip actually is, even for someone with a strong overall track record, before treating it as a new baseline.",
+        "conceptTag": "base_rate_neglect"
+      },
+      {
+        "id": "B",
+        "text": "Nothing — one missed deadline is sufficient to establish a new, lower baseline for reliability.",
+        "misconception": "behavioural-single_gesture_overweighted"
+      },
+      {
+        "id": "C",
+        "text": "The colleague should be given even less benefit of the doubt than a single miss implies.",
+        "misconception": "behavioural-single_gesture_overweighted"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "A single slip, even for someone generally reliable, doesn't establish a new baseline on its own — that requires considering how common an isolated instance actually is against their overall pattern, not treating one instance as decisive."
+  },
+  {
+    "id": "i.cap.pat.b",
+    "concept": "checking_your_read",
+    "scenario": "Rather than confronting the colleague with an assumption that they've become unreliable, a direct, low-pressure question is asked about what happened with the missed deadline.",
+    "type": "reason_choice",
+    "prompt": "What does asking directly accomplish here, on top of the base-rate consideration?",
+    "options": [
+      {
+        "id": "A",
+        "text": "It checks the inferred read of unreliability against what the colleague actually says, rather than acting on an assumption confirmed only by one data point.",
+        "conceptTag": "checking_your_read"
+      },
+      {
+        "id": "B",
+        "text": "It's an unnecessary extra step once the base rate has already been considered.",
+        "misconception": "behavioural-empathic_guess_unchecked"
+      },
+      {
+        "id": "C",
+        "text": "It guarantees the colleague will admit to becoming unreliable.",
+        "misconception": "behavioural-empathic_guess_unchecked"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Checking directly is still a separate, necessary step even after considering the base rate — it's what actually confirms or corrects the read, rather than leaving it as an informed but unconfirmed guess."
+  },
+  {
+    "id": "i.cap.pat.c",
+    "concept": "trust_calibrated_to_track_record",
+    "scenario": "After considering the base rate and checking directly, the colleague's overall sustained track record of reliability is weighted more heavily than the single recent miss in deciding how much to trust them going forward.",
+    "type": "reason_choice",
+    "prompt": "What does this final weighting demonstrate?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Trust calibrated to the actual, sustained track record rather than overridden by a single recent instance, now informed by both the base rate and the direct check.",
+        "conceptTag": "trust_calibrated_to_track_record"
+      },
+      {
+        "id": "B",
+        "text": "An unjustified decision to ignore the recent miss entirely.",
+        "misconception": "behavioural-single_gesture_overweighted"
+      },
+      {
+        "id": "C",
+        "text": "Trust that should instead be based primarily on the most recent single instance, overriding the longer track record.",
+        "misconception": "behavioural-single_gesture_overweighted"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "This is the combination the whole scenario built toward: trust that tracks the sustained pattern, properly informed by the base rate and an actual check, rather than being overridden by one recent instance."
+  },
+  {
+    "id": "i.cap.full.a",
+    "concept": "observation_vs_interpretation",
+    "scenario": "A long-standing colleague seems unusually withdrawn in a meeting. The first move is to separate \"they said less than usual and didn't make eye contact\" (observation) from \"something is wrong with them\" (interpretation).",
+    "type": "reason_choice",
+    "prompt": "What does keeping these separate accomplish at this early stage?",
+    "options": [
+      {
+        "id": "A",
+        "text": "It keeps the situation open to more than one explanation, rather than committing early to an unconfirmed interpretation.",
+        "conceptTag": "observation_vs_interpretation"
+      },
+      {
+        "id": "B",
+        "text": "It accomplishes nothing, since the interpretation is almost certainly correct anyway.",
+        "misconception": "behavioural-confusing_observation_with_interpretation"
+      },
+      {
+        "id": "C",
+        "text": "It should instead be skipped in favor of acting on the interpretation immediately.",
+        "misconception": "behavioural-confusing_observation_with_interpretation"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Keeping the observed facts separate from the interpretation at this early stage is exactly what keeps other explanations available, rather than committing to one unconfirmed story before anything further is known."
+  },
+  {
+    "id": "i.cap.full.b",
+    "concept": "active_listening_mechanics",
+    "scenario": "Rather than filling the colleague's withdrawn silence with a story of your own, full attention is given to what they do eventually say, without planning a response in the meantime.",
+    "type": "reason_choice",
+    "prompt": "What does this combination of attention and restraint contribute here?",
+    "options": [
+      {
+        "id": "A",
+        "text": "It keeps genuine attention available for whatever the colleague actually communicates, rather than attention already spent on a private narrative.",
+        "conceptTag": "active_listening_mechanics"
+      },
+      {
+        "id": "B",
+        "text": "Nothing — attention doesn't matter until the colleague has fully finished speaking.",
+        "misconception": "behavioural-half_listening"
+      },
+      {
+        "id": "C",
+        "text": "It guarantees the colleague will immediately explain what's going on.",
+        "misconception": "behavioural-half_listening"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Full attention, without drafting a private story or a reply in the meantime, keeps genuine attention available for whatever the colleague actually says, continuing from the earlier observation."
+  },
+  {
+    "id": "i.cap.full.c",
+    "concept": "perspective_taking_vs_projection",
+    "scenario": "Before concluding what's actually going on with the withdrawn colleague, their situation is considered on its own terms, rather than assuming it must be whatever would make you withdrawn in their position.",
+    "type": "reason_choice",
+    "prompt": "What does this step add to the observation and attention already given?",
+    "options": [
+      {
+        "id": "A",
+        "text": "It avoids projecting your own likely reaction onto the colleague, keeping their actual, possibly different situation open to consideration.",
+        "conceptTag": "perspective_taking_vs_projection"
+      },
+      {
+        "id": "B",
+        "text": "It's redundant once the observation has already been kept separate from interpretation.",
+        "misconception": "behavioural-projection_assumed"
+      },
+      {
+        "id": "C",
+        "text": "It should be skipped in favor of assuming the colleague feels the way you would.",
+        "misconception": "behavioural-projection_assumed"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Avoiding projection is a distinct step from keeping observation and interpretation separate — even an open interpretation can still default to assuming your own likely reaction unless this step is taken too."
+  },
+  {
+    "id": "i.cap.full.d",
+    "concept": "trust_calibrated_to_track_record",
+    "scenario": "If a conversation or feedback follows from this withdrawn moment, the colleague's long, demonstrated track record is weighed appropriately, rather than letting this one unusual moment override it entirely.",
+    "type": "reason_choice",
+    "prompt": "What does this final step complete, combined with the observation, attention, and avoided projection?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The full sequence: an open observation, genuine attention, an un-projected read, and a trust judgment that weighs the actual track record rather than being overridden by one instance.",
+        "conceptTag": "trust_calibrated_to_track_record"
+      },
+      {
+        "id": "B",
+        "text": "An unnecessary final step once the earlier three have already been handled correctly.",
+        "misconception": "behavioural-single_gesture_overweighted"
+      },
+      {
+        "id": "C",
+        "text": "A step that should override the colleague's track record based on this one unusual instance.",
+        "misconception": "behavioural-single_gesture_overweighted"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "This completes the full sequence this course has built toward: observation kept separate from interpretation, genuine attention, a read that avoided projection, and a trust judgment anchored in the actual track record rather than one unusual instance — all reinforcing each other."
+  },
+  {
+    "id": "i.cap.words",
+    "concept": "trust_calibrated_to_track_record",
+    "type": "own_words",
+    "scenario": "Think of a real, complex situation involving another person — past, current, or likely to come up soon.",
+    "prompt": "In your own words, describe the situation and walk through as many ideas from across this entire course as actually apply: observation versus interpretation, reading patterns and base rates, reading signals, listening, giving and receiving feedback, taking someone else's perspective, and building or repairing trust.",
+    "modelAnswer": "\"The situation was X.\" \"Checking observation: what did I actually observe versus assume?\" \"Checking listening: was I fully attentive, or already reacting?\" \"Checking perspective: did I consider their actual view, or project my own?\" \"Checking patterns and trust: did I weigh this fairly against the fuller pattern, or overreact to one instance?\" \"What, across all of this, would I do differently?\"",
+    "rubric": [
+      "States a real, specific situation, not a hypothetical one.",
+      "Checks it against at least four distinct ideas drawn from across the whole course, not just one module.",
+      "Identifies at least one place the situation was, or could have been, handled better.",
+      "States what doing it differently would actually have looked like."
+    ]
+  },
+  {
+    "id": "i.cap.conv.words",
+    "concept": "empathy_accuracy_checking",
+    "type": "own_words",
+    "scenario": "Think of a real conversation where observation, attention, and checking a read all mattered at once.",
+    "prompt": "In your own words, explain how observation, full attention, and checking an empathic read work together in a real conversation.",
+    "modelAnswer": "Observation keeps what actually happened separate from the story added about it; full attention keeps you receptive to what the other person actually communicates, rather than reacting to your own assumption; and checking the resulting read directly confirms or corrects it, rather than acting on it unconfirmed. The three build on each other in sequence.",
+    "rubric": [
+      "Names all three ideas and the order they build in.",
+      "Gives a real or plausible example combining them.",
+      "States what skipping any one of the three would cost.",
+      "Explains why a real conversation needs all three at once, not just one."
+    ]
+  },
+  {
+    "id": "i.cap.fb.words",
+    "concept": "perspective_taking_vs_projection",
+    "type": "own_words",
+    "scenario": "Think of a feedback exchange, given or received, where an assumption about the other person's view mattered as much as the feedback's content.",
+    "prompt": "In your own words, explain how specific feedback, avoiding projection, and receiving without defensiveness interact in a real exchange.",
+    "modelAnswer": "Specific feedback gives the other person something concrete to work with, but an assumed, projected motive about why it was given (or how it will be received) can derail the exchange regardless of how specific the content was. Receiving it without defensiveness keeps the rest of the exchange open, rather than cutting it off before it's fully heard.",
+    "rubric": [
+      "States that specificity alone doesn't guarantee the exchange goes well.",
+      "States the risk of projecting a motive onto the other person.",
+      "Gives a real or plausible example.",
+      "Explains how a defensive reaction compounds an earlier projected assumption."
+    ]
+  },
+  {
+    "id": "i.cap.pat.words",
+    "concept": "trust_calibrated_to_track_record",
+    "type": "own_words",
+    "scenario": "Think of a time a single recent instance threatened to override your overall judgment of someone's reliability.",
+    "prompt": "In your own words, explain how base rates, checking your read, and trust-by-track-record work together when judging a person over time.",
+    "modelAnswer": "Considering the base rate keeps a single instance from automatically becoming a new assumed baseline; checking your read directly confirms or corrects whatever story you've formed about that instance; and weighing the actual sustained track record, rather than the one instance alone, is what ultimately calibrates the trust extended. All three push against the same error: treating one data point as more decisive than it is.",
+    "rubric": [
+      "Names all three ideas and the shared error they guard against.",
+      "Gives a real or plausible example combining them.",
+      "States what overreacting to a single instance without them would look like.",
+      "Explains how the track record is weighed against, not replaced by, the recent instance."
+    ]
+  }
+]

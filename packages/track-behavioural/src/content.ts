@@ -10,6 +10,7 @@ import listeningItemsJson from '../content/items/listening.json' with { type: 'j
 import feedbackItemsJson from '../content/items/feedback.json' with { type: 'json' };
 import perspectiveItemsJson from '../content/items/perspective.json' with { type: 'json' };
 import rapportItemsJson from '../content/items/rapport.json' with { type: 'json' };
+import capstoneItemsJson from '../content/items/capstone.json' with { type: 'json' };
 
 export const behaviouralCurriculum = curriculumJson as Curriculum;
 export const behaviouralItems: Item[] = [
@@ -22,4 +23,5 @@ export const behaviouralItems: Item[] = [
   ...(feedbackItemsJson as Item[]),
   ...(perspectiveItemsJson as Item[]),
   ...(rapportItemsJson as Item[]),
+  ...(capstoneItemsJson as Item[]),
 ];

@@ -16,7 +16,8 @@
         "behavioural-mod-8",
         "behavioural-mod-9",
         "behavioural-mod-10",
-        "behavioural-mod-11"
+        "behavioural-mod-11",
+        "behavioural-mod-12"
       ]
     }
   ],
@@ -161,6 +162,18 @@
         "behavioural-les-52",
         "behavioural-les-53",
         "behavioural-les-54"
+      ]
+    },
+    {
+      "id": "behavioural-mod-12",
+      "trackId": "behavioural",
+      "sequence": 12,
+      "title": "The Full Picture",
+      "lessonIds": [
+        "behavioural-les-55",
+        "behavioural-les-56",
+        "behavioural-les-57",
+        "behavioural-les-58"
       ]
     }
   ],
@@ -2495,6 +2508,185 @@
       ],
       "apply": "In a relationship you're currently building or repairing, deliberately apply whichever of these four ideas is most relevant this week.",
       "reflect": "Across this week, which of the four — consistency, calibrated disclosure, trust-by-track-record, or repair — is hardest for you personally to get right?",
+      "contentVersion": 1
+    },
+    {
+      "id": "behavioural-les-55",
+      "trackId": "behavioural",
+      "moduleId": "behavioural-mod-12",
+      "sequence": 55,
+      "title": "A Conversation That Tests Everything",
+      "objectives": [
+        "Combine observation vs. interpretation, active listening, and checking an empathic read in one real, complex conversation."
+      ],
+      "concepts": [
+        "observation_vs_interpretation",
+        "active_listening_mechanics",
+        "empathy_accuracy_checking"
+      ],
+      "prerequisites": [
+        "behavioural-les-54"
+      ],
+      "interactiveItemIds": [
+        "i.cap.conv.a",
+        "i.cap.conv.b",
+        "i.cap.conv.c",
+        "i.cap.conv.words"
+      ],
+      "masteryItemIds": [
+        "i.cap.conv.a",
+        "i.cap.conv.b"
+      ],
+      "explanationBackItemId": "i.cap.conv.words",
+      "teach": [
+        "A single real conversation can call on everything this course has covered: separating what was actually observed from the story added about it, giving genuine attention rather than half-listening, and checking an inferred read of someone's feelings rather than acting on the guess alone.",
+        "Doing one of these well in isolation — listening attentively, say — while skipping another, like treating an interpretation as if it were the observed fact, or acting on an empathic guess without ever checking it.",
+        "This course has built these as separate skills, module by module, but a real conversation doesn't separate them — they all operate at once, and missing any one of them can undo the others."
+      ],
+      "example": "A friend goes quiet mid-conversation. The observed fact is the silence itself; the interpretation (\"they're annoyed with me\") is a separate, unconfirmed story. Giving full attention rather than filling the silence with your own assumption, and then checking directly (\"you went quiet there — everything okay, or is it something else?\") keeps the observation, the attention, and the check all working together.",
+      "practicePrompts": [
+        "Think of a real, complex conversation you've had recently.",
+        "Identify a moment where observation, attention, or checking a read was especially important.",
+        "Notice whether all three were actually present, or whether one was missing."
+      ],
+      "apply": "In your next conversation that matters, deliberately notice all three: what you're actually observing versus interpreting, whether you're giving full attention, and whether you check any empathic read before acting on it.",
+      "reflect": "Think of a real conversation where missing one of these three — clear observation, full attention, or checking a read — changed how it went. What would including it have changed?",
+      "contentVersion": 1
+    },
+    {
+      "id": "behavioural-les-56",
+      "trackId": "behavioural",
+      "moduleId": "behavioural-mod-12",
+      "sequence": 56,
+      "title": "Feedback From Someone You're Reading Wrong",
+      "objectives": [
+        "Combine giving specific feedback, avoiding projection about someone else's view, and receiving feedback without defensiveness in one real exchange."
+      ],
+      "concepts": [
+        "specific_not_vague_feedback",
+        "perspective_taking_vs_projection",
+        "receiving_without_defensiveness"
+      ],
+      "prerequisites": [
+        "behavioural-les-55"
+      ],
+      "interactiveItemIds": [
+        "i.cap.fb.a",
+        "i.cap.fb.b",
+        "i.cap.fb.c",
+        "i.cap.fb.words"
+      ],
+      "masteryItemIds": [
+        "i.cap.fb.a",
+        "i.cap.fb.b"
+      ],
+      "explanationBackItemId": "i.cap.fb.words",
+      "teach": [
+        "Feedback exchanges often go wrong not because the feedback itself was poorly given, but because of an assumption about the other person's view layered on top of it — on either side of the exchange.",
+        "Assuming you know why someone gave the feedback they did, or why they're reacting the way they are to it, rather than imagining their actual, possibly different view — which can derail a perfectly specific, well-intentioned piece of feedback.",
+        "Specific feedback, an accurate read of the other person's actual perspective (not a projected one), and a non-defensive reception of it are three separate requirements — an exchange can get any one of them right while still failing on the others."
+      ],
+      "example": "A manager gives specific, well-aimed feedback about a missed detail. The employee assumes the manager is trying to push them out (projection, not their manager's actual view), and responds defensively, justifying before fully hearing it. The feedback itself was fine — the exchange broke down on the other two pieces.",
+      "practicePrompts": [
+        "Think of a feedback exchange that went worse than the content of the feedback itself warranted.",
+        "Identify whether a projected assumption, a defensive reaction, or both were involved.",
+        "Consider what addressing that specific piece would have changed."
+      ],
+      "apply": "In your next feedback exchange, in either direction, check specifically for projection about the other person's view and for your own defensive reaction, not just the content of the feedback itself.",
+      "reflect": "Think of a feedback exchange where an assumption about the other person's view, rather than the feedback's content, was the actual source of the breakdown. What was the assumption, and what was the person's actual view?",
+      "contentVersion": 1
+    },
+    {
+      "id": "behavioural-les-57",
+      "trackId": "behavioural",
+      "moduleId": "behavioural-mod-12",
+      "sequence": 57,
+      "title": "When the Pattern and the Trust Don't Match",
+      "objectives": [
+        "Combine base-rate reasoning, checking an inferred read, and calibrating trust to someone's actual track record in one judgment about a person over time."
+      ],
+      "concepts": [
+        "base_rate_neglect",
+        "checking_your_read",
+        "trust_calibrated_to_track_record"
+      ],
+      "prerequisites": [
+        "behavioural-les-56"
+      ],
+      "interactiveItemIds": [
+        "i.cap.pat.a",
+        "i.cap.pat.b",
+        "i.cap.pat.c",
+        "i.cap.pat.words"
+      ],
+      "masteryItemIds": [
+        "i.cap.pat.a",
+        "i.cap.pat.b"
+      ],
+      "explanationBackItemId": "i.cap.pat.words",
+      "teach": [
+        "Judging a person over time — not just a single moment — means combining how common a given behavior actually is in general (the base rate), whether an inferred read of their current state has actually been checked, and whether the trust extended to them matches their real track record, not just a recent impression.",
+        "Letting a vivid recent impression override all three — treating an unusual instance as the new baseline, skipping the check, and adjusting trust based on the moment rather than the pattern.",
+        "These three ideas reinforce each other precisely because they all push against the same error: treating one data point — a single instance, an unchecked guess, a single gesture — as more decisive than it actually is."
+      ],
+      "example": "A normally reliable colleague misses one deadline. Judging them fairly means asking how common a single slip actually is for someone with their track record (base rate), checking directly rather than assuming they've become unreliable (checking the read), and weighing the one miss against their actual sustained pattern rather than letting it override the trust that pattern has earned (track record).",
+      "practicePrompts": [
+        "Think of a time a single recent instance threatened to override your overall judgment of someone.",
+        "Consider what their actual base rate and track record looked like, apart from that one instance.",
+        "Notice whether you checked your read of the instance, or just acted on the impression."
+      ],
+      "apply": "Next time a single recent instance makes you reconsider your trust in someone, explicitly weigh it against their base rate and track record, and check your read before acting on it.",
+      "reflect": "Think of a time you let one recent instance override an otherwise solid track record, without checking whether the instance was actually representative. What did you miss by not checking?",
+      "contentVersion": 1
+    },
+    {
+      "id": "behavioural-les-58",
+      "trackId": "behavioural",
+      "moduleId": "behavioural-mod-12",
+      "sequence": 58,
+      "title": "The Full Picture",
+      "objectives": [
+        "Combine observation, listening, feedback, perspective-taking, pattern-reading, and trust into one complete, integrated approach to reading and responding to people well.",
+        "Describe a real situation using the full range of ideas covered across the course."
+      ],
+      "concepts": [
+        "observation_vs_interpretation",
+        "active_listening_mechanics",
+        "perspective_taking_vs_projection",
+        "trust_calibrated_to_track_record"
+      ],
+      "prerequisites": [
+        "behavioural-les-55",
+        "behavioural-les-56",
+        "behavioural-les-57"
+      ],
+      "interactiveItemIds": [
+        "i.cap.full.a",
+        "i.cap.full.b",
+        "i.cap.full.c",
+        "i.cap.full.d",
+        "i.cap.words"
+      ],
+      "masteryItemIds": [
+        "i.cap.full.a",
+        "i.cap.full.b",
+        "i.cap.full.c",
+        "i.cap.full.d"
+      ],
+      "explanationBackItemId": "i.cap.words",
+      "teach": [
+        "This course covered observation and inference, reading patterns over time, reading signals and the room, listening, giving and receiving feedback, taking someone else's perspective, and building and repairing trust — eleven modules, one underlying skill: reading a real situation and the people in it accurately, and responding well once you have.",
+        "Treating any one of these as sufficient on its own — sharp observation without real listening, genuine empathy without a checked read, specific feedback without accounting for the other person's actual perspective, a well-calibrated read of a pattern without the trust history to act on it wisely.",
+        "There's no higher module after this one — the actual test is whether these show up together, unprompted, in the ordinary situations of daily life: a hard conversation, a piece of feedback, a disagreement, a relationship that needs rebuilding."
+      ],
+      "example": "A long-standing colleague seems unusually withdrawn in a meeting. Reading it well draws on nearly everything: noting the withdrawal as an observation, not yet an interpretation; listening fully rather than filling the silence with your own story; checking your read directly rather than acting on an assumption; weighing this one instance against their actual track record rather than over-reacting to it; and, if feedback or a hard conversation follows, giving it specifically and with genuine attention to their actual, not assumed, perspective.",
+      "practicePrompts": [
+        "Think of a real, complex situation involving another person, recent or ongoing.",
+        "Walk through as many of this course's ideas as actually apply to it.",
+        "Notice which ideas came naturally, and which took deliberate effort."
+      ],
+      "apply": "In your next genuinely complex situation involving another person, deliberately draw on as much of this course as is relevant, rather than defaulting to the one or two habits that come easiest.",
+      "reflect": "Looking back across this entire course, which single idea — from observation, patterns, signals, listening, feedback, perspective-taking, or trust — has changed how you actually interact with people the most? Which one still needs the most deliberate practice?",
       "contentVersion": 1
     }
   ],
