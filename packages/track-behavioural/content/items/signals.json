@@ -1,0 +1,1016 @@
+[
+  {
+    "id": "i.sig.cong.a",
+    "concept": "verbal_nonverbal_congruence",
+    "scenario": "A friend says \"I'm excited for this\" about an upcoming trip, in a flat, unenthusiastic tone, while looking away.",
+    "type": "reason_choice",
+    "prompt": "What's the careful read of this moment?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The words and the delivery don't match — worth noting as a mismatch worth a gentle check-in, not proof of a specific hidden feeling.",
+        "conceptTag": "verbal_nonverbal_congruence"
+      },
+      {
+        "id": "B",
+        "text": "The words should be taken at face value, since that's what was actually said.",
+        "misconception": "behavioural-congruence_mismatch_ignored"
+      },
+      {
+        "id": "C",
+        "text": "The flat tone and looking away definitely mean they're dreading the trip.",
+        "misconception": "behavioural-single_cue_overread"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "A mismatch between words and delivery is worth noticing and maybe gently checking — it doesn't by itself prove a specific feeling, and taking the words alone at face value ignores real information too."
+  },
+  {
+    "id": "i.sig.cong.b",
+    "concept": "verbal_nonverbal_congruence",
+    "scenario": "A colleague says \"sure, that works for me\" to a proposed meeting time, in the same easy, unhurried tone they usually use.",
+    "type": "reason_choice",
+    "prompt": "What does this suggest?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The words and delivery are congruent — no mismatch here, so there's less reason to read into it further.",
+        "conceptTag": "verbal_nonverbal_congruence"
+      },
+      {
+        "id": "B",
+        "text": "Any agreement to a meeting time should be double-checked for hidden reluctance regardless of tone.",
+        "misconception": "behavioural-single_cue_overread"
+      },
+      {
+        "id": "C",
+        "text": "The easy tone proves they're especially enthusiastic about this specific meeting.",
+        "misconception": "behavioural-single_cue_overread"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "When words and delivery match and nothing seems unusual, that's exactly when there's less reason to read further into it — congruence itself is useful information, not just mismatches."
+  },
+  {
+    "id": "i.sig.cong.c",
+    "concept": "verbal_nonverbal_congruence",
+    "scenario": "A family member says \"it's totally fine, don't worry about it\" quickly, interrupting before you've finished apologising, without meeting your eyes.",
+    "type": "reason_choice",
+    "prompt": "What's the careful next step?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Note the mismatch (quick interruption, avoided eye contact alongside reassuring words) and consider a gentle follow-up rather than immediately accepting the reassurance at face value.",
+        "conceptTag": "verbal_nonverbal_congruence"
+      },
+      {
+        "id": "B",
+        "text": "Accept the words immediately, since insisting further would be rude.",
+        "misconception": "behavioural-congruence_mismatch_ignored"
+      },
+      {
+        "id": "C",
+        "text": "Conclude they're definitely still upset and address it immediately and directly without acknowledging their stated wish to move on.",
+        "misconception": "behavioural-single_cue_overread"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "A mismatch between reassuring words and a rushed, avoidant delivery is worth noting gently — neither accepting the words uncritically nor confidently overriding their stated wish is the careful middle path."
+  },
+  {
+    "id": "i.sig.tone.a",
+    "concept": "tone_and_pacing",
+    "scenario": "A text message simply says \"ok.\" In a follow-up voice note, the same word is said warmly and immediately.",
+    "type": "reason_choice",
+    "prompt": "What does comparing the two versions show?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tone and pace, where available, carry real information beyond the literal content — the warm, immediate voice note communicates something the bare text alone couldn't.",
+        "conceptTag": "tone_and_pacing"
+      },
+      {
+        "id": "B",
+        "text": "Nothing — both versions say exactly the same thing, so they carry identical information.",
+        "misconception": "behavioural-tone_ignored"
+      },
+      {
+        "id": "C",
+        "text": "The text version should always be assumed to carry a negative tone by default.",
+        "misconception": "behavioural-tone_ignored"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Identical words with different tone and pace genuinely carry different information — the delivery itself is a real signal, not something to be read past to get to the 'actual' content."
+  },
+  {
+    "id": "i.sig.tone.b",
+    "concept": "tone_and_pacing",
+    "scenario": "A manager gives the same piece of feedback to two team members: one delivery is rushed and clipped; the other is slower and warmer.",
+    "type": "reason_choice",
+    "prompt": "What should an observer take from the difference in delivery?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The pacing and tone themselves are part of the message — the two deliveries likely land very differently even though the literal feedback content is the same.",
+        "conceptTag": "tone_and_pacing"
+      },
+      {
+        "id": "B",
+        "text": "Nothing meaningful — since the literal feedback content is identical, the deliveries should be treated as equivalent.",
+        "misconception": "behavioural-tone_ignored"
+      },
+      {
+        "id": "C",
+        "text": "The rushed delivery definitely means the manager is angry at that specific team member.",
+        "misconception": "behavioural-single_cue_overread"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "The literal content being identical doesn't mean the deliveries are equivalent — tone and pace are themselves part of what's communicated, though a rushed tone alone doesn't confirm one specific cause like anger."
+  },
+  {
+    "id": "i.sig.tone.c",
+    "concept": "tone_and_pacing",
+    "scenario": "Reading a written email, you notice the sender used short, clipped sentences unlike their usual longer, more detailed messages.",
+    "type": "reason_choice",
+    "prompt": "Is pacing relevant here, in a written message with no audible tone?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Yes — sentence length and structure can carry a written equivalent of pacing, and a shift from someone's usual style is worth noting the same way a tone shift would be.",
+        "conceptTag": "tone_and_pacing"
+      },
+      {
+        "id": "B",
+        "text": "No — pacing only applies to spoken communication and has no written equivalent.",
+        "misconception": "behavioural-tone_ignored"
+      },
+      {
+        "id": "C",
+        "text": "Short sentences in writing always indicate anger.",
+        "misconception": "behavioural-single_cue_overread"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Written communication has its own version of pacing — sentence length, structure, punctuation — and a shift from someone's usual style is worth noting the same way an audible tone shift would be, without assuming one fixed meaning."
+  },
+  {
+    "id": "i.sig.base.a",
+    "concept": "establishing_baseline",
+    "scenario": "A new team member gives short, one-word answers in their first week of meetings.",
+    "type": "reason_choice",
+    "prompt": "What's needed before reading much into this?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A sense of this person's baseline — not yet established, since it's their first week — before treating the short answers as meaningful.",
+        "conceptTag": "establishing_baseline"
+      },
+      {
+        "id": "B",
+        "text": "Nothing further — short answers in meetings always indicate disengagement regardless of how long someone's been on the team.",
+        "misconception": "behavioural-no_baseline_established"
+      },
+      {
+        "id": "C",
+        "text": "The short answers should be compared to how other, more talkative team members behave.",
+        "misconception": "behavioural-no_baseline_established"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Without a baseline for this specific new person, there's no real deviation to read — comparing to other people's behaviour, rather than this person's own normal, is exactly the baseline error to avoid."
+  },
+  {
+    "id": "i.sig.base.b",
+    "concept": "establishing_baseline",
+    "scenario": "A team member who's normally warm and chatty in one-on-ones is notably terse and distant in your most recent conversation with them.",
+    "type": "reason_choice",
+    "prompt": "What makes this worth paying attention to?",
+    "options": [
+      {
+        "id": "A",
+        "text": "It's a real deviation from a baseline you've actually established through repeated observation, which is more informative than a single behaviour judged against a generic standard.",
+        "conceptTag": "establishing_baseline"
+      },
+      {
+        "id": "B",
+        "text": "Nothing — a single conversation is never enough to judge anything regardless of baseline.",
+        "misconception": "behavioural-no_baseline_established"
+      },
+      {
+        "id": "C",
+        "text": "It's worth attention only because terseness is inherently a negative sign in any context.",
+        "misconception": "behavioural-signal_meaning_assumed_universal"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "A genuine deviation from an established baseline is meaningfully more informative than a single behaviour judged in isolation — that's exactly what makes a baseline worth building."
+  },
+  {
+    "id": "i.sig.base.c",
+    "concept": "establishing_baseline",
+    "scenario": "You've just met someone for the first time and they seem a bit reserved throughout the conversation.",
+    "type": "reason_choice",
+    "prompt": "How confidently should this be read?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Not very confidently — with no baseline for this person yet, 'reserved' could simply be their normal, first-meeting caution, or any number of other things.",
+        "conceptTag": "establishing_baseline"
+      },
+      {
+        "id": "B",
+        "text": "Very confidently — reserved behaviour in a first meeting reliably indicates discomfort with the specific person they're meeting.",
+        "misconception": "behavioural-no_baseline_established"
+      },
+      {
+        "id": "C",
+        "text": "It should be read the same way it would be for someone you've known for years.",
+        "misconception": "behavioural-no_baseline_established"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Without a baseline, there's real uncertainty about whether 'reserved' is unusual for this person at all — holding the read loosely is the appropriate response, not confident interpretation either way."
+  },
+  {
+    "id": "i.sig.ctx.a",
+    "concept": "context_dependence_of_signals",
+    "scenario": "In a job interview, a candidate gives a brief, direct answer to a question about their weaknesses, without elaborating.",
+    "type": "reason_choice",
+    "prompt": "How should this brevity be read?",
+    "options": [
+      {
+        "id": "A",
+        "text": "It depends on context — direct brevity reads very differently depending on the interview culture, the specific question, and the candidate's communication style and background.",
+        "conceptTag": "context_dependence_of_signals"
+      },
+      {
+        "id": "B",
+        "text": "Brief answers in interviews always indicate a lack of preparation.",
+        "misconception": "behavioural-signal_meaning_assumed_universal"
+      },
+      {
+        "id": "C",
+        "text": "Brief answers always indicate confidence and should be read positively across every context.",
+        "misconception": "behavioural-signal_meaning_assumed_universal"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "The same brevity can reflect confidence, cultural communication norms, discomfort, or simple personal style — there's no single universal meaning, which is exactly why context matters before reading it either way."
+  },
+  {
+    "id": "i.sig.ctx.b",
+    "concept": "context_dependence_of_signals",
+    "scenario": "A team member avoids direct eye contact while disagreeing with a senior colleague in a meeting.",
+    "type": "reason_choice",
+    "prompt": "What should be considered before reading this as discomfort or dishonesty?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Whether avoiding direct eye contact with someone more senior, while disagreeing, might reflect a cultural or workplace norm around respect, rather than a universal sign of discomfort or dishonesty.",
+        "conceptTag": "context_dependence_of_signals"
+      },
+      {
+        "id": "B",
+        "text": "Nothing — avoided eye contact during disagreement always signals dishonesty regardless of context.",
+        "misconception": "behavioural-signal_meaning_assumed_universal"
+      },
+      {
+        "id": "C",
+        "text": "Nothing — eye contact patterns carry no information in any professional context.",
+        "misconception": "behavioural-tone_ignored"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Eye contact norms, especially around hierarchy and disagreement, vary meaningfully across cultures and workplaces — treating one specific meaning as universal risks a real misread."
+  },
+  {
+    "id": "i.sig.ctx.c",
+    "concept": "context_dependence_of_signals",
+    "scenario": "A close friend teases you with a comment that would sound harsh from a stranger, and you both laugh.",
+    "type": "reason_choice",
+    "prompt": "What does this show about context?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The same words can carry an entirely different signal depending on the relationship and shared history between the people involved.",
+        "conceptTag": "context_dependence_of_signals"
+      },
+      {
+        "id": "B",
+        "text": "The comment is objectively harsh regardless of who said it or the relationship involved.",
+        "misconception": "behavioural-signal_meaning_assumed_universal"
+      },
+      {
+        "id": "C",
+        "text": "Laughing afterward proves the comment wasn't actually teasing at all.",
+        "misconception": "behavioural-single_cue_overread"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "The relationship and shared history between two people genuinely changes what the same words signal — a comment's meaning isn't fixed independent of who's saying it to whom."
+  },
+  {
+    "id": "i.sig.amb.a",
+    "concept": "signal_ambiguity",
+    "scenario": "A colleague crosses their arms during a meeting.",
+    "type": "reason_choice",
+    "prompt": "What's the careful read of this single signal?",
+    "options": [
+      {
+        "id": "A",
+        "text": "It has several plausible causes — being cold, a comfortable resting posture, mild disagreement, or nothing notable at all — and shouldn't be read as confirming any one of them alone.",
+        "conceptTag": "signal_ambiguity"
+      },
+      {
+        "id": "B",
+        "text": "Crossed arms reliably indicate defensiveness or disagreement.",
+        "misconception": "behavioural-single_cue_overread"
+      },
+      {
+        "id": "C",
+        "text": "Since the cause is ambiguous, the signal carries no information at all and should be ignored entirely.",
+        "misconception": "behavioural-single_cue_overread"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "A single signal like crossed arms has multiple plausible causes — the careful response is holding several open, not confidently picking one, and not dismissing the signal as meaningless either."
+  },
+  {
+    "id": "i.sig.amb.b",
+    "concept": "signal_ambiguity",
+    "scenario": "A friend goes quiet partway through a conversation.",
+    "type": "reason_choice",
+    "prompt": "What should happen before concluding why?",
+    "options": [
+      {
+        "id": "A",
+        "text": "At least two plausible explanations should be generated — distraction, something you said, unrelated preoccupation, simply processing a thought — before settling on one.",
+        "conceptTag": "signal_ambiguity"
+      },
+      {
+        "id": "B",
+        "text": "The first explanation that comes to mind should be acted on immediately.",
+        "misconception": "behavioural-single_cue_overread"
+      },
+      {
+        "id": "C",
+        "text": "Going quiet always means the conversation should be ended.",
+        "misconception": "behavioural-single_cue_overread"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "A single ambiguous signal like going quiet deserves at least a couple of candidate explanations before any one is acted on — the same alternative-generating habit from earlier in the course, applied here."
+  },
+  {
+    "id": "i.sig.amb.c",
+    "concept": "signal_ambiguity",
+    "scenario": "Someone checks their phone twice during a conversation with you.",
+    "type": "reason_choice",
+    "prompt": "What's the appropriately cautious read?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Several explanations are plausible — an expected message, habit, mild disengagement, anxiety about something unrelated — and none is confirmed by the phone-checking alone.",
+        "conceptTag": "signal_ambiguity"
+      },
+      {
+        "id": "B",
+        "text": "Checking a phone during conversation always indicates the person finds the conversation boring.",
+        "misconception": "behavioural-single_cue_overread"
+      },
+      {
+        "id": "C",
+        "text": "The behaviour should be assumed meaningless and never worth noting at all.",
+        "misconception": "behavioural-single_cue_overread"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Phone-checking during a conversation has several plausible, unrelated explanations — treating it as confirmed disengagement overclaims what one ambiguous signal actually shows."
+  },
+  {
+    "id": "i.sig.phys.a",
+    "concept": "physiological_vs_emotional_signals",
+    "scenario": "A friend seems unusually flat and low-energy during a hangout, after mentioning they didn't sleep well the night before.",
+    "type": "reason_choice",
+    "prompt": "What should be weighed before assuming an emotional cause?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The stated physical cause (poor sleep) is a genuinely plausible explanation for flatness, worth weighing seriously alongside any emotional explanation.",
+        "conceptTag": "physiological_vs_emotional_signals"
+      },
+      {
+        "id": "B",
+        "text": "The mention of poor sleep should be ignored, since flatness during a hangout always indicates an emotional issue.",
+        "misconception": "behavioural-physiological_mistaken_for_emotional"
+      },
+      {
+        "id": "C",
+        "text": "Poor sleep rules out any emotional explanation entirely.",
+        "misconception": "behavioural-single_cue_overread"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "A stated, plausible physical cause deserves real weight, not dismissal in favour of an assumed emotional one — though it doesn't rule an emotional cause out entirely either, both remain open."
+  },
+  {
+    "id": "i.sig.phys.b",
+    "concept": "physiological_vs_emotional_signals",
+    "scenario": "A colleague is unusually short-tempered in the early afternoon, and you recall they mentioned skipping lunch.",
+    "type": "reason_choice",
+    "prompt": "What's the careful read?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Low blood sugar from skipping lunch is a real, plausible physical explanation worth considering alongside, or instead of, an emotional one.",
+        "conceptTag": "physiological_vs_emotional_signals"
+      },
+      {
+        "id": "B",
+        "text": "Short-temperedness always has an emotional or interpersonal cause, regardless of other explanations available.",
+        "misconception": "behavioural-physiological_mistaken_for_emotional"
+      },
+      {
+        "id": "C",
+        "text": "Mentioning skipped lunch is irrelevant context that shouldn't affect the read at all.",
+        "misconception": "behavioural-physiological_mistaken_for_emotional"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "A known, recent physical cause like skipping a meal is directly relevant and deserves real consideration before defaulting to an emotional explanation."
+  },
+  {
+    "id": "i.sig.phys.c",
+    "concept": "physiological_vs_emotional_signals",
+    "scenario": "A normally calm presenter seems visibly shaky and flushed before a big presentation.",
+    "type": "reason_choice",
+    "prompt": "What should be considered alongside nervousness as an explanation?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Physical causes like having just rushed to the room, caffeine, or room temperature are also worth considering alongside, not instead of, nervousness.",
+        "conceptTag": "physiological_vs_emotional_signals"
+      },
+      {
+        "id": "B",
+        "text": "Shakiness and flushing before a presentation can only ever indicate nervousness.",
+        "misconception": "behavioural-physiological_mistaken_for_emotional"
+      },
+      {
+        "id": "C",
+        "text": "Physical causes should never be considered once an emotional explanation seems obvious.",
+        "misconception": "behavioural-physiological_mistaken_for_emotional"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Even when an emotional explanation seems likely, genuinely plausible physical causes are still worth holding alongside it, not dismissed just because the emotional story seems to fit."
+  },
+  {
+    "id": "i.sig.room.a",
+    "concept": "reading_group_energy",
+    "scenario": "In a team meeting, you notice one person near the front looking tired and unengaged.",
+    "type": "reason_choice",
+    "prompt": "What's the careful next step before concluding the meeting's energy is low?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Check the pattern across more of the room — posture, attention, side conversations — rather than generalising from this one person's visible state.",
+        "conceptTag": "reading_group_energy"
+      },
+      {
+        "id": "B",
+        "text": "Conclude the whole meeting's energy is low, since this one clear signal is representative enough.",
+        "misconception": "behavioural-group_energy_misread_from_one_person"
+      },
+      {
+        "id": "C",
+        "text": "Ignore the person entirely, since individual reactions never say anything about group energy.",
+        "misconception": "behavioural-group_energy_misread_from_one_person"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "One person's visible state isn't automatically representative of the whole room — a genuine read of group energy requires scanning the broader pattern, not generalising from a single person."
+  },
+  {
+    "id": "i.sig.room.b",
+    "concept": "reading_group_energy",
+    "scenario": "During a presentation, you notice several people across the room have started checking phones, side conversations have picked up in multiple spots, and posture has slumped broadly.",
+    "type": "reason_choice",
+    "prompt": "What does this pattern suggest, compared to one person's reaction?",
+    "options": [
+      {
+        "id": "A",
+        "text": "This is a genuine, broad-based read of the room's shifting energy — multiple independent signals across several people, not just one.",
+        "conceptTag": "reading_group_energy"
+      },
+      {
+        "id": "B",
+        "text": "This is no different from a single person's individual reaction and shouldn't be weighted any more heavily.",
+        "misconception": "behavioural-group_energy_misread_from_one_person"
+      },
+      {
+        "id": "C",
+        "text": "This pattern definitively proves the presentation content itself is the sole cause.",
+        "misconception": "behavioural-single_cue_overread"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Multiple independent signals across several people is meaningfully different from — and more reliable than — one person's individual reaction, though it still doesn't pin down one single confirmed cause."
+  },
+  {
+    "id": "i.sig.room.c",
+    "concept": "reading_group_energy",
+    "scenario": "In a classroom, a teacher notices two students chatting quietly while the rest of the class appears attentive.",
+    "type": "reason_choice",
+    "prompt": "How should the teacher read the room's overall engagement?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The overall pattern (most of the class attentive) is the more accurate read of the room; the two chatting students are a localised exception, not evidence the whole room has disengaged.",
+        "conceptTag": "reading_group_energy"
+      },
+      {
+        "id": "B",
+        "text": "The two chatting students prove the whole class has lost interest.",
+        "misconception": "behavioural-group_energy_misread_from_one_person"
+      },
+      {
+        "id": "C",
+        "text": "Individual behaviour within a group should never factor into a read of the room at all.",
+        "misconception": "behavioural-group_energy_misread_from_one_person"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "A localised exception within an otherwise-attentive room is exactly the kind of case where reading the whole pattern, rather than one visible instance, gives the accurate read."
+  },
+  {
+    "id": "i.sig.check.a",
+    "concept": "checking_your_read",
+    "scenario": "After carefully reading several signals — tense tone, short answers, a deviation from normal — you conclude a colleague is overwhelmed with their workload.",
+    "type": "reason_choice",
+    "prompt": "What's the appropriate next step with this carefully built read?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Check it with a simple, direct, low-pressure question, rather than acting on the inference, however careful, without confirming it.",
+        "conceptTag": "checking_your_read"
+      },
+      {
+        "id": "B",
+        "text": "Act directly on the read — for example, quietly taking work off their plate — without mentioning it, since the signals were carefully considered.",
+        "misconception": "behavioural-read_acted_on_without_checking"
+      },
+      {
+        "id": "C",
+        "text": "A careful enough read, built from multiple signals, doesn't need checking at all.",
+        "misconception": "behavioural-read_acted_on_without_checking"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "However carefully built, a read remains an inference until checked — a simple, direct, low-pressure question is what actually confirms it, rather than acting on an unverified (even if careful) guess."
+  },
+  {
+    "id": "i.sig.check.b",
+    "concept": "checking_your_read",
+    "scenario": "You're fairly confident a friend is upset with you based on their recent short replies, but you haven't asked them directly.",
+    "type": "reason_choice",
+    "prompt": "What risk does not checking carry?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Acting on an unconfirmed read — becoming distant yourself, or over-apologising for something that might not even be about you — based on an inference that was never actually verified.",
+        "conceptTag": "checking_your_read"
+      },
+      {
+        "id": "B",
+        "text": "No real risk — a confident-feeling read is reliable enough to act on without checking.",
+        "misconception": "behavioural-read_acted_on_without_checking"
+      },
+      {
+        "id": "C",
+        "text": "The only risk is that checking directly would be considered rude.",
+        "misconception": "behavioural-read_acted_on_without_checking"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Acting on an unverified read — however confident it feels — risks responding to something that isn't actually happening, which a simple direct check could have resolved cheaply."
+  },
+  {
+    "id": "i.sig.check.c",
+    "concept": "checking_your_read",
+    "scenario": "You ask a colleague, gently, \"you seem a bit quieter than usual today, everything okay?\" rather than acting on your read silently.",
+    "type": "reason_choice",
+    "prompt": "What does this approach demonstrate?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Checking an inferred read directly and low-pressure, rather than treating the inference as confirmed and acting on it without verification.",
+        "conceptTag": "checking_your_read"
+      },
+      {
+        "id": "B",
+        "text": "Oversharing your entire analysis of their behaviour, which is unnecessary and invasive.",
+        "misconception": "behavioural-read_acted_on_without_checking"
+      },
+      {
+        "id": "C",
+        "text": "An unnecessary step, since the read was probably accurate already.",
+        "misconception": "behavioural-read_acted_on_without_checking"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "A simple, gentle, direct question — not a full disclosure of your analysis — is exactly the low-cost way to check a read against reality rather than acting on an unverified inference."
+  },
+  {
+    "id": "i.wk3.sig.chk.a",
+    "concept": "verbal_nonverbal_congruence",
+    "scenario": "A colleague says \"I'm not upset\" in a clipped, fast tone, unlike their usual relaxed way of speaking, right after you raised a sensitive topic in a culture where direct confrontation is generally avoided.",
+    "type": "reason_choice",
+    "prompt": "What's the careful, complete read combining congruence, tone, baseline and context?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The words and tone mismatch (congruence), the clipped pace itself (tone) is a deviation from their normal relaxed delivery (baseline) — and given the cultural norm around avoiding direct confrontation (context), a gentle, indirect check-in is likely more appropriate than a direct one.",
+        "conceptTag": "verbal_nonverbal_congruence"
+      },
+      {
+        "id": "B",
+        "text": "The stated words should be accepted fully at face value, since pushing further would be inappropriate in this context.",
+        "misconception": "behavioural-congruence_mismatch_ignored"
+      },
+      {
+        "id": "C",
+        "text": "The clipped tone alone proves they're upset regardless of context.",
+        "misconception": "behavioural-single_cue_overread"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "All four checks point the same direction here — a real mismatch, a real baseline deviation — while the cultural context shapes HOW to follow up (indirectly), not whether the mismatch is worth noticing at all."
+  },
+  {
+    "id": "i.wk3.sig.chk.b",
+    "concept": "tone_and_pacing",
+    "scenario": "You notice a friend's text messages have become shorter and more clipped than their usual long, detailed ones, but you've only known this friend for two weeks.",
+    "type": "reason_choice",
+    "prompt": "What does combining tone/pacing with baseline suggest here?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The pacing shift is a real signal only if it's actually a deviation from their true baseline — with just two weeks of history, there's real uncertainty about whether this is their baseline.",
+        "conceptTag": "tone_and_pacing"
+      },
+      {
+        "id": "B",
+        "text": "Two weeks is plenty of history to establish a reliable baseline and confidently read this as a meaningful shift.",
+        "misconception": "behavioural-no_baseline_established"
+      },
+      {
+        "id": "C",
+        "text": "Pacing in text messages carries no real information regardless of baseline.",
+        "misconception": "behavioural-tone_ignored"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "A pacing shift is only meaningful relative to an actual baseline — two weeks is a thin basis for confidence, so the read should be held loosely rather than treated as a clear signal."
+  },
+  {
+    "id": "i.wk3.sig.chk.c",
+    "concept": "establishing_baseline",
+    "scenario": "A new employee from a workplace culture that values brief, efficient communication gives short answers in their first week at a new company where longer, relationship-building conversation is the norm.",
+    "type": "reason_choice",
+    "prompt": "How should context and baseline be combined here?",
+    "options": [
+      {
+        "id": "A",
+        "text": "With no baseline yet for this specific person, and a context (their prior workplace norms) that might explain the brevity, the short answers shouldn't be read as disengagement without more information.",
+        "conceptTag": "establishing_baseline"
+      },
+      {
+        "id": "B",
+        "text": "Since the new workplace values longer conversation, the short answers should be read as a clear sign of disengagement immediately.",
+        "misconception": "behavioural-signal_meaning_assumed_universal"
+      },
+      {
+        "id": "C",
+        "text": "Prior workplace culture is irrelevant once someone has joined a new workplace.",
+        "misconception": "behavioural-signal_meaning_assumed_universal"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Both the missing baseline and the plausible contextual explanation (different prior communication norms) argue against reading the brevity as disengagement — two separate reasons for caution, reinforcing each other."
+  },
+  {
+    "id": "i.wk3.sig.chk.d",
+    "concept": "context_dependence_of_signals",
+    "scenario": "In a video call, a participant keeps their camera off and gives minimal verbal responses throughout. You don't know this person's usual style, and video-call norms vary a lot between teams and cultures.",
+    "type": "reason_choice",
+    "prompt": "What's the complete, careful read?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Both the missing baseline and the genuine context-dependence of \"camera off, minimal responses\" (varying norms across teams and cultures) argue for holding the read very loosely rather than assuming disengagement.",
+        "conceptTag": "context_dependence_of_signals"
+      },
+      {
+        "id": "B",
+        "text": "Camera off and minimal responses always indicate disengagement regardless of norms or history with this person.",
+        "misconception": "behavioural-signal_meaning_assumed_universal"
+      },
+      {
+        "id": "C",
+        "text": "Since the behaviour is ambiguous, nothing at all can be inferred and the situation isn't worth any further attention.",
+        "misconception": "behavioural-single_cue_overread"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Context-dependence and a missing baseline compound here — both point toward real uncertainty, which calls for holding the read loosely (and perhaps checking directly) rather than either a confident negative read or dismissing it entirely."
+  },
+  {
+    "id": "i.wk4.sig.chk.a",
+    "concept": "signal_ambiguity",
+    "scenario": "A colleague seems unusually withdrawn in a team meeting — quiet, minimal eye contact, slower to respond than usual. You also know they mentioned being up late with a sick child the night before.",
+    "type": "reason_choice",
+    "prompt": "What's the combined, careful read?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The withdrawal is ambiguous (several possible causes) and a plausible physical explanation (exhaustion from a disrupted night) is directly available — both argue against jumping to an emotional or work-related conclusion.",
+        "conceptTag": "signal_ambiguity"
+      },
+      {
+        "id": "B",
+        "text": "The withdrawal must be about something work-related, since that's the meeting context.",
+        "misconception": "behavioural-single_cue_overread"
+      },
+      {
+        "id": "C",
+        "text": "The mention of the sick child should be ignored since it's unrelated to the meeting.",
+        "misconception": "behavioural-physiological_mistaken_for_emotional"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Signal ambiguity and a known physical cause reinforce each other here — both argue for holding off on any specific conclusion, work-related or otherwise."
+  },
+  {
+    "id": "i.wk4.sig.chk.b",
+    "concept": "physiological_vs_emotional_signals",
+    "scenario": "During a long afternoon workshop, you notice the whole room seems to be losing energy — more phone-checking, slower responses, fidgeting — and you realize the room has gotten noticeably warm and stuffy.",
+    "type": "reason_choice",
+    "prompt": "What does combining group-energy reading with physiological causes suggest?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The broad pattern across the room (genuine group energy shift) might have a simple physical explanation (the room's temperature) rather than reflecting disengagement with the workshop content itself.",
+        "conceptTag": "physiological_vs_emotional_signals"
+      },
+      {
+        "id": "B",
+        "text": "The pattern must mean the workshop content has become boring, regardless of the room's temperature.",
+        "misconception": "behavioural-group_energy_misread_from_one_person"
+      },
+      {
+        "id": "C",
+        "text": "Room temperature could never meaningfully affect how a group reads as a whole.",
+        "misconception": "behavioural-physiological_mistaken_for_emotional"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "A genuine, broad-based group-energy shift can still have a mundane physical explanation — the physiological check applies at the group level just as much as to one person."
+  },
+  {
+    "id": "i.wk4.sig.chk.c",
+    "concept": "reading_group_energy",
+    "scenario": "In a meeting, you notice one person seems distinctly more engaged than the rest of a generally flat-feeling room, and they happen to be the one presenting the topic.",
+    "type": "reason_choice",
+    "prompt": "How should this be read?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The presenter's own engagement is a poor guide to the room's actual energy — reading the broader, less-invested audience pattern gives a more accurate sense of how the content is actually landing.",
+        "conceptTag": "reading_group_energy"
+      },
+      {
+        "id": "B",
+        "text": "The presenter's visible engagement is the best indicator of the whole room's energy.",
+        "misconception": "behavioural-group_energy_misread_from_one_person"
+      },
+      {
+        "id": "C",
+        "text": "A flat-feeling room always means the content itself is poorly prepared.",
+        "misconception": "behavioural-single_cue_overread"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "The presenter's own engagement is a particularly unreliable guide to the room's actual state, precisely because they have the most personal investment — the broader audience pattern is the more honest read."
+  },
+  {
+    "id": "i.wk4.sig.chk.d",
+    "concept": "checking_your_read",
+    "scenario": "Having read a colleague's withdrawal as possibly due to exhaustion rather than work frustration (combining several of this module's checks), you're deciding what to do next.",
+    "type": "reason_choice",
+    "prompt": "What's the appropriate final step?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Check the read with a simple, direct, low-pressure question — even a carefully built, multi-signal read is still an inference until confirmed.",
+        "conceptTag": "checking_your_read"
+      },
+      {
+        "id": "B",
+        "text": "Since the read combined several careful checks, it can be acted on directly without further verification.",
+        "misconception": "behavioural-read_acted_on_without_checking"
+      },
+      {
+        "id": "C",
+        "text": "No further action is useful, since the explanation already seems obvious.",
+        "misconception": "behavioural-read_acted_on_without_checking"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "However many careful checks go into a read, it remains unconfirmed until actually checked — a simple direct question is still the final, necessary step, not an optional extra."
+  },
+  {
+    "id": "i.sig.words",
+    "concept": "checking_your_read",
+    "type": "own_words",
+    "scenario": "Think of a real person or group whose signals you've been reading recently.",
+    "prompt": "In your own words, describe this situation and check your read against as many of this module's eight ideas as apply: congruence, tone and pacing, baseline, context, signal ambiguity, physiological causes, group energy (if relevant), and whether you've actually checked your read.",
+    "modelAnswer": "\"The situation is X.\" \"Checking congruence: did their words match their delivery?\" \"Checking baseline: do I actually know what's normal for them?\" \"Checking ambiguity: what else could explain this signal besides my first guess?\" \"Checking physiological causes: could something physical explain this?\" \"Have I actually checked this read, or am I about to act on an unverified guess?\"",
+    "rubric": [
+      "States a real, specific situation, not a hypothetical one.",
+      "Checks it against at least four of this module's eight ideas by name.",
+      "Names at least one alternative explanation it hadn't initially considered.",
+      "States whether, and how, the read has been or will be checked against reality."
+    ]
+  },
+  {
+    "id": "i.sig.cong.words",
+    "concept": "verbal_nonverbal_congruence",
+    "type": "own_words",
+    "scenario": "Think of a recent moment where someone's words and their tone or body language didn't quite match.",
+    "prompt": "In your own words, describe the moment: what the words were, what the delivery suggested, and why the mismatch itself (not a guess at the 'real' feeling) is what's worth noting.",
+    "modelAnswer": "\"The words were X, but the tone/delivery was Y.\" \"The mismatch itself is worth noting, not proof of one specific hidden feeling.\" \"A gentle, direct check-in would look like...\"",
+    "rubric": [
+      "States the actual words and the actual delivery separately.",
+      "Avoids declaring one confident interpretation of what the mismatch 'really' means.",
+      "Describes what a gentle, direct check-in would look like."
+    ]
+  },
+  {
+    "id": "i.sig.tone.words",
+    "concept": "tone_and_pacing",
+    "type": "own_words",
+    "scenario": "Think of a message or conversation where tone or pacing carried more information than the literal words.",
+    "prompt": "In your own words, describe what the words literally said, and separately, what the tone or pacing communicated beyond that.",
+    "modelAnswer": "\"The literal words were X.\" \"The tone/pacing separately communicated Y.\" \"If I'd only read the words, I would have missed...\"",
+    "rubric": [
+      "States the literal words separately from the tone/pacing.",
+      "Describes specifically what the tone or pacing added beyond the words.",
+      "Avoids treating the tone as proof of one fixed meaning."
+    ]
+  },
+  {
+    "id": "i.sig.base.words",
+    "concept": "establishing_baseline",
+    "type": "own_words",
+    "scenario": "Think of someone whose baseline behaviour you know well, and someone you don't know well yet.",
+    "prompt": "In your own words, describe the difference in how confidently you can read each person's behaviour, and why.",
+    "modelAnswer": "\"With [person I know well], I can tell when X is a real deviation because I know their normal.\" \"With [person I don't know well], I can't confidently read the same behaviour because I have no baseline yet.\" \"This changes how much weight I'd put on a single observation.\"",
+    "rubric": [
+      "Names a specific person whose baseline is known, and one whose isn't.",
+      "Explains concretely how the lack of a baseline changes confidence in a read.",
+      "Avoids treating a single observation of an unfamiliar person as equivalent to a known deviation."
+    ]
+  },
+  {
+    "id": "i.sig.ctx.words",
+    "concept": "context_dependence_of_signals",
+    "type": "own_words",
+    "scenario": "Think of a signal — a gesture, a tone, a way of declining something — that could mean different things in different contexts or relationships.",
+    "prompt": "In your own words, describe the signal and at least two different contexts where it would mean something different.",
+    "modelAnswer": "\"The signal is X.\" \"In context A (e.g. with close friends), it would mean...\" \"In context B (e.g. in a formal setting), it would mean something different because...\"",
+    "rubric": [
+      "Names a specific signal.",
+      "Describes at least two genuinely different contexts and what the signal would mean in each.",
+      "Avoids treating any one meaning as the universal, default one."
+    ]
+  },
+  {
+    "id": "i.sig.amb.words",
+    "concept": "signal_ambiguity",
+    "type": "own_words",
+    "scenario": "Think of a single signal you noticed in someone recently — a sigh, a pause, a look, a shift in posture.",
+    "prompt": "In your own words, name the signal and list at least two genuinely different, plausible explanations for it.",
+    "modelAnswer": "\"The signal was X.\" \"One explanation is A.\" \"A different, equally plausible explanation is B.\" \"I don't have enough information yet to settle on either.\"",
+    "rubric": [
+      "Names a specific, real signal.",
+      "Lists at least two genuinely different explanations, not variations on the same one.",
+      "Doesn't settle on one explanation as confirmed."
+    ]
+  },
+  {
+    "id": "i.sig.phys.words",
+    "concept": "physiological_vs_emotional_signals",
+    "type": "own_words",
+    "scenario": "Think of a time you read someone's (or your own) behaviour as emotional when a physical cause was at least as plausible.",
+    "prompt": "In your own words, describe the behaviour, the emotional explanation that came to mind first, and the physical explanation that deserved equal consideration.",
+    "modelAnswer": "\"The behaviour was X.\" \"The emotional explanation I jumped to was Y.\" \"A physical explanation (tiredness, hunger, temperature, caffeine) that deserved equal weight was Z.\"",
+    "rubric": [
+      "Describes a specific, real behaviour.",
+      "States both the emotional and the physical explanation clearly.",
+      "Treats the physical explanation as genuinely plausible, not dismissed."
+    ]
+  },
+  {
+    "id": "i.sig.room.words",
+    "concept": "reading_group_energy",
+    "type": "own_words",
+    "scenario": "Think of a group setting — a meeting, a class, a gathering — where you read the room's overall energy.",
+    "prompt": "In your own words, describe the broad pattern across several people that informed your read, not just one person's reaction.",
+    "modelAnswer": "\"The setting was X.\" \"Across several people, I noticed A, B, and C.\" \"This broad pattern, not any one person's reaction, is what the read was actually based on.\"",
+    "rubric": [
+      "Describes a specific, real group setting.",
+      "Names the pattern across multiple people, not just one.",
+      "Avoids generalising from a single person's visible reaction."
+    ]
+  },
+  {
+    "id": "i.sig.check.words",
+    "concept": "checking_your_read",
+    "type": "own_words",
+    "scenario": "Think of a read you built of someone's state recently, from one or more signals.",
+    "prompt": "In your own words, describe the read, and whether you actually checked it with a direct question — and if not, what that question would have looked like.",
+    "modelAnswer": "\"My read was X, based on signals Y.\" \"I did / didn't check this directly.\" \"A simple, low-pressure question to check it would have been: ...\"",
+    "rubric": [
+      "States the inferred read clearly.",
+      "States honestly whether it was actually checked.",
+      "Gives a specific, low-pressure question that would check it."
+    ]
+  }
+]

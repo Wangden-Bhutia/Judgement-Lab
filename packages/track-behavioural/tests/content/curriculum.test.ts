@@ -5,6 +5,7 @@ import module1Items from '../../content/items/module1.json' with { type: 'json' 
 import module2Items from '../../content/items/module2.json' with { type: 'json' };
 import bankDeepeningItems from '../../content/items/bank-deepening.json' with { type: 'json' };
 import weeklyCheckpointItems from '../../content/items/weekly-checkpoints.json' with { type: 'json' };
+import signalsItems from '../../content/items/signals.json' with { type: 'json' };
 
 const typedCurriculum = curriculum as Curriculum;
 const typedItems: Item[] = [
@@ -12,25 +13,31 @@ const typedItems: Item[] = [
   ...(module2Items as Item[]),
   ...(bankDeepeningItems as Item[]),
   ...(weeklyCheckpointItems as Item[]),
+  ...(signalsItems as Item[]),
 ];
 const itemById = new Map(typedItems.map((i) => [i.id, i]));
 
-const CHECKPOINT_LESSON_IDS = new Set(['behavioural-les-8', 'behavioural-les-9']);
+const CHECKPOINT_LESSON_IDS = new Set([
+  'behavioural-les-8',
+  'behavioural-les-9',
+  'behavioural-les-14',
+  'behavioural-les-19',
+]);
 
-describe('converted Behavioural Observation content (Modules 1-2)', () => {
+describe('converted Behavioural Observation content (Modules 1-4)', () => {
   it('validates against the shared content schema', () => {
     const result = validateContent(typedCurriculum, typedItems);
     expect(result.errors).toEqual([]);
     expect(result.valid).toBe(true);
   });
 
-  it('has 2 modules and 9 lessons, in order, under one track', () => {
+  it('has 2 modules and 9 lessons in modules 1-2, in order, under one track', () => {
     // Pass 1 of the week-based restructuring: each module gained one
     // integrative checkpoint lesson (les-8, les-9) that combines that
     // module's concepts rather than introducing a new one.
     expect(typedCurriculum.tracks.map((t) => t.id)).toEqual(['behavioural']);
-    expect(typedCurriculum.modules.map((m) => m.id)).toEqual(['behavioural-mod-1', 'behavioural-mod-2']);
-    expect(typedCurriculum.lessons.map((l) => l.id)).toEqual([
+    expect(typedCurriculum.modules.map((m) => m.id).slice(0, 2)).toEqual(['behavioural-mod-1', 'behavioural-mod-2']);
+    expect(typedCurriculum.lessons.map((l) => l.id).slice(0, 9)).toEqual([
       'behavioural-les-1',
       'behavioural-les-2',
       'behavioural-les-3',
@@ -41,6 +48,33 @@ describe('converted Behavioural Observation content (Modules 1-2)', () => {
       'behavioural-les-7',
       'behavioural-les-9',
     ]);
+  });
+
+  it('has 2 more modules (3-4) and 10 more lessons for Reading Signals, chaining off module 2\'s checkpoint', () => {
+    expect(typedCurriculum.modules.map((m) => m.id).slice(2, 4)).toEqual(['behavioural-mod-3', 'behavioural-mod-4']);
+    expect(typedCurriculum.lessons.map((l) => l.id).slice(9, 19)).toEqual([
+      'behavioural-les-10', 'behavioural-les-11', 'behavioural-les-12', 'behavioural-les-13', 'behavioural-les-14',
+      'behavioural-les-15', 'behavioural-les-16', 'behavioural-les-17', 'behavioural-les-18', 'behavioural-les-19',
+    ]);
+    const byId = new Map(typedCurriculum.lessons.map((l) => [l.id, l]));
+    expect(byId.get('behavioural-les-10')!.prerequisites).toEqual(['behavioural-les-9']);
+    expect(byId.get('behavioural-les-15')!.prerequisites).toEqual(['behavioural-les-14']);
+  });
+
+  it('each signals-module checkpoint lesson requires every lesson in that module and covers all 4 of its concepts', () => {
+    const byId = new Map(typedCurriculum.lessons.map((l) => [l.id, l]));
+    expect(new Set(byId.get('behavioural-les-14')!.prerequisites)).toEqual(
+      new Set(['behavioural-les-10', 'behavioural-les-11', 'behavioural-les-12', 'behavioural-les-13'])
+    );
+    expect(new Set(byId.get('behavioural-les-19')!.prerequisites)).toEqual(
+      new Set(['behavioural-les-15', 'behavioural-les-16', 'behavioural-les-17', 'behavioural-les-18'])
+    );
+    for (const lessonId of ['behavioural-les-14', 'behavioural-les-19']) {
+      const lesson = typedCurriculum.lessons.find((l) => l.id === lessonId)!;
+      const checkpointConcepts = new Set(lesson.masteryItemIds.map((id) => itemById.get(id)!.concept));
+      expect(checkpointConcepts.size).toBe(4);
+      expect(checkpointConcepts).toEqual(new Set(lesson.concepts));
+    }
   });
 
   it('gates lessons within module 1 linearly, module 1\'s checkpoint on all three, and module 2 on that checkpoint', () => {
@@ -85,15 +119,27 @@ describe('converted Behavioural Observation content (Modules 1-2)', () => {
     }
   });
 
-  it('each module\'s checkpoint lesson has 4 integrative items, no explain-back item of its own, and covers all 4 of that module\'s concepts', () => {
+  it('each module\'s checkpoint lesson has 4 integrative mastery items covering all 4 of that module\'s concepts', () => {
+    // A checkpoint that CLOSES a multi-module thematic unit (here, les-19
+    // closing the 2-module Reading Signals unit, the way Strategic's
+    // m7.l5/m9.l5/m11.l5 closed their own multi-module units) also gets a
+    // synthesis own_words explain item -- a mid-unit checkpoint (les-8,
+    // les-9, les-14) doesn't. Both shapes are valid; what's checked here is
+    // the property every checkpoint lesson shares regardless of that.
     for (const lessonId of CHECKPOINT_LESSON_IDS) {
       const lesson = typedCurriculum.lessons.find((l) => l.id === lessonId)!;
-      expect(lesson.interactiveItemIds).toHaveLength(4);
-      expect(lesson.explanationBackItemId).toBeUndefined();
       expect(lesson.masteryItemIds).toHaveLength(4);
       expect(lesson.concepts).toHaveLength(4);
       const checkpointConcepts = new Set(lesson.masteryItemIds.map((id) => itemById.get(id)!.concept));
       expect(checkpointConcepts).toEqual(new Set(lesson.concepts));
+      // interactiveItemIds is the 4 mastery items, plus one more (the
+      // explain item) only for a unit-closing checkpoint.
+      const expectedLength = lesson.explanationBackItemId ? 5 : 4;
+      expect(lesson.interactiveItemIds).toHaveLength(expectedLength);
+      if (lesson.explanationBackItemId) {
+        expect(lesson.interactiveItemIds.at(-1)).toBe(lesson.explanationBackItemId);
+        expect(itemById.get(lesson.explanationBackItemId)!.type).toBe('own_words');
+      }
       expect(lesson.teach?.length).toBeGreaterThan(0);
       expect(lesson.example).toBeTruthy();
       expect(lesson.apply).toBeTruthy();

@@ -7,7 +7,9 @@
       "description": "Learning to read behaviour carefully: telling an observation apart from an interpretation, weighing disposition against situation, and generating alternative explanations before settling on one.",
       "moduleIds": [
         "behavioural-mod-1",
-        "behavioural-mod-2"
+        "behavioural-mod-2",
+        "behavioural-mod-3",
+        "behavioural-mod-4"
       ]
     }
   ],
@@ -35,6 +37,32 @@
         "behavioural-les-6",
         "behavioural-les-7",
         "behavioural-les-9"
+      ]
+    },
+    {
+      "id": "behavioural-mod-3",
+      "trackId": "behavioural",
+      "sequence": 3,
+      "title": "Reading What's Actually Being Signalled",
+      "lessonIds": [
+        "behavioural-les-10",
+        "behavioural-les-11",
+        "behavioural-les-12",
+        "behavioural-les-13",
+        "behavioural-les-14"
+      ]
+    },
+    {
+      "id": "behavioural-mod-4",
+      "trackId": "behavioural",
+      "sequence": 4,
+      "title": "Reading the Room",
+      "lessonIds": [
+        "behavioural-les-15",
+        "behavioural-les-16",
+        "behavioural-les-17",
+        "behavioural-les-18",
+        "behavioural-les-19"
       ]
     }
   ],
@@ -450,6 +478,433 @@
       "apply": "Next time you're forming a judgment about a pattern in someone's behaviour, explicitly check it against consistency/distinctiveness/consensus, the base rate, possible regression to the mean, and whether the sample is actually large enough yet.",
       "reflect": "Across this module, which idea most changed how quickly you're willing to call something a real pattern rather than noise?",
       "contentVersion": 1
+    },
+    {
+      "id": "behavioural-les-10",
+      "trackId": "behavioural",
+      "moduleId": "behavioural-mod-3",
+      "sequence": 10,
+      "title": "When Words and Body Don't Match",
+      "objectives": [
+        "Notice when someone's words and nonverbal behaviour conflict, and treat the mismatch itself as worth attention, without decoding the nonverbal cue alone as proof of anything."
+      ],
+      "concepts": [
+        "verbal_nonverbal_congruence"
+      ],
+      "prerequisites": [
+        "behavioural-les-9"
+      ],
+      "interactiveItemIds": [
+        "i.sig.cong.a",
+        "i.sig.cong.b",
+        "i.sig.cong.c",
+        "i.sig.cong.words"
+      ],
+      "masteryItemIds": [
+        "i.sig.cong.a",
+        "i.sig.cong.b"
+      ],
+      "teach": [
+        "Congruence is whether what someone says matches how they say it and how they're behaving while saying it. A flat, hesitant \"I'm fine\" and an enthusiastic \"I'm fine\" are the same two words carrying very different information.",
+        "Treating a single nonverbal cue — crossed arms, lack of eye contact, a tense posture — as a reliable, standalone signal of a specific feeling. Research on reading isolated gestures this way is weak; a mismatch between words and delivery is worth noticing, but the specific nonverbal cue alone doesn't reliably decode to one meaning.",
+        "When words and delivery don't match, the honest response is to notice the mismatch as information worth following up on — not to confidently declare what the 'real' feeling underneath must be, based on the nonverbal cue alone."
+      ],
+      "example": "A colleague says \"no, it's fine, go ahead\" in a flat, clipped tone, arms crossed. The mismatch between the words and the delivery is worth noting and maybe gently checking (\"you sure? you can say if it's not a good time\") — rather than either taking the words at pure face value or confidently declaring, from the crossed arms alone, that they're definitely annoyed.",
+      "practicePrompts": [
+        "Think of a recent moment where someone's words and tone or body language didn't quite match.",
+        "Name the mismatch specifically, without jumping to a conclusion about what it 'really' meant.",
+        "Consider what a direct, low-pressure check-in might have looked like."
+      ],
+      "apply": "Next time someone's words and delivery don't match, name the mismatch to yourself and consider a gentle, direct check-in, rather than silently deciding what it means.",
+      "reflect": "Think of a time your own words and tone didn't match how you actually felt. What would you have wanted the other person to do about that mismatch?",
+      "contentVersion": 1,
+      "explanationBackItemId": "i.sig.cong.words"
+    },
+    {
+      "id": "behavioural-les-11",
+      "trackId": "behavioural",
+      "moduleId": "behavioural-mod-3",
+      "sequence": 11,
+      "title": "What Tone and Pace Carry",
+      "objectives": [
+        "Attend to tone and pacing as information in their own right, not just the literal content of what's said."
+      ],
+      "concepts": [
+        "tone_and_pacing"
+      ],
+      "prerequisites": [
+        "behavioural-les-10"
+      ],
+      "interactiveItemIds": [
+        "i.sig.tone.a",
+        "i.sig.tone.b",
+        "i.sig.tone.c",
+        "i.sig.tone.words"
+      ],
+      "masteryItemIds": [
+        "i.sig.tone.a",
+        "i.sig.tone.b"
+      ],
+      "teach": [
+        "How something is said — tone, pace, pauses, volume — carries real information alongside the literal words, sometimes more than the words themselves. A rushed, clipped \"sure, whatever works\" communicates something different from an unhurried, warm version of the same sentence.",
+        "Focusing entirely on transcribing what was literally said while missing what the delivery itself communicated. Two people can say the exact same sentence and mean very different things, depending entirely on how it's said.",
+        "Tone and pace are still just signals, not certainties — the same caution that applies to any single nonverbal cue applies here too: notice it, don't over-decode it in isolation."
+      ],
+      "example": "A friend texts \"ok\" to a plan you suggested. In person, the equivalent might be an immediate, warm \"ok!\" or a long pause followed by a flat \"...ok.\" The literal content is identical; the pacing and tone (where visible) carry most of the actual information about how they feel about the plan.",
+      "practicePrompts": [
+        "Think of a recent conversation where tone mattered more than the literal words.",
+        "Describe what the tone or pace specifically communicated, separate from the words.",
+        "Consider a moment you might have missed a tone shift by focusing only on content."
+      ],
+      "apply": "In your next conversation, notice tone and pace deliberately, as information separate from the literal words, rather than only tracking content.",
+      "reflect": "Think of a message or comment you misread because you only registered the words, not the tone. What did you miss?",
+      "contentVersion": 1,
+      "explanationBackItemId": "i.sig.tone.words"
+    },
+    {
+      "id": "behavioural-les-12",
+      "trackId": "behavioural",
+      "moduleId": "behavioural-mod-3",
+      "sequence": 12,
+      "title": "Knowing Someone's Normal First",
+      "objectives": [
+        "Establish a sense of someone's baseline behaviour before treating a change as meaningful."
+      ],
+      "concepts": [
+        "establishing_baseline"
+      ],
+      "prerequisites": [
+        "behavioural-les-11"
+      ],
+      "interactiveItemIds": [
+        "i.sig.base.a",
+        "i.sig.base.b",
+        "i.sig.base.c",
+        "i.sig.base.words"
+      ],
+      "masteryItemIds": [
+        "i.sig.base.a",
+        "i.sig.base.b"
+      ],
+      "teach": [
+        "A baseline is what's normal for a specific person — their usual energy, talkativeness, tone, expressiveness. A deviation from someone's own baseline is far more informative than comparing their behaviour to some imagined 'typical' person.",
+        "Reading a behaviour as significant without knowing what's normal for that person. A naturally quiet, reserved person being quiet today tells you much less than a normally animated person suddenly being quiet.",
+        "Building a baseline takes time and repeated observation — with someone you don't know well, there often isn't one yet, which is itself a reason for extra caution before reading much into any one behaviour."
+      ],
+      "example": "A naturally soft-spoken, reserved coworker gives short answers in a meeting. Without knowing this is simply their baseline, it might wrongly read as disengagement or frustration — compared to a normally talkative colleague suddenly giving short answers, which really would be a meaningful deviation from their own normal.",
+      "practicePrompts": [
+        "Think of someone whose baseline behaviour you know well.",
+        "Think of someone you don't know well yet, and notice how much less confidently you can read their behaviour.",
+        "Consider a time you misjudged someone because you compared them to a generic 'normal' rather than their own baseline."
+      ],
+      "apply": "Before reading much into someone's behaviour, check whether you actually know their baseline — and hold your read more loosely if you don't.",
+      "reflect": "Think of someone you initially misjudged before you knew their normal. What would knowing their baseline earlier have changed?",
+      "contentVersion": 1,
+      "explanationBackItemId": "i.sig.base.words"
+    },
+    {
+      "id": "behavioural-les-13",
+      "trackId": "behavioural",
+      "moduleId": "behavioural-mod-3",
+      "sequence": 13,
+      "title": "The Same Signal, a Different Meaning",
+      "objectives": [
+        "Recognise that the same signal can carry different meanings in different contexts or cultures, rather than assuming a fixed, universal meaning."
+      ],
+      "concepts": [
+        "context_dependence_of_signals"
+      ],
+      "prerequisites": [
+        "behavioural-les-12"
+      ],
+      "interactiveItemIds": [
+        "i.sig.ctx.a",
+        "i.sig.ctx.b",
+        "i.sig.ctx.c",
+        "i.sig.ctx.words"
+      ],
+      "masteryItemIds": [
+        "i.sig.ctx.a",
+        "i.sig.ctx.b"
+      ],
+      "teach": [
+        "The same signal — eye contact, a pause before answering, a direct versus indirect way of declining — can mean different things depending on the setting, relationship, or cultural background involved. There's no single, universal decoder.",
+        "Assuming a signal means the same thing it would in your own default context, without considering that the person's background, the specific relationship, or the setting might shape what it actually signals.",
+        "This isn't about memorising a list of cultural rules — it's about holding your read of any signal a bit more loosely when context, background, or relationship might reasonably shift what it means."
+      ],
+      "example": "Direct eye contact reads as confident and engaged in some settings and relationships, and as overly intense or even disrespectful in others. Reading someone's eye contact (or avoidance of it) without considering their context risks applying the wrong decoder entirely.",
+      "practicePrompts": [
+        "Think of a signal you'd normally read a certain way.",
+        "Consider a context or relationship where that same signal might mean something different.",
+        "Notice how holding the read more loosely changes your confidence in it."
+      ],
+      "apply": "Before reading a signal confidently, consider whether the person's context, relationship to you, or background might shift what it actually means.",
+      "reflect": "Think of a time you misread a signal because you assumed it meant what it would mean in your own usual context.",
+      "contentVersion": 1,
+      "explanationBackItemId": "i.sig.ctx.words"
+    },
+    {
+      "id": "behavioural-les-14",
+      "trackId": "behavioural",
+      "moduleId": "behavioural-mod-3",
+      "sequence": 14,
+      "title": "Reading a Moment Completely",
+      "objectives": [
+        "Combine congruence, tone, baseline and context to read a real moment completely, without over-decoding any single cue."
+      ],
+      "concepts": [
+        "verbal_nonverbal_congruence",
+        "tone_and_pacing",
+        "establishing_baseline",
+        "context_dependence_of_signals"
+      ],
+      "prerequisites": [
+        "behavioural-les-10",
+        "behavioural-les-11",
+        "behavioural-les-12",
+        "behavioural-les-13"
+      ],
+      "interactiveItemIds": [
+        "i.wk3.sig.chk.a",
+        "i.wk3.sig.chk.b",
+        "i.wk3.sig.chk.c",
+        "i.wk3.sig.chk.d"
+      ],
+      "masteryItemIds": [
+        "i.wk3.sig.chk.a",
+        "i.wk3.sig.chk.b",
+        "i.wk3.sig.chk.c",
+        "i.wk3.sig.chk.d"
+      ],
+      "teach": [
+        "This week covered four pieces of reading a real moment: do the words and delivery match, what does the tone and pace carry, what's this person's normal, and does context shift what any of this means. A real moment hands you all four at once.",
+        "Reading one signal confidently — a tone shift, a mismatch, a deviation from normal — without checking it against the others. A tone shift that's actually just this person's baseline isn't a real signal at all; a mismatch that makes sense given the context might not be worth much either.",
+        "None of these four checks are about becoming a confident decoder of other people. They're about reading more carefully and more cautiously — noticing more, concluding less, until there's reason to be more confident."
+      ],
+      "example": "A colleague's reply sounds clipped (tone) and the words say \"it's fine\" while their usual replies are warmer (baseline) — but you also know they're in a culture and workplace context where directness and brevity is simply the professional norm, not a sign of being upset (context). Reading all four together, rather than any one alone, gives a much more careful picture.",
+      "practicePrompts": [
+        "Think of a real moment with someone recently.",
+        "Check it against all four: congruence, tone, baseline, and context.",
+        "Notice whether your confidence in your read changes once all four are considered together."
+      ],
+      "apply": "Next time you're reading a real moment with someone, deliberately check congruence, tone, baseline, and context together before concluding anything.",
+      "reflect": "Across this week, which single check — congruence, tone, baseline, or context — do you most often skip when reading someone?",
+      "contentVersion": 1
+    },
+    {
+      "id": "behavioural-les-15",
+      "trackId": "behavioural",
+      "moduleId": "behavioural-mod-4",
+      "sequence": 15,
+      "title": "More Than One Cause",
+      "objectives": [
+        "Recognise that a single signal almost always has more than one plausible cause, and resist settling on just one."
+      ],
+      "concepts": [
+        "signal_ambiguity"
+      ],
+      "prerequisites": [
+        "behavioural-les-14"
+      ],
+      "interactiveItemIds": [
+        "i.sig.amb.a",
+        "i.sig.amb.b",
+        "i.sig.amb.c",
+        "i.sig.amb.words"
+      ],
+      "masteryItemIds": [
+        "i.sig.amb.a",
+        "i.sig.amb.b"
+      ],
+      "teach": [
+        "Almost any single signal — a sigh, a long pause, a tense jaw — has more than one plausible cause. The same sigh can mean frustration, tiredness, relief, or nothing much at all.",
+        "Picking the first, most dramatic-sounding explanation for a signal and treating it as settled, the same error generating alternative explanations (from the first module) was built to catch — now applied specifically to reading signals in the moment.",
+        "Ambiguity doesn't mean signals are useless — it means a single signal is a reason to look further (at congruence, baseline, context, or just to ask), not a reason to conclude."
+      ],
+      "example": "A friend sighs heavily while looking at their phone. That sigh alone could mean they got bad news, they're tired, they're frustrated with an unrelated app, or they're just stretching — treating any one of these as the confirmed explanation from the sigh alone overclaims what one signal can actually tell you.",
+      "practicePrompts": [
+        "Think of a recent signal you noticed in someone — a sigh, a pause, a look.",
+        "List at least two different plausible causes for it.",
+        "Notice how differently confident you'd feel acting on just one versus holding several open."
+      ],
+      "apply": "Next time you notice a single signal in someone, generate at least two plausible causes before acting on any one of them.",
+      "reflect": "Think of a time you acted on a single signal that turned out to mean something completely different than you assumed.",
+      "contentVersion": 1,
+      "explanationBackItemId": "i.sig.amb.words"
+    },
+    {
+      "id": "behavioural-les-16",
+      "trackId": "behavioural",
+      "moduleId": "behavioural-mod-4",
+      "sequence": 16,
+      "title": "Stress Response or Emotion?",
+      "objectives": [
+        "Distinguish a physiological cause for a signal from an emotional one, rather than defaulting to an emotional explanation."
+      ],
+      "concepts": [
+        "physiological_vs_emotional_signals"
+      ],
+      "prerequisites": [
+        "behavioural-les-15"
+      ],
+      "interactiveItemIds": [
+        "i.sig.phys.a",
+        "i.sig.phys.b",
+        "i.sig.phys.c",
+        "i.sig.phys.words"
+      ],
+      "masteryItemIds": [
+        "i.sig.phys.a",
+        "i.sig.phys.b"
+      ],
+      "teach": [
+        "Many signals that look emotional have a purely physical explanation: fidgeting from too much caffeine, a flat affect from exhaustion, irritability from being too cold or too hungry, a racing heart from having just climbed stairs.",
+        "Defaulting straight to an emotional explanation for a physical signal, without considering ordinary physical causes first. Jitteriness, flatness, and irritability all have mundane physical explanations at least as often as emotional ones.",
+        "This isn't about dismissing real emotional signals — it's about genuinely considering the physical explanation alongside the emotional one, rather than skipping straight past it."
+      ],
+      "example": "A normally steady colleague seems jittery and unfocused in a morning meeting. Before concluding they're anxious about something specific, it's worth considering that they mentioned having three coffees before 9am, skipped breakfast, or got very little sleep — all physical explanations at least as plausible as an emotional one.",
+      "practicePrompts": [
+        "Think of a signal you recently read as emotional in someone.",
+        "Consider at least one plausible physical explanation for the same signal.",
+        "Notice whether you actually checked, or just assumed the emotional read was correct."
+      ],
+      "apply": "Next time you read a signal as emotional, pause and consider at least one physical explanation before settling on the emotional one.",
+      "reflect": "Think of a time your own physical state (tired, hungry, caffeinated) was misread by someone else as an emotional state.",
+      "contentVersion": 1,
+      "explanationBackItemId": "i.sig.phys.words"
+    },
+    {
+      "id": "behavioural-les-17",
+      "trackId": "behavioural",
+      "moduleId": "behavioural-mod-4",
+      "sequence": 17,
+      "title": "Reading a Room's Shifting Energy",
+      "objectives": [
+        "Notice a shift in a group's collective engagement, based on the pattern across the group, not one person's reaction."
+      ],
+      "concepts": [
+        "reading_group_energy"
+      ],
+      "prerequisites": [
+        "behavioural-les-16"
+      ],
+      "interactiveItemIds": [
+        "i.sig.room.a",
+        "i.sig.room.b",
+        "i.sig.room.c",
+        "i.sig.room.words"
+      ],
+      "masteryItemIds": [
+        "i.sig.room.a",
+        "i.sig.room.b"
+      ],
+      "teach": [
+        "A room or group has its own collective energy — engagement, restlessness, enthusiasm — that's a real pattern across several people, not just one person's individual reaction.",
+        "Reading the whole room's mood from a single visible reaction — one person's frown, one yawn — rather than the pattern across the group. One person's individual state doesn't necessarily reflect everyone else's.",
+        "Reading a room well means scanning broadly — posture, attention, side conversations, energy level — across several people, the same way a good read of one person combines several signals rather than one."
+      ],
+      "example": "In a long meeting, one person yawns. That alone says little about the room. Noticing that several people have also started checking their phones, side conversations have picked up, and posture has slumped across most of the table is a genuine read of shifting group energy — the single yawn wasn't.",
+      "practicePrompts": [
+        "Think of a group setting you were recently in — a meeting, a class, a gathering.",
+        "Consider the pattern across several people, not just one person's reaction.",
+        "Notice what a genuine shift in group energy would actually look like, versus one person's individual moment."
+      ],
+      "apply": "Next time you're reading a room, scan across several people's engagement rather than anchoring on one person's visible reaction.",
+      "reflect": "Think of a time you misjudged a whole room's mood based on one person's reaction. What did the broader pattern actually look like?",
+      "contentVersion": 1,
+      "explanationBackItemId": "i.sig.room.words"
+    },
+    {
+      "id": "behavioural-les-18",
+      "trackId": "behavioural",
+      "moduleId": "behavioural-mod-4",
+      "sequence": 18,
+      "title": "Checking Your Read",
+      "objectives": [
+        "Verify an inferred read of someone's state with a direct, low-pressure question, rather than acting on the inference alone."
+      ],
+      "concepts": [
+        "checking_your_read"
+      ],
+      "prerequisites": [
+        "behavioural-les-17"
+      ],
+      "interactiveItemIds": [
+        "i.sig.check.a",
+        "i.sig.check.b",
+        "i.sig.check.c",
+        "i.sig.check.words"
+      ],
+      "masteryItemIds": [
+        "i.sig.check.a",
+        "i.sig.check.b"
+      ],
+      "teach": [
+        "However carefully a read is built — congruence, tone, baseline, context, multiple possible causes considered — it's still an inference, not a fact. A direct, low-pressure question is usually the single most reliable way to actually find out.",
+        "Treating a careful, multi-signal read as confirmed and acting on it without ever checking, even when a simple direct question was available and low-cost.",
+        "Checking doesn't mean announcing your whole analysis — a simple, low-pressure \"you doing okay?\" or \"how's this landing for you?\" usually does the job without putting the other person on the spot."
+      ],
+      "example": "After reading several signals that suggest a colleague is overwhelmed — tense tone, short answers, a deviation from their normal — rather than quietly deciding to take work off their plate based on the inference alone, a simple \"you seem a bit stretched today, everything okay?\" actually finds out, rather than guessing.",
+      "practicePrompts": [
+        "Think of a recent read you built carefully from several signals.",
+        "Consider whether you ever actually checked it against reality.",
+        "Draft a simple, low-pressure question that would have checked it directly."
+      ],
+      "apply": "Next time you build a careful read of someone's state, follow it with a direct, low-pressure question rather than acting on the inference alone.",
+      "reflect": "Think of a time acting on an unchecked read went wrong. What would a simple direct question have told you instead?",
+      "contentVersion": 1,
+      "explanationBackItemId": "i.sig.check.words"
+    },
+    {
+      "id": "behavioural-les-19",
+      "trackId": "behavioural",
+      "moduleId": "behavioural-mod-4",
+      "sequence": 19,
+      "title": "Signals, Combined",
+      "objectives": [
+        "Combine signal ambiguity, physiological explanations, group-energy reading and checking your read into one complete approach to reading people.",
+        "Describe a real situation, using everything covered across both signal-reading modules."
+      ],
+      "concepts": [
+        "signal_ambiguity",
+        "physiological_vs_emotional_signals",
+        "reading_group_energy",
+        "checking_your_read"
+      ],
+      "prerequisites": [
+        "behavioural-les-15",
+        "behavioural-les-16",
+        "behavioural-les-17",
+        "behavioural-les-18"
+      ],
+      "interactiveItemIds": [
+        "i.wk4.sig.chk.a",
+        "i.wk4.sig.chk.b",
+        "i.wk4.sig.chk.c",
+        "i.wk4.sig.chk.d",
+        "i.sig.words"
+      ],
+      "masteryItemIds": [
+        "i.wk4.sig.chk.a",
+        "i.wk4.sig.chk.b",
+        "i.wk4.sig.chk.c",
+        "i.wk4.sig.chk.d"
+      ],
+      "explanationBackItemId": "i.sig.words",
+      "teach": [
+        "This week covered holding a signal's ambiguity open, considering physical causes, reading a group rather than one person, and checking any read against reality. Together with last week's congruence, tone, baseline and context, that's eight separate habits for reading people more carefully, not more confidently.",
+        "Treating 'reading people well' as becoming a confident decoder. The actual skill this whole module built is closer to the opposite: noticing more, concluding less, holding reads loosely, and checking before acting.",
+        "This closes out both signal-reading modules. The next modules build on this foundation — listening, feedback, and perspective-taking all assume you're reading signals this carefully rather than jumping to conclusions from a single cue."
+      ],
+      "example": "A teammate seems withdrawn in a group meeting — tense tone, short answers, unlike their usual self (congruence, tone, baseline). Rather than reading the whole room as tense from this one person (group energy), considering only an emotional cause while they mentioned a rough commute (physiological), or acting on the inference silently, checking in afterward with a simple, direct question actually finds out what's going on.",
+      "practicePrompts": [
+        "Think of a real, current situation involving reading someone or a group.",
+        "Check it against all eight ideas from this week and last.",
+        "Consider what checking your read directly would look like here."
+      ],
+      "apply": "In your next real interaction, deliberately hold your read of someone loosely, and check it with a direct question before acting on it.",
+      "reflect": "In your own words, describe a real recent moment of reading someone or a room, and check it against as many of these eight ideas as actually apply.",
+      "contentVersion": 1
     }
   ],
   "concepts": [
@@ -500,6 +955,54 @@
       "trackId": "behavioural",
       "moduleId": "behavioural-mod-2",
       "label": "Small-Sample Generalisation"
+    },
+    {
+      "id": "verbal_nonverbal_congruence",
+      "trackId": "behavioural",
+      "moduleId": "behavioural-mod-3",
+      "label": "Whether words and nonverbal signals match or conflict"
+    },
+    {
+      "id": "tone_and_pacing",
+      "trackId": "behavioural",
+      "moduleId": "behavioural-mod-3",
+      "label": "What tone and pace carry beyond the literal words"
+    },
+    {
+      "id": "establishing_baseline",
+      "trackId": "behavioural",
+      "moduleId": "behavioural-mod-3",
+      "label": "Knowing someone's normal before reading a deviation"
+    },
+    {
+      "id": "context_dependence_of_signals",
+      "trackId": "behavioural",
+      "moduleId": "behavioural-mod-3",
+      "label": "The same signal meaning different things in different contexts"
+    },
+    {
+      "id": "signal_ambiguity",
+      "trackId": "behavioural",
+      "moduleId": "behavioural-mod-4",
+      "label": "A single signal having more than one possible cause"
+    },
+    {
+      "id": "physiological_vs_emotional_signals",
+      "trackId": "behavioural",
+      "moduleId": "behavioural-mod-4",
+      "label": "Telling a physical cause apart from an emotional one"
+    },
+    {
+      "id": "reading_group_energy",
+      "trackId": "behavioural",
+      "moduleId": "behavioural-mod-4",
+      "label": "Noticing a shift in a group's collective engagement"
+    },
+    {
+      "id": "checking_your_read",
+      "trackId": "behavioural",
+      "moduleId": "behavioural-mod-4",
+      "label": "Verifying an inferred read instead of acting on it blind"
     }
   ],
   "misconceptions": [
@@ -562,6 +1065,54 @@
       "trackId": "behavioural",
       "label": "Small-sample overconfidence",
       "description": "Treating a pattern seen in only a few instances as if it were as reliable as one seen across many."
+    },
+    {
+      "id": "behavioural-congruence_mismatch_ignored",
+      "trackId": "behavioural",
+      "label": "A words/nonverbal mismatch ignored",
+      "description": "Taking someone's stated words at face value when their tone or nonverbal behaviour conflicts with them, without noting the mismatch itself as worth attention."
+    },
+    {
+      "id": "behavioural-tone_ignored",
+      "trackId": "behavioural",
+      "label": "Tone and pacing ignored",
+      "description": "Attending only to the literal content of what someone says while ignoring what their tone, pace, or delivery itself communicates."
+    },
+    {
+      "id": "behavioural-no_baseline_established",
+      "trackId": "behavioural",
+      "label": "No baseline established",
+      "description": "Treating a behaviour as significant or unusual without first knowing what's normal for that specific person."
+    },
+    {
+      "id": "behavioural-signal_meaning_assumed_universal",
+      "trackId": "behavioural",
+      "label": "Signal meaning assumed universal",
+      "description": "Assuming a gesture, expression, or behaviour means the same thing regardless of the person, context, or culture it occurs in."
+    },
+    {
+      "id": "behavioural-single_cue_overread",
+      "trackId": "behavioural",
+      "label": "A single cue over-read",
+      "description": "Treating one isolated signal as if it definitively reveals someone's emotion or intent, without considering context or alternative causes."
+    },
+    {
+      "id": "behavioural-physiological_mistaken_for_emotional",
+      "trackId": "behavioural",
+      "label": "A physiological cause mistaken for an emotional one",
+      "description": "Attributing a physical response — caused by caffeine, tiredness, temperature, illness — to an emotional state without considering the physical explanation."
+    },
+    {
+      "id": "behavioural-group_energy_misread_from_one_person",
+      "trackId": "behavioural",
+      "label": "Group energy misread from one person",
+      "description": "Judging an entire group's mood or engagement from one person's visible reaction, rather than the pattern across the group."
+    },
+    {
+      "id": "behavioural-read_acted_on_without_checking",
+      "trackId": "behavioural",
+      "label": "An inferred read acted on without checking",
+      "description": "Acting on an inferred read of someone's internal state as if it were confirmed, without ever checking it against reality through a direct, low-pressure question."
     }
   ]
 }
