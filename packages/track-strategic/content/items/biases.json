@@ -1,0 +1,912 @@
+[
+  {
+    "id": "i.bias.over.a",
+    "concept": "overconfidence",
+    "scenario": "A stock picker says he's '95% certain' a particular stock will outperform the market this year, based on his own analysis.",
+    "type": "reason_choice",
+    "prompt": "What's the most useful check on this confidence level?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Checking how often his similarly confident past predictions actually turned out right.",
+        "conceptTag": "overconfidence"
+      },
+      {
+        "id": "B",
+        "text": "Trusting the number, since feeling 95% certain is itself strong evidence of being right.",
+        "misconception": "strategic-overconfidence_unchecked"
+      },
+      {
+        "id": "C",
+        "text": "Asking him to restate the prediction more forcefully to confirm his certainty.",
+        "misconception": "strategic-overconfidence_unchecked"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "A felt sense of certainty isn't itself evidence of accuracy — checking the actual track record of similarly confident past predictions is what tells you how much to trust this one."
+  },
+  {
+    "id": "i.bias.over.b",
+    "concept": "overconfidence",
+    "scenario": "A team consistently rates their project completion estimates as 'very likely accurate', but a review shows their past estimates have been wrong, usually too optimistic, about 70% of the time.",
+    "type": "reason_choice",
+    "prompt": "What should the team do with this information?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Adjust future estimates to account for their actual track record, not just their felt confidence.",
+        "conceptTag": "overconfidence"
+      },
+      {
+        "id": "B",
+        "text": "Ignore the track record, since this project feels different from past ones.",
+        "misconception": "strategic-overconfidence_unchecked"
+      },
+      {
+        "id": "C",
+        "text": "Conclude the past estimates must have been unlucky, unrelated to their confidence level.",
+        "misconception": "strategic-overconfidence_unchecked"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "A consistent gap between confidence and actual accuracy is exactly the kind of track record that should recalibrate future confidence, rather than being dismissed as bad luck."
+  },
+  {
+    "id": "i.bias.over.c",
+    "concept": "overconfidence",
+    "scenario": "Two forecasters predict the same event. One expresses high confidence; the other expresses moderate confidence but has a stronger track record on similar predictions.",
+    "type": "reason_choice",
+    "prompt": "Whose prediction should be weighed more heavily?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The one with the stronger track record, regardless of how confident each one sounds.",
+        "conceptTag": "overconfidence"
+      },
+      {
+        "id": "B",
+        "text": "The more confident one, since stronger confidence is itself a sign of a better-informed prediction.",
+        "misconception": "strategic-overconfidence_unchecked"
+      },
+      {
+        "id": "C",
+        "text": "Both equally, since confidence and track record cancel each other out.",
+        "misconception": "strategic-overconfidence_unchecked"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Track record is the outside, checkable measure; stated confidence is just a feeling — when they diverge, the track record is the more reliable guide."
+  },
+  {
+    "id": "i.bias.loss.a",
+    "concept": "loss_aversion_framing",
+    "scenario": "A manager must decide whether to shut down a failing division. She keeps describing the decision as 'accepting a loss' and keeps delaying it.",
+    "type": "reason_choice",
+    "prompt": "How would reframing the decision help?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Asking 'would I start this division today, knowing what I know now?' reframes it as a fresh choice, removing the loss-framing that's making the decision feel harder than it needs to.",
+        "conceptTag": "loss_aversion_framing"
+      },
+      {
+        "id": "B",
+        "text": "It wouldn't help — the financial numbers are the same no matter how the decision is framed.",
+        "misconception": "strategic-loss_aversion_blind"
+      },
+      {
+        "id": "C",
+        "text": "Reframing would only help if the division were actually profitable.",
+        "misconception": "strategic-loss_aversion_blind"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Loss aversion is specifically about framing, not just the numbers — reframing the same decision as a fresh choice removes the asymmetric weight the loss-framing was adding, and can change what feels like the obvious choice."
+  },
+  {
+    "id": "i.bias.loss.b",
+    "concept": "loss_aversion_framing",
+    "scenario": "An investor refuses to sell a stock that's dropped sharply, saying she doesn't want to 'lock in the loss', even though she wouldn't buy the same stock today at its current price if she didn't already own it.",
+    "type": "reason_choice",
+    "prompt": "What does this reveal?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Loss aversion is driving the decision — holding on to avoid a felt loss, rather than because the investment is still a good choice going forward.",
+        "conceptTag": "loss_aversion_framing"
+      },
+      {
+        "id": "B",
+        "text": "Nothing unusual — holding a losing stock is always the financially correct choice.",
+        "misconception": "strategic-loss_aversion_blind"
+      },
+      {
+        "id": "C",
+        "text": "She must have new information suggesting the stock will recover.",
+        "misconception": "strategic-loss_aversion_blind"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Wouldn't-buy-it-today is a strong signal that loss aversion, not a genuine investment case, is what's driving the decision to keep holding."
+  },
+  {
+    "id": "i.bias.loss.c",
+    "concept": "loss_aversion_framing",
+    "scenario": "Two identical insurance policies are offered. One is advertised as 'avoid losing your savings to an unexpected event'; the other is advertised as 'protect your savings'. People respond very differently to the two, even though the coverage is identical.",
+    "type": "reason_choice",
+    "prompt": "What does this show?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Framing a choice around a potential loss, versus around protection, changes how people respond, even when the actual terms are identical.",
+        "conceptTag": "loss_aversion_framing"
+      },
+      {
+        "id": "B",
+        "text": "People respond differently because the policies must actually differ in coverage.",
+        "misconception": "strategic-loss_aversion_blind"
+      },
+      {
+        "id": "C",
+        "text": "The different responses are random and don't reflect a real pattern.",
+        "misconception": "strategic-loss_aversion_blind"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "This is loss aversion at the level of framing itself — identical options can produce different choices purely because of how a loss versus a gain (or protection) is emphasised in the wording."
+  },
+  {
+    "id": "i.bias.anchself.a",
+    "concept": "anchoring_own_estimate",
+    "scenario": "Before estimating how many hours a redesign project will take, a designer happens to recall that a totally unrelated past project took 40 hours. Her estimate for the new project ends up close to 40 hours too, despite the two projects being quite different in scope.",
+    "type": "reason_choice",
+    "prompt": "What's likely happening here?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The unrelated 40-hour figure has anchored her estimate, pulling it toward that number regardless of its actual relevance.",
+        "conceptTag": "anchoring_own_estimate"
+      },
+      {
+        "id": "B",
+        "text": "It's a coincidence with no connection to the earlier number she recalled.",
+        "misconception": "strategic-anchor_own_estimate_uncorrected"
+      },
+      {
+        "id": "C",
+        "text": "Since she's aware anchoring exists, her estimate must already be free of its influence.",
+        "misconception": "strategic-anchor_own_estimate_uncorrected"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "An irrelevant number encountered right before estimating can anchor the estimate, and merely knowing anchoring exists doesn't fully prevent it — a different estimation method is a stronger correction."
+  },
+  {
+    "id": "i.bias.anchself.b",
+    "concept": "anchoring_own_estimate",
+    "scenario": "A planner needs to estimate a project's budget. Instead of adjusting from a vaguely recalled number, she lists every task, estimates each one's cost individually, and sums them.",
+    "type": "reason_choice",
+    "prompt": "Why is this approach less vulnerable to anchoring?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Building the estimate up from its actual components avoids starting from an arbitrary first number and adjusting from it.",
+        "conceptTag": "anchoring_own_estimate"
+      },
+      {
+        "id": "B",
+        "text": "It isn't actually less vulnerable — anchoring affects every estimation method equally.",
+        "misconception": "strategic-anchor_own_estimate_uncorrected"
+      },
+      {
+        "id": "C",
+        "text": "It's less vulnerable only because it takes longer to complete.",
+        "misconception": "strategic-anchor_own_estimate_uncorrected"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Building up from components, rather than adjusting from a recalled or arbitrary starting number, is specifically what avoids the anchor-and-adjust pattern anchoring relies on."
+  },
+  {
+    "id": "i.bias.anchself.c",
+    "concept": "anchoring_own_estimate",
+    "scenario": "A juror is asked to estimate appropriate damages in a case. Before deliberating, the plaintiff's lawyer mentions an unrelated, very large number early in the arguments. The juror's final estimate ends up unusually high.",
+    "type": "reason_choice",
+    "prompt": "What does this suggest about the mention of the large number?",
+    "options": [
+      {
+        "id": "A",
+        "text": "It may have anchored the juror's estimate upward, even though the number itself wasn't meant to be a direct basis for the damages.",
+        "conceptTag": "anchoring_own_estimate"
+      },
+      {
+        "id": "B",
+        "text": "It had no effect, since jurors are trained to ignore irrelevant numbers.",
+        "misconception": "strategic-anchor_own_estimate_uncorrected"
+      },
+      {
+        "id": "C",
+        "text": "It only matters if the juror explicitly remembers and cites the number later.",
+        "misconception": "strategic-anchor_own_estimate_uncorrected"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Anchoring can shift an estimate even without the anchor being consciously used as a basis for it — awareness or training alone doesn't guarantee immunity to the effect."
+  },
+  {
+    "id": "i.bias.sunk.a",
+    "concept": "sunk_cost",
+    "scenario": "A company has spent $500,000 on a software project that newer tools have since made largely unnecessary. A manager argues they should finish it anyway, since so much has already been spent.",
+    "type": "reason_choice",
+    "prompt": "What does the fresh-start question suggest about this reasoning?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Asking whether they'd start this project today, knowing what they know now, would likely reveal the $500,000 shouldn't be driving the decision — it's gone either way.",
+        "conceptTag": "sunk_cost"
+      },
+      {
+        "id": "B",
+        "text": "The $500,000 already spent is a legitimate reason to continue, since abandoning it would waste that investment.",
+        "misconception": "strategic-sunk_cost_influence"
+      },
+      {
+        "id": "C",
+        "text": "The fresh-start question doesn't apply here, since real money has already been spent.",
+        "misconception": "strategic-sunk_cost_influence"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "The $500,000 is gone regardless of what happens next — the fresh-start question correctly excludes it and asks only whether continuing is still the best use of future resources."
+  },
+  {
+    "id": "i.bias.sunk.b",
+    "concept": "sunk_cost",
+    "scenario": "Someone has sat through 40 minutes of a 2-hour movie they're not enjoying, and keeps watching mainly because they've 'already invested 40 minutes'.",
+    "type": "reason_choice",
+    "prompt": "What does sunk cost reasoning say about this?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The 40 minutes already spent is gone regardless of whether they keep watching — the only real question is whether the remaining 80 minutes are worth it.",
+        "conceptTag": "sunk_cost"
+      },
+      {
+        "id": "B",
+        "text": "The 40 minutes already invested is a good reason to finish the movie.",
+        "misconception": "strategic-sunk_cost_influence"
+      },
+      {
+        "id": "C",
+        "text": "Stopping now would make the first 40 minutes a worse use of time than continuing would.",
+        "misconception": "strategic-sunk_cost_influence"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "The already-watched 40 minutes can't be un-spent either way — only the value of the remaining 80 minutes, going forward, should factor into whether to continue."
+  },
+  {
+    "id": "i.bias.sunk.c",
+    "concept": "sunk_cost",
+    "scenario": "A city has spent years and significant funds planning a bridge that updated traffic data now shows isn't needed. Officials debate whether to proceed, citing the years already invested in planning.",
+    "type": "reason_choice",
+    "prompt": "What's the sunk-cost-free way to frame this decision?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Given current traffic data, is building this bridge still the best use of the remaining budget — regardless of how much planning has already gone into it?",
+        "conceptTag": "sunk_cost"
+      },
+      {
+        "id": "B",
+        "text": "Given how much planning has already been invested, the bridge should be built regardless of what current data shows.",
+        "misconception": "strategic-sunk_cost_influence"
+      },
+      {
+        "id": "C",
+        "text": "The years of planning make this fundamentally different from an ordinary sunk-cost situation.",
+        "misconception": "strategic-sunk_cost_influence"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "The years of planning already spent are sunk regardless of outcome — the only question that should drive a forward decision is whether the bridge is still worth building given what's known now."
+  },
+  {
+    "id": "i.bias.esc.a",
+    "concept": "escalation_of_commitment",
+    "scenario": "A startup keeps raising additional funding rounds for a product that user data has shown, for over a year, isn't gaining traction, specifically because the founders don't want their years of work to have been for nothing.",
+    "type": "reason_choice",
+    "prompt": "What would a fresh outsider, with no history in the company, likely say?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Looking only at current user data, they'd likely recommend stopping or pivoting — 'not wanting the work to be for nothing' is escalation of commitment, not a reason grounded in the current data.",
+        "conceptTag": "escalation_of_commitment"
+      },
+      {
+        "id": "B",
+        "text": "They'd agree the years already invested justify continuing to raise funding.",
+        "misconception": "strategic-escalation_of_commitment"
+      },
+      {
+        "id": "C",
+        "text": "They'd have no useful opinion, since they lack the founders' history with the product.",
+        "misconception": "strategic-escalation_of_commitment"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "A fresh outsider's view, grounded only in current data rather than history with the decision, is exactly what escalation of commitment obscures for the people already invested in it."
+  },
+  {
+    "id": "i.bias.esc.b",
+    "concept": "escalation_of_commitment",
+    "scenario": "A manager who championed a strategy that's now clearly underperforming keeps defending and expanding it, rather than reassessing, largely because reversing course would mean admitting the original call was wrong.",
+    "type": "reason_choice",
+    "prompt": "What's driving this pattern?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Escalation of commitment — continuing to avoid admitting a past mistake, rather than reassessing the strategy on its current merits.",
+        "conceptTag": "escalation_of_commitment"
+      },
+      {
+        "id": "B",
+        "text": "A reasonable belief that the strategy will eventually turn around on its own.",
+        "misconception": "strategic-escalation_of_commitment"
+      },
+      {
+        "id": "C",
+        "text": "Normal persistence, which is always the correct response to early setbacks.",
+        "misconception": "strategic-escalation_of_commitment"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Continuing specifically to avoid admitting an earlier call was wrong, rather than because current evidence supports continuing, is the defining pattern of escalation of commitment."
+  },
+  {
+    "id": "i.bias.esc.c",
+    "concept": "escalation_of_commitment",
+    "scenario": "A poker player keeps raising bets in a hand that current odds clearly favour folding, mainly because of how much they've already put into the pot this hand.",
+    "type": "reason_choice",
+    "prompt": "What should the chips already in the pot mean for the next decision?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Nothing — they're already committed regardless of the next bet, so only the current odds should drive whether to fold, call, or raise.",
+        "conceptTag": "escalation_of_commitment"
+      },
+      {
+        "id": "B",
+        "text": "They justify raising further, to avoid having contributed to the pot for nothing.",
+        "misconception": "strategic-escalation_of_commitment"
+      },
+      {
+        "id": "C",
+        "text": "They should be added to the calculation of whether the next bet is worth it.",
+        "misconception": "strategic-sunk_cost_influence"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Chips already in the pot are gone regardless of the next decision — a forward-looking bet should be judged purely on the current odds, not on what's already been committed."
+  },
+  {
+    "id": "i.bias.plan.a",
+    "concept": "planning_fallacy_cooperation",
+    "scenario": "A project manager assumes three other teams will each review and approve a proposal within two days, because that would be the convenient timeline, despite similar reviews historically taking a week or more.",
+    "type": "reason_choice",
+    "prompt": "What would a more realistic plan look like?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Planning around the historical pattern — a week or more with at least one round of pushback — rather than the hoped-for two-day timeline.",
+        "conceptTag": "planning_fallacy_cooperation"
+      },
+      {
+        "id": "B",
+        "text": "Keeping the two-day plan, since each review is a fresh situation unrelated to past ones.",
+        "misconception": "strategic-planning_fallacy_cooperation"
+      },
+      {
+        "id": "C",
+        "text": "Assuming the other teams will rush their review this time, given how much is at stake.",
+        "misconception": "strategic-planning_fallacy_cooperation"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Planning around how similar cooperation has actually gone before is the correction for the planning fallacy — hoping this instance will be unusually smooth isn't a plan, it's an assumption."
+  },
+  {
+    "id": "i.bias.plan.b",
+    "concept": "planning_fallacy_cooperation",
+    "scenario": "A couple plans a home renovation assuming every contractor will show up exactly on schedule and every delivery will arrive on time, despite friends' renovations consistently running weeks behind.",
+    "type": "reason_choice",
+    "prompt": "What does the planning fallacy suggest about this plan?",
+    "options": [
+      {
+        "id": "A",
+        "text": "It likely underestimates realistic delays based on how similar renovations have actually gone, not just this one's hoped-for schedule.",
+        "conceptTag": "planning_fallacy_cooperation"
+      },
+      {
+        "id": "B",
+        "text": "Their renovation is probably different enough that others' delays don't apply.",
+        "misconception": "strategic-planning_fallacy_cooperation"
+      },
+      {
+        "id": "C",
+        "text": "Contractors and deliveries are fully within their control, so no adjustment is needed.",
+        "misconception": "strategic-planning_fallacy_cooperation"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Assuming this instance will go more smoothly than the pattern shown by similar past cases, without a specific reason to expect that, is exactly the planning fallacy applied to other people's cooperation."
+  },
+  {
+    "id": "i.bias.plan.c",
+    "concept": "planning_fallacy_cooperation",
+    "scenario": "A negotiator assumes the other party will sign off on a term sheet within a day, simply because it seems like a reasonable deal to her.",
+    "type": "reason_choice",
+    "prompt": "What's missing from this assumption?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A realistic estimate based on how long similar sign-offs have actually taken, rather than how reasonable the deal seems from her own side.",
+        "conceptTag": "planning_fallacy_cooperation"
+      },
+      {
+        "id": "B",
+        "text": "Nothing — a reasonable deal is always signed quickly.",
+        "misconception": "strategic-planning_fallacy_cooperation"
+      },
+      {
+        "id": "C",
+        "text": "The other party's willingness to sign has nothing to do with past patterns.",
+        "misconception": "strategic-planning_fallacy_cooperation"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "How reasonable a deal seems from one side doesn't predict how quickly the other side will actually move — a realistic timeline comes from past patterns, not from one side's own sense of fairness."
+  },
+  {
+    "id": "i.bias.self.a",
+    "concept": "self_serving_attribution",
+    "scenario": "After winning a competitive bid, a salesperson credits his sharp pitch and preparation. After losing a similar bid the next month, he blames an unfair selection process and bad luck.",
+    "type": "reason_choice",
+    "prompt": "What does applying the same standard to both outcomes suggest?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Both preparation and circumstances likely played a role in each outcome — crediting skill for the win and blaming luck for the loss, without examining both consistently, is self-serving attribution.",
+        "conceptTag": "self_serving_attribution"
+      },
+      {
+        "id": "B",
+        "text": "The explanations are both accurate, since they reflect how each bid genuinely felt to him.",
+        "misconception": "strategic-self_serving_attribution"
+      },
+      {
+        "id": "C",
+        "text": "Only the losses need re-examining; the win's explanation is presumably already correct.",
+        "misconception": "strategic-self_serving_attribution"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Applying the same standard means examining both the win and the loss for the same mix of skill and circumstance, rather than crediting skill only when it's flattering."
+  },
+  {
+    "id": "i.bias.self.b",
+    "concept": "self_serving_attribution",
+    "scenario": "Two chess players lose similar games. One says 'I made a clear mistake in the opening.' The other says 'my opponent got lucky with that position.'",
+    "type": "reason_choice",
+    "prompt": "What does the first player's explanation offer that the second's doesn't?",
+    "options": [
+      {
+        "id": "A",
+        "text": "An explanation that attributes the loss to something within their own control, which is more useful for improving than attributing it entirely to luck.",
+        "conceptTag": "self_serving_attribution"
+      },
+      {
+        "id": "B",
+        "text": "Nothing meaningfully different — both explanations are equally useful.",
+        "misconception": "strategic-self_serving_attribution"
+      },
+      {
+        "id": "C",
+        "text": "Confirmation that the second player is simply more honest about luck's role in chess.",
+        "misconception": "strategic-self_serving_attribution"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Attributing a loss to luck, when a real mistake was available as an explanation, is a classic self-serving pattern — it protects self-image but removes the chance to learn from the actual cause."
+  },
+  {
+    "id": "i.bias.self.c",
+    "concept": "self_serving_attribution",
+    "scenario": "A manager whose team hits its target credits her leadership. When the team misses the next target under very similar conditions, she attributes it to the market being 'unusually difficult this quarter'.",
+    "type": "reason_choice",
+    "prompt": "What would a consistent standard require here?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Examining whether market conditions, and her leadership, each played a similar role in both the hit and the miss, rather than crediting leadership only for the win.",
+        "conceptTag": "self_serving_attribution"
+      },
+      {
+        "id": "B",
+        "text": "Accepting both explanations as given, since market difficulty is always a legitimate factor.",
+        "misconception": "strategic-self_serving_attribution"
+      },
+      {
+        "id": "C",
+        "text": "Concluding her leadership must have genuinely declined between the two quarters.",
+        "misconception": "strategic-self_serving_attribution"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "A consistent standard means checking both explanations against the same mix of factors, not reserving credit for leadership only when results are good and blame for the environment only when they're not."
+  },
+  {
+    "id": "i.bias.ctrl.a",
+    "concept": "illusion_of_control",
+    "scenario": "A gambler believes that blowing on dice before rolling, or rolling them himself rather than letting someone else roll, changes his odds of winning.",
+    "type": "reason_choice",
+    "prompt": "What does the illusion of control suggest about this belief?",
+    "options": [
+      {
+        "id": "A",
+        "text": "These rituals create a feeling of influence without actually changing the probability of any outcome, which is random.",
+        "conceptTag": "illusion_of_control"
+      },
+      {
+        "id": "B",
+        "text": "Rolling the dice himself genuinely gives him more control over the outcome than someone else rolling.",
+        "misconception": "strategic-illusion_of_control"
+      },
+      {
+        "id": "C",
+        "text": "The beliefs are harmless since they don't affect decisions in any other area of life.",
+        "misconception": "strategic-illusion_of_control"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Active involvement — rolling the dice, a ritual — feels like control but doesn't change a probability that's genuinely random, which is exactly what the illusion of control describes."
+  },
+  {
+    "id": "i.bias.ctrl.b",
+    "concept": "illusion_of_control",
+    "scenario": "An employee checks a pending job application's status online multiple times a day, feeling that staying engaged with it somehow improves her chances.",
+    "type": "reason_choice",
+    "prompt": "What's the actual relationship between the checking and the outcome?",
+    "options": [
+      {
+        "id": "A",
+        "text": "None — checking the status doesn't change the hiring decision, even though it may feel like active involvement in the outcome.",
+        "conceptTag": "illusion_of_control"
+      },
+      {
+        "id": "B",
+        "text": "Checking frequently signals genuine interest to the employer and likely improves her odds.",
+        "misconception": "strategic-illusion_of_control"
+      },
+      {
+        "id": "C",
+        "text": "The relationship depends on how anxious she feels while checking.",
+        "misconception": "strategic-illusion_of_control"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Checking a status page has no causal effect on a hiring decision already being made elsewhere — the feeling of involvement doesn't correspond to actual influence."
+  },
+  {
+    "id": "i.bias.ctrl.c",
+    "concept": "illusion_of_control",
+    "scenario": "An investor spends hours daily researching and adjusting a stock portfolio, in a market where short-term price movements are driven mostly by factors outside any individual investor's influence.",
+    "type": "reason_choice",
+    "prompt": "What question should she ask about this time investment?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Whether the extra time actually changes her outcomes, or just makes her feel more in control of a largely uncontrollable short-term market.",
+        "conceptTag": "illusion_of_control"
+      },
+      {
+        "id": "B",
+        "text": "Whether she's spending enough time, since more research always proportionally improves outcomes.",
+        "misconception": "strategic-illusion_of_control"
+      },
+      {
+        "id": "C",
+        "text": "Nothing — time spent and actual influence over outcomes are always the same thing.",
+        "misconception": "strategic-illusion_of_control"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "More effort and attention don't automatically translate into more actual influence over an outcome, especially one driven largely by factors outside any one person's control — the honest question is whether the effort changes anything real."
+  },
+  {
+    "id": "i.wk8.chk.a",
+    "concept": "overconfidence",
+    "scenario": "A founder is '90% confident' her startup will be profitable within a year. She's reluctant to revise this estimate even after being shown that her own past year-ahead predictions have been right only about half the time.",
+    "type": "reason_choice",
+    "prompt": "What's the combined issue here?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Overconfidence (trusting the felt certainty over her actual track record) is compounded by not updating the estimate even once the track record was shown to her directly.",
+        "conceptTag": "overconfidence"
+      },
+      {
+        "id": "B",
+        "text": "There's no issue, since founders are generally right to be more optimistic than their track record suggests.",
+        "misconception": "strategic-overconfidence_unchecked"
+      },
+      {
+        "id": "C",
+        "text": "The issue is purely about loss aversion, unrelated to her confidence level.",
+        "misconception": "strategic-loss_aversion_blind"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "This is overconfidence in a particularly stubborn form — not just an uncalibrated estimate, but one that resists updating even when direct evidence of the actual track record is presented."
+  },
+  {
+    "id": "i.wk8.chk.b",
+    "concept": "loss_aversion_framing",
+    "scenario": "A company is deciding whether to discontinue a product. The decision is framed internally as 'how much revenue would we lose by discontinuing it', rather than 'is this still the best use of our resources going forward, regardless of its history'. The same team is also anchoring their revised revenue estimate on last year's number without rebuilding it from current data.",
+    "type": "reason_choice",
+    "prompt": "What does this combination risk?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Loss-aversion framing making discontinuation feel worse than it numerically is, compounded by an anchored estimate that isn't grounded in current data either.",
+        "conceptTag": "loss_aversion_framing"
+      },
+      {
+        "id": "B",
+        "text": "No real risk, since both the framing and the anchored estimate are standard business practice.",
+        "misconception": "strategic-loss_aversion_blind"
+      },
+      {
+        "id": "C",
+        "text": "The issue is purely about sunk cost, unrelated to either framing or anchoring.",
+        "misconception": "strategic-sunk_cost_influence"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Two distortions reinforcing each other here: the loss-framed question makes discontinuation feel worse than a neutral framing would, and an anchored, un-rebuilt revenue estimate means the numbers feeding that framing aren't trustworthy either."
+  },
+  {
+    "id": "i.wk8.chk.c",
+    "concept": "anchoring_own_estimate",
+    "scenario": "A planner's budget estimate for a new office renovation starts from a remembered figure for an unrelated past renovation, rather than being built up from the actual rooms and materials involved. The team is also reluctant to revise the budget downward later, since 'we've already told leadership this number'.",
+    "type": "reason_choice",
+    "prompt": "What two distortions does this combine?",
+    "options": [
+      {
+        "id": "A",
+        "text": "An anchored, uncorrected starting estimate, now reinforced by a reluctance to revise it that resembles escalation of commitment to the original (anchored) number.",
+        "conceptTag": "anchoring_own_estimate"
+      },
+      {
+        "id": "B",
+        "text": "Just one distortion — anchoring alone explains the reluctance to revise the number later.",
+        "misconception": "strategic-anchor_own_estimate_uncorrected"
+      },
+      {
+        "id": "C",
+        "text": "Neither distortion applies, since budget estimates are always somewhat uncertain.",
+        "misconception": "strategic-anchor_own_estimate_uncorrected"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "An estimate anchored on an irrelevant past figure is bad enough on its own; resisting revision because it's already been communicated compounds the original anchoring with a separate commitment effect."
+  },
+  {
+    "id": "i.wk8.chk.d",
+    "concept": "sunk_cost",
+    "scenario": "A city has spent years and a significant budget planning a bridge that updated data shows isn't needed, but officials keep citing both the money spent AND their own high confidence in the original traffic projections as reasons to continue.",
+    "type": "reason_choice",
+    "prompt": "What two biases does this combine?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Sunk cost (the money already spent shouldn't drive a forward decision) reinforced by overconfidence (trusting the original projections' certainty over the updated data).",
+        "conceptTag": "sunk_cost"
+      },
+      {
+        "id": "B",
+        "text": "Only sunk cost applies; confidence in projections is unrelated to the decision.",
+        "misconception": "strategic-overconfidence_unchecked"
+      },
+      {
+        "id": "C",
+        "text": "Neither bias applies, since large infrastructure projects are a special case.",
+        "misconception": "strategic-sunk_cost_influence"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Two separate distortions are propping up the same decision here — money already spent that should be irrelevant going forward, and misplaced confidence in projections that updated data has since undercut."
+  },
+  {
+    "id": "i.wk9.chk.a",
+    "concept": "escalation_of_commitment",
+    "scenario": "A founder keeps expanding a failing product line, both because of how much has already been invested AND because she credits her own early insight for the product's initial traction, making it feel like a personal failure to stop now.",
+    "type": "reason_choice",
+    "prompt": "What two biases are reinforcing the decision to continue?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Escalation of commitment (continuing to avoid admitting a mistake) reinforced by self-serving attribution (crediting her own skill for early success, making stopping feel like disowning that earlier credit).",
+        "conceptTag": "escalation_of_commitment"
+      },
+      {
+        "id": "B",
+        "text": "Only escalation of commitment applies; attribution of past success is unrelated.",
+        "misconception": "strategic-self_serving_attribution"
+      },
+      {
+        "id": "C",
+        "text": "Neither bias applies, since founders should always back their own products.",
+        "misconception": "strategic-escalation_of_commitment"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "The two reinforce each other: having attributed early success to her own skill makes admitting the current failure — and thus stopping — feel like a bigger personal reversal than a fresh, unattached assessment would."
+  },
+  {
+    "id": "i.wk9.chk.b",
+    "concept": "planning_fallacy_cooperation",
+    "scenario": "A project plan assumes three partner teams will deliver their components exactly on schedule, despite past projects with the same teams consistently running late. The plan's author also believes that closely monitoring the teams' daily standups will be enough to keep everyone on track.",
+    "type": "reason_choice",
+    "prompt": "What does this combine?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The planning fallacy about others' cooperation (ignoring the actual track record) compounded by an illusion of control (believing monitoring alone will produce on-time delivery it hasn't produced before).",
+        "conceptTag": "planning_fallacy_cooperation"
+      },
+      {
+        "id": "B",
+        "text": "Only the planning fallacy applies; monitoring closely is an effective, proven fix for delays.",
+        "misconception": "strategic-illusion_of_control"
+      },
+      {
+        "id": "C",
+        "text": "Neither bias applies, since close monitoring always resolves delivery problems.",
+        "misconception": "strategic-planning_fallacy_cooperation"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "An unrealistic schedule, uncorrected by the actual track record, is compounded by the belief that monitoring — itself not something that has prevented delays before — will somehow produce a different result this time."
+  },
+  {
+    "id": "i.wk9.chk.c",
+    "concept": "self_serving_attribution",
+    "scenario": "A sales director credits her own strategy for a strong quarter, but blames 'an unusually tough market' for a weak one the following quarter under very similar conditions, and dismisses a team member's suggestion to review what actually changed between the two quarters.",
+    "type": "reason_choice",
+    "prompt": "What does dismissing that suggestion add to the picture?",
+    "options": [
+      {
+        "id": "A",
+        "text": "It blocks the kind of consistent, even-handed review that would catch the self-serving attribution in the first place.",
+        "conceptTag": "self_serving_attribution"
+      },
+      {
+        "id": "B",
+        "text": "It's unrelated — the attribution pattern and the dismissal of review are two separate, unconnected issues.",
+        "misconception": "strategic-self_serving_attribution"
+      },
+      {
+        "id": "C",
+        "text": "It confirms the market genuinely was the deciding factor both times.",
+        "misconception": "strategic-self_serving_attribution"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Self-serving attribution is hardest to catch exactly when the honest review that would reveal it gets dismissed — the two reinforce each other rather than being separate problems."
+  },
+  {
+    "id": "i.wk9.chk.d",
+    "concept": "illusion_of_control",
+    "scenario": "A trader believes that following a complex personal ritual before each trade improves his results, and also continues trading a losing strategy because he's 'due for a win soon' after a long losing streak.",
+    "type": "reason_choice",
+    "prompt": "What two distortions does this combine?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Illusion of control (the ritual doesn't actually influence market outcomes) alongside a mistaken belief that a losing streak makes a win more 'due' — treating independent events as connected.",
+        "conceptTag": "illusion_of_control"
+      },
+      {
+        "id": "B",
+        "text": "Only the ritual belief is a real bias; being 'due for a win' is a statistically sound expectation.",
+        "misconception": "strategic-illusion_of_control"
+      },
+      {
+        "id": "C",
+        "text": "Neither belief is a bias, since experienced traders develop genuine intuition over time.",
+        "misconception": "strategic-illusion_of_control"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Both beliefs mistake a feeling of involvement or pattern for actual influence or predictive power over outcomes that don't actually work that way — a losing streak doesn't make an independent next outcome more likely to turn, any more than a ritual changes the market."
+  },
+  {
+    "id": "i.bias.words",
+    "concept": "escalation_of_commitment",
+    "type": "own_words",
+    "scenario": "Think of a real decision you're currently facing, or recently made, where you suspect your own reasoning might be distorted by one or more of this module's biases.",
+    "prompt": "In your own words, describe the decision and check it against as many of this module's eight biases as actually apply: overconfidence, loss aversion, anchoring, sunk cost, escalation of commitment, the planning fallacy about others, self-serving attribution, and the illusion of control.",
+    "modelAnswer": "\"The decision is X.\" \"Checking for overconfidence: my confidence level is Y, and my track record on similar calls is Z.\" \"Checking for sunk cost or escalation: I've already spent A, but would I start this today knowing what I know now?\" \"Checking the other biases that might apply: ...\" \"Based on this check, here's what I think the decision should actually be.\"",
+    "rubric": [
+      "States a real, specific decision, not a hypothetical one.",
+      "Checks it against at least three of this module's eight biases by name.",
+      "For at least one bias, states what the bias-free version of the reasoning would actually look like.",
+      "Reaches a conclusion based on the check, not just lists the biases without applying them."
+    ]
+  }
+]

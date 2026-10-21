@@ -8,6 +8,7 @@ import module4Items from '../../content/items/module4.json' with { type: 'json' 
 import bankDeepeningItems from '../../content/items/bank-deepening.json' with { type: 'json' };
 import weeklyCheckpointItems from '../../content/items/weekly-checkpoints.json' with { type: 'json' };
 import negotiationItems from '../../content/items/negotiation.json' with { type: 'json' };
+import biasesItems from '../../content/items/biases.json' with { type: 'json' };
 
 const typedCurriculum = curriculum as Curriculum;
 const typedItems: Item[] = [
@@ -18,10 +19,11 @@ const typedItems: Item[] = [
   ...(bankDeepeningItems as Item[]),
   ...(weeklyCheckpointItems as Item[]),
   ...(negotiationItems as Item[]),
+  ...(biasesItems as Item[]),
 ];
 const itemById = new Map(typedItems.map((i) => [i.id, i]));
 
-describe('converted Strategic Reasoning content (Modules 1-7)', () => {
+describe('converted Strategic Reasoning content (Modules 1-9)', () => {
   it('validates against the shared content schema', () => {
     const result = validateContent(typedCurriculum, typedItems);
     expect(result.errors).toEqual([]);
@@ -82,10 +84,10 @@ describe('converted Strategic Reasoning content (Modules 1-7)', () => {
   });
 
   it('has 3 negotiation modules (5-7) and 15 lessons, chaining off module 4\'s checkpoint', () => {
-    expect(typedCurriculum.modules.map((m) => m.id).slice(4)).toEqual([
+    expect(typedCurriculum.modules.map((m) => m.id).slice(4, 7)).toEqual([
       'strategic-m5', 'strategic-m6', 'strategic-m7',
     ]);
-    expect(typedCurriculum.lessons.map((l) => l.id).slice(20)).toEqual([
+    expect(typedCurriculum.lessons.map((l) => l.id).slice(20, 35)).toEqual([
       'strategic-m5.l1', 'strategic-m5.l2', 'strategic-m5.l3', 'strategic-m5.l4', 'strategic-m5.l5',
       'strategic-m6.l1', 'strategic-m6.l2', 'strategic-m6.l3', 'strategic-m6.l4', 'strategic-m6.l5',
       'strategic-m7.l1', 'strategic-m7.l2', 'strategic-m7.l3', 'strategic-m7.l4', 'strategic-m7.l5',
@@ -117,6 +119,33 @@ describe('converted Strategic Reasoning content (Modules 1-7)', () => {
       expect(targetConfusion).toBeDefined();
       const correct = item.options.find((o) => item.acceptableAnswers.includes(o.id));
       expect(correct?.conceptTag).toBe('reservation_value');
+    }
+  });
+
+  it('has 2 bias modules (8-9) and 10 lessons, chaining off module 7\'s checkpoint', () => {
+    expect(typedCurriculum.modules.map((m) => m.id).slice(7)).toEqual(['strategic-m8', 'strategic-m9']);
+    expect(typedCurriculum.lessons.map((l) => l.id).slice(35)).toEqual([
+      'strategic-m8.l1', 'strategic-m8.l2', 'strategic-m8.l3', 'strategic-m8.l4', 'strategic-m8.l5',
+      'strategic-m9.l1', 'strategic-m9.l2', 'strategic-m9.l3', 'strategic-m9.l4', 'strategic-m9.l5',
+    ]);
+    const byId = new Map(typedCurriculum.lessons.map((l) => [l.id, l]));
+    expect(byId.get('strategic-m8.l1')!.prerequisites).toEqual(['strategic-m7.l5']);
+    expect(byId.get('strategic-m9.l1')!.prerequisites).toEqual(['strategic-m8.l5']);
+  });
+
+  it('each bias week\'s checkpoint lesson requires every lesson in that week, and each covers all 4 of that week\'s concepts (not just 3, unlike Pass 2\'s first draft)', () => {
+    const byId = new Map(typedCurriculum.lessons.map((l) => [l.id, l]));
+    expect(new Set(byId.get('strategic-m8.l5')!.prerequisites)).toEqual(
+      new Set(['strategic-m8.l1', 'strategic-m8.l2', 'strategic-m8.l3', 'strategic-m8.l4'])
+    );
+    expect(new Set(byId.get('strategic-m9.l5')!.prerequisites)).toEqual(
+      new Set(['strategic-m9.l1', 'strategic-m9.l2', 'strategic-m9.l3', 'strategic-m9.l4'])
+    );
+    for (const lessonId of ['strategic-m8.l5', 'strategic-m9.l5']) {
+      const lesson = typedCurriculum.lessons.find((l) => l.id === lessonId)!;
+      const checkpointConcepts = new Set(lesson.masteryItemIds.map((id) => itemById.get(id)!.concept));
+      expect(checkpointConcepts.size).toBe(4);
+      expect(checkpointConcepts).toEqual(new Set(lesson.concepts));
     }
   });
 

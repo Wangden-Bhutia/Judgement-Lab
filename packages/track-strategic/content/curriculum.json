@@ -12,7 +12,9 @@
         "strategic-m4",
         "strategic-m5",
         "strategic-m6",
-        "strategic-m7"
+        "strategic-m7",
+        "strategic-m8",
+        "strategic-m9"
       ]
     }
   ],
@@ -106,6 +108,32 @@
         "strategic-m7.l3",
         "strategic-m7.l4",
         "strategic-m7.l5"
+      ]
+    },
+    {
+      "id": "strategic-m8",
+      "trackId": "strategic",
+      "sequence": 8,
+      "title": "Biases That Distort the Numbers",
+      "lessonIds": [
+        "strategic-m8.l1",
+        "strategic-m8.l2",
+        "strategic-m8.l3",
+        "strategic-m8.l4",
+        "strategic-m8.l5"
+      ]
+    },
+    {
+      "id": "strategic-m9",
+      "trackId": "strategic",
+      "sequence": 9,
+      "title": "Biases That Distort the Story",
+      "lessonIds": [
+        "strategic-m9.l1",
+        "strategic-m9.l2",
+        "strategic-m9.l3",
+        "strategic-m9.l4",
+        "strategic-m9.l5"
       ]
     }
   ],
@@ -1530,6 +1558,393 @@
       "apply": "Pick one real, upcoming negotiation in your life — even a small one — and prepare for it fully: BATNA, reservation value, likely ZOPA, interests behind positions, and which of this week's complications apply.",
       "reflect": "In your own words, describe a real negotiation you're facing or recently had: your BATNA and reservation value, where the ZOPA likely was, and which complications from this week applied.",
       "contentVersion": 1
+    },
+    {
+      "id": "strategic-m8.l1",
+      "trackId": "strategic",
+      "moduleId": "strategic-m8",
+      "sequence": 1,
+      "title": "Surer Than the Evidence Warrants",
+      "objectives": [
+        "Recognise overconfidence — treating your own confidence as if it were evidence of accuracy — and check it against an outside measure."
+      ],
+      "concepts": [
+        "overconfidence"
+      ],
+      "prerequisites": [
+        "strategic-m7.l5"
+      ],
+      "interactiveItemIds": [
+        "i.bias.over.a",
+        "i.bias.over.b",
+        "i.bias.over.c"
+      ],
+      "masteryItemIds": [],
+      "teach": [
+        "Overconfidence is being surer of your own judgment than the evidence actually warrants — not lying, just genuinely feeling more certain than your actual track record on similar judgments would justify.",
+        "Treating a strong feeling of confidence as if it were itself evidence of being right. Confidence and accuracy are only loosely related — people are routinely most confident in exactly the judgments where they later turn out to be wrong.",
+        "The best check against overconfidence isn't trying to feel less certain — it's checking your past predictions against what actually happened, or asking how often similar confident calls have been right before."
+      ],
+      "example": "A manager is '90% certain' a new product launch will hit its target, based on gut feeling alone. Checking her own track record on similarly confident past predictions — she was right about 60% of the time, not 90% — is a more useful check than the feeling of certainty itself.",
+      "practicePrompts": [
+        "Think of a recent prediction you felt very confident about.",
+        "Ask what it was actually based on — evidence, or just a strong feeling.",
+        "Consider checking your track record on similarly confident past calls."
+      ],
+      "apply": "Next time you feel very confident about a prediction, ask explicitly what it's based on, and check it against your actual track record on similar calls if you can.",
+      "reflect": "Think of a confident prediction you made that turned out wrong. What would checking your track record beforehand have told you?",
+      "contentVersion": 1
+    },
+    {
+      "id": "strategic-m8.l2",
+      "trackId": "strategic",
+      "moduleId": "strategic-m8",
+      "sequence": 2,
+      "title": "Why Losses Loom Larger Than Gains",
+      "objectives": [
+        "Recognise loss aversion — weighing a potential loss more heavily than an equivalent gain — and how it distorts a decision."
+      ],
+      "concepts": [
+        "loss_aversion_framing"
+      ],
+      "prerequisites": [
+        "strategic-m8.l1"
+      ],
+      "interactiveItemIds": [
+        "i.bias.loss.a",
+        "i.bias.loss.b",
+        "i.bias.loss.c"
+      ],
+      "masteryItemIds": [],
+      "teach": [
+        "Loss aversion is weighing a potential loss more heavily than an equivalent gain — losing $100 typically feels worse than gaining $100 feels good, even though the amounts are identical.",
+        "Not recognising when this asymmetry is driving a decision. It can push toward overly cautious choices that avoid a possible loss even when the expected outcome genuinely favours a riskier option, or toward holding onto something failing just to avoid 'locking in' the loss.",
+        "The same choice can be described as a loss or a gain depending on how it's framed, and the framing alone can change what people choose, even though the actual options are identical either way."
+      ],
+      "example": "A business owner refuses to drop an underperforming product line, saying she doesn't want to 'lose' the investment already made in it — while a genuinely equivalent decision, framed as 'should I start this product line today, knowing what I know now', would clearly be no. The loss-framing, not the actual numbers, is driving the difference.",
+      "practicePrompts": [
+        "Think of a decision you've been reluctant to make because it felt like 'giving something up'.",
+        "Reframe it as a fresh choice: would you choose this starting from scratch, knowing what you know now?",
+        "Notice whether the framing changes your answer."
+      ],
+      "apply": "Before your next decision that feels like accepting a loss, reframe it as a fresh choice from today and see whether your answer changes.",
+      "reflect": "Where has avoiding a 'loss' led you to a worse outcome than simply weighing the choice fresh would have?",
+      "contentVersion": 1
+    },
+    {
+      "id": "strategic-m8.l3",
+      "trackId": "strategic",
+      "moduleId": "strategic-m8",
+      "sequence": 3,
+      "title": "When Your Own First Guess Misleads You",
+      "objectives": [
+        "Recognise when an arbitrary first number has anchored your own estimate, and correct for it."
+      ],
+      "concepts": [
+        "anchoring_own_estimate"
+      ],
+      "prerequisites": [
+        "strategic-m8.l2"
+      ],
+      "interactiveItemIds": [
+        "i.bias.anchself.a",
+        "i.bias.anchself.b",
+        "i.bias.anchself.c"
+      ],
+      "masteryItemIds": [],
+      "teach": [
+        "Anchoring doesn't only happen in negotiation — your own first guess at an estimate, even one you know is arbitrary, can pull your final answer toward it. A deliberately irrelevant number, seen right before estimating something unrelated, has been shown to shift people's estimates measurably.",
+        "Assuming that because you know about anchoring, you're immune to it. Awareness alone doesn't fully prevent the effect — deliberately generating your estimate a different way is a stronger correction than just knowing the bias exists.",
+        "A useful check is to build an estimate up from its actual components — rather than adjusting from whatever number happened to come to mind first — since starting fresh from the parts is much less anchored than adjusting from an initial guess."
+      ],
+      "example": "Asked to estimate how long a project will take, a planner's mind jumps first to a competitor's similar project that took 3 months, and her estimate ends up hovering around 3 months even though her own project has a genuinely different scope. Building the estimate up from her own project's actual tasks, instead of adjusting from the competitor's number, gives a more accurate answer.",
+      "practicePrompts": [
+        "Think of an estimate you've made recently — a timeline, a budget, a quantity.",
+        "Ask what number came to mind first, and whether it actually applied to your situation.",
+        "Consider building the estimate up from its real components instead."
+      ],
+      "apply": "Next time you need to estimate something, build it up from its actual parts before checking whether that matches your first gut number, rather than starting from the gut number and adjusting.",
+      "reflect": "Think of an estimate that turned out to be anchored on an irrelevant first number. What would building it up from its real components have given instead?",
+      "contentVersion": 1
+    },
+    {
+      "id": "strategic-m8.l4",
+      "trackId": "strategic",
+      "moduleId": "strategic-m8",
+      "sequence": 4,
+      "title": "Why What's Already Spent Shouldn't Decide What's Next",
+      "objectives": [
+        "Recognise sunk cost and exclude it from a forward-looking decision, which should only weigh future costs and benefits."
+      ],
+      "concepts": [
+        "sunk_cost"
+      ],
+      "prerequisites": [
+        "strategic-m8.l3"
+      ],
+      "interactiveItemIds": [
+        "i.bias.sunk.a",
+        "i.bias.sunk.b",
+        "i.bias.sunk.c"
+      ],
+      "masteryItemIds": [],
+      "teach": [
+        "A sunk cost is money, time, or effort already spent that can't be recovered regardless of what you decide next. A forward-looking decision should only weigh future costs and benefits — the sunk cost, by definition, is the same no matter which option you pick now.",
+        "Letting a sunk cost influence the decision anyway — continuing a project because of how much has already gone into it, rather than because it's still the best use of resources going forward.",
+        "The test is simple, if uncomfortable: would you choose to start this today, from scratch, knowing only what you know now? If not, the money already spent isn't a reason to continue — it's gone either way."
+      ],
+      "example": "A company has spent $200,000 developing software that newer, cheaper tools have since made obsolete. Continuing to invest, because of the $200,000 already spent, ignores that the $200,000 is gone regardless of what happens next — the only question that matters now is whether finishing it is still the best use of the NEXT dollar.",
+      "practicePrompts": [
+        "Think of something you've kept doing partly because of what you've already invested in it.",
+        "Ask: would you choose to start this today, from scratch, knowing what you know now?",
+        "If the answer is no, consider what that says about continuing."
+      ],
+      "apply": "Next time you're deciding whether to continue something, explicitly ask whether you'd start it fresh today, ignoring what's already been spent, before deciding.",
+      "reflect": "Think of a time you kept going with something mainly because of what you'd already put into it. What would the fresh-start question have told you?",
+      "contentVersion": 1
+    },
+    {
+      "id": "strategic-m8.l5",
+      "trackId": "strategic",
+      "moduleId": "strategic-m8",
+      "sequence": 5,
+      "title": "Numbers You Can't Quite Trust",
+      "objectives": [
+        "Combine overconfidence, loss aversion, anchoring and sunk cost into one check on a numeric decision."
+      ],
+      "concepts": [
+        "overconfidence",
+        "loss_aversion_framing",
+        "anchoring_own_estimate",
+        "sunk_cost"
+      ],
+      "prerequisites": [
+        "strategic-m8.l1",
+        "strategic-m8.l2",
+        "strategic-m8.l3",
+        "strategic-m8.l4"
+      ],
+      "interactiveItemIds": [
+        "i.wk8.chk.a",
+        "i.wk8.chk.b",
+        "i.wk8.chk.c",
+        "i.wk8.chk.d"
+      ],
+      "masteryItemIds": [
+        "i.wk8.chk.a",
+        "i.wk8.chk.b",
+        "i.wk8.chk.c",
+        "i.wk8.chk.d"
+      ],
+      "teach": [
+        "This week's four biases all distort a number before a decision even gets made: how sure you feel (overconfidence), how a loss is weighted against a gain (loss aversion), where your estimate starts from (anchoring), and whether past spending creeps into a forward-looking choice (sunk cost).",
+        "Checking for only one of these on an important numeric decision and assuming the rest don't apply. They're independent distortions — a single decision can be affected by more than one at once, and checking for just one leaves the others unexamined.",
+        "None of these four require distrusting every number you ever produce — they're specific, checkable distortions with specific checks: a track record, a fresh framing, building up from components, and the fresh-start question."
+      ],
+      "example": "Deciding whether to keep funding a struggling project, all four can show up together: feeling '90% sure' it'll turn around (overconfidence), dreading the 'loss' of cancelling it (loss aversion), anchoring the revised budget estimate on the original one rather than rebuilding it (anchoring), and citing how much has already been spent as a reason to continue (sunk cost).",
+      "practicePrompts": [
+        "Pick a numeric decision you're facing.",
+        "Check it against all four: confidence level, loss framing, estimate anchor, and sunk cost.",
+        "Notice which one, if any, is doing the most distorting."
+      ],
+      "apply": "Before your next significant numeric decision, run it through all four checks explicitly, in writing, rather than trusting your gut sense of the number.",
+      "reflect": "Across this week, which of the four — overconfidence, loss aversion, anchoring, or sunk cost — do you most often fall into without noticing?",
+      "contentVersion": 1
+    },
+    {
+      "id": "strategic-m9.l1",
+      "trackId": "strategic",
+      "moduleId": "strategic-m9",
+      "sequence": 1,
+      "title": "Doubling Down on a Losing Strategy",
+      "objectives": [
+        "Recognise escalation of commitment and reassess a failing course of action on its current merits, not past investment."
+      ],
+      "concepts": [
+        "escalation_of_commitment"
+      ],
+      "prerequisites": [
+        "strategic-m8.l5"
+      ],
+      "interactiveItemIds": [
+        "i.bias.esc.a",
+        "i.bias.esc.b",
+        "i.bias.esc.c"
+      ],
+      "masteryItemIds": [],
+      "teach": [
+        "Escalation of commitment is continuing to invest in a course of action that's failing, specifically to justify the investment already made or avoid admitting a mistake — a close cousin of sunk cost, but about continued ACTION, not just continued belief.",
+        "Treating 'we've come this far' as a reason to continue, when it's really a sign the original decision should be reassessed fresh, on its current merits, independent of how far in you already are.",
+        "A useful signal: if someone new, with no history in this decision, looked at the current situation fresh, would they recommend continuing? If not, the momentum of having already committed is doing the work, not the actual merits."
+      ],
+      "example": "A team keeps adding features to a product that user research has shown people don't want, because they've already spent six months on it and don't want that time to have been 'wasted'. A fresh team, looking only at the current user research, would likely recommend stopping — the six months already spent isn't a reason to keep going, it's the reason it feels hard to stop.",
+      "practicePrompts": [
+        "Think of something you've kept doing well past the point where it stopped working.",
+        "Ask what a fresh outsider, with no history in it, would recommend now.",
+        "Consider whether 'we've come this far' is actually doing the reasoning."
+      ],
+      "apply": "Next time you're tempted to continue something because of how far you've already gone, ask what a fresh outsider with no history in it would recommend, looking only at the current situation.",
+      "reflect": "Think of a time you kept going with a failing approach well past when you should have stopped. What kept you committed?",
+      "contentVersion": 1
+    },
+    {
+      "id": "strategic-m9.l2",
+      "trackId": "strategic",
+      "moduleId": "strategic-m9",
+      "sequence": 2,
+      "title": "Overestimating How Smoothly Others Will Cooperate",
+      "objectives": [
+        "Recognise the planning fallacy as it applies to other people's cooperation, and plan for realistic friction instead."
+      ],
+      "concepts": [
+        "planning_fallacy_cooperation"
+      ],
+      "prerequisites": [
+        "strategic-m9.l1"
+      ],
+      "interactiveItemIds": [
+        "i.bias.plan.a",
+        "i.bias.plan.b",
+        "i.bias.plan.c"
+      ],
+      "masteryItemIds": [],
+      "teach": [
+        "The planning fallacy is underestimating how long things take or how smoothly they'll go. Applied to other people specifically, it means assuming they'll cooperate, respond, or deliver on the timeline and terms you're hoping for, with less friction or disagreement than is realistic.",
+        "Planning around the best-case version of someone else's cooperation, rather than a realistic one based on how similar cooperation has actually gone before — with this person, or with people in similar roles generally.",
+        "This isn't cynicism about other people — it's the same correction the planning fallacy always calls for: look at how similar situations have actually gone in the past, rather than imagining this one will go unusually smoothly."
+      ],
+      "example": "A project lead assumes three other departments will sign off on a shared proposal within a week, because that's the timeline that would be convenient. Looking at how long similar sign-offs have actually taken in the past — usually three weeks, with at least one round of pushback — gives a much more realistic plan than hoping this time will be different.",
+      "practicePrompts": [
+        "Think of a plan that depends on someone else cooperating or delivering.",
+        "Ask how similar cooperation has actually gone in the past, not how you're hoping it goes.",
+        "Adjust your plan toward the realistic timeline, not the hopeful one."
+      ],
+      "apply": "Before your next plan that depends on someone else's cooperation, look at how similar situations have actually gone before, and plan around that instead of the best case.",
+      "reflect": "Think of a plan that fell apart because you assumed smoother cooperation from others than actually happened. What would looking at past patterns have told you?",
+      "contentVersion": 1
+    },
+    {
+      "id": "strategic-m9.l3",
+      "trackId": "strategic",
+      "moduleId": "strategic-m9",
+      "sequence": 3,
+      "title": "Crediting Skill, Blaming Luck",
+      "objectives": [
+        "Recognise self-serving attribution — crediting wins to skill and losses to luck — and weigh both consistently."
+      ],
+      "concepts": [
+        "self_serving_attribution"
+      ],
+      "prerequisites": [
+        "strategic-m9.l2"
+      ],
+      "interactiveItemIds": [
+        "i.bias.self.a",
+        "i.bias.self.b",
+        "i.bias.self.c"
+      ],
+      "masteryItemIds": [],
+      "teach": [
+        "Self-serving attribution is crediting your own skill and good decisions for a win, while blaming bad luck, an unfair opponent, or circumstances beyond your control for a loss — even when the actual causes were similar in both cases.",
+        "Not noticing the asymmetry itself. It feels natural in the moment, which is exactly what makes it easy to miss — the explanations offered for a win and a loss aren't being weighed by the same standard.",
+        "A useful check: would you accept the same kind of explanation from an opponent explaining their own win over you? If their 'I got lucky' wouldn't satisfy you as the full story, your own 'I got unlucky' probably isn't either."
+      ],
+      "example": "After winning a negotiation, someone credits their sharp preparation and tactics. After losing a very similar negotiation the following month, the same person blames an unreasonable counterpart and bad timing — without considering that preparation, tactics, or luck may have played a similar role in both outcomes.",
+      "practicePrompts": [
+        "Think of a recent win and a recent loss in a similar kind of situation.",
+        "Compare how you explained each one — skill for the win, luck or unfairness for the loss?",
+        "Consider applying the same standard of explanation to both."
+      ],
+      "apply": "Next time you explain a win or a loss, apply the same standard to both — ask what role skill and luck each actually played, not just whichever story feels better.",
+      "reflect": "Think of a loss you blamed mostly on bad luck or unfairness. Looking back honestly, how much of it was actually about your own decisions?",
+      "contentVersion": 1
+    },
+    {
+      "id": "strategic-m9.l4",
+      "trackId": "strategic",
+      "moduleId": "strategic-m9",
+      "sequence": 4,
+      "title": "Mistaking Influence You Don't Have",
+      "objectives": [
+        "Recognise the illusion of control and distinguish what you can actually influence in a situation from what you can't."
+      ],
+      "concepts": [
+        "illusion_of_control"
+      ],
+      "prerequisites": [
+        "strategic-m9.l3"
+      ],
+      "interactiveItemIds": [
+        "i.bias.ctrl.a",
+        "i.bias.ctrl.b",
+        "i.bias.ctrl.c"
+      ],
+      "masteryItemIds": [],
+      "teach": [
+        "The illusion of control is overestimating how much you can actually influence an outcome that depends heavily on chance, or on another player's independent choice you have no real way to affect.",
+        "Treating active involvement — effort, attention, ritual — as if it were the same thing as actual influence over the result. Doing more doesn't always mean controlling more, especially where the outcome genuinely depends on something outside your control.",
+        "The useful question isn't 'am I doing everything I can' — it's 'does what I'm doing actually change the probability of the outcome, or does it just feel like it does'. The two can come apart more than it feels like they would."
+      ],
+      "example": "An investor checks stock prices multiple times a day, feeling that close attention gives her more control over the outcome. The checking itself changes nothing about where the price actually goes — it feels like involvement, but it isn't influence over a market driven by countless other independent decisions.",
+      "practicePrompts": [
+        "Think of a situation where you feel like you have real influence over the outcome.",
+        "Ask honestly whether your actions actually change the probability of that outcome, or just feel like they do.",
+        "Consider what, if anything, you'd do differently if you accepted the real level of influence you have."
+      ],
+      "apply": "Next time you notice yourself putting in extra effort toward an outcome, ask honestly whether that effort actually changes the odds, or just makes you feel more in control.",
+      "reflect": "Think of a situation where you believed you had more influence than you actually did. What would recognising that earlier have changed?",
+      "contentVersion": 1
+    },
+    {
+      "id": "strategic-m9.l5",
+      "trackId": "strategic",
+      "moduleId": "strategic-m9",
+      "sequence": 5,
+      "title": "The Story You Tell Yourself",
+      "objectives": [
+        "Combine escalation of commitment, the planning fallacy about cooperation, self-serving attribution and the illusion of control into reading your own account of a situation sceptically.",
+        "Describe a real decision completely, using everything covered across both bias modules."
+      ],
+      "concepts": [
+        "escalation_of_commitment",
+        "planning_fallacy_cooperation",
+        "self_serving_attribution",
+        "illusion_of_control"
+      ],
+      "prerequisites": [
+        "strategic-m9.l1",
+        "strategic-m9.l2",
+        "strategic-m9.l3",
+        "strategic-m9.l4"
+      ],
+      "interactiveItemIds": [
+        "i.wk9.chk.a",
+        "i.wk9.chk.b",
+        "i.wk9.chk.c",
+        "i.wk9.chk.d",
+        "i.bias.words"
+      ],
+      "masteryItemIds": [
+        "i.wk9.chk.a",
+        "i.wk9.chk.b",
+        "i.wk9.chk.c",
+        "i.wk9.chk.d"
+      ],
+      "explanationBackItemId": "i.bias.words",
+      "teach": [
+        "Last week's biases distorted numbers before a decision; this week's distort the STORY told about a decision — why we're still going, why others will surely cooperate, why we won or lost, and how much control we actually had.",
+        "Assuming a story feels true because it's the one you'd naturally tell. All four of this week's biases produce stories that feel completely reasonable from the inside — that's exactly what makes them hard to catch without a deliberate check.",
+        "This closes out both bias modules. The actual skill across all eight isn't eliminating bias entirely — it's building the habit of pausing on a significant decision to check for it, using a specific, repeatable question for each one."
+      ],
+      "example": "A founder keeps funding a failing product (escalation), assuming a partner will deliver an integration on time despite past delays (planning fallacy), crediting her own insight for the product's early traction while blaming the market for its later decline (self-serving attribution), and feeling that working longer hours will fix a problem that's actually about market fit, not effort (illusion of control) — four different distortions, all supporting the same comfortable story.",
+      "practicePrompts": [
+        "Think of a real decision or situation you're currently telling yourself a story about.",
+        "Check it against all four: are you escalating, assuming smooth cooperation, attributing self-servingly, or overestimating your control?",
+        "Consider what an outsider, with no stake in the story, would say instead."
+      ],
+      "apply": "Pick one real, current decision where you suspect your own story about it might not be fully accurate, and check it explicitly against all four of this week's biases.",
+      "reflect": "In your own words, describe a real decision you're facing or recently made, and check it against as many of this module's eight biases as actually apply.",
+      "contentVersion": 1
     }
   ],
   "concepts": [
@@ -1712,6 +2127,54 @@
       "trackId": "strategic",
       "moduleId": "strategic-m7",
       "label": "Recognising when a deal is actually worse than your alternative"
+    },
+    {
+      "id": "overconfidence",
+      "trackId": "strategic",
+      "moduleId": "strategic-m8",
+      "label": "Being surer than the evidence actually warrants"
+    },
+    {
+      "id": "loss_aversion_framing",
+      "trackId": "strategic",
+      "moduleId": "strategic-m8",
+      "label": "Why a loss looms larger than an equivalent gain"
+    },
+    {
+      "id": "anchoring_own_estimate",
+      "trackId": "strategic",
+      "moduleId": "strategic-m8",
+      "label": "When your own first guess distorts your later estimate"
+    },
+    {
+      "id": "sunk_cost",
+      "trackId": "strategic",
+      "moduleId": "strategic-m8",
+      "label": "Why what's already spent shouldn't decide what's next"
+    },
+    {
+      "id": "escalation_of_commitment",
+      "trackId": "strategic",
+      "moduleId": "strategic-m9",
+      "label": "Doubling down on a strategy that's failing"
+    },
+    {
+      "id": "planning_fallacy_cooperation",
+      "trackId": "strategic",
+      "moduleId": "strategic-m9",
+      "label": "Overestimating how smoothly others will cooperate"
+    },
+    {
+      "id": "self_serving_attribution",
+      "trackId": "strategic",
+      "moduleId": "strategic-m9",
+      "label": "Crediting skill for wins, blaming luck for losses"
+    },
+    {
+      "id": "illusion_of_control",
+      "trackId": "strategic",
+      "moduleId": "strategic-m9",
+      "label": "Mistaking influence over an outcome you don't actually have"
     }
   ],
   "misconceptions": [
@@ -1912,6 +2375,54 @@
       "trackId": "strategic",
       "label": "Walk-away point misjudged",
       "description": "Either accepting a deal worse than your reservation value out of momentum, or walking away from a deal that actually beat it, out of ego or overconfidence."
+    },
+    {
+      "id": "strategic-overconfidence_unchecked",
+      "trackId": "strategic",
+      "label": "Overconfidence unchecked",
+      "description": "Treating your own confidence level as evidence of accuracy, without checking it against an outside measure like a track record or base rate."
+    },
+    {
+      "id": "strategic-loss_aversion_blind",
+      "trackId": "strategic",
+      "label": "Loss aversion unrecognised",
+      "description": "Weighing a potential loss much more heavily than an equivalent gain, in a way that distorts a decision, without recognising the asymmetry is happening."
+    },
+    {
+      "id": "strategic-anchor_own_estimate_uncorrected",
+      "trackId": "strategic",
+      "label": "Own estimate anchored and uncorrected",
+      "description": "Letting an arbitrary or irrelevant first number pull your own estimate toward it, without adjusting far enough away once better information is available."
+    },
+    {
+      "id": "strategic-sunk_cost_influence",
+      "trackId": "strategic",
+      "label": "Sunk cost influencing a forward decision",
+      "description": "Letting past, unrecoverable investment influence a decision that should only weigh future costs and benefits."
+    },
+    {
+      "id": "strategic-escalation_of_commitment",
+      "trackId": "strategic",
+      "label": "Escalation of commitment",
+      "description": "Continuing to invest in a failing course of action to justify past investment or avoid admitting a mistake, rather than reassessing it on its current merits."
+    },
+    {
+      "id": "strategic-planning_fallacy_cooperation",
+      "trackId": "strategic",
+      "label": "Planning fallacy about others' cooperation",
+      "description": "Assuming other people will cooperate, respond, or deliver smoothly and on schedule, underestimating realistic friction, delay, or disagreement."
+    },
+    {
+      "id": "strategic-self_serving_attribution",
+      "trackId": "strategic",
+      "label": "Self-serving attribution",
+      "description": "Crediting your own skill for a win while blaming external factors such as luck or an unfair opponent for a loss, in a way that distorts what actually happened."
+    },
+    {
+      "id": "strategic-illusion_of_control",
+      "trackId": "strategic",
+      "label": "Illusion of control",
+      "description": "Overestimating how much influence you actually have over an outcome that depends heavily on chance or another player's independent choice."
     }
   ]
 }
