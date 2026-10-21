@@ -1,0 +1,912 @@
+[
+  {
+    "id": "i.comm.pers.a",
+    "concept": "persuasion_principles",
+    "scenario": "A shop owner gives new customers a small free sample with absolutely no conditions attached, simply as a genuine gesture of goodwill.",
+    "type": "reason_choice",
+    "prompt": "Is this an honest or manipulative use of reciprocity?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Honest — a genuine gift with no hidden strings is reciprocity used transparently, even if it happens to make customers more inclined to buy.",
+        "conceptTag": "persuasion_principles"
+      },
+      {
+        "id": "B",
+        "text": "Manipulative — any use of reciprocity to encourage future purchases is inherently dishonest.",
+        "misconception": "strategic-persuasion_as_manipulation"
+      },
+      {
+        "id": "C",
+        "text": "It only counts as honest if the shop owner explicitly tells customers they're using reciprocity.",
+        "misconception": "strategic-persuasion_as_manipulation"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Reciprocity used honestly just means a real gift or favour, freely given — the fact that it may also influence future behaviour doesn't make it manipulative, since nothing dishonest is involved."
+  },
+  {
+    "id": "i.comm.pers.b",
+    "concept": "persuasion_principles",
+    "scenario": "A fundraiser falsely tells a potential donor that '90% of similar donors have already contributed this amount', when the real figure is much lower.",
+    "type": "reason_choice",
+    "prompt": "What makes this use of social proof different from an honest one?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The claim is fabricated — honest social proof points to evidence that's actually true, not an invented statistic.",
+        "conceptTag": "persuasion_principles"
+      },
+      {
+        "id": "B",
+        "text": "Nothing — referencing what others have done is always manipulative regardless of accuracy.",
+        "misconception": "strategic-persuasion_as_manipulation"
+      },
+      {
+        "id": "C",
+        "text": "It's dishonest only because it mentions a specific percentage rather than a vague claim.",
+        "misconception": "strategic-persuasion_as_manipulation"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "The dishonesty here is the fabrication, not the use of social proof as a principle — pointing to real, accurate evidence of others' behaviour is a legitimate, honest use of the same idea."
+  },
+  {
+    "id": "i.comm.pers.c",
+    "concept": "persuasion_principles",
+    "scenario": "A manager reminds a team member of a commitment they made themselves last week, to help them follow through on it now.",
+    "type": "reason_choice",
+    "prompt": "Is this an honest use of the consistency principle?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Yes — referencing a commitment the person genuinely made themselves is honest; it's not inventing a commitment that was never made.",
+        "conceptTag": "persuasion_principles"
+      },
+      {
+        "id": "B",
+        "text": "No — reminding someone of their own past commitment to encourage follow-through is always a manipulative pressure tactic.",
+        "misconception": "strategic-persuasion_as_manipulation"
+      },
+      {
+        "id": "C",
+        "text": "It depends entirely on whether the team member feels pressured by the reminder.",
+        "misconception": "strategic-persuasion_as_manipulation"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Pointing back to a real commitment someone genuinely made is honest use of consistency — the test is whether the commitment referenced actually happened, not whether it's being referenced at all."
+  },
+  {
+    "id": "i.comm.frame.a",
+    "concept": "framing_choices",
+    "scenario": "A manager needs to offer a team member an opportunity that involves extra unpaid responsibility alongside real visibility and growth. She's deciding how to frame it.",
+    "type": "reason_choice",
+    "prompt": "What's the honest approach to framing this choice?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Present both the real opportunity for growth and visibility AND the real extra responsibility clearly, so the team member can weigh both accurately.",
+        "conceptTag": "framing_choices"
+      },
+      {
+        "id": "B",
+        "text": "Frame it purely around the growth and visibility, leaving out the extra responsibility to make it more appealing.",
+        "misconception": "strategic-framing_ignored_for_others"
+      },
+      {
+        "id": "C",
+        "text": "Framing doesn't matter here — as long as the facts are available somewhere, how they're presented makes no real difference.",
+        "misconception": "strategic-framing_ignored_for_others"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Honest framing presents what's genuinely true and relevant on both sides of the choice — omitting a real downside to make an option more appealing crosses from framing into obscuring."
+  },
+  {
+    "id": "i.comm.frame.b",
+    "concept": "framing_choices",
+    "scenario": "A doctor describes a procedure's outcome as '90% of patients recover fully' to one patient, and to another, describes an identical procedure as '10% of patients do not recover fully.'",
+    "type": "reason_choice",
+    "prompt": "What does offering the same fact in only one of these framings, without the other, risk?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Shaping the patient's decision through the framing alone, even though both descriptions are factually identical.",
+        "conceptTag": "framing_choices"
+      },
+      {
+        "id": "B",
+        "text": "Nothing — since both framings are factually accurate, the choice of framing has no real effect.",
+        "misconception": "strategic-framing_ignored_for_others"
+      },
+      {
+        "id": "C",
+        "text": "Only a risk if the doctor intends to mislead; accidental framing effects don't matter.",
+        "misconception": "strategic-framing_ignored_for_others"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Identical facts framed as a gain versus a loss reliably produce different decisions — offering only one framing, even unintentionally, shapes the choice regardless of intent."
+  },
+  {
+    "id": "i.comm.frame.c",
+    "concept": "framing_choices",
+    "scenario": "A product is described as 'limited availability, selling fast' in a way that's factually accurate (stock genuinely is limited) and also designed to make the choice feel more urgent.",
+    "type": "reason_choice",
+    "prompt": "Is this an honest use of framing?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Yes — since the scarcity is real, highlighting it accurately is honest framing, even though it's also persuasive.",
+        "conceptTag": "framing_choices"
+      },
+      {
+        "id": "B",
+        "text": "No — any framing designed to create urgency is dishonest regardless of accuracy.",
+        "misconception": "strategic-framing_ignored_for_others"
+      },
+      {
+        "id": "C",
+        "text": "It's honest only if the exact number of remaining items is also disclosed.",
+        "misconception": "strategic-framing_ignored_for_others"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "A framing that's both accurate and persuasive is still honest — the dishonesty threshold is accuracy, not whether the framing happens to be effective."
+  },
+  {
+    "id": "i.comm.bound.a",
+    "concept": "boundaries_and_refusal",
+    "scenario": "Asked to take on an extra project, someone responds with five sentences explaining their current workload, apologising twice, and promising to help \"if anything changes.\"",
+    "type": "reason_choice",
+    "prompt": "What's the risk of this response compared to a shorter one?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The extensive justification and open-ended promise invite the other person to push back or revisit the request, rather than accepting a clear no.",
+        "conceptTag": "boundaries_and_refusal"
+      },
+      {
+        "id": "B",
+        "text": "There's no risk — more explanation always makes a refusal land better.",
+        "misconception": "strategic-boundary_overexplained"
+      },
+      {
+        "id": "C",
+        "text": "The risk is only that it takes longer to say than a short no would.",
+        "misconception": "strategic-boundary_overexplained"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Extensive justification and a vague opening ('if anything changes') invite negotiation of the boundary itself — a shorter, clearer no is less likely to be treated as a starting position."
+  },
+  {
+    "id": "i.comm.bound.b",
+    "concept": "boundaries_and_refusal",
+    "scenario": "\"I can't take that on this week, I've got too much on\" is offered as a complete response to a request.",
+    "type": "reason_choice",
+    "prompt": "Is this boundary clear, or does it need more explanation to be respectful?",
+    "options": [
+      {
+        "id": "A",
+        "text": "It's already clear and respectful as stated — a short reason is enough, and doesn't need padding to be polite.",
+        "conceptTag": "boundaries_and_refusal"
+      },
+      {
+        "id": "B",
+        "text": "It needs a longer, more detailed justification to avoid seeming rude.",
+        "misconception": "strategic-boundary_overexplained"
+      },
+      {
+        "id": "C",
+        "text": "It should include an apology and a specific promise about when help might be available instead.",
+        "misconception": "strategic-boundary_overexplained"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "A short, direct reason is a complete, respectful refusal — padding it further doesn't make it more polite, it mainly makes it longer and more negotiable-sounding."
+  },
+  {
+    "id": "i.comm.bound.c",
+    "concept": "boundaries_and_refusal",
+    "scenario": "After saying no to a request, someone is pushed back on and responds by restating, calmly and without new justification, \"As I said, I can't take this on right now.\"",
+    "type": "reason_choice",
+    "prompt": "What does this response demonstrate?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Holding the boundary clearly without escalating into further justification, even under pushback.",
+        "conceptTag": "boundaries_and_refusal"
+      },
+      {
+        "id": "B",
+        "text": "A failure to properly explain the reasoning, which should be expanded upon when pushed back on.",
+        "misconception": "strategic-boundary_overexplained"
+      },
+      {
+        "id": "C",
+        "text": "Rudeness, since any pushback should be met with a fuller explanation out of courtesy.",
+        "misconception": "strategic-boundary_overexplained"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Restating a clear boundary without adding new justification, even under pushback, is exactly what keeps a boundary from eroding into an ongoing negotiation."
+  },
+  {
+    "id": "i.comm.incent.a",
+    "concept": "reading_stated_incentives",
+    "scenario": "A colleague says he's against a proposed office relocation because of the commute. He also happens to sit near a close friend at the current office.",
+    "type": "reason_choice",
+    "prompt": "What's the balanced way to read his stated position?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Take the commute concern as real, and also consider, without assuming dishonesty, that proximity to his friend might be an additional, unstated incentive.",
+        "conceptTag": "reading_stated_incentives"
+      },
+      {
+        "id": "B",
+        "text": "Assume the commute reason is the complete and only explanation, since that's what he stated.",
+        "misconception": "strategic-incentive_taken_at_face_value"
+      },
+      {
+        "id": "C",
+        "text": "Assume he's being dishonest and the commute reason is entirely fabricated.",
+        "misconception": "strategic-incentive_taken_at_face_value"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "A stated reason can be genuinely true while still not being the complete picture — considering an additional plausible incentive, without assuming dishonesty, gives a fuller read than taking the stated reason as the whole story."
+  },
+  {
+    "id": "i.comm.incent.b",
+    "concept": "reading_stated_incentives",
+    "scenario": "A vendor recommends a particular product tier to a client, citing its features as the reason. The vendor also happens to earn a higher commission on that tier.",
+    "type": "reason_choice",
+    "prompt": "What's the most useful way for the client to think about this recommendation?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Weigh the stated features honestly, while also factoring in that the commission structure is a real incentive that might be shaping the recommendation.",
+        "conceptTag": "reading_stated_incentives"
+      },
+      {
+        "id": "B",
+        "text": "Dismiss the recommendation entirely, since any commission incentive makes the stated reasoning worthless.",
+        "misconception": "strategic-incentive_taken_at_face_value"
+      },
+      {
+        "id": "C",
+        "text": "Accept the recommendation at face value, since the vendor is a trained expert.",
+        "misconception": "strategic-incentive_taken_at_face_value"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "The stated features may well be genuinely relevant, and the commission incentive is also genuinely relevant — weighing both together, rather than only one, gives the fuller picture."
+  },
+  {
+    "id": "i.comm.incent.c",
+    "concept": "reading_stated_incentives",
+    "scenario": "A public statement from a company cites 'commitment to sustainability' as the sole reason for a new policy that also happens to reduce costs significantly.",
+    "type": "reason_choice",
+    "prompt": "What's the balanced reading of this statement?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The sustainability commitment could be genuine, and the cost savings are also a plausible, separate incentive worth noting alongside it.",
+        "conceptTag": "reading_stated_incentives"
+      },
+      {
+        "id": "B",
+        "text": "The stated reason should be accepted exactly as given, since companies always state their complete motivations publicly.",
+        "misconception": "strategic-incentive_taken_at_face_value"
+      },
+      {
+        "id": "C",
+        "text": "The cost savings must mean the sustainability framing is entirely false.",
+        "misconception": "strategic-incentive_taken_at_face_value"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "A stated public reason and an unstated financial incentive can both be true at once — reading for the fuller picture doesn't require concluding the stated reason is fake."
+  },
+  {
+    "id": "i.comm.assert.a",
+    "concept": "assertive_communication",
+    "scenario": "\"This plan is obviously flawed and I don't see how anyone who's thought it through could support it\" is said in a team meeting.",
+    "type": "reason_choice",
+    "prompt": "Is this assertive, aggressive, or passive communication?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Aggressive — it dismisses the other side's position entirely rather than stating a view while leaving room for theirs.",
+        "conceptTag": "assertive_communication"
+      },
+      {
+        "id": "B",
+        "text": "Assertive — it clearly states a disagreement, which is all assertiveness requires.",
+        "misconception": "strategic-passive_or_aggressive_confused"
+      },
+      {
+        "id": "C",
+        "text": "Passive — since it doesn't explicitly propose an alternative plan.",
+        "misconception": "strategic-passive_or_aggressive_confused"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Stating a clear view is necessary for assertiveness but not sufficient — dismissing the validity of anyone who disagrees crosses from assertive into aggressive."
+  },
+  {
+    "id": "i.comm.assert.b",
+    "concept": "assertive_communication",
+    "scenario": "Someone disagrees with a decision in a meeting but says nothing, then complains about it privately afterward to a different colleague.",
+    "type": "reason_choice",
+    "prompt": "What communication mode does this represent?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Passive — the real position was never stated where it could actually be heard or addressed.",
+        "conceptTag": "assertive_communication"
+      },
+      {
+        "id": "B",
+        "text": "Assertive, since the disagreement was genuinely held and eventually expressed to someone.",
+        "misconception": "strategic-passive_or_aggressive_confused"
+      },
+      {
+        "id": "C",
+        "text": "Aggressive, since complaining about a decision is inherently a hostile act.",
+        "misconception": "strategic-passive_or_aggressive_confused"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "A real position voiced only after the fact, to someone other than the people who could act on it, is passive — it avoids stating the position where it could actually matter."
+  },
+  {
+    "id": "i.comm.assert.c",
+    "concept": "assertive_communication",
+    "scenario": "\"I see it differently — here's my concern, and I'd like to understand your reasoning too\" is said in response to a decision someone disagrees with.",
+    "type": "reason_choice",
+    "prompt": "What communication mode does this represent?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Assertive — it states a real position clearly while leaving genuine room for the other person's view.",
+        "conceptTag": "assertive_communication"
+      },
+      {
+        "id": "B",
+        "text": "Passive, since it doesn't flatly state the decision is wrong.",
+        "misconception": "strategic-passive_or_aggressive_confused"
+      },
+      {
+        "id": "C",
+        "text": "Aggressive, since any expressed disagreement in a meeting counts as aggressive by default.",
+        "misconception": "strategic-passive_or_aggressive_confused"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Stating a real concern clearly while genuinely inviting the other side's reasoning is exactly the combination that defines assertive, as distinct from either passive or aggressive, communication."
+  },
+  {
+    "id": "i.comm.req.a",
+    "concept": "request_framing",
+    "scenario": "\"Let me know if you ever get a chance to look at this\" is sent about a document that needs review.",
+    "type": "reason_choice",
+    "prompt": "What's the problem with this request as framed?",
+    "options": [
+      {
+        "id": "A",
+        "text": "It's vague enough — no specific ask, no deadline — to be easy to indefinitely postpone or ignore.",
+        "conceptTag": "request_framing"
+      },
+      {
+        "id": "B",
+        "text": "There's no problem — open-ended requests are always more polite and equally effective.",
+        "misconception": "strategic-request_vague"
+      },
+      {
+        "id": "C",
+        "text": "The only issue is that it should have been phrased as a question instead of a statement.",
+        "misconception": "strategic-request_vague"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "An open-ended request without a specific action or deadline is easy to quietly never respond to — not out of rudeness, but because it's unclear what agreeing to it would even require doing, by when."
+  },
+  {
+    "id": "i.comm.req.b",
+    "concept": "request_framing",
+    "scenario": "\"Could you review slides 1-3 and send feedback by Thursday morning?\" is sent about the same document.",
+    "type": "reason_choice",
+    "prompt": "What makes this version more likely to get a response?",
+    "options": [
+      {
+        "id": "A",
+        "text": "It's specific about what's needed and by when, making it easy to evaluate and act on.",
+        "conceptTag": "request_framing"
+      },
+      {
+        "id": "B",
+        "text": "It's more likely to get a response only because it sounds more urgent, not because it's clearer.",
+        "misconception": "strategic-request_vague"
+      },
+      {
+        "id": "C",
+        "text": "Specificity actually makes requests less likely to be answered, since they feel more demanding.",
+        "misconception": "strategic-request_vague"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Specificity — what exactly, by when — is what makes a request easy to act on, which is distinct from, and more effective than, simply sounding urgent."
+  },
+  {
+    "id": "i.comm.req.c",
+    "concept": "request_framing",
+    "scenario": "A manager asks a new hire to \"get up to speed on the project sometime soon\" rather than specifying particular materials and a date.",
+    "type": "reason_choice",
+    "prompt": "What's the likely effect of this framing?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The new hire likely won't know exactly what's expected or by when, making it harder to actually fulfil the request well.",
+        "conceptTag": "request_framing"
+      },
+      {
+        "id": "B",
+        "text": "No real effect — new hires generally interpret vague instructions correctly on their own.",
+        "misconception": "strategic-request_vague"
+      },
+      {
+        "id": "C",
+        "text": "The vagueness is actually helpful, since it gives the new hire more flexibility.",
+        "misconception": "strategic-request_vague"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "A vague instruction, even one intended to be flexible, often leaves the other person unsure what's actually expected — specificity, not rigidity, is usually what helps here."
+  },
+  {
+    "id": "i.comm.disagree.a",
+    "concept": "productive_disagreement",
+    "scenario": "A team member argues against a new tool, citing concerns that are mostly unfounded but including one real point: it doesn't integrate with an existing system the team relies on.",
+    "type": "reason_choice",
+    "prompt": "What's the most productive way to respond?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Acknowledge the integration gap as valid first, before addressing the rest of the concerns.",
+        "conceptTag": "productive_disagreement"
+      },
+      {
+        "id": "B",
+        "text": "Respond to every point at once, including the unfounded ones, without distinguishing the valid concern.",
+        "misconception": "strategic-disagreement_as_combat"
+      },
+      {
+        "id": "C",
+        "text": "Ignore the integration point entirely and focus only on refuting the unfounded concerns.",
+        "misconception": "strategic-disagreement_as_combat"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Naming the one genuinely valid concern first tends to make the rest of the conversation go better — it signals the disagreement that follows is considered, not reflexive."
+  },
+  {
+    "id": "i.comm.disagree.b",
+    "concept": "productive_disagreement",
+    "scenario": "Responding to a critical email, someone immediately writes a point-by-point rebuttal of every sentence, without acknowledging anything in the original message.",
+    "type": "reason_choice",
+    "prompt": "What risk does this approach carry?",
+    "options": [
+      {
+        "id": "A",
+        "text": "It can push the other person to defend their entire position, including parts they might otherwise have reconsidered, since nothing in it was acknowledged.",
+        "conceptTag": "productive_disagreement"
+      },
+      {
+        "id": "B",
+        "text": "No real risk — a thorough point-by-point response is always the most effective approach.",
+        "misconception": "strategic-disagreement_as_combat"
+      },
+      {
+        "id": "C",
+        "text": "The only risk is that it takes longer to write than a shorter response.",
+        "misconception": "strategic-disagreement_as_combat"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Responding to every point as if the whole message must be countered tends to make the other person defend all of it, including parts that a more selective response might have let go unchallenged."
+  },
+  {
+    "id": "i.comm.disagree.c",
+    "concept": "productive_disagreement",
+    "scenario": "\"You're right that the timeline is tight — I think we can still make it work if we adjust scope\" is said in response to a colleague's concern about a deadline.",
+    "type": "reason_choice",
+    "prompt": "What does this response demonstrate?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Acknowledging what's valid in the concern before offering a different path forward.",
+        "conceptTag": "productive_disagreement"
+      },
+      {
+        "id": "B",
+        "text": "Capitulating entirely to the colleague's concern rather than disagreeing.",
+        "misconception": "strategic-disagreement_as_combat"
+      },
+      {
+        "id": "C",
+        "text": "Avoiding the actual disagreement by changing the subject to scope.",
+        "misconception": "strategic-disagreement_as_combat"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Naming what's valid (the tight timeline) while still offering a genuine alternative is productive disagreement — it's neither full agreement nor combat, but acknowledgment followed by a real counter-proposal."
+  },
+  {
+    "id": "i.comm.silence.a",
+    "concept": "strategic_timing_and_silence",
+    "scenario": "In a tense meeting, someone pauses for several seconds before responding to a pointed comment, rather than replying immediately.",
+    "type": "reason_choice",
+    "prompt": "What's the most likely reason for this pause?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A deliberate choice to consider the response carefully rather than react immediately — not necessarily disengagement.",
+        "conceptTag": "strategic_timing_and_silence"
+      },
+      {
+        "id": "B",
+        "text": "It must mean they have nothing to say and are avoiding the issue.",
+        "misconception": "strategic-silence_as_passivity"
+      },
+      {
+        "id": "C",
+        "text": "Any pause longer than a second or two in a conversation always signals weakness.",
+        "misconception": "strategic-silence_as_passivity"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "A deliberate pause before responding to something pointed is often a considered choice, not a sign of having nothing to say — assuming otherwise misreads what's actually happening."
+  },
+  {
+    "id": "i.comm.silence.b",
+    "concept": "strategic_timing_and_silence",
+    "scenario": "Someone decides not to respond to a provocative comment in a group chat, choosing instead to address it privately with the person later.",
+    "type": "reason_choice",
+    "prompt": "How should this choice be read?",
+    "options": [
+      {
+        "id": "A",
+        "text": "As a deliberate decision about where and how to respond, not necessarily avoidance of the issue itself.",
+        "conceptTag": "strategic_timing_and_silence"
+      },
+      {
+        "id": "B",
+        "text": "As clear evidence of avoiding the conflict entirely.",
+        "misconception": "strategic-silence_as_passivity"
+      },
+      {
+        "id": "C",
+        "text": "As a sign the comment wasn't actually worth addressing at all.",
+        "misconception": "strategic-silence_as_passivity"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Choosing a different time or setting to respond is a deliberate strategic choice about how to handle something, not the same as avoiding it altogether — the private follow-up still addresses it."
+  },
+  {
+    "id": "i.comm.silence.c",
+    "concept": "strategic_timing_and_silence",
+    "scenario": "Someone stays quiet in every meeting where disagreement arises, consistently, across many months, later describing this as 'strategic timing.'",
+    "type": "reason_choice",
+    "prompt": "Is this likely to be genuinely strategic?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Probably not — a consistent pattern of never speaking up, regardless of the specific situation, looks more like default avoidance than a deliberate choice made case by case.",
+        "conceptTag": "strategic_timing_and_silence"
+      },
+      {
+        "id": "B",
+        "text": "Yes — any silence described as strategic should be taken as genuinely deliberate.",
+        "misconception": "strategic-silence_as_passivity"
+      },
+      {
+        "id": "C",
+        "text": "It doesn't matter whether it's genuinely strategic or habitual, since the outcome is the same either way.",
+        "misconception": "strategic-silence_as_passivity"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "The distinction between strategic silence and habitual avoidance is exactly whether it's a case-by-case choice or a consistent default — a pattern of always staying quiet looks like the latter, regardless of the label applied to it."
+  },
+  {
+    "id": "i.wk10.chk.a",
+    "concept": "persuasion_principles",
+    "scenario": "A manager genuinely helped a colleague last month (real reciprocity) and is now asking for help in return, framing the request as \"a quick 15-minute favor\" when it will likely take an hour — while the actual time commitment is real and not disclosed.",
+    "type": "reason_choice",
+    "prompt": "What's the combined issue here?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The reciprocity itself is honest, but the dishonest framing of the time commitment turns an otherwise honest request into a misleading one.",
+        "conceptTag": "persuasion_principles"
+      },
+      {
+        "id": "B",
+        "text": "There's no issue, since the original favor was genuine, which makes everything about the follow-up request honest too.",
+        "misconception": "strategic-persuasion_as_manipulation"
+      },
+      {
+        "id": "C",
+        "text": "The issue is purely about boundaries, unrelated to how the request was framed.",
+        "misconception": "strategic-framing_ignored_for_others"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "A genuine basis for reciprocity doesn't make every detail of the resulting request automatically honest — misrepresenting the actual time commitment is a separate framing problem layered on top of an otherwise legitimate ask."
+  },
+  {
+    "id": "i.wk10.chk.b",
+    "concept": "framing_choices",
+    "scenario": "A recruiter frames a role honestly as offering real growth opportunity, and when the candidate asks about the actual scope, gives a vague, open-ended answer rather than the specific responsibilities involved.",
+    "type": "reason_choice",
+    "prompt": "What two issues does this combine?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Honest framing of the opportunity on one hand, undermined by a vague, hard-to-evaluate answer about scope when a specific one was actually asked for.",
+        "conceptTag": "framing_choices"
+      },
+      {
+        "id": "B",
+        "text": "No real issue, since the growth framing itself was honest and accurate.",
+        "misconception": "strategic-framing_ignored_for_others"
+      },
+      {
+        "id": "C",
+        "text": "Only a request-framing issue applies here, unrelated to how the opportunity itself was described.",
+        "misconception": "strategic-request_vague"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Honest framing of the opportunity doesn't excuse a vague, unhelpful answer once specifics are actually asked for — the two are separate moments in the same conversation, both worth getting right."
+  },
+  {
+    "id": "i.wk10.chk.c",
+    "concept": "boundaries_and_refusal",
+    "scenario": "Asked to take on extra work, someone states a boundary clearly (\"I can't take this on\") but then, when pushed back on, reveals it was actually about not wanting to work with a particular colleague — an incentive they hadn't stated.",
+    "type": "reason_choice",
+    "prompt": "What does the later revelation add to this picture?",
+    "options": [
+      {
+        "id": "A",
+        "text": "It shows the stated reason for the boundary wasn't the complete incentive — a clear boundary and a fully disclosed reason are two separate things.",
+        "conceptTag": "boundaries_and_refusal"
+      },
+      {
+        "id": "B",
+        "text": "It means the original boundary wasn't actually clear, since the full reason wasn't given upfront.",
+        "misconception": "strategic-boundary_overexplained"
+      },
+      {
+        "id": "C",
+        "text": "Nothing — a stated boundary is always a complete and honest account of all incentives behind it.",
+        "misconception": "strategic-incentive_taken_at_face_value"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "A boundary can be clearly stated without disclosing every incentive behind it — clarity of the refusal and completeness of the stated reason are genuinely separate things."
+  },
+  {
+    "id": "i.wk10.chk.d",
+    "concept": "reading_stated_incentives",
+    "scenario": "A colleague states he supports a vendor change for cost reasons. He's also framing the choice to the team in a way that emphasizes savings and downplays a real quality tradeoff.",
+    "type": "reason_choice",
+    "prompt": "What two things is worth noticing here?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The stated cost incentive may well be real, and separately, the framing to the team (emphasizing savings, downplaying tradeoffs) deserves its own honest scrutiny.",
+        "conceptTag": "reading_stated_incentives"
+      },
+      {
+        "id": "B",
+        "text": "Only the framing matters; the stated incentive is irrelevant once framing is involved.",
+        "misconception": "strategic-framing_ignored_for_others"
+      },
+      {
+        "id": "C",
+        "text": "Since cost savings were mentioned, the quality tradeoff must not be real.",
+        "misconception": "strategic-incentive_taken_at_face_value"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "A real incentive (cost savings) and a framing choice that downplays a real downside (quality tradeoff) are two separate things worth noticing together, not one explaining away the other."
+  },
+  {
+    "id": "i.wk11.chk.a",
+    "concept": "assertive_communication",
+    "scenario": "In a heated disagreement, someone states their position assertively (\"I disagree, and here's why\") but immediately follows with a vague, open-ended request: \"so maybe we should talk about it sometime.\"",
+    "type": "reason_choice",
+    "prompt": "What's the mismatch here?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A clear, assertive position followed by a vague request undercuts the clarity — the specific ask (when, how) doesn't match the clarity of the stated disagreement.",
+        "conceptTag": "assertive_communication"
+      },
+      {
+        "id": "B",
+        "text": "There's no mismatch — assertiveness about a position has nothing to do with how a follow-up request is framed.",
+        "misconception": "strategic-request_vague"
+      },
+      {
+        "id": "C",
+        "text": "The vague request actually strengthens the assertive statement by leaving room for flexibility.",
+        "misconception": "strategic-request_vague"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Assertiveness in stating a position doesn't automatically carry over to how a follow-up request is framed — a vague \"sometime\" undercuts the clarity just established."
+  },
+  {
+    "id": "i.wk11.chk.b",
+    "concept": "productive_disagreement",
+    "scenario": "Someone acknowledges what's valid in a colleague's criticism (productive disagreement) but then, instead of pausing to let that land, immediately pivots into a long aggressive rebuttal of everything else.",
+    "type": "reason_choice",
+    "prompt": "What does the immediate pivot undercut?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The value of the initial acknowledgment — a pause after naming what's valid would likely let it land better than rushing straight into rebuttal.",
+        "conceptTag": "productive_disagreement"
+      },
+      {
+        "id": "B",
+        "text": "Nothing — acknowledging a valid point and then rebutting everything else immediately is the correct full sequence.",
+        "misconception": "strategic-disagreement_as_combat"
+      },
+      {
+        "id": "C",
+        "text": "The acknowledgment itself, which must have been insincere if a rebuttal followed at all.",
+        "misconception": "strategic-disagreement_as_combat"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Acknowledging a valid point and immediately launching into an aggressive rebuttal of everything else can undercut the acknowledgment itself — a brief pause lets the acknowledgment register before moving on."
+  },
+  {
+    "id": "i.wk11.chk.c",
+    "concept": "request_framing",
+    "scenario": "Someone makes a specific, well-framed request (\"could you review this by Thursday\") but does so in an aggressive tone that dismisses any possibility of the other person saying no.",
+    "type": "reason_choice",
+    "prompt": "What's the combined problem?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Specificity in the request doesn't fix a delivery that leaves no real room for the other person's own position — that's a separate, assertiveness-related problem.",
+        "conceptTag": "request_framing"
+      },
+      {
+        "id": "B",
+        "text": "There's no problem — a specific request is always appropriate regardless of tone.",
+        "misconception": "strategic-passive_or_aggressive_confused"
+      },
+      {
+        "id": "C",
+        "text": "The specificity itself is what makes the request feel aggressive.",
+        "misconception": "strategic-request_vague"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "A well-specified request can still be delivered aggressively — clarity about what's being asked and respect for the other person's ability to decline are two different things, both needed."
+  },
+  {
+    "id": "i.wk11.chk.d",
+    "concept": "strategic_timing_and_silence",
+    "scenario": "During a tense negotiation, someone pauses deliberately before responding to a low offer (strategic timing), but when they do respond, they state their counter-position vaguely rather than specifically.",
+    "type": "reason_choice",
+    "prompt": "What does the vague follow-up undercut?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The value of the deliberate pause — a considered pause followed by a vague response doesn't give the other side anything clearer to work with than an immediate vague reaction would have.",
+        "conceptTag": "strategic_timing_and_silence"
+      },
+      {
+        "id": "B",
+        "text": "Nothing — the pause itself is the only thing that matters strategically.",
+        "misconception": "strategic-request_vague"
+      },
+      {
+        "id": "C",
+        "text": "The vagueness is actually a strength, since it keeps the other side guessing.",
+        "misconception": "strategic-request_vague"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "A deliberate pause is only valuable if what follows it is actually clearer or more considered — pausing and then responding vagely wastes the advantage the pause was meant to create."
+  },
+  {
+    "id": "i.comm.words",
+    "concept": "assertive_communication",
+    "type": "own_words",
+    "scenario": "Think of a real, difficult conversation you're facing, or recently had.",
+    "prompt": "In your own words, describe it and check it against as many of this module's eight communication ideas as actually apply: honest persuasion, framing, boundaries, reading incentives, assertiveness, specific requests, finding what's valid before countering, and strategic timing.",
+    "modelAnswer": "\"The conversation is X.\" \"Checking for assertiveness: was I clear and firm without being aggressive or passive?\" \"Checking my request: was it specific, or vague?\" \"Checking disagreement: did I acknowledge what was valid in the other view?\" \"Checking timing: did I pause where it would have helped?\"",
+    "rubric": [
+      "States a real, specific conversation, not a hypothetical one.",
+      "Checks it against at least three of this module's eight ideas by name.",
+      "For at least one idea, states what doing it differently would actually have looked like.",
+      "Reaches a conclusion based on the check, not just lists the ideas without applying them."
+    ]
+  }
+]

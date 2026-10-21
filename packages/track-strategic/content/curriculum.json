@@ -14,7 +14,9 @@
         "strategic-m6",
         "strategic-m7",
         "strategic-m8",
-        "strategic-m9"
+        "strategic-m9",
+        "strategic-m10",
+        "strategic-m11"
       ]
     }
   ],
@@ -134,6 +136,32 @@
         "strategic-m9.l3",
         "strategic-m9.l4",
         "strategic-m9.l5"
+      ]
+    },
+    {
+      "id": "strategic-m10",
+      "trackId": "strategic",
+      "sequence": 10,
+      "title": "Getting Heard, Honestly",
+      "lessonIds": [
+        "strategic-m10.l1",
+        "strategic-m10.l2",
+        "strategic-m10.l3",
+        "strategic-m10.l4",
+        "strategic-m10.l5"
+      ]
+    },
+    {
+      "id": "strategic-m11",
+      "trackId": "strategic",
+      "sequence": 11,
+      "title": "Communicating Under Pressure",
+      "lessonIds": [
+        "strategic-m11.l1",
+        "strategic-m11.l2",
+        "strategic-m11.l3",
+        "strategic-m11.l4",
+        "strategic-m11.l5"
       ]
     }
   ],
@@ -1945,6 +1973,393 @@
       "apply": "Pick one real, current decision where you suspect your own story about it might not be fully accurate, and check it explicitly against all four of this week's biases.",
       "reflect": "In your own words, describe a real decision you're facing or recently made, and check it against as many of this module's eight biases as actually apply.",
       "contentVersion": 1
+    },
+    {
+      "id": "strategic-m10.l1",
+      "trackId": "strategic",
+      "moduleId": "strategic-m10",
+      "sequence": 1,
+      "title": "Reciprocity, Consistency, and Social Proof",
+      "objectives": [
+        "Name three honest influence principles — reciprocity, consistency, and social proof — and use them transparently rather than manipulatively."
+      ],
+      "concepts": [
+        "persuasion_principles"
+      ],
+      "prerequisites": [
+        "strategic-m9.l5"
+      ],
+      "interactiveItemIds": [
+        "i.comm.pers.a",
+        "i.comm.pers.b",
+        "i.comm.pers.c"
+      ],
+      "masteryItemIds": [],
+      "teach": [
+        "Three well-documented influence principles: reciprocity (people tend to return a favour), consistency (people tend to act in line with commitments they've already made), and social proof (people look to what others similar to them are doing). Each can be used honestly, by genuinely offering something first, genuinely securing a real commitment, or genuinely pointing to real evidence of others' behaviour.",
+        "Treating any deliberate use of these principles as inherently manipulative. The difference between honest influence and manipulation isn't whether a principle is used — it's whether what's being offered, committed to, or pointed at is actually true and freely entered into.",
+        "Using them dishonestly — a fake favour with strings attached, a fabricated commitment, invented evidence of what others are doing — is manipulation. The same principles, used transparently, are just normal honest communication."
+      ],
+      "example": "A colleague offers to cover your shift one week (reciprocity), genuinely with no expectation attached. The following month, when she asks for a swap, you're naturally inclined to help — not because she engineered an obligation, but because a real favour was given and a real willingness to return it followed.",
+      "practicePrompts": [
+        "Think of a time someone's request felt easy to say yes to.",
+        "Consider whether reciprocity, consistency, or social proof was quietly at play.",
+        "Ask whether it was used honestly — was what was offered or pointed to actually real?"
+      ],
+      "apply": "Next time you're asking someone for something, consider honestly offering something first, referencing a real prior commitment, or pointing to real evidence of what others have done — rather than just asking cold.",
+      "reflect": "Think of a time you felt manipulated by one of these principles. What made it feel dishonest rather than just persuasive?",
+      "contentVersion": 1
+    },
+    {
+      "id": "strategic-m10.l2",
+      "trackId": "strategic",
+      "moduleId": "strategic-m10",
+      "sequence": 2,
+      "title": "How You Present a Choice Shapes It",
+      "objectives": [
+        "Recognise how framing a choice for someone else — not just for yourself — shapes what they pick, and use that deliberately and honestly."
+      ],
+      "concepts": [
+        "framing_choices"
+      ],
+      "prerequisites": [
+        "strategic-m10.l1"
+      ],
+      "interactiveItemIds": [
+        "i.comm.frame.a",
+        "i.comm.frame.b",
+        "i.comm.frame.c"
+      ],
+      "masteryItemIds": [],
+      "teach": [
+        "The same choice, offered to someone else, can be accepted or declined depending purely on how it's framed — as a gain or a loss, as the default or an opt-in, as rare or common. This isn't just something that distorts your own judgment (covered earlier); it's a real lever when you're the one presenting a choice to someone.",
+        "Presenting a choice without considering how its framing will shape the other person's decision, then being surprised by their answer. The framing is part of what you're communicating, whether you intend it to be or not.",
+        "Using framing to help someone see a choice clearly — accurately highlighting what's actually at stake — is honest communication. Using it to obscure the real choice, or push someone toward an option that doesn't serve them, crosses into manipulation."
+      ],
+      "example": "Offering a colleague \"a chance to lead this project\" lands very differently from \"extra work with no additional resources\" — even if both describe the same opportunity accurately. Choosing the framing that highlights what's genuinely true and relevant to them is honest; choosing one to obscure a real downside isn't.",
+      "practicePrompts": [
+        "Think of a choice you need to present to someone else soon.",
+        "Consider at least two honest ways of framing the same choice.",
+        "Pick the framing that most accurately reflects what's actually at stake for them."
+      ],
+      "apply": "Next time you're presenting a choice to someone, consciously choose a framing that's both honest and clear, rather than defaulting to whatever wording comes to mind first.",
+      "reflect": "Think of a choice someone presented to you that felt framed to push you a certain way. What was different about the framing versus a neutral description?",
+      "contentVersion": 1
+    },
+    {
+      "id": "strategic-m10.l3",
+      "trackId": "strategic",
+      "moduleId": "strategic-m10",
+      "sequence": 3,
+      "title": "Saying No, Clearly",
+      "objectives": [
+        "State a boundary or refusal clearly, without over-explaining it into an invitation to negotiate."
+      ],
+      "concepts": [
+        "boundaries_and_refusal"
+      ],
+      "prerequisites": [
+        "strategic-m10.l2"
+      ],
+      "interactiveItemIds": [
+        "i.comm.bound.a",
+        "i.comm.bound.b",
+        "i.comm.bound.c"
+      ],
+      "masteryItemIds": [],
+      "teach": [
+        "A clear refusal states the boundary without extensive justification: \"I can't take that on this week\" is complete. It doesn't require defending, apologising for, or building an elaborate case for the no.",
+        "Padding a refusal with excessive explanation, which often invites the other person to argue with or pick apart the justification, rather than simply accepting the boundary itself.",
+        "A short reason, if one is offered at all, is fine — the problem isn't explaining, it's over-explaining to the point that the boundary itself starts to sound negotiable."
+      ],
+      "example": "\"I can't help with that this week, I've got too much on\" is a complete, clear boundary. Adding four more sentences justifying exactly why, apologising twice, and promising to make it up somehow turns a simple no into something that reads as open for negotiation.",
+      "practicePrompts": [
+        "Think of a recent request you said yes to when you wanted to say no.",
+        "Draft the clear, short version of the no you wished you'd given.",
+        "Notice how much shorter it is than the version you'd have actually said."
+      ],
+      "apply": "Next time you need to decline something, give the short, clear version first, and resist the urge to pad it with extra justification.",
+      "reflect": "Think of a boundary you over-explained recently. What happened as a result — did it get negotiated away?",
+      "contentVersion": 1
+    },
+    {
+      "id": "strategic-m10.l4",
+      "trackId": "strategic",
+      "moduleId": "strategic-m10",
+      "sequence": 4,
+      "title": "What's Actually Motivating That",
+      "objectives": [
+        "Look past someone's stated reason to consider other incentives that may also be shaping their position, in everyday communication."
+      ],
+      "concepts": [
+        "reading_stated_incentives"
+      ],
+      "prerequisites": [
+        "strategic-m10.l3"
+      ],
+      "interactiveItemIds": [
+        "i.comm.incent.a",
+        "i.comm.incent.b",
+        "i.comm.incent.c"
+      ],
+      "masteryItemIds": [],
+      "teach": [
+        "What someone says is motivating their position is real information, but it's rarely the complete picture. People have incentives — reputational, financial, social — that shape what they say and do, often without being stated or even fully conscious.",
+        "Taking a stated reason entirely at face value, missing other incentives that are also plausibly at play. This isn't about assuming bad faith — it's about recognising that stated reasons and complete motivations aren't always the same thing.",
+        "Considering a stated reason alongside what else might reasonably be in someone's interest doesn't mean distrusting everything they say — it means reading their position with the same completeness you'd want someone to read yours with."
+      ],
+      "example": "A colleague says he's against a proposed office move because of the commute. That might be entirely true — and it's also worth noticing, without assuming deception, that the current office happens to be near a team he's close to, which is a separate incentive worth considering alongside the stated one.",
+      "practicePrompts": [
+        "Think of a position someone recently stated to you.",
+        "Note the reason they gave.",
+        "Consider, without assuming dishonesty, what other incentive might also be in play."
+      ],
+      "apply": "Next time someone states a position, note their stated reason, then separately consider what else might reasonably be motivating it, before responding.",
+      "reflect": "Think of a time you only learned someone's full motivation later. What would reading for other incentives earlier have told you?",
+      "contentVersion": 1
+    },
+    {
+      "id": "strategic-m10.l5",
+      "trackId": "strategic",
+      "moduleId": "strategic-m10",
+      "sequence": 5,
+      "title": "Getting Heard, Honestly",
+      "objectives": [
+        "Combine honest persuasion, framing, boundaries and reading incentives into one everyday communication."
+      ],
+      "concepts": [
+        "persuasion_principles",
+        "framing_choices",
+        "boundaries_and_refusal",
+        "reading_stated_incentives"
+      ],
+      "prerequisites": [
+        "strategic-m10.l1",
+        "strategic-m10.l2",
+        "strategic-m10.l3",
+        "strategic-m10.l4"
+      ],
+      "interactiveItemIds": [
+        "i.wk10.chk.a",
+        "i.wk10.chk.b",
+        "i.wk10.chk.c",
+        "i.wk10.chk.d"
+      ],
+      "masteryItemIds": [
+        "i.wk10.chk.a",
+        "i.wk10.chk.b",
+        "i.wk10.chk.c",
+        "i.wk10.chk.d"
+      ],
+      "teach": [
+        "This week covered four everyday communication tools: using honest influence principles, framing a choice accurately for someone else, stating a boundary clearly, and reading the incentives behind someone's stated position.",
+        "Using only one of these in isolation — framing a request well but padding a refusal elsewhere in the same conversation, or reading someone's incentives carefully while ignoring your own framing of what you're asking for.",
+        "All four share one thread: honest, clear communication that doesn't rely on obscuring anything — not what you're offering, not what you're declining, not what you understand about the other person's position."
+      ],
+      "example": "Asking a colleague for help, you reference a favour you did last month (honest reciprocity), frame the ask specifically and accurately (\"an hour reviewing the draft\" rather than something vaguer), and if they decline, accept a short, clear no instead of pushing — while also noting, without resentment, that they're likely also weighing their own deadline pressure (an incentive they may not have stated outright).",
+      "practicePrompts": [
+        "Think of a real conversation you have coming up.",
+        "Plan how you'll frame your ask or position honestly.",
+        "Consider what boundary you might need to hold, and what incentives the other person might be weighing."
+      ],
+      "apply": "Go into your next real conversation having planned all four: how you'll frame things honestly, what boundary you might need to hold, and what incentives might be shaping the other person's position.",
+      "reflect": "Across this week, which of the four — honest persuasion, framing, boundaries, or reading incentives — do you most need to practise deliberately?",
+      "contentVersion": 1
+    },
+    {
+      "id": "strategic-m11.l1",
+      "trackId": "strategic",
+      "moduleId": "strategic-m11",
+      "sequence": 1,
+      "title": "Clear and Firm, Not Aggressive or Passive",
+      "objectives": [
+        "Distinguish assertive communication from both aggressive and passive communication."
+      ],
+      "concepts": [
+        "assertive_communication"
+      ],
+      "prerequisites": [
+        "strategic-m10.l5"
+      ],
+      "interactiveItemIds": [
+        "i.comm.assert.a",
+        "i.comm.assert.b",
+        "i.comm.assert.c"
+      ],
+      "masteryItemIds": [],
+      "teach": [
+        "Assertive communication states your position, need, or boundary clearly and respectfully. It's distinct from aggressive communication (which disregards the other person's position) and passive communication (which avoids stating your own).",
+        "Equating clear, firm statements with aggression, or mistaking avoidance and over-accommodation for politeness. Both confusions lead to the same place: a real position left unstated, either out of fear of seeming aggressive, or out of habit dressed up as courtesy.",
+        "Assertiveness names what you think or need without demanding the other person agree, and without pretending you don't have a position at all — both of the other two modes skip one half of that."
+      ],
+      "example": "\"I disagree with this approach, and here's why\" is assertive. \"This approach is obviously wrong and anyone who supports it hasn't thought it through\" is aggressive. Saying nothing and quietly resenting the decision later is passive. Only the first states a real position while leaving room for the other person's.",
+      "practicePrompts": [
+        "Think of a recent disagreement you had, or avoided having.",
+        "Identify which of the three modes — assertive, aggressive, or passive — you used.",
+        "Draft what the assertive version would have sounded like."
+      ],
+      "apply": "Next time you disagree with something, state your position clearly and specifically, without either softening it into silence or sharpening it into an attack.",
+      "reflect": "Think of a time you stayed passive when an assertive response would have served you better. What held you back?",
+      "contentVersion": 1
+    },
+    {
+      "id": "strategic-m11.l2",
+      "trackId": "strategic",
+      "moduleId": "strategic-m11",
+      "sequence": 2,
+      "title": "How You Ask Shapes Whether You Get a Yes",
+      "objectives": [
+        "Frame a request specifically and clearly, rather than vaguely, to make it easier to answer and more likely to succeed."
+      ],
+      "concepts": [
+        "request_framing"
+      ],
+      "prerequisites": [
+        "strategic-m11.l1"
+      ],
+      "interactiveItemIds": [
+        "i.comm.req.a",
+        "i.comm.req.b",
+        "i.comm.req.c"
+      ],
+      "masteryItemIds": [],
+      "teach": [
+        "A specific request — what exactly, by when, from whom — is easier to say yes to than a vague one, because it's easier to evaluate and easier to actually act on.",
+        "Making an open-ended request and expecting the other person to figure out what's actually needed. A vague ask is easy to deflect or postpone precisely because it's unclear what agreeing to it would even require.",
+        "Specificity isn't about being demanding — a specific request can still be framed as an easy, low-cost yes. It's the vagueness, not the politeness, that makes a request easy to put off indefinitely."
+      ],
+      "example": "\"Let me know if you can help sometime\" is easy to quietly never respond to. \"Could you review these three slides by Thursday morning?\" is specific enough to get an actual yes or no — and, being concrete, is often easier to agree to than the vague version felt like it would be.",
+      "practicePrompts": [
+        "Think of a request you've made that went unanswered or got postponed indefinitely.",
+        "Rewrite it with a specific what, by when, and from whom.",
+        "Notice how much easier the specific version would be to actually respond to."
+      ],
+      "apply": "Next time you need something from someone, make the request specific — what exactly, by when — rather than open-ended.",
+      "reflect": "Think of a vague request you've made that never got a real answer. What would the specific version have looked like?",
+      "contentVersion": 1
+    },
+    {
+      "id": "strategic-m11.l3",
+      "trackId": "strategic",
+      "moduleId": "strategic-m11",
+      "sequence": 3,
+      "title": "Finding What's Valid Before Countering",
+      "objectives": [
+        "Identify what's actually valid in an opposing view before responding to it, rather than countering immediately."
+      ],
+      "concepts": [
+        "productive_disagreement"
+      ],
+      "prerequisites": [
+        "strategic-m11.l2"
+      ],
+      "interactiveItemIds": [
+        "i.comm.disagree.a",
+        "i.comm.disagree.b",
+        "i.comm.disagree.c"
+      ],
+      "masteryItemIds": [],
+      "teach": [
+        "Productive disagreement starts by identifying what's actually valid in the other view before responding to the rest. Most positions worth disagreeing with have at least one real point buried in them, even when the overall conclusion is wrong.",
+        "Countering immediately, point by point, without first acknowledging what's genuinely correct in the other side's view. This tends to make the other person defend the whole position, including the parts they might otherwise have been willing to revise.",
+        "Naming the valid part explicitly, before disagreeing with the rest, isn't a concession or a weakness — it's usually what makes the other person actually willing to hear the disagreement that follows."
+      ],
+      "example": "A colleague argues against a new process, citing concerns that are mostly unfounded but including one real gap: it doesn't account for a specific edge case. Opening with \"you're right that the edge case isn't covered yet\" before addressing the rest makes the remaining disagreement land better than diving straight into rebuttal would have.",
+      "practicePrompts": [
+        "Think of a disagreement you're currently in or recently had.",
+        "Identify one thing that's actually valid in the other person's position.",
+        "Consider how opening with that, before disagreeing, might change the conversation."
+      ],
+      "apply": "Next time you disagree with someone, state what's valid in their position first, explicitly, before responding to the rest.",
+      "reflect": "Think of a disagreement that went badly. Was there a valid point in the other side you skipped over on your way to countering it?",
+      "contentVersion": 1
+    },
+    {
+      "id": "strategic-m11.l4",
+      "trackId": "strategic",
+      "moduleId": "strategic-m11",
+      "sequence": 4,
+      "title": "Knowing When Not to Speak",
+      "objectives": [
+        "Use a deliberate pause or silence strategically, as a genuine choice, not a default avoidance."
+      ],
+      "concepts": [
+        "strategic_timing_and_silence"
+      ],
+      "prerequisites": [
+        "strategic-m11.l3"
+      ],
+      "interactiveItemIds": [
+        "i.comm.silence.a",
+        "i.comm.silence.b",
+        "i.comm.silence.c"
+      ],
+      "masteryItemIds": [],
+      "teach": [
+        "A deliberate pause before responding, or choosing not to say something right now, can be a genuine strategic choice — giving a heated moment time to cool, letting someone finish a thought, or simply not having anything useful to add yet.",
+        "Treating every silence, your own or someone else's, as a sign of disengagement, weakness, or avoidance. Sometimes it is — but sometimes it's the more considered response, and assuming otherwise can mean filling a pause that didn't need filling.",
+        "The useful distinction is whether the silence is a choice or a default: pausing on purpose, having decided it's the better move right now, is different from staying quiet out of habit or discomfort and calling it strategic after the fact."
+      ],
+      "example": "In a tense meeting, one person pauses for a few seconds before responding to a pointed comment, rather than firing back immediately. The pause isn't avoidance — it's a deliberate choice that lets the response land more carefully than an instant reaction would have.",
+      "practicePrompts": [
+        "Think of a recent conversation where you responded immediately.",
+        "Consider what a brief, deliberate pause might have changed.",
+        "Think of a time you went quiet out of habit, and ask honestly whether it was really a strategic choice."
+      ],
+      "apply": "Next time a conversation gets heated or complicated, try a deliberate pause before responding, and notice what it changes.",
+      "reflect": "Think of a silence — yours or someone else's — that you misread as disengagement. What was actually going on?",
+      "contentVersion": 1
+    },
+    {
+      "id": "strategic-m11.l5",
+      "trackId": "strategic",
+      "moduleId": "strategic-m11",
+      "sequence": 5,
+      "title": "Communicating Under Pressure",
+      "objectives": [
+        "Combine assertiveness, specific requests, productive disagreement and strategic timing into one difficult real conversation.",
+        "Describe a real communication challenge completely, using everything covered across both communication modules."
+      ],
+      "concepts": [
+        "assertive_communication",
+        "request_framing",
+        "productive_disagreement",
+        "strategic_timing_and_silence"
+      ],
+      "prerequisites": [
+        "strategic-m11.l1",
+        "strategic-m11.l2",
+        "strategic-m11.l3",
+        "strategic-m11.l4"
+      ],
+      "interactiveItemIds": [
+        "i.wk11.chk.a",
+        "i.wk11.chk.b",
+        "i.wk11.chk.c",
+        "i.wk11.chk.d",
+        "i.comm.words"
+      ],
+      "masteryItemIds": [
+        "i.wk11.chk.a",
+        "i.wk11.chk.b",
+        "i.wk11.chk.c",
+        "i.wk11.chk.d"
+      ],
+      "explanationBackItemId": "i.comm.words",
+      "teach": [
+        "Last week covered everyday communication tools for calm conversations; this week is the same honesty and clarity applied under pressure — disagreement, tension, a request that matters, a moment that calls for restraint.",
+        "Reaching for only one tool under pressure — staying assertive but forgetting to acknowledge what's valid in the other side, or pausing strategically but never actually stating your position once the pause is over.",
+        "This closes out both communication modules. None of the eight ideas across them require being more forceful or more accommodating by default — they're about matching your communication to what's actually true and actually needed, honestly, in each specific moment."
+      ],
+      "example": "In a tense disagreement with a business partner over direction, staying assertive rather than passive or aggressive, naming what's valid in their view before disagreeing, making your actual request specific rather than vague, and pausing before responding to a pointed comment — all four at once, in one difficult conversation.",
+      "practicePrompts": [
+        "Think of a real, difficult conversation you're facing or recently had.",
+        "Check it against all four: were you assertive, specific, willing to find valid points, and deliberate about timing?",
+        "Consider what you'd do differently with all four in mind."
+      ],
+      "apply": "Before your next difficult conversation, plan explicitly for all four: how to stay assertive, what specific request you're making, what might be valid in the other side, and where a pause might help.",
+      "reflect": "In your own words, describe a real difficult conversation you're facing or recently had, and check it against as many of this module's eight communication ideas as actually apply.",
+      "contentVersion": 1
     }
   ],
   "concepts": [
@@ -2175,6 +2590,54 @@
       "trackId": "strategic",
       "moduleId": "strategic-m9",
       "label": "Mistaking influence over an outcome you don't actually have"
+    },
+    {
+      "id": "persuasion_principles",
+      "trackId": "strategic",
+      "moduleId": "strategic-m10",
+      "label": "Reciprocity, consistency and social proof, used honestly"
+    },
+    {
+      "id": "framing_choices",
+      "trackId": "strategic",
+      "moduleId": "strategic-m10",
+      "label": "How presenting a choice shapes what someone picks"
+    },
+    {
+      "id": "boundaries_and_refusal",
+      "trackId": "strategic",
+      "moduleId": "strategic-m10",
+      "label": "Saying no clearly, without diluting it"
+    },
+    {
+      "id": "reading_stated_incentives",
+      "trackId": "strategic",
+      "moduleId": "strategic-m10",
+      "label": "What's actually motivating someone's stated position"
+    },
+    {
+      "id": "assertive_communication",
+      "trackId": "strategic",
+      "moduleId": "strategic-m11",
+      "label": "Clear and firm, distinct from aggressive or passive"
+    },
+    {
+      "id": "request_framing",
+      "trackId": "strategic",
+      "moduleId": "strategic-m11",
+      "label": "How the way you ask shapes whether you get a yes"
+    },
+    {
+      "id": "productive_disagreement",
+      "trackId": "strategic",
+      "moduleId": "strategic-m11",
+      "label": "Finding what's valid in an opposing view before countering it"
+    },
+    {
+      "id": "strategic_timing_and_silence",
+      "trackId": "strategic",
+      "moduleId": "strategic-m11",
+      "label": "Knowing when not to speak, or when to pause"
     }
   ],
   "misconceptions": [
@@ -2423,6 +2886,54 @@
       "trackId": "strategic",
       "label": "Illusion of control",
       "description": "Overestimating how much influence you actually have over an outcome that depends heavily on chance or another player's independent choice."
+    },
+    {
+      "id": "strategic-persuasion_as_manipulation",
+      "trackId": "strategic",
+      "label": "Ethical persuasion mistaken for manipulation",
+      "description": "Treating any deliberate use of an influence principle as inherently manipulative, rather than recognising it can be used transparently and honestly."
+    },
+    {
+      "id": "strategic-framing_ignored_for_others",
+      "trackId": "strategic",
+      "label": "Framing effect on others ignored",
+      "description": "Presenting a choice to someone without considering how the framing itself, not just the content, will shape what they decide."
+    },
+    {
+      "id": "strategic-boundary_overexplained",
+      "trackId": "strategic",
+      "label": "A boundary diluted by over-explaining",
+      "description": "Padding a clear refusal with excessive justification, which invites the other person to negotiate the boundary itself rather than accept it."
+    },
+    {
+      "id": "strategic-incentive_taken_at_face_value",
+      "trackId": "strategic",
+      "label": "Stated incentive taken at face value",
+      "description": "Accepting someone's stated reason as their complete motivation, without considering other incentives that may also be shaping their position."
+    },
+    {
+      "id": "strategic-passive_or_aggressive_confused",
+      "trackId": "strategic",
+      "label": "Assertiveness confused with aggression or passivity",
+      "description": "Equating clear, firm communication with aggression, or mistaking passive avoidance for politeness."
+    },
+    {
+      "id": "strategic-request_vague",
+      "trackId": "strategic",
+      "label": "Vague request",
+      "description": "Making an open-ended, unspecific request that's easy for the other person to deflect or postpone, rather than a specific, answerable one."
+    },
+    {
+      "id": "strategic-disagreement_as_combat",
+      "trackId": "strategic",
+      "label": "Disagreement treated as combat",
+      "description": "Countering an opposing view immediately without first identifying what's actually valid in it."
+    },
+    {
+      "id": "strategic-silence_as_passivity",
+      "trackId": "strategic",
+      "label": "Strategic silence mistaken for passivity",
+      "description": "Treating a deliberate pause or silence as always a sign of disengagement or weakness, rather than recognising it can be a considered choice."
     }
   ]
 }

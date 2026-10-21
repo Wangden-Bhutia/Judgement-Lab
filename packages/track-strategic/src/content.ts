@@ -9,6 +9,7 @@ import bankDeepeningItemsJson from '../content/items/bank-deepening.json' with {
 import weeklyCheckpointItemsJson from '../content/items/weekly-checkpoints.json' with { type: 'json' };
 import negotiationItemsJson from '../content/items/negotiation.json' with { type: 'json' };
 import biasesItemsJson from '../content/items/biases.json' with { type: 'json' };
+import communicationItemsJson from '../content/items/communication.json' with { type: 'json' };
 
 export const strategicCurriculum = curriculumJson as Curriculum;
 export const strategicItems: Item[] = [
@@ -20,4 +21,5 @@ export const strategicItems: Item[] = [
   ...(weeklyCheckpointItemsJson as Item[]),
   ...(negotiationItemsJson as Item[]),
   ...(biasesItemsJson as Item[]),
+  ...(communicationItemsJson as Item[]),
 ];

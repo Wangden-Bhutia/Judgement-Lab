@@ -9,6 +9,7 @@ import bankDeepeningItems from '../../content/items/bank-deepening.json' with { 
 import weeklyCheckpointItems from '../../content/items/weekly-checkpoints.json' with { type: 'json' };
 import negotiationItems from '../../content/items/negotiation.json' with { type: 'json' };
 import biasesItems from '../../content/items/biases.json' with { type: 'json' };
+import communicationItems from '../../content/items/communication.json' with { type: 'json' };
 
 const typedCurriculum = curriculum as Curriculum;
 const typedItems: Item[] = [
@@ -20,6 +21,7 @@ const typedItems: Item[] = [
   ...(weeklyCheckpointItems as Item[]),
   ...(negotiationItems as Item[]),
   ...(biasesItems as Item[]),
+  ...(communicationItems as Item[]),
 ];
 const itemById = new Map(typedItems.map((i) => [i.id, i]));
 
@@ -123,8 +125,8 @@ describe('converted Strategic Reasoning content (Modules 1-9)', () => {
   });
 
   it('has 2 bias modules (8-9) and 10 lessons, chaining off module 7\'s checkpoint', () => {
-    expect(typedCurriculum.modules.map((m) => m.id).slice(7)).toEqual(['strategic-m8', 'strategic-m9']);
-    expect(typedCurriculum.lessons.map((l) => l.id).slice(35)).toEqual([
+    expect(typedCurriculum.modules.map((m) => m.id).slice(7, 9)).toEqual(['strategic-m8', 'strategic-m9']);
+    expect(typedCurriculum.lessons.map((l) => l.id).slice(35, 45)).toEqual([
       'strategic-m8.l1', 'strategic-m8.l2', 'strategic-m8.l3', 'strategic-m8.l4', 'strategic-m8.l5',
       'strategic-m9.l1', 'strategic-m9.l2', 'strategic-m9.l3', 'strategic-m9.l4', 'strategic-m9.l5',
     ]);
@@ -146,6 +148,44 @@ describe('converted Strategic Reasoning content (Modules 1-9)', () => {
       const checkpointConcepts = new Set(lesson.masteryItemIds.map((id) => itemById.get(id)!.concept));
       expect(checkpointConcepts.size).toBe(4);
       expect(checkpointConcepts).toEqual(new Set(lesson.concepts));
+    }
+  });
+
+  it('has 2 communication modules (10-11) and 10 lessons, chaining off module 9\'s checkpoint', () => {
+    expect(typedCurriculum.modules.map((m) => m.id).slice(9, 11)).toEqual(['strategic-m10', 'strategic-m11']);
+    expect(typedCurriculum.lessons.map((l) => l.id).slice(45, 55)).toEqual([
+      'strategic-m10.l1', 'strategic-m10.l2', 'strategic-m10.l3', 'strategic-m10.l4', 'strategic-m10.l5',
+      'strategic-m11.l1', 'strategic-m11.l2', 'strategic-m11.l3', 'strategic-m11.l4', 'strategic-m11.l5',
+    ]);
+    const byId = new Map(typedCurriculum.lessons.map((l) => [l.id, l]));
+    expect(byId.get('strategic-m10.l1')!.prerequisites).toEqual(['strategic-m9.l5']);
+    expect(byId.get('strategic-m11.l1')!.prerequisites).toEqual(['strategic-m10.l5']);
+  });
+
+  it('each communication week\'s checkpoint lesson requires every lesson in that week and covers all 4 of that week\'s concepts', () => {
+    const byId = new Map(typedCurriculum.lessons.map((l) => [l.id, l]));
+    expect(new Set(byId.get('strategic-m10.l5')!.prerequisites)).toEqual(
+      new Set(['strategic-m10.l1', 'strategic-m10.l2', 'strategic-m10.l3', 'strategic-m10.l4'])
+    );
+    expect(new Set(byId.get('strategic-m11.l5')!.prerequisites)).toEqual(
+      new Set(['strategic-m11.l1', 'strategic-m11.l2', 'strategic-m11.l3', 'strategic-m11.l4'])
+    );
+    for (const lessonId of ['strategic-m10.l5', 'strategic-m11.l5']) {
+      const lesson = typedCurriculum.lessons.find((l) => l.id === lessonId)!;
+      const checkpointConcepts = new Set(lesson.masteryItemIds.map((id) => itemById.get(id)!.concept));
+      expect(checkpointConcepts.size).toBe(4);
+      expect(checkpointConcepts).toEqual(new Set(lesson.concepts));
+    }
+  });
+
+  it('honest persuasion is distinguished from manipulation by truthfulness, not by whether an influence principle is used at all', () => {
+    const item = itemById.get('i.comm.pers.a');
+    expect(item?.type).toBe('reason_choice');
+    if (item?.type === 'reason_choice') {
+      const manipulationConfusion = item.options.find((o) => o.misconception === 'strategic-persuasion_as_manipulation');
+      expect(manipulationConfusion).toBeDefined();
+      const correct = item.options.find((o) => item.acceptableAnswers.includes(o.id));
+      expect(correct?.conceptTag).toBe('persuasion_principles');
     }
   });
 
