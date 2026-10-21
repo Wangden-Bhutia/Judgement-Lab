@@ -15,7 +15,8 @@
         "behavioural-mod-7",
         "behavioural-mod-8",
         "behavioural-mod-9",
-        "behavioural-mod-10"
+        "behavioural-mod-10",
+        "behavioural-mod-11"
       ]
     }
   ],
@@ -147,6 +148,19 @@
         "behavioural-les-47",
         "behavioural-les-48",
         "behavioural-les-49"
+      ]
+    },
+    {
+      "id": "behavioural-mod-11",
+      "trackId": "behavioural",
+      "sequence": 11,
+      "title": "Earning and Extending Trust",
+      "lessonIds": [
+        "behavioural-les-50",
+        "behavioural-les-51",
+        "behavioural-les-52",
+        "behavioural-les-53",
+        "behavioural-les-54"
       ]
     }
   ],
@@ -2270,6 +2284,218 @@
       "apply": "In your next conversation involving a genuinely different perspective, deliberately bring all eight ideas to it, not just the ones that come naturally.",
       "reflect": "In your own words, describe a real situation involving someone else's perspective, and check it against as many of these eight ideas as actually apply.",
       "contentVersion": 1
+    },
+    {
+      "id": "behavioural-les-50",
+      "trackId": "behavioural",
+      "moduleId": "behavioural-mod-11",
+      "sequence": 50,
+      "title": "What Actually Earns Trust Over Time",
+      "objectives": [
+        "Recognize that trust is built through predictable follow-through over time, not single impressive gestures."
+      ],
+      "concepts": [
+        "consistency_builds_trust"
+      ],
+      "prerequisites": [
+        "behavioural-les-49"
+      ],
+      "interactiveItemIds": [
+        "i.rap.cons.a",
+        "i.rap.cons.b",
+        "i.rap.cons.c",
+        "i.rap.cons.words"
+      ],
+      "masteryItemIds": [
+        "i.rap.cons.a",
+        "i.rap.cons.b"
+      ],
+      "explanationBackItemId": "i.rap.cons.words",
+      "teach": [
+        "Trust is built mainly through a predictable pattern of follow-through over time — doing what you said you'd do, repeatedly — not through any single impressive or generous gesture, however memorable.",
+        "Treating one striking act of generosity or competence as strong evidence of overall trustworthiness, while the slower, less visible pattern of whether someone reliably follows through gets comparatively little weight.",
+        "A single gesture can be genuine and still tell you little about whether someone is consistent — consistency is demonstrated by a pattern across many smaller, less memorable moments, not by any one of them."
+      ],
+      "example": "A new colleague makes a generous, visible gesture early on — covering for someone during a crunch — which feels like strong evidence of trustworthiness. Whether they reliably follow through on smaller, routine commitments over the following months is actually the better evidence, even though it's far less memorable than the one gesture.",
+      "practicePrompts": [
+        "Think of someone whose trustworthiness you judged mainly from one memorable gesture.",
+        "Consider what their actual pattern of smaller follow-through has been since.",
+        "Notice the gap, if any, between the memorable gesture and the ongoing pattern."
+      ],
+      "apply": "This week, notice at least one case where you're judging someone's trustworthiness from a single gesture, and deliberately look instead at their pattern of smaller follow-through.",
+      "reflect": "Think of a time a single impressive gesture led you to trust someone more than their actual ongoing pattern later supported. What did the pattern eventually reveal?",
+      "contentVersion": 1
+    },
+    {
+      "id": "behavioural-les-51",
+      "trackId": "behavioural",
+      "moduleId": "behavioural-mod-11",
+      "sequence": 51,
+      "title": "Sharing at the Right Pace",
+      "objectives": [
+        "Match self-disclosure to a relationship's actual pace and reciprocity, rather than oversharing or undersharing."
+      ],
+      "concepts": [
+        "calibrated_self_disclosure"
+      ],
+      "prerequisites": [
+        "behavioural-les-50"
+      ],
+      "interactiveItemIds": [
+        "i.rap.disc.a",
+        "i.rap.disc.b",
+        "i.rap.disc.c",
+        "i.rap.disc.words"
+      ],
+      "masteryItemIds": [
+        "i.rap.disc.a",
+        "i.rap.disc.b"
+      ],
+      "explanationBackItemId": "i.rap.disc.words",
+      "teach": [
+        "Rapport builds through self-disclosure that's roughly reciprocal and matched to how close the relationship actually is — sharing a bit more as the relationship develops, not all at once and not never.",
+        "Sharing personal information far ahead of the relationship's actual closeness (which can feel overwhelming or presumptuous), or far behind it (which can feel withholding and slow any real connection), rather than roughly matching the other person's pace.",
+        "Calibration isn't a fixed formula — it means noticing and roughly matching the pace the other person is actually setting, rather than defaulting to your own habitual level of disclosure regardless of context."
+      ],
+      "example": "Sharing a significant personal struggle in detail with someone met an hour ago, before any real reciprocal closeness has developed, tends to land as overwhelming rather than connecting — the same disclosure, offered later as the relationship develops and the other person has shared comparably, tends to build real rapport instead.",
+      "practicePrompts": [
+        "Think of a time disclosure felt mismatched to a relationship's actual pace, in either direction.",
+        "Consider what a better-matched pace would have looked like.",
+        "Notice the pace of disclosure in a current relationship you're building."
+      ],
+      "apply": "In a relationship you're currently building, notice the other person's pace of disclosure this week, and try to roughly match it rather than defaulting to your own habitual level.",
+      "reflect": "Think of a time someone's disclosure to you felt mismatched to the relationship's actual closeness — too much, too soon, or too little, too late. How did it affect the relationship?",
+      "contentVersion": 1
+    },
+    {
+      "id": "behavioural-les-52",
+      "trackId": "behavioural",
+      "moduleId": "behavioural-mod-11",
+      "sequence": 52,
+      "title": "Trusting Based on Track Record, Not Charm",
+      "objectives": [
+        "Extend trust based on someone's demonstrated track record, rather than their likability or charisma alone."
+      ],
+      "concepts": [
+        "trust_calibrated_to_track_record"
+      ],
+      "prerequisites": [
+        "behavioural-les-51"
+      ],
+      "interactiveItemIds": [
+        "i.rap.track.a",
+        "i.rap.track.b",
+        "i.rap.track.c",
+        "i.rap.track.words"
+      ],
+      "masteryItemIds": [
+        "i.rap.track.a",
+        "i.rap.track.b"
+      ],
+      "explanationBackItemId": "i.rap.track.words",
+      "teach": [
+        "How much trust to extend to someone should track their actual, demonstrated history of following through — not how likable, charming, or confident they come across, which is a separate quality entirely.",
+        "Extending a significant degree of trust based mainly on likability or charisma, which can be entirely genuine and still tell you little about whether someone reliably follows through on commitments.",
+        "This isn't cynicism about likable people — it's simply keeping two separate questions separate: do I enjoy this person's company, and has this person actually demonstrated reliability, which don't have to have the same answer."
+      ],
+      "example": "A charismatic new business partner who is genuinely enjoyable to work with hasn't yet demonstrated any actual track record of following through on commitments — extending the same level of trust given to someone with years of demonstrated reliability, based on charisma alone, conflates two separate questions.",
+      "practicePrompts": [
+        "Think of someone you trusted quickly mainly because you liked them.",
+        "Consider what their actual track record was at the time, separate from how likable they were.",
+        "Notice the two questions — likability and demonstrated reliability — in a current relationship."
+      ],
+      "apply": "Before extending a significant degree of trust to someone new, separately ask how likable they are and what their actual demonstrated track record is, rather than letting the first answer stand in for the second.",
+      "reflect": "Think of a time you extended trust based on likability that the person's actual track record didn't yet support. What happened?",
+      "contentVersion": 1
+    },
+    {
+      "id": "behavioural-les-53",
+      "trackId": "behavioural",
+      "moduleId": "behavioural-mod-11",
+      "sequence": 53,
+      "title": "Rebuilding Trust After It Breaks",
+      "objectives": [
+        "Rebuild broken trust through sustained, consistent follow-through, rather than relying on an apology alone."
+      ],
+      "concepts": [
+        "repairing_broken_trust"
+      ],
+      "prerequisites": [
+        "behavioural-les-52"
+      ],
+      "interactiveItemIds": [
+        "i.rap.repair.a",
+        "i.rap.repair.b",
+        "i.rap.repair.c",
+        "i.rap.repair.words"
+      ],
+      "masteryItemIds": [
+        "i.rap.repair.a",
+        "i.rap.repair.b"
+      ],
+      "explanationBackItemId": "i.rap.repair.words",
+      "teach": [
+        "Rebuilding trust after a breach requires a sustained pattern of consistent follow-through over time — the same thing that built trust in the first place — not a single apology, however sincere.",
+        "Treating a verbal apology as sufficient on its own to repair broken trust, expecting the relationship to reset immediately once the words have been said, without the following period of demonstrated reliability.",
+        "A genuine apology is usually a necessary first step, but it's the start of the repair process, not the whole of it — the trust is actually rebuilt by what happens afterward, consistently, over time."
+      ],
+      "example": "After missing an important commitment, a sincere apology is offered — but trust is actually rebuilt afterward, by following through reliably on the next several smaller commitments, not by the apology itself, however genuine it was in the moment.",
+      "practicePrompts": [
+        "Think of a time an apology alone was expected to repair broken trust, and whether it actually did.",
+        "Consider what sustained follow-through, rather than just the apology, would have required.",
+        "Think of a relationship where trust is currently being rebuilt, and what a consistent pattern going forward would look like."
+      ],
+      "apply": "If you're currently rebuilding trust with someone after a breach, identify one small, concrete commitment you can follow through on consistently, rather than relying on the apology alone.",
+      "reflect": "Think of a time you had to rebuild someone's trust in you after breaking it. What actually rebuilt it — the apology, or what you did afterward?",
+      "contentVersion": 1
+    },
+    {
+      "id": "behavioural-les-54",
+      "trackId": "behavioural",
+      "moduleId": "behavioural-mod-11",
+      "sequence": 54,
+      "title": "Earning and Extending Trust, Put Together",
+      "objectives": [
+        "Combine consistency, calibrated disclosure, trust-by-track-record, and trust repair into one complete approach to building and maintaining trust."
+      ],
+      "concepts": [
+        "consistency_builds_trust",
+        "calibrated_self_disclosure",
+        "trust_calibrated_to_track_record",
+        "repairing_broken_trust"
+      ],
+      "prerequisites": [
+        "behavioural-les-50",
+        "behavioural-les-51",
+        "behavioural-les-52",
+        "behavioural-les-53"
+      ],
+      "interactiveItemIds": [
+        "i.wk11.rap.chk.a",
+        "i.wk11.rap.chk.b",
+        "i.wk11.rap.chk.c",
+        "i.wk11.rap.chk.d"
+      ],
+      "masteryItemIds": [
+        "i.wk11.rap.chk.a",
+        "i.wk11.rap.chk.b",
+        "i.wk11.rap.chk.c",
+        "i.wk11.rap.chk.d"
+      ],
+      "teach": [
+        "This week built four pieces of earning and extending trust well: recognizing that consistency, not single gestures, builds trust; matching self-disclosure to a relationship's actual pace; calibrating trust to someone's actual track record rather than their charm; and rebuilding trust after a breach through sustained follow-through, not just an apology.",
+        "Doing one well while missing another — extending trust based on a likable person's one impressive gesture, or rebuilding a breach with an apology but no actual change in behavior afterward.",
+        "All four point the same direction: trust tracks a real, demonstrated pattern over time, in both directions — earning it and repairing it — not any single moment, gesture, or word."
+      ],
+      "example": "A new working relationship develops well: disclosure is paced to match growing closeness (not rushed), trust is extended gradually as a track record of follow-through accumulates (not based on charm alone), and when one commitment is missed, trust is rebuilt afterward through a sustained pattern of reliability, not just an apology — consistency running through all of it.",
+      "practicePrompts": [
+        "Think of a relationship where trust is currently developing or being repaired.",
+        "Check it against all four: consistency, calibrated disclosure, track record, repair.",
+        "Notice which of the four is hardest for you personally to actually apply."
+      ],
+      "apply": "In a relationship you're currently building or repairing, deliberately apply whichever of these four ideas is most relevant this week.",
+      "reflect": "Across this week, which of the four — consistency, calibrated disclosure, trust-by-track-record, or repair — is hardest for you personally to get right?",
+      "contentVersion": 1
     }
   ],
   "concepts": [
@@ -2512,6 +2738,30 @@
       "trackId": "behavioural",
       "moduleId": "behavioural-mod-10",
       "label": "Combining honesty with care, rather than trading one for the other"
+    },
+    {
+      "id": "consistency_builds_trust",
+      "trackId": "behavioural",
+      "moduleId": "behavioural-mod-11",
+      "label": "Trust built through predictable follow-through over time, not single gestures"
+    },
+    {
+      "id": "calibrated_self_disclosure",
+      "trackId": "behavioural",
+      "moduleId": "behavioural-mod-11",
+      "label": "Matching self-disclosure to the relationship's actual pace and reciprocity"
+    },
+    {
+      "id": "trust_calibrated_to_track_record",
+      "trackId": "behavioural",
+      "moduleId": "behavioural-mod-11",
+      "label": "Extending trust based on demonstrated track record, not likability alone"
+    },
+    {
+      "id": "repairing_broken_trust",
+      "trackId": "behavioural",
+      "moduleId": "behavioural-mod-11",
+      "label": "Rebuilding broken trust through sustained follow-through, not just an apology"
     }
   ],
   "misconceptions": [
@@ -2766,6 +3016,30 @@
       "trackId": "behavioural",
       "label": "Honesty and care treated as a tradeoff",
       "description": "Treating directness and care as mutually exclusive — assuming that being honest requires sacrificing care, or that being caring requires softening the truth."
+    },
+    {
+      "id": "behavioural-single_gesture_overweighted",
+      "trackId": "behavioural",
+      "label": "A single impressive gesture overweighted as proof of trustworthiness",
+      "description": "Treating one impressive or generous gesture as strong evidence of trustworthiness, while discounting the slower, less visible pattern of predictable follow-through that actually builds trust over time."
+    },
+    {
+      "id": "behavioural-disclosure_mismatched_to_pace",
+      "trackId": "behavioural",
+      "label": "Self-disclosure mismatched to the relationship's actual pace",
+      "description": "Sharing personal information either far ahead of or far behind what the relationship's actual closeness and reciprocity would call for, rather than matching disclosure to the relationship's actual pace."
+    },
+    {
+      "id": "behavioural-trust_extended_on_likability_alone",
+      "trackId": "behavioural",
+      "label": "Trust extended based on likability rather than track record",
+      "description": "Extending a significant degree of trust to someone based on how likable or charismatic they are, rather than on their actual demonstrated track record of follow-through."
+    },
+    {
+      "id": "behavioural-apology_treated_as_sufficient_repair",
+      "trackId": "behavioural",
+      "label": "An apology treated as sufficient to repair broken trust",
+      "description": "Treating a verbal apology alone as sufficient to repair trust after a breach, without the sustained, consistent follow-through that actually rebuilds it over time."
     }
   ]
 }

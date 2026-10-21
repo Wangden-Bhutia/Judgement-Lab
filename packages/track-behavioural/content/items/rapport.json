@@ -1,0 +1,506 @@
+[
+  {
+    "id": "i.rap.cons.a",
+    "concept": "consistency_builds_trust",
+    "scenario": "A new colleague makes one generous, memorable gesture — covering for a teammate during a crunch — and is quickly seen as highly trustworthy as a result.",
+    "type": "reason_choice",
+    "prompt": "What's the issue with basing this judgment mainly on the one gesture?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A single memorable gesture is weak evidence of the ongoing, less visible pattern of follow-through that actually demonstrates trustworthiness.",
+        "conceptTag": "consistency_builds_trust"
+      },
+      {
+        "id": "B",
+        "text": "No issue — one sufficiently generous gesture is strong, reliable evidence of overall trustworthiness.",
+        "misconception": "behavioural-single_gesture_overweighted"
+      },
+      {
+        "id": "C",
+        "text": "The only issue is that the gesture should have been even more generous to justify the judgment.",
+        "misconception": "behavioural-single_gesture_overweighted"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "A memorable gesture can be genuine and still tell you little about whether someone reliably follows through — that's demonstrated by a pattern over time, not by any single moment."
+  },
+  {
+    "id": "i.rap.cons.b",
+    "concept": "consistency_builds_trust",
+    "scenario": "Over several months, a colleague reliably follows through on small, unglamorous commitments, with no single standout gesture at all.",
+    "type": "reason_choice",
+    "prompt": "How should this pattern be weighed, compared to one memorable gesture from someone else?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The sustained pattern of smaller follow-through is actually stronger evidence of trustworthiness than a single memorable gesture, even though it's less visible.",
+        "conceptTag": "consistency_builds_trust"
+      },
+      {
+        "id": "B",
+        "text": "The lack of any standout gesture means this colleague is less trustworthy than someone with one memorable act.",
+        "misconception": "behavioural-single_gesture_overweighted"
+      },
+      {
+        "id": "C",
+        "text": "A pattern of small commitments carries no real evidential weight compared to a single notable act.",
+        "misconception": "behavioural-single_gesture_overweighted"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "A sustained pattern across many smaller, less memorable moments is the actual evidence of reliability — it carries more weight than a single gesture, even though it's far less visible or memorable."
+  },
+  {
+    "id": "i.rap.cons.c",
+    "concept": "consistency_builds_trust",
+    "scenario": "Someone trusts a new acquaintance deeply after one impressive act of honesty, without yet having observed any pattern of behavior over time.",
+    "type": "reason_choice",
+    "prompt": "What's missing from the basis for this trust?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A demonstrated pattern over time — one act, however impressive, doesn't yet establish whether it reflects a consistent pattern.",
+        "conceptTag": "consistency_builds_trust"
+      },
+      {
+        "id": "B",
+        "text": "Nothing — one sufficiently impressive act of honesty is enough basis for deep trust.",
+        "misconception": "behavioural-single_gesture_overweighted"
+      },
+      {
+        "id": "C",
+        "text": "The issue is only that the act of honesty should have been witnessed by more people.",
+        "misconception": "behavioural-single_gesture_overweighted"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "One impressive act doesn't yet establish a pattern — genuine consistency is demonstrated over time, through repeated instances, not confirmed by a single observation."
+  },
+  {
+    "id": "i.rap.disc.a",
+    "concept": "calibrated_self_disclosure",
+    "scenario": "Someone shares a significant personal struggle in detail with a person they met an hour ago, before any reciprocal closeness has developed.",
+    "type": "reason_choice",
+    "prompt": "What's the likely effect of this disclosure?",
+    "options": [
+      {
+        "id": "A",
+        "text": "It's likely to land as overwhelming or presumptuous, since it's far ahead of the relationship's actual pace.",
+        "conceptTag": "calibrated_self_disclosure"
+      },
+      {
+        "id": "B",
+        "text": "It's likely to build strong rapport quickly, since more disclosure always builds more connection faster.",
+        "misconception": "behavioural-disclosure_mismatched_to_pace"
+      },
+      {
+        "id": "C",
+        "text": "It has no effect either way, since disclosure timing doesn't actually matter to how it's received.",
+        "misconception": "behavioural-disclosure_mismatched_to_pace"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Disclosure far ahead of the relationship's actual closeness tends to feel overwhelming rather than connecting — the same content, offered as the relationship develops, could build real rapport instead."
+  },
+  {
+    "id": "i.rap.disc.b",
+    "concept": "calibrated_self_disclosure",
+    "scenario": "In a relationship that has developed real mutual closeness over months, with roughly reciprocal sharing on both sides, someone continues sharing only superficial information.",
+    "type": "reason_choice",
+    "prompt": "What's the issue with this pattern?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The disclosure is now lagging behind the relationship's actual pace, which can feel withholding and slow any deeper connection.",
+        "conceptTag": "calibrated_self_disclosure"
+      },
+      {
+        "id": "B",
+        "text": "No issue — staying at a superficial level of disclosure is always the safest approach regardless of the relationship's development.",
+        "misconception": "behavioural-disclosure_mismatched_to_pace"
+      },
+      {
+        "id": "C",
+        "text": "The issue is that the other person should disclose even more to compensate.",
+        "misconception": "behavioural-disclosure_mismatched_to_pace"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Disclosure that lags well behind a relationship's actual closeness and reciprocity can feel withholding — matching the pace the relationship has actually reached, rather than staying permanently superficial, is what calibration means here."
+  },
+  {
+    "id": "i.rap.disc.c",
+    "concept": "calibrated_self_disclosure",
+    "scenario": "Someone notices the pace of disclosure another person is setting in a developing relationship, and roughly matches it rather than defaulting to their own habitual level.",
+    "type": "reason_choice",
+    "prompt": "What does this demonstrate?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Calibrated self-disclosure — matching the relationship's actual pace rather than a fixed, habitual level regardless of context.",
+        "conceptTag": "calibrated_self_disclosure"
+      },
+      {
+        "id": "B",
+        "text": "An inauthentic, overly calculated approach to disclosure.",
+        "misconception": "behavioural-disclosure_mismatched_to_pace"
+      },
+      {
+        "id": "C",
+        "text": "An unnecessary extra step, since disclosure should always follow one's own default comfort level regardless of the other person.",
+        "misconception": "behavioural-disclosure_mismatched_to_pace"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Noticing and roughly matching the pace the other person is actually setting — rather than a fixed habitual level — is exactly what calibrated disclosure means, and isn't inauthentic."
+  },
+  {
+    "id": "i.rap.track.a",
+    "concept": "trust_calibrated_to_track_record",
+    "scenario": "A charismatic new business partner, genuinely enjoyable to work with, hasn't yet demonstrated any actual track record of following through on commitments.",
+    "type": "reason_choice",
+    "prompt": "How much trust should be extended, based on charisma alone?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Significant trust shouldn't be extended on charisma alone — it should track the separate, not-yet-established question of demonstrated follow-through.",
+        "conceptTag": "trust_calibrated_to_track_record"
+      },
+      {
+        "id": "B",
+        "text": "A high degree of trust is justified, since being this enjoyable to work with is itself strong evidence of reliability.",
+        "misconception": "behavioural-trust_extended_on_likability_alone"
+      },
+      {
+        "id": "C",
+        "text": "No trust at all should be extended until charisma is set aside entirely.",
+        "misconception": "behavioural-trust_extended_on_likability_alone"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Charisma and demonstrated reliability are separate questions — extending significant trust based on the first, before the second has actually been established, conflates two things that don't have to go together."
+  },
+  {
+    "id": "i.rap.track.b",
+    "concept": "trust_calibrated_to_track_record",
+    "scenario": "Someone with years of demonstrated reliability, though less immediately charming, is given the same level of trust as a more charismatic person with no comparable track record.",
+    "type": "reason_choice",
+    "prompt": "What does equalizing the trust here overlook?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The actual difference in demonstrated track record between the two people, which charisma alone doesn't make up for.",
+        "conceptTag": "trust_calibrated_to_track_record"
+      },
+      {
+        "id": "B",
+        "text": "Nothing — likability and demonstrated reliability should always be weighted equally.",
+        "misconception": "behavioural-trust_extended_on_likability_alone"
+      },
+      {
+        "id": "C",
+        "text": "The less charismatic person should actually receive less trust, since charisma is the more decisive factor.",
+        "misconception": "behavioural-trust_extended_on_likability_alone"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Equalizing trust between the two people overlooks a real difference in demonstrated track record — charisma doesn't substitute for the evidence that actual reliability provides."
+  },
+  {
+    "id": "i.rap.track.c",
+    "concept": "trust_calibrated_to_track_record",
+    "scenario": "Before extending a significant degree of trust to someone new, their likability and their actual demonstrated track record are considered as two separate questions.",
+    "type": "reason_choice",
+    "prompt": "What does keeping these two questions separate accomplish?",
+    "options": [
+      {
+        "id": "A",
+        "text": "It prevents one answer (likability) from standing in for the other (demonstrated reliability), which don't have to match.",
+        "conceptTag": "trust_calibrated_to_track_record"
+      },
+      {
+        "id": "B",
+        "text": "It accomplishes nothing, since the two questions always have the same answer in practice.",
+        "misconception": "behavioural-trust_extended_on_likability_alone"
+      },
+      {
+        "id": "C",
+        "text": "It unfairly disadvantages people who are genuinely likable.",
+        "misconception": "behavioural-trust_extended_on_likability_alone"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Keeping the two questions separate is exactly what prevents likability from being mistaken for evidence of reliability — the two can, and often do, have different answers."
+  },
+  {
+    "id": "i.rap.repair.a",
+    "concept": "repairing_broken_trust",
+    "scenario": "After missing an important commitment, a sincere apology is offered, and the relationship is expected to reset to its prior level of trust immediately afterward.",
+    "type": "reason_choice",
+    "prompt": "What's the issue with this expectation?",
+    "options": [
+      {
+        "id": "A",
+        "text": "An apology is usually a necessary first step, but trust is actually rebuilt by sustained follow-through afterward, not by the apology alone.",
+        "conceptTag": "repairing_broken_trust"
+      },
+      {
+        "id": "B",
+        "text": "No issue — a sufficiently sincere apology should fully restore trust immediately.",
+        "misconception": "behavioural-apology_treated_as_sufficient_repair"
+      },
+      {
+        "id": "C",
+        "text": "The issue is only that the apology wasn't detailed enough.",
+        "misconception": "behavioural-apology_treated_as_sufficient_repair"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "A sincere apology is typically necessary but not sufficient on its own — the trust itself is rebuilt by what happens afterward, consistently, over time, not by the words of the apology."
+  },
+  {
+    "id": "i.rap.repair.b",
+    "concept": "repairing_broken_trust",
+    "scenario": "After a breach of trust, someone follows through reliably on several subsequent smaller commitments, in addition to having apologized.",
+    "type": "reason_choice",
+    "prompt": "What role does this follow-through play?",
+    "options": [
+      {
+        "id": "A",
+        "text": "It's the actual mechanism of repair — the apology opened the door, but the sustained follow-through is what rebuilds the trust.",
+        "conceptTag": "repairing_broken_trust"
+      },
+      {
+        "id": "B",
+        "text": "It's an unnecessary extra step once a sincere apology has already been given.",
+        "misconception": "behavioural-apology_treated_as_sufficient_repair"
+      },
+      {
+        "id": "C",
+        "text": "It has no bearing on trust repair, since the apology is what actually matters.",
+        "misconception": "behavioural-apology_treated_as_sufficient_repair"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "The sustained follow-through after the breach is what actually rebuilds trust — the apology is a necessary opening step, but the repair itself happens through the pattern that follows it."
+  },
+  {
+    "id": "i.rap.repair.c",
+    "concept": "repairing_broken_trust",
+    "scenario": "Someone apologizes sincerely for a breach of trust but continues the same unreliable pattern of behavior afterward.",
+    "type": "reason_choice",
+    "prompt": "What does this outcome suggest about the apology alone?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A sincere apology without a change in the underlying pattern doesn't actually repair trust, since the repair depends on what happens afterward.",
+        "conceptTag": "repairing_broken_trust"
+      },
+      {
+        "id": "B",
+        "text": "The apology alone should have been sufficient, regardless of what happened afterward.",
+        "misconception": "behavioural-apology_treated_as_sufficient_repair"
+      },
+      {
+        "id": "C",
+        "text": "Trust repair has nothing to do with the pattern of behavior after the apology.",
+        "misconception": "behavioural-apology_treated_as_sufficient_repair"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "An apology followed by the same unreliable pattern shows that the apology alone didn't repair anything — real repair depends on a changed, sustained pattern of follow-through afterward."
+  },
+  {
+    "id": "i.wk11.rap.chk.a",
+    "concept": "consistency_builds_trust",
+    "scenario": "A charismatic new acquaintance makes one impressive, generous gesture early in a relationship. Based on this, a significant degree of trust and fairly deep personal disclosure follow almost immediately.",
+    "type": "reason_choice",
+    "prompt": "What's the combined issue here?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A single gesture is weak evidence of an actual track record, and the disclosure that followed is also running well ahead of what the relationship's actual pace would call for.",
+        "conceptTag": "consistency_builds_trust"
+      },
+      {
+        "id": "B",
+        "text": "There's no issue, since a sufficiently impressive gesture justifies both immediate trust and immediate deep disclosure.",
+        "misconception": "behavioural-single_gesture_overweighted"
+      },
+      {
+        "id": "C",
+        "text": "The only issue is the disclosure pace; the trust extended on the gesture alone was fine.",
+        "misconception": "behavioural-trust_extended_on_likability_alone"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Both ideas compound here: the single gesture doesn't establish a track record, and extending deep disclosure on top of that trust runs the relationship's actual pace well ahead of where it's genuinely gotten to."
+  },
+  {
+    "id": "i.wk11.rap.chk.b",
+    "concept": "calibrated_self_disclosure",
+    "scenario": "Someone matches their disclosure well to a relationship's actual pace, but extends a high degree of trust to the same person mainly because they're easy to talk to, without yet having seen a track record.",
+    "type": "reason_choice",
+    "prompt": "What's the combined issue?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Well-calibrated disclosure doesn't substitute for calibrating trust to an actual demonstrated track record — the two are separate judgments.",
+        "conceptTag": "calibrated_self_disclosure"
+      },
+      {
+        "id": "B",
+        "text": "No issue — being easy to talk to is itself sufficient evidence of trustworthiness once disclosure is well-paced.",
+        "misconception": "behavioural-trust_extended_on_likability_alone"
+      },
+      {
+        "id": "C",
+        "text": "The disclosure pacing itself is the problem here, not the trust extended.",
+        "misconception": "behavioural-disclosure_mismatched_to_pace"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Pacing disclosure well and calibrating trust to a track record are two separate skills — getting the first right doesn't substitute for extending trust based on likability rather than demonstrated reliability."
+  },
+  {
+    "id": "i.wk11.rap.chk.c",
+    "concept": "trust_calibrated_to_track_record",
+    "scenario": "After a track-record-based trust is broken by a missed commitment, the person offers a sincere apology, and disclosure in the relationship continues at the same level as before the breach, with no adjustment.",
+    "type": "reason_choice",
+    "prompt": "What's the combined issue?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The apology alone doesn't repair the broken trust, and continuing disclosure unchanged assumes a level of restored closeness that the trust repair hasn't actually caught up to yet.",
+        "conceptTag": "trust_calibrated_to_track_record"
+      },
+      {
+        "id": "B",
+        "text": "No issue — a sincere apology fully restores both trust and the appropriate level of disclosure immediately.",
+        "misconception": "behavioural-apology_treated_as_sufficient_repair"
+      },
+      {
+        "id": "C",
+        "text": "The only issue is that disclosure should have increased further to compensate for the breach.",
+        "misconception": "behavioural-disclosure_mismatched_to_pace"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "Both ideas combine here: the apology doesn't yet repair the trust on its own, and keeping disclosure at its pre-breach level assumes a closeness that hasn't actually been rebuilt yet."
+  },
+  {
+    "id": "i.wk11.rap.chk.d",
+    "concept": "repairing_broken_trust",
+    "scenario": "A new relationship develops where trust is extended gradually based on an accumulating track record, disclosure is paced to match growing closeness, and when one commitment is later missed, trust is rebuilt through sustained follow-through rather than the apology alone.",
+    "type": "reason_choice",
+    "prompt": "What does this fully combined pattern demonstrate?",
+    "options": [
+      {
+        "id": "A",
+        "text": "All four of this week's ideas working together: consistency over gestures, calibrated disclosure, trust tied to track record, and repair through follow-through rather than apology alone.",
+        "conceptTag": "repairing_broken_trust"
+      },
+      {
+        "id": "B",
+        "text": "An unrealistic standard that most real relationships can't actually meet.",
+        "misconception": "behavioural-apology_treated_as_sufficient_repair"
+      },
+      {
+        "id": "C",
+        "text": "Only the repair step matters here; the other three ideas are unnecessary once repair happens correctly.",
+        "misconception": "behavioural-single_gesture_overweighted"
+      }
+    ],
+    "acceptableAnswers": [
+      "A"
+    ],
+    "explanation": "This is exactly the combination this week built toward — consistency, calibrated disclosure, track-record-based trust, and genuine repair, all reinforcing each other rather than standing alone."
+  },
+  {
+    "id": "i.rap.cons.words",
+    "concept": "consistency_builds_trust",
+    "type": "own_words",
+    "scenario": "Think of someone whose trustworthiness you judged mainly from one memorable gesture, and consider their actual pattern since.",
+    "prompt": "In your own words, explain why consistency over time matters more to trust than a single impressive gesture.",
+    "modelAnswer": "A single gesture, however genuine or impressive, is weak evidence of whether someone reliably follows through — that's demonstrated by a pattern across many smaller, often unremarkable moments over time, not confirmed by any one striking act.",
+    "rubric": [
+      "States that a single gesture is weak evidence of an ongoing pattern.",
+      "States that consistency is demonstrated over many smaller moments.",
+      "Gives a real or plausible example.",
+      "Explains why the gesture can be genuine and still not establish a pattern."
+    ]
+  },
+  {
+    "id": "i.rap.disc.words",
+    "concept": "calibrated_self_disclosure",
+    "type": "own_words",
+    "scenario": "Think of a time disclosure in a relationship felt mismatched to its actual pace, too much or too little.",
+    "prompt": "In your own words, explain what it means to calibrate self-disclosure to a relationship's actual pace.",
+    "modelAnswer": "Calibrated disclosure means roughly matching the pace and depth of sharing to how close the relationship actually is and how reciprocal the sharing has been, rather than defaulting to a fixed habitual level — sharing more as real closeness develops, not all at once and not never.",
+    "rubric": [
+      "States what calibrated disclosure means.",
+      "Gives a real or plausible example of mismatched disclosure, too much or too little.",
+      "States that calibration isn't a fixed formula.",
+      "Explains the risk of ignoring the relationship's actual pace."
+    ]
+  },
+  {
+    "id": "i.rap.track.words",
+    "concept": "trust_calibrated_to_track_record",
+    "type": "own_words",
+    "scenario": "Think of a time you extended trust to someone based mainly on how likable or charismatic they were.",
+    "prompt": "In your own words, explain why trust should track someone's demonstrated record, not their likability.",
+    "modelAnswer": "Likability and demonstrated reliability are separate questions that don't have to have the same answer — a charismatic person may not yet have a track record of follow-through, and a less immediately charming person may have a long one. Trust should track the actual record, not the charisma.",
+    "rubric": [
+      "States that likability and reliability are separate questions.",
+      "Gives a real or plausible example where they diverge.",
+      "States this isn't cynicism about likable people.",
+      "Explains what keeping the two questions separate actually looks like."
+    ]
+  },
+  {
+    "id": "i.rap.repair.words",
+    "concept": "repairing_broken_trust",
+    "type": "own_words",
+    "scenario": "Think of a time trust was broken and you observed, or were part of, the process of rebuilding it.",
+    "prompt": "In your own words, explain why an apology alone usually isn't enough to repair broken trust.",
+    "modelAnswer": "A sincere apology is typically a necessary first step, but trust itself is rebuilt by a sustained pattern of follow-through afterward — the same thing that built trust in the first place. Without that sustained pattern, the apology alone doesn't actually restore the relationship to its prior level of trust.",
+    "rubric": [
+      "States that an apology is usually necessary but not sufficient.",
+      "States what actually rebuilds the trust (sustained follow-through).",
+      "Gives a real or plausible example.",
+      "Explains the risk of expecting an apology alone to be sufficient."
+    ]
+  }
+]

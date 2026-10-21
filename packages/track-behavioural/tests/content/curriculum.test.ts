@@ -9,6 +9,7 @@ import signalsItems from '../../content/items/signals.json' with { type: 'json' 
 import listeningItems from '../../content/items/listening.json' with { type: 'json' };
 import feedbackItems from '../../content/items/feedback.json' with { type: 'json' };
 import perspectiveItems from '../../content/items/perspective.json' with { type: 'json' };
+import rapportItems from '../../content/items/rapport.json' with { type: 'json' };
 
 const typedCurriculum = curriculum as Curriculum;
 const typedItems: Item[] = [
@@ -20,6 +21,7 @@ const typedItems: Item[] = [
   ...(listeningItems as Item[]),
   ...(feedbackItems as Item[]),
   ...(perspectiveItems as Item[]),
+  ...(rapportItems as Item[]),
 ];
 const itemById = new Map(typedItems.map((i) => [i.id, i]));
 
@@ -34,9 +36,10 @@ const CHECKPOINT_LESSON_IDS = new Set([
   'behavioural-les-39',
   'behavioural-les-44',
   'behavioural-les-49',
+  'behavioural-les-54',
 ]);
 
-describe('converted Behavioural Observation content (Modules 1-10)', () => {
+describe('converted Behavioural Observation content (Modules 1-11)', () => {
   it('validates against the shared content schema', () => {
     const result = validateContent(typedCurriculum, typedItems);
     expect(result.errors).toEqual([]);
@@ -185,6 +188,22 @@ describe('converted Behavioural Observation content (Modules 1-10)', () => {
       expect(checkpointConcepts.size).toBe(4);
       expect(checkpointConcepts).toEqual(new Set(lesson.concepts));
     }
+  });
+
+  it('has 1 more module (11) and 5 more lessons for Rapport and Trust, chaining off module 10\'s checkpoint', () => {
+    // Week 11 is a single standalone module (unlike the paired 2-module units
+    // of prior passes), so its checkpoint lesson (les-54) has no synthesis
+    // own_words item, matching the mid-unit checkpoint shape (les-8/9/14).
+    expect(typedCurriculum.modules.map((m) => m.id).slice(10, 11)).toEqual(['behavioural-mod-11']);
+    expect(typedCurriculum.lessons.map((l) => l.id).slice(49, 54)).toEqual([
+      'behavioural-les-50', 'behavioural-les-51', 'behavioural-les-52', 'behavioural-les-53', 'behavioural-les-54',
+    ]);
+    const byId = new Map(typedCurriculum.lessons.map((l) => [l.id, l]));
+    expect(byId.get('behavioural-les-50')!.prerequisites).toEqual(['behavioural-les-49']);
+    expect(new Set(byId.get('behavioural-les-54')!.prerequisites)).toEqual(
+      new Set(['behavioural-les-50', 'behavioural-les-51', 'behavioural-les-52', 'behavioural-les-53'])
+    );
+    expect(byId.get('behavioural-les-54')!.explanationBackItemId).toBeUndefined();
   });
 
   it('every teaching lesson has its original 3 scenario items plus one deepening item, then the explain-back item, then 2 mastery items', () => {
