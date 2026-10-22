@@ -34,7 +34,7 @@ export function SettingsScreen({ trackTitles, onShowAbout, onShowHelp, canInstal
       <section className="settings-block">
         <h2>About</h2>
         <p>
-          {trackTitles.join(', ')} — three daily-practice tracks of different lengths sharing one engine and one
+          {trackTitles.join(', ')} — three full, comparable-depth daily-practice tracks sharing one engine and one
           storage layer, and what practising each one actually builds.
         </p>
         <button onClick={onShowAbout}>About Second Nature</button>

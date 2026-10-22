@@ -1,5 +1,14 @@
 import type { ReactNode } from 'react';
 
+/** The app's own mark: a leaf, matching favicon.svg's shape (stroke-only
+ * here, to fit the rest of this file's icon vocabulary, used in AppHeader). */
+export const APP_ICON: ReactNode = (
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M12 20 C4.5 16.5 3.5 8 12 3.5 C20.5 8 19.5 16.5 12 20 Z" />
+    <path d="M12 18.5 V6 M12 12 L7 9 M12 14 L17 11.5" />
+  </svg>
+);
+
 /** Today: a simple sun -- what to practise right now. */
 export const TODAY_ICON: ReactNode = (
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round">

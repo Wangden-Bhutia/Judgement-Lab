@@ -12,6 +12,7 @@ import { SettingsScreen } from './SettingsScreen';
 import { LessonPlayer } from './LessonPlayer';
 import { ReviewSession } from './ReviewSession';
 import { BottomNav, type View } from './BottomNav';
+import { AppHeader } from './AppHeader';
 import { TRACKS } from './tracks';
 import { TRACK_ICONS } from './trackIcons';
 import { useInstallPrompt } from './useInstallPrompt';
@@ -178,6 +179,7 @@ export default function App() {
 
   return (
     <>
+      <AppHeader />
       {view === 'today' && (
         <TodayScreen
           tracks={trackData}
