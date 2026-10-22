@@ -1,6 +1,8 @@
-# Judgment Lab — decisions record
+# Second Nature — decisions record
 
-Working name: **Judgment Lab**. Reversible; revisit once the app has a shape worth naming for real.
+Name: **Second Nature**. Was "Judgment Lab" during early development (the repo, internal package
+scope, and local storage key still use that name — purely internal, not user-facing, not worth the
+blast radius of renaming).
 
 ## Why this project exists
 

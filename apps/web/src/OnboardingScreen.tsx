@@ -9,7 +9,7 @@ interface OnboardingScreenProps {
 export function OnboardingScreen({ mode, onDone }: OnboardingScreenProps) {
   return (
     <div className="today-screen onboarding-screen">
-      <h1>How Judgment Lab works</h1>
+      <h1>How Second Nature works</h1>
 
       <section className="settings-block">
         <p>
@@ -34,7 +34,7 @@ export function OnboardingScreen({ mode, onDone }: OnboardingScreenProps) {
       <section className="settings-block">
         <h2>Spaced review</h2>
         <p>
-          Once a concept has that kind of evidence behind it, Judgment Lab brings it back for a quick
+          Once a concept has that kind of evidence behind it, Second Nature brings it back for a quick
           check — first after 2 days, then 7, then 21, as long as you keep getting it right. Miss one and
           it comes back sooner. These checks are what Today's "due for review" card is for: answering
           something correctly after a gap is what actually makes it stick.

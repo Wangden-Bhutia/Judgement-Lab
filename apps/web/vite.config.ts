@@ -24,8 +24,8 @@ export default defineConfig({
         globPatterns: ['**/*.{js,css,html,svg,png,ico,json}'],
       },
       manifest: {
-        name: 'Judgment Lab',
-        short_name: 'Judgment Lab',
+        name: 'Second Nature',
+        short_name: 'Second Nature',
         description: 'Short exercises in reading a situation before reacting to it.',
         start_url: process.env.GITHUB_PAGES ? '/Judgement-Lab/' : '/',
         display: 'standalone',

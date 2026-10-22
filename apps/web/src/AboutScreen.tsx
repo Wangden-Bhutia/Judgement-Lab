@@ -6,11 +6,11 @@ interface AboutScreenProps {
 export function AboutScreen({ trackTitles, onDone }: AboutScreenProps) {
   return (
     <div className="today-screen onboarding-screen">
-      <h1>About Judgment Lab</h1>
+      <h1>About Second Nature</h1>
 
       <section className="settings-block">
         <p>
-          Judgment Lab is three daily-practice tracks — {trackTitles.join(', ')} — sharing one engine and one
+          Second Nature is three daily-practice tracks — {trackTitles.join(', ')} — sharing one engine and one
           storage layer. All three are now full, roughly 12-week courses, built so any of them, done daily, gets
           you to the same kind of depth. Today recommends one lesson at a time, from whichever track has gone
           longest without practice, so once a track is finished it simply stops coming up there — Library is still

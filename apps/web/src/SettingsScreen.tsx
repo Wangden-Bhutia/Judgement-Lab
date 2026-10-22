@@ -26,7 +26,7 @@ export function SettingsScreen({ trackTitles, onShowAbout, onShowHelp, canInstal
       {canInstall && (
         <section className="settings-block">
           <h2>Install</h2>
-          <p>Add Judgment Lab to your home screen or apps list, so it opens like a regular app, offline and full-screen.</p>
+          <p>Add Second Nature to your home screen or apps list, so it opens like a regular app, offline and full-screen.</p>
           <button onClick={onInstall}>Install app</button>
         </section>
       )}
@@ -37,13 +37,13 @@ export function SettingsScreen({ trackTitles, onShowAbout, onShowHelp, canInstal
           {trackTitles.join(', ')} — three daily-practice tracks of different lengths sharing one engine and one
           storage layer, and what practising each one actually builds.
         </p>
-        <button onClick={onShowAbout}>About Judgment Lab</button>
+        <button onClick={onShowAbout}>About Second Nature</button>
       </section>
 
       <section className="settings-block">
         <h2>How it works</h2>
         <p>What completion, mastery, and spaced review mean, and why they're kept separate.</p>
-        <button onClick={onShowHelp}>How Judgment Lab works</button>
+        <button onClick={onShowHelp}>How Second Nature works</button>
       </section>
 
       <section className="settings-block">
