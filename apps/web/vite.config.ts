@@ -4,11 +4,11 @@ import { VitePWA } from 'vite-plugin-pwa'
 
 // https://vite.dev/config/
 export default defineConfig({
-  // GitHub Pages serves this project from /Judgement-Lab/, not the domain
+  // GitHub Pages serves this project from /second-nature/, not the domain
   // root, so every asset/route reference needs that prefix in production.
   // GITHUB_PAGES is set only by the Pages deploy workflow; `pnpm dev` and
   // any other build target still get the root path.
-  base: process.env.GITHUB_PAGES ? '/Judgement-Lab/' : '/',
+  base: process.env.GITHUB_PAGES ? '/second-nature/' : '/',
   plugins: [
     react(),
     VitePWA({
@@ -27,7 +27,7 @@ export default defineConfig({
         name: 'Second Nature',
         short_name: 'Second Nature',
         description: 'Short exercises in reading a situation before reacting to it.',
-        start_url: process.env.GITHUB_PAGES ? '/Judgement-Lab/' : '/',
+        start_url: process.env.GITHUB_PAGES ? '/second-nature/' : '/',
         display: 'standalone',
         background_color: '#f6f6f4',
         theme_color: '#678a60',
