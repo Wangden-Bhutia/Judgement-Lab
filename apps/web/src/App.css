@@ -520,6 +520,22 @@ textarea {
   padding: 0;
 }
 
+/* A primary action button immediately followed by an .exit-link: plain
+   <button>s are inline-block by default, so without this they sit flush
+   against each other on the same line instead of getting any visual
+   separation (the .exit-link's own margin-top only pushes it down when
+   it's already on its own line, which a bare sibling button doesn't
+   force). */
+.button-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.button-row .exit-link {
+  margin-top: 0;
+}
+
 .settings-block {
   margin-bottom: 32px;
   padding-bottom: 32px;

@@ -74,12 +74,14 @@ export function LessonPlayer({ lesson, itemById, onExit, progress, misconception
             </div>
           )}
         </div>
-        <button onClick={() => setPhase('items')}>
-          {order.length > 0 ? 'Start practice' : 'Continue'}
-        </button>
-        <button className="exit-link" onClick={() => onExit(startedProgress)}>
-          Exit lesson
-        </button>
+        <div className="button-row">
+          <button onClick={() => setPhase('items')}>
+            {order.length > 0 ? 'Start practice' : 'Continue'}
+          </button>
+          <button className="exit-link" onClick={() => onExit(startedProgress)}>
+            Exit lesson
+          </button>
+        </div>
       </div>
     );
   }
