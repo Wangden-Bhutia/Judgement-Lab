@@ -96,6 +96,11 @@
   display: flex;
   flex-direction: column;
   flex: 1;
+  /* Same flex-item min-width: auto issue fixed on .lesson-player below --
+     applied here too as a preventive measure, since this class is also a
+     direct child of #root's flex column (shared by Today/Library/
+     Settings/About/Onboarding). */
+  min-width: 0;
   padding: 16px 32px calc(48px + 64px + env(safe-area-inset-bottom));
   text-align: left;
   max-width: 640px;
@@ -318,6 +323,21 @@ details[open] > .track-section-header .track-section-chevron {
 }
 
 .lesson-player {
+  /* This is a direct child of #root's flex column (LessonPlayer/
+     ReviewSession render outside AppHeader/BottomNav, full-screen), so
+     it's a flex item in a column container. Its horizontal auto margins
+     (for centering below) disable cross-axis stretch per the flexbox
+     spec, so without an explicit width it falls back to sizing itself
+     from its content's max-content width -- here, the match item's
+     <select>, driven by its long option text -- instead of the
+     container's actual width, which is what caused the page-wide
+     horizontal scroll a user hit on their phone. width: 100% (matching
+     .today-screen's already-correct pattern) fixes that; min-width: 0
+     is kept too as a second line of defence against the same class of
+     bug recurring with different content later. */
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
   padding: 16px 32px 48px;
   text-align: left;
   max-width: 640px;
@@ -483,11 +503,27 @@ textarea {
   align-items: center;
   justify-content: space-between;
   gap: 12px;
+  /* Without this, a flex item defaults to min-width: auto, which blocks
+     the select below from shrinking below its own content size -- see
+     the select rule below for why that content size can be wide. */
+  min-width: 0;
 }
 
 .match-row select {
   font: inherit;
   padding: 6px 8px;
+  /* A closed native <select> sizes itself to its widest <option> text in
+     most mobile browsers -- these options are full sentences, not short
+     labels, so without an explicit width constraint the select (and the
+     whole page, since nothing else was limiting it either) overflowed
+     horizontally on phones. flex: 1 lets it fill the row instead of
+     sizing to content; min-width: 0 lets it actually shrink there. */
+  flex: 1;
+  min-width: 0;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .teach-screen {
