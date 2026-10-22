@@ -492,40 +492,6 @@ textarea {
   width: 32px;
 }
 
-.match-rows {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.match-row {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 12px;
-  /* Without this, a flex item defaults to min-width: auto, which blocks
-     the select below from shrinking below its own content size -- see
-     the select rule below for why that content size can be wide. */
-  min-width: 0;
-}
-
-.match-row select {
-  font: inherit;
-  padding: 6px 8px;
-  /* A closed native <select> sizes itself to its widest <option> text in
-     most mobile browsers -- these options are full sentences, not short
-     labels, so without an explicit width constraint the select (and the
-     whole page, since nothing else was limiting it either) overflowed
-     horizontally on phones. flex: 1 lets it fill the row instead of
-     sizing to content; min-width: 0 lets it actually shrink there. */
-  flex: 1;
-  min-width: 0;
-  max-width: 100%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
 .teach-screen {
   display: flex;
   flex-direction: column;

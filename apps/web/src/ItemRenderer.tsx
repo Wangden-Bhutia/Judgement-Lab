@@ -293,24 +293,25 @@ function MatchForm({
     >
       <Scenario text={item.scenario} />
       <p className="item-prompt">{item.prompt}</p>
-      <div className="match-rows">
+      <div className="classify-entries">
         {item.left.map((l) => (
-          <label key={l.id} className="match-row">
-            <span>{l.label}</span>
-            <select
-              value={selections[l.id] ?? ''}
-              onChange={(e) => setSelections((prev) => ({ ...prev, [l.id]: e.target.value }))}
-            >
-              <option value="" disabled>
-                Choose a match…
-              </option>
+          <div key={l.id} className="classify-entry">
+            <p>{l.label}</p>
+            <div className="options">
               {item.right.map((r) => (
-                <option key={r.id} value={r.id}>
-                  {r.label}
-                </option>
+                <label key={r.id} className="option">
+                  <input
+                    type="radio"
+                    name={l.id}
+                    value={r.id}
+                    checked={selections[l.id] === r.id}
+                    onChange={() => setSelections((prev) => ({ ...prev, [l.id]: r.id }))}
+                  />
+                  <span>{r.label}</span>
+                </label>
               ))}
-            </select>
-          </label>
+            </div>
+          </div>
         ))}
       </div>
       <button type="submit" disabled={!allMatched}>
