@@ -31,7 +31,18 @@ export default defineConfig({
         display: 'standalone',
         background_color: '#f6f6f4',
         theme_color: '#678a60',
-        icons: [{ src: 'favicon.svg', sizes: 'any', type: 'image/svg+xml' }],
+        // Chrome's install-prompt (beforeinstallprompt) criteria require a
+        // raster icon at 192px and 512px -- an SVG with sizes "any" alone
+        // isn't reliably enough to satisfy installability checks on Android,
+        // which is why the prompt/Settings' Install button wasn't appearing.
+        // The maskable one gives Android's adaptive-icon mask real padding
+        // to crop into, instead of clipping the leaf's tips.
+        icons: [
+          { src: 'favicon.svg', sizes: 'any', type: 'image/svg+xml' },
+          { src: 'icon-192.png', sizes: '192x192', type: 'image/png', purpose: 'any' },
+          { src: 'icon-512.png', sizes: '512x512', type: 'image/png', purpose: 'any' },
+          { src: 'icon-maskable-512.png', sizes: '512x512', type: 'image/png', purpose: 'maskable' },
+        ],
       },
     }),
   ],
