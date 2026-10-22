@@ -79,14 +79,16 @@ export function TodayScreen({ tracks, lessonById, progress, dueReviewCount, onSe
     return (
       <div className="today-screen">
         <h1>Today</h1>
-        <section className="today-card review-card">
-          <p className="today-card-module">Spaced review</p>
-          <h2>
-            {dueReviewCount} {dueReviewCount === 1 ? 'concept is' : 'concepts are'} due for review
-          </h2>
-          <p>Quick retrieval checks across everything you've learned so far, to keep it from fading.</p>
-          <button onClick={onStartReview}>Start review</button>
-        </section>
+        <div className="today-center">
+          <section className="today-card review-card">
+            <p className="today-card-module">Spaced review</p>
+            <h2>
+              {dueReviewCount} {dueReviewCount === 1 ? 'concept is' : 'concepts are'} due for review
+            </h2>
+            <p>Quick retrieval checks across everything you've learned so far, to keep it from fading.</p>
+            <button onClick={onStartReview}>Start review</button>
+          </section>
+        </div>
       </div>
     );
   }
@@ -102,10 +104,12 @@ export function TodayScreen({ tracks, lessonById, progress, dueReviewCount, onSe
     return (
       <div className="today-screen">
         <h1>Today</h1>
-        <section className="today-card today-card-done">
-          <h2>Every lesson, in every track, is complete.</h2>
-          <p>Nothing left to start today -- visit Library to revisit anything, or Settings to reset and begin again.</p>
-        </section>
+        <div className="today-center">
+          <section className="today-card today-card-done">
+            <h2>Every lesson, in every track, is complete.</h2>
+            <p>Nothing left to start today -- visit Library to revisit anything, or Settings to reset and begin again.</p>
+          </section>
+        </div>
       </div>
     );
   }
@@ -114,16 +118,18 @@ export function TodayScreen({ tracks, lessonById, progress, dueReviewCount, onSe
   return (
     <div className="today-screen">
       <h1>Today</h1>
-      <section className="today-card">
-        <div className="today-card-track">
-          <span className="today-card-track-icon">{track.icon}</span>
-          <h2>{track.title}</h2>
-        </div>
-        <p className="today-card-module">{next.module.title}</p>
-        <h3>{next.lesson.title}</h3>
-        <p>{next.lesson.objectives[0]}</p>
-        <button onClick={() => onSelectLesson(next.lesson)}>{STATUS_LABEL[next.status]}</button>
-      </section>
+      <div className="today-center">
+        <section className="today-card">
+          <div className="today-card-track">
+            <span className="today-card-track-icon">{track.icon}</span>
+            <h2>{track.title}</h2>
+          </div>
+          <p className="today-card-module">{next.module.title}</p>
+          <h3>{next.lesson.title}</h3>
+          <p>{next.lesson.objectives[0]}</p>
+          <button onClick={() => onSelectLesson(next.lesson)}>{STATUS_LABEL[next.status]}</button>
+        </section>
+      </div>
     </div>
   );
 }
