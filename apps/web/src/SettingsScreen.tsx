@@ -5,9 +5,11 @@ interface SettingsScreenProps {
   trackTitles: string[];
   onShowAbout: () => void;
   onShowHelp: () => void;
+  canInstall: boolean;
+  onInstall: () => void;
 }
 
-export function SettingsScreen({ trackTitles, onShowAbout, onShowHelp }: SettingsScreenProps) {
+export function SettingsScreen({ trackTitles, onShowAbout, onShowHelp, canInstall, onInstall }: SettingsScreenProps) {
   const [confirming, setConfirming] = useState(false);
   const [resetting, setResetting] = useState(false);
 
@@ -20,6 +22,14 @@ export function SettingsScreen({ trackTitles, onShowAbout, onShowHelp }: Setting
   return (
     <div className="today-screen">
       <h1>Settings</h1>
+
+      {canInstall && (
+        <section className="settings-block">
+          <h2>Install</h2>
+          <p>Add Judgment Lab to your home screen or apps list, so it opens like a regular app, offline and full-screen.</p>
+          <button onClick={onInstall}>Install app</button>
+        </section>
+      )}
 
       <section className="settings-block">
         <h2>About</h2>

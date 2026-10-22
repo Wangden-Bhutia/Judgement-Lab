@@ -14,6 +14,7 @@ import { ReviewSession } from './ReviewSession';
 import { BottomNav, type View } from './BottomNav';
 import { TRACKS } from './tracks';
 import { TRACK_ICONS } from './trackIcons';
+import { useInstallPrompt } from './useInstallPrompt';
 import './App.css';
 
 interface DueConcept {
@@ -33,6 +34,7 @@ export default function App() {
   const [showAbout, setShowAbout] = useState(false);
   const [showHelp, setShowHelp] = useState(false);
   const [loaded, setLoaded] = useState(false);
+  const { canInstall, promptInstall } = useInstallPrompt();
 
   useEffect(() => {
     void Promise.all([
@@ -200,6 +202,8 @@ export default function App() {
           trackTitles={trackData.map((t) => t.title)}
           onShowAbout={() => setShowAbout(true)}
           onShowHelp={() => setShowHelp(true)}
+          canInstall={canInstall}
+          onInstall={promptInstall}
         />
       )}
       <BottomNav view={view} onChange={setView} />
